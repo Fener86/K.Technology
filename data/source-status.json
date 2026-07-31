@@ -1,4 +1,53 @@
 {
-  "ultimaEsecuzione": null,
-  "risultati": {}
+  "ultimaEsecuzione": "2026-07-31T07:28:44.340Z",
+  "risultati": {
+    "src_fortiguard_og": {
+      "id": "src_fortiguard_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortiguard.pdf",
+      "ultimoControllo": "2026-07-31T07:28:34.807Z",
+      "httpStatus": 200,
+      "raggiungibile": true,
+      "hash": "6956386f29998b926bceb43e3afdcd24f5d0696acea4ad9fa4f89489e2ff7718",
+      "cambiataDaUltimoControllo": false,
+      "errore": null,
+      "categoriaControllo": "licensing",
+      "intervalloGiorniConsigliato": 14
+    },
+    "src_forticare_og": {
+      "id": "src_forticare_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-forticare.pdf",
+      "ultimoControllo": "2026-07-31T07:28:36.471Z",
+      "httpStatus": 200,
+      "raggiungibile": true,
+      "hash": "60dcb01a09d2c5365582d0480381fc33ab9e668d372591ac45f6ea165b68623b",
+      "cambiataDaUltimoControllo": false,
+      "errore": null,
+      "categoriaControllo": "licensing",
+      "intervalloGiorniConsigliato": 14
+    },
+    "src_meraki_ios_xe": {
+      "id": "src_meraki_ios_xe",
+      "url": "https://documentation.meraki.com/Switching/Cloud_Management_with_IOS_XE/Product_Information/Overviews_and_Datasheets/Cloud_Management_with_IOS_XE_Overview",
+      "ultimoControllo": "2026-07-31T07:28:37.647Z",
+      "httpStatus": 200,
+      "raggiungibile": true,
+      "hash": "cbedf2da96b817bca054b1358eaa0881173deb0f7071563cdf6f86e128dfce57",
+      "cambiataDaUltimoControllo": false,
+      "errore": null,
+      "categoriaControllo": "release",
+      "intervalloGiorniConsigliato": 7
+    },
+    "src_meraki_faq": {
+      "id": "src_meraki_faq",
+      "url": "https://documentation.meraki.com/Switching/Cloud_Management_with_IOS_XE/Product_Information/Overviews_and_Datasheets/Cloud_Managed_Catalyst_Switches_FAQs",
+      "ultimoControllo": "2026-07-31T07:28:43.384Z",
+      "httpStatus": 200,
+      "raggiungibile": true,
+      "hash": "b211ec85fdf5f6a21de1c257b1dbe4387e99125c36f2952ccd9e56fae1e9acc1",
+      "cambiataDaUltimoControllo": false,
+      "errore": null,
+      "categoriaControllo": "release",
+      "intervalloGiorniConsigliato": 7
+    }
+  }
 }
