@@ -1,0 +1,223 @@
+{
+  "macroaree": [
+    { "id": "ma_av", "nome": "Audio Video", "descrizione": "Collaboration, meeting room, control room, digital signage." },
+    { "id": "ma_net", "nome": "Networking", "descrizione": "Switching, wireless, SD-WAN, cloud-managed networking." },
+    { "id": "ma_cyber", "nome": "Cybersecurity", "descrizione": "NGFW, endpoint, SIEM/SOAR, cloud security, identity." },
+    { "id": "ma_phys", "nome": "Security Fisica", "descrizione": "Videosorveglianza, VMS, videoanalisi, radar." },
+    { "id": "ma_access", "nome": "Controllo Accessi", "descrizione": "Lettori, controller, visitor management, mobile access." }
+  ],
+  "areeFunzionali": [
+    { "id": "af_collab", "nome": "Collaboration", "macroareaId": "ma_av" },
+    { "id": "af_meeting", "nome": "Meeting Room", "macroareaId": "ma_av" },
+    { "id": "af_avoverip", "nome": "AV over IP", "macroareaId": "ma_av" },
+    { "id": "af_digitalsignage", "nome": "Digital Signage", "macroareaId": "ma_av" },
+    { "id": "af_switching", "nome": "Switching", "macroareaId": "ma_net" },
+    { "id": "af_wireless", "nome": "Wireless", "macroareaId": "ma_net" },
+    { "id": "af_cloudmanaged", "nome": "Cloud-Managed Networking", "macroareaId": "ma_net" },
+    { "id": "af_sdwan", "nome": "SD-WAN / Secure SD-WAN", "macroareaId": "ma_net" },
+    { "id": "af_ngfw", "nome": "Next-Generation Firewall", "macroareaId": "ma_cyber" },
+    { "id": "af_edr", "nome": "EDR / XDR", "macroareaId": "ma_cyber" },
+    { "id": "af_sase", "nome": "SASE / SSE", "macroareaId": "ma_cyber" },
+    { "id": "af_nac", "nome": "Network Access Control", "macroareaId": "ma_cyber" },
+    { "id": "af_videosorv", "nome": "Videosorveglianza", "macroareaId": "ma_phys" },
+    { "id": "af_vms", "nome": "VMS on-premise / cloud", "macroareaId": "ma_phys" },
+    { "id": "af_videoanalytics", "nome": "Videoanalisi", "macroareaId": "ma_phys" },
+    { "id": "af_accesscloud", "nome": "Controllo accessi cloud", "macroareaId": "ma_access" },
+    { "id": "af_visitor", "nome": "Visitor Management", "macroareaId": "ma_access" }
+  ],
+  "vendors": [
+    { "id": "v_barco", "nome": "Barco", "sito": "https://www.barco.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_cisco", "nome": "Cisco", "sito": "https://www.cisco.com", "macroareeCoperte": ["ma_av", "ma_net", "ma_cyber"] },
+    { "id": "v_crestron", "nome": "Crestron", "sito": "https://www.crestron.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_karray", "nome": "K-Array", "sito": "https://www.k-array.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_kscape", "nome": "K-Scape", "sito": "https://www.k-scape.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_maxhub", "nome": "MAXHUB", "sito": "https://www.maxhub.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_qsys", "nome": "Q-SYS", "sito": "https://www.qsys.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_shure", "nome": "Shure", "sito": "https://www.shure.com", "macroareeCoperte": ["ma_av"] },
+    { "id": "v_fortinet", "nome": "Fortinet", "sito": "https://www.fortinet.com", "macroareeCoperte": ["ma_net", "ma_cyber"] },
+    { "id": "v_avigilon", "nome": "Avigilon", "sito": "https://www.avigilon.com", "macroareeCoperte": ["ma_phys", "ma_access"] },
+    { "id": "v_axis", "nome": "Axis Communications", "sito": "https://www.axis.com", "macroareeCoperte": ["ma_phys", "ma_access"] },
+    { "id": "v_milestone", "nome": "Milestone Systems", "sito": "https://www.milestonesys.com", "macroareeCoperte": ["ma_phys"] }
+  ],
+  "brandLines": [
+    {
+      "id": "bl_meraki",
+      "vendorId": "v_cisco",
+      "nome": "Cisco Meraki",
+      "descrizione": "Business line Cisco gestita come vista autonoma: licensing, subscription, supporto e rinnovo propri, indipendenti dalle altre linee Cisco."
+    }
+  ],
+  "famiglie": [
+    {
+      "id": "fam_fortigate",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": "af_ngfw",
+      "nome": "FortiGate",
+      "descrizione": "Next-Generation Firewall Fortinet, disponibile come appliance hardware e virtual appliance, protetto dai servizi FortiGuard e dal supporto FortiCare.",
+      "stato": "attivo",
+      "fonteId": "src_fortiguard_og"
+    },
+    {
+      "id": "fam_catalyst",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": "af_switching",
+      "nome": "Catalyst 9000 Series",
+      "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via CLI/Catalyst Center oppure, dove supportato, direttamente dal Meraki Dashboard.",
+      "stato": "attivo",
+      "fonteId": "src_meraki_ios_xe"
+    },
+    {
+      "id": "fam_meraki_dashboard",
+      "vendorId": "v_cisco",
+      "brandLineId": "bl_meraki",
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": "af_cloudmanaged",
+      "nome": "Meraki Dashboard (cloud management)",
+      "descrizione": "Piattaforma cloud Meraki per la gestione centralizzata di switch, wireless, sicurezza e, dal 2023, anche di switch Cisco Catalyst compatibili.",
+      "stato": "attivo",
+      "fonteId": "src_meraki_ios_xe"
+    }
+  ],
+  "prodotti": [
+    {
+      "id": "prod_fortigate_family",
+      "familyId": "fam_fortigate",
+      "nomeCommerciale": "FortiGate (serie F/G, hardware e VM)",
+      "modello": "Multi-modello",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Firewall NGFW Fortinet: protezione di rete, VPN, IPS e servizi di sicurezza abilitati tramite subscription FortiGuard.",
+      "fonteId": "src_fortiguard_og"
+    },
+    {
+      "id": "prod_catalyst_9300",
+      "familyId": "fam_catalyst",
+      "nomeCommerciale": "Catalyst 9300",
+      "modello": "C9300 / C9300-M",
+      "tipologia": "hardware",
+      "deployment": "on-premise, gestibile anche in cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Switch di accesso enterprise Cisco. Gestibile via CLI/Catalyst Center oppure, se compatibile, tramite Meraki Dashboard (vedi integrazione).",
+      "fonteId": "src_meraki_ios_xe"
+    }
+  ],
+  "licenze": [
+    {
+      "id": "lic_forti_atp",
+      "familyId": "fam_fortigate",
+      "productIds": ["prod_fortigate_family"],
+      "nomeUfficiale": "FortiGuard Advanced Threat Protection (ATP) bundle",
+      "tipologia": "subscription",
+      "metrica": "per appliance / per anno",
+      "durata": "1/3/5 anni",
+      "rinnovo": "manuale o automatico su richiesta",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "Sospensione aggiornamenti dei servizi di sicurezza inclusi nel bundle.",
+      "fonteId": "src_fortiguard_og"
+    },
+    {
+      "id": "lic_forti_utp",
+      "familyId": "fam_fortigate",
+      "productIds": ["prod_fortigate_family"],
+      "nomeUfficiale": "FortiGuard Unified Threat Protection (UTP) bundle",
+      "tipologia": "subscription",
+      "metrica": "per appliance / per anno",
+      "durata": "1/3/5 anni",
+      "rinnovo": "manuale o automatico su richiesta",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "Sospensione aggiornamenti dei servizi di sicurezza inclusi nel bundle.",
+      "fonteId": "src_fortiguard_og"
+    },
+    {
+      "id": "lic_forti_ep",
+      "familyId": "fam_fortigate",
+      "productIds": ["prod_fortigate_family"],
+      "nomeUfficiale": "FortiGuard Enterprise Protection bundle",
+      "tipologia": "subscription",
+      "metrica": "per appliance / per anno",
+      "durata": "1/3/5 anni",
+      "rinnovo": "manuale o automatico su richiesta",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "Sospensione aggiornamenti dei servizi di sicurezza inclusi nel bundle.",
+      "fonteId": "src_fortiguard_og"
+    }
+  ],
+  "licenseFeatures": [
+    { "id": "lf_001", "featureNome": "IPS / Antivirus / Web & DNS filtering", "licenseId": "lic_forti_atp", "stato": "incluso" },
+    { "id": "lf_002", "featureNome": "IPS / Antivirus / Web & DNS filtering", "licenseId": "lic_forti_utp", "stato": "incluso" },
+    { "id": "lf_003", "featureNome": "IPS / Antivirus / Web & DNS filtering", "licenseId": "lic_forti_ep", "stato": "incluso" },
+    { "id": "lf_004", "featureNome": "FortiSandbox Cloud", "licenseId": "lic_forti_atp", "stato": "non_incluso" },
+    { "id": "lf_005", "featureNome": "FortiSandbox Cloud", "licenseId": "lic_forti_utp", "stato": "incluso" },
+    { "id": "lf_006", "featureNome": "FortiSandbox Cloud", "licenseId": "lic_forti_ep", "stato": "incluso" },
+    { "id": "lf_007", "featureNome": "CASB (sicurezza applicazioni SaaS)", "licenseId": "lic_forti_atp", "stato": "non_incluso" },
+    { "id": "lf_008", "featureNome": "CASB (sicurezza applicazioni SaaS)", "licenseId": "lic_forti_utp", "stato": "non_incluso" },
+    { "id": "lf_009", "featureNome": "CASB (sicurezza applicazioni SaaS)", "licenseId": "lic_forti_ep", "stato": "incluso" },
+    { "id": "lf_010", "featureNome": "DLP", "licenseId": "lic_forti_atp", "stato": "non_incluso" },
+    { "id": "lf_011", "featureNome": "DLP", "licenseId": "lic_forti_utp", "stato": "non_incluso" },
+    { "id": "lf_012", "featureNome": "DLP", "licenseId": "lic_forti_ep", "stato": "incluso" },
+    { "id": "lf_013", "featureNome": "FortiCare Premium (24x7)", "licenseId": "lic_forti_atp", "stato": "incluso" },
+    { "id": "lf_014", "featureNome": "FortiCare Premium (24x7)", "licenseId": "lic_forti_utp", "stato": "incluso" },
+    { "id": "lf_015", "featureNome": "FortiCare Premium (24x7)", "licenseId": "lic_forti_ep", "stato": "incluso" },
+    { "id": "lf_016", "featureNome": "FortiCare Elite", "licenseId": "lic_forti_atp", "stato": "richiede_addon" },
+    { "id": "lf_017", "featureNome": "FortiCare Elite", "licenseId": "lic_forti_utp", "stato": "richiede_addon" },
+    { "id": "lf_018", "featureNome": "FortiCare Elite", "licenseId": "lic_forti_ep", "stato": "richiede_addon" }
+  ],
+  "integrazioni": [
+    {
+      "id": "int_catalyst_meraki",
+      "productId": "prod_catalyst_9300",
+      "descrizione": "Gestione cloud tramite Cisco Meraki Dashboard",
+      "tipo": "nativa",
+      "note": "Due modalita': Cloud Monitoring (sola visualizzazione, in dismissione) oppure Cloud Management with IOS XE (configurazione cloud completa, richiede IOS XE 17.15.3+). Switch nativi cloud \"-M\"/MS390 richiedono licenza Meraki (grace period 30 giorni onboarding); switch migrati possono riusare la licenza DNA esistente per la gestione cloud fino al 1 febbraio 2029, senza migrazione di licenza.",
+      "fonteId": "src_meraki_ios_xe"
+    }
+  ],
+  "fonti": [
+    {
+      "id": "src_fortiguard_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortiguard.pdf",
+      "titolo": "Ordering Guide - FortiGate Subscriptions and FortiGuard Bundles",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-30",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_forticare_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-forticare.pdf",
+      "titolo": "Ordering Guide - FortiCare Services",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-30",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_ios_xe",
+      "url": "https://documentation.meraki.com/Switching/Cloud_Management_with_IOS_XE/Product_Information/Overviews_and_Datasheets/Cloud_Management_with_IOS_XE_Overview",
+      "titolo": "Cloud Management with IOS XE Overview",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale Meraki",
+      "dataConsultazione": "2026-07-30",
+      "stato": "controllo frequente (area in evoluzione rapida)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_meraki_faq",
+      "url": "https://documentation.meraki.com/Switching/Cloud_Management_with_IOS_XE/Product_Information/Overviews_and_Datasheets/Cloud_Managed_Catalyst_Switches_FAQs",
+      "titolo": "Cloud Managed Catalyst Switches FAQs",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale Meraki",
+      "dataConsultazione": "2026-07-30",
+      "stato": "controllo frequente (area in evoluzione rapida)",
+      "categoriaControllo": "release"
+    }
+  ],
+  "changelog": []
+}
