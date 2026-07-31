@@ -1,258 +1,1007 @@
-// Controllo giornaliero delle fonti ufficiali del catalogo Kaplet + aggiornamento
-// automatico assistito da AI (Claude), eseguito da .github/workflows/daily-source-check.yml.
-//
-// Per ogni fonte in data/catalog.json:
-//  1. verifica che l'URL sia raggiungibile (HTTP GET) e calcola un hash del contenuto
-//  2. se il contenuto e' cambiato rispetto all'ultima esecuzione:
-//     a. scarica il testo della pagina (solo HTML; i PDF non vengono letti dall'AI
-//        in questa versione e restano segnalati per revisione manuale)
-//     b. individua le voci del catalogo (famiglie/prodotti/licenze/integrazioni)
-//        collegate a quella fonte
-//     c. chiede a Claude di confrontare il testo nuovo con la voce attuale e
-//        restituire un JSON con le eventuali modifiche e un livello di confidenza
-//     d. SOLO se la confidenza e' "alta", applica la modifica direttamente al
-//        catalogo e la registra nello storico modifiche con la citazione della fonte
-//     e. se la confidenza e' "media"/"bassa" o incerta, NON scrive nulla: lascia
-//        solo il flag "cambiataDaUltimoControllo" per revisione umana, come prima
-//
-// Nota di rischio (accettata esplicitamente da Kaplet): questo meccanismo scrive nel
-// catalogo SENZA approvazione umana quando il modello si dichiara certo. E' un
-// compromesso deliberato tra velocita' e sicurezza: in caso di dubbio sul risultato,
-// consultare comunque la fonte originale citata in ogni voce.
-//
-// Richiede il secret ANTHROPIC_API_KEY configurato in GitHub (Settings > Secrets and
-// variables > Actions). Se il secret non e' presente, lo script si comporta come la
-// versione base: solo controllo di raggiungibilita'/variazione, nessuna scrittura AI.
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kaplet Technology Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root, html[data-theme="dark"] {
+  --bg: #0E1512; --panel: #16211C; --panel-2: #1B2820; --border: #253830; --border-strong: #33493F;
+  --text: #EAF3EE; --text-dim: #8FA79B; --text-faint: #5E7267; --accent: #3DD696; --accent-ink: #06140E;
+  --accent-dim: #1E4A38; --accent-tint: rgba(61,214,150,0.10); --shadow: 0 8px 28px rgba(0,0,0,0.35);
+}
+html[data-theme="light"] {
+  --bg: #FBFCFB; --panel: #FFFFFF; --panel-2: #F2F6F4; --border: #E1E8E4; --border-strong: #C7D2CC;
+  --text: #10201A; --text-dim: #52655C; --text-faint: #86988F; --accent: #1FAE72; --accent-ink: #FFFFFF;
+  --accent-dim: #C7EFDB; --accent-tint: rgba(31,174,114,0.10); --shadow: 0 8px 28px rgba(16,32,26,0.08);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); }
+.mono { font-family: 'IBM Plex Mono', 'Courier New', monospace; }
+a { color: var(--accent); }
+header.top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 20px; padding: 14px 24px;
+  background: var(--bg); border-bottom: 1px solid var(--border); }
+.logo { display: flex; align-items: center; gap: 9px; cursor: pointer; }
+.logo-img { height: 20px; width: auto; display: block; }
+.logo-sub { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 1.5px; color: var(--text-faint); text-transform: uppercase; margin-left: 2px; }
+.theme-toggle { background: transparent; border: 1px solid var(--border-strong); color: var(--text-dim); width: 34px; height: 34px;
+  border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 15px; margin-left: 8px; }
+.theme-toggle:hover { color: var(--text); border-color: var(--accent); }
+.search-box { flex: 1; max-width: 480px; }
+.search-box input { width: 100%; background: var(--panel); border: 1px solid var(--border); color: var(--text); padding: 9px 14px; border-radius: 4px; font-size: 13px; outline: none; }
+.search-box input:focus { border-color: var(--accent); }
+nav.top-nav { display: flex; gap: 4px; margin-left: auto; }
+nav.top-nav button { background: transparent; border: 1px solid transparent; color: var(--text-dim); padding: 8px 14px; font-size: 12px;
+  letter-spacing: 0.5px; text-transform: uppercase; font-family: 'Inter', sans-serif; cursor: pointer; border-radius: 4px; }
+nav.top-nav button:hover { color: var(--text); border-color: var(--border); }
+nav.top-nav button.active { color: var(--accent); border-color: var(--accent-dim); background: var(--accent-tint); }
+.body-layout { display: flex; max-width: 1320px; margin: 0 auto; }
+.sidebar { width: 220px; flex-shrink: 0; padding: 24px 16px; border-right: 1px solid var(--border); min-height: calc(100vh - 60px); }
+.sidebar-title { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--text-faint); text-transform: uppercase; margin-bottom: 12px; }
+.sidebar-item { display: flex; justify-content: space-between; padding: 9px 10px; border-radius: 4px; cursor: pointer; font-size: 13px;
+  color: var(--text-dim); margin-bottom: 2px; border-left: 2px solid transparent; }
+.sidebar-item:hover { background: var(--panel); color: var(--text); }
+.sidebar-item.active { background: var(--panel-2); color: var(--accent); border-left-color: var(--accent); }
+.sidebar-count { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-faint); }
+main.content { flex: 1; padding: 28px 32px; min-width: 0; }
+.breadcrumb { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-faint); margin-bottom: 18px; }
+.breadcrumb span.seg { color: var(--text-dim); cursor: pointer; }
+.breadcrumb span.seg:hover { color: var(--accent); }
+.breadcrumb span.sep { color: var(--border-strong); margin: 0 6px; }
+h1.h1 { font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; margin: 0 0 6px; }
+h2.h2 { font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.desc { color: var(--text-dim); font-size: 14px; line-height: 1.6; max-width: 720px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-top: 16px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px; cursor: pointer; transition: border-color 0.15s; }
+.card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.card-title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.card-meta { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-faint); margin-bottom: 8px; }
+.card-desc { font-size: 12.5px; color: var(--text-dim); line-height: 1.5; }
+.led { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.led-verificare { border: 1px dashed #8D8AC9; width: 6px; height: 6px; background: transparent !important; }
+.badge { display: inline-flex; align-items: center; font-family: 'Inter', sans-serif; font-size: 10.5px; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.3px; text-transform: uppercase; }
+.field-row { display: grid; grid-template-columns: 200px 1fr; gap: 4px 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.field-label { color: var(--text-faint); font-family: 'Inter', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+.source-tag { display: inline-flex; align-items: center; gap: 6px; font-family: 'Inter', sans-serif; font-size: 11px; color: var(--accent);
+  border: 1px solid var(--accent-dim); padding: 4px 9px; border-radius: 3px; margin-top: 6px; text-decoration: none; }
+.source-tag:hover { background: var(--accent-tint); }
+table.tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 12px; }
+table.tbl th { text-align: left; font-family: 'Inter', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-faint); padding: 8px 10px; border-bottom: 1px solid var(--border-strong); }
+table.tbl td { padding: 9px 10px; border-bottom: 1px solid var(--border); }
+table.tbl tr[data-nav]:hover td { background: var(--panel-2); cursor: pointer; }
+input.inp, select.inp, textarea.inp { width: 100%; background: var(--panel-2); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 10px; border-radius: 4px; font-size: 13px; outline: none; font-family: inherit; }
+input.inp:focus, select.inp:focus, textarea.inp:focus { border-color: var(--accent); }
+label.lbl { font-family: 'Inter', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-faint); margin-bottom: 4px; display: block; }
+.form-row { margin-bottom: 12px; }
+.btn { background: var(--accent); color: var(--accent-ink); border: none; padding: 9px 18px; border-radius: 4px; font-size: 12.5px; font-weight: 600;
+  cursor: pointer; font-family: 'Inter', sans-serif; letter-spacing: 0.3px; }
+.btn:hover { filter: brightness(1.08); }
+.btn-ghost { background: transparent; color: var(--text-dim); border: 1px solid var(--border-strong); padding: 8px 16px; border-radius: 4px;
+  font-size: 12.5px; cursor: pointer; font-family: 'Inter', sans-serif; }
+.btn-ghost:hover { color: var(--text); border-color: var(--accent-dim); }
+.btn-danger { background: transparent; color: #E5484D; border: 1px solid #5A2A2C; padding: 5px 10px; border-radius: 4px; font-size: 11px;
+  cursor: pointer; font-family: 'Inter', sans-serif; }
+.btn-danger:hover { background: rgba(229,72,77,0.08); }
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 18px; flex-wrap: wrap; }
+.tab { padding: 9px 16px; font-size: 12.5px; font-family: 'Inter', sans-serif; color: var(--text-faint); cursor: pointer; border-bottom: 2px solid transparent; }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.empty { color: var(--text-faint); font-size: 13px; padding: 24px; text-align: center; border: 1px dashed var(--border-strong); border-radius: 10px; }
+.hint { font-size: 11px; color: var(--text-faint); margin-top: 4px; }
+.assistant-panel { position: fixed; right: 0; top: 0; bottom: 0; width: 400px; max-width: 92vw; background: var(--panel);
+  border-left: 1px solid var(--border-strong); z-index: 50; display: none; flex-direction: column; box-shadow: -12px 0 32px rgba(0,0,0,0.4); }
+.assistant-panel.open { display: flex; }
+.assistant-header { padding: 16px 18px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.assistant-msgs { flex: 1; overflow-y: auto; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.msg-user { align-self: flex-end; background: var(--accent-dim); color: var(--text); padding: 9px 13px; border-radius: 8px 8px 2px 8px; font-size: 13px; max-width: 85%; }
+.msg-bot { align-self: flex-start; background: var(--panel-2); border: 1px solid var(--border); color: var(--text); padding: 10px 13px;
+  border-radius: 8px 8px 8px 2px; font-size: 13px; max-width: 92%; white-space: pre-wrap; line-height: 1.55; }
+.assistant-input { padding: 14px 16px; border-top: 1px solid var(--border); display: flex; gap: 8px; }
+.assistant-input textarea { flex: 1; resize: none; }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--panel-2); border: 1px solid var(--accent-dim);
+  color: var(--text); padding: 10px 20px; border-radius: 10px; font-size: 12.5px; z-index: 100; font-family: 'Inter', sans-serif; display: none; }
+.fab { position: fixed; bottom: 24px; right: 24px; width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+  border: none; font-size: 20px; cursor: pointer; z-index: 40; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.grid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+.gh-status { display: inline-flex; align-items: center; gap: 6px; font-family: 'Inter', sans-serif; font-size: 11px; padding: 4px 10px; border-radius: 3px; }
+.gh-status.ok { color: #4CC38A; border: 1px solid #2c5c40; background: rgba(76,195,138,0.08); }
+.gh-status.off { color: var(--text-faint); border: 1px solid var(--border-strong); }
+</style>
+</head>
+<body>
 
-import { readFile, writeFile } from "node:fs/promises";
-import { createHash } from "node:crypto";
+<header class="top">
+  <div class="logo" data-nav="#/"><img src="data:image/png;base64,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" alt="Kaplet" class="logo-img" /><div class="logo-sub">Technology Portfolio</div></div>
+  <div class="search-box"><input id="search-input" placeholder="Cerca vendor, famiglia, prodotto, licenza..." /></div>
+  <nav class="top-nav" id="top-nav">
+    <button data-nav="#/">Home</button>
+    <button data-nav="#/matrix">Matrici</button>
+    <button data-nav="#/settings">Impostazioni</button>
+    <button data-nav="#/admin/vendor">Admin</button>
+  </nav>
+  <button class="theme-toggle" id="theme-toggle" title="Cambia tema chiaro/scuro">&#9788;</button>
+</header>
 
-const CATALOG_PATH = new URL("../data/catalog.json", import.meta.url);
-const STATUS_PATH = new URL("../data/source-status.json", import.meta.url);
+<div class="body-layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="content" id="content"></main>
+</div>
 
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || "";
-const AI_MODEL = "claude-sonnet-4-6";
-const MAX_PAGE_CHARS = 8000;
+<button class="fab" id="fab-assistant" title="Apri assistente">&#9993;</button>
 
-const INTERVALLI_GIORNI = {
-  licensing: 14,
-  release: 7,
-  eol: 14,
-  datasheet: 45,
-  descrizione: 90,
+<div class="assistant-panel" id="assistant-panel">
+  <div class="assistant-header">
+    <div>
+      <div style="font-weight:600;font-size:13px;">Assistente catalogo</div>
+      <div class="hint">Risponde solo con dati verificati nel catalogo</div>
+    </div>
+    <button class="btn-ghost" id="close-assistant">Chiudi</button>
+  </div>
+  <div class="assistant-msgs" id="assistant-msgs"></div>
+  <div class="assistant-input">
+    <textarea class="inp" id="assistant-input" rows="2" placeholder="Es: Che supporto ha FortiGate?"></textarea>
+    <button class="btn" id="send-assistant">Invia</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   KAPLET TECHNOLOGY PORTFOLIO — pagina HTML autonoma
+   Persistenza: GitHub (repo configurato in Impostazioni) con fallback
+   locale (localStorage) quando nessun repo e' collegato.
+   Monitoraggio fonti: legge data/source-status.json, aggiornato ogni
+   giorno da GitHub Actions (vedi .github/workflows/daily-source-check.yml).
+   ============================================================ */
+
+const LS_CATALOG = "kaplet_catalog_cache_v1";
+const LS_GH = "kaplet_gh_config_v1";
+const LS_APIKEY = "kaplet_anthropic_key_v1";
+
+function uid(p){ return p + "_" + Math.random().toString(36).slice(2,9); }
+
+/* ---- fallback dataset (usato se data/catalog.json non e' raggiungibile, es. file:// locale) ---- */
+const EMBEDDED_CATALOG_URL = "data/catalog.json";
+const EMBEDDED_STATUS_URL = "data/source-status.json";
+
+const STATO_META = {
+  attivo: { label: "Attivo", color: "#4CC38A" },
+  nuovo: { label: "Nuovo", color: "#3DD696" },
+  legacy: { label: "Legacy", color: "#E8A33D" },
+  end_of_sale: { label: "End-of-Sale", color: "#E8A33D" },
+  end_of_life: { label: "End-of-Life", color: "#E5484D" },
+  end_of_support: { label: "End-of-Support", color: "#E5484D" },
+  sostituito: { label: "Sostituito", color: "#E5484D" },
+  da_verificare: { label: "Da verificare", color: "#8D8AC9" },
+};
+const FEATURE_STATO_META = {
+  incluso: { label: "Incluso", color: "#4CC38A" },
+  non_incluso: { label: "Non incluso", color: "#5A6672" },
+  opzionale: { label: "Opzionale", color: "#3DD696" },
+  richiede_addon: { label: "Richiede add-on", color: "#E8A33D" },
+  richiede_subscription: { label: "Richiede subscription", color: "#E8A33D" },
+  dipende_versione: { label: "Dipende versione", color: "#8D8AC9" },
+  limitato: { label: "Limitato", color: "#E8A33D" },
+  da_verificare: { label: "Da verificare", color: "#8D8AC9" },
 };
 
-// Campi testuali aggiornabili automaticamente per ciascun tipo di entita'.
-// Elenco volutamente limitato ai campi descrittivi/di licensing, MAI a id/relazioni.
-const CAMPI_AGGIORNABILI = {
-  famiglie: ["descrizione", "stato"],
-  prodotti: ["descrizioneBreve", "modello", "deployment", "statoLifecycle"],
-  licenze: ["metrica", "durata", "rinnovo", "gracePeriod", "conseguenzeScadenza", "tipologia"],
-  integrazioni: ["descrizione", "note", "tipo"],
+let state = {
+  catalog: null,
+  sourceStatus: null,
+  ghConfig: JSON.parse(localStorage.getItem(LS_GH) || "null") || { owner: "", repo: "", branch: "main", token: "" },
+  ghSha: null, // sha del file catalog.json su GitHub, necessario per aggiornarlo
+  apiKey: localStorage.getItem(LS_APIKEY) || "",
+  query: "",
+  assistantMsgs: [
+    { role: "bot", text: "Ciao, sono l'assistente del catalogo Kaplet. Chiedimi ad esempio: \"Che supporto ha FortiGate?\" oppure \"Il Catalyst 9300 si gestisce da Meraki?\". Rispondo solo con i dati verificati presenti nel catalogo." }
+  ],
 };
 
-function hashOf(buf) {
-  return createHash("sha256").update(buf).digest("hex");
-}
+/* ---------------- caricamento iniziale ---------------- */
 
-function stripHtml(html) {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+async function loadInitialData() {
+  // 1) se e' configurato un repo GitHub, prova a leggere la versione piu' aggiornata da li'
+  if (state.ghConfig.owner && state.ghConfig.repo) {
+    try {
+      const file = await ghGetFile("data/catalog.json");
+      if (file) { state.catalog = file.json; state.ghSha = file.sha; }
+    } catch (e) { /* fallback sotto */ }
+  }
+  // 2) altrimenti prova il file statico servito insieme alla pagina (funziona su GitHub Pages / server http)
+  if (!state.catalog) {
+    try {
+      const res = await fetch(EMBEDDED_CATALOG_URL, { cache: "no-store" });
+      if (res.ok) state.catalog = await res.json();
+    } catch (e) { /* fallback sotto */ }
+  }
+  // 3) altrimenti usa la cache locale del browser
+  if (!state.catalog) {
+    const cached = localStorage.getItem(LS_CATALOG);
+    if (cached) state.catalog = JSON.parse(cached);
+  }
+  if (!state.catalog) {
+    showToast("Impossibile caricare data/catalog.json: apri la pagina da un server http (es. GitHub Pages) oppure configura un repository in Impostazioni.");
+    state.catalog = { macroaree: [], areeFunzionali: [], vendors: [], brandLines: [], famiglie: [], prodotti: [], licenze: [], licenseFeatures: [], integrazioni: [], fonti: [], changelog: [] };
+  }
+  localStorage.setItem(LS_CATALOG, JSON.stringify(state.catalog));
 
-async function checkOne(source) {
-  const result = {
-    id: source.id,
-    url: source.url,
-    ultimoControllo: new Date().toISOString(),
-    httpStatus: null,
-    raggiungibile: false,
-    hash: null,
-    cambiataDaUltimoControllo: false,
-    errore: null,
-    aggiornamentoAutomatico: null,
-  };
   try {
-    const res = await fetch(source.url, {
-      redirect: "follow",
-      headers: { "User-Agent": "Kaplet-Technology-Portfolio-Bot/1.0 (+source monitoring)" },
-    });
-    result.httpStatus = res.status;
-    result.raggiungibile = res.ok;
-    if (res.ok) {
-      const buf = Buffer.from(await res.arrayBuffer());
-      result.hash = hashOf(buf);
-      const contentType = res.headers.get("content-type") || "";
-      result._isHtml = contentType.includes("html");
-      result._rawBuffer = buf;
-    }
-  } catch (e) {
-    result.errore = String(e && e.message ? e.message : e);
-  }
-  return result;
+    const res = await fetch(EMBEDDED_STATUS_URL, { cache: "no-store" });
+    if (res.ok) state.sourceStatus = await res.json();
+  } catch (e) {}
+  if (!state.sourceStatus) state.sourceStatus = { ultimaEsecuzione: null, risultati: {} };
 }
 
-function trovaEntitaCollegate(catalog, sourceId) {
-  const collegate = [];
-  for (const tipo of Object.keys(CAMPI_AGGIORNABILI)) {
-    for (const item of catalog[tipo] || []) {
-      if (item.fonteId === sourceId) collegate.push({ tipo, item });
-    }
-  }
-  return collegate;
-}
+/* ---------------- GitHub Contents API ---------------- */
 
-async function chiediModificaAI(entita, testoNuovo) {
-  const campiValidi = CAMPI_AGGIORNABILI[entita.tipo] || [];
-  const sistema =
-    "Sei un motore di aggiornamento dati per un catalogo tecnico-commerciale. Ricevi (1) una voce esistente in formato JSON e (2) il nuovo testo scaricato dalla fonte ufficiale collegata a quella voce. " +
-    "Confronta i due contenuti e determina se qualche campo tra questi e' cambiato realmente nel merito: " + campiValidi.join(", ") + ". " +
-    "Rispondi ESCLUSIVAMENTE con un oggetto JSON valido, senza testo aggiuntivo, con questa struttura: " +
-    '{"confidenza": "alta|media|bassa", "modifiche": [{"campo": "...", "valoreNuovo": "...", "citazione": "frase esatta della fonte che giustifica il cambiamento"}], "note": "breve motivazione"}. ' +
-    "Usa \"alta\" SOLO se il testo della fonte afferma esplicitamente e senza ambiguita' il nuovo valore. Se il testo e' ambiguo, parziale, o riguarda una variante regionale/di versione non generalizzabile, usa \"media\" o \"bassa\" e lascia la lista modifiche vuota. Non inventare mai un valore non presente nel testo.";
+function b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64decode(b64) { return decodeURIComponent(escape(atob(b64))); }
 
-  const utente =
-    "Voce attuale del catalogo:\n" + JSON.stringify({ tipo: entita.tipo, ...entita.item }, null, 2) +
-    "\n\nNuovo testo della fonte ufficiale (troncato):\n" + testoNuovo.slice(0, MAX_PAGE_CHARS);
-
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: AI_MODEL,
-      max_tokens: 800,
-      system: sistema,
-      messages: [{ role: "user", content: utente }],
-    }),
-  });
-  if (!res.ok) throw new Error("Anthropic API " + res.status);
+async function ghGetFile(path) {
+  const { owner, repo, branch, token } = state.ghConfig;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${encodeURIComponent(branch || "main")}`;
+  const headers = { Accept: "application/vnd.github+json" };
+  if (token) headers.Authorization = `token ${token}`;
+  const res = await fetch(url, { headers });
+  if (!res.ok) throw new Error("GitHub GET " + path + " -> " + res.status);
   const data = await res.json();
-  const testo = (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
-  const jsonMatch = testo.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) return { confidenza: "bassa", modifiche: [], note: "risposta AI non interpretabile" };
-  try {
-    return JSON.parse(jsonMatch[0]);
-  } catch {
-    return { confidenza: "bassa", modifiche: [], note: "JSON AI non valido" };
-  }
+  return { json: JSON.parse(b64decode(data.content.replace(/\n/g, ""))), sha: data.sha };
 }
 
-function applicaModifiche(catalog, entita, modifiche, citazioniAccumulate) {
-  const campiValidi = new Set(CAMPI_AGGIORNABILI[entita.tipo] || []);
-  const lista = catalog[entita.tipo];
-  const idx = lista.findIndex((x) => x.id === entita.item.id);
-  if (idx === -1) return false;
-  let applicata = false;
-  for (const m of modifiche) {
-    if (!campiValidi.has(m.campo)) continue;
-    if (m.valoreNuovo == null || m.valoreNuovo === lista[idx][m.campo]) continue;
-    lista[idx][m.campo] = m.valoreNuovo;
-    citazioniAccumulate.push(`${entita.tipo}/${entita.item.id}.${m.campo}: "${m.citazione || ""}"`);
-    applicata = true;
-  }
-  if (applicata) lista[idx].dataUltimaVerificaAutomatica = new Date().toISOString().slice(0, 10);
-  return applicata;
-}
-
-async function main() {
-  const catalog = JSON.parse(await readFile(CATALOG_PATH, "utf-8"));
-  let status = { ultimaEsecuzione: null, risultati: {} };
-  try {
-    status = JSON.parse(await readFile(STATUS_PATH, "utf-8"));
-  } catch (e) {
-    // primo avvio, nessun file precedente
-  }
-
-  const nuoviRisultati = { ...status.risultati };
-  let catalogoModificato = false;
-  catalog.changelog = catalog.changelog || [];
-
-  for (const source of catalog.fonti || []) {
-    const prev = status.risultati[source.id];
-    const esito = await checkOne(source);
-    const cambiata = !!(prev && prev.hash && esito.hash && prev.hash !== esito.hash);
-    esito.cambiataDaUltimoControllo = cambiata;
-
-    if (cambiata && esito._isHtml && ANTHROPIC_API_KEY) {
-      const entitaCollegate = trovaEntitaCollegate(catalog, source.id);
-      if (entitaCollegate.length) {
-        const testoNuovo = stripHtml(esito._rawBuffer.toString("utf-8"));
-        const citazioni = [];
-        let almenoUnaApplicata = false;
-        for (const entita of entitaCollegate) {
-          try {
-            const risposta = await chiediModificaAI(entita, testoNuovo);
-            if (risposta.confidenza === "alta" && (risposta.modifiche || []).length) {
-              const applicata = applicaModifiche(catalog, entita, risposta.modifiche, citazioni);
-              if (applicata) almenoUnaApplicata = true;
-            }
-          } catch (e) {
-            console.log("Errore chiamata AI per", entita.tipo, entita.item.id, ":", e.message);
-          }
-        }
-        if (almenoUnaApplicata) {
-          catalogoModificato = true;
-          source.dataConsultazione = new Date().toISOString().slice(0, 10);
-          catalog.changelog.push({
-            id: "chg_ai_" + Date.now() + "_" + source.id,
-            entita: "AggiornamentoAutomatico",
-            azione: "modifica applicata da AI senza revisione umana",
-            nome: source.titolo,
-            citazioni,
-            timestamp: new Date().toISOString(),
-          });
-          esito.aggiornamentoAutomatico = { esito: "applicato", citazioni };
-          esito.cambiataDaUltimoControllo = false;
-        } else {
-          esito.aggiornamentoAutomatico = { esito: "confidenza insufficiente, richiede revisione manuale" };
-        }
-      }
-    } else if (cambiata && !esito._isHtml) {
-      esito.aggiornamentoAutomatico = { esito: "fonte non HTML (es. PDF): richiede sempre revisione manuale" };
-    } else if (cambiata && !ANTHROPIC_API_KEY) {
-      esito.aggiornamentoAutomatico = { esito: "ANTHROPIC_API_KEY non configurata: solo segnalazione" };
-    }
-
-    delete esito._isHtml;
-    delete esito._rawBuffer;
-
-    const categoria = source.categoriaControllo || "descrizione";
-    esito.categoriaControllo = categoria;
-    esito.intervalloGiorniConsigliato = INTERVALLI_GIORNI[categoria] || 60;
-    nuoviRisultati[source.id] = esito;
-    await new Promise((r) => setTimeout(r, 800));
-  }
-
-  const output = {
-    ultimaEsecuzione: new Date().toISOString(),
-    risultati: nuoviRisultati,
+async function ghPutFile(path, obj, sha, message) {
+  const { owner, repo, branch, token } = state.ghConfig;
+  if (!token) throw new Error("Nessun token GitHub configurato: le modifiche restano solo locali.");
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+  const body = {
+    message: message || "chore: aggiornamento catalogo da Kaplet Technology Portfolio",
+    content: b64encode(JSON.stringify(obj, null, 2)),
+    branch: branch || "main",
   };
-
-  await writeFile(STATUS_PATH, JSON.stringify(output, null, 2) + "\n", "utf-8");
-  if (catalogoModificato) {
-    await writeFile(CATALOG_PATH, JSON.stringify(catalog, null, 2) + "\n", "utf-8");
-  }
-
-  const cambiate = Object.values(nuoviRisultati).filter((r) => r.cambiataDaUltimoControllo);
-  const irraggiungibili = Object.values(nuoviRisultati).filter((r) => !r.raggiungibile);
-  const applicate = Object.values(nuoviRisultati).filter((r) => r.aggiornamentoAutomatico && r.aggiornamentoAutomatico.esito === "applicato");
-  console.log(`Controllate ${catalog.fonti.length} fonti.`);
-  console.log(`Cambiate dall'ultimo controllo: ${cambiate.length}`);
-  console.log(`Aggiornate automaticamente da AI: ${applicate.length}`);
-  console.log(`Non raggiungibili: ${irraggiungibili.length}`);
-  if (cambiate.length) console.log("Fonti ancora da rivedere manualmente:", cambiate.map((c) => c.url).join(", "));
-  if (irraggiungibili.length) console.log("Fonti non raggiungibili:", irraggiungibili.map((c) => c.url).join(", "));
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: "PUT",
+    headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) { const t = await res.text(); throw new Error("GitHub PUT fallita: " + res.status + " " + t); }
+  const data = await res.json();
+  return data.content.sha;
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
+async function persistCatalog(nextCatalog, changeLabel) {
+  state.catalog = nextCatalog;
+  localStorage.setItem(LS_CATALOG, JSON.stringify(state.catalog));
+  if (state.ghConfig.owner && state.ghConfig.repo && state.ghConfig.token) {
+    try {
+      const newSha = await ghPutFile("data/catalog.json", nextCatalog, state.ghSha, "chore: " + (changeLabel || "modifica catalogo"));
+      state.ghSha = newSha;
+      showToast("Salvato su GitHub (" + state.ghConfig.owner + "/" + state.ghConfig.repo + ").");
+    } catch (e) {
+      showToast("Salvato solo in locale — errore GitHub: " + e.message);
+    }
+  } else {
+    showToast("Salvato solo in locale (nessun repository GitHub collegato). Vai in Impostazioni per condividerlo.");
+  }
+  render();
+}
+
+function logChange(cat, entita, azione, nome) {
+  cat.changelog = cat.changelog || [];
+  cat.changelog.push({ id: uid("chg"), entita, azione, nome, timestamp: new Date().toISOString() });
+  return cat;
+}
+
+/* ---------------- toast ---------------- */
+let toastTimer = null;
+function showToast(msg) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.style.display = "block";
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.style.display = "none"; }, 3200);
+}
+
+/* ---------------- lookups ---------------- */
+function byIdMap(arr) { const m = {}; (arr || []).forEach((x) => (m[x.id] = x)); return m; }
+function lookups() {
+  const c = state.catalog;
+  return {
+    macroaree: byIdMap(c.macroaree), areeFunzionali: byIdMap(c.areeFunzionali), vendors: byIdMap(c.vendors),
+    brandLines: byIdMap(c.brandLines), famiglie: byIdMap(c.famiglie), prodotti: byIdMap(c.prodotti),
+    licenze: byIdMap(c.licenze), fonti: byIdMap(c.fonti),
+  };
+}
+
+/* ---------------- small render helpers ---------------- */
+function esc(s){ return (s==null?"":String(s)).replace(/[&<>"']/g, (c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function led(status){ const m = STATO_META[status] || STATO_META.da_verificare; if(status==="da_verificare") return `<span class="led led-verificare" title="${m.label}"></span>`; return `<span class="led" style="background:${m.color}" title="${m.label}"></span>`; }
+function badge(status){ const m = STATO_META[status] || STATO_META.da_verificare; return `<span class="badge" style="color:${m.color};border:1px solid ${m.color}55;background:${m.color}14">${led(status)}${m.label}</span>`; }
+function featureBadge(stato, nota){ const m = FEATURE_STATO_META[stato] || FEATURE_STATO_META.da_verificare; return `<span class="badge" title="${esc(nota||"")}" style="color:${m.color};border:1px solid ${m.color}55;background:${m.color}14">${m.label}</span>`; }
+function sourceTag(fonte){ if(!fonte) return `<span class="hint">DA VERIFICARE CON IL VENDOR</span>`; return `<a class="source-tag" href="${esc(fonte.url)}" target="_blank" rel="noopener noreferrer">&#8599; ${esc(fonte.titolo)} &middot; verificato ${esc(fonte.dataConsultazione)}</a>`; }
+function breadcrumb(items){ return `<div class="breadcrumb">${items.map((it,i)=> (i>0?'<span class="sep">/</span>':'') + `<span class="seg" data-nav="${it.hash||''}">${esc(it.label||'')}</span>`).join("")}</div>`; }
+
+/* ---------------- router ---------------- */
+function parseHash() {
+  const h = (location.hash || "#/").replace(/^#\//, "");
+  const parts = h.split("/").filter(Boolean);
+  return { page: parts[0] || "home", p1: parts[1], p2: parts[2] };
+}
+
+function nav(hash){ location.hash = hash; }
+
+window.addEventListener("hashchange", render);
+
+/* ---------------- main render ---------------- */
+
+function render() {
+  const { page, p1, p2 } = parseHash();
+  document.querySelectorAll("#top-nav button").forEach((b) => b.classList.remove("active"));
+  const activeBtn = document.querySelector(`#top-nav button[data-nav="#/${page==="home"?"":page}"]`);
+  renderSidebar(page, p1);
+  const content = document.getElementById("content");
+
+  const L = lookups();
+  const c = state.catalog;
+
+  if (page === "home") content.innerHTML = viewHome(c);
+  else if (page === "macroarea") content.innerHTML = viewMacroarea(L.macroaree[p1], c, L);
+  else if (page === "vendor") content.innerHTML = viewVendor(L.vendors[p1], c, L);
+  else if (page === "family") content.innerHTML = viewFamily(L.famiglie[p1], c, L);
+  else if (page === "product") content.innerHTML = viewProduct(L.prodotti[p1], c, L);
+  else if (page === "license") content.innerHTML = viewLicense(L.licenze[p1], c, L);
+  else if (page === "matrix") content.innerHTML = viewMatrix(c, L, p1);
+  else if (page === "search") content.innerHTML = viewSearch(state.query, c, L);
+  else if (page === "settings") content.innerHTML = viewSettings();
+  else if (page === "admin") content.innerHTML = viewAdmin(p1 || "vendor", c);
+  else content.innerHTML = `<div class="empty">Pagina non trovata.</div>`;
+
+  bindNavClicks();
+  if (page === "admin") bindAdminHandlers(p1 || "vendor");
+  if (page === "settings") bindSettingsHandlers();
+  if (page === "matrix") bindMatrixHandlers();
+}
+
+function bindNavClicks() {
+  document.querySelectorAll("[data-nav]").forEach((el) => {
+    el.onclick = (e) => { e.preventDefault(); nav(el.getAttribute("data-nav")); };
+  });
+}
+
+/* ---------------- sidebar ---------------- */
+function renderSidebar(page, p1) {
+  const c = state.catalog;
+  const sb = document.getElementById("sidebar");
+  const famCount = (maId) => c.famiglie.filter((f) => f.macroareaId === maId).length;
+  const famCountVendor = (vId) => c.famiglie.filter((f) => f.vendorId === vId).length;
+  sb.innerHTML = `
+    <div class="sidebar-title">Macroaree</div>
+    ${c.macroaree.map((ma) => `<div class="sidebar-item ${page==="macroarea"&&p1===ma.id?"active":""}" data-nav="#/macroarea/${ma.id}"><span>${esc(ma.nome)}</span><span class="sidebar-count">${famCount(ma.id)}</span></div>`).join("")}
+    <div class="sidebar-title" style="margin-top:24px;">Vendor</div>
+    ${c.vendors.map((v) => `<div class="sidebar-item ${page==="vendor"&&p1===v.id?"active":""}" data-nav="#/vendor/${v.id}"><span>${esc(v.nome)}</span><span class="sidebar-count">${famCountVendor(v.id)}</span></div>`).join("")}
+  `;
+  bindNavClicks();
+}
+
+/* ---------------- pages ---------------- */
+
+function viewHome(c) {
+  const flagged = c.fonti.filter((f) => (f.stato || "").includes("controllo frequente"));
+  return `
+    <h1 class="h1">Catalogo tecnico-commerciale Kaplet</h1>
+    <div class="desc">Consulta tecnologie, vendor, famiglie, prodotti, licenze, subscription e supporti venduti da Kaplet.
+    Ogni dato riporta la fonte ufficiale verificata; dove manca, il sistema segnala "DA VERIFICARE CON IL VENDOR".</div>
+    <h2 class="h2">Macroaree</h2>
+    <div class="grid">${c.macroaree.map((ma) => `
+      <div class="card" data-nav="#/macroarea/${ma.id}">
+        <div class="card-title">${esc(ma.nome)}</div>
+        <div class="card-meta">${c.famiglie.filter((f)=>f.macroareaId===ma.id).length} famiglie</div>
+        <div class="card-desc">${esc(ma.descrizione)}</div>
+      </div>`).join("")}</div>
+    <h2 class="h2">Vendor</h2>
+    <div class="grid">${c.vendors.map((v) => `
+      <div class="card" data-nav="#/vendor/${v.id}">
+        <div class="card-title">${esc(v.nome)}</div>
+        <div class="card-meta">${c.famiglie.filter((f)=>f.vendorId===v.id).length} famiglie catalogate</div>
+      </div>`).join("")}</div>
+    ${flagged.length ? `<h2 class="h2">Fonti sotto controllo frequente</h2><div class="panel">${flagged.map((f)=>`<div style="margin-bottom:8px;">${sourceTag(f)} <span class="hint">— ${esc(f.stato)}</span></div>`).join("")}</div>` : ""}
+    <h2 class="h2">Monitoraggio automatico fonti</h2>
+    <div class="panel">${renderMonitorSummary()}</div>
+  `;
+}
+
+function renderMonitorSummary() {
+  const s = state.sourceStatus;
+  if (!s || !s.ultimaEsecuzione) return `<div class="empty">Nessun controllo automatico eseguito ancora. Si attivera' con il primo run di GitHub Actions (vedi Impostazioni).</div>`;
+  const risultati = Object.values(s.risultati || {});
+  const cambiate = risultati.filter((r) => r.cambiataDaUltimoControllo);
+  const irraggiungibili = risultati.filter((r) => !r.raggiungibile);
+  const applicate = risultati.filter((r) => r.aggiornamentoAutomatico && r.aggiornamentoAutomatico.esito === "applicato");
+  return `
+    <div class="hint" style="margin-bottom:10px;">Ultimo controllo automatico: ${new Date(s.ultimaEsecuzione).toLocaleString("it-IT")}</div>
+    <div>${risultati.length} fonti monitorate — <span style="color:${applicate.length?'#3DD696':'var(--text-dim)'}">${applicate.length} aggiornate automaticamente</span>, <span style="color:${cambiate.length?'#E8A33D':'#4CC38A'}">${cambiate.length} da rivedere manualmente</span>, <span style="color:${irraggiungibili.length?'#E5484D':'#4CC38A'}">${irraggiungibili.length} non raggiungibili</span></div>
+    ${applicate.length ? `<div style="margin-top:10px;"><div class="field-label" style="margin-bottom:6px;">Modifiche scritte in automatico dall'AI (senza revisione umana)</div>${applicate.map(r=>`<div class="hint" style="margin-bottom:6px;">&#10003; <a href="${esc(r.url)}" target="_blank">${esc(r.url)}</a><br/>${(r.aggiornamentoAutomatico.citazioni||[]).map(c=>esc(c)).join("<br/>")}</div>`).join("")}</div>` : ""}
+    ${cambiate.length ? `<div style="margin-top:10px;"><div class="field-label" style="margin-bottom:6px;">Da rivedere manualmente</div>${cambiate.map(r=>`<div class="hint">&#9888; <a href="${esc(r.url)}" target="_blank">${esc(r.url)}</a> — ${esc(r.aggiornamentoAutomatico && r.aggiornamentoAutomatico.esito || "cambiata dall'ultimo controllo")}</div>`).join("")}</div>` : ""}
+  `;
+}
+
+function viewMacroarea(ma, c, L) {
+  if (!ma) return `<div class="empty">Macroarea non trovata.</div>`;
+  const famiglie = c.famiglie.filter((f) => f.macroareaId === ma.id);
+  const areeFunz = c.areeFunzionali.filter((af) => af.macroareaId === ma.id);
+  const vendorIds = [...new Set(famiglie.map((f) => f.vendorId))];
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:ma.nome}])}
+    <h1 class="h1">${esc(ma.nome)}</h1>
+    <div class="desc">${esc(ma.descrizione)}</div>
+    <h2 class="h2">Aree funzionali censite</h2>
+    ${areeFunz.length ? `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">${areeFunz.map(af=>`<span class="badge" style="color:var(--text-dim);border:1px solid var(--border-strong);">${esc(af.nome)}</span>`).join("")}</div>` : `<div class="empty">Nessuna area funzionale ancora censita.</div>`}
+    <h2 class="h2">Vendor in questa macroarea</h2>
+    ${vendorIds.length ? `<div class="grid">${vendorIds.map(vid=>`<div class="card" data-nav="#/vendor/${vid}"><div class="card-title">${esc(L.vendors[vid]?.nome||"")}</div><div class="card-meta">${famiglie.filter(f=>f.vendorId===vid).length} famiglie</div></div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata in questa macroarea.</div>`}
+  `;
+}
+
+function viewVendor(vendor, c, L) {
+  if (!vendor) return `<div class="empty">Vendor non trovato.</div>`;
+  const famiglie = c.famiglie.filter((f) => f.vendorId === vendor.id);
+  const brandLines = c.brandLines.filter((bl) => bl.vendorId === vendor.id);
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor.nome}])}
+    <h1 class="h1">${esc(vendor.nome)}</h1>
+    <a class="source-tag" href="${esc(vendor.sito)}" target="_blank" rel="noopener noreferrer">&#8599; Sito ufficiale</a>
+    ${brandLines.length ? `<h2 class="h2">Brand line</h2><div class="panel">${brandLines.map(bl=>`<div style="margin-bottom:10px;"><div style="font-weight:600;font-size:13.5px;">${esc(bl.nome)}</div><div class="desc" style="font-size:12.5px;">${esc(bl.descrizione)}</div></div>`).join("")}</div>` : ""}
+    <h2 class="h2">Famiglie</h2>
+    ${famiglie.length ? `<div class="grid">${famiglie.map(f=>`
+      <div class="card" data-nav="#/family/${f.id}">
+        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
+        <div class="card-meta">${esc(L.macroaree[f.macroareaId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
+        <div class="card-desc">${esc(f.descrizione)}</div>
+      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
+  `;
+}
+
+function viewFamily(fam, c, L) {
+  if (!fam) return `<div class="empty">Famiglia non trovata.</div>`;
+  const prodotti = c.prodotti.filter((p) => p.familyId === fam.id);
+  const licenze = c.licenze.filter((l) => l.familyId === fam.id);
+  const vendor = L.vendors[fam.vendorId];
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor?.nome,hash:"#/vendor/"+vendor?.id},{label:fam.nome}])}
+    <h1 class="h1">${led(fam.stato)}${esc(fam.nome)}</h1>
+    <div class="desc">${esc(fam.descrizione)}</div>
+    <div style="margin-top:10px;">${sourceTag(L.fonti[fam.fonteId])}</div>
+    <h2 class="h2">Prodotti / modelli</h2>
+    ${prodotti.length ? `<div class="grid">${prodotti.map(p=>`
+      <div class="card" data-nav="#/product/${p.id}">
+        <div class="card-title">${led(p.statoLifecycle)}${esc(p.nomeCommerciale)}</div>
+        <div class="card-meta">${esc(p.tipologia)} &middot; ${esc(p.deployment)}</div>
+        <div class="card-desc">${esc(p.descrizioneBreve)}</div>
+      </div>`).join("")}</div>` : `<div class="empty">Nessun prodotto ancora inserito per questa famiglia.</div>`}
+    <h2 class="h2">Licenze / subscription</h2>
+    ${licenze.length ? `<table class="tbl"><thead><tr><th>Nome ufficiale</th><th>Tipologia</th><th>Metrica</th><th>Durata</th><th>Fonte</th></tr></thead><tbody>
+      ${licenze.map(l=>`<tr data-nav="#/license/${l.id}"><td>${esc(l.nomeUfficiale)}</td><td>${esc(l.tipologia)}</td><td>${esc(l.metrica)}</td><td>${esc(l.durata)}</td><td>${sourceTag(L.fonti[l.fonteId])}</td></tr>`).join("")}
+    </tbody></table>` : `<div class="empty">Nessuna licenza ancora inserita per questa famiglia.</div>`}
+  `;
+}
+
+function viewProduct(prod, c, L) {
+  if (!prod) return `<div class="empty">Prodotto non trovato.</div>`;
+  const fam = L.famiglie[prod.familyId];
+  const integrazioni = c.integrazioni.filter((i) => i.productId === prod.id);
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:fam?.nome,hash:"#/family/"+fam?.id},{label:prod.nomeCommerciale}])}
+    <h1 class="h1">${led(prod.statoLifecycle)}${esc(prod.nomeCommerciale)}</h1>
+    <div class="desc">${esc(prod.descrizioneBreve)}</div>
+    <h2 class="h2">Scheda tecnica</h2>
+    <div class="panel">
+      <div class="field-row"><div class="field-label">Modello</div><div>${esc(prod.modello)}</div></div>
+      <div class="field-row"><div class="field-label">Tipologia</div><div>${esc(prod.tipologia)}</div></div>
+      <div class="field-row"><div class="field-label">Deployment</div><div>${esc(prod.deployment)}</div></div>
+      <div class="field-row"><div class="field-label">Stato lifecycle</div><div>${badge(prod.statoLifecycle)}</div></div>
+      <div class="field-row"><div class="field-label">Fonte</div><div>${sourceTag(L.fonti[prod.fonteId])}</div></div>
+    </div>
+    ${integrazioni.length ? `<h2 class="h2">Integrazioni</h2>${integrazioni.map(i=>`
+      <div class="panel">
+        <div style="font-weight:600;margin-bottom:6px;">${esc(i.descrizione)} <span class="hint">(${esc(i.tipo)})</span></div>
+        <div class="desc" style="margin-bottom:8px;">${esc(i.note)}</div>
+        ${sourceTag(L.fonti[i.fonteId])}
+      </div>`).join("")}` : ""}
+  `;
+}
+
+function viewLicense(lic, c, L) {
+  if (!lic) return `<div class="empty">Licenza non trovata.</div>`;
+  const fam = L.famiglie[lic.familyId];
+  const features = c.licenseFeatures.filter((lf) => lf.licenseId === lic.id);
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:fam?.nome,hash:"#/family/"+fam?.id},{label:lic.nomeUfficiale}])}
+    <h1 class="h1">${esc(lic.nomeUfficiale)}</h1>
+    <div class="panel">
+      <div class="field-row"><div class="field-label">Tipologia</div><div>${esc(lic.tipologia)}</div></div>
+      <div class="field-row"><div class="field-label">Metrica</div><div>${esc(lic.metrica)}</div></div>
+      <div class="field-row"><div class="field-label">Durata</div><div>${esc(lic.durata)}</div></div>
+      <div class="field-row"><div class="field-label">Rinnovo</div><div>${esc(lic.rinnovo)}</div></div>
+      <div class="field-row"><div class="field-label">Grace period</div><div>${esc(lic.gracePeriod)}</div></div>
+      <div class="field-row"><div class="field-label">Conseguenze scadenza</div><div>${esc(lic.conseguenzeScadenza)}</div></div>
+      <div class="field-row"><div class="field-label">Fonte</div><div>${sourceTag(L.fonti[lic.fonteId])}</div></div>
+    </div>
+    ${features.length ? `<h2 class="h2">Funzionalita' incluse in questa licenza</h2><table class="tbl"><thead><tr><th>Funzionalita'</th><th>Stato</th></tr></thead><tbody>
+      ${features.map(f=>`<tr><td>${esc(f.featureNome)}</td><td>${featureBadge(f.stato, f.nota)}</td></tr>`).join("")}
+    </tbody></table>` : ""}
+  `;
+}
+
+function viewMatrix(c, L, familyIdParam) {
+  const famiglieConLicenze = c.famiglie.filter((f) => c.licenze.some((l) => l.familyId === f.id));
+  const familyId = familyIdParam || famiglieConLicenze[0]?.id || "";
+  const licenze = c.licenze.filter((l) => l.familyId === familyId);
+  const featureNomi = [...new Set(c.licenseFeatures.filter((lf) => licenze.some((l) => l.id === lf.licenseId)).map((lf) => lf.featureNome))];
+  return `
+    ${breadcrumb([{label:"Home",hash:"#/"},{label:"Matrici licenze"}])}
+    <h1 class="h1">Matrice comparativa licenze</h1>
+    <div class="desc">Confronta le funzionalita' incluse tra le diverse licenze/edizioni di una stessa famiglia.</div>
+    ${famiglieConLicenze.length ? `
+      <div class="form-row" style="max-width:340px;margin-top:16px;">
+        <label class="lbl">Famiglia</label>
+        <select class="inp" id="matrix-family-select">
+          ${famiglieConLicenze.map(f=>`<option value="${f.id}" ${f.id===familyId?"selected":""}>${esc(L.vendors[f.vendorId]?.nome||"")} — ${esc(f.nome)}</option>`).join("")}
+        </select>
+      </div>
+      ${featureNomi.length ? `<table class="tbl"><thead><tr><th>Funzionalita'</th>${licenze.map(l=>`<th>${esc(l.nomeUfficiale.replace("FortiGuard ","").replace(" bundle",""))}</th>`).join("")}</tr></thead><tbody>
+        ${featureNomi.map(fn=>`<tr><td>${esc(fn)}</td>${licenze.map(l=>{const cell=c.licenseFeatures.find(lf=>lf.licenseId===l.id&&lf.featureNome===fn); return `<td>${cell?featureBadge(cell.stato,cell.nota):'<span class="hint">da verificare</span>'}</td>`;}).join("")}</tr>`).join("")}
+      </tbody></table>` : `<div class="empty">Nessuna funzionalita' mappata per questa famiglia.</div>`}
+    ` : `<div class="empty">Nessuna matrice disponibile: aggiungi licenze con funzionalita' dal pannello Admin.</div>`}
+  `;
+}
+function bindMatrixHandlers(){
+  const sel = document.getElementById("matrix-family-select");
+  if (sel) sel.onchange = () => nav("#/matrix/" + sel.value);
+}
+
+function viewSearch(query, c, L) {
+  const q = (query || "").toLowerCase();
+  const match = (s) => (s||"").toLowerCase().includes(q);
+  const res = {
+    vendors: c.vendors.filter(v=>match(v.nome)),
+    famiglie: c.famiglie.filter(f=>match(f.nome)||match(f.descrizione)),
+    prodotti: c.prodotti.filter(p=>match(p.nomeCommerciale)||match(p.descrizioneBreve)),
+    licenze: c.licenze.filter(l=>match(l.nomeUfficiale)),
+  };
+  const total = res.vendors.length+res.famiglie.length+res.prodotti.length+res.licenze.length;
+  return `
+    <h1 class="h1">Risultati per "${esc(query)}"</h1>
+    <div class="desc">${total} risultati</div>
+    ${total===0?`<div class="empty">Nessun risultato. Prova un altro termine o aggiungi il dato mancante dal pannello Admin.</div>`:""}
+    ${res.vendors.length?`<h2 class="h2">Vendor</h2><div class="grid">${res.vendors.map(v=>`<div class="card" data-nav="#/vendor/${v.id}"><div class="card-title">${esc(v.nome)}</div></div>`).join("")}</div>`:""}
+    ${res.famiglie.length?`<h2 class="h2">Famiglie</h2><div class="grid">${res.famiglie.map(f=>`<div class="card" data-nav="#/family/${f.id}"><div class="card-title">${led(f.stato)}${esc(f.nome)}</div><div class="card-meta">${esc(L.vendors[f.vendorId]?.nome||"")}</div></div>`).join("")}</div>`:""}
+    ${res.prodotti.length?`<h2 class="h2">Prodotti</h2><div class="grid">${res.prodotti.map(p=>`<div class="card" data-nav="#/product/${p.id}"><div class="card-title">${led(p.statoLifecycle)}${esc(p.nomeCommerciale)}</div></div>`).join("")}</div>`:""}
+    ${res.licenze.length?`<h2 class="h2">Licenze</h2><div class="grid">${res.licenze.map(l=>`<div class="card" data-nav="#/license/${l.id}"><div class="card-title">${esc(l.nomeUfficiale)}</div></div>`).join("")}</div>`:""}
+  `;
+}
+
+/* ---------------- settings (GitHub + assistente + monitor) ---------------- */
+
+function viewSettings() {
+  const gh = state.ghConfig;
+  const connected = !!(gh.owner && gh.repo && gh.token);
+  return `
+    <h1 class="h1">Impostazioni</h1>
+    <div class="desc">Collega un repository GitHub per rendere condivise le modifiche del pannello Admin e per abilitare il controllo automatico giornaliero delle fonti (tramite GitHub Actions gia' incluso nel repository).</div>
+
+    <h2 class="h2">Repository GitHub</h2>
+    <div class="panel">
+      <div class="gh-status ${connected?'ok':'off'}" style="margin-bottom:14px;">${connected?'&#9679; Collegato: '+esc(gh.owner)+'/'+esc(gh.repo)+' ('+esc(gh.branch||'main')+')':'&#9675; Non collegato — modifiche salvate solo in locale'}</div>
+      <div class="grid3">
+        <div class="form-row"><label class="lbl">Proprietario (owner)</label><input class="inp" id="gh-owner" value="${esc(gh.owner)}" placeholder="es. kaplet" /></div>
+        <div class="form-row"><label class="lbl">Repository</label><input class="inp" id="gh-repo" value="${esc(gh.repo)}" placeholder="es. technology-portfolio" /></div>
+        <div class="form-row"><label class="lbl">Branch</label><input class="inp" id="gh-branch" value="${esc(gh.branch||'main')}" placeholder="main" /></div>
+      </div>
+      <div class="form-row"><label class="lbl">Personal Access Token (fine-grained, permesso "Contents: read/write" solo su questo repo)</label>
+        <input class="inp" type="password" id="gh-token" value="${esc(gh.token)}" placeholder="ghp_..." />
+        <div class="hint">Il token resta solo nel tuo browser (localStorage) e viene usato solo per chiamare api.github.com. Non condividerlo, e crealo con permessi limitati al solo repo del catalogo.</div>
+      </div>
+      <button class="btn" id="gh-save">Salva e connetti</button>
+      <button class="btn-ghost" id="gh-clear" style="margin-left:8px;">Scollega</button>
+    </div>
+
+    <h2 class="h2">Come funziona il controllo giornaliero</h2>
+    <div class="panel desc">
+      Nel repository e' incluso <code>.github/workflows/daily-source-check.yml</code>: una volta che pubblichi il repo su GitHub
+      (anche gratuito), GitHub esegue ogni giorno lo script <code>scripts/check-sources.mjs</code>, che verifica la
+      raggiungibilita' di ogni fonte ufficiale registrata e rileva se il contenuto e' cambiato dall'ultima esecuzione,
+      aggiornando <code>data/source-status.json</code>. Questa pagina legge quel file e mostra l'esito in Home.
+      Non sostituisce una rilettura umana del contenuto: segnala solo "qualcosa e' cambiato, vai a controllare".
+    </div>
+
+    <h2 class="h2">Assistente — modalita' avanzata (opzionale)</h2>
+    <div class="panel">
+      <div class="desc" style="margin-bottom:10px;">Senza chiave, l'assistente risponde comunque con una ricerca strutturata sui dati del catalogo.
+      Se incolli qui una tua API key Anthropic, le risposte saranno generate in linguaggio naturale da Claude, sempre vincolate ai soli dati del catalogo.
+      La chiave resta solo nel tuo browser e viene inviata direttamente ad Anthropic: non pubblicare questa pagina su un sito pubblico se non vuoi che la chiave sia visibile nelle richieste di rete del tuo browser.</div>
+      <div class="form-row"><label class="lbl">Anthropic API key</label><input class="inp" type="password" id="anthropic-key" value="${esc(state.apiKey)}" placeholder="sk-ant-..." /></div>
+      <button class="btn" id="save-apikey">Salva chiave</button>
+      <button class="btn-ghost" id="clear-apikey" style="margin-left:8px;">Rimuovi</button>
+    </div>
+  `;
+}
+
+function bindSettingsHandlers() {
+  document.getElementById("gh-save").onclick = () => {
+    state.ghConfig = {
+      owner: document.getElementById("gh-owner").value.trim(),
+      repo: document.getElementById("gh-repo").value.trim(),
+      branch: document.getElementById("gh-branch").value.trim() || "main",
+      token: document.getElementById("gh-token").value.trim(),
+    };
+    localStorage.setItem(LS_GH, JSON.stringify(state.ghConfig));
+    showToast("Configurazione GitHub salvata. Ricarico il catalogo dal repository...");
+    loadInitialData().then(render);
+  };
+  document.getElementById("gh-clear").onclick = () => {
+    state.ghConfig = { owner: "", repo: "", branch: "main", token: "" };
+    localStorage.removeItem(LS_GH);
+    showToast("Repository scollegato.");
+    render();
+  };
+  document.getElementById("save-apikey").onclick = () => {
+    state.apiKey = document.getElementById("anthropic-key").value.trim();
+    localStorage.setItem(LS_APIKEY, state.apiKey);
+    showToast("Chiave salvata nel browser.");
+  };
+  document.getElementById("clear-apikey").onclick = () => {
+    state.apiKey = ""; localStorage.removeItem(LS_APIKEY);
+    document.getElementById("anthropic-key").value = "";
+    showToast("Chiave rimossa.");
+  };
+}
+
+/* ---------------- admin ---------------- */
+
+const ADMIN_TABS = [
+  { id: "vendor", label: "Vendor" }, { id: "brandline", label: "Brand line" }, { id: "family", label: "Famiglie" },
+  { id: "product", label: "Prodotti" }, { id: "license", label: "Licenze" }, { id: "source", label: "Fonti" },
+  { id: "taxonomy", label: "Tassonomia" }, { id: "log", label: "Storico modifiche" },
+];
+
+function viewAdmin(tab, c) {
+  return `
+    <h1 class="h1">Pannello amministrativo</h1>
+    <div class="desc">Aggiungi ed elimina vendor, famiglie, prodotti, licenze e fonti. Se hai collegato un repository in Impostazioni, ogni modifica viene committata subito su GitHub ed e' condivisa con tutti.</div>
+    <div class="tabs">${ADMIN_TABS.map(t=>`<div class="tab ${t.id===tab?"active":""}" data-nav="#/admin/${t.id}">${t.label}</div>`).join("")}</div>
+    <div id="admin-body">${adminBody(tab, c)}</div>
+  `;
+}
+
+function adminBody(tab, c) {
+  if (tab === "vendor") return `
+    <div class="panel">
+      <div class="grid3">
+        <div class="form-row"><label class="lbl">Nome vendor</label><input class="inp" id="f-nome" placeholder="Es. Genetec" /></div>
+        <div class="form-row"><label class="lbl">Sito ufficiale</label><input class="inp" id="f-sito" placeholder="https://..." /></div>
+        <div class="form-row" style="align-self:end;"><button class="btn" id="btn-add">Aggiungi</button></div>
+      </div>
+    </div>
+    <table class="tbl"><thead><tr><th>Nome</th><th>Sito</th><th></th></tr></thead><tbody>
+      ${c.vendors.map(v=>`<tr><td>${esc(v.nome)}</td><td>${esc(v.sito)}</td><td><button class="btn-danger" data-del="${v.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "brandline") return `
+    <div class="panel">
+      <div class="form-row"><label class="lbl">Vendor</label><select class="inp" id="f-vendor">${c.vendors.map(v=>`<option value="${v.id}">${esc(v.nome)}</option>`).join("")}</select></div>
+      <div class="form-row"><label class="lbl">Nome brand line</label><input class="inp" id="f-nome" placeholder="Es. Cisco Meraki" /></div>
+      <div class="form-row"><label class="lbl">Descrizione</label><textarea class="inp" id="f-desc" rows="2"></textarea></div>
+      <button class="btn" id="btn-add">Aggiungi</button>
+    </div>
+    <table class="tbl"><thead><tr><th>Vendor</th><th>Brand line</th><th></th></tr></thead><tbody>
+      ${c.brandLines.map(bl=>`<tr><td>${esc(c.vendors.find(v=>v.id===bl.vendorId)?.nome||"")}</td><td>${esc(bl.nome)}</td><td><button class="btn-danger" data-del="${bl.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "family") return `
+    <div class="panel">
+      <div class="grid2">
+        <div class="form-row"><label class="lbl">Vendor</label><select class="inp" id="f-vendor">${c.vendors.map(v=>`<option value="${v.id}">${esc(v.nome)}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Brand line (opzionale)</label><select class="inp" id="f-brandline"><option value="">— nessuna —</option>${c.brandLines.map(bl=>`<option value="${bl.id}">${esc(bl.nome)}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Macroarea</label><select class="inp" id="f-macroarea">${c.macroaree.map(m=>`<option value="${m.id}">${esc(m.nome)}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Area funzionale (opzionale)</label><select class="inp" id="f-areafunz"><option value="">— nessuna —</option>${c.areeFunzionali.map(af=>`<option value="${af.id}">${esc(af.nome)}</option>`).join("")}</select></div>
+      </div>
+      <div class="form-row"><label class="lbl">Nome famiglia</label><input class="inp" id="f-nome" placeholder="Es. XProtect" /></div>
+      <div class="form-row"><label class="lbl">Descrizione</label><textarea class="inp" id="f-desc" rows="2"></textarea></div>
+      <div class="form-row" style="max-width:220px;"><label class="lbl">Stato lifecycle</label><select class="inp" id="f-stato">${Object.keys(STATO_META).map(k=>`<option value="${k}">${STATO_META[k].label}</option>`).join("")}</select></div>
+      <button class="btn" id="btn-add">Aggiungi famiglia</button>
+    </div>
+    <table class="tbl"><thead><tr><th>Vendor</th><th>Famiglia</th><th>Macroarea</th><th>Stato</th><th></th></tr></thead><tbody>
+      ${c.famiglie.map(f=>`<tr><td>${esc(c.vendors.find(v=>v.id===f.vendorId)?.nome||"")}</td><td>${esc(f.nome)}</td><td>${esc(c.macroaree.find(m=>m.id===f.macroareaId)?.nome||"")}</td><td>${badge(f.stato)}</td><td><button class="btn-danger" data-del="${f.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "product") return `
+    <div class="panel">
+      <div class="form-row"><label class="lbl">Famiglia</label><select class="inp" id="f-family">${c.famiglie.map(f=>`<option value="${f.id}">${esc(f.nome)}</option>`).join("")}</select></div>
+      <div class="grid2">
+        <div class="form-row"><label class="lbl">Nome commerciale</label><input class="inp" id="f-nome" /></div>
+        <div class="form-row"><label class="lbl">Modello</label><input class="inp" id="f-modello" /></div>
+        <div class="form-row"><label class="lbl">Tipologia</label><select class="inp" id="f-tipologia">${["hardware","appliance","software","virtual_appliance","cloud","saas","subscription","licenza_perpetua","term_license","supporto","garanzia","accessorio","add_on","integrazione"].map(t=>`<option value="${t}">${t}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Deployment</label><input class="inp" id="f-deployment" /></div>
+        <div class="form-row"><label class="lbl">Stato lifecycle</label><select class="inp" id="f-stato">${Object.keys(STATO_META).map(k=>`<option value="${k}">${STATO_META[k].label}</option>`).join("")}</select></div>
+      </div>
+      <div class="form-row"><label class="lbl">Descrizione breve (max 300 caratteri)</label><textarea class="inp" id="f-desc" rows="2" maxlength="300"></textarea></div>
+      <button class="btn" id="btn-add">Aggiungi prodotto</button>
+    </div>
+    <table class="tbl"><thead><tr><th>Famiglia</th><th>Prodotto</th><th>Stato</th><th></th></tr></thead><tbody>
+      ${c.prodotti.map(p=>`<tr><td>${esc(c.famiglie.find(f=>f.id===p.familyId)?.nome||"")}</td><td>${esc(p.nomeCommerciale)}</td><td>${badge(p.statoLifecycle)}</td><td><button class="btn-danger" data-del="${p.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "license") return `
+    <div class="panel">
+      <div class="form-row"><label class="lbl">Famiglia</label><select class="inp" id="f-family">${c.famiglie.map(f=>`<option value="${f.id}">${esc(f.nome)}</option>`).join("")}</select></div>
+      <div class="form-row"><label class="lbl">Nome ufficiale</label><input class="inp" id="f-nome" /></div>
+      <div class="grid3">
+        <div class="form-row"><label class="lbl">Tipologia</label><select class="inp" id="f-tipologia">${["perpetua","term","subscription"].map(t=>`<option value="${t}">${t}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Metrica</label><input class="inp" id="f-metrica" placeholder="per device / per utente..." /></div>
+        <div class="form-row"><label class="lbl">Durata</label><input class="inp" id="f-durata" placeholder="1/3/5 anni" /></div>
+      </div>
+      <div class="form-row"><label class="lbl">Rinnovo</label><input class="inp" id="f-rinnovo" /></div>
+      <div class="form-row"><label class="lbl">Grace period</label><input class="inp" id="f-grace" value="DA VERIFICARE CON IL VENDOR" /></div>
+      <div class="form-row"><label class="lbl">Conseguenze scadenza</label><textarea class="inp" id="f-conseguenze" rows="2"></textarea></div>
+      <div class="form-row"><label class="lbl">Fonte (opzionale)</label><select class="inp" id="f-fonte"><option value="">— nessuna —</option>${c.fonti.map(s=>`<option value="${s.id}">${esc(s.titolo)}</option>`).join("")}</select></div>
+      <button class="btn" id="btn-add">Aggiungi licenza</button>
+    </div>
+    <table class="tbl"><thead><tr><th>Famiglia</th><th>Licenza</th><th>Fonte</th><th></th></tr></thead><tbody>
+      ${c.licenze.map(l=>`<tr><td>${esc(c.famiglie.find(f=>f.id===l.familyId)?.nome||"")}</td><td>${esc(l.nomeUfficiale)}</td><td>${l.fonteId?"OK":'<span class="hint">manca</span>'}</td><td><button class="btn-danger" data-del="${l.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "source") return `
+    <div class="panel">
+      <div class="form-row"><label class="lbl">URL fonte ufficiale</label><input class="inp" id="f-url" placeholder="https://..." /></div>
+      <div class="form-row"><label class="lbl">Titolo pagina/documento</label><input class="inp" id="f-nome" /></div>
+      <div class="grid4">
+        <div class="form-row"><label class="lbl">Vendor</label><select class="inp" id="f-vendor">${c.vendors.map(v=>`<option value="${v.id}">${esc(v.nome)}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Tipo fonte</label><input class="inp" id="f-tipo" placeholder="datasheet ufficiale" /></div>
+        <div class="form-row"><label class="lbl">Data consultazione</label><input class="inp" type="date" id="f-data" value="${new Date().toISOString().slice(0,10)}" /></div>
+        <div class="form-row"><label class="lbl">Categoria controllo</label><select class="inp" id="f-categoria">${["licensing","release","eol","datasheet","descrizione"].map(t=>`<option value="${t}">${t}</option>`).join("")}</select></div>
+      </div>
+      <button class="btn" id="btn-add">Aggiungi fonte</button>
+    </div>
+    <table class="tbl"><thead><tr><th>Titolo</th><th>Vendor</th><th>Consultata</th><th></th></tr></thead><tbody>
+      ${c.fonti.map(s=>`<tr><td><a class="source-tag" href="${esc(s.url)}" target="_blank">&#8599; ${esc(s.titolo)}</a></td><td>${esc(c.vendors.find(v=>v.id===s.vendorId)?.nome||"")}</td><td>${esc(s.dataConsultazione)}</td><td><button class="btn-danger" data-del="${s.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "taxonomy") return `
+    <div class="panel">
+      <div style="font-weight:600;margin-bottom:10px;">Nuova macroarea</div>
+      <div class="grid3">
+        <div class="form-row"><label class="lbl">Nome</label><input class="inp" id="ma-nome" /></div>
+        <div class="form-row"><label class="lbl">Descrizione</label><input class="inp" id="ma-desc" /></div>
+        <div class="form-row" style="align-self:end;"><button class="btn" id="btn-add-macro">Aggiungi</button></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div style="font-weight:600;margin-bottom:10px;">Nuova area funzionale</div>
+      <div class="grid3">
+        <div class="form-row"><label class="lbl">Macroarea</label><select class="inp" id="af-macro">${c.macroaree.map(m=>`<option value="${m.id}">${esc(m.nome)}</option>`).join("")}</select></div>
+        <div class="form-row"><label class="lbl">Nome area funzionale</label><input class="inp" id="af-nome" /></div>
+        <div class="form-row" style="align-self:end;"><button class="btn" id="btn-add-af">Aggiungi</button></div>
+      </div>
+    </div>
+    <table class="tbl"><thead><tr><th>Macroarea</th><th>Area funzionale</th><th></th></tr></thead><tbody>
+      ${c.areeFunzionali.map(af=>`<tr><td>${esc(c.macroaree.find(m=>m.id===af.macroareaId)?.nome||"")}</td><td>${esc(af.nome)}</td><td><button class="btn-danger" data-del-af="${af.id}">Elimina</button></td></tr>`).join("")}
+    </tbody></table>`;
+
+  if (tab === "log") {
+    const log = [...(c.changelog||[])].reverse();
+    return log.length ? `<table class="tbl"><thead><tr><th>Data/ora</th><th>Entita'</th><th>Azione</th><th>Elemento</th></tr></thead><tbody>
+      ${log.map(x=>`<tr><td class="mono">${new Date(x.timestamp).toLocaleString("it-IT")}</td><td>${esc(x.entita)}</td><td>${esc(x.azione)}</td><td>${esc(x.nome)}</td></tr>`).join("")}
+    </tbody></table>` : `<div class="empty">Nessuna modifica registrata finora.</div>`;
+  }
+  return "";
+}
+
+function bindAdminHandlers(tab) {
+  document.querySelectorAll("[data-del]").forEach((btn) => {
+    btn.onclick = () => {
+      const id = btn.getAttribute("data-del");
+      const c = JSON.parse(JSON.stringify(state.catalog));
+      const map = { vendor: "vendors", brandline: "brandLines", family: "famiglie", product: "prodotti", license: "licenze", source: "fonti" };
+      const key = map[tab];
+      const item = c[key].find((x) => x.id === id);
+      c[key] = c[key].filter((x) => x.id !== id);
+      logChange(c, tab, "eliminazione", item ? (item.nome || item.nomeUfficiale || item.nomeCommerciale || item.titolo) : id);
+      persistCatalog(c, "eliminazione elemento " + tab);
+    };
+  });
+  document.querySelectorAll("[data-del-af]").forEach((btn) => {
+    btn.onclick = () => {
+      const id = btn.getAttribute("data-del-af");
+      const c = JSON.parse(JSON.stringify(state.catalog));
+      c.areeFunzionali = c.areeFunzionali.filter((x) => x.id !== id);
+      persistCatalog(c, "eliminazione area funzionale");
+    };
+  });
+
+  const addBtn = document.getElementById("btn-add");
+  if (addBtn) addBtn.onclick = () => addFromTab(tab);
+
+  const addMacro = document.getElementById("btn-add-macro");
+  if (addMacro) addMacro.onclick = () => {
+    const nome = document.getElementById("ma-nome").value.trim();
+    if (!nome) return showToast("Inserisci il nome della macroarea.");
+    const c = JSON.parse(JSON.stringify(state.catalog));
+    c.macroaree.push({ id: uid("ma"), nome, descrizione: document.getElementById("ma-desc").value.trim() });
+    logChange(c, "MacroArea", "creazione", nome);
+    persistCatalog(c, "nuova macroarea " + nome);
+  };
+  const addAf = document.getElementById("btn-add-af");
+  if (addAf) addAf.onclick = () => {
+    const nome = document.getElementById("af-nome").value.trim();
+    if (!nome) return showToast("Inserisci il nome dell'area funzionale.");
+    const c = JSON.parse(JSON.stringify(state.catalog));
+    c.areeFunzionali.push({ id: uid("af"), nome, macroareaId: document.getElementById("af-macro").value });
+    logChange(c, "FunctionalArea", "creazione", nome);
+    persistCatalog(c, "nuova area funzionale " + nome);
+  };
+}
+
+function addFromTab(tab) {
+  const c = JSON.parse(JSON.stringify(state.catalog));
+  const val = (id) => { const el = document.getElementById(id); return el ? el.value.trim() : ""; };
+
+  if (tab === "vendor") {
+    const nome = val("f-nome"); if (!nome) return showToast("Inserisci il nome del vendor.");
+    const v = { id: uid("v"), nome, sito: val("f-sito"), macroareeCoperte: [] };
+    c.vendors.push(v); logChange(c, "Vendor", "creazione", nome);
+  } else if (tab === "brandline") {
+    const nome = val("f-nome"); if (!nome) return showToast("Inserisci il nome della brand line.");
+    c.brandLines.push({ id: uid("bl"), vendorId: val("f-vendor"), nome, descrizione: val("f-desc") });
+    logChange(c, "BrandLine", "creazione", nome);
+  } else if (tab === "family") {
+    const nome = val("f-nome"); if (!nome) return showToast("Inserisci il nome della famiglia.");
+    c.famiglie.push({ id: uid("fam"), vendorId: val("f-vendor"), brandLineId: val("f-brandline") || null, macroareaId: val("f-macroarea"), areaFunzionaleId: val("f-areafunz") || null, nome, descrizione: val("f-desc"), stato: val("f-stato"), fonteId: null });
+    logChange(c, "ProductFamily", "creazione", nome);
+  } else if (tab === "product") {
+    const nome = val("f-nome"); if (!nome) return showToast("Inserisci il nome commerciale.");
+    c.prodotti.push({ id: uid("prod"), familyId: val("f-family"), nomeCommerciale: nome, modello: val("f-modello"), tipologia: val("f-tipologia"), deployment: val("f-deployment"), statoLifecycle: val("f-stato"), descrizioneBreve: val("f-desc").slice(0,300), fonteId: null });
+    logChange(c, "Product", "creazione", nome);
+  } else if (tab === "license") {
+    const nome = val("f-nome"); if (!nome) return showToast("Inserisci il nome ufficiale della licenza.");
+    c.licenze.push({ id: uid("lic"), familyId: val("f-family"), productIds: [], nomeUfficiale: nome, tipologia: val("f-tipologia"), metrica: val("f-metrica"), durata: val("f-durata"), rinnovo: val("f-rinnovo"), gracePeriod: val("f-grace"), conseguenzeScadenza: val("f-conseguenze"), fonteId: val("f-fonte") || null });
+    logChange(c, "License", "creazione", nome);
+  } else if (tab === "source") {
+    const url = val("f-url"), titolo = val("f-nome"); if (!url || !titolo) return showToast("Compila URL e titolo della fonte.");
+    c.fonti.push({ id: uid("src"), url, titolo, vendorId: val("f-vendor"), tipo: val("f-tipo"), dataConsultazione: val("f-data"), stato: "aggiornato", categoriaControllo: val("f-categoria") });
+    logChange(c, "Source", "creazione", titolo);
+  }
+  persistCatalog(c, "nuovo elemento in " + tab);
+}
+
+/* ---------------- assistente ---------------- */
+
+function structuredSearchAnswer(question) {
+  const q = question.toLowerCase();
+  const c = state.catalog;
+  const words = q.split(/\s+/).filter((w) => w.length > 2);
+  const match = (s) => { s = (s||"").toLowerCase(); return words.some((w) => s.includes(w)); };
+
+  const famiglie = c.famiglie.filter((f) => match(f.nome) || match(f.descrizione));
+  const prodotti = c.prodotti.filter((p) => match(p.nomeCommerciale) || match(p.descrizioneBreve));
+  const licenze = c.licenze.filter((l) => match(l.nomeUfficiale));
+  const vendorIds = new Set([...famiglie.map(f=>f.vendorId), ...prodotti.map(p=>c.famiglie.find(f=>f.id===p.familyId)?.vendorId).filter(Boolean)]);
+
+  if (!famiglie.length && !prodotti.length && !licenze.length) {
+    return "Le informazioni disponibili non sono sufficienti per una raccomandazione definitiva.\n\nProva a citare il nome del vendor, della famiglia o del prodotto (es. \"FortiGate\", \"Catalyst\", \"Meraki\").";
+  }
+
+  const vendorNomi = [...vendorIds].map((id) => c.vendors.find(v=>v.id===id)?.nome).filter(Boolean);
+  const lines = [];
+  lines.push("Tecnologia applicabile: " + (famiglie.map(f=>f.nome).join(", ") || "n/d"));
+  lines.push("Vendor: " + (vendorNomi.join(", ") || "n/d"));
+  lines.push("Famiglie/prodotti pertinenti: " + [...famiglie.map(f=>f.nome), ...prodotti.map(p=>p.nomeCommerciale)].join(", "));
+  lines.push("Licenze/subscription da valutare: " + (licenze.length ? licenze.map(l=>l.nomeUfficiale).join(", ") : "nessuna licenza specifica trovata per questa ricerca"));
+  const fonti = [];
+  famiglie.forEach((f) => f.fonteId && fonti.push(c.fonti.find(s=>s.id===f.fonteId)));
+  prodotti.forEach((p) => p.fonteId && fonti.push(c.fonti.find(s=>s.id===p.fonteId)));
+  licenze.forEach((l) => l.fonteId && fonti.push(c.fonti.find(s=>s.id===l.fonteId)));
+  const fontiUniche = [...new Map(fonti.filter(Boolean).map(f=>[f.id,f])).values()];
+  lines.push("Fonti: " + (fontiUniche.length ? fontiUniche.map(f=>f.url).join(" | ") : "DA VERIFICARE CON IL VENDOR"));
+  lines.push("Data ultima verifica: " + (fontiUniche.length ? fontiUniche.map(f=>f.dataConsultazione).join(", ") : "n/d"));
+  return lines.join("\n");
+}
+
+async function askAssistant() {
+  const input = document.getElementById("assistant-input");
+  const question = input.value.trim();
+  if (!question) return;
+  input.value = "";
+  state.assistantMsgs.push({ role: "user", text: question });
+  renderAssistantMsgs();
+
+  if (!state.apiKey) {
+    const answer = structuredSearchAnswer(question);
+    state.assistantMsgs.push({ role: "bot", text: answer });
+    renderAssistantMsgs();
+    return;
+  }
+
+  state.assistantMsgs.push({ role: "bot", text: "Sto verificando i dati nel catalogo..." });
+  renderAssistantMsgs();
+  const context = JSON.stringify({
+    macroaree: state.catalog.macroaree, vendors: state.catalog.vendors, brandLines: state.catalog.brandLines,
+    famiglie: state.catalog.famiglie, prodotti: state.catalog.prodotti, licenze: state.catalog.licenze,
+    licenseFeatures: state.catalog.licenseFeatures, integrazioni: state.catalog.integrazioni, fonti: state.catalog.fonti,
+  });
+  const systemPrompt = "Sei l'assistente interno del catalogo tecnologico Kaplet. Rispondi ESCLUSIVAMENTE usando i dati JSON forniti come contesto: non inventare prodotti, licenze, SKU, prezzi o funzionalita' non presenti. Se l'informazione richiesta non e' presente o e' insufficiente, rispondi esattamente: \"Le informazioni disponibili non sono sufficienti per una raccomandazione definitiva.\" e poi elenca quali domande servirebbero. Quando rispondi con dati presenti, struttura la risposta con: Tecnologia applicabile; Vendor; Famiglie/prodotti pertinenti; Licenze o subscription da valutare; Prerequisiti/limitazioni; Fonti; Data ultima verifica. Scrivi in italiano, in modo sintetico. Contesto dati (JSON):\n" + context;
+
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": state.apiKey,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true",
+      },
+      body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 1000, system: systemPrompt, messages: [{ role: "user", content: question }] }),
+    });
+    const data = await res.json();
+    state.assistantMsgs.pop(); // rimuove "sto verificando..."
+    if (data.content) {
+      const answer = data.content.filter((b)=>b.type==="text").map((b)=>b.text).join("\n").trim() || structuredSearchAnswer(question);
+      state.assistantMsgs.push({ role: "bot", text: answer });
+    } else {
+      state.assistantMsgs.push({ role: "bot", text: "Errore dall'API Anthropic: " + (data.error?.message || JSON.stringify(data)) + "\n\nRisposta di riserva:\n" + structuredSearchAnswer(question) });
+    }
+  } catch (e) {
+    state.assistantMsgs.pop();
+    state.assistantMsgs.push({ role: "bot", text: "Errore di comunicazione con Anthropic. Risposta di riserva:\n" + structuredSearchAnswer(question) });
+  }
+  renderAssistantMsgs();
+}
+
+function renderAssistantMsgs() {
+  const box = document.getElementById("assistant-msgs");
+  box.innerHTML = state.assistantMsgs.map((m) => `<div class="${m.role==='user'?'msg-user':'msg-bot'}">${esc(m.text)}</div>`).join("");
+  box.scrollTop = box.scrollHeight;
+}
+
+/* ---------------- bootstrap ---------------- */
+
+/* ---------------- tema chiaro/scuro ---------------- */
+const LS_THEME = "kaplet_theme_v1";
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  document.getElementById("theme-toggle").innerHTML = theme === "light" ? "&#9789;" : "&#9788;";
+  localStorage.setItem(LS_THEME, theme);
+}
+(function initTheme() {
+  const saved = localStorage.getItem(LS_THEME);
+  const preferred = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  applyTheme(preferred);
+})();
+document.getElementById("theme-toggle").onclick = () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  applyTheme(current === "light" ? "dark" : "light");
+};
+
+document.getElementById("search-input").addEventListener("input", (e) => {
+  state.query = e.target.value;
+  if (state.query.trim()) nav("#/search"); else nav("#/");
 });
+document.getElementById("fab-assistant").onclick = () => document.getElementById("assistant-panel").classList.add("open");
+document.getElementById("close-assistant").onclick = () => document.getElementById("assistant-panel").classList.remove("open");
+document.getElementById("send-assistant").onclick = askAssistant;
+document.getElementById("assistant-input").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askAssistant(); } });
+
+(async function init() {
+  document.getElementById("content").innerHTML = `<div class="empty">Caricamento catalogo...</div>`;
+  await loadInitialData();
+  renderAssistantMsgs();
+  render();
+})();
+</script>
+</body>
+</html>
