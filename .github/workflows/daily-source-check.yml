@@ -1,0 +1,37 @@
+name: Controllo giornaliero fonti vendor
+
+on:
+  schedule:
+    # Ogni giorno alle 06:00 UTC (08:00 ora italiana in inverno, 07:00/08:00 con ora legale)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Esegui controllo fonti
+        run: node scripts/check-sources.mjs
+
+      - name: Commit ed eventuale push del risultato
+        run: |
+          git config user.name "kaplet-source-bot"
+          git config user.email "kaplet-source-bot@users.noreply.github.com"
+          git add data/source-status.json
+          if git diff --cached --quiet; then
+            echo "Nessuna variazione da committare."
+          else
+            git commit -m "chore: aggiornamento automatico stato fonti $(date -u +%F)"
+            git push
+          fi
