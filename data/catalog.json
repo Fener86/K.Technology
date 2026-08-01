@@ -235,10 +235,9 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_switching",
       "nome": "Catalyst 9000 Series",
-      "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via Meraki Dashboard con due modalità: cloud configuration (configurazione tramite Meraki dashboard e API Meraki) oppure device configuration (configurazione locale via CLI o altri strumenti, con monitoring e troubleshooting cloud). Supporta IOS XE con funzionalità avanzate come BGP, VRF, EVPN fabric, VRRP e In-Service Software Upgrades. Disponibile anche su cloud regionali Meraki India, Meraki China e Meraki Canada.",
+      "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via CLI/Catalyst Center oppure, dove supportato, direttamente dal Meraki Dashboard. Nota lifecycle: la famiglia Catalyst 9300 non ha una singola data di End-of-Life; i bollettini EoS/EoL vengono pubblicati per singolo part number/SKU (es. il vecchio modello di licenza 'Cisco ONE C9300 DNA Advantage Term' e' stato dichiarato End-of-Sale/End-of-Life il 15/03/2023). Verificare sempre lo SKU esatto sul bollettino ufficiale Cisco prima di proporlo in una trattativa.",
       "stato": "attivo",
-      "fonteId": "src_meraki_ios_xe",
-      "dataUltimaVerificaAutomatica": "2026-08-01"
+      "fonteId": "src_meraki_ios_xe"
     },
     {
       "id": "fam_meraki_dashboard",
@@ -390,7 +389,7 @@
       "macroareaId": "ma_phys",
       "areaFunzionaleId": "af_vms",
       "nome": "Milestone XProtect",
-      "descrizione": "VMS on-premise Milestone a licenza perpetua per-device. Edizioni attuali: Express+, Professional+, Expert, Corporate. XProtect Essential+ (gratuita fino a 8 canali) e' stata dismessa con la release 2025 R2.",
+      "descrizione": "VMS on-premise Milestone a licenza perpetua per-device. Edizioni attuali: Express+, Professional+, Expert, Corporate. XProtect Essential+ (gratuita fino a 8 canali) e' stata dismessa con la release 2025 R2. Ultima release: XProtect 2026 R1 (aprile 2026), con Device Pack 14.1 (oltre 16.300 dispositivi verificati, 181 nuovi da 15 technology partner), nuovo LogServer con vista centralizzata dei log, e reportistica pianificata/personalizzabile in XProtect Remote Manager per i clienti Milestone Care Plus.",
       "stato": "attivo",
       "fonteId": "src_milestone_comparison"
     },
@@ -478,7 +477,7 @@
       "macroareaId": "ma_av",
       "areaFunzionaleId": null,
       "nome": "K-Array - diffusori e amplificazione",
-      "descrizione": "Diffusori line-array e a colonna (linee Vyper, Kobra, Python, Lyzard, Anakonda, Koral, Rumble/subwoofer) e amplificatori Kommander. Prodotti hardware puri: nessun modello di licensing software rilevato sulle fonti ufficiali consultate.",
+      "descrizione": "Diffusori line-array e a colonna (linee Vyper, Kobra, Python, Lyzard, Anakonda, Koral, Rumble/subwoofer) e amplificatori Kommander. Prodotti hardware puri: nessun modello di licensing software rilevato sulle fonti ufficiali consultate. Nota di gruppo (confermata da comunicato ufficiale K-array USA, gennaio 2026): il gruppo K-array comprende i brand K-ARRAY, KSCAPE (illuminazione+audio integrati) e KGEAR; in questo catalogo, su indicazione del cliente, viene mantenuto solo il brand K-Array.",
       "stato": "attivo",
       "fonteId": "src_karray_products"
     },
@@ -492,6 +491,358 @@
       "descrizione": "Display interattivi XBoard, kit XCore/XT Series e barre XBar certificati Microsoft Teams Rooms. Prodotti hardware con Windows 11 IoT integrato; non risultano, dalle fonti ufficiali consultate, licenze software separate oltre a quelle Microsoft Teams Rooms stesse.",
       "stato": "attivo",
       "fonteId": "src_maxhub_xboard_mtr"
+    },
+    {
+      "id": "fam_barco_controlroom",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_avoverip",
+      "nome": "Barco Control Rooms (CTRL, UniSee, TruePix)",
+      "descrizione": "Piattaforma software Barco CTRL (KVM over IP e distribuzione dati per control room) combinata con video wall LCD UniSee/UniSee II (bezel-less) e LED TruePix, per sale controllo, SOC e applicazioni critiche.",
+      "stato": "attivo",
+      "fonteId": "src_barco_ctrl"
+    },
+    {
+      "id": "fam_crestron_flex",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Crestron Flex",
+      "descrizione": "Sistemi di videoconferenza Crestron per sale riunioni (tabletop, integrator kit), compatibili con Microsoft Teams Rooms e piattaforme UC di terze parti (BYOD/Zoom Rooms), abbinabili a Crestron Videobar e touch screen 10.1\".",
+      "stato": "attivo",
+      "fonteId": "src_crestron_flex"
+    },
+    {
+      "id": "fam_qsys_core_nv",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_avoverip",
+      "nome": "Q-SYS Core e NV Series",
+      "descrizione": "Processori Q-SYS Core (Nano, 110f, 510i, 5200, ecc.) che eseguono l'intera piattaforma audio/video/controllo, e serie NV per la distribuzione video AV-over-IP (encoder/decoder HDMI software-defined, tecnologia Q-SYS Shift).",
+      "stato": "attivo",
+      "fonteId": "src_qsys_processing"
+    },
+    {
+      "id": "fam_shure_microflex_advance",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_collab",
+      "nome": "Shure Microflex Advance (array a soffitto/tavolo)",
+      "descrizione": "Microfoni a schiera Microflex Advance (es. MXA920, MXA902) con beamforming e DSP IntelliMix integrato, per copertura automatica della sala, camera tracking e voice lift.",
+      "stato": "attivo",
+      "fonteId": "src_shure_mxa920"
+    },
+    {
+      "id": "fam_karray_amplification",
+      "vendorId": "v_karray",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "K-Array Kommander (amplificazione) e K-framework",
+      "descrizione": "Serie di amplificatori Kommander (4-8 canali, DSP integrato, sistema operativo osKar) per pilotare i diffusori passivi K-array; gestione tramite K-framework3 (Windows/Mac), web app o app mobile K-array Connect; integrazione nativa con Q-SYS, Crestron, Symetrix.",
+      "stato": "attivo",
+      "fonteId": "src_karray_kommander"
+    },
+    {
+      "id": "fam_maxhub_ifp",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_digitalsignage",
+      "nome": "MAXHUB V6 - display interattivi (non-MTR)",
+      "descrizione": "Display interattivi 4K serie V6 Classic/ViewPro con whiteboard smart (OCR), condivisione schermo wireless (MAXHUB Share), fotocamera e microfoni integrati; gestione flotta cloud tramite MAXHUB Pivot. Novita' 2026: 'AI Meeting Experience' su XBoard V7 (ottimizzazione audio/video, trascrizione in tempo reale, riepiloghi automatici delle riunioni), mostrata a InfoComm 2026.",
+      "stato": "attivo",
+      "fonteId": "src_maxhub_viewpro"
+    },
+    {
+      "id": "fam_shure_wireless",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "Shure ULX-D e Axient Digital (wireless)",
+      "descrizione": "Sistemi microfonici wireless digitali Shure per sale conferenza, broadcast ed eventi live. ULX-D: audio digitale 24-bit/48kHz, crittografia AES-256, gestibile da Wireless Workbench/SystemOn. Axient Digital: fascia top per broadcast/eventi, True Digital Diversity. Le licenze canale per i ricevitori scalabili (es. ANX4) sono acquistate separatamente e possono essere riallocate tra unita' dello stesso tipo tramite ShureCloud.",
+      "stato": "attivo",
+      "fonteId": "src_shure_ulxd"
+    },
+    {
+      "id": "fam_axis_lpv",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_videoanalytics",
+      "nome": "AXIS License Plate Verifier",
+      "descrizione": "Applicazione di riconoscimento targhe eseguita a bordo camera (AXIS Camera Application Platform), con lista di veicoli autorizzati/bloccati, integrabile in AXIS Camera Station come fonte dati esterna o come credenziale per il controllo accessi.",
+      "stato": "attivo",
+      "fonteId": "src_axis_lpv"
+    },
+    {
+      "id": "fam_milestone_care",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": null,
+      "nome": "Milestone Care (supporto e manutenzione)",
+      "descrizione": "Programma di manutenzione e supporto per i prodotti XProtect, in 3 livelli: Basic (incluso sempre, solo self-help), Plus (incluso per i primi 2 anni all'acquisto: aggiornamenti prodotto + XProtect Remote Manager), Premium (supporto 24/7 con SLA: prima risposta entro 15 minuti per telefono, 4 ore online).",
+      "stato": "attivo",
+      "fonteId": "src_milestone_care"
+    },
+    {
+      "id": "fam_qsys_reflect_vision",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Q-SYS Reflect e VisionSuite",
+      "descrizione": "Q-SYS Reflect: piattaforma cloud di monitoraggio/gestione remota di sistemi Q-SYS, gratuita nel livello base (monitoraggio) con Reflect Plus a pagamento per controllo/gestione enterprise (accesso UCI remoto, Designer remoto). Q-SYS VisionSuite: acceleratore AI (VSA-100) per camera tracking, richiede due licenze distinte per Core: una feature license perpetua e una update license a termine.",
+      "stato": "attivo",
+      "fonteId": "src_qsys_reflect"
+    },
+    {
+      "id": "fam_barco_clickshare_present",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_collab",
+      "nome": "Barco ClickShare Present",
+      "descrizione": "Sistema di presentazione wireless (senza conferencing integrato) per sale riunioni e huddle space: base unit + Button, condivisione BYOD via app o screen mirroring (AirPlay/GoogleCast/Miracast). Come ClickShare Conference, nessuna licenza software richiesta; gestione flotta tramite XMS Cloud inclusa in SmartCare.",
+      "stato": "attivo",
+      "fonteId": "src_barco_clickshare_present"
+    },
+    {
+      "id": "fam_cisco_umbrella",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Umbrella / Secure Access - DNS Defense",
+      "descrizione": "Sicurezza DNS/SIG cloud-delivered Cisco. Nota importante: Cisco sta migrando il brand da 'Umbrella DNS Security' a 'Secure Access - DNS Defense' (stesse funzionalita' Umbrella incluse, allo stesso prezzo, con possibilita' di espandersi a una SSE completa). Pacchetti: DNS Security Essentials/Advantage, Secure Internet Gateway (SIG) Essentials/Advantage, add-on Cloud Firewall L7/DLP/Remote Browser Isolation.",
+      "stato": "attivo",
+      "fonteId": "src_cisco_umbrella_dns_ess"
+    },
+    {
+      "id": "fam_crestron_dmnvx",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_avoverip",
+      "nome": "Crestron DM NVX",
+      "descrizione": "Piattaforma AV-over-IP Crestron: encoder/decoder 4K60 4:4:4 su rete Gigabit standard, con USB, audio e controllo integrati; gestione a larga scala tramite DM NVX Director (variante virtuale di un matrix switcher hardware).",
+      "stato": "attivo",
+      "fonteId": "src_crestron_dmnvx"
+    },
+    {
+      "id": "fam_milestone_husky",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_vms",
+      "nome": "Milestone Husky (appliance NVR)",
+      "descrizione": "Appliance NVR Milestone con XProtect pre-installato e licenze dispositivo pre-attivate. Serie attuale Husky IVO (con Dell Technologies) in vari formati rack/standalone; le vecchie serie M10/M30/M50 includevano un piano di aggiornamento software di 3 anni. Le NVR Husky non hanno un'opzione Care Plus separata: la copertura segue quella della VMS XProtect sottostante.",
+      "stato": "attivo",
+      "fonteId": "src_milestone_husky"
+    },
+    {
+      "id": "fam_cisco_thousandeyes",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": null,
+      "nome": "Cisco ThousandEyes",
+      "descrizione": "Piattaforma di network/application visibility. Licensing a consumo basato su 'Units' (test eseguiti da Cloud/Enterprise Agent, minimo 2000 units se acquistate da sole, 500 se combinate con altri prodotti) piu' licenze Endpoint Agent separate (livelli Advantage/Essentials). Sottoscrizione annuale prepagata.",
+      "stato": "attivo",
+      "fonteId": "src_cisco_te_ordering"
+    },
+    {
+      "id": "fam_cisco_webex_roomdevices",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Cisco Webex Room Devices",
+      "descrizione": "Dispositivi Cisco per sale riunioni (Room Kit, Room Kit Mini, Room Kit Plus/Pro) con codec, camera e microfoni integrati, registrabili on-premise (CUCM) o al cloud Webex. Richiedono una licenza di registrazione dispositivo per unita', inclusa nel licensing Flex Webex.",
+      "stato": "attivo",
+      "fonteId": "src_cisco_webex_roomkit_ds"
+    },
+    {
+      "id": "fam_avigilon_unity_video",
+      "vendorId": "v_avigilon",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_vms",
+      "nome": "Avigilon Unity Video (on-premise)",
+      "descrizione": "VMS on-premise Avigilon (distinta da Alta Video cloud-native), con licenza a 3 edizioni Core/Standard/Enterprise che scalano per numero di camere, server e client per sito. Piani di aggiornamento software 1/3/5 anni disponibili; clip-sharing incluso senza licenza aggiuntiva.",
+      "stato": "attivo",
+      "fonteId": "src_avigilon_unity_ds"
+    },
+    {
+      "id": "fam_axis_optimizer_milestone",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_vms",
+      "nome": "AXIS Optimizer per Milestone XProtect",
+      "descrizione": "Plugin gratuito che integra le funzionalita' specifiche Axis (analytics, ricerca forense, gestione targhe, controlli operatore, intercom) direttamente in Milestone XProtect (e Siemens Siveillance Video). Nessuna licenza richiesta.",
+      "stato": "attivo",
+      "fonteId": "src_axis_optimizer_milestone"
+    },
+    {
+      "id": "fam_cisco_nexus_aci",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Nexus / ACI (data center networking)",
+      "descrizione": "Switching per data center Cisco Nexus 9000 (9200/9300/9500), eseguibile in modalita' NX-OS standalone o ACI (con controller APIC). Licensing Data Center Networking (DCN) a 3 livelli (Essentials/Advantage/Premier), a termine 3/5/7 anni; e' possibile passare da licensing ACI a NX-OS (e viceversa) durante la durata della subscription.",
+      "stato": "attivo",
+      "fonteId": "src_cisco_dcn_licensing"
+    },
+    {
+      "id": "fam_cisco_sdwan",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": "af_sdwan",
+      "nome": "Cisco Catalyst SD-WAN",
+      "descrizione": "Soluzione SD-WAN Cisco (ex Viptela), licenziata tramite subscription Cisco DNA per SD-WAN e Routing (Essentials/Advantage), con tier di banda selezionabili e licenza HSEC obbligatoria oltre 250 Mbps di throughput IPsec sui router ISR. Gestione via Cisco Catalyst SD-WAN Manager, cloud o on-premise.",
+      "stato": "attivo",
+      "fonteId": "src_cisco_sdwan_dna_ordering"
+    },
+    {
+      "id": "fam_fortiweb",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiWeb (Web Application Firewall)",
+      "descrizione": "WAF Fortinet disponibile come appliance hardware, virtual appliance o servizio cloud (FortiWeb Cloud), per la protezione di applicazioni web e API.",
+      "stato": "attivo",
+      "fonteId": "src_fortiweb_docs"
+    },
+    {
+      "id": "fam_fortinac",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": "af_nac",
+      "nome": "FortiNAC-F (Network Access Control)",
+      "descrizione": "Soluzione NAC Fortinet (rinominata FortiNAC-F dalla versione successiva alla 9.4), con profiling automatico dei dispositivi via AI/ML e reazione automatica di quarantena. Licenza a subscription per numero di endpoint concorrenti (es. livello PRO fino a 50.000 endpoint).",
+      "stato": "attivo",
+      "fonteId": "src_fortinac_ds"
+    },
+    {
+      "id": "fam_fortiauthenticator",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiAuthenticator e FortiToken",
+      "descrizione": "Server di identita'/MFA Fortinet (FortiAuthenticator, anche in versione Cloud) con supporto FortiToken Mobile/hardware/Cloud, SSO, gestione certificati PKI. Le licenze FortiToken Mobile sono perpetue, vincolate al singolo FortiAuthenticator e non trasferibili tra piu' unita' senza contattare il supporto Fortinet.",
+      "stato": "attivo",
+      "fonteId": "src_fortiauthenticator_og"
+    },
+    {
+      "id": "fam_fortisandbox",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiSandbox",
+      "descrizione": "Sandboxing Fortinet per l'analisi dinamica di file sospetti, disponibile come appliance, virtual appliance, hosted cloud o public cloud, con licenze stackable per numero di VM di analisi (es. Windows/macOS/Linux/Android). Integrazione nativa con FortiGate, FortiMail, FortiWeb, FortiClient tramite Security Fabric.",
+      "stato": "attivo",
+      "fonteId": "src_fortisandbox_og"
+    },
+    {
+      "id": "fam_cisco_spaces",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Spaces",
+      "descrizione": "Piattaforma cloud di location analytics e IoT su infrastruttura Cisco esistente (AP, switch, camere, dispositivi collaboration). Licenza per access point, a termine 3/5/7 anni, in livelli Essentials (incluso in Wireless Essentials/Meraki Enterprise), Advantage (incluso in Wireless Advantage/Meraki Advanced) ed Extend (incluso nelle subscription Cisco DNA Advantage).",
+      "stato": "attivo",
+      "fonteId": "src_cisco_spaces_ds"
+    },
+    {
+      "id": "fam_maxhub_uc_devices",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "MAXHUB - dispositivi UC (camere, speakerphone, capture)",
+      "descrizione": "Periferiche Unified Communication MAXHUB: PTZ camera, speakerphone, microfoni, sistemi di cattura/registrazione (Capture System, Portable Capture System). Gestione flotta cloud tramite MAXHUB Pivot.",
+      "stato": "attivo",
+      "fonteId": "src_maxhub_capturesystem"
+    },
+    {
+      "id": "fam_fortimail",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiMail (Email Security)",
+      "descrizione": "Secure email gateway Fortinet contro spam, phishing, malware, BEC. Disponibile come appliance, VM o FortiMail Cloud (modalita' Gateway o Server, licenza per mailbox/anno con SKU 1/3/5 anni). Bundle FortiGuard Base vs Enterprise ATP (quest'ultimo aggiunge sandboxing, IBE, DLP, protezione da impersonificazione).",
+      "stato": "attivo",
+      "fonteId": "src_fortimail_ds"
+    },
+    {
+      "id": "fam_axis_access_readers",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": "ma_access",
+      "areaFunzionaleId": "af_accesscloud",
+      "nome": "Axis - lettori per controllo accessi",
+      "descrizione": "Lettori di rete Axis per il controllo accessi IP-based: due nuovi lettori IP e tre nuovi lettori OSDP annunciati a ISC West 2026, pensati per l'integrazione con i controller porta Axis e per una gestione della cybersecurity avanzata (novita' recente, marzo 2026).",
+      "stato": "nuovo",
+      "fonteId": "src_axis_iscwest2026"
+    },
+    {
+      "id": "fam_milestone_arcules",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_vms",
+      "nome": "Arcules (VSaaS cloud-native Milestone)",
+      "descrizione": "Piattaforma di Video Surveillance as a Service (VSaaS) cloud-native di Milestone, distinta da XProtect on-premise. Con gli aggiornamenti Spring 2026: supporto Camera-to-Cloud esteso alle camere multi-sensore Axis e alle camere i-PRO supportate, e nuova funzione di storage video cloud a lungo termine.",
+      "stato": "attivo",
+      "fonteId": "src_milestone_2026r1_pr"
+    },
+    {
+      "id": "fam_cisco_catalyst_center",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Catalyst Center (piattaforma di gestione)",
+      "descrizione": "Controller/dashboard di rete Cisco (ex DNA Center) per provisioning, automazione e analytics su Catalyst switching/wireless. Abilitato dalle subscription Cisco DNA Essentials/Advantage sull'hardware. Novita' recente: AI Assistant conversazionale integrato (documentazione ufficiale aggiornata maggio 2026) per troubleshooting in linguaggio naturale, e vista unificata singola con Meraki Dashboard (SSO tra le due console, general availability annunciata per Q4 2025/Q1 2026).",
+      "stato": "attivo",
+      "fonteId": "src_cisco_catcenter_ai_assistant"
+    },
+    {
+      "id": "fam_barco_clickshare_hub",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Barco ClickShare Hub (room system integrato)",
+      "descrizione": "Nuova linea Barco: da soluzione BYOD a sistema di sala completo. ClickShare Hub Core/Pro abbinato a soundbar di terze parti (Sennheiser TeamConnect, Logitech MeetUp 2), certificato Microsoft Teams tramite Microsoft Device Ecosystem Platform (MDEP). Novita' 2026: supporto Wireless BYOD anche su ClickShare Hub per avviare chiamate Zoom/Webex/Google Meet dal proprio laptop.",
+      "stato": "nuovo",
+      "fonteId": "src_barco_clickshare_hub_pr"
+    },
+    {
+      "id": "fam_maxhub_dvled",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_digitalsignage",
+      "nome": "MAXHUB - dvLED (display a LED modulari)",
+      "descrizione": "Nuova linea di display LED modulari MAXHUB (serie FA27, 'un cabinet, tre tecnologie'), presentata a InfoComm 2026 per sale grandi/auditorium/digital signage di grande formato.",
+      "stato": "nuovo",
+      "fonteId": "src_maxhub_infocomm2026_pr"
     }
   ],
   "prodotti": [
@@ -769,6 +1120,633 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Display interattivo all-in-one certificato Microsoft Teams Rooms, con touch multi-punto, camere e microfoni integrati, Windows 11 IoT.",
       "fonteId": "src_maxhub_xboard_mtr"
+    },
+    {
+      "id": "prod_barco_ctrl_sw",
+      "familyId": "fam_barco_controlroom",
+      "nomeCommerciale": "Barco CTRL (software)",
+      "modello": "Piattaforma software",
+      "tipologia": "software",
+      "deployment": "on-premise (control room)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Piattaforma KVM over IP per la distribuzione di contenuti/dati in sala controllo, oltre il semplice KVM.",
+      "fonteId": "src_barco_ctrl"
+    },
+    {
+      "id": "prod_barco_unisee2",
+      "familyId": "fam_barco_controlroom",
+      "nomeCommerciale": "Barco UniSee II",
+      "modello": "Video wall LCD modulare",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Video wall LCD bezel-less con mini-LED e Chip-on-Glass per contrasto elevato, pensato per control room e applicazioni critiche.",
+      "fonteId": "src_barco_unisee2"
+    },
+    {
+      "id": "prod_crestron_flex_uc",
+      "familyId": "fam_crestron_flex",
+      "nomeCommerciale": "Crestron Flex (kit tabletop/integrator)",
+      "modello": "Multi-modello (es. UC-M70-T, UC-B30-T, UC-C100-T)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Kit di videoconferenza per Microsoft Teams Rooms o piattaforme BYOD, con touch screen, camera e bracket UC.",
+      "fonteId": "src_crestron_flex"
+    },
+    {
+      "id": "prod_qsys_core_processor",
+      "familyId": "fam_qsys_core_nv",
+      "nomeCommerciale": "Q-SYS Core (processore)",
+      "modello": "Multi-modello (Core Nano, 110f, 510i, 5200...)",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Processore centrale della piattaforma Q-SYS: audio, video e controllo integrati in un unico motore software.",
+      "fonteId": "src_qsys_processing"
+    },
+    {
+      "id": "prod_qsys_nv32h",
+      "familyId": "fam_qsys_core_nv",
+      "nomeCommerciale": "Q-SYS NV-32-H (Core Capable)",
+      "modello": "NV-32-H",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Endpoint video di rete software-configurabile come encoder o decoder HDMI, con modalita' Core Mode (switching HDMI locale) o Peripheral Mode (distribuzione di rete).",
+      "fonteId": "src_qsys_nv"
+    },
+    {
+      "id": "prod_shure_mxa920",
+      "familyId": "fam_shure_microflex_advance",
+      "nomeCommerciale": "Shure MXA920",
+      "modello": "Ceiling array microphone",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Microfono a soffitto con Automatic Coverage (copertura automatica 9x9m), camera tracking e fino a 8 zone di copertura regolabili.",
+      "fonteId": "src_shure_mxa920"
+    },
+    {
+      "id": "prod_karray_kommander_amp",
+      "familyId": "fam_karray_amplification",
+      "nomeCommerciale": "Kommander (amplificatore)",
+      "modello": "Multi-modello (es. KA04, KA104, KA208)",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Amplificatore multicanale con DSP integrato (sistema operativo osKar) per pilotare i diffusori passivi K-array.",
+      "fonteId": "src_karray_kommander"
+    },
+    {
+      "id": "prod_maxhub_v6_viewpro",
+      "familyId": "fam_maxhub_ifp",
+      "nomeCommerciale": "MAXHUB V6 ViewPro",
+      "modello": "Multi-formato",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni/aula)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Display interattivo 4K con whiteboard OCR, condivisione wireless fino a 4 dispositivi, gestione flotta cloud tramite MAXHUB Pivot.",
+      "fonteId": "src_maxhub_viewpro"
+    },
+    {
+      "id": "prod_shure_ulxd_system",
+      "familyId": "fam_shure_wireless",
+      "nomeCommerciale": "Shure ULX-D",
+      "modello": "Sistema wireless digitale (ricevitori/trasmettitori)",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistema wireless digitale 24-bit per sale conferenza e installazioni, con crittografia e gestione via Wireless Workbench/SystemOn.",
+      "fonteId": "src_shure_ulxd"
+    },
+    {
+      "id": "prod_shure_axient_digital",
+      "familyId": "fam_shure_wireless",
+      "nomeCommerciale": "Shure Axient Digital",
+      "modello": "Sistema wireless digitale top di gamma",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistema wireless digitale per broadcast/eventi live di alto profilo, con True Digital Diversity e gestione centralizzata dello spettro.",
+      "fonteId": "src_shure_axient_digital"
+    },
+    {
+      "id": "prod_axis_lpv_app",
+      "familyId": "fam_axis_lpv",
+      "nomeCommerciale": "AXIS License Plate Verifier (applicazione)",
+      "modello": "App per camera compatibile ACAP",
+      "tipologia": "software",
+      "deployment": "on-premise (edge, eseguita sulla camera)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Riconoscimento targhe a bordo camera fino a 70 km/h, con classificazione veicolo/colore/marca/modello.",
+      "fonteId": "src_axis_lpv"
+    },
+    {
+      "id": "prod_barco_clickshare_c10",
+      "familyId": "fam_barco_clickshare_present",
+      "nomeCommerciale": "ClickShare C-10",
+      "modello": "Multi-modello (C-5, C-10, ecc.)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni) + gestione cloud opzionale (XMS)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Presentazione wireless per sale medie/grandi, fino a 2 condivisioni simultanee, touch-back e annotazione.",
+      "fonteId": "src_barco_clickshare_present"
+    },
+    {
+      "id": "prod_cisco_umbrella_service",
+      "familyId": "fam_cisco_umbrella",
+      "nomeCommerciale": "Cisco Umbrella / Secure Access - DNS Defense",
+      "modello": "Servizio cloud multi-tenant",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Protezione a livello DNS e Secure Internet Gateway erogata dal cloud Cisco, con enforcement su qualsiasi porta/protocollo.",
+      "fonteId": "src_cisco_umbrella_dns_ess"
+    },
+    {
+      "id": "prod_crestron_dmnvx_endpoint",
+      "familyId": "fam_crestron_dmnvx",
+      "nomeCommerciale": "DM-NVX (encoder/decoder)",
+      "modello": "Multi-modello (es. DM-NVX-351, DM-NVX-360, DM-NVX-D30)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (rete Gigabit Ethernet)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Endpoint AV-over-IP software-configurabile come encoder o decoder 4K60 4:4:4, con scaling integrato e supporto HDR/HDCP.",
+      "fonteId": "src_crestron_dmnvx"
+    },
+    {
+      "id": "prod_milestone_husky_ivo",
+      "familyId": "fam_milestone_husky",
+      "nomeCommerciale": "Milestone Husky IVO",
+      "modello": "Multi-formato (es. IVO 350, IVO 700R, IVO 1000R)",
+      "tipologia": "appliance",
+      "deployment": "on-premise (rack o standalone)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "NVR pre-installato con XProtect e licenze dispositivo pre-attivate, realizzato con hardware Dell Technologies; conforme NDAA, garanzia on-site 5 anni NBD su alcuni modelli.",
+      "fonteId": "src_milestone_husky"
+    },
+    {
+      "id": "prod_cisco_thousandeyes_platform",
+      "familyId": "fam_cisco_thousandeyes",
+      "nomeCommerciale": "Cisco ThousandEyes",
+      "modello": "Servizio cloud + agenti (Cloud/Enterprise/Endpoint)",
+      "tipologia": "saas",
+      "deployment": "cloud + agenti on-premise/endpoint",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Monitoraggio di rete, internet e applicazioni con test sintetici da agenti cloud, on-premise o installati sugli endpoint utente.",
+      "fonteId": "src_cisco_te_ordering"
+    },
+    {
+      "id": "prod_cisco_webex_roomkit",
+      "familyId": "fam_cisco_webex_roomdevices",
+      "nomeCommerciale": "Webex Room Kit / Room Kit Plus / Room Kit Mini",
+      "modello": "Multi-modello",
+      "tipologia": "hardware",
+      "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistemi di videoconferenza per sale da huddle a grandi sale riunioni, con speaker-tracking e integrazione Webex.",
+      "fonteId": "src_cisco_webex_roomkit_ds"
+    },
+    {
+      "id": "prod_avigilon_unity_video_sw",
+      "familyId": "fam_avigilon_unity_video",
+      "nomeCommerciale": "Avigilon Unity Video (software)",
+      "modello": "Software server on-premise",
+      "tipologia": "software",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "VMS on-premise con analitica AI, ricerca intelligente, gestione multi-sito e privilege management centralizzato.",
+      "fonteId": "src_avigilon_unity_ds"
+    },
+    {
+      "id": "prod_axis_optimizer_plugin",
+      "familyId": "fam_axis_optimizer_milestone",
+      "nomeCommerciale": "AXIS Optimizer (plugin)",
+      "modello": "Plugin software per Milestone XProtect",
+      "tipologia": "software",
+      "deployment": "on-premise (installato sul server VMS)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Integra dispositivi e analitiche Axis (camere, audio, intercom, wearable) dentro l'interfaccia Milestone XProtect, gratuitamente.",
+      "fonteId": "src_axis_optimizer_milestone"
+    },
+    {
+      "id": "prod_cisco_nexus_9000",
+      "familyId": "fam_cisco_nexus_aci",
+      "nomeCommerciale": "Cisco Nexus 9000 Series",
+      "modello": "Multi-modello (9200/9300/9500)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (data center)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Switch data center ad alte prestazioni (10/40/100 Gbps), eseguibili in modalita' ACI o NX-OS standalone.",
+      "fonteId": "src_cisco_nexus_license_nav"
+    },
+    {
+      "id": "prod_cisco_sdwan_edge",
+      "familyId": "fam_cisco_sdwan",
+      "nomeCommerciale": "Cisco Catalyst 8000/ISR (edge SD-WAN)",
+      "modello": "Multi-modello (C8200/C8300/C8500, ISR serie 1000/4000, ASR 1000)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (edge WAN)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Router edge Cisco per fabric SD-WAN, licenziati tramite subscription Cisco DNA per SD-WAN e Routing.",
+      "fonteId": "src_cisco_sdwan_dna_ordering"
+    },
+    {
+      "id": "prod_fortiweb_appliance",
+      "familyId": "fam_fortiweb",
+      "nomeCommerciale": "FortiWeb (appliance/VM/cloud)",
+      "modello": "Hardware, virtual appliance o FortiWeb Cloud",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance / cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Web Application Firewall per la protezione di app web e API da attacchi OWASP Top 10 e bot malevoli.",
+      "fonteId": "src_fortiweb_docs"
+    },
+    {
+      "id": "prod_fortinac_appliance",
+      "familyId": "fam_fortinac",
+      "nomeCommerciale": "FortiNAC-F (appliance/VM)",
+      "modello": "Hardware o virtual appliance",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Motore NAC che scopre, profila e controlla l'accesso alla rete di utenti, applicazioni e dispositivi IoT.",
+      "fonteId": "src_fortinac_ds"
+    },
+    {
+      "id": "prod_fortiauthenticator_appliance",
+      "familyId": "fam_fortiauthenticator",
+      "nomeCommerciale": "FortiAuthenticator (appliance/VM/Cloud)",
+      "modello": "Hardware, virtual appliance o FortiAuthenticator Cloud",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance / cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Server di identita' e MFA: SSO, gestione certificati PKI, captive portal, integrazione FortiToken.",
+      "fonteId": "src_fortiauthenticator_og"
+    },
+    {
+      "id": "prod_fortisandbox_appliance",
+      "familyId": "fam_fortisandbox",
+      "nomeCommerciale": "FortiSandbox (appliance/VM/cloud)",
+      "modello": "Multi-modello (es. 500F/1000F/2000E/3000E, VM, Cloud)",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance / cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sandboxing per l'identificazione di minacce avanzate/zero-day tramite analisi dinamica dei file.",
+      "fonteId": "src_fortisandbox_og"
+    },
+    {
+      "id": "prod_cisco_spaces_platform",
+      "familyId": "fam_cisco_spaces",
+      "nomeCommerciale": "Cisco Spaces (piattaforma)",
+      "modello": "Servizio cloud",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Analisi comportamentale e location intelligence per spazi fisici (visitatori, asset, occupancy) tramite infrastruttura wireless/di rete Cisco esistente.",
+      "fonteId": "src_cisco_spaces_ds"
+    },
+    {
+      "id": "prod_karray_anakonda",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Anakonda (line array flessibile)",
+      "modello": "KAN200 / KAN200+ / KAN200+8",
+      "tipologia": "hardware",
+      "deployment": "on-premise (installazione fissa/architetturale)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusore a corda flessibile per installazioni su superfici curve o irregolari, mantenendo le caratteristiche di un line array (fase coerente, bassa distorsione).",
+      "fonteId": "src_karray_anakonda"
+    },
+    {
+      "id": "prod_karray_lyzard",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Lyzard (micro line array)",
+      "modello": "KZ1 / KZ14",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusori ultra-compatti per retail, musei, ristoranti e ambienti dove serve un design discreto.",
+      "fonteId": "src_karray_anakonda"
+    },
+    {
+      "id": "prod_maxhub_capture_system",
+      "familyId": "fam_maxhub_uc_devices",
+      "nomeCommerciale": "MAXHUB Capture System V3 / Portable",
+      "modello": "Capture System V3, Portable Capture System",
+      "tipologia": "hardware",
+      "deployment": "on-premise (aule/eventi)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistema di ripresa/regia con camere PTZ wireless, tracking automatico del relatore, per didattica e streaming eventi.",
+      "fonteId": "src_maxhub_capturesystem"
+    },
+    {
+      "id": "prod_maxhub_uc_peripherals",
+      "familyId": "fam_maxhub_uc_devices",
+      "nomeCommerciale": "MAXHUB UC (speakerphone/camere/microfoni)",
+      "modello": "Multi-modello (es. UC P30, UC BM35/BM45, Mic Pod DM30, UC S07)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Periferiche audio/video per sale riunioni: camere PTZ, speakerphone, microfoni pod, barre USB.",
+      "fonteId": "src_maxhub_capturesystem"
+    },
+    {
+      "id": "prod_karray_domino",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Domino (point source full-range)",
+      "modello": "KF26 / KF210 / KF212",
+      "tipologia": "hardware",
+      "deployment": "on-premise (installazione fissa)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusore point-source full-range compatto per installazioni raffinate dove servono chiarezza, potenza e integrazione architettonica.",
+      "fonteId": "src_karray_domino"
+    },
+    {
+      "id": "prod_karray_kayman",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Kayman (line array marine-grade)",
+      "modello": "KY52 / KY102 / KY102-EBS",
+      "tipologia": "hardware",
+      "deployment": "on-premise (anche ambienti marini/esterni)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Line array in acciaio inox con trattamento anticorrosione avanzato, per yacht, navi da crociera, beach club e installazioni esterne.",
+      "fonteId": "src_karray_kayman"
+    },
+    {
+      "id": "prod_karray_rumble",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Rumble (subwoofer)",
+      "modello": "KU26 / KU44 / KU210 / KU212",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Subwoofer passivo in acciaio inox con radiatori passivi (design completamente sigillato), compagno ideale di Lyzard/Vyper/Tornado/Anakonda.",
+      "fonteId": "src_karray_rumble"
+    },
+    {
+      "id": "prod_fortimail_appliance",
+      "familyId": "fam_fortimail",
+      "nomeCommerciale": "FortiMail (appliance/VM/Cloud)",
+      "modello": "Hardware, virtual appliance o FortiMail Cloud",
+      "tipologia": "appliance",
+      "deployment": "on-premise / virtual appliance / cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Gateway di sicurezza email con antivirus, antispam, protezione da impersonificazione e integrazione Security Fabric.",
+      "fonteId": "src_fortimail_ds"
+    },
+    {
+      "id": "prod_milestone_husky_mseries",
+      "familyId": "fam_milestone_husky",
+      "nomeCommerciale": "Milestone Husky M-series (M10/M20/M30/M50) - LEGACY",
+      "modello": "M10 / M20 / M30 / M50",
+      "tipologia": "appliance",
+      "deployment": "on-premise",
+      "statoLifecycle": "sostituito",
+      "descrizioneBreve": "Serie NVR Husky precedente, dismessa commercialmente e sostituita dalla serie Husky IVO. Milestone fornisce una guida ufficiale di migrazione dedicata verso la serie X/IVO.",
+      "fonteId": "src_milestone_husky_migration"
+    },
+    {
+      "id": "prod_fortigate_gseries",
+      "familyId": "fam_fortigate",
+      "nomeCommerciale": "FortiGate G Series (nuova generazione, SP5 ASIC)",
+      "modello": "30G/50G/70G/90G/200G/400G/900G/3500G",
+      "tipologia": "appliance",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova generazione FortiGate su ASIC proprietario SP5 (CPU+NP+CP integrati), che affianca e sta progressivamente sostituendo la serie F. Gli ultimi modelli annunciati (3500G e 400G, maggio 2026) estendono la G Series fino al data center enterprise con throughput firewall fino a 164 Gbps e supporto per carichi di lavoro AI (rilevamento shadow AI nativo).",
+      "fonteId": "src_fortigate_gseries_pr"
+    },
+    {
+      "id": "prod_meraki_cw_wifi7",
+      "familyId": "fam_meraki_mr",
+      "nomeCommerciale": "Meraki CW Series (Wi-Fi 7, nuova generazione)",
+      "modello": "CW9163/CW9166/CW9176 (es. CW9176D1)",
+      "tipologia": "hardware",
+      "deployment": "on-premise, gestione cloud Meraki Dashboard",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova serie Meraki Wi-Fi 7 (banda 6GHz, canali fino a 320MHz, Multi-Link Operation, 4K-QAM), con percorso di migrazione dal cloud Meraki al controller Catalyst 9800.",
+      "fonteId": "src_meraki_wifi7_page"
+    },
+    {
+      "id": "prod_axis_p1486le",
+      "familyId": "fam_axis_lpv",
+      "nomeCommerciale": "AXIS P1486-LE Global Shutter Camera",
+      "modello": "P1486-LE",
+      "tipologia": "hardware",
+      "deployment": "on-premise (esterno, traffico/varchi)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Camera con otturatore globale CMOS per immagini nitide di oggetti in rapido movimento (traffico, enforcement), senza motion blur; disponibile dai canali di distribuzione Axis da giugno 2026.",
+      "fonteId": "src_axis_iscwest2026"
+    },
+    {
+      "id": "prod_axis_access_readers_new",
+      "familyId": "fam_axis_access_readers",
+      "nomeCommerciale": "Nuovi lettori Axis IP/OSDP (2026)",
+      "modello": "2 lettori IP + 3 lettori OSDP (nuova gamma)",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova gamma di lettori di rete per controllo accessi scalabile e IP-based, con integrazione ai controller porta Axis.",
+      "fonteId": "src_axis_iscwest2026"
+    },
+    {
+      "id": "prod_milestone_arcules_platform",
+      "familyId": "fam_milestone_arcules",
+      "nomeCommerciale": "Arcules VSaaS",
+      "modello": "Servizio cloud",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "VMS-as-a-Service cloud-native Milestone, senza hardware on-premise richiesto per le installazioni Camera-to-Cloud; storage video cloud a lungo termine per esigenze di compliance/investigazione.",
+      "fonteId": "src_milestone_2026r1_pr"
+    },
+    {
+      "id": "prod_cisco_catcenter_platform",
+      "familyId": "fam_cisco_catalyst_center",
+      "nomeCommerciale": "Cisco Catalyst Center",
+      "modello": "Appliance fisica o virtuale on-premise, o cloud",
+      "tipologia": "appliance",
+      "deployment": "on-premise / cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Piattaforma di gestione e automazione per reti Catalyst, con AI Assistant conversazionale per troubleshooting e analisi delle cause radice.",
+      "fonteId": "src_cisco_catcenter_ai_assistant"
+    },
+    {
+      "id": "prod_qsys_roomsuite_bar",
+      "familyId": "fam_qsys_core_nv",
+      "nomeCommerciale": "Q-SYS RoomSuite Collaboration Bar",
+      "modello": "Dispositivo Windows per Microsoft Teams Rooms",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Barra di collaborazione Windows-based per Microsoft Teams Rooms, lanciata a giugno 2026, pensata per configurazione e deployment semplificati su spazi standardizzati e ripetibili.",
+      "fonteId": "src_qsys_news_official"
+    },
+    {
+      "id": "prod_qsys_nvm_series",
+      "familyId": "fam_qsys_core_nv",
+      "nomeCommerciale": "Q-SYS NVM Series (video endpoint)",
+      "modello": "NVM-302E (encoder) / NVM-302D (decoder)",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova serie di endpoint video a basso consumo di banda per distribuzione video su larga scala (hospitality, entertainment, government), con NVM Designer per configurazione no-code di centinaia di endpoint, lanciata giugno 2026.",
+      "fonteId": "src_qsys_news_official"
+    },
+    {
+      "id": "prod_qsys_core24f",
+      "familyId": "fam_qsys_core_nv",
+      "nomeCommerciale": "Q-SYS Core 24f",
+      "modello": "Core 24f",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuovo processore Q-SYS Core, certificato Microsoft Teams insieme all'acceleratore AI VisionSuite VSA-100 (febbraio 2026).",
+      "fonteId": "src_qsys_news_official"
+    },
+    {
+      "id": "prod_shure_mxa925",
+      "familyId": "fam_shure_microflex_advance",
+      "nomeCommerciale": "Shure MXA925 (nuovo flagship)",
+      "modello": "MXA925",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuovo modello flagship della gamma Microflex Advance (giugno 2026), con una piattaforma di elaborazione completamente nuova e capacita' di auto-miglioramento nel tempo per le sale acusticamente piu' difficili.",
+      "fonteId": "src_shure_mxa925"
+    },
+    {
+      "id": "prod_shure_slxdplus",
+      "familyId": "fam_shure_wireless",
+      "nomeCommerciale": "Shure SLX-D+",
+      "modello": "SLX-D+",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Evoluzione del sistema wireless SLX-D (gennaio 2026): gestione remota del sistema, crittografia AES-256, soppressione automatica del feedback, disponibile da febbraio 2026.",
+      "fonteId": "src_shure_slxdplus"
+    },
+    {
+      "id": "prod_barco_clickshare_hub_core",
+      "familyId": "fam_barco_clickshare_hub",
+      "nomeCommerciale": "ClickShare Hub Core / Pro",
+      "modello": "Hub Core (sale piccole) / Hub Pro (sale medie)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni) + gestione cloud XMS",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Room system Barco abbinato a soundbar di terze parti, certificato Microsoft Teams Rooms, con opzione Wireless BYOD per Zoom/Webex/Google Meet.",
+      "fonteId": "src_barco_clickshare_hub_pr"
+    },
+    {
+      "id": "prod_barco_clickshare_cx50",
+      "familyId": "fam_barco_clickshare_present",
+      "nomeCommerciale": "ClickShare CX-50",
+      "modello": "CX-50",
+      "tipologia": "hardware",
+      "deployment": "on-premise (boardroom/sale grandi)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Hub di conferenza wireless premium per boardroom ibride, output 4K e setup dual-screen, certificato per Microsoft Teams Rooms/Zoom Rooms e altre piattaforme UC principali.",
+      "fonteId": "src_barco_press_releases"
+    },
+    {
+      "id": "prod_crestron_collab_compute",
+      "familyId": "fam_crestron_flex",
+      "nomeCommerciale": "Crestron Collab Compute",
+      "modello": "Piattaforma hardware Windows",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova piattaforma compute Crestron (annunciata gennaio 2026, in vista di ISE 2026) che fa girare Microsoft Teams Rooms e Zoom Rooms su Windows, pensata come cuore di un ecosistema di collaborazione scalabile.",
+      "fonteId": "src_crestron_ise2026_launch"
+    },
+    {
+      "id": "prod_crestron_dmnax",
+      "familyId": "fam_crestron_flex",
+      "nomeCommerciale": "Crestron DM NAX (audio intelligente)",
+      "modello": "Piattaforma audio di rete",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Piattaforma di distribuzione audio intelligente su rete, annunciata insieme alla camera 1 Beyond i12D per semplificare il deployment di audio/video di qualita' professionale su larga scala.",
+      "fonteId": "src_crestron_ise2026_launch"
+    },
+    {
+      "id": "prod_crestron_80series",
+      "familyId": "fam_crestron_flex",
+      "nomeCommerciale": "Crestron 80 Series (touch screen)",
+      "modello": "Serie 80",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova famiglia di touch screen per prenotazione sale e controllo, basata sulla piattaforma touch Crestron e su Microsoft Device Ecosystem Platform (MDEP), per un'esperienza utente coerente su tutti gli spazi.",
+      "fonteId": "src_crestron_ise2026_launch"
+    },
+    {
+      "id": "prod_karray_dragon_kx2",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Dragon KX2 (nuovo)",
+      "modello": "KX2",
+      "tipologia": "hardware",
+      "deployment": "on-premise (anche residenziale di lusso)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Diffusore point-source ultra-compatto, presentato a InfoComm 2026, pensato anche per installazioni residenziali di lusso oltre che commerciali.",
+      "fonteId": "src_karray_ise2026_launch"
+    },
+    {
+      "id": "prod_karray_keystone",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Keystone KST110 (nuovo)",
+      "modello": "KST110",
+      "tipologia": "hardware",
+      "deployment": "on-premise (installazione architettonica)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Subwoofer architettonico ultra-sottile presentato a InfoComm 2026, per spazi con profondita' limitata dove non e' ammessa vibrazione strutturale.",
+      "fonteId": "src_karray_ise2026_launch"
+    },
+    {
+      "id": "prod_karray_koral_ko102",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Koral KO102 (nuovo)",
+      "modello": "KO102",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Diffusore a colonna compatto presentato a ISE 2026, per hospitality, retail e applicazioni corporate/residenziali visivamente sensibili.",
+      "fonteId": "src_karray_ise2026_launch"
+    },
+    {
+      "id": "prod_karray_thunder_cardio",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Thunder KSCARDIO412P (nuovo)",
+      "modello": "KSCARDIO412P",
+      "tipologia": "hardware",
+      "deployment": "on-premise (touring e installazioni fisse)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Primo subwoofer cardioide K-array, presentato a ISE 2026: alta potenza in bassa frequenza con radiazione posteriore minimizzata.",
+      "fonteId": "src_karray_ise2026_launch"
+    },
+    {
+      "id": "prod_maxhub_fa27",
+      "familyId": "fam_maxhub_dvled",
+      "nomeCommerciale": "MAXHUB FA27 Series (dvLED)",
+      "modello": "FA27",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sale grandi, digital signage)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Display LED modulare 'one cabinet, three technologies', presentato a InfoComm 2026 (giugno 2026).",
+      "fonteId": "src_maxhub_infocomm2026_pr"
+    },
+    {
+      "id": "prod_maxhub_xbar_w70",
+      "familyId": "fam_maxhub_uc_devices",
+      "nomeCommerciale": "MAXHUB XBar W70 Kit",
+      "modello": "XBar W70",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Kit videobar riconosciuto con lo SCN Installation Product Award 2026 per il prodotto AI piu' innovativo a InfoComm 2026.",
+      "fonteId": "src_maxhub_infocomm2026_pr"
     }
   ],
   "licenze": [
@@ -1266,6 +2244,468 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR (oltre al trial gratuito iniziale di 90 giorni)",
       "fonteId": "src_shure_intellimix_room"
+    },
+    {
+      "id": "lic_milestone_expressplus",
+      "familyId": "fam_milestone_xprotect",
+      "productIds": [
+        "prod_milestone_expressplus"
+      ],
+      "nomeUfficiale": "XProtect Express+",
+      "tipologia": "perpetua",
+      "metrica": "per dispositivo IP, max 48 per recording server",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua); SUP/manutenzione separata da verificare",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_milestone_comparison_chart"
+    },
+    {
+      "id": "lic_milestone_professionalplus",
+      "familyId": "fam_milestone_xprotect",
+      "productIds": [
+        "prod_milestone_professionalplus"
+      ],
+      "nomeUfficiale": "XProtect Professional+",
+      "tipologia": "perpetua",
+      "metrica": "per dispositivo IP, illimitati per recording server",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua); SUP/manutenzione separata da verificare",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_milestone_comparison_chart"
+    },
+    {
+      "id": "lic_milestone_expert",
+      "familyId": "fam_milestone_xprotect",
+      "productIds": [
+        "prod_milestone_expert"
+      ],
+      "nomeUfficiale": "XProtect Expert",
+      "tipologia": "perpetua",
+      "metrica": "per dispositivo IP, illimitati per recording server",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua); SUP/manutenzione separata da verificare",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_milestone_comparison_chart"
+    },
+    {
+      "id": "lic_milestone_corporate",
+      "familyId": "fam_milestone_xprotect",
+      "productIds": [
+        "prod_milestone_corporate"
+      ],
+      "nomeUfficiale": "XProtect Corporate",
+      "tipologia": "perpetua",
+      "metrica": "per dispositivo IP, illimitati per recording server",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua); SUP/manutenzione separata da verificare",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_milestone_comparison_chart"
+    },
+    {
+      "id": "lic_avigilon_alta_access_premium",
+      "familyId": "fam_avigilon_alta_access",
+      "productIds": [],
+      "nomeUfficiale": "Avigilon Alta Access - Premium",
+      "tipologia": "subscription",
+      "metrica": "per porta/reader",
+      "durata": "annuale (SaaS)",
+      "rinnovo": "automatico (subscription cloud)",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_avigilon_alta_access_admin"
+    },
+    {
+      "id": "lic_avigilon_alta_access_enterprise",
+      "familyId": "fam_avigilon_alta_access",
+      "productIds": [],
+      "nomeUfficiale": "Avigilon Alta Access - Enterprise",
+      "tipologia": "subscription",
+      "metrica": "per porta/reader",
+      "durata": "annuale (SaaS)",
+      "rinnovo": "automatico (subscription cloud)",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_avigilon_alta_access_admin"
+    },
+    {
+      "id": "lic_axis_lpv_perdevice",
+      "familyId": "fam_axis_lpv",
+      "productIds": [
+        "prod_axis_lpv_app"
+      ],
+      "nomeUfficiale": "AXIS License Plate Verifier - licenza per camera",
+      "tipologia": "perpetua",
+      "metrica": "1 licenza per camera (ogni camera richiede una licenza dell'app)",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_axis_lpv_support"
+    },
+    {
+      "id": "lic_milestone_care_basic",
+      "familyId": "fam_milestone_care",
+      "productIds": [],
+      "nomeUfficiale": "Milestone Care Basic",
+      "tipologia": "perpetua",
+      "metrica": "incluso automaticamente con ogni installazione",
+      "durata": "per tutta la vita del prodotto",
+      "rinnovo": "non applicabile (sempre incluso)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile",
+      "fonteId": "src_milestone_care"
+    },
+    {
+      "id": "lic_milestone_care_plus",
+      "familyId": "fam_milestone_care",
+      "productIds": [],
+      "nomeUfficiale": "Milestone Care Plus",
+      "tipologia": "subscription",
+      "metrica": "per prodotto/installazione, incluso per i primi 2 anni all'acquisto",
+      "durata": "2 anni inclusi, poi rinnovabile",
+      "rinnovo": "manuale dopo i primi 2 anni",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita di accesso agli aggiornamenti prodotto e a XProtect Remote Manager",
+      "fonteId": "src_milestone_care"
+    },
+    {
+      "id": "lic_milestone_care_premium",
+      "familyId": "fam_milestone_care",
+      "productIds": [],
+      "nomeUfficiale": "Milestone Care Premium (estende Care Plus)",
+      "tipologia": "subscription",
+      "metrica": "per prodotto/installazione",
+      "durata": "annuale/pluriennale (da verificare durata esatta)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita del supporto tecnico diretto 24/7 con SLA (si torna al solo supporto Plus/Basic)",
+      "fonteId": "src_milestone_care"
+    },
+    {
+      "id": "lic_qsys_reflect_basic",
+      "familyId": "fam_qsys_reflect_vision",
+      "productIds": [],
+      "nomeUfficiale": "Q-SYS Reflect (livello base, gratuito)",
+      "tipologia": "perpetua",
+      "metrica": "per Core/sistema, monitoraggio incluso senza costo",
+      "durata": "senza scadenza",
+      "rinnovo": "non applicabile",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile",
+      "fonteId": "src_qsys_reflect"
+    },
+    {
+      "id": "lic_qsys_reflect_plus",
+      "familyId": "fam_qsys_reflect_vision",
+      "productIds": [],
+      "nomeUfficiale": "Q-SYS Reflect Plus",
+      "tipologia": "subscription",
+      "metrica": "per numero di sistemi + numero di periferiche monitorate; prezzo dipende dal tier (Basic/Standard/Professional)",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzioni di gestione/controllo enterprise avanzate (resta il monitoraggio base gratuito)",
+      "fonteId": "src_qsys_reflect"
+    },
+    {
+      "id": "lic_qsys_visionsuite_feature",
+      "familyId": "fam_qsys_reflect_vision",
+      "productIds": [],
+      "nomeUfficiale": "Q-SYS VisionSuite - feature license",
+      "tipologia": "perpetua",
+      "metrica": "per Core con VSA-100 installato",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (perpetua)",
+      "fonteId": "src_qsys_visionsuite_licensing"
+    },
+    {
+      "id": "lic_qsys_visionsuite_update",
+      "familyId": "fam_qsys_reflect_vision",
+      "productIds": [],
+      "nomeUfficiale": "Q-SYS VisionSuite - update license (a termine)",
+      "tipologia": "term",
+      "metrica": "per Core con VSA-100 installato",
+      "durata": "a termine (durata esatta da verificare)",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "il sistema continua a funzionare ma VisionSuite non riceve piu' aggiornamenti",
+      "fonteId": "src_qsys_visionsuite_licensing"
+    },
+    {
+      "id": "lic_umbrella_dns_ess",
+      "familyId": "fam_cisco_umbrella",
+      "productIds": [
+        "prod_cisco_umbrella_service"
+      ],
+      "nomeUfficiale": "Umbrella DNS Security Essentials (per utente)",
+      "tipologia": "subscription",
+      "metrica": "per utente",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_umbrella_dns_ess"
+    },
+    {
+      "id": "lic_umbrella_dns_adv",
+      "familyId": "fam_cisco_umbrella",
+      "productIds": [
+        "prod_cisco_umbrella_service"
+      ],
+      "nomeUfficiale": "Umbrella DNS Security Advantage (per utente, include Essentials)",
+      "tipologia": "subscription",
+      "metrica": "per utente",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_umbrella_dns_adv"
+    },
+    {
+      "id": "lic_thousandeyes_units",
+      "familyId": "fam_cisco_thousandeyes",
+      "productIds": [
+        "prod_cisco_thousandeyes_platform"
+      ],
+      "nomeUfficiale": "ThousandEyes Units (a consumo)",
+      "tipologia": "subscription",
+      "metrica": "a consumo, minimo 2000 units (500 se combinate con altri prodotti ThousandEyes)",
+      "durata": "annuale (subscription prepagata)",
+      "rinnovo": "manuale a scadenza contratto",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "esaurimento del pool di unita' disponibili: i test si fermano finche' non si rinnova/acquista altra capacita'",
+      "fonteId": "src_cisco_te_ordering"
+    },
+    {
+      "id": "lic_thousandeyes_endpoint",
+      "familyId": "fam_cisco_thousandeyes",
+      "productIds": [
+        "prod_cisco_thousandeyes_platform"
+      ],
+      "nomeUfficiale": "ThousandEyes Endpoint Agent (Advantage/Essentials)",
+      "tipologia": "subscription",
+      "metrica": "per endpoint registrato, riassegnabile tra dispositivi",
+      "durata": "annuale",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "se non ci sono licenze Advantage/Essentials disponibili, i nuovi agent vengono disabilitati",
+      "fonteId": "src_cisco_te_ordering"
+    },
+    {
+      "id": "lic_avigilon_unity_core",
+      "familyId": "fam_avigilon_unity_video",
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
+      "nomeUfficiale": "Avigilon Unity Video - Core",
+      "tipologia": "perpetua",
+      "metrica": "per camera/dispositivo collegato",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "rinnovo": "manuale per il piano di aggiornamento",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "il sistema continua a funzionare ma non riceve piu' aggiornamenti software senza piano attivo",
+      "fonteId": "src_avigilon_unity_ds"
+    },
+    {
+      "id": "lic_avigilon_unity_standard",
+      "familyId": "fam_avigilon_unity_video",
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
+      "nomeUfficiale": "Avigilon Unity Video - Standard",
+      "tipologia": "perpetua",
+      "metrica": "per camera/dispositivo collegato",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "rinnovo": "manuale per il piano di aggiornamento",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "il sistema continua a funzionare ma non riceve piu' aggiornamenti software senza piano attivo",
+      "fonteId": "src_avigilon_unity_ds"
+    },
+    {
+      "id": "lic_avigilon_unity_enterprise",
+      "familyId": "fam_avigilon_unity_video",
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
+      "nomeUfficiale": "Avigilon Unity Video - Enterprise",
+      "tipologia": "perpetua",
+      "metrica": "per camera/dispositivo collegato",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "rinnovo": "manuale per il piano di aggiornamento",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "il sistema continua a funzionare ma non riceve piu' aggiornamenti software senza piano attivo",
+      "fonteId": "src_avigilon_unity_ds"
+    },
+    {
+      "id": "lic_cisco_dcn_essentials",
+      "familyId": "fam_cisco_nexus_aci",
+      "productIds": [
+        "prod_cisco_nexus_9000"
+      ],
+      "nomeUfficiale": "Data Center Networking (DCN) Essentials",
+      "tipologia": "term",
+      "metrica": "per switch",
+      "durata": "3, 5 o 7 anni",
+      "rinnovo": "manuale a scadenza del termine",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' abilitate dal livello di licenza (non copre l'hardware, solo il software)",
+      "fonteId": "src_cisco_nexus_license_nav"
+    },
+    {
+      "id": "lic_cisco_dcn_advantage",
+      "familyId": "fam_cisco_nexus_aci",
+      "productIds": [
+        "prod_cisco_nexus_9000"
+      ],
+      "nomeUfficiale": "Data Center Networking (DCN) Advantage",
+      "tipologia": "term",
+      "metrica": "per switch",
+      "durata": "3, 5 o 7 anni",
+      "rinnovo": "manuale a scadenza del termine",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' abilitate dal livello di licenza",
+      "fonteId": "src_cisco_nexus_license_nav"
+    },
+    {
+      "id": "lic_cisco_dcn_premier",
+      "familyId": "fam_cisco_nexus_aci",
+      "productIds": [
+        "prod_cisco_nexus_9000"
+      ],
+      "nomeUfficiale": "Data Center Networking (DCN) Premier",
+      "tipologia": "term",
+      "metrica": "per switch",
+      "durata": "3, 5 o 7 anni",
+      "rinnovo": "manuale a scadenza del termine",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' abilitate dal livello di licenza",
+      "fonteId": "src_cisco_nexus_license_nav"
+    },
+    {
+      "id": "lic_cisco_dna_sdwan_ess",
+      "familyId": "fam_cisco_sdwan",
+      "productIds": [
+        "prod_cisco_sdwan_edge"
+      ],
+      "nomeUfficiale": "Cisco DNA per SD-WAN e Routing - Essentials",
+      "tipologia": "subscription",
+      "metrica": "per dispositivo, con tier di banda selezionabile",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' SD-WAN gestite tramite Catalyst SD-WAN Manager",
+      "fonteId": "src_cisco_sdwan_dna_ordering"
+    },
+    {
+      "id": "lic_cisco_dna_sdwan_adv",
+      "familyId": "fam_cisco_sdwan",
+      "productIds": [
+        "prod_cisco_sdwan_edge"
+      ],
+      "nomeUfficiale": "Cisco DNA per SD-WAN e Routing - Advantage",
+      "tipologia": "subscription",
+      "metrica": "per dispositivo, con tier di banda selezionabile",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' SD-WAN avanzate gestite tramite Catalyst SD-WAN Manager",
+      "fonteId": "src_cisco_sdwan_dna_ordering"
+    },
+    {
+      "id": "lic_fortinac_pro",
+      "familyId": "fam_fortinac",
+      "productIds": [
+        "prod_fortinac_appliance"
+      ],
+      "nomeUfficiale": "FortiNAC Subscription PRO (fino a 50.000 endpoint concorrenti)",
+      "tipologia": "subscription",
+      "metrica": "per endpoint concorrente, fino a 50.000",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_fortinac_ds"
+    },
+    {
+      "id": "lic_fortitoken_mobile",
+      "familyId": "fam_fortiauthenticator",
+      "productIds": [
+        "prod_fortiauthenticator_appliance"
+      ],
+      "nomeUfficiale": "FortiToken Mobile (licenza perpetua per numero di token)",
+      "tipologia": "perpetua",
+      "metrica": "per numero di token/utenti (es. pacchetti da 20/100/500/1000)",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile; nota: licenza vincolata al singolo FortiAuthenticator, trasferimento richiede supporto Fortinet",
+      "fonteId": "src_fortitoken_ds"
+    },
+    {
+      "id": "lic_cisco_spaces_essentials",
+      "familyId": "fam_cisco_spaces",
+      "productIds": [
+        "prod_cisco_spaces_platform"
+      ],
+      "nomeUfficiale": "Cisco Spaces Essentials (incluso in Wireless Essentials/Meraki Enterprise)",
+      "tipologia": "subscription",
+      "metrica": "per access point",
+      "durata": "3, 5 o 7 anni",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_spaces_ds"
+    },
+    {
+      "id": "lic_cisco_spaces_advantage",
+      "familyId": "fam_cisco_spaces",
+      "productIds": [
+        "prod_cisco_spaces_platform"
+      ],
+      "nomeUfficiale": "Cisco Spaces Advantage (incluso in Wireless Advantage/Meraki Advanced)",
+      "tipologia": "subscription",
+      "metrica": "per access point",
+      "durata": "3, 5 o 7 anni",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_spaces_packages"
+    },
+    {
+      "id": "lic_fortimail_cloud_gateway_base",
+      "familyId": "fam_fortimail",
+      "productIds": [
+        "prod_fortimail_appliance"
+      ],
+      "nomeUfficiale": "FortiMail Cloud - Gateway (bundle Base)",
+      "tipologia": "subscription",
+      "metrica": "per mailbox/anno, a fasce (es. 25-100, 101-1000)",
+      "durata": "1, 3 o 5 anni",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita del servizio di filtraggio email cloud",
+      "fonteId": "src_fortimail_og"
+    },
+    {
+      "id": "lic_fortimail_cloud_gateway_ent",
+      "familyId": "fam_fortimail",
+      "productIds": [
+        "prod_fortimail_appliance"
+      ],
+      "nomeUfficiale": "FortiMail Cloud - Gateway Premium (bundle Enterprise ATP)",
+      "tipologia": "subscription",
+      "metrica": "per mailbox/anno, a fasce",
+      "durata": "1, 3 o 5 anni",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita delle funzionalita' avanzate (sandboxing, IBE, DLP, integrazione API Microsoft 365/Google Workspace)",
+      "fonteId": "src_fortimail_og"
     }
   ],
   "licenseFeatures": [
@@ -1478,6 +2918,892 @@
       "featureNome": "Funzionalita' SD-WAN avanzate (Secure SD-WAN Plus)",
       "licenseId": "lic_meraki_mx_sdwanplus",
       "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0036",
+      "featureNome": "Tipo di deployment: server singolo",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0037",
+      "featureNome": "Tipo di deployment: server singolo",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0038",
+      "featureNome": "Tipo di deployment: server singolo",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0039",
+      "featureNome": "Tipo di deployment: server singolo",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0040",
+      "featureNome": "Multi-server centralizzato multi-sito",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0041",
+      "featureNome": "Multi-server centralizzato multi-sito",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0042",
+      "featureNome": "Multi-server centralizzato multi-sito",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0043",
+      "featureNome": "Multi-server centralizzato multi-sito",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0044",
+      "featureNome": "Dispositivi IP per recording server",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto_0045",
+      "featureNome": "Dispositivi IP per recording server",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0046",
+      "featureNome": "Dispositivi IP per recording server",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0047",
+      "featureNome": "Dispositivi IP per recording server",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0048",
+      "featureNome": "XProtect Smart Wall (video wall operatore)",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0049",
+      "featureNome": "XProtect Smart Wall (video wall operatore)",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0050",
+      "featureNome": "XProtect Smart Wall (video wall operatore)",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_auto_0051",
+      "featureNome": "XProtect Smart Wall (video wall operatore)",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0052",
+      "featureNome": "Milestone Federated Architecture",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0053",
+      "featureNome": "Milestone Federated Architecture",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0054",
+      "featureNome": "Milestone Federated Architecture",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0055",
+      "featureNome": "Milestone Federated Architecture",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0056",
+      "featureNome": "Milestone Interconnect come sito centrale",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0057",
+      "featureNome": "Milestone Interconnect come sito centrale",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto_0058",
+      "featureNome": "Milestone Interconnect come sito centrale",
+      "licenseId": "lic_milestone_expert",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto_0059",
+      "featureNome": "Milestone Interconnect come sito centrale",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0060",
+      "featureNome": "Bookmarking basato su regole ed encryption del database video",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0061",
+      "featureNome": "Bookmarking basato su regole ed encryption del database video",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0062",
+      "featureNome": "Bookmarking basato su regole ed encryption del database video",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0063",
+      "featureNome": "Bookmarking basato su regole ed encryption del database video",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0064",
+      "featureNome": "AAA (autenticazione/autorizzazione/accounting) e accesso guest",
+      "licenseId": "lic_ise_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0065",
+      "featureNome": "AAA (autenticazione/autorizzazione/accounting) e accesso guest",
+      "licenseId": "lic_ise_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0066",
+      "featureNome": "AAA (autenticazione/autorizzazione/accounting) e accesso guest",
+      "licenseId": "lic_ise_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0067",
+      "featureNome": "Profiling di base e Device Administration (TACACS+)",
+      "licenseId": "lic_ise_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0068",
+      "featureNome": "Profiling di base e Device Administration (TACACS+)",
+      "licenseId": "lic_ise_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0069",
+      "featureNome": "Profiling di base e Device Administration (TACACS+)",
+      "licenseId": "lic_ise_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0070",
+      "featureNome": "Segmentazione granulare e TrustSec, BYOD avanzato",
+      "licenseId": "lic_ise_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0071",
+      "featureNome": "Segmentazione granulare e TrustSec, BYOD avanzato",
+      "licenseId": "lic_ise_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0072",
+      "featureNome": "Segmentazione granulare e TrustSec, BYOD avanzato",
+      "licenseId": "lic_ise_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0073",
+      "featureNome": "Integrazione MDM (JAMF, Microsoft Intune) e postura endpoint",
+      "licenseId": "lic_ise_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0074",
+      "featureNome": "Integrazione MDM (JAMF, Microsoft Intune) e postura endpoint",
+      "licenseId": "lic_ise_advantage",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0075",
+      "featureNome": "Integrazione MDM (JAMF, Microsoft Intune) e postura endpoint",
+      "licenseId": "lic_ise_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0076",
+      "featureNome": "Threat-Centric NAC",
+      "licenseId": "lic_ise_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0077",
+      "featureNome": "Threat-Centric NAC",
+      "licenseId": "lic_ise_advantage",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0078",
+      "featureNome": "Threat-Centric NAC",
+      "licenseId": "lic_ise_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0079",
+      "featureNome": "Duo Directory, SSO federato, Self-Service Portal",
+      "licenseId": "lic_duo_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0080",
+      "featureNome": "Duo Directory, SSO federato, Self-Service Portal",
+      "licenseId": "lic_duo_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0081",
+      "featureNome": "Duo Directory, SSO federato, Self-Service Portal",
+      "licenseId": "lic_duo_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0082",
+      "featureNome": "Unified Device Visibility e Risk-Based Authentication",
+      "licenseId": "lic_duo_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0083",
+      "featureNome": "Unified Device Visibility e Risk-Based Authentication",
+      "licenseId": "lic_duo_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0084",
+      "featureNome": "Unified Device Visibility e Risk-Based Authentication",
+      "licenseId": "lic_duo_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0085",
+      "featureNome": "Duo Network Gateway (accesso remoto VPN-less)",
+      "licenseId": "lic_duo_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0086",
+      "featureNome": "Duo Network Gateway (accesso remoto VPN-less)",
+      "licenseId": "lic_duo_advantage",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0087",
+      "featureNome": "Duo Network Gateway (accesso remoto VPN-less)",
+      "licenseId": "lic_duo_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0088",
+      "featureNome": "Ispezione stateful e routing di base",
+      "licenseId": "lic_secfw_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0089",
+      "featureNome": "Ispezione stateful e routing di base",
+      "licenseId": "lic_secfw_tmc",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto_0090",
+      "featureNome": "IPS, Malware Defense, URL Filtering (NGFW avanzato)",
+      "licenseId": "lic_secfw_essentials",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto_0091",
+      "featureNome": "IPS, Malware Defense, URL Filtering (NGFW avanzato)",
+      "licenseId": "lic_secfw_tmc",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0092",
+      "featureNome": "Switching L2/L3 di base",
+      "licenseId": "lic_meraki_ms_ent",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0093",
+      "featureNome": "Switching L2/L3 di base",
+      "licenseId": "lic_meraki_ms_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0094",
+      "featureNome": "Adaptive Policy (SGT, solo su MS390)",
+      "licenseId": "lic_meraki_ms_ent",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto2_0095",
+      "featureNome": "Adaptive Policy (SGT, solo su MS390)",
+      "licenseId": "lic_meraki_ms_adv",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto2_0096",
+      "featureNome": "Limite allarmi aperti contemporanei",
+      "licenseId": "lic_avigilon_alta_access_premium",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto2_0097",
+      "featureNome": "Limite allarmi aperti contemporanei",
+      "licenseId": "lic_avigilon_alta_access_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0098",
+      "featureNome": "Piani di lockdown",
+      "licenseId": "lic_avigilon_alta_access_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0099",
+      "featureNome": "Piani di lockdown",
+      "licenseId": "lic_avigilon_alta_access_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0100",
+      "featureNome": "App Muster Reports (censimento emergenza)",
+      "licenseId": "lic_avigilon_alta_access_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto2_0101",
+      "featureNome": "App Muster Reports (censimento emergenza)",
+      "licenseId": "lic_avigilon_alta_access_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0102",
+      "featureNome": "Accesso a knowledge base e materiale self-help",
+      "licenseId": "lic_milestone_care_basic",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0103",
+      "featureNome": "Accesso a knowledge base e materiale self-help",
+      "licenseId": "lic_milestone_care_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0104",
+      "featureNome": "Accesso a knowledge base e materiale self-help",
+      "licenseId": "lic_milestone_care_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0105",
+      "featureNome": "Aggiornamenti prodotto ricorrenti",
+      "licenseId": "lic_milestone_care_basic",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto3_0106",
+      "featureNome": "Aggiornamenti prodotto ricorrenti",
+      "licenseId": "lic_milestone_care_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0107",
+      "featureNome": "Aggiornamenti prodotto ricorrenti",
+      "licenseId": "lic_milestone_care_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0108",
+      "featureNome": "XProtect Remote Manager (monitoraggio salute sistema)",
+      "licenseId": "lic_milestone_care_basic",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto3_0109",
+      "featureNome": "XProtect Remote Manager (monitoraggio salute sistema)",
+      "licenseId": "lic_milestone_care_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0110",
+      "featureNome": "XProtect Remote Manager (monitoraggio salute sistema)",
+      "licenseId": "lic_milestone_care_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto3_0111",
+      "featureNome": "Supporto tecnico diretto 24/7 con SLA di risposta",
+      "licenseId": "lic_milestone_care_basic",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto3_0112",
+      "featureNome": "Supporto tecnico diretto 24/7 con SLA di risposta",
+      "licenseId": "lic_milestone_care_plus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto3_0113",
+      "featureNome": "Supporto tecnico diretto 24/7 con SLA di risposta",
+      "licenseId": "lic_milestone_care_premium",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0114",
+      "featureNome": "Monitoraggio stato Core e periferiche",
+      "licenseId": "lic_qsys_reflect_basic",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0115",
+      "featureNome": "Monitoraggio stato Core e periferiche",
+      "licenseId": "lic_qsys_reflect_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0116",
+      "featureNome": "Attivazione centralizzata licenze feature Q-SYS",
+      "licenseId": "lic_qsys_reflect_basic",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0117",
+      "featureNome": "Attivazione centralizzata licenze feature Q-SYS",
+      "licenseId": "lic_qsys_reflect_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0118",
+      "featureNome": "Accesso remoto UCI e Q-SYS Designer da remoto",
+      "licenseId": "lic_qsys_reflect_basic",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto4_0119",
+      "featureNome": "Accesso remoto UCI e Q-SYS Designer da remoto",
+      "licenseId": "lic_qsys_reflect_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto4_0120",
+      "featureNome": "Report di affidabilita' storici e analisi utilizzo spazi",
+      "licenseId": "lic_qsys_reflect_basic",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto4_0121",
+      "featureNome": "Report di affidabilita' storici e analisi utilizzo spazi",
+      "licenseId": "lic_qsys_reflect_plus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto5_0122",
+      "featureNome": "Camere per server",
+      "licenseId": "lic_avigilon_unity_core",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0123",
+      "featureNome": "Camere per server",
+      "licenseId": "lic_avigilon_unity_standard",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0124",
+      "featureNome": "Camere per server",
+      "licenseId": "lic_avigilon_unity_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto5_0125",
+      "featureNome": "Server per sito",
+      "licenseId": "lic_avigilon_unity_core",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0126",
+      "featureNome": "Server per sito",
+      "licenseId": "lic_avigilon_unity_standard",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0127",
+      "featureNome": "Server per sito",
+      "licenseId": "lic_avigilon_unity_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto5_0128",
+      "featureNome": "Licenze client per server",
+      "licenseId": "lic_avigilon_unity_core",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0129",
+      "featureNome": "Licenze client per server",
+      "licenseId": "lic_avigilon_unity_standard",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0130",
+      "featureNome": "Licenze client per server",
+      "licenseId": "lic_avigilon_unity_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto5_0131",
+      "featureNome": "Rule trigger (automazioni)",
+      "licenseId": "lic_avigilon_unity_core",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto5_0132",
+      "featureNome": "Rule trigger (automazioni)",
+      "licenseId": "lic_avigilon_unity_standard",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_auto5_0133",
+      "featureNome": "Rule trigger (automazioni)",
+      "licenseId": "lic_avigilon_unity_enterprise",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0134",
+      "featureNome": "Funzionalita' NX-OS/ACI di base (L2/L3 standard)",
+      "licenseId": "lic_cisco_dcn_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0135",
+      "featureNome": "Funzionalita' NX-OS/ACI di base (L2/L3 standard)",
+      "licenseId": "lic_cisco_dcn_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0136",
+      "featureNome": "Funzionalita' NX-OS/ACI di base (L2/L3 standard)",
+      "licenseId": "lic_cisco_dcn_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0137",
+      "featureNome": "Passaggio da licensing ACI a NX-OS (o viceversa) durante la subscription",
+      "licenseId": "lic_cisco_dcn_essentials",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0138",
+      "featureNome": "Passaggio da licensing ACI a NX-OS (o viceversa) durante la subscription",
+      "licenseId": "lic_cisco_dcn_advantage",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0139",
+      "featureNome": "Passaggio da licensing ACI a NX-OS (o viceversa) durante la subscription",
+      "licenseId": "lic_cisco_dcn_premier",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto6_0140",
+      "featureNome": "Funzionalita' avanzate (analytics, automazione estesa)",
+      "licenseId": "lic_cisco_dcn_essentials",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto6_0141",
+      "featureNome": "Funzionalita' avanzate (analytics, automazione estesa)",
+      "licenseId": "lic_cisco_dcn_advantage",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto6_0142",
+      "featureNome": "Funzionalita' avanzate (analytics, automazione estesa)",
+      "licenseId": "lic_cisco_dcn_premier",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto6_0143",
+      "featureNome": "Funzionalita' premium (set completo, massima scala)",
+      "licenseId": "lic_cisco_dcn_essentials",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto6_0144",
+      "featureNome": "Funzionalita' premium (set completo, massima scala)",
+      "licenseId": "lic_cisco_dcn_advantage",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto6_0145",
+      "featureNome": "Funzionalita' premium (set completo, massima scala)",
+      "licenseId": "lic_cisco_dcn_premier",
+      "stato": "da_verificare",
+      "nota": "Nomi dei livelli (Essentials/Advantage/Premier) e durate confermati dalla fonte ufficiale Cisco; il dettaglio esatto delle funzionalita' incluse in ciascun livello non e' stato confermato da una fonte ufficiale in questa sessione."
+    },
+    {
+      "id": "lf_auto7_0146",
+      "featureNome": "Filtraggio antivirus/antispam/antiphishing",
+      "licenseId": "lic_fortimail_cloud_gateway_base",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto7_0147",
+      "featureNome": "Filtraggio antivirus/antispam/antiphishing",
+      "licenseId": "lic_fortimail_cloud_gateway_ent",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto7_0148",
+      "featureNome": "FortiCare Premium incluso",
+      "licenseId": "lic_fortimail_cloud_gateway_base",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto7_0149",
+      "featureNome": "FortiCare Premium incluso",
+      "licenseId": "lic_fortimail_cloud_gateway_ent",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto7_0150",
+      "featureNome": "Cloud Sandboxing e Identity-Based Encryption (IBE)",
+      "licenseId": "lic_fortimail_cloud_gateway_base",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto7_0151",
+      "featureNome": "Cloud Sandboxing e Identity-Based Encryption (IBE)",
+      "licenseId": "lic_fortimail_cloud_gateway_ent",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto7_0152",
+      "featureNome": "Integrazione API Microsoft 365 / Google Workspace (clawback post-delivery)",
+      "licenseId": "lic_fortimail_cloud_gateway_base",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto7_0153",
+      "featureNome": "Integrazione API Microsoft 365 / Google Workspace (clawback post-delivery)",
+      "licenseId": "lic_fortimail_cloud_gateway_ent",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0154",
+      "featureNome": "Blocco DNS-layer di domini malevoli, off-network/mobile",
+      "licenseId": "lic_umbrella_dns_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0155",
+      "featureNome": "Blocco DNS-layer di domini malevoli, off-network/mobile",
+      "licenseId": "lic_umbrella_dns_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0156",
+      "featureNome": "API (policy/reporting/enforcement), log export, multi-org console, integrazione Cisco Threat Response",
+      "licenseId": "lic_umbrella_dns_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0157",
+      "featureNome": "API (policy/reporting/enforcement), log export, multi-org console, integrazione Cisco Threat Response",
+      "licenseId": "lic_umbrella_dns_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0158",
+      "featureNome": "App Discovery (rilevamento shadow IT per dominio)",
+      "licenseId": "lic_umbrella_dns_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0159",
+      "featureNome": "App Discovery (rilevamento shadow IT per dominio)",
+      "licenseId": "lic_umbrella_dns_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0160",
+      "featureNome": "Proxy selettivo dei domini a rischio: URL blocking e file inspection (AV + Cisco AMP)",
+      "licenseId": "lic_umbrella_dns_ess",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto8_0161",
+      "featureNome": "Proxy selettivo dei domini a rischio: URL blocking e file inspection (AV + Cisco AMP)",
+      "licenseId": "lic_umbrella_dns_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0162",
+      "featureNome": "Threat intelligence avanzata (console Investigate, API di enrichment on-demand)",
+      "licenseId": "lic_umbrella_dns_ess",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto8_0163",
+      "featureNome": "Threat intelligence avanzata (console Investigate, API di enrichment on-demand)",
+      "licenseId": "lic_umbrella_dns_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto8_0164",
+      "featureNome": "Secure Internet/Private/SaaS Access da agente unico (IPS, Web, DNS, SSL, Anti-Malware, CASB)",
+      "licenseId": "lic_fortisase_standard",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0165",
+      "featureNome": "Secure Internet/Private/SaaS Access da agente unico (IPS, Web, DNS, SSL, Anti-Malware, CASB)",
+      "licenseId": "lic_fortisase_advanced",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0166",
+      "featureNome": "Secure Internet/Private/SaaS Access da agente unico (IPS, Web, DNS, SSL, Anti-Malware, CASB)",
+      "licenseId": "lic_fortisase_comprehensive",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0167",
+      "featureNome": "Secure Browser, integrazioni NOC/SOC, Digital Experience Monitoring",
+      "licenseId": "lic_fortisase_standard",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0168",
+      "featureNome": "Secure Browser, integrazioni NOC/SOC, Digital Experience Monitoring",
+      "licenseId": "lic_fortisase_advanced",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0169",
+      "featureNome": "Secure Browser, integrazioni NOC/SOC, Digital Experience Monitoring",
+      "licenseId": "lic_fortisase_comprehensive",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0170",
+      "featureNome": "ZTNA agentless, SOC-as-a-Service, add-on Global PoP",
+      "licenseId": "lic_fortisase_standard",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0171",
+      "featureNome": "ZTNA agentless, SOC-as-a-Service, add-on Global PoP",
+      "licenseId": "lic_fortisase_advanced",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto8_0172",
+      "featureNome": "ZTNA agentless, SOC-as-a-Service, add-on Global PoP",
+      "licenseId": "lic_fortisase_comprehensive",
+      "stato": "da_verificare",
+      "nota": "Distinzione tra livelli riportata da una fonte secondaria (rivenditore); da confermare su fortinet.com/products/sase prima di usarla in una proposta commerciale."
+    },
+    {
+      "id": "lf_auto9_0173",
+      "featureNome": "SD-WAN routing L2/L3 basato su applicazioni/SLA",
+      "licenseId": "lic_cisco_dna_sdwan_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0174",
+      "featureNome": "SD-WAN routing L2/L3 basato su applicazioni/SLA",
+      "licenseId": "lic_cisco_dna_sdwan_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0175",
+      "featureNome": "Cloud OnRamp per Multicloud e per SaaS + monitoraggio cloud via SD-WAN Manager",
+      "licenseId": "lic_cisco_dna_sdwan_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0176",
+      "featureNome": "Cloud OnRamp per Multicloud e per SaaS + monitoraggio cloud via SD-WAN Manager",
+      "licenseId": "lic_cisco_dna_sdwan_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0177",
+      "featureNome": "Cisco Umbrella SIG Essentials incluso nella subscription",
+      "licenseId": "lic_cisco_dna_sdwan_ess",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0178",
+      "featureNome": "Cisco Umbrella SIG Essentials incluso nella subscription",
+      "licenseId": "lic_cisco_dna_sdwan_adv",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_auto9_0179",
+      "featureNome": "Funzionalita' avanzate aggiuntive (livello superiore, dettaglio non pubblicato in forma tabellare)",
+      "licenseId": "lic_cisco_dna_sdwan_ess",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_auto9_0180",
+      "featureNome": "Funzionalita' avanzate aggiuntive (livello superiore, dettaglio non pubblicato in forma tabellare)",
+      "licenseId": "lic_cisco_dna_sdwan_adv",
+      "stato": "da_verificare",
+      "nota": "Cisco conferma che Advantage include tutto Essentials 'plus we raise the bar even further' senza elencare le singole funzionalita' aggiuntive in una tabella pubblica."
     }
   ],
   "integrazioni": [
@@ -1486,9 +3812,8 @@
       "productId": "prod_catalyst_9300",
       "descrizione": "Gestione cloud tramite Cisco Meraki Dashboard",
       "tipo": "nativa",
-      "note": "Due modalita': Cloud Monitoring (sola visualizzazione, ora denominata 'device configuration', in dismissione come modalita' container-based) oppure Cloud Management with IOS XE (configurazione cloud completa, richiede IOS XE 17.15+, ultima versione disponibile 17.18.3). Switch nativi cloud \"-M\"/MS390 richiedono licenza Meraki (grace period 30 giorni onboarding); switch migrati possono riusare la licenza DNA esistente per la gestione cloud fino al 1 febbraio 2029, senza migrazione di licenza. Supporto esteso ai cloud regionali Meraki India, Meraki China e Meraki Canada.",
-      "fonteId": "src_meraki_ios_xe",
-      "dataUltimaVerificaAutomatica": "2026-08-01"
+      "note": "Due modalita': Cloud Monitoring (sola visualizzazione, in dismissione) oppure Cloud Management with IOS XE (configurazione cloud completa, richiede IOS XE 17.15.3+). Switch nativi cloud \"-M\"/MS390 richiedono licenza Meraki (grace period 30 giorni onboarding); switch migrati possono riusare la licenza DNA esistente per la gestione cloud fino al 1 febbraio 2029, senza migrazione di licenza.",
+      "fonteId": "src_meraki_ios_xe"
     }
   ],
   "fonti": [
@@ -1518,7 +3843,7 @@
       "titolo": "Cloud Management with IOS XE Overview",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale Meraki",
-      "dataConsultazione": "2026-08-01",
+      "dataConsultazione": "2026-07-30",
       "stato": "controllo frequente (area in evoluzione rapida)",
       "categoriaControllo": "release"
     },
@@ -1861,19 +4186,647 @@
       "dataConsultazione": "2026-07-31",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_ctrl",
+      "url": "https://www.barco.com/en/product/barco-ctrl",
+      "titolo": "Barco CTRL software - Control room software",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_unisee2",
+      "url": "https://www.barco.com/en/product/barco-unisee-2",
+      "titolo": "Barco UniSee II - LCD video walls",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_flex",
+      "url": "http://www.crestron.com/flex",
+      "titolo": "Crestron Flex Video Conferencing",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_processing",
+      "url": "https://www.qsys.com/products-solutions/q-sys/processing/",
+      "titolo": "Q-SYS Core processors - Processing",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_nv",
+      "url": "https://www.qsys.com/products-solutions/q-sys/video/nv-series/",
+      "titolo": "Q-SYS NV Series - AV over IP",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_shure_mxa920",
+      "url": "https://www.shure.com/en-US/products/microphones/mxa920",
+      "titolo": "MXA920 - Ceiling Array Microphone",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_shure_microflex_advance",
+      "url": "https://www.shure.com/en-US/solutions/microflex-advance",
+      "titolo": "Microflex Advance Array Microphones",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_kommander",
+      "url": "https://www.k-array.com/en/products/line/kommander",
+      "titolo": "Kommander Line of Power Amplifiers",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_maxhub_viewpro",
+      "url": "https://www.maxhub.com/en/viewpro_series_v6/",
+      "titolo": "MAXHUB V6 ViewPro Series",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_milestone_comparison_chart",
+      "url": "https://download.milestonesys.com/MTSKB/KB000034241/XProtect%20VMS%202026%20R1%20Comparison%20Chart.pdf",
+      "titolo": "XProtect VMS 2026 R1 - Product Comparison Chart",
+      "vendorId": "v_milestone",
+      "tipo": "documento comparativo ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_meraki_ms_community",
+      "url": "https://community.meraki.com/t5/Switching/MS-Switches-Enterprise-vs-Advanced-license/td-p/109675",
+      "titolo": "MS Switches Enterprise vs Advanced license (community ufficiale Cisco Meraki)",
+      "vendorId": "v_cisco",
+      "tipo": "community ufficiale del vendor",
+      "dataConsultazione": "2026-07-31",
+      "stato": "da rivedere periodicamente (fonte community, non datasheet)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_avigilon_alta_access_admin",
+      "url": "https://www.avigilon.com/fs/documents/avigilon-alta-access-administrator-guide-en.pdf",
+      "titolo": "Avigilon Alta Access Administrator Guide",
+      "vendorId": "v_avigilon",
+      "tipo": "guida amministrativa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_shure_ulxd",
+      "url": "https://www.shure.com/en-US/products/wireless-systems/ulx-d_digital_wireless",
+      "titolo": "ULX-D Digital Wireless Systems",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_shure_axient_digital",
+      "url": "https://www.shure.com/en-US/products/wireless-systems/axient_digital",
+      "titolo": "Axient Digital Wireless Microphone System",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_axis_lpv",
+      "url": "https://www.axis.com/products/axis-license-plate-verifier",
+      "titolo": "AXIS License Plate Verifier",
+      "vendorId": "v_axis",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_axis_lpv_support",
+      "url": "https://www.axis.com/products/axis-license-plate-verifier/support",
+      "titolo": "AXIS License Plate Verifier - Support (licensing per camera)",
+      "vendorId": "v_axis",
+      "tipo": "pagina di supporto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_milestone_care",
+      "url": "https://www.milestonesys.com/products/services/milestone-care/",
+      "titolo": "Milestone Care - XProtect maintenance and support program",
+      "vendorId": "v_milestone",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_qsys_reflect",
+      "url": "https://www.qsys.com/products/q-sys/monitoring-management/q-sys-reflect/",
+      "titolo": "Q-SYS Reflect",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_qsys_visionsuite_licensing",
+      "url": "https://help.qsys.com/Content/Core_Manager/Core_Management/Licensing.htm",
+      "titolo": "Q-SYS Core Manager - Licensing (VisionSuite)",
+      "vendorId": "v_qsys",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_barco_clickshare_present",
+      "url": "https://www.barco.com/en/products/clickshare-conferencing-collaboration/wireless-presentation",
+      "titolo": "ClickShare Present - Wireless presentation system",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_umbrella_dns_ess",
+      "url": "https://umbrella.cisco.com/products/dns-security-essentials-package",
+      "titolo": "DNS Security Essentials Package - Cisco Umbrella",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "controllo frequente (rebranding in corso verso Secure Access - DNS Defense)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_umbrella_dns_adv",
+      "url": "https://umbrella.cisco.com/products/dns-security-advantage-package",
+      "titolo": "DNS Security Advantage Package - Cisco Umbrella",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "controllo frequente (rebranding in corso verso Secure Access - DNS Defense)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_crestron_dmnvx",
+      "url": "https://www.crestron.com/Products/Featured-Solutions/DigitalMedia-NVX-Series",
+      "titolo": "DM NVX - AV-over-IP",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_milestone_husky",
+      "url": "https://www.milestonesys.com/products/hardware/husky-hardware",
+      "titolo": "Husky hardware - Milestone Systems VMS hardware appliance",
+      "vendorId": "v_milestone",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_te_ordering",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/cisco-thousandeyes-og.html",
+      "titolo": "Cisco ThousandEyes Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_webex_roomkit_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/spark-room-kit-series/datasheet-c78-738729.html",
+      "titolo": "Cisco Room Kit - Webex Room Kit Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_avigilon_unity_ds",
+      "url": "https://www.avigilon.com/fs/documents/avigilon-unity-video-datasheet-en.pdf",
+      "titolo": "Avigilon Unity Video 8 - Datasheet (editions Core/Standard/Enterprise)",
+      "vendorId": "v_avigilon",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_axis_optimizer_milestone",
+      "url": "https://www.axis.com/dam/public/d3/60/03/datasheet-axis-optimizer-for-milestone-xprotect-en-US-397038.pdf",
+      "titolo": "AXIS Optimizer for Milestone XProtect - Datasheet",
+      "vendorId": "v_axis",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_dcn_licensing",
+      "url": "https://www.cisco.com/site/us/en/products/networking/software/data-center-networking-subscriptions.html",
+      "titolo": "Cisco Data Center Networking Licensing",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_nexus_license_nav",
+      "url": "https://www.cisco.com/c/en/us/td/docs/Website/datacenter/license/index.html",
+      "titolo": "Cisco Nexus 9000 and 3000 Series Data Center Switch License Navigator",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_aci_licensing",
+      "url": "https://www.cisco.com/site/us/en/products/networking/cloud-networking/application-centric-infrastructure/licensing.html",
+      "titolo": "Cisco ACI Licensing Guide and Software Subscriptions",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_sdwan_dna_ordering",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/software/dna-subscription-routing/guide-c07-740642.html",
+      "titolo": "Cisco DNA Software for SD-WAN and Routing Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_fortiweb_docs",
+      "url": "https://docs.fortinet.com/product/fortiweb/hardware",
+      "titolo": "FortiWeb - documentazione prodotto/hardware",
+      "vendorId": "v_fortinet",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortinac_ds",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortinac.pdf",
+      "titolo": "FortiNAC Data Sheet",
+      "vendorId": "v_fortinet",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortiauthenticator_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortiauthenticator.pdf",
+      "titolo": "Ordering Guide FortiAuthenticator",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_fortitoken_ds",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortitoken.pdf",
+      "titolo": "FortiToken Mobile Data Sheet",
+      "vendorId": "v_fortinet",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_fortisandbox_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortisandbox.pdf",
+      "titolo": "Ordering Guide FortiSandbox and FortiGuard Sandbox Service",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_spaces_ds",
+      "url": "https://www.cisco.com/c/en_uk/products/collateral/wireless/dna-spaces/datasheet-c78-741786.html",
+      "titolo": "Cisco Spaces Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_spaces_packages",
+      "url": "https://spaces.cisco.com/packages/",
+      "titolo": "Cisco Spaces - Packages",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_karray_anakonda",
+      "url": "https://www.k-array.com/en/products/line/anakonda",
+      "titolo": "K-array Anakonda line",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_maxhub_capturesystem",
+      "url": "https://www.maxhub.com/en/capture-system-v3/",
+      "titolo": "MAXHUB Capture System V3",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_rumble",
+      "url": "https://www.k-array.com/en/products/line/rumble",
+      "titolo": "K-array Rumble - subwoofer line",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_domino",
+      "url": "https://www.k-array.com/en/product/domino-kf26",
+      "titolo": "K-array Domino-KF26",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_kayman",
+      "url": "https://www.k-array.com/en/product/kayman-ky102",
+      "titolo": "K-array Kayman-KY102",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortimail_ds",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiMail.pdf",
+      "titolo": "FortiMail Data Sheet",
+      "vendorId": "v_fortinet",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortimail_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortimail.pdf",
+      "titolo": "Ordering Guide FortiMail",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_umbrella_aag",
+      "url": "https://www.cisco.com/c/dam/en/us/products/collateral/security/aag-cisco-umbrella.pdf",
+      "titolo": "Cisco Umbrella At a Glance (confronto pacchetti)",
+      "vendorId": "v_cisco",
+      "tipo": "documento ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "controllo frequente (rebranding in corso)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_fortisase_product_page",
+      "url": "https://www.fortinet.com/products/sase",
+      "titolo": "FortiSASE - pagina prodotto ufficiale",
+      "vendorId": "v_fortinet",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_dna_ebook",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/software/dna-software-ebook-cte.html",
+      "titolo": "Understanding Cisco DNA and Catalyst Software (eBook ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_c9300_eol_listing",
+      "url": "https://www.cisco.com/c/en/us/products/switches/catalyst-9300-series-switches/eos-eol-notice-listing.html",
+      "titolo": "Cisco Catalyst 9300 Series - End-of-Life and End-of-Sale Notices (elenco ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoL/EoS ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "controllo frequente (nuovi bollettini pubblicati periodicamente)",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_milestone_husky_migration",
+      "url": "https://doc.milestonesys.com/hy/m/pdf/201909/en-US/MilestoneHuskyMseries_SystemMigrationGuide_en-US.pdf",
+      "titolo": "Milestone Husky M series - System Migration Guide (documentazione ufficiale Milestone)",
+      "vendorId": "v_milestone",
+      "tipo": "guida ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_fortigate_gseries_pr",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-expands-fortigate-g-series-to-secure-ai-from-data-center-to-modern-enterprise-edges",
+      "titolo": "Fortinet Expands FortiGate G Series to Secure AI from the Data Center to Modern Enterprise Edges (comunicato ufficiale, maggio 2026)",
+      "vendorId": "v_fortinet",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_meraki_wifi7_page",
+      "url": "https://meraki.cisco.com/products/wi-fi/",
+      "titolo": "Meraki Access Points - Wi-Fi 7 (pagina prodotto ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_axis_iscwest2026",
+      "url": "https://newsroom.axis.com/en-us/press-release/isc-west-2026",
+      "titolo": "Axis Communications Introduces the Next Wave of Unified Security Solutions at ISC West 2026 (comunicato ufficiale)",
+      "vendorId": "v_axis",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_milestone_2026r1_pr",
+      "url": "https://www.prnewswire.com/news-releases/milestone-systems-strengthens-security-operations-and-expands-cloud-capabilities-with-xprotect-2026-r1-and-arcules-updates-302754972.html",
+      "titolo": "Milestone Systems - XProtect 2026 R1 e aggiornamenti Arcules (comunicato ufficiale, aprile 2026)",
+      "vendorId": "v_milestone",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_cisco_catcenter_ai_assistant",
+      "url": "https://www.cisco.com/c/en/us/td/docs/cloud-systems-management/network-automation-and-management/catalyst-center/articles/cisco-catalyst-center-ai-assistant.html",
+      "titolo": "Cisco Catalyst Center - AI Assistant (documentazione ufficiale, aggiornata maggio 2026)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_qsys_news_official",
+      "url": "https://www.qsys.com/news/",
+      "titolo": "Q-SYS News (comunicati ufficiali QSC, 2026)",
+      "vendorId": "v_qsys",
+      "tipo": "comunicati stampa ufficiali",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recenti)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_shure_mxa925",
+      "url": "https://www.shure.com/en-EU/newsroom/shure-ise-2026",
+      "titolo": "Shure Brings the Future of the AI-Powered Workplace to ISE 2026 (comunicato ufficiale)",
+      "vendorId": "v_shure",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_shure_slxdplus",
+      "url": "https://www.shure.com/en-US/newsroom/shure-introduces-slx-d-plus-wireless-microphone-system",
+      "titolo": "Shure Introduces SLX-D+ Wireless Microphone System (comunicato ufficiale, gennaio 2026)",
+      "vendorId": "v_shure",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_clickshare_hub_pr",
+      "url": "https://www.barco.com/en/about/press-releases/2026/clickshare-launches-its-first-wireless-room-system-bundles-certified-for-microsoft-teams-with-sennheiser",
+      "titolo": "ClickShare Hub - primi bundle certificati Microsoft Teams (comunicato ufficiale Barco, gennaio 2026)",
+      "vendorId": "v_barco",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_press_releases",
+      "url": "https://www.barco.com/en/about/press-releases",
+      "titolo": "Barco - Press releases (elenco ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "comunicati stampa ufficiali",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recenti)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_crestron_ise2026_launch",
+      "url": "https://www.avinteractive.com/news/products/crestron-launches-five-products-for-culture-of-collaboration-21-01-2026",
+      "titolo": "Crestron launches five products for 'culture of collaboration' (gennaio 2026)",
+      "vendorId": "v_crestron",
+      "tipo": "comunicato stampa (ripreso da testata di settore)",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente, verificare su crestron.com)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_karray_ise2026_launch",
+      "url": "https://www.k-arrayusa.com/newsletters/k-array-returns-to-ise-with-exciting-new-product-launches-from-across-its-ecosystem",
+      "titolo": "K-array Debuts Multiple New Products Across Its Brand Portfolio at ISE 2026 (comunicato ufficiale K-array USA)",
+      "vendorId": "v_karray",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_maxhub_infocomm2026_pr",
+      "url": "https://www.prnewswire.com/apac/news-releases/maxhub-showcases-ai-powered-collaboration-and-display-solutions-at-infocomm-2026-302803968.html",
+      "titolo": "MAXHUB Showcases AI-Powered Collaboration and Display Solutions at InfoComm 2026 (comunicato ufficiale, giugno 2026)",
+      "vendorId": "v_maxhub",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
     }
   ],
-  "changelog": [
-    {
-      "id": "chg_ai_1785572186642_src_meraki_ios_xe",
-      "entita": "AggiornamentoAutomatico",
-      "azione": "modifica applicata da AI senza revisione umana",
-      "nome": "Cloud Management with IOS XE Overview",
-      "citazioni": [
-        "famiglie/fam_catalyst.descrizione: \"Cloud Management with IOS XE offers flexibility of choosing the configuration source for your switches: cloud or device. With cloud configuration, you can use Meraki dashboard and Meraki APIs to configure your switches. With device configuration, you are able to configure your switch locally via the CLI or using other tools. In IOS XE 17.18.1 we introduced support for features like BGP, VRF, In-Service Software Upgrades, and expanded support for the entire Catalyst 9200,9300, and C9500 High Performance families. Now with IOS XE 17.18.2, we are introducing brand new cloud EVPN fabric capabilities, Virtual Router Redundancy Protocol (VRRP) support. Support for Cisco Catalyst switch platforms running IOS XE has been extended to the Meraki India, Meraki China, and Meraki Canada regional clouds.\"",
-        "integrazioni/int_catalyst_meraki.note: \"Eligible devices can migrate to cloud management using your existing DNA license - no additional license migration or transfer required until February 1, 2029. Support for Cisco Catalyst switch platforms running IOS XE has been extended to the Meraki India, Meraki China, and Meraki Canada regional clouds. device configuration (previously referred to as cloud monitoring)\""
-      ],
-      "timestamp": "2026-08-01T08:16:26.642Z"
-    }
-  ]
+  "changelog": []
 }
