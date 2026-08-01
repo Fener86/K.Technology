@@ -235,9 +235,10 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_switching",
       "nome": "Catalyst 9000 Series",
-      "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via CLI/Catalyst Center oppure, dove supportato, direttamente dal Meraki Dashboard.",
+      "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via Meraki Dashboard con due modalità: cloud configuration (configurazione tramite Meraki dashboard e API Meraki) oppure device configuration (configurazione locale via CLI o altri strumenti, con monitoring e troubleshooting cloud). Supporta IOS XE con funzionalità avanzate come BGP, VRF, EVPN fabric, VRRP e In-Service Software Upgrades. Disponibile anche su cloud regionali Meraki India, Meraki China e Meraki Canada.",
       "stato": "attivo",
-      "fonteId": "src_meraki_ios_xe"
+      "fonteId": "src_meraki_ios_xe",
+      "dataUltimaVerificaAutomatica": "2026-08-01"
     },
     {
       "id": "fam_meraki_dashboard",
@@ -1485,8 +1486,9 @@
       "productId": "prod_catalyst_9300",
       "descrizione": "Gestione cloud tramite Cisco Meraki Dashboard",
       "tipo": "nativa",
-      "note": "Due modalita': Cloud Monitoring (sola visualizzazione, in dismissione) oppure Cloud Management with IOS XE (configurazione cloud completa, richiede IOS XE 17.15.3+). Switch nativi cloud \"-M\"/MS390 richiedono licenza Meraki (grace period 30 giorni onboarding); switch migrati possono riusare la licenza DNA esistente per la gestione cloud fino al 1 febbraio 2029, senza migrazione di licenza.",
-      "fonteId": "src_meraki_ios_xe"
+      "note": "Due modalita': Cloud Monitoring (sola visualizzazione, ora denominata 'device configuration', in dismissione come modalita' container-based) oppure Cloud Management with IOS XE (configurazione cloud completa, richiede IOS XE 17.15+, ultima versione disponibile 17.18.3). Switch nativi cloud \"-M\"/MS390 richiedono licenza Meraki (grace period 30 giorni onboarding); switch migrati possono riusare la licenza DNA esistente per la gestione cloud fino al 1 febbraio 2029, senza migrazione di licenza. Supporto esteso ai cloud regionali Meraki India, Meraki China e Meraki Canada.",
+      "fonteId": "src_meraki_ios_xe",
+      "dataUltimaVerificaAutomatica": "2026-08-01"
     }
   ],
   "fonti": [
@@ -1516,7 +1518,7 @@
       "titolo": "Cloud Management with IOS XE Overview",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale Meraki",
-      "dataConsultazione": "2026-07-30",
+      "dataConsultazione": "2026-08-01",
       "stato": "controllo frequente (area in evoluzione rapida)",
       "categoriaControllo": "release"
     },
@@ -1861,5 +1863,17 @@
       "categoriaControllo": "datasheet"
     }
   ],
-  "changelog": []
+  "changelog": [
+    {
+      "id": "chg_ai_1785572186642_src_meraki_ios_xe",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cloud Management with IOS XE Overview",
+      "citazioni": [
+        "famiglie/fam_catalyst.descrizione: \"Cloud Management with IOS XE offers flexibility of choosing the configuration source for your switches: cloud or device. With cloud configuration, you can use Meraki dashboard and Meraki APIs to configure your switches. With device configuration, you are able to configure your switch locally via the CLI or using other tools. In IOS XE 17.18.1 we introduced support for features like BGP, VRF, In-Service Software Upgrades, and expanded support for the entire Catalyst 9200,9300, and C9500 High Performance families. Now with IOS XE 17.18.2, we are introducing brand new cloud EVPN fabric capabilities, Virtual Router Redundancy Protocol (VRRP) support. Support for Cisco Catalyst switch platforms running IOS XE has been extended to the Meraki India, Meraki China, and Meraki Canada regional clouds.\"",
+        "integrazioni/int_catalyst_meraki.note: \"Eligible devices can migrate to cloud management using your existing DNA license - no additional license migration or transfer required until February 1, 2029. Support for Cisco Catalyst switch platforms running IOS XE has been extended to the Meraki India, Meraki China, and Meraki Canada regional clouds. device configuration (previously referred to as cloud monitoring)\""
+      ],
+      "timestamp": "2026-08-01T08:16:26.642Z"
+    }
+  ]
 }
