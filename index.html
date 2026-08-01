@@ -472,6 +472,7 @@ function viewFamily(fam, c, L) {
   const prodotti = c.prodotti.filter((p) => p.familyId === fam.id);
   const licenze = c.licenze.filter((l) => l.familyId === fam.id);
   const vendor = L.vendors[fam.vendorId];
+  const featureNomi = [...new Set(c.licenseFeatures.filter((lf) => licenze.some((l) => l.id === lf.licenseId)).map((lf) => lf.featureNome))];
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor?.nome,hash:"#/vendor/"+vendor?.id},{label:fam.nome}])}
     <h1 class="h1">${led(fam.stato)}${esc(fam.nome)}</h1>
@@ -488,6 +489,12 @@ function viewFamily(fam, c, L) {
     ${licenze.length ? `<table class="tbl"><thead><tr><th>Nome ufficiale</th><th>Tipologia</th><th>Metrica</th><th>Durata</th><th>Fonte</th></tr></thead><tbody>
       ${licenze.map(l=>`<tr data-nav="#/license/${l.id}"><td>${esc(l.nomeUfficiale)}</td><td>${esc(l.tipologia)}</td><td>${esc(l.metrica)}</td><td>${esc(l.durata)}</td><td>${sourceTag(L.fonti[l.fonteId])}</td></tr>`).join("")}
     </tbody></table>` : `<div class="empty">Nessuna licenza ancora inserita per questa famiglia.</div>`}
+    ${featureNomi.length ? `
+    <h2 class="h2">Matrice comparativa: cosa e' incluso in ciascuna licenza/edizione</h2>
+    <div class="desc" style="margin-bottom:8px;">Confronto diretto delle funzionalita' tra le licenze di questa famiglia, senza dover cambiare pagina.</div>
+    <table class="tbl"><thead><tr><th>Funzionalita'</th>${licenze.map(l=>`<th>${esc(l.nomeUfficiale.replace("FortiGuard ","").replace(" bundle","").replace(fam.nome+" ",""))}</th>`).join("")}</tr></thead><tbody>
+      ${featureNomi.map(fn=>`<tr><td>${esc(fn)}</td>${licenze.map(l=>{const cell=c.licenseFeatures.find(lf=>lf.licenseId===l.id&&lf.featureNome===fn); return `<td>${cell?featureBadge(cell.stato,cell.nota):'<span class="hint">da verificare</span>'}</td>`;}).join("")}</tr>`).join("")}
+    </tbody></table>` : ""}
   `;
 }
 
