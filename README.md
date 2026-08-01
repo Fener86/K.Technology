@@ -39,23 +39,36 @@ Aprire `index.html` in questo modo (tramite un vero server http) e' importante: 
 direttamente da disco (`file://...`), il browser blocca il caricamento di `data/catalog.json`
 per motivi di sicurezza (CORS). La pagina ha comunque un fallback che ti avvisa in questo caso.
 
-## 3. Attivare il controllo automatico giornaliero delle fonti
+## 3. Attivare il controllo automatico giornaliero e l'aggiornamento AI senza revisione
 
-Non serve nessuna configurazione aggiuntiva: il workflow
-`.github/workflows/daily-source-check.yml` e' gia' incluso e si attiva da solo ogni giorno
-alle 06:00 UTC, oltre a poter essere lanciato manualmente da **Actions -> Controllo
-giornaliero fonti vendor -> Run workflow**.
+Il workflow `.github/workflows/daily-source-check.yml` e' gia' incluso e si attiva da solo
+ogni giorno alle 06:00 UTC, oltre a poter essere lanciato manualmente da **Actions ->
+Controllo giornaliero fonti vendor -> Run workflow**.
 
-Lo script `scripts/check-sources.mjs`:
-- controlla che ogni URL registrato in `data/catalog.json` (campo `fonti`) sia raggiungibile;
-- calcola un hash del contenuto e lo confronta con quello del giorno prima;
-- se il contenuto e' cambiato, lo segnala (`cambiataDaUltimoControllo: true`) in
-  `data/source-status.json`, che la pagina mostra in Home.
+Lo script `scripts/check-sources.mjs` fa due cose:
 
-Importante: questo e' un controllo di *variazione*, non una riverifica del significato
-tecnico/commerciale del contenuto. Quando una fonte risulta "cambiata", un Product Manager
-deve aprire il link e aggiornare manualmente il catalogo se necessario (il principio
-"nessuna informazione senza fonte verificata da una persona" resta valido).
+1. **Controllo di variazione** (sempre attivo, nessuna configurazione richiesta): verifica
+   che ogni URL registrato in `data/catalog.json` sia raggiungibile e se il contenuto e'
+   cambiato rispetto al giorno prima.
+2. **Aggiornamento automatico assistito da AI** (per scelta esplicita di Kaplet, **senza
+   revisione umana**): quando una fonte HTML risulta cambiata, lo script scarica il nuovo
+   testo, lo confronta con la voce di catalogo collegata tramite Claude, e **scrive
+   direttamente la modifica** se e solo se il modello si dichiara "confidenza alta" (il
+   testo della fonte afferma il nuovo valore in modo esplicito e non ambiguo). Se la
+   confidenza e' media o bassa, la fonte resta solo segnalata per revisione manuale, come
+   prima — il bot non scrive mai un dato di cui non e' sicuro.
+
+Per attivare la parte 2, aggiungi un secret in **Settings -> Secrets and variables ->
+Actions -> New repository secret**: nome `ANTHROPIC_API_KEY`, valore la tua chiave API
+Anthropic. Senza questo secret, il workflow continua a funzionare ma si limita al solo
+controllo di variazione (nessuna scrittura automatica).
+
+**Nota di rischio, letta e accettata**: le modifiche applicate in questo modo NON passano
+da un'approvazione umana prima di entrare nel catalogo. Ogni modifica scritta in automatico
+viene pero' registrata nello storico (`changelog` dentro `catalog.json`) con la citazione
+esatta della fonte usata come motivazione, cosi' resta sempre verificabile a posteriori. Le
+fonti in formato PDF non vengono lette dall'AI in questa versione (solo pagine HTML) e
+restano sempre segnalate per revisione manuale.
 
 ## 4. Collegare il pannello Admin al repository (per condividere le modifiche)
 
