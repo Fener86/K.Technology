@@ -1,12 +1,18 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 31/07/2026 (sessione 8)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 9 — prima sessione con scrittura diretta su GitHub via token fornito dal cliente)_
 
 ## 1. Attivita' completate (cumulativo)
 
 - Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente: tutti funzionanti.
-- **57 famiglie**, 82 prodotti, 65 licenze, **180 righe di matrice**, **101 fonti ufficiali**, 0 errori di integrita'.
-- Sessione 8: completato il giro "novita' recenti 2026" su tutti gli 11 vendor rimasti (Barco ClickShare Hub/CX-50, Crestron Collab Compute/DM NAX/80 Series, K-Array Dragon KX2/Keystone/Koral/Thunder cardioide, MAXHUB FA27 dvLED/XBar W70/AI Meeting Experience), tutte da comunicati stampa o pagine ufficiali dirette dei vendor con data verificata. Confermata (fonte ufficiale K-array USA) la relazione di gruppo K-Array/KSCAPE/KGEAR, senza reintrodurre K-Scape come vendor separato (rispettata la richiesta del cliente).
+- **58 famiglie**, 85 prodotti, 65 licenze, **180 righe di matrice**, **107 fonti ufficiali**, 0 errori di integrita'.
+- **NOVITA' IMPORTANTE**: da questa sessione Claude scrive DIRETTAMENTE su GitHub (repo Fener86/K.Technology) tramite un Personal Access Token fine-grained fornito dal cliente (permessi Contents + Workflows: Read and write). Non serve piu' copiare/incollare manualmente i file.
+- Creato un secondo workflow GitHub Actions: **"Scoperta settimanale novita' vendor"** (.github/workflows/weekly-discovery.yml + scripts/discover-updates.mjs), attivo, gira ogni lunedi' alle 05:00 UTC. Fa una ricerca web libera (Claude + web_search) per ciascun vendor; scrive automaticamente in catalog.json SOLO se l'URL della fonte appartiene a un dominio ufficiale noto del vendor, altrimenti salva la proposta in data/proposals.json per revisione umana senza toccare il catalogo.
+- Sessione 9: aggiunte novita' Cisco ISE 3.5 (cambio logica licensing pxGrid/Profiling), Milestone BriefCam (nuova famiglia) + XProtect Evidence Manager + funzioni AI generativa XProtect, Avigilon H6A PTZ + Alta Visitor.
+
+## Nota tecnica sul token GitHub
+
+- Il tentativo di lanciare manualmente il nuovo workflow via API (`workflow_dispatch`) ha dato errore 403: il token fine-grained del cliente NON ha il permesso "Actions: Read and write" (ha solo Contents e Workflows). Per lanciare i workflow da qui in futuro, il cliente dovrebbe aggiungere anche quel permesso al token. In alternativa, i workflow partono comunque da soli secondo la schedulazione cron, oppure il cliente puo' lanciarli manualmente dalla UI di GitHub (Actions -> Run workflow).
 
 ## 2. Vendor elaborati (famiglie inserite)
 
