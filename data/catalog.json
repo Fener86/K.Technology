@@ -1769,6 +1769,28 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Sistema di gestione delle prove digitali (evidence management) per XProtect: workflow di condivisione e conservazione dei filmati, pensato per enti pubblici/forze dell'ordine. Lancio iniziale negli Stati Uniti, disponibilita' internazionale prevista nel corso del 2026.",
       "fonteId": "src_milestone_evidence_manager_pr"
+    },
+    {
+      "id": "prod_avigilon_h6a_ptz",
+      "familyId": "fam_avigilon_alta_video",
+      "nomeCommerciale": "Avigilon H6A PTZ",
+      "modello": "H6A PTZ",
+      "tipologia": "hardware",
+      "deployment": "on-premise/cloud (Alta)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Camera PTZ con controllo in tempo reale e dettaglio a lungo raggio per il tracciamento di minacce in movimento.",
+      "fonteId": "src_avigilon_homepage"
+    },
+    {
+      "id": "prod_avigilon_alta_visitor",
+      "familyId": "fam_avigilon_alta_access",
+      "nomeCommerciale": "Avigilon Alta Visitor",
+      "modello": "Modulo software (visitor management)",
+      "tipologia": "software",
+      "deployment": "cloud",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Gestione visitatori con check-in rapido e conformita', integrata nella piattaforma Alta Access; disponibile in prova gratuita di 30 giorni.",
+      "fonteId": "src_avigilon_homepage"
     }
   ],
   "licenze": [
@@ -4897,6 +4919,16 @@
       "tipo": "comunicato stampa ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente, lancio iniziale limitato a Stati Uniti)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_avigilon_homepage",
+      "url": "https://www.avigilon.com/",
+      "titolo": "Avigilon - End-to-End Security Solutions (pagina ufficiale)",
+      "vendorId": "v_avigilon",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "release"
     }
   ],
