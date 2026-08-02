@@ -854,6 +854,28 @@
       "descrizione": "Piattaforma di analisi video AI del gruppo Milestone: ricerca forense rapida, riconoscimento oggetti/persone, dashboard di business intelligence da flussi video. Novita' 2026: nuovo motore di analytics BriefCam annunciato insieme a XProtect App Platform (containerizzata), in early access con disponibilita' generale prevista per fine 2026.",
       "stato": "nuovo",
       "fonteId": "src_milestone_ai_native_pr"
+    },
+    {
+      "id": "fam_fortiendpoint",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": "af_edr",
+      "nome": "FortiEndpoint (piattaforma endpoint unificata)",
+      "descrizione": "Nuova piattaforma endpoint unificata Fortinet (annunciata luglio 2026), che consolida in un unico agente/console/licenza: protezione endpoint, detection & response, accesso remoto sicuro, data loss prevention nativa per interazioni con l'AI, risk/compliance scoring, accesso zero-trust adattivo e assistenza FortiAI in linguaggio naturale. Disponibilita' prevista Q3 2026. Costruisce sulla base di FortiClient/FortiClient EMS ed evolve la strategia di consolidamento Fortinet per l'era dell'AI aziendale.",
+      "stato": "nuovo",
+      "fonteId": "src_fortinet_fortiendpoint_pr"
+    },
+    {
+      "id": "fam_fortisoc",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiSOC (SOC cloud unificato)",
+      "descrizione": "Piattaforma SaaS cloud-delivered Fortinet (disponibile da giugno 2026) che unifica 6 funzioni di security operations (SIEM, SOAR, threat intelligence, identity detection e altre) in un'unica console, con AI agentica che indaga e correla automaticamente gli alert su asset e identita', proponendo o eseguendo azioni di risposta sotto supervisione dell'analista. Licensing 'one console, one subscription'.",
+      "stato": "nuovo",
+      "fonteId": "src_fortinet_fortisoc_pr"
     }
   ],
   "prodotti": [
@@ -1791,6 +1813,28 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Gestione visitatori con check-in rapido e conformita', integrata nella piattaforma Alta Access; disponibile in prova gratuita di 30 giorni.",
       "fonteId": "src_avigilon_homepage"
+    },
+    {
+      "id": "prod_fortiendpoint_platform",
+      "familyId": "fam_fortiendpoint",
+      "nomeCommerciale": "FortiEndpoint",
+      "modello": "Agente unico multipiattaforma",
+      "tipologia": "software",
+      "deployment": "on-premise (agente) + gestione cloud/on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Agente endpoint unico che sostituisce/consolida le funzioni precedentemente distribuite tra FortiClient ed EDR separati, con moduli AI-aware integrati.",
+      "fonteId": "src_fortinet_fortiendpoint_pr"
+    },
+    {
+      "id": "prod_fortisoc_platform",
+      "familyId": "fam_fortisoc",
+      "nomeCommerciale": "FortiSOC",
+      "modello": "Servizio cloud SaaS",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Console unica di security operations con AI agentica per investigazione e correlazione automatica degli alert.",
+      "fonteId": "src_fortinet_fortisoc_pr"
     }
   ],
   "licenze": [
@@ -4929,6 +4973,26 @@
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_fortinet_fortiendpoint_pr",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-expands-fortiendpoint-with-new-capabilities-for-the-ai-era",
+      "titolo": "Fortinet Expands FortiEndpoint with New Capabilities for the AI Era (comunicato ufficiale, luglio 2026)",
+      "vendorId": "v_fortinet",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_fortinet_fortisoc_pr",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom",
+      "titolo": "Fortinet Newsroom - annuncio FortiSOC (giugno 2026, tramite comunicati stampa ufficiali)",
+      "vendorId": "v_fortinet",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente, verificare URL diretto sul newsroom)",
       "categoriaControllo": "release"
     }
   ],
