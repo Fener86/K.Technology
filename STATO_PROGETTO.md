@@ -1,14 +1,12 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 9 — prima sessione con scrittura diretta su GitHub via token fornito dal cliente)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 10, scrittura diretta GitHub)_
 
 ## 1. Attivita' completate (cumulativo)
 
-- Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente: tutti funzionanti.
-- **58 famiglie**, 85 prodotti, 65 licenze, **180 righe di matrice**, **107 fonti ufficiali**, 0 errori di integrita'.
-- **NOVITA' IMPORTANTE**: da questa sessione Claude scrive DIRETTAMENTE su GitHub (repo Fener86/K.Technology) tramite un Personal Access Token fine-grained fornito dal cliente (permessi Contents + Workflows: Read and write). Non serve piu' copiare/incollare manualmente i file.
-- Creato un secondo workflow GitHub Actions: **"Scoperta settimanale novita' vendor"** (.github/workflows/weekly-discovery.yml + scripts/discover-updates.mjs), attivo, gira ogni lunedi' alle 05:00 UTC. Fa una ricerca web libera (Claude + web_search) per ciascun vendor; scrive automaticamente in catalog.json SOLO se l'URL della fonte appartiene a un dominio ufficiale noto del vendor, altrimenti salva la proposta in data/proposals.json per revisione umana senza toccare il catalogo.
-- Sessione 9: aggiunte novita' Cisco ISE 3.5 (cambio logica licensing pxGrid/Profiling), Milestone BriefCam (nuova famiglia) + XProtect Evidence Manager + funzioni AI generativa XProtect, Avigilon H6A PTZ + Alta Visitor.
+- Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente, scoperta settimanale: tutti funzionanti.
+- **60 famiglie**, 87 prodotti, 65 licenze, **180 righe di matrice**, **110 fonti ufficiali**, 0 errori di integrita'.
+- Sessione 10: aggiunte **FortiEndpoint** (nuova piattaforma endpoint unificata Fortinet, luglio 2026) e **FortiSOC** (SOC cloud unificato con AI agentica, giugno 2026); aggiornata la famiglia Cisco Duo con **Cisco Identity Intelligence** (sostituisce Trust Monitor) e nuove funzioni Windows Command Line Protection/Legacy AD Protection.
 
 ## Nota tecnica sul token GitHub
 
