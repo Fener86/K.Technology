@@ -323,7 +323,7 @@
       "macroareaId": "ma_cyber",
       "areaFunzionaleId": "af_nac",
       "nome": "Cisco Identity Services Engine (ISE)",
-      "descrizione": "Piattaforma di network access control e identity Cisco: AAA, profiling, accesso guest, segmentazione (TrustSec), postura, con licensing a tre livelli annidati (Essentials/Advantage/Premier) basato su endpoint attivi.",
+      "descrizione": "Piattaforma di network access control e identity Cisco: AAA, profiling, accesso guest, segmentazione (TrustSec), postura, con licensing a tre livelli annidati (Essentials/Advantage/Premier) basato su endpoint attivi. Novita' recente: con ISE 3.5 (giugno 2026) cambia la logica di consumo licenze — pxGrid, pxGrid Direct, Profiling e TrustSec ora consumano una licenza Advantage per endpoint con sessione RADIUS attiva (in precedenza il consumo non era sempre riflesso correttamente). Per ora Cisco non applica enforcement per sovra-consumo (solo alert informativi), in vista di un'applicazione piu' stringente nelle prossime release. ISE 3.5 aggiunge anche supporto IPv6 full-stack e nuove API pxGrid Cloud.",
       "stato": "attivo",
       "fonteId": "src_cisco_ise_licensing_guide"
     },
@@ -4824,6 +4824,26 @@
       "vendorId": "v_maxhub",
       "tipo": "comunicato stampa ufficiale",
       "dataConsultazione": "2026-07-31",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_cisco_ise35_licensing_update",
+      "url": "https://community.cisco.com/t5/security-knowledge-base/new-updates-licensing-updates-with-cisco-ise-3-5-june-2026/ta-p/5334843",
+      "titolo": "Licensing updates with Cisco ISE 3.5 (community ufficiale Cisco, giugno 2026)",
+      "vendorId": "v_cisco",
+      "tipo": "community ufficiale del vendor",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_ise35_release_notes",
+      "url": "https://www.cisco.com/c/en/us/td/docs/security/ise/3-5/release_notes/cisco-ise-release-notes-35.html",
+      "titolo": "Release Notes for Cisco Identity Services Engine, Release 3.5",
+      "vendorId": "v_cisco",
+      "tipo": "release notes ufficiali",
+      "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "release"
     }
