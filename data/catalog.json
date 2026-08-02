@@ -334,7 +334,7 @@
       "macroareaId": "ma_cyber",
       "areaFunzionaleId": null,
       "nome": "Cisco Duo",
-      "descrizione": "Piattaforma MFA/identity security Cisco, con edizioni Free/Essentials/Advantage/Premier (e Federal), licenza a utente/mese.",
+      "descrizione": "Piattaforma MFA/identity security Cisco, con edizioni Free/Essentials/Advantage/Premier (e Federal), licenza a utente/mese. Novita' 2026: Duo Advantage/Premier sono ora potenziati da Cisco Identity Intelligence (insight, segnali e remediation cross-vendor sull'identita'), che sta sostituendo la precedente funzione Trust Monitor (rimossa dal pannello admin il 27/07/2026, end-of-support gennaio 2027 per la sola API). Aggiunte anche Windows Command Line Protection (MFA per PowerShell/SSH) e Legacy AD Protection (MFA per applicazioni legacy via Kerberos/NTLM senza modifiche allo schema Active Directory).",
       "stato": "attivo",
       "fonteId": "src_duo_editions"
     },
@@ -4994,6 +4994,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente, verificare URL diretto sul newsroom)",
       "categoriaControllo": "release"
+    },
+    {
+      "id": "src_duo_advantage_overview",
+      "url": "https://duo.com/docs/advantage-overview",
+      "titolo": "Duo Advantage Overview (documentazione ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
