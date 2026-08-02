@@ -389,7 +389,7 @@
       "macroareaId": "ma_phys",
       "areaFunzionaleId": "af_vms",
       "nome": "Milestone XProtect",
-      "descrizione": "VMS on-premise Milestone a licenza perpetua per-device. Edizioni attuali: Express+, Professional+, Expert, Corporate. XProtect Essential+ (gratuita fino a 8 canali) e' stata dismessa con la release 2025 R2. Ultima release: XProtect 2026 R1 (aprile 2026), con Device Pack 14.1 (oltre 16.300 dispositivi verificati, 181 nuovi da 15 technology partner), nuovo LogServer con vista centralizzata dei log, e reportistica pianificata/personalizzabile in XProtect Remote Manager per i clienti Milestone Care Plus.",
+      "descrizione": "VMS on-premise Milestone a licenza perpetua per-device. Edizioni attuali: Express+, Professional+, Expert, Corporate. XProtect Essential+ (gratuita fino a 8 canali) e' stata dismessa con la release 2025 R2. Ultima release: XProtect 2026 R1 (aprile 2026), con Device Pack 14.1 (oltre 16.300 dispositivi verificati, 181 nuovi da 15 technology partner), nuovo LogServer con vista centralizzata dei log, e reportistica pianificata/personalizzabile in XProtect Remote Manager per i clienti Milestone Care Plus. Novita' 2026: nuove funzioni di AI generativa annunciate per XProtect — AI Search (ricerca in linguaggio naturale nei filmati), Video Summarization (riepiloghi automatici) e Video Anonymization, con attenzione dichiarata a compliance EU AI Act/GDPR.",
       "stato": "attivo",
       "fonteId": "src_milestone_comparison"
     },
@@ -843,6 +843,17 @@
       "descrizione": "Nuova linea di display LED modulari MAXHUB (serie FA27, 'un cabinet, tre tecnologie'), presentata a InfoComm 2026 per sale grandi/auditorium/digital signage di grande formato.",
       "stato": "nuovo",
       "fonteId": "src_maxhub_infocomm2026_pr"
+    },
+    {
+      "id": "fam_milestone_briefcam",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_videoanalytics",
+      "nome": "BriefCam (analisi video AI, Milestone)",
+      "descrizione": "Piattaforma di analisi video AI del gruppo Milestone: ricerca forense rapida, riconoscimento oggetti/persone, dashboard di business intelligence da flussi video. Novita' 2026: nuovo motore di analytics BriefCam annunciato insieme a XProtect App Platform (containerizzata), in early access con disponibilita' generale prevista per fine 2026.",
+      "stato": "nuovo",
+      "fonteId": "src_milestone_ai_native_pr"
     }
   ],
   "prodotti": [
@@ -1747,6 +1758,17 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Kit videobar riconosciuto con lo SCN Installation Product Award 2026 per il prodotto AI piu' innovativo a InfoComm 2026.",
       "fonteId": "src_maxhub_infocomm2026_pr"
+    },
+    {
+      "id": "prod_milestone_evidence_manager",
+      "familyId": "fam_milestone_xprotect",
+      "nomeCommerciale": "XProtect Evidence Manager",
+      "modello": "Estensione software a XProtect",
+      "tipologia": "software",
+      "deployment": "on-premise / cloud (da verificare)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Sistema di gestione delle prove digitali (evidence management) per XProtect: workflow di condivisione e conservazione dei filmati, pensato per enti pubblici/forze dell'ordine. Lancio iniziale negli Stati Uniti, disponibilita' internazionale prevista nel corso del 2026.",
+      "fonteId": "src_milestone_evidence_manager_pr"
     }
   ],
   "licenze": [
@@ -4845,6 +4867,36 @@
       "tipo": "release notes ufficiali",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_milestone_ai_native_pr",
+      "url": "https://www.milestonesys.com/company/news/press-releases/open-platform-ai-native-era/",
+      "titolo": "Milestone Systems Redefines the Open Platform for an AI-Native Era (comunicato ufficiale, marzo 2026)",
+      "vendorId": "v_milestone",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_milestone_ai_security_pr",
+      "url": "https://www.milestonesys.com/company/news/press-releases/ai-built-for-security-operations/",
+      "titolo": "Milestone Systems Announces AI Built for Security Operations (comunicato ufficiale, marzo 2026)",
+      "vendorId": "v_milestone",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_milestone_evidence_manager_pr",
+      "url": "https://www.milestonesys.com/company/news/press-releases/launch-xprotect-evidence-manager/",
+      "titolo": "Milestone Systems launches XProtect Evidence Manager (comunicato ufficiale)",
+      "vendorId": "v_milestone",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente, lancio iniziale limitato a Stati Uniti)",
       "categoriaControllo": "release"
     }
   ],
