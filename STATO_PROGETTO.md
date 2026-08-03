@@ -1,5 +1,20 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 03/08/2026 (sessione 20, scrittura diretta GitHub)_
+
+## Sessione 20 — pulizia + giro per vendor
+
+- Riempiti tutti i campi "modello"/"deployment" ancora segnati DA VERIFICARE sui prodotti importati (432 prodotti, 0 placeholder residui)
+- Controllo qualita' con confronto per somiglianza testuale: trovati e rimossi 6 prodotti quasi-duplicati
+- Corretta la famiglia di Barco TransForm N CMS (era finita sotto ClickShare invece che Control Room) + aggiunta la sua licenza reale (a connessioni concorrenti, 16/32/64/128)
+- K-Array: aggiornato K-framework3 (era "da verificare", ora confermato gratuito) + aggiunti K-Cloud (piattaforma di gestione remota, mancava) e K-Monitor
+- Meraki MR36/44/46: nota cautelativa aggiunta (fonti terze discordanti sulla data EoS esatta), con link alla pagina ufficiale Meraki EOL da controllare caso per caso
+- 7 famiglie generiche riclassificate con categoria corretta
+
+**Numeri finali: 81 famiglie, 434 prodotti, 149 licenze, 353 righe di matrice, 395 fonti, 0 errori di integrita', 0 duplicati.**
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 03/08/2026 (sessione 19 — merge massivo da file Excel del cliente)_
 
 ## MERGE MASSIVO DA FILE ESTERNO (Kaplet_Technology_Portfolio_DEMO_v28.xlsx)
