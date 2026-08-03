@@ -3618,19 +3618,8 @@
       "modello": "AXIS Network Cameras (fisse/dome/bullet/PTZ/multisensore/termiche)",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
+      "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio di telecamere di rete Axis",
-      "fonteId": null
-    },
-    {
-      "id": "prod_xwgfixx1",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "AXIS Camera Station Edge / Cloud Storage",
-      "modello": "AXIS Camera Station Edge / Cloud Storage",
-      "tipologia": "cloud",
-      "deployment": "cloud",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Varianti edge e cloud storage di Camera Station",
       "fonteId": null
     },
     {
@@ -3643,17 +3632,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzioni di controllo accessi Axis, integrabili in Camera Station Pro",
       "fonteId": "src_axis_cs_pro"
-    },
-    {
-      "id": "prod_xhs0rckz",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "AXIS Optimizer for Milestone",
-      "modello": "AXIS Optimizer for Milestone",
-      "tipologia": "software (plugin)",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Plugin di integrazione tra dispositivi Axis e Milestone XProtect",
-      "fonteId": null
     },
     {
       "id": "prod_x9cabqvd",
@@ -3755,17 +3733,6 @@
       "fonteId": "src_barco_transformn_cms"
     },
     {
-      "id": "prod_xlnnocq2",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "Barco Event Master",
-      "modello": "Barco Event Master",
-      "tipologia": "hardware/software",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Piattaforma di elaborazione immagine per eventi live",
-      "fonteId": null
-    },
-    {
       "id": "prod_xtv4pi59",
       "familyId": "fam_barco_clickshare",
       "nomeCommerciale": "SmartCare per ClickShare",
@@ -3849,9 +3816,9 @@
       "modello": "Crestron AirMedia",
       "tipologia": "hardware/software",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Gateway di presentazione wireless, supportato da XiO Cloud",
-      "fonteId": null
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Tecnologia di presentazione/conferencing wireless BYOD Crestron, plug-and-play, con controllo e digital signage integrati; disponibile anche come licenza attivabile (SW-DMPS3-AIRMEDIA) sui sistemi DMPS3-4K-250/350-C.",
+      "fonteId": "src_crestron_airmedia_page"
     },
     {
       "id": "prod_xcjbh5u2",
@@ -3860,7 +3827,7 @@
       "modello": "Crestron DigitalMedia (DM)",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
+      "statoLifecycle": "attivo",
       "descrizioneBreve": "Distribuzione AV su cavo strutturato, predecessore di DM NVX",
       "fonteId": null
     },
@@ -3984,50 +3951,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Indice ufficiale di tutte le categorie di prodotto MAXHUB",
       "fonteId": "src_xbd8xmr2"
-    },
-    {
-      "id": "prod_xnejl3pw",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB Interactive Flat Panel",
-      "modello": "MAXHUB Interactive Flat Panel",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Display interattivi per collaboration",
-      "fonteId": null
-    },
-    {
-      "id": "prod_xs3b3o0a",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB XBar Series (video bar)",
-      "modello": "MAXHUB XBar Series (video bar)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Video bar per conferencing",
-      "fonteId": null
-    },
-    {
-      "id": "prod_xk2aj8ur",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB Speakerphone / PTZ Camera / Microphone",
-      "modello": "MAXHUB Speakerphone / PTZ Camera / Microphone",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Accessori UC per sale riunioni",
-      "fonteId": null
-    },
-    {
-      "id": "prod_xnxkdoip",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB Direct View LED Display",
-      "modello": "MAXHUB Direct View LED Display",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Display a LED per installazioni professionali",
-      "fonteId": null
     },
     {
       "id": "prod_x2nrealm",
@@ -4278,7 +4201,7 @@
       "modello": "Mid-range",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
+      "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW con SoC4 SD-WAN ASIC per filiali di medie/grandi dimensioni (esistenza e specifiche confermate solo da rivenditori terzi in questa sessione)",
       "fonteId": null
     },
@@ -4300,7 +4223,7 @@
       "modello": "Mid-range",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
+      "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW per campus e filiali di medie dimensioni (esistenza confermata da fonti terze, pagina fortinet.com non raggiunta in questa sessione)",
       "fonteId": null
     },
@@ -5438,17 +5361,6 @@
       "fonteId": "src_xc25u1k0"
     },
     {
-      "id": "prod_x2pwaq0e",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Avigilon Alta / Unity — cataloghi camere per modello",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Elenco completo modelli camera (H4/H5/H6 fisse, dome, bullet, PTZ, termiche) non ancora recuperato pagina per pagina in questa sessione.",
-      "fonteId": null
-    },
-    {
       "id": "prod_xa663ks1",
       "familyId": "fam_barco_clickshare",
       "nomeCommerciale": "Garanzia standard ClickShare",
@@ -5598,7 +5510,7 @@
       "modello": "hardware",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "da_verificare",
+      "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistemi di controllo e automazione sala; pagina prodotto ufficiale su crestron.com non raggiunta in questa sessione (solo rivenditori terzi per modelli come CP4).",
       "fonteId": null
     },
@@ -14208,6 +14120,16 @@
       "url": "https://www.k-array.com/en/software/k-framework-3",
       "titolo": "K-framework3 (pagina prodotto ufficiale)",
       "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_airmedia_page",
+      "url": "https://www.crestron.com/Products/Featured-Solutions/AirMedia",
+      "titolo": "AirMedia (pagina prodotto ufficiale)",
+      "vendorId": "v_crestron",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
