@@ -1032,6 +1032,18 @@
       "categoria": "Threat Intelligence / Digital Risk Protection",
       "stato": "attivo",
       "fonteId": "src_fortirecon_page"
+    },
+    {
+      "id": "fam_meraki_mg",
+      "vendorId": "v_cisco",
+      "brandLineId": "bl_meraki",
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": "af_cloudmanaged",
+      "nome": "Meraki MG",
+      "descrizione": "Gateway cellulare cloud-gestito Meraki (LTE/5G), usato come connettivita' primaria o di backup, tipicamente abbinato a MX per topologie SD-WAN in alta disponibilita'. Gestione 100% cloud tramite Meraki Dashboard, licenza obbligatoria per ogni dispositivo (per device/anno). Nota: il sito marketing meraki.com sta migrando su cisco.com (redirect automatico dai link esistenti dal 19 agosto).",
+      "categoria": "Wireless / Access Point",
+      "stato": "attivo",
+      "fonteId": "src_meraki_mg_enterprise"
     }
   ],
   "prodotti": [
@@ -2178,6 +2190,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusore a cuneo ultra-compatto con copertura orizzontale controllata (selezionabile Spot/Flood), per installazioni discrete in scenografie e teatri.",
       "fonteId": "src_karray_turtle"
+    },
+    {
+      "id": "prod_meraki_mg_gateway",
+      "familyId": "fam_meraki_mg",
+      "nomeCommerciale": "Meraki MG (serie gateway cellulare)",
+      "modello": "Multi-modello (MG21/MG41/MG51/MG52)",
+      "tipologia": "hardware",
+      "deployment": "on-premise, gestione cloud Meraki Dashboard",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Gateway che converte segnale cellulare LTE/5G in Ethernet, usabile come uplink primario o di backup con qualsiasi router/switch, Meraki o non-Meraki.",
+      "fonteId": "src_meraki_mg_enterprise"
     }
   ],
   "licenze": [
@@ -3195,6 +3218,21 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
       "fonteId": "src_cisco_secure_access_sub_og"
+    },
+    {
+      "id": "lic_meraki_mg_enterprise",
+      "familyId": "fam_meraki_mg",
+      "productIds": [
+        "prod_meraki_mg_gateway"
+      ],
+      "nomeUfficiale": "Meraki MG Enterprise",
+      "tipologia": "subscription",
+      "metrica": "per dispositivo/anno",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "rinnovo": "manuale",
+      "gracePeriod": "30 giorni in caso di superamento del limite di licenza organizzativo",
+      "conseguenzeScadenza": "il dispositivo smette di fornire connettivita' se non coperto da licenza valida nell'organizzazione",
+      "fonteId": "src_meraki_mg_enterprise"
     }
   ],
   "licenseFeatures": [
@@ -5625,6 +5663,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_meraki_mg_enterprise",
+      "url": "https://meraki.cisco.com/product/cellular/enterprise-license-2/",
+      "titolo": "Meraki MG - Enterprise license (pagina ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "controllo frequente (meraki.com in migrazione verso cisco.com dal 19 agosto)",
+      "categoriaControllo": "release"
     }
   ],
   "changelog": []
