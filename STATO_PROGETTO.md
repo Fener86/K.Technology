@@ -1,5 +1,32 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 03/08/2026 (sessione 19 — merge massivo da file Excel del cliente)_
+
+## MERGE MASSIVO DA FILE ESTERNO (Kaplet_Technology_Portfolio_DEMO_v28.xlsx)
+
+Il cliente ha fornito un proprio dataset di ricerca (41 fogli: 12 vendor + 26 drill-down/licensing + README/TEMPLATE),
+costruito con lo stesso principio delle fonti ufficiali. E' stato elaborato ed integrato in un'unica sessione:
+- 163 nuovi prodotti dai 12 fogli vendor principali (portfolio Fortinet/Cisco esteso su sicurezza/cloud/SOC)
+- 159 nuovi prodotti dai fogli drill-down modelli (FortiGate/Meraki MX/Axis camere/Cisco Secure Firewall-Nexus-Catalyst/Shure ULX-D/K-Array/MAXHUB/Barco EventMaster/Avigilon Alta/Crestron/Q-SYS Core)
+- 148 nuove licenze dai fogli licensing dettagliato (Milestone/Meraki/Cisco DNA Catalyst/Axis/Avigilon Unity/Q-SYS/Cisco Duo)
+- 173 righe di matrice aggiuntive (FortiGuard bundles 16 feature x 3, Milestone XProtect 25 feature x 4)
+- Segnalazioni EoS urgenti dal README del cliente: Meraki Systems Manager dismesso dal 3/6/2026; Meraki MR36/44/46 in EoS dal 25/6/2026 (da incrociare con la famiglia Meraki MR gia' presente)
+
+**Numeri finali: 81 famiglie, 438 prodotti, 148 licenze, 353 righe di matrice, 391 fonti, 0 errori di integrita', 0 duplicati.**
+
+**Limiti onesti di questo merge veloce (da rifinire quando c'e' tempo)**:
+- I prodotti importati hanno spesso "modello" e "deployment" = "DA VERIFICARE CON IL VENDOR" (non presenti nel file sorgente)
+- 7 famiglie create durante il primo merge hanno categoria "Altro / da classificare" (da riclassificare)
+- Le fonti del file del cliente non sono state ri-verificate una per una in questa sessione (il file dichiara di averle gia' verificate con lo stesso metodo)
+- Da incrociare manualmente: le date EoS Meraki MR36/44/46 segnalate nel file cliente vs lo stato attuale della famiglia fam_meraki_mr nel catalogo (ancora "attivo")
+
+## Chiarimento navigazione categoria
+
+Confermato al cliente: cliccare l'intestazione di una categoria (es. "Switch") dentro una pagina vendor porta alla vista
+trasversale a TUTTI i vendor di quella categoria (comportamento voluto, per confronto). Non e' un bug.
+
+## Sessioni precedenti (riepilogo)
+
 _Ultimo aggiornamento: 02/08/2026 (sessione 18, scrittura diretta GitHub)_
 
 Sessione 18: aggiunte Q-SYS NC Series (camere videoconferenza), Q-SYS CX-Q/NL Series (amplificatori/diffusori di rete). Modificata l'interfaccia su richiesta del cliente: la pagina vendor ora mostra un elenco compatto di categorie (non piu' le card espanse inline); cliccando su una categoria si entra nella pagina dedicata (cross-vendor) che mostra il contenuto. **Numeri attuali: 73 famiglie, 113 prodotti, 70 licenze, 180 righe di matrice, 141 fonti, 0 errori.**
