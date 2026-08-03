@@ -378,7 +378,7 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_cloudmanaged",
       "nome": "Meraki - modelli di licensing (trasversale)",
-      "descrizione": "Tre modelli di licensing cloud Meraki applicabili all'intero portafoglio: Subscription (attuale modello raccomandato), Co-Termination (default storico, tutte le licenze scadono alla stessa data organizzativa), Per-Device Licensing (legacy, non piu' disponibile per nuovi clienti). Grace period di 30 giorni in caso di superamento del limite di licenza.",
+      "descrizione": "Tre modelli di licensing cloud Meraki applicabili all'intero portafoglio: Subscription (attuale modello raccomandato), Co-Termination (default storico, tutte le licenze scadono alla stessa data organizzativa), Per-Device Licensing (legacy, non piu' disponibile per nuovi clienti). Grace period di 30 giorni in caso di superamento del limite di licenza. Novita' 2026: **AI Assistant** ora generalmente disponibile nel Meraki Dashboard (tranne cloud Cina/India/FedRAMP), con funzioni di monitoraggio, troubleshooting e workflow automatizzati in linguaggio naturale. Aggiornamenti recenti: caricamento immagini/screenshot multimodale, 'Generative UI Agent' (risposte adattate dinamicamente in interfacce personalizzate), visualizzazione dei passaggi di ragionamento in streaming.",
       "stato": "attivo",
       "fonteId": "src_meraki_licensing_overview"
     },
@@ -5004,6 +5004,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_ai_assistant_updates",
+      "url": "https://documentation.meraki.com/Platform_Management/Dashboard_Administration/Troubleshooting_and_Support/Support/AI_Assistant_for_Networking_-_Product_Updates",
+      "titolo": "AI Assistant for Networking - Product Updates (documentazione ufficiale Meraki)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale Meraki",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
     }
   ],
   "changelog": []
