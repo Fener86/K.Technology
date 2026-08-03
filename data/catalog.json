@@ -1092,6 +1092,18 @@
       "categoria": "Diffusori / Amplificazione",
       "stato": "attivo",
       "fonteId": "src_qsys_cxq"
+    },
+    {
+      "id": "fam_meraki_mt",
+      "vendorId": "v_cisco",
+      "brandLineId": "bl_meraki",
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": "af_cloudmanaged",
+      "nome": "Meraki MT (sensori IoT) — ATTENZIONE: End-of-Sale annunciato",
+      "descrizione": "Sensori IoT cloud-gestiti Meraki (temperatura/umidita', acqua, qualita' aria, apertura porte, controllo alimentazione smart). ATTENZIONE COMMERCIALE URGENTE: Cisco ha annunciato l'End-of-Sale il 12/05/2026. Ultimo giorno per ordinare hardware, accessori e licenze pluriennali: 10/11/2026 (dopo tale data solo licenze 1 anno fino al 10/11/2030). Fine supporto: 30/11/2031. Licenza attualmente model-agnostic (LIC-MT-XY, 1/3/5/7 anni), 5 licenze gratuite per organizzazione, 2 licenze gratuite aggiuntive per ogni licenza MR Advantage attiva.",
+      "categoria": "Wireless / Access Point",
+      "stato": "end_of_sale",
+      "fonteId": "src_meraki_mt_eos_faq"
     }
   ],
   "prodotti": [
@@ -2348,6 +2360,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema stereo portatile plug-and-play che integra subwoofer Thunder autoamplificato con line array Python/Kayman, montaggio da una sola persona in pochi minuti tramite K-array Connect (app mobile).",
       "fonteId": "src_karray_pinnacle"
+    },
+    {
+      "id": "prod_meraki_mt_sensors",
+      "familyId": "fam_meraki_mt",
+      "nomeCommerciale": "Meraki MT (serie sensori)",
+      "modello": "MT10/MT11/MT12/MT14/MT15/MT20/MT30/MT40",
+      "tipologia": "hardware",
+      "deployment": "on-premise, gestione cloud Meraki Dashboard",
+      "statoLifecycle": "end_of_sale",
+      "descrizioneBreve": "Sensori Bluetooth Low Energy per monitoraggio ambientale (temperatura, acqua, qualita' aria, porte, alimentazione), collegati a gateway Meraki compatibili. In End-of-Sale, ultimo ordine 10/11/2026.",
+      "fonteId": "src_meraki_mt_datasheet"
     }
   ],
   "licenze": [
@@ -5907,6 +5930,26 @@
       "titolo": "K-array Pinnacle line - sistemi portatili",
       "vendorId": "v_karray",
       "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_meraki_mt_eos_faq",
+      "url": "https://documentation.meraki.com/IoT/MT_-_Sensors/Product_Information/MT_Overviews_and_Datasheets/MT_Sensors_End-of-Sale_FAQ",
+      "titolo": "MT Sensors End-of-Sale FAQ (documentazione ufficiale Meraki)",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoS/EoL ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "URGENTE: ultimo giorno acquisto hardware/licenze pluriennali 10/11/2026",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_meraki_mt_datasheet",
+      "url": "https://meraki.cisco.com/product-collateral/mt-family-datasheet-20220308-english/?file=",
+      "titolo": "MT Cloud-Managed Sensors - Family Datasheet",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
