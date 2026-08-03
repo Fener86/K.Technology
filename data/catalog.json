@@ -380,7 +380,7 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_wireless",
       "nome": "Meraki MR",
-      "descrizione": "Access point wireless cloud-gestiti Meraki. Licenza comune a tutti i modelli AP, 2 livelli (Enterprise, Advanced/Upgrade).",
+      "descrizione": "Access point wireless cloud-gestiti Meraki. Licenza comune a tutti i modelli AP, 2 livelli (Enterprise, Advanced/Upgrade). ATTENZIONE — verificare prima di proporre: fonti terze non ufficiali segnalano un End-of-Sale per i modelli MR36/MR36H/MR44/MR46/MR46E, ma con date discordanti tra loro (viste sia il 2021 sia dicembre 2026); una discussione sulla community ufficiale Cisco di febbraio 2026 affermava che MR46 non fosse ancora in End-of-Sale. Controllare sempre la pagina ufficiale Meraki EOL (elenco completo, aggiornato) prima di quotare questi modelli specifici.",
       "stato": "attivo",
       "fonteId": "src_meraki_licensing_faq",
       "categoria": "Wireless / Access Point"
@@ -1113,7 +1113,7 @@
       "areaFunzionaleId": null,
       "nome": "Sistema Operativo",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): Sistema Operativo.",
-      "categoria": "Altro / da classificare",
+      "categoria": "Sistema Operativo / Firmware",
       "stato": "attivo",
       "fonteId": "src_xaevwnzx"
     },
@@ -1125,7 +1125,7 @@
       "areaFunzionaleId": null,
       "nome": "Unified SASE",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): Unified SASE.",
-      "categoria": "Altro / da classificare",
+      "categoria": "SASE / SSE / ZTNA",
       "stato": "attivo",
       "fonteId": "src_xdv2fe10"
     },
@@ -1137,7 +1137,7 @@
       "areaFunzionaleId": null,
       "nome": "Videosorveglianza (adiacente OT)",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): Videosorveglianza (adiacente OT).",
-      "categoria": "Altro / da classificare",
+      "categoria": "Telecamere",
       "stato": "attivo",
       "fonteId": "src_xb4d8bqb"
     },
@@ -1149,7 +1149,7 @@
       "areaFunzionaleId": null,
       "nome": "Licensing",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): Licensing.",
-      "categoria": "Altro / da classificare",
+      "categoria": "Licensing (modelli trasversali)",
       "stato": "attivo",
       "fonteId": "src_xcy3gjcp"
     },
@@ -1161,7 +1161,7 @@
       "areaFunzionaleId": null,
       "nome": "AV over IP",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): AV over IP.",
-      "categoria": "Altro / da classificare",
+      "categoria": "AV over IP",
       "stato": "attivo",
       "fonteId": "src_xsvb5kfk"
     },
@@ -1173,7 +1173,7 @@
       "areaFunzionaleId": null,
       "nome": "Software",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): Software.",
-      "categoria": "Altro / da classificare",
+      "categoria": "Management Platform",
       "stato": "attivo",
       "fonteId": "src_xy0wxsyn"
     },
@@ -1185,7 +1185,7 @@
       "areaFunzionaleId": null,
       "nome": "UC Integration",
       "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): UC Integration.",
-      "categoria": "Altro / da classificare",
+      "categoria": "Videoconferenza / Collaboration",
       "stato": "attivo",
       "fonteId": "src_xaxdb21m"
     }
@@ -14201,6 +14201,16 @@
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_eol_official",
+      "url": "https://documentation.meraki.com/Platform_Management/Product_Information/End-of-Life_Notices/Meraki_End-of-Life_(EOL)_Products_and_Dates",
+      "titolo": "Meraki End-of-Life (EOL) Products and Dates (pagina ufficiale, elenco completo aggiornato)",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoL/EoS ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "controllo frequente — fonti terze in disaccordo sulle date esatte MR36/44/46, verificare su questa pagina prima di ogni proposta",
+      "categoriaControllo": "eol"
     }
   ],
   "changelog": []
