@@ -1,12 +1,16 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 13, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 14, scrittura diretta GitHub)_
 
 ## 1. Attivita' completate (cumulativo)
 
 - Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente, scoperta settimanale: tutti funzionanti.
-- **66 famiglie**, 95 prodotti, 69 licenze, **180 righe di matrice**, **121 fonti ufficiali**, 0 errori di integrita'.
-- Sessione 13: aggiunte **Avigilon Unity Access** (on-premise, distinta da Alta Access cloud); **Cisco Secure Access SSE completo** (SIA/SPA, distinto dal solo DNS Defense); completati i prodotti Axis da ISC West 2026 (Q2802-E bispettrale, F2180-TE termico, TP3604-E cellulare privata); **Barco I65** (nuova famiglia proiezione).
+- **66 famiglie**, 97 prodotti, 69 licenze, **180 righe di matrice**, **121 fonti ufficiali**, 0 errori di integrita'.
+- Sessione 14: **CONTROLLO QUALITA' ESEGUITO** — verificati duplicati, campi vuoti/troppo lunghi, date future, URL malformati, macroaree mancanti, stati lifecycle non validi, fonti duplicate. Trovati e corretti: 1 descrizione oltre 300 caratteri (FortiGate G Series), 2 fonti duplicate (stesso URL, id diverso) unificate. Aggiunte anche novita' Crestron DM-NVX-DIR2 e DM-NVX-384/385 con Multiview.
+
+## Metodologia controllo qualita' (riutilizzabile nelle prossime sessioni)
+
+Script di controllo eseguito su ogni salvataggio: integrita' referenziale (fam/prod/lic/fonti/licenseFeatures), duplicati per nome, campi vuoti o fuori limite di lunghezza, date di consultazione fonte nel futuro, URL malformati, famiglie senza macroarea, stati lifecycle/tipologia/feature non standard, URL fonte duplicati. Va rieseguito periodicamente (ogni 3-4 sessioni di popolamento) per mantenere la qualita'.
 
 ## Nota tecnica sul token GitHub
 
