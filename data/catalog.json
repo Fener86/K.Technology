@@ -2145,6 +2145,39 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Videobar all-in-one della gamma ClickShare Hub, gestibile e monitorabile da XMS Cloud insieme al resto della flotta ClickShare.",
       "fonteId": "src_barco_xms_userguide"
+    },
+    {
+      "id": "prod_karray_python",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Python (line array 3.15\")",
+      "modello": "KP52 I / KP102 I",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusore passivo discreto con driver da 3.15\" ravvicinati, Pure Array Technology, per copertura uniforme a lunga distanza (chiese, aule, sale conferenza).",
+      "fonteId": "src_karray_python"
+    },
+    {
+      "id": "prod_karray_tornado",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Tornado (point source in alluminio)",
+      "modello": "KT2 / KT2C",
+      "tipologia": "hardware",
+      "deployment": "on-premise (installazione a parete o a soffitto)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Point source compatto in alluminio per installazioni sensibili allo spazio, convertibile in versione autoamplificata con modulo dedicato; impedenza selezionabile.",
+      "fonteId": "src_karray_tornado"
+    },
+    {
+      "id": "prod_karray_turtle",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Turtle (wedge a basso profilo)",
+      "modello": "KRM33P e altri",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sotto balconata, scenografie, studi broadcast)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusore a cuneo ultra-compatto con copertura orizzontale controllata (selezionabile Spot/Flood), per installazioni discrete in scenografie e teatri.",
+      "fonteId": "src_karray_turtle"
     }
   ],
   "licenze": [
@@ -5559,6 +5592,36 @@
       "titolo": "XMS Cloud User guide (documentazione ufficiale, elenco dispositivi supportati incl. ClickShare Bar)",
       "vendorId": "v_barco",
       "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_python",
+      "url": "https://www.k-array.com/en/products/line/python",
+      "titolo": "K-array Python line",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_tornado",
+      "url": "https://www.k-array.com/en/products/line/tornado",
+      "titolo": "K-array Tornado line",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_turtle",
+      "url": "https://www.k-array.com/en/products/line/turtle",
+      "titolo": "K-array Turtle line",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
