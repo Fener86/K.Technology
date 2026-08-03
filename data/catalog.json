@@ -920,6 +920,17 @@
       "descrizione": "Sistema di controllo accessi on-premise Avigilon (ex Access Control Manager/ACM), gestibile da browser o mobile, con integrazione nativa a Unity Video per correlare eventi di accesso e video. Disponibile su appliance hardware Professional/Enterprise/Enterprise Plus o come appliance virtuale (VMware vSphere/Hyper-V, con supporto vMotion per alta disponibilita').",
       "stato": "attivo",
       "fonteId": "src_avigilon_unity_access_page"
+    },
+    {
+      "id": "fam_cisco_secure_access_sse",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": "af_sase",
+      "nome": "Cisco Secure Access (SSE completo)",
+      "descrizione": "Piattaforma Security Service Edge cloud-delivered Cisco, distinta dal solo 'Secure Access - DNS Defense' (ex Umbrella): copre ZTNA, Secure Web Gateway, CASB e Firewall-as-a-Service, con funzionalita' estese (VPN-as-a-Service, DLP, AI Assistant, Digital Experience Monitoring, Remote Browser Isolation, guardrail per app/agenti AI). Licenza per 'Covered User', pacchetti Secure Internet Access (SIA) e Secure Private Access (SPA). Integrata con Meraki SD-WAN per networking + zero-trust unificati. Supporto sempre richiesto (SWSS Enhanced di default, upgradabile a Premium).",
+      "stato": "nuovo",
+      "fonteId": "src_cisco_secure_access_ds"
     }
   ],
   "prodotti": [
@@ -1912,6 +1923,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Server di controllo accessi on-premise scalabile da installazioni piccole (Professional) a grandi enterprise (Enterprise Plus), o in forma virtuale.",
       "fonteId": "src_avigilon_unity_access_factsheet"
+    },
+    {
+      "id": "prod_cisco_secure_access_platform",
+      "familyId": "fam_cisco_secure_access_sse",
+      "nomeCommerciale": "Cisco Secure Access",
+      "modello": "Servizio cloud multi-tenant",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Piattaforma SSE unificata per accesso zero-trust da qualsiasi utente/dispositivo a qualsiasi applicazione, con upgrade automatico guidato da Cisco Umbrella o ASA VPN esistenti.",
+      "fonteId": "src_cisco_secure_access_ds"
     }
   ],
   "licenze": [
@@ -2899,6 +2921,36 @@
       "gracePeriod": "non applicabile",
       "conseguenzeScadenza": "non applicabile (licenza perpetua); richiede anche una licenza base XProtect Access",
       "fonteId": "src_milestone_xprotect_access"
+    },
+    {
+      "id": "lic_cisco_secure_access_sia",
+      "familyId": "fam_cisco_secure_access_sse",
+      "productIds": [
+        "prod_cisco_secure_access_platform"
+      ],
+      "nomeUfficiale": "Cisco Secure Access - Secure Internet Access (SIA)",
+      "tipologia": "subscription",
+      "metrica": "per Covered User",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_secure_access_sub_og"
+    },
+    {
+      "id": "lic_cisco_secure_access_spa",
+      "familyId": "fam_cisco_secure_access_sse",
+      "productIds": [
+        "prod_cisco_secure_access_platform"
+      ],
+      "nomeUfficiale": "Cisco Secure Access - Secure Private Access (SPA)",
+      "tipologia": "subscription",
+      "metrica": "per Covered User; il numero di sessioni SSH/RDP concorrenti e' limitato al numero di licenze SPA acquistate",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": "src_cisco_secure_access_sub_og"
     }
   ],
   "licenseFeatures": [
@@ -5179,6 +5231,36 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_secure_access_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/secure-access/secure-access-ds.html",
+      "titolo": "Cisco Secure Access Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_secure_access_sub_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/secure-access/secure-access-sub-og.html",
+      "titolo": "Cisco Secure Access - Secure-Access-Sub Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_sse_comparison",
+      "url": "https://www.cisco.com/c/en/us/solutions/collateral/security-service-edge-sse/security-service-edge-sse-package-og.html",
+      "titolo": "Security Service Edge (SSE) Packages Comparison Guide",
+      "vendorId": "v_cisco",
+      "tipo": "documento comparativo ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
