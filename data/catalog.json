@@ -2371,6 +2371,17 @@
       "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "Sensori Bluetooth Low Energy per monitoraggio ambientale (temperatura, acqua, qualita' aria, porte, alimentazione), collegati a gateway Meraki compatibili. In End-of-Sale, ultimo ordine 10/11/2026.",
       "fonteId": "src_meraki_mt_datasheet"
+    },
+    {
+      "id": "prod_milestone_xprotect_access_module",
+      "familyId": "fam_milestone_xprotect_access",
+      "nomeCommerciale": "XProtect Access (modulo software)",
+      "modello": "Add-on software per XProtect",
+      "tipologia": "add_on",
+      "deployment": "on-premise (integrato nel server XProtect)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Modulo che integra un sistema di controllo accessi di terze parti compatibile dentro l'interfaccia XProtect Smart Client.",
+      "fonteId": "src_milestone_xprotect_access"
     }
   ],
   "licenze": [
@@ -2932,7 +2943,9 @@
     {
       "id": "lic_avigilon_alta_access_premium",
       "familyId": "fam_avigilon_alta_access",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_alta_visitor"
+      ],
       "nomeUfficiale": "Avigilon Alta Access - Premium",
       "tipologia": "subscription",
       "metrica": "per porta/reader",
@@ -2945,7 +2958,9 @@
     {
       "id": "lic_avigilon_alta_access_enterprise",
       "familyId": "fam_avigilon_alta_access",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_alta_visitor"
+      ],
       "nomeUfficiale": "Avigilon Alta Access - Enterprise",
       "tipologia": "subscription",
       "metrica": "per porta/reader",
@@ -2973,7 +2988,13 @@
     {
       "id": "lic_milestone_care_basic",
       "familyId": "fam_milestone_care",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate",
+        "prod_milestone_husky_ivo"
+      ],
       "nomeUfficiale": "Milestone Care Basic",
       "tipologia": "perpetua",
       "metrica": "incluso automaticamente con ogni installazione",
@@ -2986,7 +3007,13 @@
     {
       "id": "lic_milestone_care_plus",
       "familyId": "fam_milestone_care",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate",
+        "prod_milestone_husky_ivo"
+      ],
       "nomeUfficiale": "Milestone Care Plus",
       "tipologia": "subscription",
       "metrica": "per prodotto/installazione, incluso per i primi 2 anni all'acquisto",
@@ -2999,7 +3026,13 @@
     {
       "id": "lic_milestone_care_premium",
       "familyId": "fam_milestone_care",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate",
+        "prod_milestone_husky_ivo"
+      ],
       "nomeUfficiale": "Milestone Care Premium (estende Care Plus)",
       "tipologia": "subscription",
       "metrica": "per prodotto/installazione",
@@ -3012,7 +3045,10 @@
     {
       "id": "lic_qsys_reflect_basic",
       "familyId": "fam_qsys_reflect_vision",
-      "productIds": [],
+      "productIds": [
+        "prod_qsys_core_processor",
+        "prod_qsys_core24f"
+      ],
       "nomeUfficiale": "Q-SYS Reflect (livello base, gratuito)",
       "tipologia": "perpetua",
       "metrica": "per Core/sistema, monitoraggio incluso senza costo",
@@ -3025,7 +3061,10 @@
     {
       "id": "lic_qsys_reflect_plus",
       "familyId": "fam_qsys_reflect_vision",
-      "productIds": [],
+      "productIds": [
+        "prod_qsys_core_processor",
+        "prod_qsys_core24f"
+      ],
       "nomeUfficiale": "Q-SYS Reflect Plus",
       "tipologia": "subscription",
       "metrica": "per numero di sistemi + numero di periferiche monitorate; prezzo dipende dal tier (Basic/Standard/Professional)",
@@ -3038,7 +3077,10 @@
     {
       "id": "lic_qsys_visionsuite_feature",
       "familyId": "fam_qsys_reflect_vision",
-      "productIds": [],
+      "productIds": [
+        "prod_qsys_core_processor",
+        "prod_qsys_core24f"
+      ],
       "nomeUfficiale": "Q-SYS VisionSuite - feature license",
       "tipologia": "perpetua",
       "metrica": "per Core con VSA-100 installato",
@@ -3051,7 +3093,10 @@
     {
       "id": "lic_qsys_visionsuite_update",
       "familyId": "fam_qsys_reflect_vision",
-      "productIds": [],
+      "productIds": [
+        "prod_qsys_core_processor",
+        "prod_qsys_core24f"
+      ],
       "nomeUfficiale": "Q-SYS VisionSuite - update license (a termine)",
       "tipologia": "term",
       "metrica": "per Core con VSA-100 installato",
@@ -3349,7 +3394,9 @@
     {
       "id": "lic_milestone_xprotect_access_door",
       "familyId": "fam_milestone_xprotect_access",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_xprotect_access_module"
+      ],
       "nomeUfficiale": "XProtect Access - Door License (XPADL)",
       "tipologia": "perpetua",
       "metrica": "per porta/varco integrato",
@@ -3403,6 +3450,66 @@
       "gracePeriod": "30 giorni in caso di superamento del limite di licenza organizzativo",
       "conseguenzeScadenza": "il dispositivo smette di fornire connettivita' se non coperto da licenza valida nell'organizzazione",
       "fonteId": "src_meraki_mg_enterprise"
+    },
+    {
+      "id": "lic_fortiap_onprem_nolicense",
+      "familyId": "fam_fortiap",
+      "productIds": [
+        "prod_fortiap_series"
+      ],
+      "nomeUfficiale": "FortiAP gestito da FortiGate on-premise (nessuna licenza aggiuntiva)",
+      "tipologia": "perpetua",
+      "metrica": "nessuna licenza per-AP: il numero di AP gestibili dipende dal modello di FortiGate",
+      "durata": "non applicabile",
+      "rinnovo": "non applicabile; e' richiesto solo un contratto FortiCare attivo sul FortiGate per gli aggiornamenti firmware",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (nessuna licenza specifica per l'AP in questa modalita')",
+      "fonteId": "src_fortiap_og"
+    },
+    {
+      "id": "lic_fortiap_advanced_mgmt",
+      "familyId": "fam_fortiap",
+      "productIds": [
+        "prod_fortiap_series"
+      ],
+      "nomeUfficiale": "FortiAP Advanced Management License (per gestione cloud FortiGate Cloud / FortiLAN Cloud)",
+      "tipologia": "subscription",
+      "metrica": "per access point",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita della gestione/provisioning cloud dell'AP tramite FortiGate Cloud o FortiLAN Cloud",
+      "fonteId": "src_fortilan_cloud_licensing"
+    },
+    {
+      "id": "lic_fortiap_u_utp",
+      "familyId": "fam_fortiap",
+      "productIds": [
+        "prod_fortiap_series"
+      ],
+      "nomeUfficiale": "UTP License per FortiAP-U (solo serie F/FAP-U, richiede anche Advanced Management)",
+      "tipologia": "subscription",
+      "metrica": "per access point, solo modelli FortiAP-U (serie F o successive)",
+      "durata": "subscription (durata esatta da verificare)",
+      "rinnovo": "manuale",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita dei servizi di sicurezza UTP sull'AP; nota: sui modelli FAP-S basta la sola Advanced Management per attivare UTP",
+      "fonteId": "src_fortilan_cloud_licensing"
+    },
+    {
+      "id": "lic_avigilon_unity_access_door",
+      "familyId": "fam_avigilon_unity_access",
+      "productIds": [
+        "prod_avigilon_unity_access_appliance"
+      ],
+      "nomeUfficiale": "Avigilon Unity Access - licenza per porta (bundle, es. SKU 1000 Door License)",
+      "tipologia": "perpetua",
+      "metrica": "per porta, in bundle (es. pacchetti da 1000 porte); capacita' massima 4.000 porte per appliance su Enterprise Plus/Virtual",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_avigilon_unity_access_page"
     }
   ],
   "licenseFeatures": [
@@ -5953,6 +6060,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortilan_cloud_licensing",
+      "url": "https://docs.fortinet.com/document/fortilan-cloud/24.2.0/faqs-and-troubleshooting/337205/licensing",
+      "titolo": "FortiLAN Cloud Licensing FAQ (documentazione ufficiale Fortinet)",
+      "vendorId": "v_fortinet",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
