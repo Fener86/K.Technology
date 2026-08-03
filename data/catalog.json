@@ -2123,6 +2123,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Monitoraggio della superficie di attacco esterna, protezione del brand e threat intelligence, con supporto a takedown attivi su richiesta.",
       "fonteId": "src_fortirecon_ds"
+    },
+    {
+      "id": "prod_shure_mxa320",
+      "familyId": "fam_shure_microflex_advance",
+      "nomeCommerciale": "Shure MXA320 (table array)",
+      "modello": "MXA320",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni, tavolo)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Microfono da tavolo che sostituisce l'MXA310, con Steerable Coverage migliorata, IntelliMix onboard, certificato Microsoft Teams e Zoom, gestione via Shure Designer e ShureCloud.",
+      "fonteId": "src_shure_mxa320_pr"
     }
   ],
   "licenze": [
@@ -5510,6 +5521,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_shure_mxa320_pr",
+      "url": "https://www.shure.com/en-US/newsroom/shure-announces-microflex-advance-mxa320-table-array-microphone",
+      "titolo": "Shure Announces Microflex Advance MXA320 Table Array Microphone (comunicato ufficiale, febbraio 2026)",
+      "vendorId": "v_shure",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
     }
   ],
   "changelog": []
