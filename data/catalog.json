@@ -3073,17 +3073,6 @@
       "fonteId": "src_xkrm9og6"
     },
     {
-      "id": "prod_xyshymsl",
-      "familyId": "fam_cisco_secfw",
-      "nomeCommerciale": "Cisco Secure Access (SSE)",
-      "modello": "DA VERIFICARE CON IL VENDOR",
-      "tipologia": "SaaS",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Security Service Edge: SIA + SPA, ZTNA e VPNaaS, Experience Insights via ThousandEyes",
-      "fonteId": "src_xggyx3yv"
-    },
-    {
       "id": "prod_x58cvyra",
       "familyId": "fam_cisco_secfw",
       "nomeCommerciale": "Cisco Umbrella",
@@ -3568,17 +3557,6 @@
       "fonteId": "src_axis_lpv"
     },
     {
-      "id": "prod_xyvdzue1",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "AXIS License Plate Verifier — supporto",
-      "modello": "DA VERIFICARE CON IL VENDOR",
-      "tipologia": "documentazione",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Pagina di supporto e licensing per LPV",
-      "fonteId": "src_axis_lpv_support"
-    },
-    {
       "id": "prod_xs5ffzbj",
       "familyId": "fam_axis_camera_station",
       "nomeCommerciale": "AXIS Object Analytics",
@@ -3873,17 +3851,6 @@
       "deployment": "DA VERIFICARE CON IL VENDOR",
       "statoLifecycle": "da_verificare",
       "descrizioneBreve": "Gateway di presentazione wireless, supportato da XiO Cloud",
-      "fonteId": null
-    },
-    {
-      "id": "prod_x61sskol",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron Control (3-Series/4-Series)",
-      "modello": "DA VERIFICARE CON IL VENDOR",
-      "tipologia": "hardware",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Sistemi di controllo e automazione sala",
       "fonteId": null
     },
     {
@@ -4204,17 +4171,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Kit base per sale riunioni con DSP IntelliMix e touch panel",
       "fonteId": "src_xpx2z9j1"
-    },
-    {
-      "id": "prod_xm9ojskv",
-      "familyId": "fam_shure_wireless",
-      "nomeCommerciale": "Axient Digital",
-      "modello": "DA VERIFICARE CON IL VENDOR",
-      "tipologia": "hardware",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistema microfonico wireless digitale per broadcast/live di fascia alta",
-      "fonteId": "src_shure_axient_digital"
     },
     {
       "id": "prod_xthxqicp",
@@ -4974,17 +4930,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Nota: la serie Secure Firewall 1000 non ha una pagina prodotto dedicata individuale confermata in questa sessione (citata solo nell'hub firewalls); Cisco ASA e' la linea legacy predecessore, il cui stato di fine vendita/fine supporto va sempre verificato puntualmente su cisco.com prima di proporlo a",
       "fonteId": null
-    },
-    {
-      "id": "prod_xfm9g75a",
-      "familyId": "fam_cisco_nexus_aci",
-      "nomeCommerciale": "Nexus 9000 Series",
-      "modello": "Data center, ToR/spine",
-      "tipologia": "hardware",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Switch data center basati su Cisco Silicon One e Cloud Scale ASIC; supporta sia switching L2/L3 tradizionale sia Cisco ACI (SDN); gestito da Nexus Dashboard",
-      "fonteId": "src_x4u0vc16"
     },
     {
       "id": "prod_xc7aidr4",
@@ -5964,17 +5909,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello Core di fascia alta, richiede una specifica Scaling License per arrivare a 512x512 canali",
       "fonteId": "src_xaxdb21m"
-    },
-    {
-      "id": "prod_x1rficox",
-      "familyId": "fam_qsys_core_nv",
-      "nomeCommerciale": "NV-32-H (Core Capable)",
-      "modello": "Video AV-over-IP",
-      "tipologia": "hardware",
-      "deployment": "DA VERIFICARE CON IL VENDOR",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Endpoint video Q-SYS Shift, software-configurabile in 'Core Mode' (processore Q-SYS completo) o 'Peripheral Mode' (encoder/decoder multi-stream); bridging USB verso Teams/Zoom/Meet",
-      "fonteId": "src_xczvj81o"
     },
     {
       "id": "prod_xd7f3wqn",
