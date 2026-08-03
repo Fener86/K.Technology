@@ -909,6 +909,17 @@
       "descrizione": "Modulo add-on di XProtect che integra sistemi di controllo accessi di terze parti (Axis, LenelS2, Brivo, Genea, RS2 Technologies, Vanderbilt, 2N e altri partner tecnologici Milestone) direttamente nell'interfaccia XProtect Smart Client: monitoraggio porte, automazioni tramite Rules Engine, gestione varchi veicolari, chiamate intercom, e possibilita' di associare la vista mappa a porte/varchi. Novita' recente: integrazione 'AXIS Secure Entry for XProtect', installabile tramite XProtect Update Manager insieme ad AXIS Optimizer.",
       "stato": "attivo",
       "fonteId": "src_milestone_xprotect_access"
+    },
+    {
+      "id": "fam_avigilon_unity_access",
+      "vendorId": "v_avigilon",
+      "brandLineId": null,
+      "macroareaId": "ma_access",
+      "areaFunzionaleId": "af_visitor",
+      "nome": "Avigilon Unity Access (on-premise)",
+      "descrizione": "Sistema di controllo accessi on-premise Avigilon (ex Access Control Manager/ACM), gestibile da browser o mobile, con integrazione nativa a Unity Video per correlare eventi di accesso e video. Disponibile su appliance hardware Professional/Enterprise/Enterprise Plus o come appliance virtuale (VMware vSphere/Hyper-V, con supporto vMotion per alta disponibilita').",
+      "stato": "attivo",
+      "fonteId": "src_avigilon_unity_access_page"
     }
   ],
   "prodotti": [
@@ -1890,6 +1901,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Telecamere IP con storage a bordo, video analytics integrata (MV Sense) e gestione centralizzata via Meraki Dashboard, senza necessita' di NVR dedicato.",
       "fonteId": "src_meraki_mv_licensing_faq"
+    },
+    {
+      "id": "prod_avigilon_unity_access_appliance",
+      "familyId": "fam_avigilon_unity_access",
+      "nomeCommerciale": "Avigilon Unity Access (appliance)",
+      "modello": "Professional / Enterprise / Enterprise Plus / Virtual",
+      "tipologia": "appliance",
+      "deployment": "on-premise (hardware Linux dedicato) o virtual appliance",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Server di controllo accessi on-premise scalabile da installazioni piccole (Professional) a grandi enterprise (Enterprise Plus), o in forma virtuale.",
+      "fonteId": "src_avigilon_unity_access_factsheet"
     }
   ],
   "licenze": [
@@ -5134,6 +5156,26 @@
       "titolo": "How access control works with Milestone's XProtect VMS (articolo ufficiale)",
       "vendorId": "v_milestone",
       "tipo": "pagina informativa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_avigilon_unity_access_page",
+      "url": "https://www.avigilon.com/access-control/on-premise",
+      "titolo": "Avigilon Unity On-Premise Access Control System (pagina ufficiale)",
+      "vendorId": "v_avigilon",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_avigilon_unity_access_factsheet",
+      "url": "https://www.avigilon.com/fs/documents/Avigilon-Unity-Access-7-Fact-Sheet.pdf",
+      "titolo": "Avigilon Unity Access 7 - Fact Sheet",
+      "vendorId": "v_avigilon",
+      "tipo": "datasheet ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
