@@ -1989,6 +1989,28 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Proiettore della nuova piattaforma 'smartline' Barco, annunciato nel 2026.",
       "fonteId": "src_barco_press_releases"
+    },
+    {
+      "id": "prod_crestron_nvx_dir2",
+      "familyId": "fam_crestron_dmnvx",
+      "nomeCommerciale": "Crestron DM-NVX-DIR2",
+      "modello": "DM-NVX-DIR2",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuova appliance DM NVX Director per la gestione domain-based semplificata di reti AV-over-IP su larga scala, equivalente virtuale di uno o piu' matrix switcher hardware.",
+      "fonteId": "src_crestron_nvx_dir2"
+    },
+    {
+      "id": "prod_crestron_nvx384_385",
+      "familyId": "fam_crestron_dmnvx",
+      "nomeCommerciale": "Crestron DM-NVX-384/385 (con Multiview)",
+      "modello": "DM-NVX-384 / DM-NVX-385 / DM-NVX-385C",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Nuovi encoder/decoder DM NVX con funzione Multiview (piu' sorgenti su un singolo display) e streaming H.264 per estendere i contenuti oltre la rete AV tradizionale.",
+      "fonteId": "src_crestron_nvx_whatsnew"
     }
   ],
   "licenze": [
@@ -5306,6 +5328,26 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_crestron_nvx_whatsnew",
+      "url": "https://docs.crestron.com/en-us/9496/Content/Topics/Whats-New/Whats-New.htm",
+      "titolo": "What's New? - DM NVX AV-over-IP Manual (documentazione ufficiale Crestron)",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_crestron_nvx_dir2",
+      "url": "https://www.crestron.com/Products/Catalog/AV-Over-IP/DM-NVX-AV-Over-IP/Management/DM-NVX-DIR2",
+      "titolo": "DM-NVX-DIR2 (pagina prodotto ufficiale)",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
