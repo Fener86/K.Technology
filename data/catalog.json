@@ -887,6 +887,17 @@
       "descrizione": "Analitica video AI-based preinstallata gratuitamente sulle camere Axis compatibili (MLPU con AXIS OS 10.2+, DLPU con 10.3+), nessuna licenza aggiuntiva richiesta. Rileva, classifica, traccia e conta persone e veicoli (con sottotipi). Scenari disponibili: oggetto in area, attraversamento linea, tempo in area, conteggio attraversamenti, occupazione in area, rilevamento tailgating, monitoraggio DPI/PPE (elmetti, in beta). Compatibile con AXIS Camera Station e altri VMS terzi via standard aperti.",
       "stato": "attivo",
       "fonteId": "src_axis_object_analytics"
+    },
+    {
+      "id": "fam_meraki_mv",
+      "vendorId": "v_cisco",
+      "brandLineId": "bl_meraki",
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_videosorv",
+      "nome": "Meraki MV",
+      "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo (fino a un mese di registrazione locale) e gestione tramite lo stesso Meraki Dashboard di switch/AP/firewall. Licenza unica 'Enterprise', indipendente dal modello hardware (fanno eccezione le MV84X multi-imaging, che richiedono la licenza dedicata LIC-MV-MULTCAM).",
+      "stato": "attivo",
+      "fonteId": "src_meraki_mv_licensing_faq"
     }
   ],
   "prodotti": [
@@ -1857,6 +1868,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Applicazione di video analytics gratuita preinstallata sulle camere Axis compatibili, nessun costo aggiuntivo.",
       "fonteId": "src_axis_object_analytics"
+    },
+    {
+      "id": "prod_meraki_mv_camera",
+      "familyId": "fam_meraki_mv",
+      "nomeCommerciale": "Meraki MV (serie telecamere)",
+      "modello": "Multi-modello (MV12/MV22/MV32/MV52/MV72/MV84X)",
+      "tipologia": "hardware",
+      "deployment": "on-premise, gestione cloud Meraki Dashboard",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Telecamere IP con storage a bordo, video analytics integrata (MV Sense) e gestione centralizzata via Meraki Dashboard, senza necessita' di NVR dedicato.",
+      "fonteId": "src_meraki_mv_licensing_faq"
     }
   ],
   "licenze": [
@@ -2816,6 +2838,21 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "perdita delle funzionalita' avanzate (sandboxing, IBE, DLP, integrazione API Microsoft 365/Google Workspace)",
       "fonteId": "src_fortimail_og"
+    },
+    {
+      "id": "lic_meraki_mv_enterprise",
+      "familyId": "fam_meraki_mv",
+      "productIds": [
+        "prod_meraki_mv_camera"
+      ],
+      "nomeUfficiale": "Meraki MV Enterprise",
+      "tipologia": "subscription",
+      "metrica": "per camera, licenza unica indipendente dal modello (eccetto MV84X)",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "rinnovo": "manuale",
+      "gracePeriod": "30 giorni in caso di superamento del limite di licenza organizzativo",
+      "conseguenzeScadenza": "la camera smette di registrare/essere gestita se non coperta da licenza valida nell'organizzazione",
+      "fonteId": "src_meraki_mv_licensing_faq"
     }
   ],
   "licenseFeatures": [
@@ -5046,6 +5083,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_meraki_mv_licensing_faq",
+      "url": "https://documentation.meraki.com/Platform_Management/Product_Information/Licensing/Meraki_Licensing_FAQs",
+      "titolo": "General Licensing FAQs - Cisco Meraki Documentation (dettaglio MV)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale Meraki",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
