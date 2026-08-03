@@ -1,6 +1,8 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 17, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 18, scrittura diretta GitHub)_
+
+Sessione 18: aggiunte Q-SYS NC Series (camere videoconferenza), Q-SYS CX-Q/NL Series (amplificatori/diffusori di rete). Modificata l'interfaccia su richiesta del cliente: la pagina vendor ora mostra un elenco compatto di categorie (non piu' le card espanse inline); cliccando su una categoria si entra nella pagina dedicata (cross-vendor) che mostra il contenuto. **Numeri attuali: 73 famiglie, 113 prodotti, 70 licenze, 180 righe di matrice, 141 fonti, 0 errori.**
 
 Sessione 17: aggiunte Meraki MG (cellular gateway), Barco Encore3/Event Master (elaborazione immagini eventi live), Crestron Room Scheduling. **Numeri attuali: 71 famiglie, 108 prodotti, 70 licenze, 180 righe di matrice, 137 fonti, 0 errori.**
 
