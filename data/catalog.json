@@ -1020,6 +1020,18 @@
       "stato": "attivo",
       "fonteId": "src_fortidlp_page",
       "categoria": "DLP / Insider Risk"
+    },
+    {
+      "id": "fam_fortirecon",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiRecon (Digital Risk Protection)",
+      "descrizione": "Servizio di Digital Risk Protection Fortinet, operante interamente dall'esterno del perimetro aziendale: External Attack Surface Management (EASM), Brand Protection (typosquatting, phishing, impersonificazione social, credential leak), Adversary Centric Intelligence (dark web, OSINT, threat actor insight) e servizio di Red Teaming. Licensing a pacchetti con limiti di default per funzione (es. 10 executive monitorati, 2 takedown per account, 25 vendor risk assessment, 100 esecuzioni playbook/mese), ciascuno espandibile con add-on stackable.",
+      "categoria": "Threat Intelligence / Digital Risk Protection",
+      "stato": "attivo",
+      "fonteId": "src_fortirecon_page"
     }
   ],
   "prodotti": [
@@ -2100,6 +2112,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma DLP e insider risk management con policy risk-adaptive: notifiche, forensics, isolamento endpoint o blocco attivita' ad alto rischio.",
       "fonteId": "src_fortidlp_ds"
+    },
+    {
+      "id": "prod_fortirecon_service",
+      "familyId": "fam_fortirecon",
+      "nomeCommerciale": "FortiRecon",
+      "modello": "Servizio cloud gestito",
+      "tipologia": "saas",
+      "deployment": "cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Monitoraggio della superficie di attacco esterna, protezione del brand e threat intelligence, con supporto a takedown attivi su richiesta.",
+      "fonteId": "src_fortirecon_ds"
     }
   ],
   "licenze": [
@@ -5457,6 +5480,36 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortirecon_page",
+      "url": "https://www.fortinet.com/products/fortirecon",
+      "titolo": "FortiRecon - CTEM Solution (pagina prodotto ufficiale)",
+      "vendorId": "v_fortinet",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortirecon_ds",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortirecon.pdf",
+      "titolo": "FortiRecon Datasheet",
+      "vendorId": "v_fortinet",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortirecon_og",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/og-fortirecon.pdf",
+      "titolo": "Ordering Guide FortiRecon",
+      "vendorId": "v_fortinet",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
