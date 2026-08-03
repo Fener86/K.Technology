@@ -2337,6 +2337,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusori di rete alimentati via PoE, audio/potenza/controllo su singolo cavo Ethernet, monitorabili da Q-SYS Reflect.",
       "fonteId": "src_qsys_nl_series"
+    },
+    {
+      "id": "prod_karray_pinnacle",
+      "familyId": "fam_karray_speakers",
+      "nomeCommerciale": "Pinnacle (sistema portatile autoamplificato)",
+      "modello": "KR3 / KR402 / KR802 (linea attuale)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (rental/eventi, montaggio rapido)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistema stereo portatile plug-and-play che integra subwoofer Thunder autoamplificato con line array Python/Kayman, montaggio da una sola persona in pochi minuti tramite K-array Connect (app mobile).",
+      "fonteId": "src_karray_pinnacle"
     }
   ],
   "licenze": [
@@ -5885,6 +5896,16 @@
       "url": "https://www.qsys.com/products-solutions/q-sys/audio-network-loudspeakers/nl-series/",
       "titolo": "NL Series network loudspeakers (pagina prodotto ufficiale)",
       "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_pinnacle",
+      "url": "https://www.k-array.com/en/products/line/pinnacle",
+      "titolo": "K-array Pinnacle line - sistemi portatili",
+      "vendorId": "v_karray",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
