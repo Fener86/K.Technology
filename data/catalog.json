@@ -9196,6 +9196,1089 @@
       "licenseId": "lic_cisco_dna_sdwan_adv",
       "stato": "da_verificare",
       "nota": "Cisco conferma che Advantage include tutto Essentials 'plus we raise the bar even further' senza elencare le singole funzionalita' aggiuntive in una tabella pubblica."
+    },
+    {
+      "id": "lf_xsqwaqmx",
+      "featureNome": "Intrusion Prevention (IPS)",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_x2cmfk5m",
+      "featureNome": "Intrusion Prevention (IPS)",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xapc74zn",
+      "featureNome": "Intrusion Prevention (IPS)",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xrv1dbek",
+      "featureNome": "Antivirus",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_x6iujs3a",
+      "featureNome": "Antivirus",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xhw5jwly",
+      "featureNome": "Antivirus",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xyz3c21l",
+      "featureNome": "FortiSandbox SaaS (cloud sandbox)",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Zero-day detection incluso in ATP/UTP/ENT"
+    },
+    {
+      "id": "lf_x4zks8jq",
+      "featureNome": "FortiSandbox SaaS (cloud sandbox)",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Zero-day detection incluso in ATP/UTP/ENT"
+    },
+    {
+      "id": "lf_xqzfar28",
+      "featureNome": "FortiSandbox SaaS (cloud sandbox)",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Zero-day detection incluso in ATP/UTP/ENT"
+    },
+    {
+      "id": "lf_xoyyhx1l",
+      "featureNome": "Application Control",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xitr2vps",
+      "featureNome": "Application Control",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xdlchzn3",
+      "featureNome": "Application Control",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xdppzt8q",
+      "featureNome": "Inline CASB",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_x24z3at4",
+      "featureNome": "Inline CASB",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xrlfvwry",
+      "featureNome": "Inline CASB",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Base di tutti i bundle"
+    },
+    {
+      "id": "lf_xjg7fz9x",
+      "featureNome": "URL Filtering",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xzz16i41",
+      "featureNome": "URL Filtering",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x9s7fjbi",
+      "featureNome": "URL Filtering",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xkab1s8v",
+      "featureNome": "DNS Filtering",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x4ilb02x",
+      "featureNome": "DNS Filtering",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xajb2mgh",
+      "featureNome": "DNS Filtering",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x07baeph",
+      "featureNome": "Video Filtering",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xz8my7mf",
+      "featureNome": "Video Filtering",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x8uk4b7v",
+      "featureNome": "Video Filtering",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xnypa1hj",
+      "featureNome": "Anti-botnet e comunicazioni C2",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x55jm1a9",
+      "featureNome": "Anti-botnet e comunicazioni C2",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_x7ostiv3",
+      "featureNome": "Anti-botnet e comunicazioni C2",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Aggiunto a partire da UTP"
+    },
+    {
+      "id": "lf_xs2zwhpv",
+      "featureNome": "Data Loss Prevention (DLP)",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_x52h48bw",
+      "featureNome": "Data Loss Prevention (DLP)",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xmchhwd8",
+      "featureNome": "Data Loss Prevention (DLP)",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xd0vdr7x",
+      "featureNome": "Attack Surface Security Monitoring / Risk Scoring",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xyl54s8a",
+      "featureNome": "Attack Surface Security Monitoring / Risk Scoring",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_x0q7onb1",
+      "featureNome": "Attack Surface Security Monitoring / Risk Scoring",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xtaal8ap",
+      "featureNome": "AI-based Inline Malware Prevention (ILMPS)",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT; disponibile anche a-la-carte separatamente"
+    },
+    {
+      "id": "lf_xmxmoooe",
+      "featureNome": "AI-based Inline Malware Prevention (ILMPS)",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT; disponibile anche a-la-carte separatamente"
+    },
+    {
+      "id": "lf_xtlp7sz1",
+      "featureNome": "AI-based Inline Malware Prevention (ILMPS)",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT; disponibile anche a-la-carte separatamente"
+    },
+    {
+      "id": "lf_x7qo7evw",
+      "featureNome": "IoT Detection e Vulnerability Correlation",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xv1u0ely",
+      "featureNome": "IoT Detection e Vulnerability Correlation",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xi3buxhu",
+      "featureNome": "IoT Detection e Vulnerability Correlation",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Solo in ENT"
+    },
+    {
+      "id": "lf_xex01z64",
+      "featureNome": "OT-specific device/protocol recognition",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "MAI incluso: richiede OT Security Service separato anche con ENT"
+    },
+    {
+      "id": "lf_xlul6nwl",
+      "featureNome": "OT-specific device/protocol recognition",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "MAI incluso: richiede OT Security Service separato anche con ENT"
+    },
+    {
+      "id": "lf_x4si9979",
+      "featureNome": "OT-specific device/protocol recognition",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "MAI incluso: richiede OT Security Service separato anche con ENT"
+    },
+    {
+      "id": "lf_x6rx9rgb",
+      "featureNome": "FortiCare Premium Technical Support (24x7x365)",
+      "licenseId": "lic_forti_atp",
+      "stato": "da_verificare",
+      "nota": "Incluso in TUTTI i bundle, nessuna eccezione"
+    },
+    {
+      "id": "lf_x8qwni4j",
+      "featureNome": "FortiCare Premium Technical Support (24x7x365)",
+      "licenseId": "lic_forti_utp",
+      "stato": "da_verificare",
+      "nota": "Incluso in TUTTI i bundle, nessuna eccezione"
+    },
+    {
+      "id": "lf_xnc32pq3",
+      "featureNome": "FortiCare Premium Technical Support (24x7x365)",
+      "licenseId": "lic_forti_ep",
+      "stato": "da_verificare",
+      "nota": "Incluso in TUTTI i bundle, nessuna eccezione"
+    },
+    {
+      "id": "lf_x2izf486",
+      "featureNome": "Tipo di installazione",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xr1gxe6j",
+      "featureNome": "Tipo di installazione",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_x70eazn7",
+      "featureNome": "Tipo di installazione",
+      "licenseId": "lic_milestone_expert",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_x5znga3s",
+      "featureNome": "Tipo di installazione",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xnacu02l",
+      "featureNome": "Numero massimo dispositivi IP per recording server",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_x1uavqrm",
+      "featureNome": "Numero massimo dispositivi IP per recording server",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xbaniijg",
+      "featureNome": "Numero massimo dispositivi IP per recording server",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xyle5suj",
+      "featureNome": "Numero massimo dispositivi IP per recording server",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xnolsd4t",
+      "featureNome": "Numero recording server per sistema",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_xar0oqpz",
+      "featureNome": "Numero recording server per sistema",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xrazuvgi",
+      "featureNome": "Numero recording server per sistema",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xc7uk1c4",
+      "featureNome": "Numero recording server per sistema",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x5s90dlp",
+      "featureNome": "Licensing",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xqz5uy1l",
+      "featureNome": "Licensing",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_x8v5l7j8",
+      "featureNome": "Licensing",
+      "licenseId": "lic_milestone_expert",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xzejg40j",
+      "featureNome": "Licensing",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xetqftwu",
+      "featureNome": "Hot- & cold-failover recording server",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x37ybq3v",
+      "featureNome": "Hot- & cold-failover recording server",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xmhjn0nr",
+      "featureNome": "Hot- & cold-failover recording server",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xgg4johx",
+      "featureNome": "Hot- & cold-failover recording server",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x5vqkwao",
+      "featureNome": "XProtect Management Server Failover",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xj96jclm",
+      "featureNome": "XProtect Management Server Failover",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x8janxd4",
+      "featureNome": "XProtect Management Server Failover",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xh416kf3",
+      "featureNome": "XProtect Management Server Failover",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xgiwk1rf",
+      "featureNome": "Multi-stage video storage e data grooming",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xawitvas",
+      "featureNome": "Multi-stage video storage e data grooming",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x8dpl6cq",
+      "featureNome": "Multi-stage video storage e data grooming",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x8ahtapy",
+      "featureNome": "Multi-stage video storage e data grooming",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xrvpoc76",
+      "featureNome": "Edge Storage support con recupero flessibile",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xlien6ht",
+      "featureNome": "Edge Storage support con recupero flessibile",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xjc9qhqs",
+      "featureNome": "Edge Storage support con recupero flessibile",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xcjehh8q",
+      "featureNome": "Edge Storage support con recupero flessibile",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xjfgs313",
+      "featureNome": "Scalable Video Quality Recording",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xuo1yjgx",
+      "featureNome": "Scalable Video Quality Recording",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x8druzu8",
+      "featureNome": "Scalable Video Quality Recording",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xb4uxp4t",
+      "featureNome": "Scalable Video Quality Recording",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xz6yuhpf",
+      "featureNome": "Media database encryption e firma digitale",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xncoc8sv",
+      "featureNome": "Media database encryption e firma digitale",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xii5ka1w",
+      "featureNome": "Media database encryption e firma digitale",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xr92bbwt",
+      "featureNome": "Media database encryption e firma digitale",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x9jjcrgu",
+      "featureNome": "Evidence Lock (blocco prove video)",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xzq8999a",
+      "featureNome": "Evidence Lock (blocco prove video)",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xqsfzreu",
+      "featureNome": "Evidence Lock (blocco prove video)",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x3r30cdv",
+      "featureNome": "Evidence Lock (blocco prove video)",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xizzagzk",
+      "featureNome": "FIPS 140-2 compliance",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xraca8wh",
+      "featureNome": "FIPS 140-2 compliance",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xtmgfx4p",
+      "featureNome": "FIPS 140-2 compliance",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xoqzxuch",
+      "featureNome": "FIPS 140-2 compliance",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xcoefgfe",
+      "featureNome": "GDPR ready",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xr2v4oq9",
+      "featureNome": "GDPR ready",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x091tmjd",
+      "featureNome": "GDPR ready",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xzj3li7d",
+      "featureNome": "GDPR ready",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xj7mhflo",
+      "featureNome": "Tiered management rights",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xsey9f72",
+      "featureNome": "Tiered management rights",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xtseraz8",
+      "featureNome": "Tiered management rights",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xhf8o1b4",
+      "featureNome": "Tiered management rights",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xorv12f7",
+      "featureNome": "Two-step verification (Web/Mobile Client)",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xtnage33",
+      "featureNome": "Two-step verification (Web/Mobile Client)",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x461z21d",
+      "featureNome": "Two-step verification (Web/Mobile Client)",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x4ib7uxc",
+      "featureNome": "Two-step verification (Web/Mobile Client)",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x95q819j",
+      "featureNome": "Alarm Manager completo",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xcvueix0",
+      "featureNome": "Alarm Manager completo",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x0nxv0nt",
+      "featureNome": "Alarm Manager completo",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xwj4540t",
+      "featureNome": "Alarm Manager completo",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xk3n57fs",
+      "featureNome": "Dedicated Search tab (ricerca centralizzata)",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xsnymzyy",
+      "featureNome": "Dedicated Search tab (ricerca centralizzata)",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xlpvwgne",
+      "featureNome": "Dedicated Search tab (ricerca centralizzata)",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_x81my5mo",
+      "featureNome": "Dedicated Search tab (ricerca centralizzata)",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x5vj572h",
+      "featureNome": "XProtect LPR Search / People / Vehicle / Location Search",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xqmp2wxt",
+      "featureNome": "XProtect LPR Search / People / Vehicle / Location Search",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xvcvef6w",
+      "featureNome": "XProtect LPR Search / People / Vehicle / Location Search",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xtn56bp8",
+      "featureNome": "XProtect LPR Search / People / Vehicle / Location Search",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x32hpczx",
+      "featureNome": "XProtect Smart Wall",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xoi0z6in",
+      "featureNome": "XProtect Smart Wall",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xtxbsag9",
+      "featureNome": "XProtect Smart Wall",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x4i98tap",
+      "featureNome": "XProtect Smart Wall",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xpstpyed",
+      "featureNome": "Milestone Interconnect",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xyycdvxd",
+      "featureNome": "Milestone Interconnect",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xw3bmg9d",
+      "featureNome": "Milestone Interconnect",
+      "licenseId": "lic_milestone_expert",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_x9gb4rls",
+      "featureNome": "Milestone Interconnect",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "da_verificare"
+    },
+    {
+      "id": "lf_xkldch8d",
+      "featureNome": "XProtect Access",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xfe0c6lv",
+      "featureNome": "XProtect Access",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xrzyodog",
+      "featureNome": "XProtect Access",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xbk3k4j5",
+      "featureNome": "XProtect Access",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xnxliwoj",
+      "featureNome": "XProtect LPR",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x7j924q9",
+      "featureNome": "XProtect LPR",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xsagfu6s",
+      "featureNome": "XProtect LPR",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xgfpr3vc",
+      "featureNome": "XProtect LPR",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xpeedcgl",
+      "featureNome": "XProtect Transact",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xae1m81a",
+      "featureNome": "XProtect Transact",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xnq4quiy",
+      "featureNome": "XProtect Transact",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xysd83zl",
+      "featureNome": "XProtect Transact",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xrq9n1vr",
+      "featureNome": "XProtect Retail",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x6rjbqeu",
+      "featureNome": "XProtect Retail",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x7rigcpz",
+      "featureNome": "XProtect Retail",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xzmqx1zj",
+      "featureNome": "XProtect Retail",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x6az79cn",
+      "featureNome": "XProtect Incident Manager",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xpopl8n3",
+      "featureNome": "XProtect Incident Manager",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xkrnhyob",
+      "featureNome": "XProtect Incident Manager",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x68htiyd",
+      "featureNome": "XProtect Incident Manager",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xer96kyi",
+      "featureNome": "XProtect Rapid REVIEW",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xcy64etz",
+      "featureNome": "XProtect Rapid REVIEW",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xud2opon",
+      "featureNome": "XProtect Rapid REVIEW",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xlusfc0b",
+      "featureNome": "XProtect Rapid REVIEW",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x8bs5la3",
+      "featureNome": "XProtect Hospital Assist",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xiq6hmh7",
+      "featureNome": "XProtect Hospital Assist",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xwqj90vx",
+      "featureNome": "XProtect Hospital Assist",
+      "licenseId": "lic_milestone_expert",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_x2uqp8vc",
+      "featureNome": "XProtect Hospital Assist",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "richiede_addon"
+    },
+    {
+      "id": "lf_xzxtj8sh",
+      "featureNome": "Management Client profiles",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xp14wm5c",
+      "featureNome": "Management Client profiles",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xqauszvn",
+      "featureNome": "Management Client profiles",
+      "licenseId": "lic_milestone_expert",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xdhaajij",
+      "featureNome": "Management Client profiles",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xbct9x0t",
+      "featureNome": "Profili XProtect Smart Client centralizzati (numero)",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xw4fuo8s",
+      "featureNome": "Profili XProtect Smart Client centralizzati (numero)",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_xxub8z85",
+      "featureNome": "Profili XProtect Smart Client centralizzati (numero)",
+      "licenseId": "lic_milestone_expert",
+      "stato": "limitato"
+    },
+    {
+      "id": "lf_xvn6i5fr",
+      "featureNome": "Profili XProtect Smart Client centralizzati (numero)",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xfhvrdci",
+      "featureNome": "Device Password Management",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xvr31m7o",
+      "featureNome": "Device Password Management",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_x9cvj77l",
+      "featureNome": "Device Password Management",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xo7sztmx",
+      "featureNome": "Device Password Management",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xciqf0vf",
+      "featureNome": "Dashboard personalizzabile monitoraggio live",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xjpp4ido",
+      "featureNome": "Dashboard personalizzabile monitoraggio live",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xgvcksos",
+      "featureNome": "Dashboard personalizzabile monitoraggio live",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xswnjf5p",
+      "featureNome": "Dashboard personalizzabile monitoraggio live",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xoarmd2y",
+      "featureNome": "Stato storico e real-time di server/camere",
+      "licenseId": "lic_milestone_expressplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xuyxjpb7",
+      "featureNome": "Stato storico e real-time di server/camere",
+      "licenseId": "lic_milestone_professionalplus",
+      "stato": "non_incluso"
+    },
+    {
+      "id": "lf_xlcth04v",
+      "featureNome": "Stato storico e real-time di server/camere",
+      "licenseId": "lic_milestone_expert",
+      "stato": "incluso"
+    },
+    {
+      "id": "lf_xuy0an75",
+      "featureNome": "Stato storico e real-time di server/camere",
+      "licenseId": "lic_milestone_corporate",
+      "stato": "incluso"
     }
   ],
   "integrazioni": [
