@@ -1,12 +1,12 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 10, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 11, scrittura diretta GitHub)_
 
 ## 1. Attivita' completate (cumulativo)
 
 - Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente, scoperta settimanale: tutti funzionanti.
-- **60 famiglie**, 87 prodotti, 65 licenze, **180 righe di matrice**, **110 fonti ufficiali**, 0 errori di integrita'.
-- Sessione 10: aggiunte **FortiEndpoint** (nuova piattaforma endpoint unificata Fortinet, luglio 2026) e **FortiSOC** (SOC cloud unificato con AI agentica, giugno 2026); aggiornata la famiglia Cisco Duo con **Cisco Identity Intelligence** (sostituisce Trust Monitor) e nuove funzioni Windows Command Line Protection/Legacy AD Protection.
+- **61 famiglie**, 88 prodotti, 65 licenze, **180 righe di matrice**, **112 fonti ufficiali**, 0 errori di integrita'.
+- Sessione 11: aggiunte **FortiEndpoint** e **FortiSOC** (Fortinet, giu/lug 2026); Cisco Duo aggiornato con **Cisco Identity Intelligence**; **Meraki AI Assistant** ora GA nel Dashboard (multimodal image upload, Generative UI Agent); **AXIS Object Analytics** (nuova famiglia, gratuita su camere compatibili).
 
 ## Nota tecnica sul token GitHub
 
