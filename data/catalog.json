@@ -1044,6 +1044,18 @@
       "categoria": "Wireless / Access Point",
       "stato": "attivo",
       "fonteId": "src_meraki_mg_enterprise"
+    },
+    {
+      "id": "fam_barco_encore_eventmaster",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "Barco Encore3 / Event Master (elaborazione immagini per eventi live)",
+      "descrizione": "Piattaforma di image processing Barco per eventi live: gestione multi-schermo (proiezione, LED, video wall) con switching senza interruzioni, blending/warping a zero stress. Encore3 (rilascio ufficiale V10, 2026) e' l'evoluzione della serie Event Master (E2/S3/EX), fino a 8 uscite PGM 4K60 12-bit 4:4:4, configurabile sia a listino sia Build-To-Order. Oltre 1000 operatori certificati worldwide, ampio mercato di noleggio.",
+      "categoria": "Control Room / KVM",
+      "stato": "attivo",
+      "fonteId": "src_barco_encore3"
     }
   ],
   "prodotti": [
@@ -2201,6 +2213,28 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gateway che converte segnale cellulare LTE/5G in Ethernet, usabile come uplink primario o di backup con qualsiasi router/switch, Meraki o non-Meraki.",
       "fonteId": "src_meraki_mg_enterprise"
+    },
+    {
+      "id": "prod_barco_encore3_platform",
+      "familyId": "fam_barco_encore_eventmaster",
+      "nomeCommerciale": "Barco Encore3",
+      "modello": "Configurazione standard o Build-To-Order",
+      "tipologia": "hardware",
+      "deployment": "on-premise (eventi/rental)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Piattaforma di elaborazione immagini di ultima generazione per eventi live, fino a 8 layer 4K60 per schermo.",
+      "fonteId": "src_barco_encore3"
+    },
+    {
+      "id": "prod_barco_event_master_switchers",
+      "familyId": "fam_barco_encore_eventmaster",
+      "nomeCommerciale": "Event Master E2 / S3 / EX",
+      "modello": "E2 / S3 / EX",
+      "tipologia": "hardware",
+      "deployment": "on-premise (eventi/rental)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Switcher di elaborazione immagini della serie Event Master, configurazione stock o Build-To-Order, ampiamente diffusi nel mercato del noleggio eventi.",
+      "fonteId": "src_barco_event_master"
     }
   ],
   "licenze": [
@@ -5673,6 +5707,26 @@
       "dataConsultazione": "2026-08-02",
       "stato": "controllo frequente (meraki.com in migrazione verso cisco.com dal 19 agosto)",
       "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_encore3",
+      "url": "https://www.barco.com/en/product/encore3",
+      "titolo": "ENCORE3 - Image processing (pagina prodotto ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente, V10 prima release ufficiale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_event_master",
+      "url": "https://www.barco.com/en/products/image-processing/event-master",
+      "titolo": "Event Master (pagina prodotto ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
