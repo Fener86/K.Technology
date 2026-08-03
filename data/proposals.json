@@ -1,4 +1,15 @@
 {
-  "ultimaEsecuzione": null,
-  "elementi": []
+  "ultimaEsecuzione": "2026-08-03T08:23:39.114Z",
+  "elementi": [
+    {
+      "vendorId": "v_avigilon",
+      "vendorNome": "Avigilon",
+      "nome": "Avigilon Alta SOS",
+      "descrizione": "Nuova funzionalità per Avigilon Alta che consente di condividere con il 911 dati di sicurezza critici (contatti emergenza, planimetrie, feed video, dettagli accessi) per coordinare in tempo reale la risposta dei soccorritori durante le emergenze aziendali.",
+      "fonteUrl": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-expands-avigilon-enterprise-security-suite.html",
+      "fonteTitolo": "Motorola Solutions Expands Avigilon Enterprise Security Suite to Accelerate Response During Emergencies",
+      "data": "2025-03-31",
+      "motivoEsclusione": "dominio fonte non riconosciuto come ufficiale"
+    }
+  ]
 }

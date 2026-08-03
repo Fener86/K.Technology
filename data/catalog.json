@@ -931,6 +931,303 @@
       "descrizione": "Piattaforma Security Service Edge cloud-delivered Cisco, distinta dal solo 'Secure Access - DNS Defense' (ex Umbrella): copre ZTNA, Secure Web Gateway, CASB e Firewall-as-a-Service, con funzionalita' estese (VPN-as-a-Service, DLP, AI Assistant, Digital Experience Monitoring, Remote Browser Isolation, guardrail per app/agenti AI). Licenza per 'Covered User', pacchetti Secure Internet Access (SIA) e Secure Private Access (SPA). Integrata con Meraki SD-WAN per networking + zero-trust unificati. Supporto sempre richiesto (SWSS Enhanced di default, upgradabile a Premium).",
       "stato": "nuovo",
       "fonteId": "src_cisco_secure_access_ds"
+    },
+    {
+      "id": "fam_auto_mscyl6nc_szpyg",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "ClickShare Hub – Wireless BYOD (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuova funzionalità per ClickShare Hub che consente di avviare meeting Zoom, Webex e Google Meet dal proprio laptop utilizzando display, camera, microfono e speaker della sala, senza cavi. Disponibile con firmware 4.3. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyl6nb_9bopj"
+    },
+    {
+      "id": "fam_auto_mscyl6nc_6lt5t",
+      "vendorId": "v_barco",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Barco I65 – Piattaforma di proiezione smartline 4K UHD (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuovo proiettore smartline 4K UHD per ambienti budget-conscious (musei, education, corporate, rental). Compatibile con l'intera gamma di obiettivi ILD intercambiabili, incluso nuovo obiettivo UST snorkel 0.35. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyl6nc_z14de"
+    },
+    {
+      "id": "fam_auto_mscyls9p_hb24g",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Cisco Silicon One G300 (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuovo switch ASIC da 102,4 Tbps per data center AI su larga scala. Supporta cluster GPU fino a 128K unità con Intelligent Collective Networking: +33% utilizzo rete, -28% job completion time. Alimenta i nuovi sistemi Nexus N9000 e Cisco 8000 con liquid cooling e ottiche ad alta densità. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyls9p_2sywy"
+    },
+    {
+      "id": "fam_auto_mscyls9p_h6q9h",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Cisco AI Defense – Aggiornamento Agentic Era (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Il più grande aggiornamento dall'introduzione di AI Defense: nuova governance della supply chain AI, protezioni runtime per l'uso agentico degli strumenti, integrazione con NVIDIA NeMo Guardrails e avanzamenti SASE AI-aware per rilevamento e ottimizzazione del traffico AI. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyls9p_wze5x"
+    },
+    {
+      "id": "fam_auto_mscyls9p_q53gc",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Cisco Access Manager (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Soluzione SaaS nativa per il controllo degli accessi basato su identità, integrata nel Meraki Dashboard. Alimentata da Cisco ISE, consente segmentazione adattiva di utenti, dispositivi e IoT senza hardware dedicato. GA dal 10 novembre 2025. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyls9p_s49m4"
+    },
+    {
+      "id": "fam_auto_mscym6iq_qps1j",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Crestron Collab Compute (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Piattaforma UC di nuova generazione, purpose-built per ambienti Pro AV con video intelligente multi-camera e connettività AV professionale, pensata per meeting ibridi scalabili. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscym6iq_i74q4"
+    },
+    {
+      "id": "fam_auto_mscym6iq_4fgxt",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "DM NAX Intelligent Audio + 1 Beyond i12D Camera (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "DM NAX è una piattaforma audio intelligente AI-ready per spazi collaborativi. La camera 1 Beyond i12D offre speaker tracking professionale e video dinamico in un'unica soluzione plug-and-play. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscym6iq_yoovn"
+    },
+    {
+      "id": "fam_auto_mscym6iq_16hrt",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "80 Series Touch Screens (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuova generazione di touch screen per sale riunioni, con performance di elaborazione avanzate, design industriale raffinato e sicurezza enterprise-grade, basati su Microsoft Device Ecosystem Platform (MDEP). [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscym6iq_xzsed"
+    },
+    {
+      "id": "fam_auto_mscymlk7_m10aj",
+      "vendorId": "v_karray",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Dragon Series KXT12P & KXT18P (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuovi diffusori tri-assiali Dragon con tecnologia a radiatori passivi e costruzione in metallo, disponibili in versioni 12\" e 18\". Progettati per club, venue sportive e DJ monitoring con elevati livelli SPL e grande chiarezza sonora. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscymlk7_9067i"
+    },
+    {
+      "id": "fam_auto_mscymlk8_51f2b",
+      "vendorId": "v_karray",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Dolomite KRD202P (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Sistema tower speaker full-range portatile con 32 driver da 2\" (Pure Array Technology), 4 subwoofer da 10\" e 4 radiatori passivi, struttura modulare in acciaio inox. Debutto internazionale a InfoComm 2025, venduto in kit stereo con amplificatore KA104LIVE. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscymlk8_pqxor"
+    },
+    {
+      "id": "fam_auto_mscymlk8_xtdqq",
+      "vendorId": "v_karray",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "K-Monitor v2.1.0 (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Aggiornamento del software di monitoraggio centralizzato dell'ecosistema K-array (v2.1.0). Dashboard unica per integratori: scoperta dispositivi in rete, diagnostica, health check e aggiornamenti batch offline di amplificatori e speaker attivi. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscymlk8_fppfa"
+    },
+    {
+      "id": "fam_auto_mscyn6yw_hqdpv",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "MAXHUB XBar W70 Kit (Windows Videobar) (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Prima videobar Windows per Microsoft Teams Rooms con sistema quad-camera 200MP, array 16 microfoni AI, raffreddamento silenzioso e Windows 11 Pro integrato. Riconosciuta con SCN Installation Product Award a InfoComm 2026. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyn6yw_xy12b"
+    },
+    {
+      "id": "fam_auto_mscyn6yw_sa13h",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "MAXHUB Mic Pod DM30 (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Microfono espansione per XBar Series con array 8 microfoni, AI noise cancellation 360°, tasto mute fisico con LED colore. Collegabile in daisy-chain fino a 4 unità via cavo Ethernet, plug-and-play senza configurazione. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyn6yw_jr0td"
+    },
+    {
+      "id": "fam_auto_mscyn6yw_ptanf",
+      "vendorId": "v_maxhub",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "MAXHUB Panel SP10 (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Pannello scheduling 11 pollici per prenotazione sale riunioni in tempo reale. Supporta one-tap booking, sincronizzazione calendario e LED status bar visivo. Annunciato ufficialmente a luglio 2026. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyn6yw_n899m"
+    },
+    {
+      "id": "fam_auto_mscynoh6_cjp1m",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Q-SYS RoomSuite Modular Systems & MPA-Q Series (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuovi sistemi modulari hardware/software per spazi collaborativi medio-grandi con deploy rapido e amplificatori di rete MPA-Q (4 e 8 canali, 125-500W/ch) per audio distribuito in ambienti hospitality, retail e corporate. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscynoh6_sb3ga"
+    },
+    {
+      "id": "fam_auto_mscynoh6_h10lq",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Q-SYS Library + NC-90-G2 & NC-Pro15x Cameras (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Q-SYS Library: hub cloud-native per plugin, template UCI e design verificati (sostituisce Asset Manager). NC-90-G2: camera ePTZ con AI integrata; NC-Pro15x: PTZ produzione Canon. Annunciati insieme a nuovi switch NS Series Gen 2. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscynoh6_yww8q"
+    },
+    {
+      "id": "fam_auto_mscyo3ou_cur7x",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "IntelliMix™ Bar Pro (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Video bar all-in-one per sale medie/grandi con audio e video AI-powered da un unico dispositivo frontale. Integra microfoni array Microflex® Advance, 4 telecamere 4K con AI framing (IntelliMix View™) e compute Android Qualcomm. Enterprise-ready, scalabile e sicuro. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyo3ou_mmjqs"
+    },
+    {
+      "id": "fam_auto_mscyo3ov_8zue1",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Microflex® Wireless neXt 4 e neXt 8 (MXW neXt 4/8) (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Sistemi wireless per collaboration in versione 4 e 8 canali, con nuovo design industriale, display LCD su ogni microfono, caricatori Gooseneck daisy-chainabili via Ethernet e certificazione Microsoft Teams per il boundary mic. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyo3ov_yh1ip"
+    },
+    {
+      "id": "fam_auto_mscyo3ov_gpfxl",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "IntelliMix™ Foundation System (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Kit base standalone (compute + touch panel) derivato dagli IntelliMix Room Kits, pensato per integrator AV che vogliono abbinarlo liberamente al portfolio Microflex® Ecosystem. Debuttato a InfoComm 2025. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyo3ov_vydfu"
+    },
+    {
+      "id": "fam_auto_mscyog66_e3h8r",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "FortiCloud Expansion – FortiIdentity, FortiDrive, FortiConnect (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Espansione di FortiCloud con FortiIdentity per la gestione cloud delle identità ibride, e due nuovi servizi beta: FortiDrive (storage sicuro enterprise) e FortiConnect (comunicazioni protette), integrati nel Security Fabric. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyog66_t7euf"
+    },
+    {
+      "id": "fam_auto_mscyog66_us728",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "FortiRecon – Piattaforma CTEM potenziata (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Miglioramenti significativi a FortiRecon per allineamento al framework CTEM: attack surface management, dark web intelligence avversariale e security orchestration in un'unica piattaforma unificata. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyog66_ahpjw"
+    },
+    {
+      "id": "fam_auto_mscyog66_pcq0h",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "FortiGate G Series – Nuovi NGFW (70G, 50G, 30G) (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Nuovi firewall di nuova generazione FortiGate 70G, 50G e 30G per imprese distribuite, basati su ASIC proprietari e FortiOS, con supporto networking avanzato e servizi FortiGuard AI-Powered Security. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyog66_wkx13"
+    },
+    {
+      "id": "fam_auto_mscyoz88_4bize",
+      "vendorId": "v_avigilon",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Avigilon Unity Video 8.7 – Visual Alerts (genAI on-premise) (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Feature di videosorveglianza con IA generativa on-premise introdotta in Unity Video 8.7: permette di creare alert in linguaggio naturale per eventi complessi e specifici rilevati dalle telecamere, senza limiti ai soli oggetti predefiniti. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyoz88_wik81"
+    },
+    {
+      "id": "fam_auto_mscyoz88_t6qqs",
+      "vendorId": "v_avigilon",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Avigilon Alta Visitor (integrazione InVisit) (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Soluzione cloud-native di visitor management integrata nella suite Avigilon Alta, acquisita da InVisit. Gestisce registrazione ospiti, accessi con QR code, notifiche all'host, screening su blocklist e insight in tempo reale sull'attività dei visitatori. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyoz88_zmgqq"
+    },
+    {
+      "id": "fam_auto_mscype03_m4jz5",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "AXIS Secure Entry for XProtect (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Soluzione all-in-one che unifica controllo accessi e videosorveglianza nell'interfaccia di Milestone XProtect Smart Client. Integra la gestione delle porte e il monitoraggio video in un'unica piattaforma per ambienti enterprise. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscype03_19jvu"
+    },
+    {
+      "id": "fam_auto_mscyprhz_knm3h",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "XProtect 2026 R1 & Arcules VSaaS – nuove funzionalità (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "Aggiornamento del VMS XProtect e della piattaforma cloud Arcules VSaaS: potenzia le security operations, introduce reporting schedulabile e personalizzabile via XProtect Remote Manager, e amplia la flessibilità di deployment ibrido on-premises/cloud. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyprhz_ux08u"
+    },
+    {
+      "id": "fam_auto_mscyprhz_6i3tv",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": null,
+      "areaFunzionaleId": null,
+      "nome": "Vision Language Model (VLM) + Video Summarization per XProtect (scoperto automaticamente — DA CLASSIFICARE)",
+      "descrizione": "VLM specializzato nell'analisi del traffico, basato su NVIDIA Cosmos Reason. Alimenta due prodotti: Video Summarization per XProtect (ricerca e report automatici su dati video) e VLM as a Service per integrazioni di terze parti. [Aggiunto automaticamente dalla scoperta settimanale; verificare macroarea, famiglia di appartenenza e correttezza del dato.]",
+      "stato": "da_verificare",
+      "fonteId": "src_auto_mscyprhz_gnf9k"
     }
   ],
   "prodotti": [
@@ -5261,7 +5558,494 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_auto_mscyl6nb_9bopj",
+      "url": "https://www.barco.com/en/about/press-releases/2026/clickshare-hub-adds-wireless-byod",
+      "titolo": "ClickShare Hub adds Wireless BYOD to enable Zoom, Webex, and Google Meet meetings",
+      "vendorId": "v_barco",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyl6nc_z14de",
+      "url": "https://www.barco.com/en/news/news-insights/themed-entertainment/launch-i65",
+      "titolo": "Now boarding: I65, the projector that packs it all",
+      "vendorId": "v_barco",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyls9p_2sywy",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-announces-new-silicon-one-g300.html",
+      "titolo": "Cisco Announces New Silicon One G300, Advanced Systems and Optics to Power and Scale AI Data Centers for the Agentic Era",
+      "vendorId": "v_cisco",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyls9p_wze5x",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-redefines-security-for-the-agentic-era.html",
+      "titolo": "Cisco Redefines Security for the Agentic Era with AI Defense Expansion and AI-Aware SASE",
+      "vendorId": "v_cisco",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyls9p_s49m4",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m11/cisco-supercharges-its-secure-enterprise-network-architecture-for-the-ai-era.html",
+      "titolo": "Cisco Supercharges its Secure Enterprise Network Architecture for the AI Era",
+      "vendorId": "v_cisco",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscym6iq_i74q4",
+      "url": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-Collab-Compute,-a-New-Hardware",
+      "titolo": "Crestron Introduces Collab Compute, a New Hardware Core for Intelligent, Scalable Collaboration",
+      "vendorId": "v_crestron",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscym6iq_yoovn",
+      "url": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-DM-NAX-Intelligent-Audio-Platf",
+      "titolo": "Crestron Introduces DM NAX Intelligent Audio Platform and 1 Beyond i12D Camera to Deliver AI-Ready Collaboration",
+      "vendorId": "v_crestron",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscym6iq_xzsed",
+      "url": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-80-Series-Touch-Screens,-the-N",
+      "titolo": "Crestron Introduces 80 Series Touch Screens, the Next Generation of Intelligent Interfaces for Modern Collaboration",
+      "vendorId": "v_crestron",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscymlk7_9067i",
+      "url": "https://www.k-array.com/en/post/expands-ecosystem-new-products-ise-2025",
+      "titolo": "K-array Expands Ecosystem with Five Exciting Product Launches at ISE 2025",
+      "vendorId": "v_karray",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscymlk8_pqxor",
+      "url": "https://www.k-array.com/en/product/dolomite-krd202p",
+      "titolo": "K-array | Dolomite-KRD202P",
+      "vendorId": "v_karray",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscymlk8_fppfa",
+      "url": "https://www.k-array.com/en/software/k-monitor",
+      "titolo": "K-array | K-Monitor",
+      "vendorId": "v_karray",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyn6yw_xy12b",
+      "url": "https://www.maxhub.com/en/newsroom/1698.html",
+      "titolo": "XBar W70Kit｜Engineering the Impossible: 200MP, 16 Mics, One Videobar",
+      "vendorId": "v_maxhub",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyn6yw_jr0td",
+      "url": "https://www.maxhub.com/en/newsroom/1712.html",
+      "titolo": "Introducing the MAXHUB Mic Pod DM30 Expansion Microphone",
+      "vendorId": "v_maxhub",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyn6yw_n899m",
+      "url": "https://www.maxhub.com/us/panel_sp10/",
+      "titolo": "MAXHUB - Panel SP10",
+      "vendorId": "v_maxhub",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscynoh6_sb3ga",
+      "url": "https://www.qsys.com/resources/news/detail/qsc-launches-scalable-q-systm-collaboration-solutions-and-expands-hospitality-and-entertainment-appli/",
+      "titolo": "QSC Launches Scalable Q-SYS™ Collaboration Solutions and Expands Hospitality and Entertainment Applications",
+      "vendorId": "v_qsys",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscynoh6_yww8q",
+      "url": "https://www.qsys.com/resources/news/detail/q-sys-expands-full-stack-av-platform-with-launch-of-q-sys-library-and-portfolio-enhancements/",
+      "titolo": "Q-SYS Expands Full Stack AV Platform with Launch of Q-SYS Library and Portfolio Enhancements",
+      "vendorId": "v_qsys",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyo3ou_mmjqs",
+      "url": "https://www.shure.com/en-US/newsroom/shure-redefines-the-all-in-one-bar-intellimix-bar-pro",
+      "titolo": "Shure Redefines the All-in-One Bar: The IntelliMix™ Bar Pro Empowers Modern Collaboration in AI-Powered Workplaces",
+      "vendorId": "v_shure",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyo3ov_yh1ip",
+      "url": "https://www.shure.com/en-US/newsroom/shure-completes-next-generation-of-wireless",
+      "titolo": "Shure Completes Next Generation of Wireless with Microflex® Wireless neXt 4 and 8",
+      "vendorId": "v_shure",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyo3ov_vydfu",
+      "url": "https://www.shure.com/en-US/newsroom/shure-to-debut-intellimix-foundation-system-and-networked-pendant-loudspeaker",
+      "titolo": "Shure to Debut IntelliMix™ Foundation System and Networked Pendant Loudspeaker at InfoComm 2025",
+      "vendorId": "v_shure",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyog66_t7euf",
+      "url": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-expands-forticloud-identity-secure-storage-and",
+      "titolo": "Fortinet Expands FortiCloud with Identity, Secure Storage, and Communication Services to Power the Modern Enterprise",
+      "vendorId": "v_fortinet",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyog66_ahpjw",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2025/fortinet-enhances-fortirecon-to-align-with-ctem-framework",
+      "titolo": "Fortinet Enhances FortiRecon to Align with Continuous Threat Exposure Management (CTEM) Framework",
+      "vendorId": "v_fortinet",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyog66_wkx13",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2025/fortinet-delivers-unmatched-security-efficient-network-performance-for-distributed-enterprise-with-new-next-gen-firewalls",
+      "titolo": "Fortinet Delivers Unmatched Security and Efficient Network Performance for the Distributed Enterprise with New Next-Gen Firewalls",
+      "vendorId": "v_fortinet",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyoz88_wik81",
+      "url": "https://www.avigilon.com/vms/on-premise",
+      "titolo": "Avigilon Unity On-Premise Managed Video Security System",
+      "vendorId": "v_avigilon",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyoz88_zmgqq",
+      "url": "https://www.avigilon.com/alta-visitor",
+      "titolo": "Avigilon Alta Visitor",
+      "vendorId": "v_avigilon",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscype03_19jvu",
+      "url": "https://newsroom.axis.com/en-us/press-release/secure-entry-xprotect",
+      "titolo": "Axis Communications introduces unified access control and video surveillance for XProtect users",
+      "vendorId": "v_axis",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyprhz_ux08u",
+      "url": "https://www.milestonesys.com/company/news/press-releases/",
+      "titolo": "Milestone Strengthens Security Operations and Cloud Capabilities with XProtect 2026 R1 and Arcules Update",
+      "vendorId": "v_milestone",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_auto_mscyprhz_gnf9k",
+      "url": "https://www.milestonesys.com/company/news/press-releases/milestone-launches-vision-language-model/",
+      "titolo": "Milestone Launches Vision Language Model (VLM)",
+      "vendorId": "v_milestone",
+      "tipo": "scoperta automatica (fonte ufficiale verificata)",
+      "dataConsultazione": "2026-08-03",
+      "stato": "nuovo (da rivedere per classificazione manuale)",
+      "categoriaControllo": "release"
     }
   ],
-  "changelog": []
+  "changelog": [
+    {
+      "id": "chg_discovery_mscyl6nc_v7mow",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "ClickShare Hub – Wireless BYOD",
+      "fonteUrl": "https://www.barco.com/en/about/press-releases/2026/clickshare-hub-adds-wireless-byod",
+      "timestamp": "2026-08-03T08:20:04.968Z"
+    },
+    {
+      "id": "chg_discovery_mscyl6nc_z7dve",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Barco I65 – Piattaforma di proiezione smartline 4K UHD",
+      "fonteUrl": "https://www.barco.com/en/news/news-insights/themed-entertainment/launch-i65",
+      "timestamp": "2026-08-03T08:20:04.968Z"
+    },
+    {
+      "id": "chg_discovery_mscyls9p_t7hfi",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Cisco Silicon One G300",
+      "fonteUrl": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-announces-new-silicon-one-g300.html",
+      "timestamp": "2026-08-03T08:20:32.989Z"
+    },
+    {
+      "id": "chg_discovery_mscyls9p_x31rv",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Cisco AI Defense – Aggiornamento Agentic Era",
+      "fonteUrl": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-redefines-security-for-the-agentic-era.html",
+      "timestamp": "2026-08-03T08:20:32.989Z"
+    },
+    {
+      "id": "chg_discovery_mscyls9p_akqik",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Cisco Access Manager",
+      "fonteUrl": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m11/cisco-supercharges-its-secure-enterprise-network-architecture-for-the-ai-era.html",
+      "timestamp": "2026-08-03T08:20:32.989Z"
+    },
+    {
+      "id": "chg_discovery_mscym6iq_b7vbu",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Crestron Collab Compute",
+      "fonteUrl": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-Collab-Compute,-a-New-Hardware",
+      "timestamp": "2026-08-03T08:20:51.458Z"
+    },
+    {
+      "id": "chg_discovery_mscym6iq_hbv91",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "DM NAX Intelligent Audio + 1 Beyond i12D Camera",
+      "fonteUrl": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-DM-NAX-Intelligent-Audio-Platf",
+      "timestamp": "2026-08-03T08:20:51.458Z"
+    },
+    {
+      "id": "chg_discovery_mscym6iq_0q6ag",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "80 Series Touch Screens",
+      "fonteUrl": "https://www.crestron.com/News/Press-Releases/2026/Crestron-Introduces-80-Series-Touch-Screens,-the-N",
+      "timestamp": "2026-08-03T08:20:51.458Z"
+    },
+    {
+      "id": "chg_discovery_mscymlk8_7rpsn",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Dragon Series KXT12P & KXT18P",
+      "fonteUrl": "https://www.k-array.com/en/post/expands-ecosystem-new-products-ise-2025",
+      "timestamp": "2026-08-03T08:21:10.952Z"
+    },
+    {
+      "id": "chg_discovery_mscymlk8_nl4em",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Dolomite KRD202P",
+      "fonteUrl": "https://www.k-array.com/en/product/dolomite-krd202p",
+      "timestamp": "2026-08-03T08:21:10.952Z"
+    },
+    {
+      "id": "chg_discovery_mscymlk8_8sn8k",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "K-Monitor v2.1.0",
+      "fonteUrl": "https://www.k-array.com/en/software/k-monitor",
+      "timestamp": "2026-08-03T08:21:10.952Z"
+    },
+    {
+      "id": "chg_discovery_mscyn6yw_p52kt",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "MAXHUB XBar W70 Kit (Windows Videobar)",
+      "fonteUrl": "https://www.maxhub.com/en/newsroom/1698.html",
+      "timestamp": "2026-08-03T08:21:38.696Z"
+    },
+    {
+      "id": "chg_discovery_mscyn6yw_61gij",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "MAXHUB Mic Pod DM30",
+      "fonteUrl": "https://www.maxhub.com/en/newsroom/1712.html",
+      "timestamp": "2026-08-03T08:21:38.696Z"
+    },
+    {
+      "id": "chg_discovery_mscyn6yw_aof0s",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "MAXHUB Panel SP10",
+      "fonteUrl": "https://www.maxhub.com/us/panel_sp10/",
+      "timestamp": "2026-08-03T08:21:38.696Z"
+    },
+    {
+      "id": "chg_discovery_mscynoh6_uylj3",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Q-SYS RoomSuite Modular Systems & MPA-Q Series",
+      "fonteUrl": "https://www.qsys.com/resources/news/detail/qsc-launches-scalable-q-systm-collaboration-solutions-and-expands-hospitality-and-entertainment-appli/",
+      "timestamp": "2026-08-03T08:22:01.386Z"
+    },
+    {
+      "id": "chg_discovery_mscynoh6_fescb",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Q-SYS Library + NC-90-G2 & NC-Pro15x Cameras",
+      "fonteUrl": "https://www.qsys.com/resources/news/detail/q-sys-expands-full-stack-av-platform-with-launch-of-q-sys-library-and-portfolio-enhancements/",
+      "timestamp": "2026-08-03T08:22:01.386Z"
+    },
+    {
+      "id": "chg_discovery_mscyo3ou_j2x4s",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "IntelliMix™ Bar Pro",
+      "fonteUrl": "https://www.shure.com/en-US/newsroom/shure-redefines-the-all-in-one-bar-intellimix-bar-pro",
+      "timestamp": "2026-08-03T08:22:21.102Z"
+    },
+    {
+      "id": "chg_discovery_mscyo3ov_mycuz",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Microflex® Wireless neXt 4 e neXt 8 (MXW neXt 4/8)",
+      "fonteUrl": "https://www.shure.com/en-US/newsroom/shure-completes-next-generation-of-wireless",
+      "timestamp": "2026-08-03T08:22:21.103Z"
+    },
+    {
+      "id": "chg_discovery_mscyo3ov_g0dk3",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "IntelliMix™ Foundation System",
+      "fonteUrl": "https://www.shure.com/en-US/newsroom/shure-to-debut-intellimix-foundation-system-and-networked-pendant-loudspeaker",
+      "timestamp": "2026-08-03T08:22:21.103Z"
+    },
+    {
+      "id": "chg_discovery_mscyog66_5p0x7",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "FortiCloud Expansion – FortiIdentity, FortiDrive, FortiConnect",
+      "fonteUrl": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-expands-forticloud-identity-secure-storage-and",
+      "timestamp": "2026-08-03T08:22:37.278Z"
+    },
+    {
+      "id": "chg_discovery_mscyog66_759mz",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "FortiRecon – Piattaforma CTEM potenziata",
+      "fonteUrl": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2025/fortinet-enhances-fortirecon-to-align-with-ctem-framework",
+      "timestamp": "2026-08-03T08:22:37.278Z"
+    },
+    {
+      "id": "chg_discovery_mscyog66_okwb3",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "FortiGate G Series – Nuovi NGFW (70G, 50G, 30G)",
+      "fonteUrl": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2025/fortinet-delivers-unmatched-security-efficient-network-performance-for-distributed-enterprise-with-new-next-gen-firewalls",
+      "timestamp": "2026-08-03T08:22:37.278Z"
+    },
+    {
+      "id": "chg_discovery_mscyoz88_94e2k",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Avigilon Unity Video 8.7 – Visual Alerts (genAI on-premise)",
+      "fonteUrl": "https://www.avigilon.com/vms/on-premise",
+      "timestamp": "2026-08-03T08:23:01.976Z"
+    },
+    {
+      "id": "chg_discovery_mscyoz88_mflw8",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Avigilon Alta Visitor (integrazione InVisit)",
+      "fonteUrl": "https://www.avigilon.com/alta-visitor",
+      "timestamp": "2026-08-03T08:23:01.976Z"
+    },
+    {
+      "id": "chg_discovery_mscype03_wi6pl",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "AXIS Secure Entry for XProtect",
+      "fonteUrl": "https://newsroom.axis.com/en-us/press-release/secure-entry-xprotect",
+      "timestamp": "2026-08-03T08:23:21.123Z"
+    },
+    {
+      "id": "chg_discovery_mscyprhz_8smtx",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "XProtect 2026 R1 & Arcules VSaaS – nuove funzionalità",
+      "fonteUrl": "https://www.milestonesys.com/company/news/press-releases/",
+      "timestamp": "2026-08-03T08:23:38.615Z"
+    },
+    {
+      "id": "chg_discovery_mscyprhz_ieov8",
+      "entita": "ScopertaAutomatica",
+      "azione": "nuova famiglia proposta e inserita automaticamente (fonte ufficiale verificata)",
+      "nome": "Vision Language Model (VLM) + Video Summarization per XProtect",
+      "fonteUrl": "https://www.milestonesys.com/company/news/press-releases/milestone-launches-vision-language-model/",
+      "timestamp": "2026-08-03T08:23:38.615Z"
+    }
+  ]
 }
