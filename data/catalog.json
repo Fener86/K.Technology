@@ -1056,6 +1056,18 @@
       "categoria": "Control Room / KVM",
       "stato": "attivo",
       "fonteId": "src_barco_encore3"
+    },
+    {
+      "id": "fam_crestron_scheduling",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Crestron Room Scheduling",
+      "descrizione": "Applicazione di prenotazione sale preinstallata sui touch screen Crestron TSS-770/1070 (dedicati alla schedulazione) e TSW-570/570P/770/1070, TS-770/1070. Mostra disponibilita' sala, stato delle sale vicine e permette prenotazioni ad hoc direttamente dal pannello. Si integra con Crestron Fusion, Microsoft Exchange, Google Calendar, Ad Astra o CollegeNet 25Live. Disponibile anche in versione nativa Microsoft Teams (70 Series Scheduling Panels for Teams).",
+      "categoria": "Videoconferenza / Collaboration",
+      "stato": "attivo",
+      "fonteId": "src_crestron_room_scheduling"
     }
   ],
   "prodotti": [
@@ -2235,6 +2247,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switcher di elaborazione immagini della serie Event Master, configurazione stock o Build-To-Order, ampiamente diffusi nel mercato del noleggio eventi.",
       "fonteId": "src_barco_event_master"
+    },
+    {
+      "id": "prod_crestron_tss_panels",
+      "familyId": "fam_crestron_scheduling",
+      "nomeCommerciale": "Crestron TSS-770 / TSS-1070",
+      "modello": "TSS-770 / TSS-1070",
+      "tipologia": "hardware",
+      "deployment": "on-premise (esterno sala)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Touch screen dedicati alla prenotazione sale, da installare fuori dalla sala riunioni.",
+      "fonteId": "src_crestron_scheduling_userguide"
     }
   ],
   "licenze": [
@@ -5724,6 +5747,26 @@
       "titolo": "Event Master (pagina prodotto ufficiale)",
       "vendorId": "v_barco",
       "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_room_scheduling",
+      "url": "https://www.crestron.com/Products/Featured-Solutions/Room-Scheduling",
+      "titolo": "Crestron Room Scheduling (pagina prodotto ufficiale)",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_scheduling_userguide",
+      "url": "https://docs.crestron.com/en-us/8989/Content/Topics/Home.htm",
+      "titolo": "Crestron Room Scheduling Panels - documentazione ufficiale",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
