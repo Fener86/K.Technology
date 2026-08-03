@@ -1,12 +1,12 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 12, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 13, scrittura diretta GitHub)_
 
 ## 1. Attivita' completate (cumulativo)
 
 - Architettura, interfaccia, persistenza GitHub, monitoraggio automatico + AI, assistente, scoperta settimanale: tutti funzionanti.
-- **63 famiglie**, 89 prodotti, 67 licenze, **180 righe di matrice**, **115 fonti ufficiali**, 0 errori di integrita'.
-- Sessione 12: aggiunte **FortiEndpoint**/**FortiSOC** (Fortinet); Cisco Duo con **Cisco Identity Intelligence**; **Meraki AI Assistant** GA; **AXIS Object Analytics**; **Meraki MV** (famiglia videosorveglianza mancante, licenza Enterprise unica confermata); **Milestone XProtect Access** (nuova famiglia, modulo controllo accessi con licenza per porta — rafforza la macroarea Controllo Accessi).
+- **66 famiglie**, 95 prodotti, 69 licenze, **180 righe di matrice**, **121 fonti ufficiali**, 0 errori di integrita'.
+- Sessione 13: aggiunte **Avigilon Unity Access** (on-premise, distinta da Alta Access cloud); **Cisco Secure Access SSE completo** (SIA/SPA, distinto dal solo DNS Defense); completati i prodotti Axis da ISC West 2026 (Q2802-E bispettrale, F2180-TE termico, TP3604-E cellulare privata); **Barco I65** (nuova famiglia proiezione).
 
 ## Nota tecnica sul token GitHub
 
