@@ -440,7 +440,7 @@
       "macroareaId": "ma_phys",
       "areaFunzionaleId": "af_vms",
       "nome": "AXIS Camera Station / Camera Station Pro",
-      "descrizione": "VMS Axis on-premise con licenza per dispositivo (Core Device License per device Axis/2N, Universal Device License per device ONVIF/RTSP di terze parti), disponibile anche come licenza standalone 1 o 5 anni; include modulo di controllo accessi fino a 1000 porte e 50.000 titolari per server.",
+      "descrizione": "VMS Axis on-premise con licenza per dispositivo (Core Device License per device Axis/2N, Universal Device License per device ONVIF/RTSP di terze parti), disponibile anche come licenza standalone 1 o 5 anni; include modulo di controllo accessi fino a 1000 porte e 50.000 titolari per server. Nota tecnica pianificazione: AXIS OS 13 (rilascio previsto settembre 2026) introduce breaking changes (rimozione API VAPIX legacy, sostituzione delle vecchie app di analisi con AXIS Object Analytics/Image Health Analytics, risoluzione preventiva del problema Y2038) — da verificare compatibilita' prima di pianificare aggiornamenti su installazioni esistenti.",
       "stato": "attivo",
       "fonteId": "src_axis_cs_license_info",
       "categoria": "VMS / Software Videosorveglianza"
@@ -2134,6 +2134,17 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Microfono da tavolo che sostituisce l'MXA310, con Steerable Coverage migliorata, IntelliMix onboard, certificato Microsoft Teams e Zoom, gestione via Shure Designer e ShureCloud.",
       "fonteId": "src_shure_mxa320_pr"
+    },
+    {
+      "id": "prod_barco_clickshare_bar",
+      "familyId": "fam_barco_clickshare_hub",
+      "nomeCommerciale": "ClickShare Bar Core / Bar Pro",
+      "modello": "Bar Core / Bar Pro",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni) + gestione cloud XMS",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Videobar all-in-one della gamma ClickShare Hub, gestibile e monitorabile da XMS Cloud insieme al resto della flotta ClickShare.",
+      "fonteId": "src_barco_xms_userguide"
     }
   ],
   "licenze": [
@@ -5531,6 +5542,26 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "release"
+    },
+    {
+      "id": "src_axis_os13_lifecycle",
+      "url": "https://help.axis.com/en-us/axis-os",
+      "titolo": "AXIS OS - Lifecycle guide (AXIS OS 13, settembre 2026)",
+      "vendorId": "v_axis",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "controllo frequente (rilascio pianificato, verificare breaking changes prima di aggiornare)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_xms_userguide",
+      "url": "https://www.barco.com/en/support/docs/R5900109",
+      "titolo": "XMS Cloud User guide (documentazione ufficiale, elenco dispositivi supportati incl. ClickShare Bar)",
+      "vendorId": "v_barco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
