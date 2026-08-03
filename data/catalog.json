@@ -876,6 +876,17 @@
       "descrizione": "Piattaforma SaaS cloud-delivered Fortinet (disponibile da giugno 2026) che unifica 6 funzioni di security operations (SIEM, SOAR, threat intelligence, identity detection e altre) in un'unica console, con AI agentica che indaga e correla automaticamente gli alert su asset e identita', proponendo o eseguendo azioni di risposta sotto supervisione dell'analista. Licensing 'one console, one subscription'.",
       "stato": "nuovo",
       "fonteId": "src_fortinet_fortisoc_pr"
+    },
+    {
+      "id": "fam_axis_object_analytics",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": "ma_phys",
+      "areaFunzionaleId": "af_videoanalytics",
+      "nome": "AXIS Object Analytics",
+      "descrizione": "Analitica video AI-based preinstallata gratuitamente sulle camere Axis compatibili (MLPU con AXIS OS 10.2+, DLPU con 10.3+), nessuna licenza aggiuntiva richiesta. Rileva, classifica, traccia e conta persone e veicoli (con sottotipi). Scenari disponibili: oggetto in area, attraversamento linea, tempo in area, conteggio attraversamenti, occupazione in area, rilevamento tailgating, monitoraggio DPI/PPE (elmetti, in beta). Compatibile con AXIS Camera Station e altri VMS terzi via standard aperti.",
+      "stato": "attivo",
+      "fonteId": "src_axis_object_analytics"
     }
   ],
   "prodotti": [
@@ -1835,6 +1846,17 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Console unica di security operations con AI agentica per investigazione e correlazione automatica degli alert.",
       "fonteId": "src_fortinet_fortisoc_pr"
+    },
+    {
+      "id": "prod_axis_object_analytics_app",
+      "familyId": "fam_axis_object_analytics",
+      "nomeCommerciale": "AXIS Object Analytics (applicazione)",
+      "modello": "App preinstallata (ACAP)",
+      "tipologia": "software",
+      "deployment": "on-premise (edge, eseguita sulla camera)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Applicazione di video analytics gratuita preinstallata sulle camere Axis compatibili, nessun costo aggiuntivo.",
+      "fonteId": "src_axis_object_analytics"
     }
   ],
   "licenze": [
@@ -5014,6 +5036,16 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "release"
+    },
+    {
+      "id": "src_axis_object_analytics",
+      "url": "https://www.axis.com/products/axis-object-analytics",
+      "titolo": "AXIS Object Analytics (pagina prodotto ufficiale)",
+      "vendorId": "v_axis",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
