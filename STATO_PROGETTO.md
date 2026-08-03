@@ -1,6 +1,12 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 14, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 15, scrittura diretta GitHub)_
+
+## NOVITA' STRUTTURALE — classificazione per categoria (tipo di prodotto)
+
+Su richiesta del cliente, tutte le 68 famiglie sono ora classificate anche per **categoria trasversale ai vendor** (es. Switch, Firewall/NGFW, VMS, Controllo Accessi, Licensing, Microfoni, ecc. — 38 categorie totali). Navigabile dalla sidebar del sito (sezione "Categoria"), con pagina dedicata #/categoria/:nome che mostra tutte le famiglie di quel tipo indipendentemente dal vendor. Aggiunto anche il tag categoria cliccabile nella pagina di ogni famiglia.
+
+_Sessioni precedenti:_
 
 ## 1. Attivita' completate (cumulativo)
 
