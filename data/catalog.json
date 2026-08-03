@@ -1068,6 +1068,18 @@
       "categoria": "Videoconferenza / Collaboration",
       "stato": "attivo",
       "fonteId": "src_crestron_room_scheduling"
+    },
+    {
+      "id": "fam_qsys_nc_cameras",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Q-SYS NC Series (camere per videoconferenza)",
+      "descrizione": "Camere di rete native alla piattaforma Q-SYS (NC-110 ePTZ, NC-12x80 e NC-20x60 PTZ ottiche, NC-Pro15x costruita da Canon per spazi broadcast-grade). Instradamento del feed video via rete Q-LAN senza matrix hardware; auto-framing; compatibili con Teams/Zoom/Google Meet/Webex tramite qualsiasi bridge Q-SYS. Gestione da Q-SYS Designer e Q-SYS Reflect.",
+      "categoria": "Videoconferenza / Collaboration",
+      "stato": "attivo",
+      "fonteId": "src_qsys_nc_series"
     }
   ],
   "prodotti": [
@@ -2258,6 +2270,39 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Touch screen dedicati alla prenotazione sale, da installare fuori dalla sala riunioni.",
       "fonteId": "src_crestron_scheduling_userguide"
+    },
+    {
+      "id": "prod_qsys_nc_110",
+      "familyId": "fam_qsys_nc_cameras",
+      "nomeCommerciale": "Q-SYS NC-110",
+      "modello": "NC-110",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni piccola/media)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Camera ePTZ a lente fissa, campo visivo orizzontale 110°, per sale piccole e ampie.",
+      "fonteId": "src_qsys_nc_series"
+    },
+    {
+      "id": "prod_qsys_nc_ptz",
+      "familyId": "fam_qsys_nc_cameras",
+      "nomeCommerciale": "Q-SYS NC-12x80 / NC-20x60",
+      "modello": "NC-12x80 (zoom ottico 12x) / NC-20x60 (zoom ottico 20x)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sale medie/grandi)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Camere PTZ motorizzate con sensore 4K, auto-framing e output HDMI/SDI simultaneo allo stream IP.",
+      "fonteId": "src_qsys_nc_series"
+    },
+    {
+      "id": "prod_qsys_nc_pro15x",
+      "familyId": "fam_qsys_nc_cameras",
+      "nomeCommerciale": "Q-SYS NC-Pro15x",
+      "modello": "NC-Pro15x (costruita da Canon)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (spazi broadcast-grade)",
+      "statoLifecycle": "nuovo",
+      "descrizioneBreve": "Camera PTZ di rete broadcast-grade per l'esperienza VisionSuite Presenter Spotlight, per spazi ad alto impatto produttivo.",
+      "fonteId": "src_qsys_nc_pro15x"
     }
   ],
   "licenze": [
@@ -5769,6 +5814,26 @@
       "tipo": "documentazione ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_nc_series",
+      "url": "https://help.qsys.com/q-sys_9.8/Content/Hardware/Video/NC_Series_Cameras.htm",
+      "titolo": "NC Series Conference Cameras (documentazione ufficiale)",
+      "vendorId": "v_qsys",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_nc_pro15x",
+      "url": "https://www.qsys.com/products/q-sys/video/nc-series/nc-pro15x/",
+      "titolo": "NC-Pro15x (pagina prodotto ufficiale)",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "datasheet"
     }
   ],
