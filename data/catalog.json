@@ -942,6 +942,17 @@
       "descrizione": "Linea di proiettori Barco per sale grandi/auditorium/eventi. Novita' 2026: proiettore I65, nuova piattaforma 'smartline' di proiezione.",
       "stato": "nuovo",
       "fonteId": "src_barco_press_releases"
+    },
+    {
+      "id": "fam_fortidlp",
+      "vendorId": "v_fortinet",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "FortiDLP (Data Loss Prevention + Insider Risk)",
+      "descrizione": "Soluzione cloud-native di data loss prevention endpoint e insider risk management Fortinet, per Windows/macOS/Linux, online od offline, estesa a Microsoft 365/Google Workspace e dispositivi personali non gestiti. Integrata con FortiAI per sintetizzare e contestualizzare automaticamente gli incidenti ad alto rischio (mappati su MITRE Insider Threat TTP Knowledge Base). Nessuna necessita' di data discovery esaustiva o policy pre-costruite: attivabile in pochi minuti.",
+      "stato": "attivo",
+      "fonteId": "src_fortidlp_page"
     }
   ],
   "prodotti": [
@@ -2011,6 +2022,17 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuovi encoder/decoder DM NVX con funzione Multiview (piu' sorgenti su un singolo display) e streaming H.264 per estendere i contenuti oltre la rete AV tradizionale.",
       "fonteId": "src_crestron_nvx_whatsnew"
+    },
+    {
+      "id": "prod_fortidlp_platform",
+      "familyId": "fam_fortidlp",
+      "nomeCommerciale": "FortiDLP",
+      "modello": "Agente endpoint leggero + console cloud",
+      "tipologia": "saas",
+      "deployment": "cloud (gestione) + agente endpoint",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Piattaforma DLP e insider risk management con policy risk-adaptive: notifiche, forensics, isolamento endpoint o blocco attivita' ad alto rischio.",
+      "fonteId": "src_fortidlp_ds"
     }
   ],
   "licenze": [
@@ -5347,6 +5369,26 @@
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortidlp_page",
+      "url": "https://www.fortinet.com/products/fortidlp/data-loss-prevention",
+      "titolo": "FortiDLP - Data Loss Prevention (pagina prodotto ufficiale)",
+      "vendorId": "v_fortinet",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_fortidlp_ds",
+      "url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortidlp.pdf",
+      "titolo": "FortiDLP Datasheet",
+      "vendorId": "v_fortinet",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     }
   ],
