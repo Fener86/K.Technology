@@ -1,6 +1,8 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 02/08/2026 (sessione 15, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 02/08/2026 (sessione 16, scrittura diretta GitHub)_
+
+Sessione 16: aggiunte novita' Shure MXA320, Barco ClickShare Bar Core/Pro, K-Array Python/Tornado/Turtle, nota tecnica AXIS OS 13. **Numeri attuali: 68 famiglie, 104 prodotti, 69 licenze, 180 righe di matrice, 132 fonti, 0 errori.** Su richiesta del cliente, la classificazione per categoria e' stata spostata DENTRO la pagina vendor (famiglie raggruppate per tipo prodotto con sottotitoli), rimossa la sezione sidebar separata.
 
 ## NOVITA' STRUTTURALE — classificazione per categoria (tipo di prodotto)
 
