@@ -3745,14 +3745,14 @@
     },
     {
       "id": "prod_xegdi6vy",
-      "familyId": "fam_barco_clickshare",
+      "familyId": "fam_barco_controlroom",
       "nomeCommerciale": "Barco TransForm N CMS",
       "modello": "Barco TransForm N CMS",
       "tipologia": "software",
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Suite di gestione control room, licenza a feature license",
-      "fonteId": "src_xctrpciv"
+      "descrizioneBreve": "Suite software di gestione control room (parte del sistema TransForm N), architettura di rete modulare per video wall, licenza a feature con connessioni concorrenti (SKU 1-16/32/64/128 CON).",
+      "fonteId": "src_barco_transformn_cms"
     },
     {
       "id": "prod_xlnnocq2",
@@ -3933,13 +3933,13 @@
     {
       "id": "prod_xz655x1z",
       "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array configuration/DSP software",
+      "nomeCommerciale": "K-framework3 (software di progettazione acustica 3D)",
       "modello": "K-array configuration/DSP software",
       "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "da_verificare",
-      "descrizioneBreve": "Software di configurazione per sistemi K-array",
-      "fonteId": null
+      "deployment": "on-premise (Windows/macOS)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Software gratuito di modellazione 3D e simulazione acustica (risposta in frequenza, distribuzione SPL, intelligibilita' del parlato), con generazione automatica di report per il cliente.",
+      "fonteId": "src_karray_kframework3"
     },
     {
       "id": "prod_xrhyzlju",
@@ -5942,6 +5942,28 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Supporto nativo per controllo gain e monitoraggio batteria/RF di SLX-D Quad direttamente dal mixer digitale Yamaha DM7 (da firmware V1.7)",
       "fonteId": "src_xe349wsq"
+    },
+    {
+      "id": "prod_x3y5fb2o",
+      "familyId": "fam_karray_amplification",
+      "nomeCommerciale": "K-Cloud (piattaforma di gestione remota)",
+      "modello": "Servizio cloud",
+      "tipologia": "cloud",
+      "deployment": "cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Piattaforma K-array per accesso remoto, gestione centralizzata, aggiornamenti in tempo reale e diagnostica di sistemi audio distribuiti su piu' installazioni.",
+      "fonteId": "src_karray_software_hub"
+    },
+    {
+      "id": "prod_xbdh01ng",
+      "familyId": "fam_karray_amplification",
+      "nomeCommerciale": "K-Monitor",
+      "modello": "Applicazione desktop",
+      "tipologia": "software",
+      "deployment": "on-premise (Windows/macOS)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Applicazione per scoprire gli amplificatori K-array in rete, eseguire controlli di salute dei dispositivi e applicare aggiornamenti offline su tutti i dispositivi connessi.",
+      "fonteId": "src_karray_software_hub"
     }
   ],
   "licenze": [
@@ -8032,6 +8054,21 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
       "fonteId": null
+    },
+    {
+      "id": "lic_xkbx96tk",
+      "familyId": "fam_barco_controlroom",
+      "productIds": [
+        "prod_xegdi6vy"
+      ],
+      "nomeUfficiale": "Barco TransForm N CMS - licenza a connessioni concorrenti",
+      "tipologia": "perpetua",
+      "metrica": "per connessioni concorrenti, a fasce (es. 16/32/64/128)",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua); disponibile anche Software Care per aggiornamenti trimestrali",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_barco_transformn_cms"
     }
   ],
   "licenseFeatures": [
@@ -14145,6 +14182,36 @@
       "dataConsultazione": "2026-08-03",
       "stato": "controllo frequente — fonti terze in disaccordo sulle date esatte MR36/44/46, verificare su questa pagina prima di ogni proposta",
       "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_barco_transformn_cms",
+      "url": "https://www.barco.com/en/product/cms",
+      "titolo": "TransForm N CMS (pagina prodotto ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_karray_software_hub",
+      "url": "https://www.k-array.com/en/software",
+      "titolo": "K-array Software (K-framework3, K-Monitor, K-Cloud, CORE-O)",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_karray_kframework3",
+      "url": "https://www.k-array.com/en/software/k-framework-3",
+      "titolo": "K-framework3 (pagina prodotto ufficiale)",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
