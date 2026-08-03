@@ -898,6 +898,17 @@
       "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo (fino a un mese di registrazione locale) e gestione tramite lo stesso Meraki Dashboard di switch/AP/firewall. Licenza unica 'Enterprise', indipendente dal modello hardware (fanno eccezione le MV84X multi-imaging, che richiedono la licenza dedicata LIC-MV-MULTCAM).",
       "stato": "attivo",
       "fonteId": "src_meraki_mv_licensing_faq"
+    },
+    {
+      "id": "fam_milestone_xprotect_access",
+      "vendorId": "v_milestone",
+      "brandLineId": null,
+      "macroareaId": "ma_access",
+      "areaFunzionaleId": null,
+      "nome": "Milestone XProtect Access (modulo controllo accessi)",
+      "descrizione": "Modulo add-on di XProtect che integra sistemi di controllo accessi di terze parti (Axis, LenelS2, Brivo, Genea, RS2 Technologies, Vanderbilt, 2N e altri partner tecnologici Milestone) direttamente nell'interfaccia XProtect Smart Client: monitoraggio porte, automazioni tramite Rules Engine, gestione varchi veicolari, chiamate intercom, e possibilita' di associare la vista mappa a porte/varchi. Novita' recente: integrazione 'AXIS Secure Entry for XProtect', installabile tramite XProtect Update Manager insieme ad AXIS Optimizer.",
+      "stato": "attivo",
+      "fonteId": "src_milestone_xprotect_access"
     }
   ],
   "prodotti": [
@@ -2853,6 +2864,19 @@
       "gracePeriod": "30 giorni in caso di superamento del limite di licenza organizzativo",
       "conseguenzeScadenza": "la camera smette di registrare/essere gestita se non coperta da licenza valida nell'organizzazione",
       "fonteId": "src_meraki_mv_licensing_faq"
+    },
+    {
+      "id": "lic_milestone_xprotect_access_door",
+      "familyId": "fam_milestone_xprotect_access",
+      "productIds": [],
+      "nomeUfficiale": "XProtect Access - Door License (XPADL)",
+      "tipologia": "perpetua",
+      "metrica": "per porta/varco integrato",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua); richiede anche una licenza base XProtect Access",
+      "fonteId": "src_milestone_xprotect_access"
     }
   ],
   "licenseFeatures": [
@@ -5093,6 +5117,26 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_milestone_xprotect_access",
+      "url": "https://doc.milestonesys.com/latest/en-US/add-ons/add-on_access/access_configureanintegrated.htm",
+      "titolo": "XProtect Access - Configure an integrated access control system (documentazione ufficiale)",
+      "vendorId": "v_milestone",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_milestone_access_article",
+      "url": "https://www.milestonesys.com/resources/content/articles/access-control-xprotect-vms/",
+      "titolo": "How access control works with Milestone's XProtect VMS (articolo ufficiale)",
+      "vendorId": "v_milestone",
+      "tipo": "pagina informativa ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
