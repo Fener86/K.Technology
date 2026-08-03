@@ -1080,6 +1080,18 @@
       "categoria": "Videoconferenza / Collaboration",
       "stato": "attivo",
       "fonteId": "src_qsys_nc_series"
+    },
+    {
+      "id": "fam_qsys_amp_speakers",
+      "vendorId": "v_qsys",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "Q-SYS - amplificatori e diffusori di rete (CX-Q / NL Series)",
+      "descrizione": "Amplificatori di rete CX-Q (4/8 canali, fino a 8000W, Low-Z/70V/100V, FlexAmp e FAST Technology) nativi Q-SYS con drag-and-drop nel design, piu' diffusori di rete PoE serie NL (stesso design AcousticDesign, alimentazione/audio/controllo su singolo cavo Ethernet, monitorabili automaticamente da Q-SYS Reflect).",
+      "categoria": "Diffusori / Amplificazione",
+      "stato": "attivo",
+      "fonteId": "src_qsys_cxq"
     }
   ],
   "prodotti": [
@@ -2303,6 +2315,28 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera PTZ di rete broadcast-grade per l'esperienza VisionSuite Presenter Spotlight, per spazi ad alto impatto produttivo.",
       "fonteId": "src_qsys_nc_pro15x"
+    },
+    {
+      "id": "prod_qsys_cxq_amp",
+      "familyId": "fam_qsys_amp_speakers",
+      "nomeCommerciale": "Q-SYS CX-Q (amplificatore di rete)",
+      "modello": "4 e 8 canali, versioni Q e Qn",
+      "tipologia": "hardware",
+      "deployment": "on-premise",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Amplificatore di rete nativo Q-SYS, fino a 8000W, con ingressi mic/line aggiuntivi (versione Q) o solo di rete (versione Qn).",
+      "fonteId": "src_qsys_cxq"
+    },
+    {
+      "id": "prod_qsys_nl_speakers",
+      "familyId": "fam_qsys_amp_speakers",
+      "nomeCommerciale": "Q-SYS NL Series (diffusori PoE)",
+      "modello": "Multi-formato (es. NL-SB42 soundbar)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (sala riunioni)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Diffusori di rete alimentati via PoE, audio/potenza/controllo su singolo cavo Ethernet, monitorabili da Q-SYS Reflect.",
+      "fonteId": "src_qsys_nl_series"
     }
   ],
   "licenze": [
@@ -5834,6 +5868,26 @@
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_cxq",
+      "url": "https://www.qsys.com/products-solutions/q-sys/audio-network-amplifiers/cx-q-series/",
+      "titolo": "CX-Q Series Network Amplifiers (pagina prodotto ufficiale)",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_qsys_nl_series",
+      "url": "https://www.qsys.com/products-solutions/q-sys/audio-network-loudspeakers/nl-series/",
+      "titolo": "NL Series network loudspeakers (pagina prodotto ufficiale)",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-02",
+      "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     }
   ],
