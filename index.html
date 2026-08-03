@@ -353,7 +353,6 @@ function render() {
 
   if (page === "home") content.innerHTML = viewHome(c);
   else if (page === "macroarea") content.innerHTML = viewMacroarea(L.macroaree[p1], c, L);
-  else if (page === "categoria") content.innerHTML = viewCategoria(decodeURIComponent(p1 || ""), c, L);
   else if (page === "vendor") content.innerHTML = viewVendor(L.vendors[p1], c, L);
   else if (page === "family") content.innerHTML = viewFamily(L.famiglie[p1], c, L);
   else if (page === "product") content.innerHTML = viewProduct(L.prodotti[p1], c, L);
@@ -382,15 +381,11 @@ function renderSidebar(page, p1) {
   const sb = document.getElementById("sidebar");
   const famCount = (maId) => c.famiglie.filter((f) => f.macroareaId === maId).length;
   const famCountVendor = (vId) => c.famiglie.filter((f) => f.vendorId === vId).length;
-  const categorie = [...new Set(c.famiglie.map((f) => f.categoria).filter(Boolean))].sort((a, b) => a.localeCompare(b, "it"));
-  const famCountCategoria = (cat) => c.famiglie.filter((f) => f.categoria === cat).length;
   sb.innerHTML = `
     <div class="sidebar-title">Macroaree</div>
     ${c.macroaree.map((ma) => `<div class="sidebar-item ${page==="macroarea"&&p1===ma.id?"active":""}" data-nav="#/macroarea/${ma.id}"><span>${esc(ma.nome)}</span><span class="sidebar-count">${famCount(ma.id)}</span></div>`).join("")}
     <div class="sidebar-title" style="margin-top:24px;">Vendor</div>
     ${c.vendors.map((v) => `<div class="sidebar-item ${page==="vendor"&&p1===v.id?"active":""}" data-nav="#/vendor/${v.id}"><span>${esc(v.nome)}</span><span class="sidebar-count">${famCountVendor(v.id)}</span></div>`).join("")}
-    <div class="sidebar-title" style="margin-top:24px;">Categoria (per tipo di prodotto)</div>
-    ${categorie.map((cat) => `<div class="sidebar-item ${page==="categoria"&&decodeURIComponent(p1||"")===cat?"active":""}" data-nav="#/categoria/${encodeURIComponent(cat)}"><span>${esc(cat)}</span><span class="sidebar-count">${famCountCategoria(cat)}</span></div>`).join("")}
   `;
   bindNavClicks();
 }
@@ -453,40 +448,35 @@ function viewMacroarea(ma, c, L) {
   `;
 }
 
-function viewCategoria(categoria, c, L) {
-  if (!categoria) return `<div class="empty">Categoria non trovata.</div>`;
-  const famiglie = c.famiglie.filter((f) => f.categoria === categoria);
-  const vendorCoinvolti = [...new Set(famiglie.map((f) => f.vendorId))];
-  return `
-    ${breadcrumb([{label:"Home",hash:"#/"},{label:"Categoria: " + categoria}])}
-    <h1 class="h1">${esc(categoria)}</h1>
-    <div class="desc">Tutte le famiglie di questo tipo, di qualunque vendor: ${famiglie.length} famiglie da ${vendorCoinvolti.length} vendor diversi.</div>
-    <h2 class="h2">Famiglie</h2>
-    ${famiglie.length ? `<div class="grid">${famiglie.map(f=>`
-      <div class="card" data-nav="#/family/${f.id}">
-        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
-        <div class="card-meta">${esc(L.vendors[f.vendorId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
-        <div class="card-desc">${esc((f.descrizione||"").slice(0,160))}${(f.descrizione||"").length>160?"...":""}</div>
-      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia in questa categoria.</div>`}
-  `;
-}
-
 function viewVendor(vendor, c, L) {
   if (!vendor) return `<div class="empty">Vendor non trovato.</div>`;
   const famiglie = c.famiglie.filter((f) => f.vendorId === vendor.id);
   const brandLines = c.brandLines.filter((bl) => bl.vendorId === vendor.id);
+
+  // raggruppa le famiglie per categoria (tipo di prodotto), cosi' il quadro e' immediato
+  const gruppi = {};
+  famiglie.forEach((f) => {
+    const cat = f.categoria || "Altro / da classificare";
+    (gruppi[cat] = gruppi[cat] || []).push(f);
+  });
+  const categorieOrdinate = Object.keys(gruppi).sort((a, b) => a.localeCompare(b, "it"));
+
+  const renderFamigliaCard = (f) => `
+      <div class="card" data-nav="#/family/${f.id}">
+        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
+        <div class="card-meta">${esc(L.macroaree[f.macroareaId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
+        <div class="card-desc">${esc(f.descrizione)}</div>
+      </div>`;
+
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor.nome}])}
     <h1 class="h1">${esc(vendor.nome)}</h1>
     <a class="source-tag" href="${esc(vendor.sito)}" target="_blank" rel="noopener noreferrer">&#8599; Sito ufficiale</a>
     ${brandLines.length ? `<h2 class="h2">Brand line</h2><div class="panel">${brandLines.map(bl=>`<div style="margin-bottom:10px;"><div style="font-weight:600;font-size:13.5px;">${esc(bl.nome)}</div><div class="desc" style="font-size:12.5px;">${esc(bl.descrizione)}</div></div>`).join("")}</div>` : ""}
-    <h2 class="h2">Famiglie</h2>
-    ${famiglie.length ? `<div class="grid">${famiglie.map(f=>`
-      <div class="card" data-nav="#/family/${f.id}">
-        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
-        <div class="card-meta">${esc(L.macroaree[f.macroareaId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
-        <div class="card-desc">${esc(f.descrizione)}</div>
-      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
+    ${famiglie.length ? categorieOrdinate.map((cat) => `
+      <h2 class="h2">${esc(cat)} <span class="hint">(${gruppi[cat].length})</span></h2>
+      <div class="grid">${gruppi[cat].map(renderFamigliaCard).join("")}</div>
+    `).join("") : `<h2 class="h2">Famiglie</h2><div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
   `;
 }
 
@@ -499,7 +489,7 @@ function viewFamily(fam, c, L) {
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor?.nome,hash:"#/vendor/"+vendor?.id},{label:fam.nome}])}
     <h1 class="h1">${led(fam.stato)}${esc(fam.nome)}</h1>
-    ${fam.categoria ? `<div style="margin-bottom:8px;"><span class="badge" style="color:var(--accent);border:1px solid var(--accent-dim);background:var(--accent-tint);cursor:pointer;" data-nav="#/categoria/${encodeURIComponent(fam.categoria)}">${esc(fam.categoria)}</span></div>` : ""}
+    ${fam.categoria ? `<div style="margin-bottom:8px;"><span class="badge" style="color:var(--accent);border:1px solid var(--accent-dim);background:var(--accent-tint);">${esc(fam.categoria)}</span></div>` : ""}
     <div class="desc">${esc(fam.descrizione)}</div>
     <div style="margin-top:10px;">${sourceTag(L.fonti[fam.fonteId])}</div>
     <h2 class="h2">Prodotti / modelli</h2>
