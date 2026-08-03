@@ -226,7 +226,8 @@
       "nome": "FortiGate",
       "descrizione": "Next-Generation Firewall Fortinet, disponibile come appliance hardware e virtual appliance, protetto dai servizi FortiGuard e dal supporto FortiCare.",
       "stato": "attivo",
-      "fonteId": "src_fortiguard_og"
+      "fonteId": "src_fortiguard_og",
+      "categoria": "Firewall / NGFW"
     },
     {
       "id": "fam_catalyst",
@@ -237,7 +238,8 @@
       "nome": "Catalyst 9000 Series",
       "descrizione": "Switch enterprise Cisco Catalyst (9200/9300/9500), gestibili via CLI/Catalyst Center oppure, dove supportato, direttamente dal Meraki Dashboard. Nota lifecycle: la famiglia Catalyst 9300 non ha una singola data di End-of-Life; i bollettini EoS/EoL vengono pubblicati per singolo part number/SKU (es. il vecchio modello di licenza 'Cisco ONE C9300 DNA Advantage Term' e' stato dichiarato End-of-Sale/End-of-Life il 15/03/2023). Verificare sempre lo SKU esatto sul bollettino ufficiale Cisco prima di proporlo in una trattativa.",
       "stato": "attivo",
-      "fonteId": "src_meraki_ios_xe"
+      "fonteId": "src_meraki_ios_xe",
+      "categoria": "Switch"
     },
     {
       "id": "fam_meraki_dashboard",
@@ -248,7 +250,8 @@
       "nome": "Meraki Dashboard (cloud management)",
       "descrizione": "Piattaforma cloud Meraki per la gestione centralizzata di switch, wireless, sicurezza e, dal 2023, anche di switch Cisco Catalyst compatibili.",
       "stato": "attivo",
-      "fonteId": "src_meraki_ios_xe"
+      "fonteId": "src_meraki_ios_xe",
+      "categoria": "Management Platform"
     },
     {
       "id": "fam_fortiswitch",
@@ -259,7 +262,8 @@
       "nome": "FortiSwitch",
       "descrizione": "Switch Ethernet Fortinet (Secure Access e Data Center series), gestibili in FortiLink come estensione logica del FortiGate o centralmente via cloud.",
       "stato": "attivo",
-      "fonteId": "src_fortiswitch_secaccess"
+      "fonteId": "src_fortiswitch_secaccess",
+      "categoria": "Switch"
     },
     {
       "id": "fam_fortiap",
@@ -270,7 +274,8 @@
       "nome": "FortiAP",
       "descrizione": "Access point wireless Fortinet (Wi-Fi 6/6E/7), gestiti dal controller WLAN integrato in FortiGate o dal portale cloud FortiAP Cloud/FortiLAN Cloud.",
       "stato": "attivo",
-      "fonteId": "src_fortiap_ds"
+      "fonteId": "src_fortiap_ds",
+      "categoria": "Wireless / Access Point"
     },
     {
       "id": "fam_fortimanager",
@@ -281,7 +286,8 @@
       "nome": "FortiManager",
       "descrizione": "Piattaforma di gestione centralizzata per FortiGate, FortiSwitch, FortiAP e altri dispositivi del Security Fabric: configurazione, backup, automazione e reportistica.",
       "stato": "attivo",
-      "fonteId": "src_fortimanager_ds"
+      "fonteId": "src_fortimanager_ds",
+      "categoria": "Networking Management"
     },
     {
       "id": "fam_forticlient",
@@ -292,7 +298,8 @@
       "nome": "FortiClient / FortiClient EMS",
       "descrizione": "Agente endpoint unificato Fortinet (VPN/ZTNA, EPP, telemetria) gestito centralmente da FortiClient EMS on-premise o da FortiClient Cloud (istanza EMS ospitata da Fortinet).",
       "stato": "attivo",
-      "fonteId": "src_forticlient_og"
+      "fonteId": "src_forticlient_og",
+      "categoria": "Endpoint Protection / EDR"
     },
     {
       "id": "fam_fortisase",
@@ -303,7 +310,8 @@
       "nome": "FortiSASE",
       "descrizione": "Servizio SASE cloud-delivered Fortinet: SIA, SSA, SPA e ZTNA universale con licensing basato su utenti (Standard/Advanced/Comprehensive).",
       "stato": "attivo",
-      "fonteId": "src_fortisase_og"
+      "fonteId": "src_fortisase_og",
+      "categoria": "SASE / SSE / ZTNA"
     },
     {
       "id": "fam_cisco_secfw",
@@ -314,7 +322,8 @@
       "nome": "Cisco Secure Firewall (Threat Defense)",
       "descrizione": "Firewall di nuova generazione Cisco (ex Firepower), gestito da Firewall Management Center on-premise o cloud-delivered, con licensing a base perpetua + subscription a termine per le funzionalita' avanzate.",
       "stato": "attivo",
-      "fonteId": "src_cisco_secfw_ordering"
+      "fonteId": "src_cisco_secfw_ordering",
+      "categoria": "Firewall / NGFW"
     },
     {
       "id": "fam_cisco_ise",
@@ -325,7 +334,8 @@
       "nome": "Cisco Identity Services Engine (ISE)",
       "descrizione": "Piattaforma di network access control e identity Cisco: AAA, profiling, accesso guest, segmentazione (TrustSec), postura, con licensing a tre livelli annidati (Essentials/Advantage/Premier) basato su endpoint attivi. Novita' recente: con ISE 3.5 (giugno 2026) cambia la logica di consumo licenze — pxGrid, pxGrid Direct, Profiling e TrustSec ora consumano una licenza Advantage per endpoint con sessione RADIUS attiva (in precedenza il consumo non era sempre riflesso correttamente). Per ora Cisco non applica enforcement per sovra-consumo (solo alert informativi), in vista di un'applicazione piu' stringente nelle prossime release. ISE 3.5 aggiunge anche supporto IPv6 full-stack e nuove API pxGrid Cloud.",
       "stato": "attivo",
-      "fonteId": "src_cisco_ise_licensing_guide"
+      "fonteId": "src_cisco_ise_licensing_guide",
+      "categoria": "NAC (Network Access Control)"
     },
     {
       "id": "fam_cisco_duo",
@@ -336,7 +346,8 @@
       "nome": "Cisco Duo",
       "descrizione": "Piattaforma MFA/identity security Cisco, con edizioni Free/Essentials/Advantage/Premier (e Federal), licenza a utente/mese. Novita' 2026: Duo Advantage/Premier sono ora potenziati da Cisco Identity Intelligence (insight, segnali e remediation cross-vendor sull'identita'), che sta sostituendo la precedente funzione Trust Monitor (rimossa dal pannello admin il 27/07/2026, end-of-support gennaio 2027 per la sola API). Aggiunte anche Windows Command Line Protection (MFA per PowerShell/SSH) e Legacy AD Protection (MFA per applicazioni legacy via Kerberos/NTLM senza modifiche allo schema Active Directory).",
       "stato": "attivo",
-      "fonteId": "src_duo_editions"
+      "fonteId": "src_duo_editions",
+      "categoria": "Identity & MFA"
     },
     {
       "id": "fam_meraki_mx",
@@ -347,7 +358,8 @@
       "nome": "Meraki MX",
       "descrizione": "Appliance di sicurezza e SD-WAN cloud-gestita Meraki. Licensing uniforme per organizzazione su 3 livelli: Enterprise, Advanced Security, Secure SD-WAN Plus.",
       "stato": "attivo",
-      "fonteId": "src_meraki_mx_licensing"
+      "fonteId": "src_meraki_mx_licensing",
+      "categoria": "Firewall / NGFW"
     },
     {
       "id": "fam_meraki_ms",
@@ -358,7 +370,8 @@
       "nome": "Meraki MS",
       "descrizione": "Switch cloud-gestiti Meraki. Licenza specifica per modello hardware, 2 livelli (Enterprise, Advanced su modelli selezionati).",
       "stato": "attivo",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "categoria": "Switch"
     },
     {
       "id": "fam_meraki_mr",
@@ -369,7 +382,8 @@
       "nome": "Meraki MR",
       "descrizione": "Access point wireless cloud-gestiti Meraki. Licenza comune a tutti i modelli AP, 2 livelli (Enterprise, Advanced/Upgrade).",
       "stato": "attivo",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "categoria": "Wireless / Access Point"
     },
     {
       "id": "fam_meraki_dashboard_licensing",
@@ -380,7 +394,8 @@
       "nome": "Meraki - modelli di licensing (trasversale)",
       "descrizione": "Tre modelli di licensing cloud Meraki applicabili all'intero portafoglio: Subscription (attuale modello raccomandato), Co-Termination (default storico, tutte le licenze scadono alla stessa data organizzativa), Per-Device Licensing (legacy, non piu' disponibile per nuovi clienti). Grace period di 30 giorni in caso di superamento del limite di licenza. Novita' 2026: **AI Assistant** ora generalmente disponibile nel Meraki Dashboard (tranne cloud Cina/India/FedRAMP), con funzioni di monitoraggio, troubleshooting e workflow automatizzati in linguaggio naturale. Aggiornamenti recenti: caricamento immagini/screenshot multimodale, 'Generative UI Agent' (risposte adattate dinamicamente in interfacce personalizzate), visualizzazione dei passaggi di ragionamento in streaming.",
       "stato": "attivo",
-      "fonteId": "src_meraki_licensing_overview"
+      "fonteId": "src_meraki_licensing_overview",
+      "categoria": "Licensing (modelli trasversali)"
     },
     {
       "id": "fam_milestone_xprotect",
@@ -391,7 +406,8 @@
       "nome": "Milestone XProtect",
       "descrizione": "VMS on-premise Milestone a licenza perpetua per-device. Edizioni attuali: Express+, Professional+, Expert, Corporate. XProtect Essential+ (gratuita fino a 8 canali) e' stata dismessa con la release 2025 R2. Ultima release: XProtect 2026 R1 (aprile 2026), con Device Pack 14.1 (oltre 16.300 dispositivi verificati, 181 nuovi da 15 technology partner), nuovo LogServer con vista centralizzata dei log, e reportistica pianificata/personalizzabile in XProtect Remote Manager per i clienti Milestone Care Plus. Novita' 2026: nuove funzioni di AI generativa annunciate per XProtect — AI Search (ricerca in linguaggio naturale nei filmati), Video Summarization (riepiloghi automatici) e Video Anonymization, con attenzione dichiarata a compliance EU AI Act/GDPR.",
       "stato": "attivo",
-      "fonteId": "src_milestone_comparison"
+      "fonteId": "src_milestone_comparison",
+      "categoria": "VMS / Software Videosorveglianza"
     },
     {
       "id": "fam_avigilon_alta_video",
@@ -402,7 +418,8 @@
       "nome": "Avigilon Alta Video",
       "descrizione": "VMS cloud-native Avigilon (ex Ava Security): telecamere A5/cloud-native con storage ed elaborazione AI a bordo, oppure ibrido tramite Alta Cloud Connector per telecamere ONVIF/legacy. Licensing modulare per canale, durata storage e analisi AI attive.",
       "stato": "attivo",
-      "fonteId": "src_avigilon_alta_video_lineup"
+      "fonteId": "src_avigilon_alta_video_lineup",
+      "categoria": "VMS / Software Videosorveglianza"
     },
     {
       "id": "fam_avigilon_alta_access",
@@ -413,7 +430,8 @@
       "nome": "Avigilon Alta Access",
       "descrizione": "Controllo accessi cloud Avigilon (ex Openpath), a modello di sottoscrizione con livelli differenziati per funzionalita' attivate.",
       "stato": "attivo",
-      "fonteId": "src_avigilon_alta_video_lineup"
+      "fonteId": "src_avigilon_alta_video_lineup",
+      "categoria": "Controllo Accessi"
     },
     {
       "id": "fam_axis_camera_station",
@@ -424,7 +442,8 @@
       "nome": "AXIS Camera Station / Camera Station Pro",
       "descrizione": "VMS Axis on-premise con licenza per dispositivo (Core Device License per device Axis/2N, Universal Device License per device ONVIF/RTSP di terze parti), disponibile anche come licenza standalone 1 o 5 anni; include modulo di controllo accessi fino a 1000 porte e 50.000 titolari per server.",
       "stato": "attivo",
-      "fonteId": "src_axis_cs_license_info"
+      "fonteId": "src_axis_cs_license_info",
+      "categoria": "VMS / Software Videosorveglianza"
     },
     {
       "id": "fam_barco_clickshare",
@@ -435,7 +454,8 @@
       "nome": "Barco ClickShare",
       "descrizione": "Sistema di wireless conferencing/presentation Barco (Conference e Present). Nessun costo di licenza software: gli aggiornamenti firmware sono gratuiti; la gestione flotta XMS Cloud e' inclusa gratuitamente come parte del servizio SmartCare (5 anni di copertura hardware estesa alla registrazione).",
       "stato": "attivo",
-      "fonteId": "src_barco_clickshare_conf"
+      "fonteId": "src_barco_clickshare_conf",
+      "categoria": "Videoconferenza / Collaboration"
     },
     {
       "id": "fam_crestron_xio",
@@ -446,7 +466,8 @@
       "nome": "Crestron XiO Cloud",
       "descrizione": "Piattaforma di provisioning/gestione cloud Crestron (connessione diretta device-to-cloud via Azure IoT Hub). Due livelli: XiO Cloud gratuito (funzioni base) e XiO Cloud Premium a licenza device-based, a termine (1/2/3/5 anni).",
       "stato": "attivo",
-      "fonteId": "src_crestron_xio_howto"
+      "fonteId": "src_crestron_xio_howto",
+      "categoria": "Management Platform"
     },
     {
       "id": "fam_qsys_licensing",
@@ -457,7 +478,8 @@
       "nome": "Q-SYS - Feature Licensing (trasversale)",
       "descrizione": "Modello di licensing Q-SYS basato su Nodelock (associato al Locking ID del singolo Q-SYS Core), attivato tramite Entitlement ID rilasciato dal reseller QSC dopo l'acquisto. Copre feature license, scaling license e licenze per vCore/redundant Core (richiesta una licenza separata anche per un Core ridondante).",
       "stato": "attivo",
-      "fonteId": "src_qsys_licensing"
+      "fonteId": "src_qsys_licensing",
+      "categoria": "Licensing (modelli trasversali)"
     },
     {
       "id": "fam_shure_intellimix",
@@ -468,7 +490,8 @@
       "nome": "Shure IntelliMix Room",
       "descrizione": "DSP audio software (alternativa al processore hardware P300) ottimizzato per microfoni di rete Shure (Microflex Advance/Wireless/Complete Wireless), eseguito su PC in sala. Licenza a subscription per canali (8 o 16) e durata (3 o 5 anni); disponibile trial gratuito di 90 giorni. Gestione tramite Shure Designer, monitoraggio remoto via ShureCloud.",
       "stato": "attivo",
-      "fonteId": "src_shure_intellimix_room"
+      "fonteId": "src_shure_intellimix_room",
+      "categoria": "Audio Processing / DSP"
     },
     {
       "id": "fam_karray_speakers",
@@ -479,7 +502,8 @@
       "nome": "K-Array - diffusori e amplificazione",
       "descrizione": "Diffusori line-array e a colonna (linee Vyper, Kobra, Python, Lyzard, Anakonda, Koral, Rumble/subwoofer) e amplificatori Kommander. Prodotti hardware puri: nessun modello di licensing software rilevato sulle fonti ufficiali consultate. Nota di gruppo (confermata da comunicato ufficiale K-array USA, gennaio 2026): il gruppo K-array comprende i brand K-ARRAY, KSCAPE (illuminazione+audio integrati) e KGEAR; in questo catalogo, su indicazione del cliente, viene mantenuto solo il brand K-Array.",
       "stato": "attivo",
-      "fonteId": "src_karray_products"
+      "fonteId": "src_karray_products",
+      "categoria": "Diffusori / Amplificazione"
     },
     {
       "id": "fam_maxhub_mtr",
@@ -490,7 +514,8 @@
       "nome": "MAXHUB - soluzioni per Microsoft Teams Rooms",
       "descrizione": "Display interattivi XBoard, kit XCore/XT Series e barre XBar certificati Microsoft Teams Rooms. Prodotti hardware con Windows 11 IoT integrato; non risultano, dalle fonti ufficiali consultate, licenze software separate oltre a quelle Microsoft Teams Rooms stesse.",
       "stato": "attivo",
-      "fonteId": "src_maxhub_xboard_mtr"
+      "fonteId": "src_maxhub_xboard_mtr",
+      "categoria": "Videoconferenza / Collaboration"
     },
     {
       "id": "fam_barco_controlroom",
@@ -501,7 +526,8 @@
       "nome": "Barco Control Rooms (CTRL, UniSee, TruePix)",
       "descrizione": "Piattaforma software Barco CTRL (KVM over IP e distribuzione dati per control room) combinata con video wall LCD UniSee/UniSee II (bezel-less) e LED TruePix, per sale controllo, SOC e applicazioni critiche.",
       "stato": "attivo",
-      "fonteId": "src_barco_ctrl"
+      "fonteId": "src_barco_ctrl",
+      "categoria": "Control Room / KVM"
     },
     {
       "id": "fam_crestron_flex",
@@ -512,7 +538,8 @@
       "nome": "Crestron Flex",
       "descrizione": "Sistemi di videoconferenza Crestron per sale riunioni (tabletop, integrator kit), compatibili con Microsoft Teams Rooms e piattaforme UC di terze parti (BYOD/Zoom Rooms), abbinabili a Crestron Videobar e touch screen 10.1\".",
       "stato": "attivo",
-      "fonteId": "src_crestron_flex"
+      "fonteId": "src_crestron_flex",
+      "categoria": "Videoconferenza / Collaboration"
     },
     {
       "id": "fam_qsys_core_nv",
@@ -523,7 +550,8 @@
       "nome": "Q-SYS Core e NV Series",
       "descrizione": "Processori Q-SYS Core (Nano, 110f, 510i, 5200, ecc.) che eseguono l'intera piattaforma audio/video/controllo, e serie NV per la distribuzione video AV-over-IP (encoder/decoder HDMI software-defined, tecnologia Q-SYS Shift).",
       "stato": "attivo",
-      "fonteId": "src_qsys_processing"
+      "fonteId": "src_qsys_processing",
+      "categoria": "AV over IP"
     },
     {
       "id": "fam_shure_microflex_advance",
@@ -534,7 +562,8 @@
       "nome": "Shure Microflex Advance (array a soffitto/tavolo)",
       "descrizione": "Microfoni a schiera Microflex Advance (es. MXA920, MXA902) con beamforming e DSP IntelliMix integrato, per copertura automatica della sala, camera tracking e voice lift.",
       "stato": "attivo",
-      "fonteId": "src_shure_mxa920"
+      "fonteId": "src_shure_mxa920",
+      "categoria": "Microfoni"
     },
     {
       "id": "fam_karray_amplification",
@@ -545,7 +574,8 @@
       "nome": "K-Array Kommander (amplificazione) e K-framework",
       "descrizione": "Serie di amplificatori Kommander (4-8 canali, DSP integrato, sistema operativo osKar) per pilotare i diffusori passivi K-array; gestione tramite K-framework3 (Windows/Mac), web app o app mobile K-array Connect; integrazione nativa con Q-SYS, Crestron, Symetrix.",
       "stato": "attivo",
-      "fonteId": "src_karray_kommander"
+      "fonteId": "src_karray_kommander",
+      "categoria": "Diffusori / Amplificazione"
     },
     {
       "id": "fam_maxhub_ifp",
@@ -556,7 +586,8 @@
       "nome": "MAXHUB V6 - display interattivi (non-MTR)",
       "descrizione": "Display interattivi 4K serie V6 Classic/ViewPro con whiteboard smart (OCR), condivisione schermo wireless (MAXHUB Share), fotocamera e microfoni integrati; gestione flotta cloud tramite MAXHUB Pivot. Novita' 2026: 'AI Meeting Experience' su XBoard V7 (ottimizzazione audio/video, trascrizione in tempo reale, riepiloghi automatici delle riunioni), mostrata a InfoComm 2026.",
       "stato": "attivo",
-      "fonteId": "src_maxhub_viewpro"
+      "fonteId": "src_maxhub_viewpro",
+      "categoria": "Display / Digital Signage / LED Wall"
     },
     {
       "id": "fam_shure_wireless",
@@ -567,7 +598,8 @@
       "nome": "Shure ULX-D e Axient Digital (wireless)",
       "descrizione": "Sistemi microfonici wireless digitali Shure per sale conferenza, broadcast ed eventi live. ULX-D: audio digitale 24-bit/48kHz, crittografia AES-256, gestibile da Wireless Workbench/SystemOn. Axient Digital: fascia top per broadcast/eventi, True Digital Diversity. Le licenze canale per i ricevitori scalabili (es. ANX4) sono acquistate separatamente e possono essere riallocate tra unita' dello stesso tipo tramite ShureCloud.",
       "stato": "attivo",
-      "fonteId": "src_shure_ulxd"
+      "fonteId": "src_shure_ulxd",
+      "categoria": "Microfoni"
     },
     {
       "id": "fam_axis_lpv",
@@ -578,7 +610,8 @@
       "nome": "AXIS License Plate Verifier",
       "descrizione": "Applicazione di riconoscimento targhe eseguita a bordo camera (AXIS Camera Application Platform), con lista di veicoli autorizzati/bloccati, integrabile in AXIS Camera Station come fonte dati esterna o come credenziale per il controllo accessi.",
       "stato": "attivo",
-      "fonteId": "src_axis_lpv"
+      "fonteId": "src_axis_lpv",
+      "categoria": "Videoanalisi / AI Analytics"
     },
     {
       "id": "fam_milestone_care",
@@ -589,7 +622,8 @@
       "nome": "Milestone Care (supporto e manutenzione)",
       "descrizione": "Programma di manutenzione e supporto per i prodotti XProtect, in 3 livelli: Basic (incluso sempre, solo self-help), Plus (incluso per i primi 2 anni all'acquisto: aggiornamenti prodotto + XProtect Remote Manager), Premium (supporto 24/7 con SLA: prima risposta entro 15 minuti per telefono, 4 ore online).",
       "stato": "attivo",
-      "fonteId": "src_milestone_care"
+      "fonteId": "src_milestone_care",
+      "categoria": "Supporto & Manutenzione"
     },
     {
       "id": "fam_qsys_reflect_vision",
@@ -600,7 +634,8 @@
       "nome": "Q-SYS Reflect e VisionSuite",
       "descrizione": "Q-SYS Reflect: piattaforma cloud di monitoraggio/gestione remota di sistemi Q-SYS, gratuita nel livello base (monitoraggio) con Reflect Plus a pagamento per controllo/gestione enterprise (accesso UCI remoto, Designer remoto). Q-SYS VisionSuite: acceleratore AI (VSA-100) per camera tracking, richiede due licenze distinte per Core: una feature license perpetua e una update license a termine.",
       "stato": "attivo",
-      "fonteId": "src_qsys_reflect"
+      "fonteId": "src_qsys_reflect",
+      "categoria": "Management Platform"
     },
     {
       "id": "fam_barco_clickshare_present",
@@ -611,7 +646,8 @@
       "nome": "Barco ClickShare Present",
       "descrizione": "Sistema di presentazione wireless (senza conferencing integrato) per sale riunioni e huddle space: base unit + Button, condivisione BYOD via app o screen mirroring (AirPlay/GoogleCast/Miracast). Come ClickShare Conference, nessuna licenza software richiesta; gestione flotta tramite XMS Cloud inclusa in SmartCare.",
       "stato": "attivo",
-      "fonteId": "src_barco_clickshare_present"
+      "fonteId": "src_barco_clickshare_present",
+      "categoria": "Wireless Presentation"
     },
     {
       "id": "fam_cisco_umbrella",
@@ -622,7 +658,8 @@
       "nome": "Cisco Umbrella / Secure Access - DNS Defense",
       "descrizione": "Sicurezza DNS/SIG cloud-delivered Cisco. Nota importante: Cisco sta migrando il brand da 'Umbrella DNS Security' a 'Secure Access - DNS Defense' (stesse funzionalita' Umbrella incluse, allo stesso prezzo, con possibilita' di espandersi a una SSE completa). Pacchetti: DNS Security Essentials/Advantage, Secure Internet Gateway (SIG) Essentials/Advantage, add-on Cloud Firewall L7/DLP/Remote Browser Isolation.",
       "stato": "attivo",
-      "fonteId": "src_cisco_umbrella_dns_ess"
+      "fonteId": "src_cisco_umbrella_dns_ess",
+      "categoria": "SASE / SSE / ZTNA"
     },
     {
       "id": "fam_crestron_dmnvx",
@@ -633,7 +670,8 @@
       "nome": "Crestron DM NVX",
       "descrizione": "Piattaforma AV-over-IP Crestron: encoder/decoder 4K60 4:4:4 su rete Gigabit standard, con USB, audio e controllo integrati; gestione a larga scala tramite DM NVX Director (variante virtuale di un matrix switcher hardware).",
       "stato": "attivo",
-      "fonteId": "src_crestron_dmnvx"
+      "fonteId": "src_crestron_dmnvx",
+      "categoria": "AV over IP"
     },
     {
       "id": "fam_milestone_husky",
@@ -644,7 +682,8 @@
       "nome": "Milestone Husky (appliance NVR)",
       "descrizione": "Appliance NVR Milestone con XProtect pre-installato e licenze dispositivo pre-attivate. Serie attuale Husky IVO (con Dell Technologies) in vari formati rack/standalone; le vecchie serie M10/M30/M50 includevano un piano di aggiornamento software di 3 anni. Le NVR Husky non hanno un'opzione Care Plus separata: la copertura segue quella della VMS XProtect sottostante.",
       "stato": "attivo",
-      "fonteId": "src_milestone_husky"
+      "fonteId": "src_milestone_husky",
+      "categoria": "NVR / Appliance Registrazione"
     },
     {
       "id": "fam_cisco_thousandeyes",
@@ -655,7 +694,8 @@
       "nome": "Cisco ThousandEyes",
       "descrizione": "Piattaforma di network/application visibility. Licensing a consumo basato su 'Units' (test eseguiti da Cloud/Enterprise Agent, minimo 2000 units se acquistate da sole, 500 se combinate con altri prodotti) piu' licenze Endpoint Agent separate (livelli Advantage/Essentials). Sottoscrizione annuale prepagata.",
       "stato": "attivo",
-      "fonteId": "src_cisco_te_ordering"
+      "fonteId": "src_cisco_te_ordering",
+      "categoria": "Network Observability"
     },
     {
       "id": "fam_cisco_webex_roomdevices",
@@ -666,7 +706,8 @@
       "nome": "Cisco Webex Room Devices",
       "descrizione": "Dispositivi Cisco per sale riunioni (Room Kit, Room Kit Mini, Room Kit Plus/Pro) con codec, camera e microfoni integrati, registrabili on-premise (CUCM) o al cloud Webex. Richiedono una licenza di registrazione dispositivo per unita', inclusa nel licensing Flex Webex.",
       "stato": "attivo",
-      "fonteId": "src_cisco_webex_roomkit_ds"
+      "fonteId": "src_cisco_webex_roomkit_ds",
+      "categoria": "Videoconferenza / Collaboration"
     },
     {
       "id": "fam_avigilon_unity_video",
@@ -677,7 +718,8 @@
       "nome": "Avigilon Unity Video (on-premise)",
       "descrizione": "VMS on-premise Avigilon (distinta da Alta Video cloud-native), con licenza a 3 edizioni Core/Standard/Enterprise che scalano per numero di camere, server e client per sito. Piani di aggiornamento software 1/3/5 anni disponibili; clip-sharing incluso senza licenza aggiuntiva.",
       "stato": "attivo",
-      "fonteId": "src_avigilon_unity_ds"
+      "fonteId": "src_avigilon_unity_ds",
+      "categoria": "VMS / Software Videosorveglianza"
     },
     {
       "id": "fam_axis_optimizer_milestone",
@@ -688,7 +730,8 @@
       "nome": "AXIS Optimizer per Milestone XProtect",
       "descrizione": "Plugin gratuito che integra le funzionalita' specifiche Axis (analytics, ricerca forense, gestione targhe, controlli operatore, intercom) direttamente in Milestone XProtect (e Siemens Siveillance Video). Nessuna licenza richiesta.",
       "stato": "attivo",
-      "fonteId": "src_axis_optimizer_milestone"
+      "fonteId": "src_axis_optimizer_milestone",
+      "categoria": "Integrazioni software"
     },
     {
       "id": "fam_cisco_nexus_aci",
@@ -699,7 +742,8 @@
       "nome": "Cisco Nexus / ACI (data center networking)",
       "descrizione": "Switching per data center Cisco Nexus 9000 (9200/9300/9500), eseguibile in modalita' NX-OS standalone o ACI (con controller APIC). Licensing Data Center Networking (DCN) a 3 livelli (Essentials/Advantage/Premier), a termine 3/5/7 anni; e' possibile passare da licensing ACI a NX-OS (e viceversa) durante la durata della subscription.",
       "stato": "attivo",
-      "fonteId": "src_cisco_dcn_licensing"
+      "fonteId": "src_cisco_dcn_licensing",
+      "categoria": "Data Center Networking"
     },
     {
       "id": "fam_cisco_sdwan",
@@ -710,7 +754,8 @@
       "nome": "Cisco Catalyst SD-WAN",
       "descrizione": "Soluzione SD-WAN Cisco (ex Viptela), licenziata tramite subscription Cisco DNA per SD-WAN e Routing (Essentials/Advantage), con tier di banda selezionabili e licenza HSEC obbligatoria oltre 250 Mbps di throughput IPsec sui router ISR. Gestione via Cisco Catalyst SD-WAN Manager, cloud o on-premise.",
       "stato": "attivo",
-      "fonteId": "src_cisco_sdwan_dna_ordering"
+      "fonteId": "src_cisco_sdwan_dna_ordering",
+      "categoria": "SD-WAN"
     },
     {
       "id": "fam_fortiweb",
@@ -721,7 +766,8 @@
       "nome": "FortiWeb (Web Application Firewall)",
       "descrizione": "WAF Fortinet disponibile come appliance hardware, virtual appliance o servizio cloud (FortiWeb Cloud), per la protezione di applicazioni web e API.",
       "stato": "attivo",
-      "fonteId": "src_fortiweb_docs"
+      "fonteId": "src_fortiweb_docs",
+      "categoria": "Web Application Firewall"
     },
     {
       "id": "fam_fortinac",
@@ -732,7 +778,8 @@
       "nome": "FortiNAC-F (Network Access Control)",
       "descrizione": "Soluzione NAC Fortinet (rinominata FortiNAC-F dalla versione successiva alla 9.4), con profiling automatico dei dispositivi via AI/ML e reazione automatica di quarantena. Licenza a subscription per numero di endpoint concorrenti (es. livello PRO fino a 50.000 endpoint).",
       "stato": "attivo",
-      "fonteId": "src_fortinac_ds"
+      "fonteId": "src_fortinac_ds",
+      "categoria": "NAC (Network Access Control)"
     },
     {
       "id": "fam_fortiauthenticator",
@@ -743,7 +790,8 @@
       "nome": "FortiAuthenticator e FortiToken",
       "descrizione": "Server di identita'/MFA Fortinet (FortiAuthenticator, anche in versione Cloud) con supporto FortiToken Mobile/hardware/Cloud, SSO, gestione certificati PKI. Le licenze FortiToken Mobile sono perpetue, vincolate al singolo FortiAuthenticator e non trasferibili tra piu' unita' senza contattare il supporto Fortinet.",
       "stato": "attivo",
-      "fonteId": "src_fortiauthenticator_og"
+      "fonteId": "src_fortiauthenticator_og",
+      "categoria": "Authentication Server"
     },
     {
       "id": "fam_fortisandbox",
@@ -754,7 +802,8 @@
       "nome": "FortiSandbox",
       "descrizione": "Sandboxing Fortinet per l'analisi dinamica di file sospetti, disponibile come appliance, virtual appliance, hosted cloud o public cloud, con licenze stackable per numero di VM di analisi (es. Windows/macOS/Linux/Android). Integrazione nativa con FortiGate, FortiMail, FortiWeb, FortiClient tramite Security Fabric.",
       "stato": "attivo",
-      "fonteId": "src_fortisandbox_og"
+      "fonteId": "src_fortisandbox_og",
+      "categoria": "Sandboxing"
     },
     {
       "id": "fam_cisco_spaces",
@@ -765,7 +814,8 @@
       "nome": "Cisco Spaces",
       "descrizione": "Piattaforma cloud di location analytics e IoT su infrastruttura Cisco esistente (AP, switch, camere, dispositivi collaboration). Licenza per access point, a termine 3/5/7 anni, in livelli Essentials (incluso in Wireless Essentials/Meraki Enterprise), Advantage (incluso in Wireless Advantage/Meraki Advanced) ed Extend (incluso nelle subscription Cisco DNA Advantage).",
       "stato": "attivo",
-      "fonteId": "src_cisco_spaces_ds"
+      "fonteId": "src_cisco_spaces_ds",
+      "categoria": "Location Analytics / IoT"
     },
     {
       "id": "fam_maxhub_uc_devices",
@@ -776,7 +826,8 @@
       "nome": "MAXHUB - dispositivi UC (camere, speakerphone, capture)",
       "descrizione": "Periferiche Unified Communication MAXHUB: PTZ camera, speakerphone, microfoni, sistemi di cattura/registrazione (Capture System, Portable Capture System). Gestione flotta cloud tramite MAXHUB Pivot.",
       "stato": "attivo",
-      "fonteId": "src_maxhub_capturesystem"
+      "fonteId": "src_maxhub_capturesystem",
+      "categoria": "Periferiche UC"
     },
     {
       "id": "fam_fortimail",
@@ -787,7 +838,8 @@
       "nome": "FortiMail (Email Security)",
       "descrizione": "Secure email gateway Fortinet contro spam, phishing, malware, BEC. Disponibile come appliance, VM o FortiMail Cloud (modalita' Gateway o Server, licenza per mailbox/anno con SKU 1/3/5 anni). Bundle FortiGuard Base vs Enterprise ATP (quest'ultimo aggiunge sandboxing, IBE, DLP, protezione da impersonificazione).",
       "stato": "attivo",
-      "fonteId": "src_fortimail_ds"
+      "fonteId": "src_fortimail_ds",
+      "categoria": "Email Security"
     },
     {
       "id": "fam_axis_access_readers",
@@ -798,7 +850,8 @@
       "nome": "Axis - lettori per controllo accessi",
       "descrizione": "Lettori di rete Axis per il controllo accessi IP-based: due nuovi lettori IP e tre nuovi lettori OSDP annunciati a ISC West 2026, pensati per l'integrazione con i controller porta Axis e per una gestione della cybersecurity avanzata (novita' recente, marzo 2026).",
       "stato": "nuovo",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_iscwest2026",
+      "categoria": "Controllo Accessi"
     },
     {
       "id": "fam_milestone_arcules",
@@ -809,7 +862,8 @@
       "nome": "Arcules (VSaaS cloud-native Milestone)",
       "descrizione": "Piattaforma di Video Surveillance as a Service (VSaaS) cloud-native di Milestone, distinta da XProtect on-premise. Con gli aggiornamenti Spring 2026: supporto Camera-to-Cloud esteso alle camere multi-sensore Axis e alle camere i-PRO supportate, e nuova funzione di storage video cloud a lungo termine.",
       "stato": "attivo",
-      "fonteId": "src_milestone_2026r1_pr"
+      "fonteId": "src_milestone_2026r1_pr",
+      "categoria": "Storage / Cloud VSaaS"
     },
     {
       "id": "fam_cisco_catalyst_center",
@@ -820,7 +874,8 @@
       "nome": "Cisco Catalyst Center (piattaforma di gestione)",
       "descrizione": "Controller/dashboard di rete Cisco (ex DNA Center) per provisioning, automazione e analytics su Catalyst switching/wireless. Abilitato dalle subscription Cisco DNA Essentials/Advantage sull'hardware. Novita' recente: AI Assistant conversazionale integrato (documentazione ufficiale aggiornata maggio 2026) per troubleshooting in linguaggio naturale, e vista unificata singola con Meraki Dashboard (SSO tra le due console, general availability annunciata per Q4 2025/Q1 2026).",
       "stato": "attivo",
-      "fonteId": "src_cisco_catcenter_ai_assistant"
+      "fonteId": "src_cisco_catcenter_ai_assistant",
+      "categoria": "Networking Management"
     },
     {
       "id": "fam_barco_clickshare_hub",
@@ -831,7 +886,8 @@
       "nome": "Barco ClickShare Hub (room system integrato)",
       "descrizione": "Nuova linea Barco: da soluzione BYOD a sistema di sala completo. ClickShare Hub Core/Pro abbinato a soundbar di terze parti (Sennheiser TeamConnect, Logitech MeetUp 2), certificato Microsoft Teams tramite Microsoft Device Ecosystem Platform (MDEP). Novita' 2026: supporto Wireless BYOD anche su ClickShare Hub per avviare chiamate Zoom/Webex/Google Meet dal proprio laptop.",
       "stato": "nuovo",
-      "fonteId": "src_barco_clickshare_hub_pr"
+      "fonteId": "src_barco_clickshare_hub_pr",
+      "categoria": "Videoconferenza / Collaboration"
     },
     {
       "id": "fam_maxhub_dvled",
@@ -842,7 +898,8 @@
       "nome": "MAXHUB - dvLED (display a LED modulari)",
       "descrizione": "Nuova linea di display LED modulari MAXHUB (serie FA27, 'un cabinet, tre tecnologie'), presentata a InfoComm 2026 per sale grandi/auditorium/digital signage di grande formato.",
       "stato": "nuovo",
-      "fonteId": "src_maxhub_infocomm2026_pr"
+      "fonteId": "src_maxhub_infocomm2026_pr",
+      "categoria": "Display / Digital Signage / LED Wall"
     },
     {
       "id": "fam_milestone_briefcam",
@@ -853,7 +910,8 @@
       "nome": "BriefCam (analisi video AI, Milestone)",
       "descrizione": "Piattaforma di analisi video AI del gruppo Milestone: ricerca forense rapida, riconoscimento oggetti/persone, dashboard di business intelligence da flussi video. Novita' 2026: nuovo motore di analytics BriefCam annunciato insieme a XProtect App Platform (containerizzata), in early access con disponibilita' generale prevista per fine 2026.",
       "stato": "nuovo",
-      "fonteId": "src_milestone_ai_native_pr"
+      "fonteId": "src_milestone_ai_native_pr",
+      "categoria": "Videoanalisi / AI Analytics"
     },
     {
       "id": "fam_fortiendpoint",
@@ -864,7 +922,8 @@
       "nome": "FortiEndpoint (piattaforma endpoint unificata)",
       "descrizione": "Nuova piattaforma endpoint unificata Fortinet (annunciata luglio 2026), che consolida in un unico agente/console/licenza: protezione endpoint, detection & response, accesso remoto sicuro, data loss prevention nativa per interazioni con l'AI, risk/compliance scoring, accesso zero-trust adattivo e assistenza FortiAI in linguaggio naturale. Disponibilita' prevista Q3 2026. Costruisce sulla base di FortiClient/FortiClient EMS ed evolve la strategia di consolidamento Fortinet per l'era dell'AI aziendale.",
       "stato": "nuovo",
-      "fonteId": "src_fortinet_fortiendpoint_pr"
+      "fonteId": "src_fortinet_fortiendpoint_pr",
+      "categoria": "Endpoint Protection / EDR"
     },
     {
       "id": "fam_fortisoc",
@@ -875,7 +934,8 @@
       "nome": "FortiSOC (SOC cloud unificato)",
       "descrizione": "Piattaforma SaaS cloud-delivered Fortinet (disponibile da giugno 2026) che unifica 6 funzioni di security operations (SIEM, SOAR, threat intelligence, identity detection e altre) in un'unica console, con AI agentica che indaga e correla automaticamente gli alert su asset e identita', proponendo o eseguendo azioni di risposta sotto supervisione dell'analista. Licensing 'one console, one subscription'.",
       "stato": "nuovo",
-      "fonteId": "src_fortinet_fortisoc_pr"
+      "fonteId": "src_fortinet_fortisoc_pr",
+      "categoria": "SOC / SIEM / SOAR"
     },
     {
       "id": "fam_axis_object_analytics",
@@ -886,7 +946,8 @@
       "nome": "AXIS Object Analytics",
       "descrizione": "Analitica video AI-based preinstallata gratuitamente sulle camere Axis compatibili (MLPU con AXIS OS 10.2+, DLPU con 10.3+), nessuna licenza aggiuntiva richiesta. Rileva, classifica, traccia e conta persone e veicoli (con sottotipi). Scenari disponibili: oggetto in area, attraversamento linea, tempo in area, conteggio attraversamenti, occupazione in area, rilevamento tailgating, monitoraggio DPI/PPE (elmetti, in beta). Compatibile con AXIS Camera Station e altri VMS terzi via standard aperti.",
       "stato": "attivo",
-      "fonteId": "src_axis_object_analytics"
+      "fonteId": "src_axis_object_analytics",
+      "categoria": "Videoanalisi / AI Analytics"
     },
     {
       "id": "fam_meraki_mv",
@@ -897,7 +958,8 @@
       "nome": "Meraki MV",
       "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo (fino a un mese di registrazione locale) e gestione tramite lo stesso Meraki Dashboard di switch/AP/firewall. Licenza unica 'Enterprise', indipendente dal modello hardware (fanno eccezione le MV84X multi-imaging, che richiedono la licenza dedicata LIC-MV-MULTCAM).",
       "stato": "attivo",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "categoria": "Telecamere"
     },
     {
       "id": "fam_milestone_xprotect_access",
@@ -908,7 +970,8 @@
       "nome": "Milestone XProtect Access (modulo controllo accessi)",
       "descrizione": "Modulo add-on di XProtect che integra sistemi di controllo accessi di terze parti (Axis, LenelS2, Brivo, Genea, RS2 Technologies, Vanderbilt, 2N e altri partner tecnologici Milestone) direttamente nell'interfaccia XProtect Smart Client: monitoraggio porte, automazioni tramite Rules Engine, gestione varchi veicolari, chiamate intercom, e possibilita' di associare la vista mappa a porte/varchi. Novita' recente: integrazione 'AXIS Secure Entry for XProtect', installabile tramite XProtect Update Manager insieme ad AXIS Optimizer.",
       "stato": "attivo",
-      "fonteId": "src_milestone_xprotect_access"
+      "fonteId": "src_milestone_xprotect_access",
+      "categoria": "Controllo Accessi"
     },
     {
       "id": "fam_avigilon_unity_access",
@@ -919,7 +982,8 @@
       "nome": "Avigilon Unity Access (on-premise)",
       "descrizione": "Sistema di controllo accessi on-premise Avigilon (ex Access Control Manager/ACM), gestibile da browser o mobile, con integrazione nativa a Unity Video per correlare eventi di accesso e video. Disponibile su appliance hardware Professional/Enterprise/Enterprise Plus o come appliance virtuale (VMware vSphere/Hyper-V, con supporto vMotion per alta disponibilita').",
       "stato": "attivo",
-      "fonteId": "src_avigilon_unity_access_page"
+      "fonteId": "src_avigilon_unity_access_page",
+      "categoria": "Controllo Accessi"
     },
     {
       "id": "fam_cisco_secure_access_sse",
@@ -930,7 +994,8 @@
       "nome": "Cisco Secure Access (SSE completo)",
       "descrizione": "Piattaforma Security Service Edge cloud-delivered Cisco, distinta dal solo 'Secure Access - DNS Defense' (ex Umbrella): copre ZTNA, Secure Web Gateway, CASB e Firewall-as-a-Service, con funzionalita' estese (VPN-as-a-Service, DLP, AI Assistant, Digital Experience Monitoring, Remote Browser Isolation, guardrail per app/agenti AI). Licenza per 'Covered User', pacchetti Secure Internet Access (SIA) e Secure Private Access (SPA). Integrata con Meraki SD-WAN per networking + zero-trust unificati. Supporto sempre richiesto (SWSS Enhanced di default, upgradabile a Premium).",
       "stato": "nuovo",
-      "fonteId": "src_cisco_secure_access_ds"
+      "fonteId": "src_cisco_secure_access_ds",
+      "categoria": "SASE / SSE / ZTNA"
     },
     {
       "id": "fam_barco_projection",
@@ -941,7 +1006,8 @@
       "nome": "Barco - proiezione (Smartline)",
       "descrizione": "Linea di proiettori Barco per sale grandi/auditorium/eventi. Novita' 2026: proiettore I65, nuova piattaforma 'smartline' di proiezione.",
       "stato": "nuovo",
-      "fonteId": "src_barco_press_releases"
+      "fonteId": "src_barco_press_releases",
+      "categoria": "Proiezione"
     },
     {
       "id": "fam_fortidlp",
@@ -952,7 +1018,8 @@
       "nome": "FortiDLP (Data Loss Prevention + Insider Risk)",
       "descrizione": "Soluzione cloud-native di data loss prevention endpoint e insider risk management Fortinet, per Windows/macOS/Linux, online od offline, estesa a Microsoft 365/Google Workspace e dispositivi personali non gestiti. Integrata con FortiAI per sintetizzare e contestualizzare automaticamente gli incidenti ad alto rischio (mappati su MITRE Insider Threat TTP Knowledge Base). Nessuna necessita' di data discovery esaustiva o policy pre-costruite: attivabile in pochi minuti.",
       "stato": "attivo",
-      "fonteId": "src_fortidlp_page"
+      "fonteId": "src_fortidlp_page",
+      "categoria": "DLP / Insider Risk"
     }
   ],
   "prodotti": [
