@@ -897,7 +897,7 @@
       "nome": "Meraki MV",
       "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo (fino a un mese di registrazione locale) e gestione tramite lo stesso Meraki Dashboard di switch/AP/firewall. Licenza unica 'Enterprise', indipendente dal modello hardware (fanno eccezione le MV84X multi-imaging, che richiedono la licenza dedicata LIC-MV-MULTCAM).",
       "stato": "attivo",
-      "fonteId": "src_meraki_mv_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq"
     },
     {
       "id": "fam_milestone_xprotect_access",
@@ -941,7 +941,7 @@
       "nome": "Barco - proiezione (Smartline)",
       "descrizione": "Linea di proiettori Barco per sale grandi/auditorium/eventi. Novita' 2026: proiettore I65, nuova piattaforma 'smartline' di proiezione.",
       "stato": "nuovo",
-      "fonteId": "src_barco_i65_projector"
+      "fonteId": "src_barco_press_releases"
     }
   ],
   "prodotti": [
@@ -1613,7 +1613,7 @@
       "tipologia": "appliance",
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
-      "descrizioneBreve": "Nuova generazione FortiGate su ASIC proprietario SP5 (CPU+NP+CP integrati), che affianca e sta progressivamente sostituendo la serie F. Gli ultimi modelli annunciati (3500G e 400G, maggio 2026) estendono la G Series fino al data center enterprise con throughput firewall fino a 164 Gbps e supporto per carichi di lavoro AI (rilevamento shadow AI nativo).",
+      "descrizioneBreve": "Nuova generazione FortiGate su ASIC SP5 (CPU+NP+CP integrati), che sta progressivamente affiancando/sostituendo la serie F. Gli ultimi modelli (3500G/400G, maggio 2026) estendono la G Series al data center enterprise, con supporto nativo per carichi AI.",
       "fonteId": "src_fortigate_gseries_pr"
     },
     {
@@ -1922,7 +1922,7 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Telecamere IP con storage a bordo, video analytics integrata (MV Sense) e gestione centralizzata via Meraki Dashboard, senza necessita' di NVR dedicato.",
-      "fonteId": "src_meraki_mv_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq"
     },
     {
       "id": "prod_avigilon_unity_access_appliance",
@@ -1988,7 +1988,7 @@
       "deployment": "on-premise (sale grandi/auditorium)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Proiettore della nuova piattaforma 'smartline' Barco, annunciato nel 2026.",
-      "fonteId": "src_barco_i65_projector"
+      "fonteId": "src_barco_press_releases"
     }
   ],
   "licenze": [
@@ -2962,7 +2962,7 @@
       "rinnovo": "manuale",
       "gracePeriod": "30 giorni in caso di superamento del limite di licenza organizzativo",
       "conseguenzeScadenza": "la camera smette di registrare/essere gestita se non coperta da licenza valida nell'organizzazione",
-      "fonteId": "src_meraki_mv_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq"
     },
     {
       "id": "lic_milestone_xprotect_access_door",
@@ -5238,16 +5238,6 @@
       "categoriaControllo": "datasheet"
     },
     {
-      "id": "src_meraki_mv_licensing_faq",
-      "url": "https://documentation.meraki.com/Platform_Management/Product_Information/Licensing/Meraki_Licensing_FAQs",
-      "titolo": "General Licensing FAQs - Cisco Meraki Documentation (dettaglio MV)",
-      "vendorId": "v_cisco",
-      "tipo": "documentazione ufficiale Meraki",
-      "dataConsultazione": "2026-08-02",
-      "stato": "aggiornato",
-      "categoriaControllo": "licensing"
-    },
-    {
       "id": "src_milestone_xprotect_access",
       "url": "https://doc.milestonesys.com/latest/en-US/add-ons/add-on_access/access_configureanintegrated.htm",
       "titolo": "XProtect Access - Configure an integrated access control system (documentazione ufficiale)",
@@ -5316,16 +5306,6 @@
       "dataConsultazione": "2026-08-02",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
-    },
-    {
-      "id": "src_barco_i65_projector",
-      "url": "https://www.barco.com/en/about/press-releases",
-      "titolo": "Barco press releases - I65 projector (smartline projection platform, 2026)",
-      "vendorId": "v_barco",
-      "tipo": "comunicato stampa ufficiale",
-      "dataConsultazione": "2026-08-02",
-      "stato": "aggiornato (novita' recente, verificare URL diretto)",
-      "categoriaControllo": "release"
     }
   ],
   "changelog": []
