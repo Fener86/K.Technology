@@ -472,7 +472,8 @@ function viewVendor(vendor, c, L) {
   const famiglie = c.famiglie.filter((f) => f.vendorId === vendor.id);
   const brandLines = c.brandLines.filter((bl) => bl.vendorId === vendor.id);
 
-  // raggruppa le famiglie per categoria (tipo di prodotto), cosi' il quadro e' immediato
+  // raggruppa le famiglie per categoria (tipo di prodotto): qui mostriamo solo l'elenco compatto,
+  // il contenuto vero e proprio si vede entrando nella categoria
   const gruppi = {};
   famiglie.forEach((f) => {
     const cat = f.categoria || "Altro / da classificare";
@@ -480,22 +481,17 @@ function viewVendor(vendor, c, L) {
   });
   const categorieOrdinate = Object.keys(gruppi).sort((a, b) => a.localeCompare(b, "it"));
 
-  const renderFamigliaCard = (f) => `
-      <div class="card" data-nav="#/family/${f.id}">
-        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
-        <div class="card-meta">${esc(L.macroaree[f.macroareaId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
-        <div class="card-desc">${esc(f.descrizione)}</div>
-      </div>`;
-
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor.nome}])}
     <h1 class="h1">${esc(vendor.nome)}</h1>
     <a class="source-tag" href="${esc(vendor.sito)}" target="_blank" rel="noopener noreferrer">&#8599; Sito ufficiale</a>
     ${brandLines.length ? `<h2 class="h2">Brand line</h2><div class="panel">${brandLines.map(bl=>`<div style="margin-bottom:10px;"><div style="font-weight:600;font-size:13.5px;">${esc(bl.nome)}</div><div class="desc" style="font-size:12.5px;">${esc(bl.descrizione)}</div></div>`).join("")}</div>` : ""}
-    ${famiglie.length ? categorieOrdinate.map((cat) => `
-      <h2 class="h2" style="cursor:pointer;" data-nav="#/categoria/${encodeURIComponent(cat)}" title="Vedi tutte le famiglie '${esc(cat)}' di ogni vendor">${esc(cat)} <span class="hint">(${gruppi[cat].length})</span> <span style="color:var(--accent);font-size:12px;">&#8594;</span></h2>
-      <div class="grid">${gruppi[cat].map(renderFamigliaCard).join("")}</div>
-    `).join("") : `<h2 class="h2">Famiglie</h2><div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
+    <h2 class="h2">Categorie di prodotto</h2>
+    ${categorieOrdinate.length ? `<div class="panel" style="padding:8px;">${categorieOrdinate.map((cat) => `
+      <div class="sidebar-item" style="padding:12px 14px;" data-nav="#/categoria/${encodeURIComponent(cat)}">
+        <span>${esc(cat)}</span>
+        <span class="sidebar-count">${gruppi[cat].length} &#8594;</span>
+      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
   `;
 }
 
