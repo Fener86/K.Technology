@@ -1258,7 +1258,8 @@
       "deployment": "on-premise, gestito via FortiLink da FortiGate",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch Ethernet PoE/non-PoE per filiali e piccole imprese, con sicurezza gestita dalla console FortiGate tramite FortiLink.",
-      "fonteId": "src_fortiswitch_secaccess"
+      "fonteId": "src_fortiswitch_secaccess",
+      "sku": "FS-108F, FS-108F-POE, FS-108F-FPOE, FS-124F, FS-124F-POE, FS-124F-FPOE, FS-148F, FS-148F-POE, FS-148F-FPOE, FS-224E, FS-224E-POE, FS-248D, FS-248E-POE, FS-248E-FPOE, FS-424E, FS-424E-POE, FS-424E-FPOE, FS-448E, FS-448E-POE, FS-448E-FPOE, FS-548D"
     },
     {
       "id": "prod_fortiswitch_dc",
@@ -1269,7 +1270,8 @@
       "deployment": "on-premise, gestito via FortiLink da FortiGate",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch per data center e core di campus ad alta densita' di porte, con uplink fino a 100GE.",
-      "fonteId": "src_fortiswitch_dc"
+      "fonteId": "src_fortiswitch_dc",
+      "sku": "FS-1024E, FS-1048E, FS-1048G, FS-T1024E, FS-624F, FS-648F, FS-2048F, FS-3032G"
     },
     {
       "id": "prod_fortiap_series",
@@ -1280,7 +1282,8 @@
       "deployment": "on-premise (controller FortiGate) o cloud (FortiAP Cloud / FortiLAN Cloud)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Access point wireless centralmente gestiti, con funzioni di sicurezza integrate (firewall, IPS, application control) e supporto ZTNA/SASE.",
-      "fonteId": "src_fortiap_ds"
+      "fonteId": "src_fortiap_ds",
+      "sku": "Wi-Fi 6E: FAP-431G, FAP-433G, FAP-231G, FAP-233G, FAP-234G | Wi-Fi 6: FAP-831F, FAP-431F, FAP-433F, FAP-432F, FAP-432FR, FAP-231F, FAP-234F, FAP-23JF | Wi-Fi 7: FAP-441K, FAP-443K | Wi-Fi 5 (legacy): FAP-221E, FAP-223E"
     },
     {
       "id": "prod_fortimanager_appliance",
