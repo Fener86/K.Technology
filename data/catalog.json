@@ -1343,7 +1343,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Motore di policy per il controllo degli accessi alla rete: autenticazione, autorizzazione, profiling e segmentazione.",
-      "fonteId": "src_cisco_ise_licensing_guide"
+      "fonteId": "src_cisco_ise_licensing_guide",
+      "sku": "R-ISE-PIC-VM-K9 (nodo ISE-PIC, 3000 sessioni), L-ISE-PIC-UPG (upgrade a 300.000 sessioni); ISE VM License unica (sostituisce le vecchie VM Small/Medium/Large)"
     },
     {
       "id": "prod_cisco_duo_service",
@@ -3054,7 +3055,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NAC di nuova generazione: policy identity-based, segmentazione zero-trust",
-      "fonteId": "src_xuvu1grq"
+      "fonteId": "src_xuvu1grq",
+      "sku": "Vedi 'Cisco ISE (appliance/VM)' per gli SKU hardware/VM; licenze Essentials/Advantage/Premier gia' documentate separatamente"
     },
     {
       "id": "prod_xya9zt5z",
