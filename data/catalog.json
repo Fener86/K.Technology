@@ -2870,7 +2870,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Token per autenticazione a due fattori",
-      "fonteId": "src_xpbxvnvb"
+      "fonteId": "src_xpbxvnvb",
+      "sku": "FTK-200 (hardware token, prefisso seriale FTK200), FTK-200CD (prefisso FTK211), FortiToken Mobile (app, prefisso FTKMOB)"
     },
     {
       "id": "prod_x6ow7jeh",
