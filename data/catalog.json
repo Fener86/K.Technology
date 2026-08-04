@@ -4644,7 +4644,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fino a 17x prestazioni VPN piu' veloci per lavoratori ibridi; clustering e alta densita' porte; ML per identificare minacce in traffico cifrato senza decifrarlo",
-      "fonteId": "src_xg2wlmdi"
+      "fonteId": "src_xg2wlmdi",
+      "sku": "FPR-3110, FPR-3120, FPR-3130, FPR-3140"
     },
     {
       "id": "prod_xcxnhm7c",
@@ -4655,7 +4656,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Prestazioni superiori per data center e grandi imprese, pensato per massimizzare il ROI e prepararsi al futuro",
-      "fonteId": "src_xrieh0o2"
+      "fonteId": "src_xrieh0o2",
+      "sku": "Serie a 3 modelli di performance (sostituisce la serie 4100); modelli specifici su datasheet Cisco ufficiale"
     },
     {
       "id": "prod_xjjsvd41",
