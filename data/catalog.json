@@ -5876,6 +5876,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Applicazione per scoprire gli amplificatori K-array in rete, eseguire controlli di salute dei dispositivi e applicare aggiornamenti offline su tutti i dispositivi connessi.",
       "fonteId": "src_karray_software_hub"
+    },
+    {
+      "id": "prod_milestone_briefcam_platform",
+      "familyId": "fam_milestone_briefcam",
+      "nomeCommerciale": "BriefCam (piattaforma)",
+      "modello": "Software, standalone o integrato con XProtect",
+      "tipologia": "software",
+      "deployment": "on-premise (standalone o embedded nel client XProtect)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Tre moduli (Review/Respond/Research): ricerca rapida post-incidente, allerta in tempo reale, business intelligence quantitativa. Tecnologia Video Synopsis brevettata; camera-agnostic, funziona anche senza XProtect per la sola revisione file-based.",
+      "fonteId": "src_milestone_briefcam_page"
     }
   ],
   "licenze": [
@@ -14130,6 +14141,16 @@
       "url": "https://www.crestron.com/Products/Featured-Solutions/AirMedia",
       "titolo": "AirMedia (pagina prodotto ufficiale)",
       "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_milestone_briefcam_page",
+      "url": "https://www.milestonesys.com/products/software/briefcam/",
+      "titolo": "BriefCam video analytics software (pagina prodotto ufficiale)",
+      "vendorId": "v_milestone",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
