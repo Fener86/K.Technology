@@ -2526,7 +2526,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "FortiGate distribuito come appliance virtuale per cloud pubblico/privato",
-      "fonteId": "src_xr8xgsxi"
+      "fonteId": "src_xr8xgsxi",
+      "sku": "FG-VM-32 (esempio, 32 vCPU) e altre taglie FG-VM-<vCPU>"
     },
     {
       "id": "prod_xfxmorbz",
@@ -4187,7 +4188,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza integrati per micro-filiali e piccoli uffici",
-      "fonteId": "src_xks230ao"
+      "fonteId": "src_xks230ao",
+      "sku": "FG-40F, FWF-40F (base hardware); bundle es. FG-40F-BDL-<servizio>-<durata>"
     },
     {
       "id": "prod_xpa40rv4",
@@ -4198,7 +4200,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza per sedi enterprise distribuite",
-      "fonteId": "src_xeyb7wom"
+      "fonteId": "src_xeyb7wom",
+      "sku": "FG-60F, FWF-60F (base hardware); bundle es. FG-60F-BDL-<servizio>-<durata>"
     },
     {
       "id": "prod_xze4mio4",
@@ -4242,7 +4245,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW con SoC4 SD-WAN ASIC per filiali di medie/grandi dimensioni (esistenza e specifiche confermate solo da rivenditori terzi in questa sessione)",
-      "fonteId": null
+      "fonteId": null,
+      "sku": "FG-100F (base hardware); bundle es. FG-100F-BDL-<servizio>-<durata>"
     },
     {
       "id": "prod_xdh5n7w1",
@@ -4264,7 +4268,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW per campus e filiali di medie dimensioni (esistenza confermata da fonti terze, pagina fortinet.com non raggiunta in questa sessione)",
-      "fonteId": null
+      "fonteId": null,
+      "sku": "FG-200F (base hardware); bundle noto es. FG-200F-BDL-809-36 (3 anni FortiCare+FortiGuard Enterprise)"
     },
     {
       "id": "prod_x6a0zwua",
@@ -4286,7 +4291,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Threat protection scalabile con AI/ML integrato",
-      "fonteId": "src_xbul1cs8"
+      "fonteId": "src_xbul1cs8",
+      "sku": "FG-400F"
     },
     {
       "id": "prod_xtgk2mvg",
@@ -4297,7 +4303,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rilevamento minacce ad alte prestazioni basato su ASIC Fortinet",
-      "fonteId": "src_x628tbk4"
+      "fonteId": "src_x628tbk4",
+      "sku": "FG-600F"
     },
     {
       "id": "prod_xbs2yj0d",
@@ -4319,7 +4326,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sicurezza per data center e architetture IT ibride",
-      "fonteId": "src_xco71w28"
+      "fonteId": "src_xco71w28",
+      "sku": "FG-1000F"
     },
     {
       "id": "prod_xbwev81d",
