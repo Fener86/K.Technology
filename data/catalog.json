@@ -1361,7 +1361,8 @@
       "deployment": "on-premise / virtual (vMX) / gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall/SD-WAN cloud-gestito Meraki, licenza 1:1 con il dispositivo, comprensiva di RMA, supporto enterprise 24x7 e aggiornamenti software.",
-      "fonteId": "src_meraki_mx_licensing"
+      "fonteId": "src_meraki_mx_licensing",
+      "sku": "Modelli hardware: MX67, MX67C, MX67W, MX68, MX68CW, MX75, MX85, MX95, MX105, MX250, MX450 (+ Z-Series teleworker). Esempio SKU licenza: LIC-MX85-SDW-1YR / -3YR (Secure SD-WAN Plus 1/3 anni per modello specifico)"
     },
     {
       "id": "prod_meraki_ms_switch",
