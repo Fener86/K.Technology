@@ -522,6 +522,7 @@ function viewProduct(prod, c, L) {
     <h2 class="h2">Scheda tecnica</h2>
     <div class="panel">
       <div class="field-row"><div class="field-label">Modello</div><div>${esc(prod.modello)}</div></div>
+      ${prod.sku ? `<div class="field-row"><div class="field-label">SKU / codici ordine</div><div class="mono" style="font-size:12px;line-height:1.6;">${esc(prod.sku)}</div></div>` : ""}
       <div class="field-row"><div class="field-label">Tipologia</div><div>${esc(prod.tipologia)}</div></div>
       <div class="field-row"><div class="field-label">Deployment</div><div>${esc(prod.deployment)}</div></div>
       <div class="field-row"><div class="field-label">Stato lifecycle</div><div>${badge(prod.statoLifecycle)}</div></div>
