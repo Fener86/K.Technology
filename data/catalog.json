@@ -1462,7 +1462,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch Ethernet gestiti dal Meraki Dashboard, licenza specifica per modello hardware (anche PoE vs non-PoE contano come modelli diversi).",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "sku": "Serie MS1xx/MS2xx/MS3xx/MS4xx (es. MS130 ha sostituito MS120); verificare la serie corrente su meraki.cisco.com per ogni fascia"
     },
     {
       "id": "prod_meraki_mr_ap",
@@ -1473,7 +1474,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Access point Wi-Fi gestiti dal Meraki Dashboard; a differenza di MS/MX, la licenza e' comune a tutti i modelli AP.",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "sku": "MR46, MR56, MR57, MR76, MR78, MR86 (gamma Wi-Fi 6/6E attuale)"
     },
     {
       "id": "prod_milestone_expressplus",
