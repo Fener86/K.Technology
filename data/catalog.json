@@ -1236,7 +1236,8 @@
       "deployment": "on-premise / virtual appliance",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall NGFW Fortinet: protezione di rete, VPN, IPS e servizi di sicurezza abilitati tramite subscription FortiGuard.",
-      "fonteId": "src_fortiguard_og"
+      "fonteId": "src_fortiguard_og",
+      "sku": "Voce generale che raggruppa l'intera gamma; per lo SKU esatto vedere la singola serie/modello (40F, 60F, 100F, ecc.) gia' presente separatamente nel catalogo"
     },
     {
       "id": "prod_catalyst_9300",
@@ -1319,7 +1320,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "SASE cloud-delivered con Secure Internet Access, Secure SaaS Access, Secure Private Access e ZTNA universale, tramite agente FortiClient unificato.",
-      "fonteId": "src_fortisase_og"
+      "fonteId": "src_fortisase_og",
+      "sku": "Licenziato tramite le subscription Standard/Advanced/Comprehensive gia' documentate (non SKU hardware, e' un servizio cloud)"
     },
     {
       "id": "prod_cisco_secfw_ftd",
@@ -1908,7 +1910,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova generazione FortiGate su ASIC SP5 (CPU+NP+CP integrati), che sta progressivamente affiancando/sostituendo la serie F. Gli ultimi modelli (3500G/400G, maggio 2026) estendono la G Series al data center enterprise, con supporto nativo per carichi AI.",
-      "fonteId": "src_fortigate_gseries_pr"
+      "fonteId": "src_fortigate_gseries_pr",
+      "sku": "Voce generale della nuova generazione G; SKU per singolo modello: FG-30G, FG-50G, FG-90G, FG-120G, FG-200G, FG-700G, FG-3500G, FG-400G (vedi anche le serie specifiche gia' presenti)"
     },
     {
       "id": "prod_meraki_cw_wifi7",
@@ -2183,7 +2186,8 @@
       "deployment": "on-premise (agente) + gestione cloud/on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Agente endpoint unico che sostituisce/consolida le funzioni precedentemente distribuite tra FortiClient ed EDR separati, con moduli AI-aware integrati.",
-      "fonteId": "src_fortinet_fortiendpoint_pr"
+      "fonteId": "src_fortinet_fortiendpoint_pr",
+      "sku": "Nuova piattaforma annunciata luglio 2026, SKU non ancora pubblicati alla data di consultazione (disponibilita' prevista Q3 2026) - DA VERIFICARE CON IL VENDOR"
     },
     {
       "id": "prod_fortisoc_platform",
@@ -2194,7 +2198,8 @@
       "deployment": "cloud",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Console unica di security operations con AI agentica per investigazione e correlazione automatica degli alert.",
-      "fonteId": "src_fortinet_fortisoc_pr"
+      "fonteId": "src_fortinet_fortisoc_pr",
+      "sku": "Servizio cloud SaaS 'one console, one subscription': SKU specifico non pubblicato nelle fonti consultate - DA VERIFICARE CON IL VENDOR"
     },
     {
       "id": "prod_axis_object_analytics_app",
@@ -2315,7 +2320,8 @@
       "deployment": "cloud (gestione) + agente endpoint",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma DLP e insider risk management con policy risk-adaptive: notifiche, forensics, isolamento endpoint o blocco attivita' ad alto rischio.",
-      "fonteId": "src_fortidlp_ds"
+      "fonteId": "src_fortidlp_ds",
+      "sku": "Licenziato a consumo per endpoint/utente monitorato: SKU specifico non pubblicato nelle fonti consultate - DA VERIFICARE CON IL VENDOR"
     },
     {
       "id": "prod_fortirecon_service",
@@ -2326,7 +2332,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Monitoraggio della superficie di attacco esterna, protezione del brand e threat intelligence, con supporto a takedown attivi su richiesta.",
-      "fonteId": "src_fortirecon_ds"
+      "fonteId": "src_fortirecon_ds",
+      "sku": "Pacchetti a moduli (EASM/Brand Protection/ACI); SKU specifico non pubblicato nelle fonti consultate - DA VERIFICARE CON IL VENDOR"
     },
     {
       "id": "prod_shure_mxa320",
@@ -2536,7 +2543,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione e analisi di sicurezza SaaS per FortiGate SMB",
-      "fonteId": "src_x3gboug1"
+      "fonteId": "src_x3gboug1",
+      "sku": "Servizio di gestione cloud incluso/abilitato dalla licenza del FortiGate collegato: nessuno SKU hardware proprio"
     },
     {
       "id": "prod_xi09txt1",
@@ -2547,7 +2555,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio di servizi di sicurezza in abbonamento basati su AI",
-      "fonteId": "src_xhrbqc9p"
+      "fonteId": "src_xhrbqc9p",
+      "sku": "Insieme di servizi inclusi nei bundle FortiGuard (ATP/UTP/Enterprise Protection) gia' documentati sotto la famiglia FortiGate: nessuno SKU separato"
     },
     {
       "id": "prod_xsf3fkhx",
@@ -2558,7 +2567,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Servizio di intrusion prevention basato su threat intelligence",
-      "fonteId": "src_x3zhj2wv"
+      "fonteId": "src_x3zhj2wv",
+      "sku": "Servizio incluso in tutti i bundle FortiGuard (ATP/UTP/Enterprise Protection): nessuno SKU separato"
     },
     {
       "id": "prod_xiryvrvl",
@@ -2569,7 +2579,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema operativo che alimenta la Fortinet Security Fabric",
-      "fonteId": "src_xaevwnzx"
+      "fonteId": "src_xaevwnzx",
+      "sku": "Sistema operativo incluso nell'hardware/VM FortiGate: nessuno SKU separato, e' parte integrante della licenza dell'appliance"
     },
     {
       "id": "prod_x9vhg54t",
@@ -2580,7 +2591,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante FortiOS per operatori di telecomunicazioni",
-      "fonteId": "src_xqer7ak4"
+      "fonteId": "src_xqer7ak4",
+      "sku": "Variante FortiOS per operatori telco/carrier: nessuno SKU separato, licenza specifica applicata su hardware FortiGate dedicato tramite trattativa diretta con Fortinet"
     },
     {
       "id": "prod_xz7dvve0",
@@ -2591,7 +2603,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Controllo degli accessi alla rete e visibilita' IoT",
-      "fonteId": "src_xa5zf41h"
+      "fonteId": "src_xa5zf41h",
+      "sku": "Prodotto legacy, sostituito da FortiNAC-F (vedi famiglia FortiNAC-F nel catalogo per lo SKU corrente)"
     },
     {
       "id": "prod_xghu2c0c",
@@ -2602,7 +2615,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione cloud della LAN con provisioning zero-touch",
-      "fonteId": "src_xl2ug8dy"
+      "fonteId": "src_xl2ug8dy",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x1859hny",
@@ -2613,7 +2627,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "AI/ML per operazioni di rete e rilevamento anomalie",
-      "fonteId": "src_xfeaucm7"
+      "fonteId": "src_xfeaucm7",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x0uog6c7",
@@ -2636,7 +2651,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzioni UC&C e centralino IP",
-      "fonteId": "src_xbtt0fjk"
+      "fonteId": "src_xbtt0fjk",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x3wheqd8",
@@ -2647,7 +2663,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Prodotti irrobustiti per ambienti industriali/OT",
-      "fonteId": "src_x3gq92wo"
+      "fonteId": "src_x3gq92wo",
+      "sku": "Voce generale; SKU per modello specifico: FortiGate Rugged 60F/70F (vedi anche 'FortiGate Rugged series')"
     },
     {
       "id": "prod_x7aqifg7",
@@ -2658,7 +2675,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "SD-WAN con sicurezza integrata",
-      "fonteId": "src_xdv2fe10"
+      "fonteId": "src_xdv2fe10",
+      "sku": "Funzionalita' abilitata via licenza FortiOS/Cisco DNA-equivalente sul FortiGate stesso: nessuno SKU proprio separato"
     },
     {
       "id": "prod_xvvza4fz",
@@ -2669,7 +2687,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Proxy web sicuro con caching avanzato",
-      "fonteId": "src_xjccdt5m"
+      "fonteId": "src_xjccdt5m",
+      "sku": "FortiProxy ha SKU hardware/VM propri (FPX-1000, FPX-3000, FortiProxy-VM); DA VERIFICARE CON IL VENDOR l'elenco completo aggiornato"
     },
     {
       "id": "prod_xi6s2ids",
@@ -2680,7 +2699,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Accesso zero trust alle applicazioni via FortiOS",
-      "fonteId": "src_x5tbwpjb"
+      "fonteId": "src_x5tbwpjb",
+      "sku": "Funzionalita' inclusa nelle licenze FortiClient/FortiGate/FortiSASE gia' documentate: nessuno SKU proprio separato"
     },
     {
       "id": "prod_xs78urwo",
@@ -2691,7 +2711,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Digital Experience Monitoring end-to-end",
-      "fonteId": "src_xq7r9734"
+      "fonteId": "src_xq7r9734",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xh0cijmj",
@@ -2702,7 +2723,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portale self-service per MSSP/enterprise",
-      "fonteId": "src_xivyfl34"
+      "fonteId": "src_xivyfl34",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xm5x5ie3",
@@ -2713,7 +2735,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "CASB inline e API-based",
-      "fonteId": "src_x3om76nk"
+      "fonteId": "src_x3om76nk",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xiepavzk",
@@ -2724,7 +2747,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione da bot avanzati",
-      "fonteId": "src_xy3vc1ws"
+      "fonteId": "src_xy3vc1ws",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xq6uj556",
@@ -2735,7 +2759,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "MFA centralizzata per FortiGate NGFW",
-      "fonteId": "src_xn6wazb9"
+      "fonteId": "src_xn6wazb9",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xji46k79",
@@ -2746,7 +2771,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Cloud-Native Application Protection Platform",
-      "fonteId": "src_xtkcn5nk"
+      "fonteId": "src_xtkcn5nk",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x7l36w67",
@@ -2757,7 +2783,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Application delivery e load balancing",
-      "fonteId": "src_x6n6tf2i"
+      "fonteId": "src_x6n6tf2i",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xualtqj1",
@@ -2768,7 +2795,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma unificata di application security",
-      "fonteId": "src_xwjig1u7"
+      "fonteId": "src_xwjig1u7",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xi7dpudl",
@@ -2779,7 +2807,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dynamic application security testing",
-      "fonteId": "src_xs4fmijz"
+      "fonteId": "src_xs4fmijz",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x71nw5gv",
@@ -2790,7 +2819,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione AI dei workload cloud",
-      "fonteId": "src_xx311gwn"
+      "fonteId": "src_xx311gwn",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xvvb3nhj",
@@ -2837,7 +2867,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rilevamento e risposta endpoint/estesa",
-      "fonteId": "src_xcrcumyh"
+      "fonteId": "src_xcrcumyh",
+      "sku": "Esempio pacchetto 500 endpoint: FC2-10-FEDR1-348-01-12 + FC1-10-EDBPS-310-02-DD (MOQ 500 seat, 100 per il bundle combinato specifico)"
     },
     {
       "id": "prod_x74lmifm",
@@ -2848,7 +2879,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rilevamento delle minacce basato su AI a livello di rete",
-      "fonteId": "src_xxsri8o2"
+      "fonteId": "src_xxsri8o2",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x1vm96z5",
@@ -2859,7 +2891,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Tecnologia di deception per rilevare attacchi avanzati",
-      "fonteId": "src_x67iq900"
+      "fonteId": "src_x67iq900",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xdezbkz7",
@@ -2894,7 +2927,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Cyber Asset Attack Surface Management",
-      "fonteId": "src_x7t1cnyb"
+      "fonteId": "src_x7t1cnyb",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xb59yng6",
@@ -2905,7 +2939,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "AI generativa per automazione SOC/NOC",
-      "fonteId": "src_xvfupapb"
+      "fonteId": "src_xvfupapb",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xewok81b",
@@ -2916,7 +2951,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione dalle minacce basate su AI",
-      "fonteId": "src_xb4kr2o4"
+      "fonteId": "src_xb4kr2o4",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_x80sjreh",
@@ -2927,7 +2963,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Videosorveglianza IP e registratore di rete Fortinet",
-      "fonteId": "src_xb4d8bqb"
+      "fonteId": "src_xb4d8bqb",
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
     },
     {
       "id": "prod_xxbp4sab",
@@ -2938,7 +2975,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello di licensing flessibile a consumo",
-      "fonteId": "src_xcy3gjcp"
+      "fonteId": "src_xcy3gjcp",
+      "sku": "Programma di licensing flessibile a consumo (punti), non un prodotto con SKU proprio: si applica come modalita' di acquisto per altri prodotti Fortinet"
     },
     {
       "id": "prod_xg0umajz",
@@ -2949,7 +2987,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema di crediti/punti per servizi Fortinet",
-      "fonteId": "src_xxysdc8h"
+      "fonteId": "src_xxysdc8h",
+      "sku": "Sistema di crediti/punti usato all'interno dei programmi di licensing flessibile Fortinet (es. FortiFlex): non e' un prodotto con SKU proprio"
     },
     {
       "id": "prod_xnptbyju",
@@ -4128,7 +4167,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Nuova generazione (chip G) per sedi distribuite",
-      "fonteId": "src_xno8tpo6"
+      "fonteId": "src_xno8tpo6",
+      "sku": "FG-70G, FWF-70G"
     },
     {
       "id": "prod_xjxa3qi1",
@@ -4139,7 +4179,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza per sedi enterprise distribuite",
-      "fonteId": "src_xze1hr3n"
+      "fonteId": "src_xze1hr3n",
+      "sku": "FG-80F, FWF-80F"
     },
     {
       "id": "prod_x0snbp4u",
@@ -4150,7 +4191,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rete security-driven per sedi distribuite, architettura chip G",
-      "fonteId": "src_xvokpr1n"
+      "fonteId": "src_xvokpr1n",
+      "sku": "FG-90G"
     },
     {
       "id": "prod_xnmwlda6",
@@ -4173,7 +4215,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
-      "fonteId": "src_x260wnse"
+      "fonteId": "src_x260wnse",
+      "sku": "FG-120G"
     },
     {
       "id": "prod_xjh1bl1a",
@@ -4196,7 +4239,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
-      "fonteId": "src_xo6prwib"
+      "fonteId": "src_xo6prwib",
+      "sku": "FG-200G"
     },
     {
       "id": "prod_xthj1b3v",
@@ -4231,7 +4275,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
-      "fonteId": "src_xfcsymkh"
+      "fonteId": "src_xfcsymkh",
+      "sku": "FG-700G"
     },
     {
       "id": "prod_x9ktorqr",
@@ -4254,7 +4299,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Alte prestazioni per grandi imprese e service provider",
-      "fonteId": "src_xtwli2w0"
+      "fonteId": "src_xtwli2w0",
+      "sku": "FG-7000F (chassis modulare, tipicamente FG-7121F/7081F per singolo blade)"
     },
     {
       "id": "prod_xffhcf02",
@@ -4265,7 +4311,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Serie irrobustita per ambienti industriali/OT (accessori dedicati confermati)",
-      "fonteId": "src_xh5ut2gs"
+      "fonteId": "src_xh5ut2gs",
+      "sku": "FGR-60F, FGR-70F (Rugged 60F/70F Series)"
     },
     {
       "id": "prod_xk0wn5tp",
@@ -4276,7 +4323,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch campus con FortiGuard Services integrati",
-      "fonteId": "src_xtkzpl0u"
+      "fonteId": "src_xtkzpl0u",
+      "sku": "Voce generale gia' coperta dagli SKU di FortiSwitch Secure Access Series e Data Center/Campus Core Series presenti nel catalogo"
     },
     {
       "id": "prod_xiyebuoe",
