@@ -3019,7 +3019,7 @@
     },
     {
       "id": "prod_xm56wlh5",
-      "familyId": "fam_catalyst",
+      "familyId": "fam_cisco_secfw",
       "nomeCommerciale": "Cisco Secure Firewall 200 Series",
       "modello": "Cisco Secure Firewall 200 Series",
       "tipologia": "hardware",
@@ -4481,17 +4481,6 @@
       "fonteId": "src_xtfcxmyi"
     },
     {
-      "id": "prod_xwlsptkz",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "Categoria Dome Cameras (hub)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Hub ufficiale di tutte le telecamere dome Axis, discrete e resistenti a redirezionamento/impatto",
-      "fonteId": "src_x6vdq0ui"
-    },
-    {
       "id": "prod_x91e1ayb",
       "familyId": "fam_axis_camera_station",
       "nomeCommerciale": "AXIS M32 Series",
@@ -4536,17 +4525,6 @@
       "fonteId": "src_x02m23ug"
     },
     {
-      "id": "prod_x9vauygc",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "Categoria Bullet Cameras (hub)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Hub ufficiale, risoluzioni da 2MP a 41MP, IR integrato, resistenti alle intemperie",
-      "fonteId": "src_xgad45zo"
-    },
-    {
       "id": "prod_xgtjnw6z",
       "familyId": "fam_axis_camera_station",
       "nomeCommerciale": "AXIS M20 Series",
@@ -4556,28 +4534,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Bullet compatte e leggere, fixed-focal, con video analytics AI-powered",
       "fonteId": "src_xunkgze3"
-    },
-    {
-      "id": "prod_xs166m8k",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "Categoria PTZ Cameras (hub)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Hub ufficiale, copertura ampia con zoom per verifica dettagliata degli eventi",
-      "fonteId": "src_xjelj0vr"
-    },
-    {
-      "id": "prod_x0dturw7",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "Categoria Multisensor Cameras (hub)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Copertura panoramica 180 gradi orizzontale / 90 verticale, ideali per stazioni, aeroporti, piazze",
-      "fonteId": "src_xlotsif8"
     },
     {
       "id": "prod_xweyi7l5",
@@ -4622,17 +4578,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fino a 4 sensor unit con AXIS FA54 Main Unit; mix di sensori termici e visivi in un unico stream",
       "fonteId": "src_xmlkt8eu"
-    },
-    {
-      "id": "prod_xdmbwxlh",
-      "familyId": "fam_axis_camera_station",
-      "nomeCommerciale": "Categoria Explosion-Protected Cameras (hub)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Certificate ATEX/IECEx/NEC/CEC Zone 1-2/Division 1-2 per ambienti con gas/polveri esplosive",
-      "fonteId": "src_xz0ghrg8"
     },
     {
       "id": "prod_xx0tjqpl",
@@ -4844,17 +4789,6 @@
       "fonteId": null
     },
     {
-      "id": "prod_xusl7tww",
-      "familyId": "fam_cisco_secfw",
-      "nomeCommerciale": "Nota: la serie Secure Firewall 1000 non ha una pagina prodotto dedicata individuale confermata in questa sessione (citata solo nell'hub firewalls); Cisco ASA e' la linea legacy predecessore, il cui stato di fine vendita/fine supporto va sempre verificato puntualmente su cisco.com prima di proporlo a un cliente.",
-      "modello": "Nota: la serie Secure Firewall 1000 non ha una pagina prodotto dedicata individuale confermata in questa sessione (citata solo nell'hub firewalls); Cisco ASA e' la linea legacy predecessore, il cui stato di fine vendita/fine supporto va sempre verificato puntualmente su cisco.com prima di proporlo a un cliente.",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Nota: la serie Secure Firewall 1000 non ha una pagina prodotto dedicata individuale confermata in questa sessione (citata solo nell'hub firewalls); Cisco ASA e' la linea legacy predecessore, il cui stato di fine vendita/fine supporto va sempre verificato puntualmente su cisco.com prima di proporlo a",
-      "fonteId": null
-    },
-    {
       "id": "prod_xc7aidr4",
       "familyId": "fam_cisco_nexus_aci",
       "nomeCommerciale": "Nexus 9300 Series",
@@ -5043,7 +4977,7 @@
     },
     {
       "id": "prod_xizlr3v0",
-      "familyId": "fam_catalyst",
+      "familyId": "fam_meraki_ms",
       "nomeCommerciale": "Meraki MS400",
       "modello": "Aggregazione campus, cloud-managed",
       "tipologia": "hardware",
@@ -5051,17 +4985,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Citata come alternativa cloud-managed nella pagina Campus LAN Core and Distribution, per semplificare gestione e ridurre complessita'",
       "fonteId": "src_xvzl65jz"
-    },
-    {
-      "id": "prod_xasn1cjs",
-      "familyId": "fam_catalyst",
-      "nomeCommerciale": "Nota: C9550 e C9610 sono annunci recenti (reti AI-ready) confermati dall'hub prodotti cisco.com/site/us/en/products/networking/switches/index.html, ma senza pagina prodotto individuale ancora recuperata in questa sessione: verificare specifiche tecniche complete prima di proporli.",
-      "modello": "Nota: C9550 e C9610 sono annunci recenti (reti AI-ready) confermati dall'hub prodotti cisco.com/site/us/en/products/networking/switches/index.html, ma senza pagina prodotto individuale ancora recuperata in questa sessione: verificare specifiche tecniche complete prima di proporli.",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Nota: C9550 e C9610 sono annunci recenti (reti AI-ready) confermati dall'hub prodotti cisco.com/site/us/en/products/networking/switches/index.html, ma senza pagina prodotto individuale ancora recuperata in questa sessione: verificare specifiche tecniche complete prima di proporli.",
-      "fonteId": null
     },
     {
       "id": "prod_xgq9wftw",
@@ -7019,7 +6942,12 @@
     {
       "id": "lic_x01xe0e3",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Base license XProtect VMS",
       "tipologia": "subscription",
       "metrica": "1 per sistema",
@@ -7032,7 +6960,12 @@
     {
       "id": "lic_xyg2mjxh",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Base license per estensione XProtect",
       "tipologia": "subscription",
       "metrica": "1 per estensione per sistema",
@@ -7045,7 +6978,12 @@
     {
       "id": "lic_xzq3ambp",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Device license",
       "tipologia": "subscription",
       "metrica": "1 per dispositivo IP (regola generale)",
@@ -7058,7 +6996,12 @@
     {
       "id": "lic_xyragyw7",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Device license — encoder video",
       "tipologia": "subscription",
       "metrica": "1 per indirizzo IP (fino a 16 canali)",
@@ -7071,7 +7014,12 @@
     {
       "id": "lic_xv2awvba",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Device license — dispositivo non supportato",
       "tipologia": "subscription",
       "metrica": "1 per canale video abilitato",
@@ -7084,7 +7032,12 @@
     {
       "id": "lic_xrv8nw5g",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Device license — XProtect Mobile push",
       "tipologia": "subscription",
       "metrica": "1 per dispositivo mobile",
@@ -7097,7 +7050,12 @@
     {
       "id": "lic_x1oyguzo",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "Milestone Interconnect camera license",
       "tipologia": "subscription",
       "metrica": "1 per stream",
@@ -7110,7 +7068,12 @@
     {
       "id": "lic_xoczar97",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "XProtect Smart Wall — base license",
       "tipologia": "subscription",
       "metrica": "1 per sistema",
@@ -7123,7 +7086,12 @@
     {
       "id": "lic_xwita25r",
       "familyId": "fam_milestone_xprotect",
-      "productIds": [],
+      "productIds": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert",
+        "prod_milestone_corporate"
+      ],
       "nomeUfficiale": "XProtect Incident Manager — base license",
       "tipologia": "subscription",
       "metrica": "1 per sistema",
@@ -7132,45 +7100,6 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "Da acquistare separatamente su Expert/Professional+/Express+ a partire dalla versione 2022 R3.",
       "fonteId": "src_xph1mnn4"
-    },
-    {
-      "id": "lic_x6hf38at",
-      "familyId": "fam_milestone_xprotect",
-      "productIds": [],
-      "nomeUfficiale": "Milestone Care Premium",
-      "tipologia": "subscription",
-      "metrica": "subscription",
-      "durata": "DA VERIFICARE CON IL VENDOR",
-      "rinnovo": "DA VERIFICARE CON IL VENDOR",
-      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Livello di supporto/manutenzione superiore rispetto a Care Plus, con scadenza propria monitorabile nel client di gestione.",
-      "fonteId": "src_xnyfnveb"
-    },
-    {
-      "id": "lic_xf9ln4ht",
-      "familyId": "fam_milestone_xprotect",
-      "productIds": [],
-      "nomeUfficiale": "XProtect VMS Product Comparison Chart",
-      "tipologia": "subscription",
-      "metrica": "documento ufficiale",
-      "durata": "DA VERIFICARE CON IL VENDOR",
-      "rinnovo": "DA VERIFICARE CON IL VENDOR",
-      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Tabella comparativa dettagliata di tutte le funzionalita' per edizione XProtect (versione 2024 R1; verificare la piu' recente per allineamento 2025/2026).",
-      "fonteId": "src_xdb5sluy"
-    },
-    {
-      "id": "lic_xoanlaiv",
-      "familyId": "fam_milestone_xprotect",
-      "productIds": [],
-      "nomeUfficiale": "Supported Device List (SDL)",
-      "tipologia": "subscription",
-      "metrica": "documento ufficiale",
-      "durata": "DA VERIFICARE CON IL VENDOR",
-      "rinnovo": "DA VERIFICARE CON IL VENDOR",
-      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Elenco ufficiale di oltre 16.500 dispositivi testati, con relativo requisito di licenza per dispositivo.",
-      "fonteId": "src_xhl1mr85"
     },
     {
       "id": "lic_xk8t19rc",
@@ -7331,7 +7260,19 @@
     {
       "id": "lic_xzuxx9dc",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "DNA Essentials",
       "tipologia": "subscription",
       "metrica": "Switching (Cisco DNA sw. sub.)",
@@ -7344,7 +7285,19 @@
     {
       "id": "lic_xakckbhc",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "DNA Advantage",
       "tipologia": "subscription",
       "metrica": "Switching (Cisco DNA sw. sub.)",
@@ -7357,7 +7310,19 @@
     {
       "id": "lic_xih87gb8",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "DNA Premier",
       "tipologia": "subscription",
       "metrica": "Switching (Cisco DNA sw. sub.)",
@@ -7370,7 +7335,19 @@
     {
       "id": "lic_xbgc1r9o",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "Catalyst Essentials",
       "tipologia": "subscription",
       "metrica": "Switching (Cisco Catalyst sw. sub. — nuova offerta)",
@@ -7383,7 +7360,19 @@
     {
       "id": "lic_xnnrklyz",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "Catalyst Advantage",
       "tipologia": "subscription",
       "metrica": "Switching (Cisco Catalyst sw. sub. — nuova offerta)",
@@ -7396,7 +7385,19 @@
     {
       "id": "lic_xwytgzyi",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "DNA Essentials / Advantage / Premier",
       "tipologia": "subscription",
       "metrica": "Wireless (Cisco DNA wireless sub.)",
@@ -7409,7 +7410,19 @@
     {
       "id": "lic_xc8j2piz",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "DNA Premier — DISCONTINUATO",
       "tipologia": "subscription",
       "metrica": "SD-WAN e Routing",
@@ -7422,7 +7435,19 @@
     {
       "id": "lic_x474gfsh",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "Catalyst Routing Essentials (nuovo)",
       "tipologia": "subscription",
       "metrica": "SD-WAN e Routing",
@@ -7435,7 +7460,19 @@
     {
       "id": "lic_xtf488bt",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "Cisco DNA <-> Meraki conversion",
       "tipologia": "subscription",
       "metrica": "Conversione licenze",
@@ -7448,7 +7485,19 @@
     {
       "id": "lic_xthwi76h",
       "familyId": "fam_catalyst",
-      "productIds": [],
+      "productIds": [
+        "prod_x5yhuzjy",
+        "prod_xqtn6aco",
+        "prod_xe5osjz7",
+        "prod_xs1mn2ox",
+        "prod_xvn240hr",
+        "prod_catalyst_9300",
+        "prod_xo7cdlxv",
+        "prod_x9qn2vty",
+        "prod_xnymds2a",
+        "prod_xrhbv4zo",
+        "prod_x9u5g4pc"
+      ],
       "nomeUfficiale": "Boot level license e Tier di throughput (Catalyst 8000 / 8000V)",
       "tipologia": "subscription",
       "metrica": "Licensing tecnico",
@@ -7604,7 +7653,31 @@
     {
       "id": "lic_xjrru7pn",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "AXIS Object Analytics",
       "tipologia": "subscription",
       "metrica": "Gratuito, preinstallato",
@@ -7617,7 +7690,31 @@
     {
       "id": "lic_xoru6avw",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "AXIS License Plate Verifier (LPV)",
       "tipologia": "subscription",
       "metrica": "A pagamento, per camera",
@@ -7630,7 +7727,31 @@
     {
       "id": "lic_xdfoei3v",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "AXIS Perimeter Defender",
       "tipologia": "subscription",
       "metrica": "A pagamento, per camera",
@@ -7643,7 +7764,31 @@
     {
       "id": "lic_xckgur9h",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "AXIS Camera Station Pro",
       "tipologia": "subscription",
       "metrica": "Core Device License (tied-to-hardware)",
@@ -7656,7 +7801,31 @@
     {
       "id": "lic_x63boyn8",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "AXIS Camera Station 5 (legacy)",
       "tipologia": "subscription",
       "metrica": "Core / Universal Device License",
@@ -7669,7 +7838,31 @@
     {
       "id": "lic_xcpimfso",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "Applicazioni Axis (generale)",
       "tipologia": "subscription",
       "metrica": "Subscription license (1 o 5 anni)",
@@ -7682,7 +7875,31 @@
     {
       "id": "lic_x0xnf2fl",
       "familyId": "fam_axis_camera_station",
-      "productIds": [],
+      "productIds": [
+        "prod_axis_camera_station_pro",
+        "prod_axis_q2802e",
+        "prod_axis_f2180te",
+        "prod_axis_tp3604e",
+        "prod_xh3vzse8",
+        "prod_xs5ffzbj",
+        "prod_x8iwde2i",
+        "prod_xzu9955i",
+        "prod_xurp3nqx",
+        "prod_xahp1nn7",
+        "prod_xbcbwfjo",
+        "prod_xpdcjckf",
+        "prod_x91e1ayb",
+        "prod_xr3ntj3m",
+        "prod_x0aq5vv0",
+        "prod_x13wum6p",
+        "prod_xgtjnw6z",
+        "prod_xweyi7l5",
+        "prod_xd5k2c0t",
+        "prod_xf7ay9cj",
+        "prod_x4q43gc6",
+        "prod_xx0tjqpl",
+        "prod_x5i8v6zi"
+      ],
       "nomeUfficiale": "Nota: dati tratti da axis.com e help.axis.com (fonti ufficiali). Axis distingue chiaramente tra analytics gratuite preinstallate (es. Object Analytics), analytics a pagamento per canale/camera (es. LPV, Perimeter Defender), e licenze VMS che possono essere tied-to-hardware (sui recorder Axis) oppure standalone a tempo (su hardware/VM propri). Questa distinzione e' importante per costruire correttamente un preventivo.",
       "tipologia": "subscription",
       "metrica": "DA VERIFICARE CON IL VENDOR",
@@ -7695,7 +7912,9 @@
     {
       "id": "lic_x29jvjv2",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Video — Fundamentals",
       "tipologia": "subscription",
       "metrica": "Cameras/server e per sito: nessun limite imposto dalla licenza (>300 camere/server, >10.000/sito, >100 server/sito — limitati solo dall'hardware reale)",
@@ -7708,7 +7927,9 @@
     {
       "id": "lic_xqw33roo",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Video — ACC7",
       "tipologia": "subscription",
       "metrica": "Stessi limiti tecnici di Fundamentals (nessun limite di licenza)",
@@ -7721,7 +7942,9 @@
     {
       "id": "lic_x8hcfk5g",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Video 8 (Unity/ACC8)",
       "tipologia": "subscription",
       "metrica": "Stessi limiti tecnici (nessun limite di licenza)",
@@ -7734,7 +7957,9 @@
     {
       "id": "lic_x4lhwlwc",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Video (tutte le edizioni)",
       "tipologia": "subscription",
       "metrica": "-",
@@ -7747,7 +7972,9 @@
     {
       "id": "lic_x6jt1i3j",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Video License Plate Recognition",
       "tipologia": "subscription",
       "metrica": "Per camera/canale (da confermare quantita' esatta)",
@@ -7760,7 +7987,9 @@
     {
       "id": "lic_xasu453m",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Unity Access",
       "tipologia": "subscription",
       "metrica": "-",
@@ -7773,7 +8002,9 @@
     {
       "id": "lic_x45dt7ky",
       "familyId": "fam_avigilon_unity_video",
-      "productIds": [],
+      "productIds": [
+        "prod_avigilon_unity_video_sw"
+      ],
       "nomeUfficiale": "Nota: dati tratti dall'Avigilon Unity Video Comparison Chart ufficiale (PDF, avigilon.com) e dalla product page on-premise. Il documento originale confronta ACC6/ACC7/Unity(ACC8): qui rinominate secondo le 3 edizioni commerciali attuali (Fundamentals/ACC7/Unity Video 8) come presentate sulla pagina prodotto. Nessun limite tecnico e' imposto dalla licenza stessa in nessuna delle 3 edizioni: i limiti reali dipendono dall'hardware del server.",
       "tipologia": "subscription",
       "metrica": "DA VERIFICARE CON IL VENDOR",
@@ -7786,7 +8017,10 @@
     {
       "id": "lic_xz1kmfuu",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Q-SYS Collaboration Bundle Scaling License",
       "tipologia": "subscription",
       "metrica": "Pensata per sale riunioni/divisibili e multi-purpose; NM-T1 e microfoni AEC di terze parti condividono risorse (scala mobile se usati insieme).",
@@ -7799,7 +8033,10 @@
     {
       "id": "lic_x5ian274",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Q-SYS Commercial AV Bundle Scaling License",
       "tipologia": "subscription",
       "metrica": "Pensata per applicazioni BGM (background music) e paging piu' grandi, che in precedenza richiedevano Core di fascia superiore.",
@@ -7812,7 +8049,10 @@
     {
       "id": "lic_xepz74s8",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Regola di non-additivita'",
       "tipologia": "subscription",
       "metrica": "Le licenze di scaling NON sono additive: Collaboration Bundle + Commercial AV Bundle insieme espandono comunque solo fino a 128x128 canali Q-LAN/AES67, non fino a 256x256.",
@@ -7825,7 +8065,10 @@
     {
       "id": "lic_xxy05v2y",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Q-SYS Capacity Scaling License (QDS 10.0+)",
       "tipologia": "subscription",
       "metrica": "Sostituisce concettualmente i due bundle precedenti su QDS 10.0+; i due bundle precedenti restano acquistabili per design ancora su QDS 9.x.",
@@ -7838,7 +8081,10 @@
     {
       "id": "lic_xjcudkq2",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Compatibilita' tra versioni licenze",
       "tipologia": "subscription",
       "metrica": "Se un Core ha gia' Collaboration+Commercial AV Bundle e viene installata anche la Capacity Scaling License, prevale la capacita' maggiore della Capacity Scaling License.",
@@ -7851,7 +8097,10 @@
     {
       "id": "lic_xjsgi3jp",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Modello di attivazione licenze",
       "tipologia": "subscription",
       "metrica": "Le Feature License usano un modello Nodelock (attivazione online o offline); necessarie quando la funzionalita' e' inclusa in un design deployato su Core con firmware 7.0+.",
@@ -7864,7 +8113,10 @@
     {
       "id": "lic_xbokt3w7",
       "familyId": "fam_qsys_licensing",
-      "productIds": [],
+      "productIds": [
+        "prod_xs0lwp8l",
+        "prod_xt7bjtbr"
+      ],
       "nomeUfficiale": "Q-SYS UC Compute Bundle (G2)",
       "tipologia": "subscription",
       "metrica": "Sostituita l'app 'Q-SYS Control for Microsoft Teams Rooms' con la nuova 'Q-SYS Connect', che unifica controlli AV e chiamata UC su un solo pannello.",
@@ -7877,7 +8129,9 @@
     {
       "id": "lic_xm5l8wb1",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Free",
       "tipologia": "subscription",
       "metrica": "Livello introduttivo per singoli/piccoli team",
@@ -7890,7 +8144,9 @@
     {
       "id": "lic_xnxavxby",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Essentials",
       "tipologia": "subscription",
       "metrica": "Livello base ma gia' completo per un IAM con SSO",
@@ -7903,7 +8159,9 @@
     {
       "id": "lic_xneer8kk",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Advantage",
       "tipologia": "subscription",
       "metrica": "Duo Care Premium Support disponibile per il rollout; Trust Monitor legacy non piu' disponibile per nuovi clienti dal 29/9/2025 (sostituito da Cisco Identity Intelligence)",
@@ -7916,7 +8174,9 @@
     {
       "id": "lic_xgsug960",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Premier",
       "tipologia": "subscription",
       "metrica": "Massimo livello disponibile; unico tier con Duo Network Gateway per sostituire completamente la VPN tradizionale",
@@ -7929,7 +8189,9 @@
     {
       "id": "lic_xaj42pim",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Federal",
       "tipologia": "subscription",
       "metrica": "Premier non disponibile in versione Federal",
@@ -7942,7 +8204,9 @@
     {
       "id": "lic_xcsewlx1",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Regola commerciale",
       "tipologia": "subscription",
       "metrica": "Prezzo determinato dinamicamente in base alla quantita' ordinata (modello a tier)",
@@ -7955,7 +8219,9 @@
     {
       "id": "lic_x7be5035",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Lifecycle",
       "tipologia": "subscription",
       "metrica": "Sostituita da Cisco Identity Intelligence, inclusa in Advantage e Premier",
@@ -7968,7 +8234,9 @@
     {
       "id": "lic_x4ui0bmi",
       "familyId": "fam_cisco_duo",
-      "productIds": [],
+      "productIds": [
+        "prod_cisco_duo_service"
+      ],
       "nomeUfficiale": "Nota: dati tratti da duo.com (sito ufficiale Cisco Duo) e da un ordering guide Cisco ufficiale. I prezzi elencati sono quelli pubblicati pubblicamente al momento della consultazione e possono variare; verificare sempre il listino corrente con il team commerciale Cisco/Duo prima di una proposta.",
       "tipologia": "subscription",
       "metrica": "DA VERIFICARE CON IL VENDOR",
