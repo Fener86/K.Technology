@@ -1247,7 +1247,8 @@
       "deployment": "on-premise, gestibile anche in cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch di accesso enterprise Cisco. Gestibile via CLI/Catalyst Center oppure, se compatibile, tramite Meraki Dashboard (vedi integrazione).",
-      "fonteId": "src_meraki_ios_xe"
+      "fonteId": "src_meraki_ios_xe",
+      "sku": "C9300-24T, C9300-24P, C9300-24U, C9300-24UX, C9300-48T, C9300-48P, C9300-48U, C9300-48UXM, C9300-48UN (suffisso -E = Network Essentials, -A = Network Advantage; serie C9300X per moduli uplink 25G/40G)"
     },
     {
       "id": "prod_fortiswitch_secaccess",
