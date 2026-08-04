@@ -1761,7 +1761,8 @@
       "deployment": "on-premise / virtual appliance",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Motore NAC che scopre, profila e controlla l'accesso alla rete di utenti, applicazioni e dispositivi IoT.",
-      "fonteId": "src_fortinac_ds"
+      "fonteId": "src_fortinac_ds",
+      "sku": "Distribuito principalmente come VM (FortiNAC-F VM); disponibile anche FortiNAC Manager (FNC-M) per installazioni multi-sito"
     },
     {
       "id": "prod_fortiauthenticator_appliance",
@@ -2623,7 +2624,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gateway WWAN 4G/5G per connettivita' broadband",
-      "fonteId": "src_x2c0n4r2"
+      "fonteId": "src_x2c0n4r2",
+      "sku": "FEX-511F (5G di punta), FEX-211F, FEX-212F (veicolare), FEX-311F, FEX-200F (thin-edge senza modem)"
     },
     {
       "id": "prod_xz7utfu6",
@@ -2879,7 +2881,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Privileged Access Management",
-      "fonteId": "src_x4pcrykg"
+      "fonteId": "src_x4pcrykg",
+      "sku": "FortiPAM-VM (virtual appliance); hardware dedicato non risulta ancora ampiamente commercializzato - DA VERIFICARE CON IL VENDOR"
     },
     {
       "id": "prod_x0pwhtn3",
