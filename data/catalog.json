@@ -1212,6 +1212,18 @@
       "categoria": "Management Platform",
       "stato": "attivo",
       "fonteId": "src_crestron_fusion_overview"
+    },
+    {
+      "id": "fam_axis_intercom_audio",
+      "vendorId": "v_axis",
+      "brandLineId": null,
+      "macroareaId": "ma_access",
+      "areaFunzionaleId": "af_visitor",
+      "nome": "Axis - intercom e audio di rete",
+      "descrizione": "Videocitofoni/intercom di rete Axis (serie I7000/I8000) con audio bidirezionale, echo cancellation, lettore RFID integrabile per il controllo accessi, e Axis Edge Vault per la sicurezza del dispositivo. Include anche la gamma network audio (speaker IP, bridge audio) per diffusione sonora e messaggi di sicurezza.",
+      "categoria": "Controllo Accessi",
+      "stato": "attivo",
+      "fonteId": "src_axis_intercoms_page"
     }
   ],
   "prodotti": [
@@ -5867,6 +5879,28 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software di monitoraggio/scheduling enterprise per dispositivi Crestron e di terze parti, con help desk remoto e gestione energetica.",
       "fonteId": "src_crestron_fusion_overview"
+    },
+    {
+      "id": "prod_axis_i7010ve",
+      "familyId": "fam_axis_intercom_audio",
+      "nomeCommerciale": "AXIS I7010-VE Network Intercom",
+      "modello": "I7010-VE",
+      "tipologia": "hardware",
+      "deployment": "on-premise (esterno)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Intercom audio da esterno robusto, 92 dB SPL, echo cancellation/riduzione rumore, lettore QR code per accesso.",
+      "fonteId": "src_axis_intercoms_page"
+    },
+    {
+      "id": "prod_axis_i7020",
+      "familyId": "fam_axis_intercom_audio",
+      "nomeCommerciale": "AXIS I7020 Network Intercom",
+      "modello": "I7020",
+      "tipologia": "hardware",
+      "deployment": "on-premise (interno)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Intercom da interno per ambienti puliti/sanitari, resistente a detergenti chimici e conforme ISO 14644-1.",
+      "fonteId": "src_axis_intercoms_page"
     }
   ],
   "licenze": [
@@ -14550,6 +14584,26 @@
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_axis_intercoms_page",
+      "url": "https://www.axis.com/products/network-intercoms",
+      "titolo": "Network intercoms (pagina prodotto ufficiale)",
+      "vendorId": "v_axis",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_axis_audio_intercoms_page",
+      "url": "https://www.axis.com/products/audio-intercoms",
+      "titolo": "Audio intercoms (pagina prodotto ufficiale)",
+      "vendorId": "v_axis",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
