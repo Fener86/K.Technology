@@ -1224,6 +1224,90 @@
       "categoria": "Controllo Accessi",
       "stato": "attivo",
       "fonteId": "src_axis_intercoms_page"
+    },
+    {
+      "id": "fam_cisco_secure_client",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Secure Client (incl. AnyConnect)",
+      "descrizione": "Agente client unificato Cisco per VPN, ZTNA e postura endpoint, successore/evoluzione di AnyConnect.",
+      "categoria": "Endpoint Protection / EDR",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_secure_endpoint",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": "af_edr",
+      "nome": "Cisco Secure Endpoint",
+      "descrizione": "Soluzione EDR/EPP Cisco per la protezione degli endpoint, con threat hunting e risposta automatizzata.",
+      "categoria": "Endpoint Protection / EDR",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_secure_email",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Secure Email Threat Defense",
+      "descrizione": "Protezione email cloud-delivered Cisco integrata con Microsoft 365/Google Workspace, complementare ai gateway email tradizionali.",
+      "categoria": "Email Security",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_secure_network_analytics",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Secure Network Analytics",
+      "descrizione": "Analisi del traffico di rete basata su NetFlow/telemetria per il rilevamento di anomalie e minacce (ex Stealthwatch).",
+      "categoria": "SOC / SIEM / SOAR",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_secure_workload",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Secure Workload",
+      "descrizione": "Piattaforma di microsegmentazione e visibilita' dei workload per data center e cloud ibrido (ex Tetration).",
+      "categoria": "SOC / SIEM / SOAR",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_xdr",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_cyber",
+      "areaFunzionaleId": null,
+      "nome": "Cisco XDR",
+      "descrizione": "Piattaforma XDR Cisco che correla telemetria da endpoint, rete, cloud ed email in un'unica console di detection & response.",
+      "categoria": "SOC / SIEM / SOAR",
+      "stato": "attivo",
+      "fonteId": null
+    },
+    {
+      "id": "fam_cisco_smart_licensing",
+      "vendorId": "v_cisco",
+      "brandLineId": null,
+      "macroareaId": "ma_net",
+      "areaFunzionaleId": null,
+      "nome": "Cisco Smart Software Manager (CSSM) e Support Services",
+      "descrizione": "Portale Cisco Smart Software Manager per la gestione centralizzata delle licenze, e programmi di supporto Cisco Success Tracks/Solution Support.",
+      "categoria": "Licensing (modelli trasversali)",
+      "stato": "attivo",
+      "fonteId": null
     }
   ],
   "prodotti": [
@@ -2993,7 +3077,7 @@
     },
     {
       "id": "prod_xnptbyju",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_xdr",
       "nomeCommerciale": "Cisco XDR",
       "modello": "Cisco XDR",
       "tipologia": "SaaS",
@@ -3026,7 +3110,7 @@
     },
     {
       "id": "prod_x8ufulcb",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_secure_client",
       "nomeCommerciale": "Cisco Secure Client (incl. AnyConnect)",
       "modello": "Cisco Secure Client (incl. AnyConnect)",
       "tipologia": "software",
@@ -3037,7 +3121,7 @@
     },
     {
       "id": "prod_xn1jtan4",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_secure_endpoint",
       "nomeCommerciale": "Cisco Secure Endpoint",
       "modello": "Cisco Secure Endpoint",
       "tipologia": "software",
@@ -3048,7 +3132,7 @@
     },
     {
       "id": "prod_xqw00wvx",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_ise",
       "nomeCommerciale": "Cisco Identity Services Engine (ISE)",
       "modello": "Cisco Identity Services Engine (ISE)",
       "tipologia": "software/appliance",
@@ -3060,7 +3144,7 @@
     },
     {
       "id": "prod_xya9zt5z",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_secure_email",
       "nomeCommerciale": "Cisco Secure Email Threat Defense",
       "modello": "Cisco Secure Email Threat Defense",
       "tipologia": "SaaS",
@@ -3071,7 +3155,7 @@
     },
     {
       "id": "prod_x58cvyra",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_umbrella",
       "nomeCommerciale": "Cisco Umbrella",
       "modello": "Cisco Umbrella",
       "tipologia": "cloud/SaaS",
@@ -3082,7 +3166,7 @@
     },
     {
       "id": "prod_x1ww0pxt",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_secure_network_analytics",
       "nomeCommerciale": "Cisco Secure Network Analytics",
       "modello": "Cisco Secure Network Analytics",
       "tipologia": "software/appliance",
@@ -3104,7 +3188,7 @@
     },
     {
       "id": "prod_xhtr1qxy",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_duo",
       "nomeCommerciale": "Cisco Identity Intelligence",
       "modello": "Cisco Identity Intelligence",
       "tipologia": "SaaS",
@@ -3126,7 +3210,7 @@
     },
     {
       "id": "prod_xloezrsr",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_secure_workload",
       "nomeCommerciale": "Cisco Secure Workload",
       "modello": "Cisco Secure Workload",
       "tipologia": "software",
@@ -3134,17 +3218,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Microsegmentazione e sicurezza dei workload",
       "fonteId": "src_xkrm9og6"
-    },
-    {
-      "id": "prod_xqtn6aco",
-      "familyId": "fam_catalyst",
-      "nomeCommerciale": "Cisco Catalyst 9000 Switching Family",
-      "modello": "Cisco Catalyst 9000 Switching Family",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Switch campus/core/industrial edge, gestibili via Catalyst Center o Meraki Dashboard",
-      "fonteId": "src_xu51od8f"
     },
     {
       "id": "prod_x9u5g4pc",
@@ -3170,7 +3243,7 @@
     },
     {
       "id": "prod_xwrk9buq",
-      "familyId": "fam_catalyst",
+      "familyId": "fam_cisco_sdwan",
       "nomeCommerciale": "Cisco SD-WAN Routers (Catalyst 8000 Series)",
       "modello": "Cisco SD-WAN Routers (Catalyst 8000 Series)",
       "tipologia": "hardware/subscription",
@@ -3181,7 +3254,7 @@
     },
     {
       "id": "prod_xkqzehcj",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_sdwan",
       "nomeCommerciale": "Cisco DNA Software / Smart Licensing (SD-WAN e Routing)",
       "modello": "Cisco DNA Software / Smart Licensing (SD-WAN e Routing)",
       "tipologia": "subscription/licensing",
@@ -3203,7 +3276,7 @@
     },
     {
       "id": "prod_xmul3bhn",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_nexus_aci",
       "nomeCommerciale": "Cisco ACI (Application Centric Infrastructure)",
       "modello": "Cisco ACI (Application Centric Infrastructure)",
       "tipologia": "software/hardware",
@@ -3214,7 +3287,7 @@
     },
     {
       "id": "prod_xs6pi3tz",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_smart_licensing",
       "nomeCommerciale": "Cisco Smart Software Manager (CSSM)",
       "modello": "Cisco Smart Software Manager (CSSM)",
       "tipologia": "piattaforma licensing",
@@ -3225,7 +3298,7 @@
     },
     {
       "id": "prod_xja9p5nz",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_smart_licensing",
       "nomeCommerciale": "Cisco Success Tracks / Solution Support",
       "modello": "Cisco Success Tracks / Solution Support",
       "tipologia": "supporto",
@@ -3236,7 +3309,7 @@
     },
     {
       "id": "prod_x52tav4s",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_webex_roomdevices",
       "nomeCommerciale": "Cisco Webex Room Devices",
       "modello": "Cisco Webex Room Devices",
       "tipologia": "hardware",
@@ -3247,7 +3320,7 @@
     },
     {
       "id": "prod_xjc0vcez",
-      "familyId": "fam_cisco_secfw",
+      "familyId": "fam_cisco_webex_roomdevices",
       "nomeCommerciale": "Cisco Webex (piattaforma)",
       "modello": "Cisco Webex (piattaforma)",
       "tipologia": "SaaS",
@@ -3255,17 +3328,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma di collaboration e videoconferenza Cisco",
       "fonteId": "src_xc84wlgj"
-    },
-    {
-      "id": "prod_x3388bl4",
-      "familyId": "fam_meraki_dashboard",
-      "nomeCommerciale": "Meraki MX",
-      "modello": "Meraki MX",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Firewall/SD-WAN cloud-managed con XDR nativo",
-      "fonteId": "src_xetjowjp"
     },
     {
       "id": "prod_xbpohbqq",
@@ -7168,11 +7230,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7192,11 +7253,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7216,11 +7276,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7240,11 +7299,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7264,11 +7322,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7288,11 +7345,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7312,11 +7368,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7336,11 +7391,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7360,11 +7414,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
@@ -7384,11 +7437,10 @@
       "familyId": "fam_catalyst",
       "productIds": [
         "prod_x5yhuzjy",
-        "prod_xqtn6aco",
+        "prod_catalyst_9300",
         "prod_xe5osjz7",
         "prod_meraki_ms_switch",
         "prod_xvn240hr",
-        "prod_catalyst_9300",
         "prod_x9qn2vty",
         "prod_xnymds2a",
         "prod_xrhbv4zo",
