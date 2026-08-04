@@ -1,17 +1,17 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
-_Ultimo aggiornamento: 03/08/2026 (sessione 20, scrittura diretta GitHub)_
+_Ultimo aggiornamento: 03/08/2026 (sessione 21, scrittura diretta GitHub)_
 
-## Sessione 20 — pulizia + giro per vendor
+## Sessione 21 — chiusura giro vendor per vendor
 
-- Riempiti tutti i campi "modello"/"deployment" ancora segnati DA VERIFICARE sui prodotti importati (432 prodotti, 0 placeholder residui)
-- Controllo qualita' con confronto per somiglianza testuale: trovati e rimossi 6 prodotti quasi-duplicati
-- Corretta la famiglia di Barco TransForm N CMS (era finita sotto ClickShare invece che Control Room) + aggiunta la sua licenza reale (a connessioni concorrenti, 16/32/64/128)
-- K-Array: aggiornato K-framework3 (era "da verificare", ora confermato gratuito) + aggiunti K-Cloud (piattaforma di gestione remota, mancava) e K-Monitor
-- Meraki MR36/44/46: nota cautelativa aggiunta (fonti terze discordanti sulla data EoS esatta), con link alla pagina ufficiale Meraki EOL da controllare caso per caso
-- 7 famiglie generiche riclassificate con categoria corretta
+- Shure: aggiunta famiglia software (Designer gratuito + ShureCloud), mancava del tutto
+- Crestron: aggiunta famiglia Fusion (monitoraggio/scheduling enterprise) con le 2 licenze reali (SW-FUSION-P-L on-premises perpetua, SW-FUSION-C-3 cloud 3 anni)
+- Axis: aggiunta famiglia intercom di rete (I7010-VE, I7020) con lettore RFID integrabile, a rafforzare la macroarea Controllo Accessi
+- Verifica indipendente del repository live via raw.githubusercontent.com: dati confermati sincronizzati correttamente
 
-**Numeri finali: 81 famiglie, 434 prodotti, 149 licenze, 353 righe di matrice, 395 fonti, 0 errori di integrita', 0 duplicati.**
+**Numeri finali: 84 famiglie, 425 prodotti, 148 licenze, 353 righe di matrice, 403 fonti, 0 errori di integrita', 0 duplicati.**
+
+**Stato di salute del catalogo**: nessuna famiglia vuota, nessun placeholder "DA VERIFICARE" residuo sui campi modello/deployment, tutte le licenze collegate a un prodotto specifico tranne 23 (correttamente, perche' descrivono modelli di licensing Meraki trasversali a piu' prodotti).
 
 _Cronologia sessioni precedenti sotto._
 
