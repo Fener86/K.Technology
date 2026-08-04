@@ -1188,6 +1188,18 @@
       "categoria": "Videoconferenza / Collaboration",
       "stato": "attivo",
       "fonteId": "src_xaxdb21m"
+    },
+    {
+      "id": "fam_shure_software",
+      "vendorId": "v_shure",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_collab",
+      "nome": "Shure - software di gestione (Designer / ShureCloud)",
+      "descrizione": "Shure Designer: applicazione desktop gratuita per progettare/configurare da remoto gli impianti Shure (routing audio in rete Dante tra i componenti Microflex Ecosystem, design online/offline, template riutilizzabili tra piu' sedi). ShureCloud: piattaforma di monitoraggio e gestione remota dei dispositivi Shure in campo.",
+      "categoria": "Management Platform",
+      "stato": "attivo",
+      "fonteId": "src_shure_designer_page"
     }
   ],
   "prodotti": [
@@ -5810,6 +5822,28 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Tre moduli (Review/Respond/Research): ricerca rapida post-incidente, allerta in tempo reale, business intelligence quantitativa. Tecnologia Video Synopsis brevettata; camera-agnostic, funziona anche senza XProtect per la sola revisione file-based.",
       "fonteId": "src_milestone_briefcam_page"
+    },
+    {
+      "id": "prod_shure_designer_sw",
+      "familyId": "fam_shure_software",
+      "nomeCommerciale": "Shure Designer",
+      "modello": "Designer 6",
+      "tipologia": "software",
+      "deployment": "on-premise (Windows/macOS), gratuito",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Software gratuito per progettazione e configurazione remota di impianti Shure: routing audio Dante, design online/offline, template condivisibili tra colleghi e sedi.",
+      "fonteId": "src_shure_designer_page"
+    },
+    {
+      "id": "prod_shure_shurecloud",
+      "familyId": "fam_shure_software",
+      "nomeCommerciale": "ShureCloud",
+      "modello": "Servizio cloud",
+      "tipologia": "cloud",
+      "deployment": "cloud",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Piattaforma cloud per monitoraggio remoto e gestione della flotta di dispositivi Shure installati.",
+      "fonteId": "src_shure_designer_page"
     }
   ],
   "licenze": [
@@ -14419,6 +14453,16 @@
       "url": "https://www.milestonesys.com/products/software/briefcam/",
       "titolo": "BriefCam video analytics software (pagina prodotto ufficiale)",
       "vendorId": "v_milestone",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_shure_designer_page",
+      "url": "https://www.shure.com/en-US/products/software/designer_software",
+      "titolo": "Designer 6 - Desktop app (pagina prodotto ufficiale)",
+      "vendorId": "v_shure",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
