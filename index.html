@@ -353,7 +353,6 @@ function render() {
 
   if (page === "home") content.innerHTML = viewHome(c);
   else if (page === "macroarea") content.innerHTML = viewMacroarea(L.macroaree[p1], c, L);
-  else if (page === "categoria") content.innerHTML = viewCategoria(decodeURIComponent(p1 || ""), c, L);
   else if (page === "vendor") content.innerHTML = viewVendor(L.vendors[p1], c, L);
   else if (page === "family") content.innerHTML = viewFamily(L.famiglie[p1], c, L);
   else if (page === "product") content.innerHTML = viewProduct(L.prodotti[p1], c, L);
@@ -449,24 +448,6 @@ function viewMacroarea(ma, c, L) {
   `;
 }
 
-function viewCategoria(categoria, c, L) {
-  if (!categoria) return `<div class="empty">Categoria non trovata.</div>`;
-  const famiglie = c.famiglie.filter((f) => f.categoria === categoria);
-  const vendorCoinvolti = [...new Set(famiglie.map((f) => f.vendorId))];
-  return `
-    ${breadcrumb([{label:"Home",hash:"#/"},{label:"Categoria: " + categoria}])}
-    <h1 class="h1">${esc(categoria)}</h1>
-    <div class="desc">Tutte le famiglie di questo tipo, di qualunque vendor: ${famiglie.length} famiglie da ${vendorCoinvolti.length} vendor diversi.</div>
-    <h2 class="h2">Famiglie</h2>
-    ${famiglie.length ? `<div class="grid">${famiglie.map(f=>`
-      <div class="card" data-nav="#/family/${f.id}">
-        <div class="card-title">${led(f.stato)}${esc(f.nome)}</div>
-        <div class="card-meta">${esc(L.vendors[f.vendorId]?.nome||"")}${f.brandLineId?` &middot; ${esc(L.brandLines[f.brandLineId]?.nome||"")}`:""}</div>
-        <div class="card-desc">${esc((f.descrizione||"").slice(0,160))}${(f.descrizione||"").length>160?"...":""}</div>
-      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia in questa categoria.</div>`}
-  `;
-}
-
 function viewVendor(vendor, c, L) {
   if (!vendor) return `<div class="empty">Vendor non trovato.</div>`;
   const famiglie = c.famiglie.filter((f) => f.vendorId === vendor.id);
@@ -488,10 +469,13 @@ function viewVendor(vendor, c, L) {
     ${brandLines.length ? `<h2 class="h2">Brand line</h2><div class="panel">${brandLines.map(bl=>`<div style="margin-bottom:10px;"><div style="font-weight:600;font-size:13.5px;">${esc(bl.nome)}</div><div class="desc" style="font-size:12.5px;">${esc(bl.descrizione)}</div></div>`).join("")}</div>` : ""}
     <h2 class="h2">Categorie di prodotto</h2>
     ${categorieOrdinate.length ? `<div class="panel" style="padding:8px;">${categorieOrdinate.map((cat) => `
-      <div class="sidebar-item" style="padding:12px 14px;" data-nav="#/categoria/${encodeURIComponent(cat)}">
-        <span>${esc(cat)}</span>
-        <span class="sidebar-count">${gruppi[cat].length} &#8594;</span>
-      </div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
+      <div style="padding:10px 14px 4px;font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-faint);">${esc(cat)} <span class="hint">(${gruppi[cat].length})</span></div>
+      ${gruppi[cat].map((f) => `
+        <div class="sidebar-item" style="padding:9px 14px 9px 24px;" data-nav="#/family/${f.id}">
+          <span>${led(f.stato)}${esc(f.nome)}</span>
+          <span class="sidebar-count">&#8594;</span>
+        </div>`).join("")}
+      `).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata per questo vendor. Aggiungila dal pannello Admin.</div>`}
   `;
 }
 
@@ -504,7 +488,7 @@ function viewFamily(fam, c, L) {
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:vendor?.nome,hash:"#/vendor/"+vendor?.id},{label:fam.nome}])}
     <h1 class="h1">${led(fam.stato)}${esc(fam.nome)}</h1>
-    ${fam.categoria ? `<div style="margin-bottom:8px;"><span class="badge" style="color:var(--accent);border:1px solid var(--accent-dim);background:var(--accent-tint);cursor:pointer;" data-nav="#/categoria/${encodeURIComponent(fam.categoria)}">${esc(fam.categoria)}</span></div>` : ""}
+    ${fam.categoria ? `<div style="margin-bottom:8px;"><span class="badge" style="color:var(--accent);border:1px solid var(--accent-dim);background:var(--accent-tint);">${esc(fam.categoria)}</span></div>` : ""}
     <div class="desc">${esc(fam.descrizione)}</div>
     <div style="margin-top:10px;">${sourceTag(L.fonti[fam.fonteId])}</div>
     <h2 class="h2">Prodotti / modelli</h2>
