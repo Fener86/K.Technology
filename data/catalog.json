@@ -1200,6 +1200,18 @@
       "categoria": "Management Platform",
       "stato": "attivo",
       "fonteId": "src_shure_designer_page"
+    },
+    {
+      "id": "fam_crestron_fusion",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": "af_meeting",
+      "nome": "Crestron Fusion (monitoraggio ed enterprise management)",
+      "descrizione": "Piattaforma Crestron per monitoraggio globale dei dispositivi, room scheduling di rete, help desk remoto, raccolta dati/reportistica ed energy management (illuminazione, tapparelle, clima, impronta di carbonio). Si integra con Microsoft Exchange/Office 365, Google Calendar, IBM Notes, CollegeNet 25Live. Disponibile on-premises o come servizio cloud (Crestron Fusion Cloud).",
+      "categoria": "Management Platform",
+      "stato": "attivo",
+      "fonteId": "src_crestron_fusion_overview"
     }
   ],
   "prodotti": [
@@ -5844,6 +5856,17 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma cloud per monitoraggio remoto e gestione della flotta di dispositivi Shure installati.",
       "fonteId": "src_shure_designer_page"
+    },
+    {
+      "id": "prod_crestron_fusion_platform",
+      "familyId": "fam_crestron_fusion",
+      "nomeCommerciale": "Crestron Fusion",
+      "modello": "On-premises o Cloud",
+      "tipologia": "software",
+      "deployment": "on-premise (server dedicato) o cloud (Crestron Fusion Cloud)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Software di monitoraggio/scheduling enterprise per dispositivi Crestron e di terze parti, con help desk remoto e gestione energetica.",
+      "fonteId": "src_crestron_fusion_overview"
     }
   ],
   "licenze": [
@@ -8294,6 +8317,36 @@
       "gracePeriod": "non applicabile",
       "conseguenzeScadenza": "non applicabile (licenza perpetua)",
       "fonteId": "src_barco_transformn_cms"
+    },
+    {
+      "id": "lic_crestron_fusion_onprem",
+      "familyId": "fam_crestron_fusion",
+      "productIds": [
+        "prod_crestron_fusion_platform"
+      ],
+      "nomeUfficiale": "Crestron Fusion On-Premises (SW-FUSION-P-L, licenza per stanza)",
+      "tipologia": "perpetua",
+      "metrica": "per stanza/dispositivo gestito",
+      "durata": "perpetua",
+      "rinnovo": "non applicabile (perpetua)",
+      "gracePeriod": "non applicabile",
+      "conseguenzeScadenza": "non applicabile (licenza perpetua)",
+      "fonteId": "src_crestron_fusion_pl_sku"
+    },
+    {
+      "id": "lic_crestron_fusion_cloud",
+      "familyId": "fam_crestron_fusion",
+      "productIds": [
+        "prod_crestron_fusion_platform"
+      ],
+      "nomeUfficiale": "Crestron Fusion Cloud (SW-FUSION-C-3, subscription 3 anni)",
+      "tipologia": "subscription",
+      "metrica": "per stanza/dispositivo gestito",
+      "durata": "3 anni",
+      "rinnovo": "manuale a scadenza",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "perdita del servizio di monitoraggio/scheduling cloud",
+      "fonteId": "src_crestron_fusion_c3_sku"
     }
   ],
   "licenseFeatures": [
@@ -14467,6 +14520,36 @@
       "dataConsultazione": "2026-08-03",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_fusion_overview",
+      "url": "https://help.crestron.com/fusion/Content/Topics/Introduction/Overview.htm",
+      "titolo": "Crestron Fusion - Overview (documentazione ufficiale)",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_crestron_fusion_pl_sku",
+      "url": "https://www.crestron.com/Products/Catalog/Control-and-Management/Software/Building-and-Enterprise-Management/SW-FUSION-P-L",
+      "titolo": "SW-FUSION-P-L (pagina prodotto/licenza ufficiale)",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_crestron_fusion_c3_sku",
+      "url": "https://www.crestron.com/Products/Catalog/Control-and-Management/Software/Building-and-Enterprise-Management/SW-FUSION-C-3",
+      "titolo": "SW-FUSION-C-3 (pagina prodotto/licenza ufficiale)",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
