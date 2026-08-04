@@ -4247,7 +4247,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN entry, throughput firewall 700 Mbps",
-      "fonteId": "src_x1i0o2uv"
+      "fonteId": "src_x1i0o2uv",
+      "sku": "MX67-HW"
     },
     {
       "id": "prod_xngu9pof",
@@ -4258,7 +4259,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Come MX67, con radio Wi-Fi integrata",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX67W-HW"
     },
     {
       "id": "prod_xh8gaiwq",
@@ -4269,7 +4271,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Varianti con Wi-Fi e/o LTE integrati",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX68-HW, MX68W-HW, MX68CW-HW"
     },
     {
       "id": "prod_xka2upko",
@@ -4280,7 +4283,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, throughput firewall fino a 1 Gbps",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX75-HW"
     },
     {
       "id": "prod_x298gr8g",
@@ -4291,7 +4295,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, PoE su porte WAN",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX85-HW"
     },
     {
       "id": "prod_xe5ow7dv",
@@ -4302,7 +4307,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, PoE su porte WAN",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX95-HW"
     },
     {
       "id": "prod_x8ugcjmh",
@@ -4313,7 +4319,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, form factor 1U, PoE su porte WAN",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX105-HW"
     },
     {
       "id": "prod_xpyysfuq",
@@ -4324,7 +4331,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN throughput 2 Gbps+, form factor 1U, dual PSU",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "MX250-HW"
     },
     {
       "id": "prod_xzl6wazc",
@@ -4335,7 +4343,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance top di gamma, throughput 2 Gbps+, form factor 1U, dual PSU",
-      "fonteId": "src_x38npyh7"
+      "fonteId": "src_x38npyh7",
+      "sku": "MX450-HW"
     },
     {
       "id": "prod_xdx7ddvo",
@@ -4346,7 +4355,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Meraki MX distribuito come appliance virtuale in cloud pubblico/privato",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "vMX-S (virtuale, 200 Mbps)"
     },
     {
       "id": "prod_x50gim0z",
@@ -4357,7 +4367,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Meraki MX virtuale, capacita' intermedia",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "vMX-M (virtuale, 500 Mbps)"
     },
     {
       "id": "prod_x98kfbfi",
@@ -4368,7 +4379,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Meraki MX virtuale, capacita' maggiore",
-      "fonteId": "src_xn1m49u4"
+      "fonteId": "src_xn1m49u4",
+      "sku": "vMX-L (virtuale, 1 Gbps)"
     },
     {
       "id": "prod_x91e1ayb",
@@ -4676,7 +4688,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Versione virtuale del Nexus 9000 per test di rete, automazione, snapshot VM; supporta le stesse API NX-OS",
-      "fonteId": "src_xfj9q5ny"
+      "fonteId": "src_xfj9q5ny",
+      "sku": "Nexus 9000v (immagine virtuale gratuita per lab/test, non per produzione)"
     },
     {
       "id": "prod_xjznceqh",
@@ -4687,7 +4700,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch modulari con feature set NX-OS completo, 10/40/100 GbE ad alta densita'; per deployment enterprise/service provider mission-critical",
-      "fonteId": "src_xkqlvqdr"
+      "fonteId": "src_xkqlvqdr",
+      "sku": "N7K-C7009, N77-C7710 (esempi telaio modulare)"
     },
     {
       "id": "prod_xwtbinjc",
@@ -4698,7 +4712,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fino a 1.92 Tbps in form factor compatto, stesse funzionalita' operative delle altre Nexus 7000; gestione SNMP/XML API/Cisco DCNM",
-      "fonteId": "src_xfqu50jl"
+      "fonteId": "src_xfqu50jl",
+      "sku": "N7K-C7004"
     },
     {
       "id": "prod_x7qc6db4",
@@ -4709,7 +4724,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch fissi ad alte prestazioni; tabella di confronto ufficiale disponibile",
-      "fonteId": "src_xvlbsl58"
+      "fonteId": "src_xvlbsl58",
+      "sku": "N3K-C3172PQ-10GE (esempio storico), serie aggiornata su cisco.com"
     },
     {
       "id": "prod_xq0ifgzj",
@@ -4731,7 +4747,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch fissi stackable per reti di accesso enterprise di filiali snelle e campus; opzione di cloud monitoring",
-      "fonteId": "src_xewtxlu0"
+      "fonteId": "src_xewtxlu0",
+      "sku": "C9200-24T/P, C9200L-24T/P (varianti fisse/modulari)"
     },
     {
       "id": "prod_xvn240hr",
@@ -4742,7 +4759,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch fissi per reti core campus enterprise di medie/grandi dimensioni, con automazione, analytics e scala aggiuntivi",
-      "fonteId": "src_xe38nixk"
+      "fonteId": "src_xe38nixk",
+      "sku": "C9400 (chassis modulare, supervisori C9400-SUP-1/1XL)"
     },
     {
       "id": "prod_x5yhuzjy",
@@ -4753,7 +4771,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch modulari fixed-core leader Cisco per enterprise, progettati per sicurezza, IoT e cloud",
-      "fonteId": "src_xnqzhdis"
+      "fonteId": "src_xnqzhdis",
+      "sku": "C9500-24Y4C, C9500-48Y4C (esempio, fisso alta densita' 10/25G)"
     },
     {
       "id": "prod_xnymds2a",
@@ -4764,7 +4783,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch fissi/stackable rack-mount ad alte prestazioni; portano funzionalita' enterprise-grade fino all'edge industriale",
-      "fonteId": "src_xn84e907"
+      "fonteId": "src_xn84e907",
+      "sku": "C9606R (chassis 6 slot, esempio)"
     },
     {
       "id": "prod_x9qn2vty",
@@ -4775,7 +4795,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante irrobustita della gamma 9300 per ambienti industriali",
-      "fonteId": "src_xu51od8f"
+      "fonteId": "src_xu51od8f",
+      "sku": "IE-9300-24T (esempio, variante industriale hardened)"
     },
     {
       "id": "prod_xahzrz4x",
