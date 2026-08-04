@@ -1783,7 +1783,8 @@
       "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistemi di videoconferenza per sale da huddle a grandi sale riunioni, con speaker-tracking e integrazione Webex.",
-      "fonteId": "src_cisco_webex_roomkit_ds"
+      "fonteId": "src_cisco_webex_roomkit_ds",
+      "sku": "Room Kit, Room Kit Plus, Room Kit Mini (registrabili on-premise o cloud Webex)"
     },
     {
       "id": "prod_avigilon_unity_video_sw",
@@ -2308,7 +2309,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Telecamere IP con storage a bordo, video analytics integrata (MV Sense) e gestione centralizzata via Meraki Dashboard, senza necessita' di NVR dedicato.",
-      "fonteId": "src_meraki_licensing_faq"
+      "fonteId": "src_meraki_licensing_faq",
+      "sku": "MV12, MV22, MV32, MV72 (seconda generazione, analitica AI on-board)"
     },
     {
       "id": "prod_avigilon_unity_access_appliance",
