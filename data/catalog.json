@@ -1295,7 +1295,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione centralizzata multi-dispositivo del Security Fabric: configurazione, revisioni, automazione e integrazione ITSM.",
-      "fonteId": "src_fortimanager_ds"
+      "fonteId": "src_fortimanager_ds",
+      "sku": "FMG-VM (perpetuo) o FMG-VM Subscription (a canone, con FortiCare inclusa); modelli hardware dedicati per data center anche disponibili"
     },
     {
       "id": "prod_forticlient_ems",
@@ -1306,7 +1307,8 @@
       "deployment": "on-premise / cloud (FortiClient Cloud)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Server di gestione centralizzata degli endpoint FortiClient: deployment, policy, telemetria e web filtering Chromebook. FortiClient Cloud e' un'istanza EMS ospitata da Fortinet, gestibile fino a 250.000 endpoint.",
-      "fonteId": "src_forticlient_og"
+      "fonteId": "src_forticlient_og",
+      "sku": "Licenza corrente per utente: EMS05-553 (pacchetti 25/500/2000/10000); legacy per dispositivo: EMS01/EMS03 (non piu' acquistabili come nuove, solo rinnovo)"
     },
     {
       "id": "prod_fortisase_service",
@@ -2509,17 +2511,6 @@
       "fonteId": "src_milestone_xprotect_access"
     },
     {
-      "id": "prod_xg4h6tvb",
-      "familyId": "fam_fortigate",
-      "nomeCommerciale": "FortiGate Next-Generation Firewall (NGFW)",
-      "modello": "FortiGate Next-Generation Firewall (NGFW)",
-      "tipologia": "hardware/software",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Firewall di nuova generazione per protezione ad alte prestazioni",
-      "fonteId": "src_xgaopk9x"
-    },
-    {
       "id": "prod_x3yfefe6",
       "familyId": "fam_fortigate",
       "nomeCommerciale": "FortiGate VM",
@@ -2585,28 +2576,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante FortiOS per operatori di telecomunicazioni",
       "fonteId": "src_xqer7ak4"
-    },
-    {
-      "id": "prod_xskgtevv",
-      "familyId": "fam_fortiswitch",
-      "nomeCommerciale": "FortiSwitch (Ethernet Switching)",
-      "modello": "FortiSwitch (Ethernet Switching)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Switch Ethernet sicuri integrati nella Security Fabric",
-      "fonteId": "src_xk11cqho"
-    },
-    {
-      "id": "prod_xbjljxed",
-      "familyId": "fam_fortiap",
-      "nomeCommerciale": "FortiAP (Wireless LAN)",
-      "modello": "FortiAP (Wireless LAN)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Access point wireless sicuri gestiti centralmente",
-      "fonteId": "src_xvb4itmm"
     },
     {
       "id": "prod_xz7dvve0",
@@ -2708,17 +2677,6 @@
       "fonteId": "src_x5tbwpjb"
     },
     {
-      "id": "prod_xe8ifqyb",
-      "familyId": "fam_forticlient",
-      "nomeCommerciale": "FortiClient (VPN/ZTNA Agent)",
-      "modello": "FortiClient (VPN/ZTNA Agent)",
-      "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Agent endpoint per VPN, ZTNA e Fabric Agent",
-      "fonteId": "src_x6278pm7"
-    },
-    {
       "id": "prod_xs78urwo",
       "familyId": "fam_xhypajme",
       "nomeCommerciale": "FortiMonitor (DEM)",
@@ -2785,17 +2743,6 @@
       "fonteId": "src_xtkcn5nk"
     },
     {
-      "id": "prod_x49e5g30",
-      "familyId": "fam_fortiweb",
-      "nomeCommerciale": "FortiWeb (Web Application Firewall)",
-      "modello": "FortiWeb (Web Application Firewall)",
-      "tipologia": "hardware/software/SaaS",
-      "deployment": "cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "WAF per applicazioni e API",
-      "fonteId": "src_xu908py4"
-    },
-    {
       "id": "prod_x7l36w67",
       "familyId": "fam_fortiweb",
       "nomeCommerciale": "FortiADC (Application Delivery Controller)",
@@ -2859,18 +2806,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Logging, reporting e analisi centralizzati",
-      "fonteId": "src_x0r2nxt4"
-    },
-    {
-      "id": "prod_xfz9qo0o",
-      "familyId": "fam_fortimanager",
-      "nomeCommerciale": "FortiManager (Central Management)",
-      "modello": "FortiManager (Central Management)",
-      "tipologia": "hardware/virtual",
-      "deployment": "virtual appliance / cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gestione centralizzata di FortiGate e FortiAP",
-      "fonteId": "src_xouzjz7h"
+      "fonteId": "src_x0r2nxt4",
+      "sku": "Hardware: FAZ-150G, FAZ-300G, FAZ-810G, FAZ-1000G, FAZ-3100G, FAZ-3510G, FAZ-3700G, FAZ-BD-4500G. VM (stackable per GB/giorno di log): FAZ-VM-GB1, FAZ-VM-GB5, FAZ-VM-GB25, FAZ-VM-GB100, FAZ-VM-GB500, FAZ-VM-GB2000"
     },
     {
       "id": "prod_xrxdx4cx",
@@ -2915,39 +2852,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Tecnologia di deception per rilevare attacchi avanzati",
       "fonteId": "src_x67iq900"
-    },
-    {
-      "id": "prod_x77jlt8p",
-      "familyId": "fam_fortisandbox",
-      "nomeCommerciale": "FortiSandbox",
-      "modello": "FortiSandbox",
-      "tipologia": "hardware/virtual/cloud",
-      "deployment": "cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sandboxing AI-powered per minacce zero-day",
-      "fonteId": "src_xue4l70h"
-    },
-    {
-      "id": "prod_x9irgqgx",
-      "familyId": "fam_fortimail",
-      "nomeCommerciale": "FortiMail (Email Security)",
-      "modello": "FortiMail (Email Security)",
-      "tipologia": "hardware/virtual/cloud",
-      "deployment": "cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gateway di sicurezza email",
-      "fonteId": "src_xucq0nm5"
-    },
-    {
-      "id": "prod_xqx3cdvc",
-      "familyId": "fam_fortiauthenticator",
-      "nomeCommerciale": "FortiAuthenticator",
-      "modello": "FortiAuthenticator",
-      "tipologia": "hardware/virtual",
-      "deployment": "virtual appliance / cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gestione identita', SSO, MFA on-prem",
-      "fonteId": "src_x6qrrx6b"
     },
     {
       "id": "prod_xdezbkz7",
