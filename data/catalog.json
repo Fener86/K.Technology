@@ -1749,7 +1749,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Web Application Firewall per la protezione di app web e API da attacchi OWASP Top 10 e bot malevoli.",
-      "fonteId": "src_fortiweb_docs"
+      "fonteId": "src_fortiweb_docs",
+      "sku": "FortiWeb 100F, 400F, 600F, 1000F, 2000F, 3000F, 4000F, FWB-VM (virtual appliance)"
     },
     {
       "id": "prod_fortinac_appliance",
@@ -1771,7 +1772,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Server di identita' e MFA: SSO, gestione certificati PKI, captive portal, integrazione FortiToken.",
-      "fonteId": "src_fortiauthenticator_og"
+      "fonteId": "src_fortiauthenticator_og",
+      "sku": "FAC-300F/G, FAC-800F/G, FAC-3000E, FAC-3000F/G, FAC-VM (virtual, licenza base 100 utenti + upgrade stackable)"
     },
     {
       "id": "prod_fortisandbox_appliance",
@@ -1782,7 +1784,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sandboxing per l'identificazione di minacce avanzate/zero-day tramite analisi dinamica dei file.",
-      "fonteId": "src_fortisandbox_og"
+      "fonteId": "src_fortisandbox_og",
+      "sku": "FortiSandbox 3000E (esempio hardware enterprise); FSA-VM (virtual appliance)"
     },
     {
       "id": "prod_cisco_spaces_platform",
@@ -1881,7 +1884,8 @@
       "deployment": "on-premise / virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gateway di sicurezza email con antivirus, antispam, protezione da impersonificazione e integrazione Security Fabric.",
-      "fonteId": "src_fortimail_ds"
+      "fonteId": "src_fortimail_ds",
+      "sku": "FortiMail 200F, 400F, 900F, 2000E, 3000E, 3200E, FML-VM (virtual appliance)"
     },
     {
       "id": "prod_milestone_husky_mseries",
