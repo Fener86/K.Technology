@@ -4622,7 +4622,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall di fascia entry facile da gestire, rileva piu' minacce a costo inferiore",
-      "fonteId": "src_xswn6nq4"
+      "fonteId": "src_xswn6nq4",
+      "sku": "FPR-1010, FPR-1120, FPR-1140, FPR-1150"
     },
     {
       "id": "prod_xhr7zrz7",
@@ -4633,7 +4634,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall all-in-one compatto che consolida sicurezza avanzata e networking per filiali enterprise",
-      "fonteId": "src_x93c09y2"
+      "fonteId": "src_x93c09y2",
+      "sku": "Serie successiva alla 1000, dettaglio modelli su datasheet Cisco ufficiale (secure-firewall-1200-series-ds.html)"
     },
     {
       "id": "prod_xmzyspn6",
