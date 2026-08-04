@@ -2795,7 +2795,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "SIEM con correlazione eventi e gestione del rischio",
-      "fonteId": "src_xypeapy8"
+      "fonteId": "src_xypeapy8",
+      "sku": "Hardware: FSM-2000F/G, FSM-2200G, FSM-3500G, FSM-3600G. VM perpetuo: FSM-AIO-BASE (o FSM-AIO-3600-BASE per hardware); licenze aggiuntive per device/endpoint/agent scalabili (es. FSM-AIO-100-UG)"
     },
     {
       "id": "prod_xaqvn5i1",
@@ -2818,7 +2819,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Orchestrazione e automazione per SOC",
-      "fonteId": "src_xht6f2rx"
+      "fonteId": "src_xht6f2rx",
+      "sku": "Esempio licenze: LIC-FSRMTT-2, LIC-FSRMTD-1, LIC-FSRMTR-2 (playbook/automazione, quantita' variabile)"
     },
     {
       "id": "prod_xlaoi2wp",
