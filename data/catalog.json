@@ -4566,47 +4566,51 @@
     },
     {
       "id": "prod_xtq4buqf",
-      "familyId": "fam_barco_encore_eventmaster",
+      "familyId": "fam_barco_projection",
       "nomeCommerciale": "UDX-4K22",
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "4K UHD, 20.000 lumen, Constant Light Output, sorgente laser a fosforo",
-      "fonteId": "src_xczyyos6"
+      "descrizioneBreve": "20.000 lumen, 4K UHD, DLP laser fosforo 3-chip, proiettore da grande formato",
+      "fonteId": "src_barco_udx_frame",
+      "sku": "UDX-4K22 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
     {
       "id": "prod_xxa5sktf",
-      "familyId": "fam_barco_encore_eventmaster",
+      "familyId": "fam_barco_projection",
       "nomeCommerciale": "UDX-4K32",
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "4K UHD, 31.000 lumen, Constant Light Output",
-      "fonteId": "src_xgqhhao6"
+      "descrizioneBreve": "Variante a maggiore luminosita' della serie UDX-4K, DLP laser fosforo 3-chip",
+      "fonteId": "src_barco_udx_frame",
+      "sku": "UDX-4K32 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
     {
       "id": "prod_xx6blmlt",
-      "familyId": "fam_barco_encore_eventmaster",
+      "familyId": "fam_barco_projection",
       "nomeCommerciale": "UDX-W22",
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "WUXGA, 21.000/26.000 lumen a seconda della fonte, raffreddamento integrato compatto",
-      "fonteId": "src_xuvjdpss"
+      "descrizioneBreve": "21.000 lumen, WUXGA, DLP laser fosforo 3-chip, proiettore da grande formato",
+      "fonteId": "src_barco_udx_frame",
+      "sku": "UDX-W22 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
     {
       "id": "prod_xjv3kqtt",
-      "familyId": "fam_barco_encore_eventmaster",
+      "familyId": "fam_barco_projection",
       "nomeCommerciale": "UDX-W32",
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "WUXGA, 32.000 lumen, Constant Light Output",
-      "fonteId": "src_xvs3jvah"
+      "descrizioneBreve": "Variante a maggiore luminosita' della serie UDX-W, DLP laser fosforo 3-chip",
+      "fonteId": "src_barco_udx_frame",
+      "sku": "UDX-W32 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
     {
       "id": "prod_xmy5adqx",
@@ -14377,6 +14381,16 @@
       "vendorId": "v_axis",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-03",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_udx_frame",
+      "url": "https://www.barco.com/en/product/udx-frame",
+      "titolo": "UDX Frame - elenco modelli serie UDX (pagina ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     }
