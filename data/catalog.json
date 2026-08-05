@@ -1773,7 +1773,8 @@
       "deployment": "cloud + agenti on-premise/endpoint",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Monitoraggio di rete, internet e applicazioni con test sintetici da agenti cloud, on-premise o installati sugli endpoint utente.",
-      "fonteId": "src_cisco_te_ordering"
+      "fonteId": "src_cisco_te_ordering",
+      "sku": "TE-UNITS (Units a consumo), TE-USERS / TE-USERS-ES (Endpoint Agent); incluso gratuitamente su Catalyst 9300/9400 con DNA Advantage 3/5/7 anni"
     },
     {
       "id": "prod_cisco_webex_roomkit",
