@@ -1439,7 +1439,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "MFA e verifica dell'identita' per applicazioni aziendali, con directory, SSO e valutazione del rischio del dispositivo.",
-      "fonteId": "src_duo_editions"
+      "fonteId": "src_duo_editions",
+      "sku": "SKU subscription base: DUO-SUB (commerciale) o DUO-FED-SUB (federale USA); prezzo determinato dinamicamente in base a quantita' e PID prodotto scelto (Essentials/Advantage/Premier)"
     },
     {
       "id": "prod_meraki_mx_appliance",
