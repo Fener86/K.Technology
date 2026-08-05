@@ -2125,17 +2125,6 @@
       "fonteId": "src_barco_clickshare_hub_pr"
     },
     {
-      "id": "prod_barco_clickshare_cx50",
-      "familyId": "fam_barco_clickshare_present",
-      "nomeCommerciale": "ClickShare CX-50",
-      "modello": "CX-50",
-      "tipologia": "hardware",
-      "deployment": "on-premise (boardroom/sale grandi)",
-      "statoLifecycle": "nuovo",
-      "descrizioneBreve": "Hub di conferenza wireless premium per boardroom ibride, output 4K e setup dual-screen, certificato per Microsoft Teams Rooms/Zoom Rooms e altre piattaforme UC principali.",
-      "fonteId": "src_barco_press_releases"
-    },
-    {
       "id": "prod_crestron_collab_compute",
       "familyId": "fam_crestron_flex",
       "nomeCommerciale": "Crestron Collab Compute",
@@ -3622,17 +3611,6 @@
       "fonteId": "src_barco_xms_cloud"
     },
     {
-      "id": "prod_xt76o45x",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "ClickShare (portfolio Present/Conference)",
-      "modello": "ClickShare (portfolio Present/Conference)",
-      "tipologia": "hardware/software",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistema di presentazione e conferencing wireless per sale riunioni",
-      "fonteId": "src_barco_clickshare_present"
-    },
-    {
       "id": "prod_x6blodx7",
       "familyId": "fam_barco_clickshare",
       "nomeCommerciale": "ClickShare CX-30",
@@ -3708,17 +3686,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Suite software di gestione control room (parte del sistema TransForm N), architettura di rete modulare per video wall, licenza a feature con connessioni concorrenti (SKU 1-16/32/64/128 CON).",
       "fonteId": "src_barco_transformn_cms"
-    },
-    {
-      "id": "prod_xtv4pi59",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "SmartCare per ClickShare",
-      "modello": "SmartCare per ClickShare",
-      "tipologia": "supporto/garanzia",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Servizio di estensione garanzia gratuito 5 anni per ClickShare registrati",
-      "fonteId": "src_barco_clickshare_present"
     },
     {
       "id": "prod_xl1958si",
@@ -4618,17 +4585,6 @@
       "fonteId": "src_xv706yj6"
     },
     {
-      "id": "prod_xawlyklz",
-      "familyId": "fam_barco_encore_eventmaster",
-      "nomeCommerciale": "Funzionalita' S3D",
-      "modello": "licenza",
-      "tipologia": "licenza",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "La funzionalita' S3D dell'Event Master dipende da una licenza dedicata e da un processo di vendita a sistema specifico.",
-      "fonteId": "src_xgo4k996"
-    },
-    {
       "id": "prod_xtq4buqf",
       "familyId": "fam_barco_encore_eventmaster",
       "nomeCommerciale": "UDX-4K22",
@@ -5201,72 +5157,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello a subscription (SaaS): riduce le spese in conto capitale (CapEx) a favore di OpEx, permettendo di pagare solo per cio' che si utilizza; gestione 100% remota multi-sito.",
       "fonteId": "src_xc25u1k0"
-    },
-    {
-      "id": "prod_xa663ks1",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "Garanzia standard ClickShare",
-      "modello": "garanzia",
-      "tipologia": "garanzia",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "1 anno di garanzia standard su ogni unita' ClickShare, punto di partenza prima dell'eventuale attivazione di SmartCare.",
-      "fonteId": "src_xvh3r3d8"
-    },
-    {
-      "id": "prod_xkdc6rdx",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "Finestra di attivazione SmartCare",
-      "modello": "regola",
-      "tipologia": "regola",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Deve essere attivato registrando il dispositivo su XMS Cloud entro la garanzia standard di 1 anno (nota: una pagina KB specifica per CX-30 indica una finestra di 6 mesi dal setup iniziale — verificare il termine esatto per modello).",
-      "fonteId": "src_xut4thx8"
-    },
-    {
-      "id": "prod_xwiyhg2c",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "SmartCare non attivato",
-      "modello": "regola",
-      "tipologia": "regola",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Se SmartCare non viene attivato in tempo, si applica solo la garanzia standard di 1 anno (nessuna estensione automatica a 5 anni).",
-      "fonteId": "src_xut4thx8"
-    },
-    {
-      "id": "prod_x3rbbiwj",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "Verifica stato garanzia/SmartCare",
-      "modello": "strumento self-service",
-      "tipologia": "strumento self-service",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Portale ufficiale per inserire il numero seriale e verificare data fine garanzia standard e data fine contratto SmartCare (dati aggiornati con 1 giorno di ritardo).",
-      "fonteId": "src_x9hbqcng"
-    },
-    {
-      "id": "prod_x3ofqx1e",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "ClickShare Extended Warranty (prodotto precedente)",
-      "modello": "garanzia (sostituito)",
-      "tipologia": "garanzia (sostituito)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Prodotto di garanzia estesa precedente, ora sostituito da SmartCare/EssentialCare per ClickShare; non piu' disponibile per nuovi acquisti.",
-      "fonteId": "src_x7o4qh4c"
-    },
-    {
-      "id": "prod_xn4wmr0z",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "EssentialCare per ClickShare",
-      "modello": "supporto (subscription)",
-      "tipologia": "supporto (subscription)",
-      "deployment": "non applicabile (licenza, non un deployment fisico)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Servizio di supporto alternativo/complementare a SmartCare, disponibile in abbonamento; elencato tra i prodotti di supporto ClickShare correnti.",
-      "fonteId": "src_x3w8653g"
     },
     {
       "id": "prod_xr0z6hol",
@@ -8244,6 +8134,48 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "perdita del servizio di monitoraggio/scheduling cloud",
       "fonteId": "src_crestron_fusion_c3_sku"
+    },
+    {
+      "id": "lic_xffsd764",
+      "familyId": "fam_barco_clickshare",
+      "productIds": [
+        "prod_barco_clickshare_conf",
+        "prod_x6blodx7",
+        "prod_xi1eftbr",
+        "prod_xv7yb7sv",
+        "prod_xjyprht9",
+        "prod_xtshixtj",
+        "prod_x2vfwox4"
+      ],
+      "nomeUfficiale": "Barco SmartCare (garanzia estesa 5 anni, gratuita)",
+      "tipologia": "perpetua",
+      "metrica": "per unita' ClickShare registrata",
+      "durata": "5 anni dalla data di registrazione",
+      "rinnovo": "non applicabile; richiede attivazione entro la garanzia standard di 1 anno registrando il dispositivo su XMS Cloud",
+      "gracePeriod": "finestra di attivazione = garanzia standard di 1 anno (verificare caso per caso, es. CX-30 potrebbe avere regola diversa)",
+      "conseguenzeScadenza": "se non attivata in tempo, resta valida solo la garanzia standard di 1 anno (nessuna estensione automatica)",
+      "fonteId": null
+    },
+    {
+      "id": "lic_xs9g8gc8",
+      "familyId": "fam_barco_clickshare",
+      "productIds": [
+        "prod_barco_clickshare_conf",
+        "prod_x6blodx7",
+        "prod_xi1eftbr",
+        "prod_xv7yb7sv",
+        "prod_xjyprht9",
+        "prod_xtshixtj",
+        "prod_x2vfwox4"
+      ],
+      "nomeUfficiale": "Barco EssentialCare per ClickShare (supporto in abbonamento)",
+      "tipologia": "subscription",
+      "metrica": "per unita' ClickShare",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "rinnovo": "DA VERIFICARE CON IL VENDOR",
+      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
+      "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
+      "fonteId": null
     }
   ],
   "licenseFeatures": [
