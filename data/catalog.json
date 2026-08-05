@@ -1729,7 +1729,8 @@
       "deployment": "on-premise (sala riunioni) + gestione cloud opzionale (XMS)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Presentazione wireless per sale medie/grandi, fino a 2 condivisioni simultanee, touch-back e annotazione.",
-      "fonteId": "src_barco_clickshare_present"
+      "fonteId": "src_barco_clickshare_present",
+      "sku": "Parte della gamma C-5/C-10/CX-20/CX-30/CX-50; codice specifico da verificare su listino Barco regionale"
     },
     {
       "id": "prod_cisco_umbrella_service",
@@ -3619,7 +3620,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "ClickShare per sale riunioni di medie dimensioni",
-      "fonteId": "src_x0tbz1u9"
+      "fonteId": "src_x0tbz1u9",
+      "sku": "R9861513US (esempio Gen 2, verificare codice regionale specifico presso Barco)"
     },
     {
       "id": "prod_xi1eftbr",
@@ -3631,28 +3633,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "ClickShare per sale ad alto impatto e board room",
       "fonteId": "src_xqitcb9u"
-    },
-    {
-      "id": "prod_xv7yb7sv",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "ClickShare Bar Core",
-      "modello": "ClickShare Bar Core",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Video bar all-in-one per huddle space e sale piccole",
-      "fonteId": "src_xm54ggik"
-    },
-    {
-      "id": "prod_xjyprht9",
-      "familyId": "fam_barco_clickshare",
-      "nomeCommerciale": "Barco CTRL",
-      "modello": "Barco CTRL",
-      "tipologia": "software/hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Piattaforma software scalabile per control room, video wall e postazioni operatore",
-      "fonteId": "src_barco_ctrl"
     },
     {
       "id": "prod_xtshixtj",
