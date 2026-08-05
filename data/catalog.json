@@ -2123,7 +2123,8 @@
       "deployment": "on-premise (sala riunioni) + gestione cloud XMS",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Room system Barco abbinato a soundbar di terze parti, certificato Microsoft Teams Rooms, con opzione Wireless BYOD per Zoom/Webex/Google Meet.",
-      "fonteId": "src_barco_clickshare_hub_pr"
+      "fonteId": "src_barco_clickshare_hub_pr",
+      "sku": "R9461810US (esempio Hub Pro con Control Panel, verificare codice regionale specifico presso Barco)"
     },
     {
       "id": "prod_crestron_collab_compute",
