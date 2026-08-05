@@ -2502,7 +2502,8 @@
       "deployment": "on-premise (eventi/rental)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switcher di elaborazione immagini della serie Event Master, configurazione stock o Build-To-Order, ampiamente diffusi nel mercato del noleggio eventi.",
-      "fonteId": "src_barco_event_master"
+      "fonteId": "src_barco_event_master",
+      "sku": "E2, E2 Jr, E2 Tri-combo, S3-4K, S3-4K Jr, EX, EX Tri-combo (configurazioni stock)"
     },
     {
       "id": "prod_crestron_tss_panels",
@@ -4529,7 +4530,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema di elaborazione immagine live scalabile e modulare per eventi, alta densita' I/O",
-      "fonteId": "src_xonn9zm5"
+      "fonteId": "src_xonn9zm5",
+      "sku": "E2 Gen 2 (nuova generazione, configurazione stock)"
     },
     {
       "id": "prod_xaee1hmj",
@@ -4551,7 +4553,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Stesse funzionalita' e qualita' di E2 ma con capacita' totale inferiore; anch'esso disponibile Build To Order",
-      "fonteId": "src_xokk4ucl"
+      "fonteId": "src_xokk4ucl",
+      "sku": "S3-4K BTO (Build To Order)"
     },
     {
       "id": "prod_xjv5bm6j",
@@ -4562,7 +4565,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switcher compatto roadworthy con schede Gen2, 14 input/14 output, supporto SDI fino a 12G",
-      "fonteId": "src_xv706yj6"
+      "fonteId": "src_xv706yj6",
+      "sku": "S3 Tri-combo Gen 2 (solo schede I/O Gen 2); espandibile fino a 8 chassis o collegabile a 1x E2/4x EX"
     },
     {
       "id": "prod_xtq4buqf",
@@ -14390,6 +14394,16 @@
       "titolo": "UDX Frame - elenco modelli serie UDX (pagina ufficiale)",
       "vendorId": "v_barco",
       "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_event_master_devices_guide",
+      "url": "https://www.barco.com/en/support/docs/r5905948",
+      "titolo": "Event Master Devices User Guide (elenco modelli completo, documentazione ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "documentazione ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
