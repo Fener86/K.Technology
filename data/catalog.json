@@ -3254,7 +3254,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Access point Wi-Fi 6/6E/7, gestibili on-prem o cloud (Meraki)",
-      "fonteId": "src_xmvytinl"
+      "fonteId": "src_cisco_cat9100_series_page",
+      "sku": "Indoor Wi-Fi 6: 9105AX, 9115AX, 9117AX (EOL), 9120AX, 9130AX. Wi-Fi 6E: 9136, 9162, 9164, 9166. Wi-Fi 7: 9171, 9172, 9174, 9176, 9178, 9179. Outdoor: 9124AX, 9163, 9177. Feature set organizzato in package Essentials/Advantage (dettaglio su Cisco DNA Software datasheet)."
     },
     {
       "id": "prod_xwrk9buq",
@@ -14603,6 +14604,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_cat9100_series_page",
+      "url": "https://www.cisco.com/c/en/us/support/wireless/catalyst-9100ax-access-points/series.html",
+      "titolo": "Cisco Catalyst 9100 Access Points - elenco modelli completo (Wi-Fi 6/6E/7)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
