@@ -4879,7 +4879,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Citata come alternativa cloud-managed nella pagina Campus LAN Core and Distribution, per semplificare gestione e ridurre complessita'",
-      "fonteId": "src_xvzl65jz"
+      "fonteId": "src_meraki_catcenter_overview",
+      "sku": "Switch di distribuzione (categoria 'Distribution' in Catalyst Center, insieme ai Catalyst C9500 cloud-gestiti). Licensing hardware-agnostic con SKU che coprono piu' componenti hardware in un'unica licenza (vedi documentazione MS Licensing ufficiale)."
     },
     {
       "id": "prod_xgq9wftw",
@@ -14581,6 +14582,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_catcenter_overview",
+      "url": "https://documentation.meraki.com/Platform_Management/Product_Information/Overviews_and_Datasheets/Meraki_and_Catalyst_Center_Global_Overview",
+      "titolo": "Meraki and Catalyst Center Global Overview (classificazione switch, giugno 2026)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale Meraki",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
