@@ -2062,7 +2062,8 @@
       "deployment": "on-premise / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma di gestione e automazione per reti Catalyst, con AI Assistant conversazionale per troubleshooting e analisi delle cause radice.",
-      "fonteId": "src_cisco_catcenter_ai_assistant"
+      "fonteId": "src_cisco_catcenter_gen3_og",
+      "sku": "ATTUALI (Gen 3): DN3-HW-APL (32-core), DN3-HW-APL-L (56-core), DN3-HW-APL-XL (80-core). SOSTITUITI (Gen 2, End-of-Sale confermato): DN2-HW-APL (44-core) -> sostituito da DN3-HW-APL; DN2-HW-APL-L (56-core) -> DN3-HW-APL-L; DN2-HW-APL-XL (112-core) -> DN3-HW-APL-XL. Disponibile anche come virtual appliance su AWS o VMware ESXi."
     },
     {
       "id": "prod_qsys_roomsuite_bar",
@@ -14402,6 +14403,26 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato (novita' recenti)",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_catcenter_gen3_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/dna-center/catalyst-formerly-gen-app-og.html",
+      "titolo": "Cisco Catalyst Center (Gen 3) Appliance Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_dnacenter_gen2_eol",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/dna-center/dna-center-gen-appliance-eol.pdf",
+      "titolo": "Cisco DNA Center Second Generation Appliance - End-of-Sale/End-of-Life",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoS/EoL ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "confermato: Gen 2 (DN2) in End-of-Sale, sostituita da Gen 3 (DN3)",
+      "categoriaControllo": "eol"
     }
   ],
   "changelog": []
