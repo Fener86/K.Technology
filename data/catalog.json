@@ -2491,7 +2491,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gateway che converte segnale cellulare LTE/5G in Ethernet, usabile come uplink primario o di backup con qualsiasi router/switch, Meraki o non-Meraki.",
-      "fonteId": "src_meraki_mg_enterprise"
+      "fonteId": "src_meraki_mg_family_ds",
+      "sku": "ATTUALI: MG21/MG21E, MG41/MG41E, MG52/MG52E. SOSTITUITO: MG51/MG51E e' End-of-Sale, sostituito da MG52 (fine supporto 30/05/2030 per le unita' gia' installate). Ogni subscription MG disponibile da 1 a 10 anni."
     },
     {
       "id": "prod_barco_encore3_platform",
@@ -14445,6 +14446,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_mg_family_ds",
+      "url": "https://meraki.cisco.com/product-collateral/mg-cellular-gateways/?file=",
+      "titolo": "MG Cellular Gateways Family Datasheet (ufficiale Meraki)",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "eol"
     }
   ],
   "changelog": []
