@@ -3138,7 +3138,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Endpoint detection and response Cisco",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_secure_endpoint_licensing",
+      "sku": "E3-SEC-EP-ESS, E3-SEC-EP-ADV, E3-SEC-EP-PREM (esempio SKU per licenza Essentials/Advantage/Premier, term license)"
     },
     {
       "id": "prod_xqw00wvx",
@@ -14500,6 +14501,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_secure_endpoint_licensing",
+      "url": "https://www.cisco.com/site/us/en/products/security/endpoint-security/secure-endpoint/licensing.html",
+      "titolo": "Cisco Secure Endpoint Licenses (Essentials/Advantage/Premier)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
