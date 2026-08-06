@@ -2604,7 +2604,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "Sensori Bluetooth Low Energy per monitoraggio ambientale (temperatura, acqua, qualita' aria, porte, alimentazione), collegati a gateway Meraki compatibili. In End-of-Sale, ultimo ordine 10/11/2026.",
-      "fonteId": "src_meraki_mt_datasheet"
+      "fonteId": "src_meraki_mt_datasheet",
+      "sku": "MT10 (temperatura/umidita'), MT11 (sonda temperatura), MT12 (rilevamento acqua), MT14/MT15 (qualita' aria, MT15 con CO2), MT20 (apertura/chiusura), MT30 (pulsante automazione), MT40 (controllo alimentazione smart). Richiedono un gateway MR (firmware 27.5.1+) o MV (firmware 4.8+) per la connettivita' Bluetooth Low Energy. ATTENZIONE: intera famiglia in End-of-Sale (vedi famiglia collegata per dettagli)."
     },
     {
       "id": "prod_milestone_xprotect_access_module",
