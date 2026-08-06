@@ -3095,7 +3095,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Extended detection & response che unifica telemetria multi-vettore",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_xdr_ds",
+      "sku": "3 livelli: XDR Essentials (feature complete, poche eccezioni), XDR Advantage (+ integrazioni curate con tool terzi selezionati), XDR Premier (Advantage + servizio gestito da esperti Cisco + penetration testing + Talos Incident Response). Retention dati: 90 giorni incluso di default, estendibile a 180/365gg; ingestion 2GB/utente/mese per livello."
     },
     {
       "id": "prod_xilgu0ti",
@@ -14592,6 +14593,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_xdr_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/xdr/xdr-ds.html",
+      "titolo": "Cisco XDR Data Sheet (licensing Essentials/Advantage/Premier)",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
