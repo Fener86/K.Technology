@@ -3298,7 +3298,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fabric SDN per data center e multi-cloud, gestita da Nexus Dashboard",
-      "fonteId": "src_xdh0l9fw"
+      "fonteId": "src_cisco_aci_ordering",
+      "sku": "Nessun hardware dedicato: ACI usa lo stesso Nexus 9000 (spine/leaf, gia' catalogato) + controller APIC. Licenza software specifica per abilitare modalita' ACI: PID top-level C1-N9K-ADD-T, con licenze DCN (ACI+NX-OS) categorizzate per capacita' di banda della piattaforma."
     },
     {
       "id": "prod_xs6pi3tz",
@@ -14570,6 +14571,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_aci_ordering",
+      "url": "https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/guide-c07-736255.html",
+      "titolo": "Cisco Application Centric Infrastructure (ACI) Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
