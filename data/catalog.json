@@ -3312,7 +3312,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portale per attivare e gestire tutte le licenze Smart Cisco",
-      "fonteId": "src_xsvs0q8k"
+      "fonteId": "src_cisco_cssm_page",
+      "sku": "Portale software.cisco.com, gratuito: nessuno SKU proprio, e' l'infrastruttura di gestione per tutte le licenze Cisco Smart Licensing"
     },
     {
       "id": "prod_xja9p5nz",
@@ -4786,7 +4787,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma unificata per configurare, gestire e analizzare fabric data center/cloud moderne basate su Nexus 9000; include Fabric Controller, Insights, Orchestrator",
-      "fonteId": "src_x4u0vc16"
+      "fonteId": "src_cisco_nd_licensing",
+      "sku": "Nessun hardware/SKU dedicato: gira su cluster di nodi Nexus Dashboard (fisici o virtuali), licenziato tramite CSSM con licenze specifiche per servizio (es. N9K Day2 Operations Suite fixed/modular)"
     },
     {
       "id": "prod_xe5osjz7",
@@ -14614,6 +14616,26 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_cisco_cssm_page",
+      "url": "https://www.cisco.com/c/en/us/support/cloud-systems-management/smart-software-manager-satellite/series.html",
+      "titolo": "Cisco Smart Software Manager - documentazione ufficiale",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_nd_licensing",
+      "url": "https://www.cisco.com/c/en/us/td/docs/dcn/nd/4x/articles-411/configuring-licensing.html",
+      "titolo": "Cisco Nexus Dashboard - Configuring Licensing",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
