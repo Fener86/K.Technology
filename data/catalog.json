@@ -1895,7 +1895,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Analisi comportamentale e location intelligence per spazi fisici (visitatori, asset, occupancy) tramite infrastruttura wireless/di rete Cisco esistente.",
-      "fonteId": "src_cisco_spaces_ds"
+      "fonteId": "src_spaces_meraki_integration",
+      "sku": "Nessuno SKU hardware: licenze bundlate automaticamente con Meraki MR — 'Spaces Extend' incluso con licenza MR Enterprise, 'Spaces Smart Venues' incluso con MR Advanced/Upgrade, applicato retroattivamente ai clienti Meraki MR esistenti"
     },
     {
       "id": "prod_karray_anakonda",
@@ -2018,7 +2019,8 @@
       "deployment": "on-premise, gestione cloud Meraki Dashboard",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova serie Meraki Wi-Fi 7 (banda 6GHz, canali fino a 320MHz, Multi-Link Operation, 4K-QAM), con percorso di migrazione dal cloud Meraki al controller Catalyst 9800.",
-      "fonteId": "src_meraki_wifi7_page"
+      "fonteId": "src_meraki_cw9176",
+      "sku": "CW9176I-RTG (esempio Wi-Fi 6E/7 indoor); hardware comune tra modalita' Meraki cloud e Catalyst 9800 WLC on-premise, con migrazione senza sostituzione hardware"
     },
     {
       "id": "prod_axis_p1486le",
@@ -14423,6 +14425,26 @@
       "dataConsultazione": "2026-08-04",
       "stato": "confermato: Gen 2 (DN2) in End-of-Sale, sostituita da Gen 3 (DN3)",
       "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_meraki_cw9176",
+      "url": "https://meraki.cisco.com/product/wi-fi/indoor-access-points/cw9176l",
+      "titolo": "Meraki CW9176I/L - Wi-Fi 6E/7 Indoor Access Point (pagina prodotto ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_spaces_meraki_integration",
+      "url": "https://spaces.cisco.com/meraki-cisco-spaces-better-together/",
+      "titolo": "Meraki + Cisco Spaces: Better Together (licensing bundlato, comunicato ufficiale)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": []
