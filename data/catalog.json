@@ -4603,7 +4603,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante a maggiore luminosita' della serie UDX-4K, DLP laser fosforo 3-chip",
       "fonteId": "src_barco_udx_frame",
-      "sku": "UDX-4K32 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
+      "sku": "UDX-4K32 (31.000 lumen). Confermato ancora attivo/venduto in parallelo a UDM: solo la fascia 22K (4K22/W22) e stata sostituita da UDM, la fascia 32K resta sulla piattaforma UDX"
     },
     {
       "id": "prod_xx6blmlt",
@@ -8166,7 +8166,7 @@
       "rinnovo": "non applicabile; richiede attivazione entro la garanzia standard di 1 anno registrando il dispositivo su XMS Cloud",
       "gracePeriod": "finestra di attivazione = garanzia standard di 1 anno (verificare caso per caso, es. CX-30 potrebbe avere regola diversa)",
       "conseguenzeScadenza": "se non attivata in tempo, resta valida solo la garanzia standard di 1 anno (nessuna estensione automatica)",
-      "fonteId": null
+      "fonteId": "src_xvh3r3d8"
     },
     {
       "id": "lic_xs9g8gc8",
@@ -8185,7 +8185,7 @@
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
-      "fonteId": null
+      "fonteId": "src_x7o4qh4c"
     }
   ],
   "licenseFeatures": [
@@ -10761,16 +10761,6 @@
       "categoriaControllo": "datasheet"
     },
     {
-      "id": "src_barco_unisee2",
-      "url": "https://www.barco.com/en/product/barco-unisee-2",
-      "titolo": "Barco UniSee II - LCD video walls",
-      "vendorId": "v_barco",
-      "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-07-31",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
       "id": "src_crestron_flex",
       "url": "http://www.crestron.com/flex",
       "titolo": "Crestron Flex Video Conferencing",
@@ -12671,16 +12661,6 @@
       "categoriaControllo": "release"
     },
     {
-      "id": "src_xm54ggik",
-      "url": "https://www.barco.com/en/product/clickshare-video-bar-core",
-      "titolo": "ClickShare Bar Core (pagina prodotto ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "release"
-    },
-    {
       "id": "src_xyed2i7x",
       "url": "https://www.barco.com/en/product/sas-050",
       "titolo": "Barco CTRL SAS-050 (pagina prodotto ufficiale)",
@@ -12694,16 +12674,6 @@
       "id": "src_x135ujla",
       "url": "https://www.barco.com/en/product/barco-unisee",
       "titolo": "Barco UniSee (piattaforma) (pagina prodotto ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "release"
-    },
-    {
-      "id": "src_xctrpciv",
-      "url": "https://www.barco.com/en/product/cms",
-      "titolo": "Barco TransForm N CMS (pagina prodotto ufficiale)",
       "vendorId": "v_barco",
       "tipo": "product page ufficiale",
       "dataConsultazione": "2026-08-03",
@@ -13341,46 +13311,6 @@
       "categoriaControllo": "datasheet"
     },
     {
-      "id": "src_xczyyos6",
-      "url": "https://licensing.barco.com/en/product/udx-4k22",
-      "titolo": "UDX-4K22 (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_xgqhhao6",
-      "url": "https://www.barco.com/en/product/udx-4k32",
-      "titolo": "UDX-4K32 (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_xuvjdpss",
-      "url": "https://partners.barco.com/en/product/udx-w22",
-      "titolo": "UDX-W22 (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale (portale partner)",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_xvs3jvah",
-      "url": "https://www.barco.com/en/product/udx-w32",
-      "titolo": "UDX-W32 (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
       "id": "src_x2pqb8a9",
       "url": "https://www.barco.com/en/product/e2-s3-power-supply",
       "titolo": "E2/S3 Power Supply (fonte ufficiale)",
@@ -13731,26 +13661,6 @@
       "categoriaControllo": "datasheet"
     },
     {
-      "id": "src_xut4thx8",
-      "url": "https://www.barco.com/en/support/knowledge-base/9540-clickshare-smartcare",
-      "titolo": "Finestra di attivazione SmartCare (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "knowledge base ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_x9hbqcng",
-      "url": "https://www.barco.com/en/support/clickshare-smartcare",
-      "titolo": "Verifica stato garanzia/SmartCare (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "support page ufficiale",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
       "id": "src_x7o4qh4c",
       "url": "https://www.barco.com/en/support/clickshare-extended-warranty",
       "titolo": "ClickShare Extended Warranty (prodotto precedente) (fonte ufficiale)",
@@ -13758,16 +13668,6 @@
       "tipo": "support page ufficiale",
       "dataConsultazione": "2026-08-03",
       "stato": "Sostituito da SmartCare/EssentialCare",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_x3w8653g",
-      "url": "https://www.barco.com/en/clickshare/support/clickshare-extended-warranty/docs",
-      "titolo": "EssentialCare per ClickShare (fonte ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "support page ufficiale (elenco documentazione)",
-      "dataConsultazione": "2026-08-03",
-      "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
     {
@@ -14416,16 +14316,6 @@
       "titolo": "UDX Frame - elenco modelli serie UDX (pagina ufficiale)",
       "vendorId": "v_barco",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-04",
-      "stato": "aggiornato",
-      "categoriaControllo": "datasheet"
-    },
-    {
-      "id": "src_barco_event_master_devices_guide",
-      "url": "https://www.barco.com/en/support/docs/r5905948",
-      "titolo": "Event Master Devices User Guide (elenco modelli completo, documentazione ufficiale)",
-      "vendorId": "v_barco",
-      "tipo": "documentazione ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
