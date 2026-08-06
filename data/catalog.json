@@ -1823,7 +1823,8 @@
       "deployment": "on-premise (data center)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch data center ad alte prestazioni (10/40/100 Gbps), eseguibili in modalita' ACI o NX-OS standalone.",
-      "fonteId": "src_cisco_nexus_license_nav"
+      "fonteId": "src_cisco_nexus9000_datasheets",
+      "sku": "Attuali (2026): N9364E-SG2/SG2X (800G), N93400LD-H1 (400G), N9300-GX Series, N9332D-H2R, N9364E-SP2R (100G), N9300-EX/FX/FX3, N9364C-H1, N9300-SE1. Modelli EoL noti: N9K-X9732C-EX/X9736C-EX, C9232C, C93180YC-FX/C93108TC-FX, 9332C/9364C (verificare data EoS specifica sul bollettino Cisco prima di quotare)"
     },
     {
       "id": "prod_cisco_sdwan_edge",
@@ -14391,6 +14392,16 @@
       "dataConsultazione": "2026-08-04",
       "stato": "URGENTE: EoS/EoL annunciato per C8300-2N2S-4T2X, C8300-2N2S-6T, C8200-1N-4T, C8200L-1N-4T il 27/07/2026",
       "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_cisco_nexus9000_datasheets",
+      "url": "https://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/datasheet-listing.html",
+      "titolo": "Cisco Nexus 9000 Series Switches - Data Sheets (elenco modelli attuali)",
+      "vendorId": "v_cisco",
+      "tipo": "elenco datasheet ufficiali",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato (novita' recenti)",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
