@@ -3139,8 +3139,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Endpoint detection and response Cisco",
-      "fonteId": "src_cisco_secure_endpoint_licensing",
-      "sku": "E3-SEC-EP-ESS, E3-SEC-EP-ADV, E3-SEC-EP-PREM (esempio SKU per licenza Essentials/Advantage/Premier, term license)"
+      "fonteId": "src_cisco_secure_endpoint_page",
+      "sku": "Licenziato separatamente da Secure Client (ex AMP for Endpoints); disponibile per Windows/Mac/Linux/Android/iOS, deployment cloud pubblico o privato"
     },
     {
       "id": "prod_xqw00wvx",
@@ -3174,7 +3174,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sicurezza DNS e SIG cloud-delivered",
-      "fonteId": "src_x15z1z0m"
+      "fonteId": "src_cisco_umbrella_legacy_eol",
+      "sku": "Alcune offerte legacy Umbrella sono in EoS/EoL (ultimo giorno ordine/rinnovo 30/09/2025, gia' avvenuto). Il brand sta migrando verso 'Secure Access - Secure Internet Access (SIA)', con le stesse funzionalita' Umbrella incluse allo stesso prezzo. Vedi famiglia 'Cisco Umbrella / Secure Access - DNS Defense' per i pacchetti attuali (DNS Security Essentials/Advantage, SIG Essentials)."
     },
     {
       "id": "prod_x1ww0pxt",
@@ -4720,7 +4721,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "Adaptive Security Appliance: linea storica di firewall/VPN Cisco, predecessore delle serie Secure Firewall attuali",
-      "fonteId": null
+      "fonteId": null,
+      "sku": "Legacy license L-ASA-SSL-50= (SSL Premium User License) e' End-of-Life, sostituita dalle licenze Secure Client Advantage (ex Plus, L-ACPLS-LIC=) o Premier (ex Apex, L-ACAPX-LIC=)"
     },
     {
       "id": "prod_xqomztnj",
@@ -14521,6 +14523,26 @@
       "titolo": "Cisco Secure Client Ordering Guide",
       "vendorId": "v_cisco",
       "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_umbrella_legacy_eol",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/security-cloud/legacy-umbrella-offers-eol.html",
+      "titolo": "End-of-Sale and End-of-Life Announcement for Some Legacy Offers of Cisco Umbrella",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoS/EoL ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "confermato: EoS/EoL per alcune offerte legacy Umbrella, ultimo ordine/rinnovo 30/09/2025 (gia' avvenuto)",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_cisco_secure_endpoint_page",
+      "url": "https://www.rhinonetworks.com/product/license/cisco-secure-endpoint",
+      "titolo": "Cisco Secure Endpoint (formerly AMP for Endpoints) - licensing overview",
+      "vendorId": "v_cisco",
+      "tipo": "pagina rivenditore autorizzato con riferimenti a documentazione ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
