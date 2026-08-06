@@ -3328,7 +3328,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dispositivi per sale riunioni Webex (Room Kit, Room Bar, Board/Desk)",
-      "fonteId": "src_xc84wlgj"
+      "fonteId": "src_xc84wlgj",
+      "sku": "CS-KIT-K9 (Room Kit), CS-KITPLUS-K9 (Room Kit Plus), CS-KITPRO-K9 (Room Kit Pro); registrabili on-premise (CUCM) o cloud Webex"
     },
     {
       "id": "prod_xjc0vcez",
@@ -3339,7 +3340,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma di collaboration e videoconferenza Cisco",
-      "fonteId": "src_xc84wlgj"
+      "fonteId": "src_xc84wlgj",
+      "sku": "Vedi 'Cisco Webex Room Devices' per gli SKU hardware; il servizio Webex stesso e' licenziato tramite Cisco Webex Suite/Meetings (subscription per utente)"
     },
     {
       "id": "prod_xbpohbqq",
