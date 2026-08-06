@@ -1787,10 +1787,10 @@
       "modello": "Multi-modello",
       "tipologia": "hardware",
       "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
-      "statoLifecycle": "attivo",
+      "statoLifecycle": "sostituito",
       "descrizioneBreve": "Sistemi di videoconferenza per sale da huddle a grandi sale riunioni, con speaker-tracking e integrazione Webex.",
-      "fonteId": "src_cisco_webex_roomkit_ds",
-      "sku": "Room Kit, Room Kit Plus, Room Kit Mini (registrabili on-premise o cloud Webex)"
+      "fonteId": "src_webex_roomkit_eos_ds",
+      "sku": "SOSTITUITI: Webex Room Kit e' confermato End-of-Sale (sostituito da Cisco Room Bar Pro); Room Kit/Room Kit Mini/Room Kit Plus 'NON RADIO' in EoL dal 28/11/2023. ATTUALI: Cisco Room Bar, Room Bar Pro, Room Kit Pro G2 (vedi prodotto separato)."
     },
     {
       "id": "prod_avigilon_unity_video_sw",
@@ -5695,6 +5695,30 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "21.000 lumen, 4K UHD, DLP digitale 3-chip. Il proiettore 22K piu' leggero sul mercato (meno di 50kg), pensato per ridurre tempi di installazione e costi di trasporto rispetto alla generazione UDX.",
       "fonteId": "src_barco_udm4k22"
+    },
+    {
+      "id": "prod_cisco_room_bar_pro",
+      "familyId": "fam_cisco_webex_roomdevices",
+      "nomeCommerciale": "Cisco Room Bar Pro",
+      "modello": "Room Bar Pro",
+      "sku": "Room Bar Pro (sostituisce Webex Room Kit)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Videobar all-in-one attuale per sale piccole/medie, prodotto di sostituzione ufficiale del Webex Room Kit originale.",
+      "fonteId": "src_webex_roombars_current"
+    },
+    {
+      "id": "prod_cisco_room_kit_pro_g2",
+      "familyId": "fam_cisco_webex_roomdevices",
+      "nomeCommerciale": "Cisco Room Kit Pro G2",
+      "modello": "Room Kit Pro G2",
+      "sku": "Room Kit Pro G2",
+      "tipologia": "hardware",
+      "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "Sistema di videoconferenza per le sale piu' complesse ed esigenti della gamma Webex.",
+      "fonteId": "src_webex_roombars_current"
     }
   ],
   "licenze": [
@@ -14456,6 +14480,26 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_webex_roomkit_eos_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/spark-room-kit-series/datasheet-c78-738729.html",
+      "titolo": "Webex Room Kit Data Sheet (confermato: End-of-Sale, sostituito da Room Bar Pro)",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "confermato End-of-Sale",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_webex_roombars_current",
+      "url": "https://www.webex.com/us/en/devices/room-devices/room-bars-and-kits.html",
+      "titolo": "Video Bars and Room Kits for Conferencing (pagina prodotto ufficiale, gamma attuale)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "datasheet"
     }
   ],
   "changelog": []
