@@ -2372,7 +2372,8 @@
       "deployment": "on-premise (sale grandi/auditorium)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Proiettore della nuova piattaforma 'smartline' Barco, annunciato nel 2026.",
-      "fonteId": "src_barco_press_releases"
+      "fonteId": "src_barco_i65_launch",
+      "sku": "I65-4K10 (10.000 lm), I65-4K13 (12.500 lm), I65-4K16 (15.000 lm), I65-W10, I65-W13, I65-W16 (versioni WUXGA equivalenti)"
     },
     {
       "id": "prod_crestron_nvx_dir2",
@@ -2440,7 +2441,8 @@
       "deployment": "on-premise (sala riunioni) + gestione cloud XMS",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Videobar all-in-one della gamma ClickShare Hub, gestibile e monitorabile da XMS Cloud insieme al resto della flotta ClickShare.",
-      "fonteId": "src_barco_xms_userguide"
+      "fonteId": "src_barco_xms_userguide",
+      "sku": "Parte della gamma ClickShare Hub; specifiche disponibili su barco.com/en/support/knowledge-base/9359"
     },
     {
       "id": "prod_karray_python",
@@ -2495,7 +2497,8 @@
       "deployment": "on-premise (eventi/rental)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Piattaforma di elaborazione immagini di ultima generazione per eventi live, fino a 8 layer 4K60 per schermo.",
-      "fonteId": "src_barco_encore3"
+      "fonteId": "src_barco_encore3",
+      "sku": "Prima release ufficiale V10 (2026); configurazioni standard o Build-To-Order, codici specifici da verificare su listino Barco"
     },
     {
       "id": "prod_barco_event_master_switchers",
@@ -3614,7 +3617,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma cloud per gestione remota della flotta ClickShare",
-      "fonteId": "src_barco_xms_cloud"
+      "fonteId": "src_barco_xms_cloud",
+      "sku": "Servizio cloud incluso gratuitamente con SmartCare; nessuno SKU hardware, attivazione tramite registrazione dispositivo"
     },
     {
       "id": "prod_x6blodx7",
@@ -3637,7 +3641,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "ClickShare per sale ad alto impatto e board room",
-      "fonteId": "src_xqitcb9u"
+      "fonteId": "src_xqitcb9u",
+      "sku": "Seconda generazione della gamma CX-50; codice specifico da verificare su listino Barco regionale"
     },
     {
       "id": "prod_xtshixtj",
@@ -3648,7 +3653,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Service node hardware della piattaforma Barco CTRL",
-      "fonteId": "src_xyed2i7x"
+      "fonteId": "src_xyed2i7x",
+      "sku": "SAS-050 (variante/modulo della piattaforma Barco CTRL, verificare denominazione SKU esatta su barco.com)"
     },
     {
       "id": "prod_x2vfwox4",
@@ -3659,7 +3665,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Video wall LCD bezel-less modulare, varie versioni (500, 500+, 800, II, 8002)",
-      "fonteId": "src_x135ujla"
+      "fonteId": "src_x135ujla",
+      "sku": "Vedi 'Barco UniSee II' (R98675000 + suffisso regionale) per lo SKU del modello attuale"
     },
     {
       "id": "prod_xegdi6vy",
@@ -3670,7 +3677,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Suite software di gestione control room (parte del sistema TransForm N), architettura di rete modulare per video wall, licenza a feature con connessioni concorrenti (SKU 1-16/32/64/128 CON).",
-      "fonteId": "src_barco_transformn_cms"
+      "fonteId": "src_barco_transformn_page",
+      "sku": "R9835100 (TFN Central Server, hardware + Media Pack software, esempio; verificare listino aggiornato)"
     },
     {
       "id": "prod_xl1958si",
@@ -4546,7 +4554,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Configurazione su misura E2: da 1 chassis/2 schede fino a 8 chassis completi; espansione fino a 8 output/input 4K con chassis EX",
-      "fonteId": "src_xgo4k996"
+      "fonteId": "src_xgo4k996",
+      "sku": "E2 Gen 2 BTO (configurabile da 1 a 8 chassis, solo schede I/O Gen 2)"
     },
     {
       "id": "prod_x2gkyl7s",
@@ -4629,7 +4638,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Alimentatore compatibile con l'intera gamma E2/S3 (incl. Jr, Tri-combo, Gen 2, 4K)",
-      "fonteId": "src_x2pqb8a9"
+      "fonteId": "src_x2pqb8a9",
+      "sku": "Alimentatore ridondante hot-swappable opzionale per chassis E2/S3-4K (upgrade)"
     },
     {
       "id": "prod_xzal3rbv",
@@ -14416,6 +14426,26 @@
       "id": "src_barco_unisee500",
       "url": "https://www.barco.com/en/product/barco-unisee-500",
       "titolo": "Barco UniSee 500 (UNI-0005) - LCD video walls (pagina ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_i65_launch",
+      "url": "https://www.barco.com/en/news/news-insights/themed-entertainment/launch-i65",
+      "titolo": "Now boarding: I65, the projector that packs it all (comunicato ufficiale lancio)",
+      "vendorId": "v_barco",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato (novita' recente)",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_barco_transformn_page",
+      "url": "https://www.barco.com/en/products/control-room-software/cms-transform-n",
+      "titolo": "TransForm N / CMS networked visualization (pagina ufficiale)",
       "vendorId": "v_barco",
       "tipo": "pagina prodotto ufficiale",
       "dataConsultazione": "2026-08-04",
