@@ -4588,8 +4588,8 @@
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "20.000 lumen, 4K UHD, DLP laser fosforo 3-chip, proiettore da grande formato",
+      "statoLifecycle": "sostituito",
+      "descrizioneBreve": "SOSTITUITO da UDM-4K22 (confermato dalla pagina ufficiale Barco: 'This product is replaced by UDM-4K22'). 20.000 lumen, 4K UHD, DLP laser fosforo 3-chip.",
       "fonteId": "src_barco_udx_frame",
       "sku": "UDX-4K22 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
@@ -4612,9 +4612,9 @@
       "modello": "hardware (proiettore laser)",
       "tipologia": "hardware (proiettore laser)",
       "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "21.000 lumen, WUXGA, DLP laser fosforo 3-chip, proiettore da grande formato",
-      "fonteId": "src_barco_udx_frame",
+      "statoLifecycle": "sostituito",
+      "descrizioneBreve": "SOSTITUITO da UDM-W22 (confermato: 'This product is no longer available'). 21.000 lumen, WUXGA, DLP laser fosforo 3-chip. Numeri articolo storici: R9008603, R9803091, R9803090.",
+      "fonteId": "src_barco_udxw22_replaced",
       "sku": "UDX-W22 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
     },
     {
@@ -4627,7 +4627,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante a maggiore luminosita' della serie UDX-W, DLP laser fosforo 3-chip",
       "fonteId": "src_barco_udx_frame",
-      "sku": "UDX-W32 (fa parte della gamma UDX: 4K22/4K26/4K32/4K40 FLEX/U32/U40/U45LC/W22/W26/W32/W40 FLEX)"
+      "sku": "UDX-W32 (32.000 lumen centrali / 31.000 ANSI); variante flightcase nota: R9408986-FC. Ancora prodotto attuale, nessun avviso di sostituzione trovato (a differenza di UDX-4K22/W22 gia' sostituiti da UDM-4K22/W22)"
     },
     {
       "id": "prod_xmy5adqx",
@@ -5676,6 +5676,18 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Intercom da interno per ambienti puliti/sanitari, resistente a detergenti chimici e conforme ISO 14644-1.",
       "fonteId": "src_axis_intercoms_page"
+    },
+    {
+      "id": "prod_barco_udm4k22",
+      "familyId": "fam_barco_projection",
+      "nomeCommerciale": "UDM-4K22",
+      "modello": "UDM-4K22",
+      "sku": "UDM-4K22 (sostituisce UDX-4K22)",
+      "tipologia": "hardware",
+      "deployment": "on-premise (grande formato, rental/installazione fissa)",
+      "statoLifecycle": "attivo",
+      "descrizioneBreve": "21.000 lumen, 4K UHD, DLP digitale 3-chip. Il proiettore 22K piu' leggero sul mercato (meno di 50kg), pensato per ridurre tempi di installazione e costi di trasporto rispetto alla generazione UDX.",
+      "fonteId": "src_barco_udm4k22"
     }
   ],
   "licenze": [
@@ -13360,7 +13372,7 @@
     },
     {
       "id": "src_xvs3jvah",
-      "url": "https://www.barco.com/en/product/udx-w32?ccmpgn=T-00001181",
+      "url": "https://www.barco.com/en/product/udx-w32",
       "titolo": "UDX-W32 (fonte ufficiale)",
       "vendorId": "v_barco",
       "tipo": "product page ufficiale",
@@ -14447,6 +14459,26 @@
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_udm4k22",
+      "url": "https://www.barco.com/en/product/udm-4k22",
+      "titolo": "UDM-4K22 - Rental projectors (pagina prodotto ufficiale)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "datasheet"
+    },
+    {
+      "id": "src_barco_udxw22_replaced",
+      "url": "https://partners.barco.com/en/product/udx-w22",
+      "titolo": "UDX-W22 - portale partner Barco (conferma sostituzione con UDM-W22)",
+      "vendorId": "v_barco",
+      "tipo": "pagina prodotto ufficiale (portale partner)",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "eol"
     }
   ],
   "changelog": []
