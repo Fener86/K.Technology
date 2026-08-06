@@ -3127,7 +3127,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Client VPN/ZTNA con moduli endpoint integrati",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_secureclient_og",
+      "sku": "L-ACPLS-LIC= / L-AC-PLS-LIC= (Advantage, ex Plus), L-ACAPX-LIC= (Premier, ex Apex), L-AC-VPNO-xxxx= (VPN Only, per dispositivo headend ASA/Secure Firewall). Nota: AnyConnect 3.x e legacy licenses (Essentials/Mobile/Phone/Premium) sono End-of-Life."
     },
     {
       "id": "prod_xn1jtan4",
@@ -14510,6 +14511,16 @@
       "titolo": "Cisco Secure Endpoint Licenses (Essentials/Advantage/Premier)",
       "vendorId": "v_cisco",
       "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_secureclient_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/anyconnect-secure-mobility-client/secure-client-og.html",
+      "titolo": "Cisco Secure Client Ordering Guide",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
