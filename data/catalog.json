@@ -4721,7 +4721,7 @@
       "deployment": "on-premise",
       "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "Adaptive Security Appliance: linea storica di firewall/VPN Cisco, predecessore delle serie Secure Firewall attuali",
-      "fonteId": null,
+      "fonteId": "src_cisco_asa_eol",
       "sku": "Legacy license L-ASA-SSL-50= (SSL Premium User License) e' End-of-Life, sostituita dalle licenze Secure Client Advantage (ex Plus, L-ACPLS-LIC=) o Premier (ex Apex, L-ACAPX-LIC=)"
     },
     {
@@ -14848,6 +14848,16 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_asa_eol",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/asa-firepower-services/asa-asav-asdm-release-eol.html",
+      "titolo": "EoS/EoL Cisco ASA/ASAv/ASDM Release 9.19(x) - ultimo ordine 18/11/2025",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoL ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "lifecycle"
     }
   ],
   "changelog": []
