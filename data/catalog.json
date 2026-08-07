@@ -1416,7 +1416,8 @@
       "deployment": "on-premise / virtual appliance / cloud (gestione cloud-delivered FMC)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall NGFW Cisco con ispezione, IPS, malware defense e URL filtering, gestito da Firewall Management Center locale o in cloud.",
-      "fonteId": "src_cisco_secfw_fmc_admin"
+      "fonteId": "src_cisco_secfw_ftd_support",
+      "sku": "Nessun SKU singolo: e' l'immagine software che gira sulle appliance Secure Firewall 1200/3100/4200/6100/9300 (o come Threat Defense Virtual). Licenziato a Smart Licensing per piattaforma con tier Essentials/IPS/Malware/URL Filtering."
     },
     {
       "id": "prod_cisco_ise_appliance",
@@ -1744,7 +1745,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione a livello DNS e Secure Internet Gateway erogata dal cloud Cisco, con enforcement su qualsiasi porta/protocollo.",
-      "fonteId": "src_cisco_umbrella_dns_ess"
+      "fonteId": "src_cisco_secaccess_sub_og",
+      "sku": "Rinominato Cisco Secure Access - DNS Defense (parte della suite Secure Access SIA/SPA). SKU legacy SA-SIA-ESS-K9 in EoS dal 18/02/2026 per ristrutturazione del pacchetto Essentials; sostituito da nuove SKU SIA/SPA a 4 pacchetti con pricing a tier per utenti."
     },
     {
       "id": "prod_crestron_dmnvx_endpoint",
@@ -2333,7 +2335,8 @@
       "deployment": "cloud",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Piattaforma SSE unificata per accesso zero-trust da qualsiasi utente/dispositivo a qualsiasi applicazione, con upgrade automatico guidato da Cisco Umbrella o ASA VPN esistenti.",
-      "fonteId": "src_cisco_secure_access_ds"
+      "fonteId": "src_cisco_secaccess_sub_og",
+      "sku": "Suite SSE completa (SIA + SPA + DNS). 4 SKU per i pacchetti Essentials/Advantage (SIA e SPA), pricing dinamico a tier basato su utenti e durata. Supporto obbligatorio (2 SKU: SWSS Enhanced di default o Premium). Esperienza Insights inclusa gratis (SKU dedicato a costo zero, non rimovibile)."
     },
     {
       "id": "prod_axis_q2802e",
@@ -3107,7 +3110,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma firewall unificata per ambienti ibridi",
-      "fonteId": "src_xswn6nq4"
+      "fonteId": "src_cisco_hybridmesh_scc_og",
+      "sku": "Non e' un prodotto a se': e' l'architettura di gestione unificata (Security Cloud Control) su tutto il portafoglio Secure Firewall. SKU chiave: FWM-SEC-SUB (subscription base gestione firewall in Security Cloud Control, quantita' fissa 1) + MPE-SEC-SUB (Mesh Policy Engine, licenza per-dispositivo richiesta solo per firewall di terze parti; i dispositivi Cisco sono inclusi gratis)."
     },
     {
       "id": "prod_xm56wlh5",
@@ -3118,7 +3122,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall di branch edge con NGFW + SD-WAN integrato",
-      "fonteId": "src_xywcexm7"
+      "fonteId": "src_cisco_secfw200_ds",
+      "sku": "Primo modello della serie: Cisco Secure Firewall 220 (SF220), pensato per filiali/edge distribuiti. Estende l'architettura Hybrid Mesh Firewall fino al bordo con SD-WAN integrato. Fa parte del refresh completo del portafoglio Secure Firewall (serie 200 + 6100) completato a giugno 2026."
     },
     {
       "id": "prod_x8ufulcb",
@@ -3165,7 +3170,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione email basata su AI",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_etd_ds",
+      "sku": "SKU principali: ETD-SEC-SUB (subscription standalone) o CSEMAIL-SEC-SUB (add-on per clienti gateway ESA/CES esistenti). Licenza a 2 livelli: ETD Essentials (ETD-ESS-LIC, per M365 via journaling) ed ETD Advantage (gateway per qualsiasi mail server incluso M365/Google Workspace/Exchange on-prem)."
     },
     {
       "id": "prod_x58cvyra",
@@ -3188,7 +3194,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NDR basato su telemetria di rete",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_sna_ordering_pdf",
+      "sku": "Hardware: Manager SMC-2210-K9 / SMC-2300-K9, Flow Collector serie 4200/4210, Flow Sensor serie 1400/3400/4400, Data Node 6400. Licenza a Smart Software Licensing (Cisco Smart Account). Licenze Threat Feed aggiuntive per fascia (es. L-LC-TI-FC2K=, L-LC-TI-FC4K=, L-LC-TI-FC5K=)."
     },
     {
       "id": "prod_xw4q6z6j",
@@ -3199,7 +3206,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Protezione applicazioni web e API",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_waap_planservice_ds",
+      "sku": "Soluzione cloud SaaS erogata in OEM da Radware (non hardware/SKU perpetuo). 3 piani di servizio (Essentials/Standard/Premium) dimensionati per throughput Mbps e numero di applicazioni protette; include WAF, protezione API, bot management e DDoS L7. Trial gratuito 90 giorni disponibile."
     },
     {
       "id": "prod_xhtr1qxy",
@@ -3210,7 +3218,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Visibilita' e governance sulle identita'",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_duo_cii_og",
+      "sku": "Non venduto come SKU separato: Cisco Identity Intelligence (CII) e' incluso automaticamente nei piani Duo Advantage (~6 USD/utente/mese) e Duo Premier (~9 USD/utente/mese). Ogni licenza utente Duo abilita fino a 5 identita' in CII."
     },
     {
       "id": "prod_x7coiub7",
@@ -3219,9 +3228,10 @@
       "modello": "Cisco Vulnerability Management",
       "tipologia": "SaaS",
       "deployment": "cloud",
-      "statoLifecycle": "attivo",
+      "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "Gestione delle vulnerabilita' basata sul rischio",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_vm_kenna_eol",
+      "sku": "ATTENZIONE - EoS/EoL CONFERMATO (ex Kenna Security, insieme a Vulnerability Intelligence e Application Security Module): ultimo giorno ordinabile 10/03/2026, ultimo rinnovo/aggiunta a subscription esistente 11/06/2026, fine supporto TAC 30/06/2028. Cisco ha dichiarato che NON e' prevista una piattaforma sostitutiva; i partner di settore (es. Tenable One, Nucleus) offrono percorsi di migrazione."
     },
     {
       "id": "prod_xloezrsr",
@@ -3232,7 +3242,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Microsegmentazione e sicurezza dei workload",
-      "fonteId": "src_xkrm9og6"
+      "fonteId": "src_cisco_secworkload_fwbundle_og",
+      "sku": "SKU dedicato per bundling con firewall: C1-TAAS-XX-SW-K9 (disponibile per bundle Firepower 4100/9300, sconto multi-prodotto). Licenziato a Smart Licensing (per-workload/endpoint). Licenza endpoint dedicata per telemetria da client Cisco Secure Client installato su laptop/desktop."
     },
     {
       "id": "prod_x9u5g4pc",
@@ -3243,7 +3254,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Licenze Essentials/Advantage per switching Catalyst con supporto incluso",
-      "fonteId": "src_xgc6ncrq"
+      "fonteId": "src_cisco_catsw_c9300_og",
+      "sku": "Alternativa a Cisco DNA per le serie Catalyst 9200/9300/9400/9500 etc.: tier Essentials/Advantage abbinati a licenza perpetua Network Stack (suffisso hardware -E/-A, es. C9300-48P-E/C9300-48P-A), durata subscription 3/5/7 anni. Sulla nuova serie C9350 (2026) sostituito dal modello di licenza unificata 'Cisco Networking Subscription' (licenza singola per dispositivo valida sia per gestione Catalyst Center sia Meraki dashboard)."
     },
     {
       "id": "prod_xrhbv4zo",
@@ -3278,7 +3290,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Licenze in abbonamento per SD-WAN/routing, con supporto Success Tracks/Solution Support",
-      "fonteId": "src_cisco_sdwan_dna_ordering"
+      "fonteId": "src_cisco_c8000v_og",
+      "sku": "Licenza a subscription per piattaforme SD-WAN/routing Catalyst 8000: tier Essentials/Advantage/Premier per fascia di throughput aggregato (es. 30M/200M/2G/20G). Include supporto SWSS incorporato. Servizi di supporto associabili: Success Tracks, Solution Support o Cisco Subscription Embedded Software Support."
     },
     {
       "id": "prod_xd4y76tn",
@@ -3289,7 +3302,8 @@
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Router/SD-WAN virtuale con licenza DNA obbligatoria",
-      "fonteId": "src_x2r4e6xd"
+      "fonteId": "src_cisco_c8000v_ds",
+      "sku": "SKU chiave L-DNA-C8000V per la subscription Cisco DNA (obbligatoria) associata al Catalyst 8000V, disponibile anche pre-integrato su Catalyst 8200/8300 Edge uCPE (es. C8200-UCPE-1N8, C8300-UCPE-1N20). Esempio SKU subscription: DNA-C-T2-A-3Y. Licenza HSEC (alta crittografia, C8000V-HSEC) aggiunta automaticamente sopra i 250 Mbps. Modelli cloud: BYOL o Pay-As-You-Go (PAYG)."
     },
     {
       "id": "prod_xmul3bhn",
@@ -3324,7 +3338,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Servizi di supporto premium Cisco per hardware e licenze DNA/Catalyst",
-      "fonteId": "src_cisco_sdwan_dna_ordering"
+      "fonteId": "src_cisco_successtracks_page",
+      "sku": "Servizio (non hardware): 5 modalita' di ordinazione (Transactional, Success Tracks, Enterprise Agreement, Combined Services, Services Full Coverage). Success Tracks include tutto Cisco Solution Support (punto di contatto unico, SLA 30 minuti severita' 1-2, fino a 8 opzioni RMA anche in 2 ore) piu' analytics predittive via CX Cloud, contenuti di adozione e formazione dedicata."
     },
     {
       "id": "prod_x52tav4s",
@@ -3996,17 +4011,6 @@
       "fonteId": "src_xaxdb21m"
     },
     {
-      "id": "prod_x3be1t2v",
-      "familyId": "fam_shure_intellimix",
-      "nomeCommerciale": "ShureCloud",
-      "modello": "ShureCloud",
-      "tipologia": "cloud/SaaS",
-      "deployment": "cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gestione remota di dispositivi e licenze software Shure (Microflex Ecosystem, IntelliMix Room)",
-      "fonteId": "src_xx1tjr13"
-    },
-    {
       "id": "prod_xb7h185y",
       "familyId": "fam_shure_microflex_advance",
       "nomeCommerciale": "Microflex Advance",
@@ -4071,17 +4075,6 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software desktop per coordinamento RF e gestione sistemi wireless Shure",
       "fonteId": "src_x3ukyb0z"
-    },
-    {
-      "id": "prod_xshufieh",
-      "familyId": "fam_shure_intellimix",
-      "nomeCommerciale": "Shure Designer",
-      "modello": "Shure Designer",
-      "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Software di configurazione sistema per prodotti Shure conferencing (citato come compatibile con Microflex Advance)",
-      "fonteId": "src_shure_microflex_advance"
     },
     {
       "id": "prod_x2yaryjv",
@@ -5361,17 +5354,6 @@
       "fonteId": "src_xgosqavw"
     },
     {
-      "id": "prod_xbdaxghv",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-Monitor",
-      "modello": "software",
-      "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Accesso on-premise ai prodotti K-array in rete per monitoraggio amplificatori, troubleshooting e aggiornamenti batch",
-      "fonteId": "src_xgosqavw"
-    },
-    {
       "id": "prod_xb8d5szv",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "OsKar / OsKar Plus",
@@ -5622,17 +5604,6 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma K-array per accesso remoto, gestione centralizzata, aggiornamenti in tempo reale e diagnostica di sistemi audio distribuiti su piu' installazioni.",
-      "fonteId": "src_karray_software_hub"
-    },
-    {
-      "id": "prod_xbdh01ng",
-      "familyId": "fam_karray_amplification",
-      "nomeCommerciale": "K-Monitor",
-      "modello": "Applicazione desktop",
-      "tipologia": "software",
-      "deployment": "on-premise (Windows/macOS)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Applicazione per scoprire gli amplificatori K-array in rete, eseguire controlli di salute dei dispositivi e applicare aggiornamenti offline su tutti i dispositivi connessi.",
       "fonteId": "src_karray_software_hub"
     },
     {
@@ -14675,6 +14646,206 @@
       "vendorId": "v_cisco",
       "tipo": "datasheet ufficiale",
       "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_secfw_ftd_support",
+      "url": "https://www.cisco.com/c/en/us/support/security/firepower-ngfw/series.html",
+      "titolo": "Cisco Secure Firewall Threat Defense - Support & Compatibility",
+      "vendorId": "v_cisco",
+      "tipo": "pagina supporto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_secfw200_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-200-series/secure-firewall-220-ds.html",
+      "titolo": "Cisco Secure Firewall 220 Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "data sheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_cisco_hybridmesh_scc_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/security-cloud-control/security-cloud-control-firewall-management-og.html",
+      "titolo": "Security Cloud Control Firewall Management Ordering Guide (FWM-SEC-SUB)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_hybridmesh_mpe_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/mesh-policy-engine-og.pdf",
+      "titolo": "Mesh Policy Engine Ordering Guide (MPE-SEC-SUB)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_sna_licensing",
+      "url": "https://www.cisco.com/c/en/us/support/security/stealthwatch/products-licensing-information-listing.html",
+      "titolo": "Cisco Secure Network Analytics - Smart Software Licensing Guide",
+      "vendorId": "v_cisco",
+      "tipo": "guida ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_sna_ordering_pdf",
+      "url": "https://irp-cdn.multiscreensite.com/f9d9ca49/files/uploaded/47068210.pdf",
+      "titolo": "Cisco Stealthwatch/Secure Network Analytics Ordering Guide (SMC-2210-K9, Flow Collector)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_cisco_waap_solbrief",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/secure-waf-bot-protection-sb.html",
+      "titolo": "Cisco Cloud WAAP Solution Brief (con Radware)",
+      "vendorId": "v_cisco",
+      "tipo": "solution brief ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_waap_planservice_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/cloud-application-security/secure-web-application-firewall/cloud-waap-protection-service-plan-ds.html",
+      "titolo": "Cisco Cloud WAAP Protection Service Plans Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "data sheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_vm_kenna_eol",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/vulnerability-management/vm-vi-appsec-eol.html",
+      "titolo": "EoS/EoL Announcement: Cisco Vulnerability Management, Vulnerability Intelligence, Application Security Module (ex Kenna)",
+      "vendorId": "v_cisco",
+      "tipo": "bollettino EoL ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "lifecycle"
+    },
+    {
+      "id": "src_cisco_secworkload_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/data-center-analytics/tetration-analytics/cisco-secure-workload-dsv3a.html",
+      "titolo": "Cisco Secure Workload Platform Datasheet",
+      "vendorId": "v_cisco",
+      "tipo": "data sheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_secworkload_fwbundle_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/secure-firewall/guide-c07-737902.html",
+      "titolo": "Cisco Network Security Ordering Guide - Secure Workload SKU C1-TAAS-XX-SW-K9",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_duo_cii_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/guide-c07-742970.html",
+      "titolo": "Duo Ordering Guide - Cisco Identity Intelligence incluso in Duo Advantage/Premier",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_duo_pricing",
+      "url": "https://duo.com/editions-and-pricing",
+      "titolo": "Duo Editions and Pricing (Free/Essentials/Advantage/Premier)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prezzi ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_c8000v_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/nb-06-cat8000v-edge-sw-og-cte-en.html",
+      "titolo": "Cisco Catalyst 8000V Edge Software Ordering Guide (L-DNA-C8000V)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_c8000v_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.html",
+      "titolo": "Cisco Catalyst 8000V Edge Software Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "data sheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_cisco_catsw_c9300_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9300-series-switches/nb-06-cat9300-swit-ser-cte-en.html",
+      "titolo": "Cisco Catalyst 9300 Series Ordering Guide - Catalyst Software Subscription vs Cisco DNA",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_c9350_unified_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9000-switches/c9350-series-smart-switches-og.html",
+      "titolo": "Cisco C9350 Series Smart Switches - Cisco Networking Subscription (licensing unificato)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_etd_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/cloud-email-security/secure-email-threat-defense-ds.html",
+      "titolo": "Cisco Secure Email Threat Defense Data Sheet (ETD-SEC-SUB, ETD Essentials/Advantage)",
+      "vendorId": "v_cisco",
+      "tipo": "data sheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_successtracks_page",
+      "url": "https://www.cisco.com/site/us/en/services/success-tracks/index.html",
+      "titolo": "Cisco Success Tracks - Panoramica servizi CX Cloud",
+      "vendorId": "v_cisco",
+      "tipo": "pagina ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "servizi"
+    },
+    {
+      "id": "src_cisco_secaccess_sub_og",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/secure-access/secure-access-sub-og.html",
+      "titolo": "Cisco Secure Access Ordering Guide (SIA/SPA SKUs, SA-SIA-ESS-K9)",
+      "vendorId": "v_cisco",
+      "tipo": "ordering guide ufficiale",
+      "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     }
