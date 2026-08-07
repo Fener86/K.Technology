@@ -1,5 +1,37 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 25, scrittura diretta GitHub)_
+
+## Sessione 25 — MAXHUB COMPLETATO AL 100%
+
+**Pulizia dati:**
+- Rimossi **6 prodotti duplicati/non-prodotti**: "MAXHUB XBoard" generico (dup. di "XBoard for Microsoft Teams Rooms"), "XBoard V7 V/T Series" (nomenclatura ridondante), "Alleanze tecnologiche MAXHUB" (lista partnership, non un prodotto), "MAXHUB Products (hub US)" (indice generico), "MAXHUB UC (speakerphone/camere/microfoni)" (umbrella che duplicava UC W31/S07/S15/P30/BM45 gia' censiti singolarmente), "MAXHUB EDU OS V3/V4" (dup. della suite EDU OS/EasiClass/Whiteboard/Class).
+- **Sovrapposizione corretta**: un prodotto lumpava insieme "Raptor Series V3/V3 Lite" (display LED integrato all-in-one) con le sigle "FA27/CN27/GV27/YM53" (linee dvLED modulari standalone, gia' censite separatamente sotto FA27) — sono famiglie di prodotto diverse. Separate: Raptor resta un prodotto a se', FA27 e' stato ampliato per coprire l'intera gamma FA27/CN27/GV27/YM53.
+
+**Tutti i 21 prodotti MAXHUB rimasti hanno SKU/modello reali verificati** su fonti ufficiali maxhub.com, tra cui:
+- **Chiarita la distinzione chiave XBoard**: "XBoard V7 Series" (IFP con MAXHUB MeetingOS, non certificato MTR, 55-92'') e "XBoard for Microsoft Teams Rooms" (V655T/V865T, Windows 11 IoT nativo Teams) sono DUE prodotti reali distinti che condividono il nome "V7" ma sono certificazioni/OS diversi — non un duplicato come sembrava inizialmente.
+- Kit MTR: XCore Kit (XC13T+TCP20T), XCore Kit Pro, XT10-VB/WS Kit
+- Periferiche UC: UC W31, UC S07, UC S15, UC P30, UC BM45, XBar W70 (200MP quad-camera)
+- Display: V6 ViewPro, CMA/CMB/CMA-T/CMD, Raptor V3/V3 Lite, FA27/CN27/GV27/YM53
+- Software (nessun SKU, incluso/gratuito): MAXHUB Share, Connect, Pivot/Pivot+, EDU OS/EasiClass/Whiteboard/Class
+
+**Doppio controllo qualita' eseguito su richiesta esplicita del cliente**: dopo il primo giro di aggiornamenti, un ricontrollo campo-per-campo (sku, fonte, modello, descrizione, lifecycle, tipologia, deployment) ha rilevato 12 prodotti con il campo "modello" ancora generico ("hardware"/"software") nonostante lo SKU fosse gia' corretto, piu' 1 prodotto (FA27) a cui era stata assegnata la fonte ma non il testo SKU. Tutti corretti e riverificati: 0 problemi residui.
+
+**Licenze MAXHUB: 0, confermato corretto** — hardware venduto outright, software incluso gratis (nessun modello a abbonamento come Cisco Smart Licensing o Crestron XiO Cloud Premium).
+
+**Numeri finali sessione 25: 92 famiglie, 356 prodotti (MAXHUB: 21/21 con SKU = 100%), 150 licenze, 487 fonti, 0 errori di integrita' referenziale, 0 duplicati.**
+
+## Prossimo punto esatto da cui riprendere
+
+MAXHUB e' ora completo al 100%. Alla prossima richiesta "CONTINUA", il cliente decide il prossimo vendor tra: Milestone Systems, Avigilon, Axis, Q-SYS, Shure.
+
+**NOTA METODOLOGICA (consolidata su Cisco/Crestron/K-Array/MAXHUB)**: per ogni nuovo vendor:
+1. Controllare SEMPRE prima duplicati/voci ombrello introdotti dal merge Excel di sessione 19 e pulire.
+2. Completare gli SKU mancanti con fonti ufficiali verificate.
+3. **Fare un doppio controllo finale campo-per-campo** (sku, fonte, modello, descrizione, lifecycle, tipologia, deployment) prima di dichiarare il vendor completo — sessione 24 e 25 hanno dimostrato che il primo giro puo' lasciare campi secondari (es. "modello") ancora generici anche quando lo SKU e' gia' corretto.
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 07/08/2026 (sessione 24, scrittura diretta GitHub)_
 
 ## Sessione 24 — K-ARRAY COMPLETATO AL 100%
