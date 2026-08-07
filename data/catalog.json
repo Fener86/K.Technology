@@ -4788,8 +4788,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma unificata per configurare, gestire e analizzare fabric data center/cloud moderne basate su Nexus 9000; include Fabric Controller, Insights, Orchestrator",
-      "fonteId": "src_cisco_nd_licensing",
-      "sku": "Nessun hardware/SKU dedicato: gira su cluster di nodi Nexus Dashboard (fisici o virtuali), licenziato tramite CSSM con licenze specifiche per servizio (es. N9K Day2 Operations Suite fixed/modular)"
+      "fonteId": "src_cisco_nexus_dashboard_ds",
+      "sku": "Virtual: ND-VIRTUAL= (intero cluster, non serve licenza per singolo nodo). Hardware: ND-NODE-G5S. Nexus Dashboard Insights incluso nelle licenze DCN Essentials/Advantage/Premier gia' documentate; funzionalita' avanzate (es. integrazione Splunk nativa) richiedono il livello Premier."
     },
     {
       "id": "prod_xe5osjz7",
@@ -14664,6 +14664,16 @@
       "titolo": "Cisco Smart Software Manager (CSSM) - Unified Licensing Guide",
       "vendorId": "v_cisco",
       "tipo": "guida ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_cisco_nexus_dashboard_ds",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/data-center-analytics/nexus-dashboard/datasheet-c78-744371.html",
+      "titolo": "Cisco Nexus Dashboard Data Sheet",
+      "vendorId": "v_cisco",
+      "tipo": "datasheet ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
