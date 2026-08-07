@@ -1596,12 +1596,13 @@
       "id": "prod_karray_vyper",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Vyper (line array ultra-piatto)",
-      "modello": "Multi-modello (es. KV52, KV102, KV25)",
+      "modello": "KV25, KV52 (I/II), KV102 (I/II), con varianti R (recessed), F (frameless), X (RAL custom), M (marine)",
       "tipologia": "hardware",
       "deployment": "on-premise (installazione fissa)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusori passivi ultra-piatti in alluminio con trasduttori ravvicinati (Pure Array Technology), impedenza selezionabile.",
-      "fonteId": "src_karray_products"
+      "fonteId": "src_karray_vyper_line",
+      "sku": "Gamma KV25/KV52/KV102, ciascuna disponibile in versione II corrente, con varianti recessed (R), frameless (F) e marine treatment (M) su richiesta."
     },
     {
       "id": "prod_maxhub_xboard",
@@ -1687,12 +1688,13 @@
       "id": "prod_karray_kommander_amp",
       "familyId": "fam_karray_amplification",
       "nomeCommerciale": "Kommander (amplificatore)",
-      "modello": "Multi-modello (es. KA04, KA104, KA208)",
+      "modello": "KA04 / KA18 / KA28 / KA68 / KA104 / KA208",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Amplificatore multicanale con DSP integrato (sistema operativo osKar) per pilotare i diffusori passivi K-array.",
-      "fonteId": "src_karray_kommander"
+      "fonteId": "src_karray_kommander",
+      "sku": "KA04 (4x50W) fino a KA208 (8x2500W per canale) — gamma amplificatori Classe D con DSP osKar integrato, controllabili via K-array Web App e app K-Connect."
     },
     {
       "id": "prod_maxhub_v6_viewpro",
@@ -1924,18 +1926,20 @@
       "deployment": "on-premise (installazione fissa/architetturale)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusore a corda flessibile per installazioni su superfici curve o irregolari, mantenendo le caratteristiche di un line array (fase coerente, bassa distorsione).",
-      "fonteId": "src_karray_anakonda"
+      "fonteId": "src_karray_anakonda",
+      "sku": "KAN200 / KAN200+ / KAN200+8 — diffusore 'a corda' flessibile per superfici curve/irregolari, calza intercambiabile nera/bianca, mantiene fase coerente da line array."
     },
     {
       "id": "prod_karray_lyzard",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Lyzard (micro line array)",
-      "modello": "KZ1 / KZ14",
+      "modello": "KZ1, KZ14 (I), con variante KZ14R (recessed in-wall)",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusori ultra-compatti per retail, musei, ristoranti e ambienti dove serve un design discreto.",
-      "fonteId": "src_karray_anakonda"
+      "fonteId": "src_karray_lyzard_line",
+      "sku": "Gamma KZ1 (ultra-mini, 23g) e KZ14/KZ14R I; abbinabile a subwoofer Rumble o Truffle pilotati da amplificatore Kommander."
     },
     {
       "id": "prod_maxhub_capture_system",
@@ -1963,34 +1967,37 @@
       "id": "prod_karray_domino",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Domino (point source full-range)",
-      "modello": "KF26 / KF210 / KF212",
+      "modello": "KF26, KF210, KF212",
       "tipologia": "hardware",
       "deployment": "on-premise (installazione fissa)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusore point-source full-range compatto per installazioni raffinate dove servono chiarezza, potenza e integrazione architettonica.",
-      "fonteId": "src_karray_domino"
+      "fonteId": "src_karray_domino_kf210",
+      "sku": "Gamma KF26/KF210/KF212, woofer coassiale 10\"+3\" con radiatore passivo (KF210); dimensionamento a seconda di potenza/copertura richiesta."
     },
     {
       "id": "prod_karray_kayman",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Kayman (line array marine-grade)",
-      "modello": "KY52 / KY102 / KY102-EBS",
+      "modello": "KY52, KY102 (anche varianti KY102W)",
       "tipologia": "hardware",
       "deployment": "on-premise (anche ambienti marini/esterni)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Line array in acciaio inox con trattamento anticorrosione avanzato, per yacht, navi da crociera, beach club e installazioni esterne.",
-      "fonteId": "src_karray_kayman"
+      "fonteId": "src_karray_product_collection_2023",
+      "sku": "Gamma KY52/KY102, versione marine-grade della famiglia line array Vyper/Kobra con trattamento anticorrosione."
     },
     {
       "id": "prod_karray_rumble",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Rumble (subwoofer)",
-      "modello": "KU26 / KU44 / KU210 / KU212",
+      "modello": "KU26, KU44, KU210, KU212",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Subwoofer passivo in acciaio inox con radiatori passivi (design completamente sigillato), compagno ideale di Lyzard/Vyper/Tornado/Anakonda.",
-      "fonteId": "src_karray_rumble"
+      "fonteId": "src_karray_rumble_line",
+      "sku": "Gamma subwoofer passivi KU26/KU44/KU210/KU212, pensata per completare Lyzard/Vyper/Tornado/Anakonda; protezione IP65 opzionale con accessorio K-KUIP4."
     },
     {
       "id": "prod_fortimail_appliance",
@@ -2196,7 +2203,8 @@
       "deployment": "on-premise (anche residenziale di lusso)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Diffusore point-source ultra-compatto, presentato a InfoComm 2026, pensato anche per installazioni residenziali di lusso oltre che commerciali.",
-      "fonteId": "src_karray_ise2026_launch"
+      "fonteId": "src_karray_infocomm2026",
+      "sku": "Dragon-KX2 — annunciato a InfoComm 2026 (giugno 2026), point source ultra-compatto full-range 2.5\" con driver brevettato Powersoft Spixel, IP65, copertura conica 100x100 gradi."
     },
     {
       "id": "prod_karray_keystone",
@@ -2207,7 +2215,8 @@
       "deployment": "on-premise (installazione architettonica)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Subwoofer architettonico ultra-sottile presentato a InfoComm 2026, per spazi con profondita' limitata dove non e' ammessa vibrazione strutturale.",
-      "fonteId": "src_karray_ise2026_launch"
+      "fonteId": "src_karray_infocomm2026",
+      "sku": "Keystone-KST110 — annunciato a InfoComm 2026, subwoofer architettonico ultra-slim (6.6 kg) con motore Powersoft MM-Force, 119 dB SPL picco, estensione fino a 40 Hz, versioni on-wall/in-wall, trattamento marine opzionale."
     },
     {
       "id": "prod_karray_koral_ko102",
@@ -2218,7 +2227,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Diffusore a colonna compatto presentato a ISE 2026, per hospitality, retail e applicazioni corporate/residenziali visivamente sensibili.",
-      "fonteId": "src_karray_ise2026_launch"
+      "fonteId": "src_karray_infocomm2026",
+      "sku": "Koral-KO102 — diffusore a colonna, presentato nella lineup InfoComm 2026 assieme alle novita' Keystone e Dragon."
     },
     {
       "id": "prod_karray_thunder_cardio",
@@ -2229,7 +2239,8 @@
       "deployment": "on-premise (touring e installazioni fisse)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Primo subwoofer cardioide K-array, presentato a ISE 2026: alta potenza in bassa frequenza con radiazione posteriore minimizzata.",
-      "fonteId": "src_karray_ise2026_launch"
+      "fonteId": "src_karray_infocomm2026",
+      "sku": "Thunder-KSCARDIO412P — subwoofer cardioide, mostrato nella demo room InfoComm 2026."
     },
     {
       "id": "prod_maxhub_fa27",
@@ -2476,34 +2487,37 @@
       "id": "prod_karray_python",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Python (line array 3.15\")",
-      "modello": "KP52 I / KP102 I",
+      "modello": "KP52, KP102",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusore passivo discreto con driver da 3.15\" ravvicinati, Pure Array Technology, per copertura uniforme a lunga distanza (chiese, aule, sale conferenza).",
-      "fonteId": "src_karray_python"
+      "fonteId": "src_karray_product_collection_2023",
+      "sku": "Gamma KP52/KP102, line array 3.15\" con chassis in alluminio; abbinabile ai subwoofer Rumble/Thunder."
     },
     {
       "id": "prod_karray_tornado",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Tornado (point source in alluminio)",
-      "modello": "KT2 / KT2C",
+      "modello": "KT2, KT2C, KT2-HV",
       "tipologia": "hardware",
       "deployment": "on-premise (installazione a parete o a soffitto)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Point source compatto in alluminio per installazioni sensibili allo spazio, convertibile in versione autoamplificata con modulo dedicato; impedenza selezionabile.",
-      "fonteId": "src_karray_tornado"
+      "fonteId": "src_karray_product_collection_2023",
+      "sku": "Gamma KT2/KT2C (variante colonna) e KT2-HV (alta tensione), point source in alluminio pressofuso."
     },
     {
       "id": "prod_karray_turtle",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Turtle (wedge a basso profilo)",
-      "modello": "KRM33P e altri",
+      "modello": "KRM33 (attivo), KRM33P (passivo)",
       "tipologia": "hardware",
       "deployment": "on-premise (sotto balconata, scenografie, studi broadcast)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusore a cuneo ultra-compatto con copertura orizzontale controllata (selezionabile Spot/Flood), per installazioni discrete in scenografie e teatri.",
-      "fonteId": "src_karray_turtle"
+      "fonteId": "src_karray_turtle_line",
+      "sku": "KRM33 (self-powered) e KRM33P (passivo) — wedge a basso profilo con 3x driver 3.15\" e radiatore passivo 6\"."
     },
     {
       "id": "prod_meraki_mg_gateway",
@@ -2612,12 +2626,13 @@
       "id": "prod_karray_pinnacle",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Pinnacle (sistema portatile autoamplificato)",
-      "modello": "KR3 / KR402 / KR802 (linea attuale)",
+      "modello": "KR2, KR3, KR4",
       "tipologia": "hardware",
       "deployment": "on-premise (rental/eventi, montaggio rapido)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema stereo portatile plug-and-play che integra subwoofer Thunder autoamplificato con line array Python/Kayman, montaggio da una sola persona in pochi minuti tramite K-array Connect (app mobile).",
-      "fonteId": "src_karray_pinnacle"
+      "fonteId": "src_karray_product_collection_2023",
+      "sku": "Gamma KR2/KR3/KR4, sistema portatile autoamplificato scalabile per fascia di potenza/copertura."
     },
     {
       "id": "prod_meraki_mt_sensors",
@@ -3762,56 +3777,13 @@
       "id": "prod_xl0n4o0v",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "K-array Kobra",
-      "modello": "K-array Kobra",
+      "modello": "KK52, KK102",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Line array ultra-slim con Pure Array Technology (PAT)",
-      "fonteId": "src_x8j4cs21"
-    },
-    {
-      "id": "prod_xukm1wff",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Kayman",
-      "modello": "K-array Kayman",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Line array in acciaio inox con trasduttori da 4''",
-      "fonteId": "src_xu15910p"
-    },
-    {
-      "id": "prod_x7cza4jc",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Kommander",
-      "modello": "K-array Kommander",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Amplificatori Classe D con DSP integrato (4x4 e 8x8 canali)",
-      "fonteId": "src_karray_kommander"
-    },
-    {
-      "id": "prod_x3vrl2tz",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Systems (incl. Pinnacle)",
-      "modello": "K-array Systems (incl. Pinnacle)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistemi integrati e autoamplificati per touring/installazione",
-      "fonteId": "src_xepys3n1"
-    },
-    {
-      "id": "prod_xat3aqwu",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Speakers (portfolio: Vyper, Koral, Anakonda, ecc.)",
-      "modello": "K-array Speakers (portfolio: Vyper, Koral, Anakonda, ecc.)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Diffusori per installazione fissa e touring",
-      "fonteId": "src_xjkq7wz9"
+      "fonteId": "src_karray_product_collection_2023",
+      "sku": "Gamma KK52/KK102, line array ultra-slim con Pure Array Technology (PAT); accessorio K-JOINT2 per unire piu' unita' Kobra/Python."
     },
     {
       "id": "prod_xz655x1z",
@@ -3822,7 +3794,8 @@
       "deployment": "on-premise (Windows/macOS)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software gratuito di modellazione 3D e simulazione acustica (risposta in frequenza, distribuzione SPL, intelligibilita' del parlato), con generazione automatica di report per il cliente.",
-      "fonteId": "src_karray_kframework3"
+      "fonteId": "src_karray_kframework3",
+      "sku": "Nessun SKU: software gratuito scaricabile dal sito K-array, per progettazione/simulazione acustica 3D di sistemi K-array."
     },
     {
       "id": "prod_xrhyzlju",
@@ -4882,92 +4855,16 @@
       "fonteId": "src_x6m6l2f6"
     },
     {
-      "id": "prod_x37nijlk",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Python",
-      "modello": "hardware (line array)",
-      "tipologia": "hardware (line array)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Line array passivo in acciaio inox con driver 3.15'', Pure Array Technology, ideale per teatri/broadcast/luoghi di culto",
-      "fonteId": "src_karray_python"
-    },
-    {
-      "id": "prod_xluln683",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Vyper",
-      "modello": "hardware (line array piatto)",
-      "tipologia": "hardware (line array piatto)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Diffusori piu' piatti del portfolio K-array (telaio alluminio 2cm), assemblati a mano in Italia, impedenza selezionabile",
-      "fonteId": "src_x5n76ksh"
-    },
-    {
-      "id": "prod_xtl8d31m",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Kayman",
-      "modello": "hardware (line array)",
-      "tipologia": "hardware (line array)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Line array in acciaio inox con driver 4'' Pure Array Technology, ottimo per copertura a lunga distanza",
-      "fonteId": "src_xu15910p"
-    },
-    {
       "id": "prod_xdqq0dxz",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "Mastiff",
-      "modello": "hardware (monitor da palco)",
+      "modello": "KM112, KM112P (passivo), KM312, KM312P (passivo)",
       "tipologia": "hardware (monitor da palco)",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Monitor da palco low-profile ad alta potenza, corno regolabile 100x30 gradi, chassis acciaio inox/legno di betulla",
-      "fonteId": "src_xxrer8qt"
-    },
-    {
-      "id": "prod_x0sxbdx3",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Turtle",
-      "modello": "hardware (monitor da palco)",
-      "tipologia": "hardware (monitor da palco)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Monitor a cuneo ultra-compatto, copertura orizzontale controllata, 3 driver 3.15'' + 1 radiatore passivo 6''",
-      "fonteId": "src_karray_turtle"
-    },
-    {
-      "id": "prod_x698aa90",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Rumble",
-      "modello": "hardware (subwoofer)",
-      "tipologia": "hardware (subwoofer)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Subwoofer abbinabili a Lyzard/Vyper/Tornado/Anakonda, risposta bassi estesa, protezione elettronica, finiture RAL custom e marine",
-      "fonteId": "src_karray_rumble"
-    },
-    {
-      "id": "prod_xg7x2zfo",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Pinnacle",
-      "modello": "hardware (sistema portatile)",
-      "tipologia": "hardware (sistema portatile)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistemi integrati autoamplificati leggeri plug-and-play, apice della portabilita' K-array",
-      "fonteId": "src_karray_pinnacle"
-    },
-    {
-      "id": "prod_xe2bhwtu",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "Thunder",
-      "modello": "hardware (subwoofer con DSP)",
-      "tipologia": "hardware (subwoofer con DSP)",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Nuova generazione con intelligenza osKar e Integrated Electronic Brain (IEB), gestibile da varie piattaforme di controllo",
-      "fonteId": "src_karray_pinnacle"
+      "fonteId": "src_karray_mastiff_line",
+      "sku": "Gamma monitor da palco KM112/KM112P (coassiale 12\") e KM312/KM312P (3x12\", fino a 4000W); il KM112 attivo puo' pilotare il KM112P passivo e un subwoofer Thunder-KMT18P per il fill batteria."
     },
     {
       "id": "prod_xz7y2dhn",
@@ -5220,17 +5117,6 @@
       "sku": "CP4 (rack-mount 1RU, processore 4-Series flagship per sale enterprise/boardroom), CP4-R (versione per Crestron Home OS residenziale), MC4 (form factor compatto per sale piccole/medie, stesso motore 4-Series)."
     },
     {
-      "id": "prod_xadl3qpg",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Anakonda (KAN200/KAN200+/KAN200+8)",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Diffusore flessibile 'a corda' per situazioni dove un box tradizionale non e' installabile, con calza intercambiabile nera/bianca",
-      "fonteId": "src_karray_anakonda"
-    },
-    {
       "id": "prod_xw9x2paf",
       "familyId": "fam_karray_speakers",
       "nomeCommerciale": "K-array Firenze (KH7/KH8/KS7/KS8)",
@@ -5239,29 +5125,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema line array da touring con Slim Array Technology ed Electronic Beam Steering, autoamplificato e resistente alle intemperie",
-      "fonteId": "src_x6kwm11c"
-    },
-    {
-      "id": "prod_xdaqknut",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-array Kommander-KA04 / KA18 / KA28 / KA68 / KA104 / KA208",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gamma di amplificatori Classe D con DSP integrato (osKar), da 4x50W a 8x2500W per canale, con Web App e app mobile K-array Connect",
-      "fonteId": "src_xq6ew85n"
-    },
-    {
-      "id": "prod_xrqa1lnb",
-      "familyId": "fam_karray_speakers",
-      "nomeCommerciale": "K-framework3",
-      "modello": "software",
-      "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Software 3D di modellazione e simulazione acustica: import modelli venue, selezione diffusori, simulazione SPL/STI/intelligibilita' del parlato",
-      "fonteId": "src_x90kllgm"
+      "fonteId": "src_x6kwm11c",
+      "sku": "KH7/KH8 (versioni attive) e KS7/KS8 (versioni passive) — sistema line array da touring con Slim Array Technology ed Electronic Beam Steering, resistente alle intemperie."
     },
     {
       "id": "prod_x87mpa85",
@@ -5272,7 +5137,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Interfaccia web integrata nell'amplificatore per controllo DSP completo (routing, EQ, delay, preset), incl. Dante/NDI",
-      "fonteId": "src_x3rcfxqu"
+      "fonteId": "src_x3rcfxqu",
+      "sku": "Nessun SKU: interfaccia web integrata (firmware) negli amplificatori Kommander basati su osKar, non e' un prodotto a se' vendibile."
     },
     {
       "id": "prod_x3mlri22",
@@ -5283,7 +5149,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App mobile per discovery e tuning rapido dei dispositivi K-array",
-      "fonteId": "src_xgosqavw"
+      "fonteId": "src_xgosqavw",
+      "sku": "Nessun SKU: app mobile gratuita (iOS/Android) per discovery e tuning rapido dei dispositivi K-array via Bluetooth/rete."
     },
     {
       "id": "prod_xfkewdqu",
@@ -5294,7 +5161,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App di controllo nativo avanzata per gestione sistema K-array, stile smart-home control",
-      "fonteId": "src_xgosqavw"
+      "fonteId": "src_xgosqavw",
+      "sku": "Nessun SKU: software gratuito scaricabile dal sito K-array per controllo avanzato del sistema installato."
     },
     {
       "id": "prod_xb8d5szv",
@@ -5305,7 +5173,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema operativo embedded per dispositivi IEB (Integrated Electronic Brain) e IEB Pro",
-      "fonteId": "src_xgosqavw"
+      "fonteId": "src_xgosqavw",
+      "sku": "Nessun SKU: sistema operativo embedded nei DSP degli amplificatori Kommander (IEB/IEB Pro), fornito di serie con l'hardware."
     },
     {
       "id": "prod_xcdkxmar",
@@ -5316,7 +5185,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Plug-in ufficiali per integrare gli amplificatori K-array in configurazioni Q-SYS e per il controllo Crestron",
-      "fonteId": "src_xmhywndt"
+      "fonteId": "src_xmhywndt",
+      "sku": "Nessun SKU: plug-in gratuiti scaricabili per l'integrazione nativa di amplificatori K-array in ambienti di controllo Q-SYS e Crestron."
     },
     {
       "id": "prod_x7c58oeg",
@@ -5547,7 +5417,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma K-array per accesso remoto, gestione centralizzata, aggiornamenti in tempo reale e diagnostica di sistemi audio distribuiti su piu' installazioni.",
-      "fonteId": "src_karray_software_hub"
+      "fonteId": "src_karray_software_hub",
+      "sku": "Nessun SKU: piattaforma cloud K-array per il monitoraggio/gestione da remoto del parco installato, inclusa con gli amplificatori Kommander di ultima generazione."
     },
     {
       "id": "prod_milestone_briefcam_platform",
@@ -14962,6 +14833,86 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_vyper_line",
+      "url": "https://www.k-array.com/en/products/line/vyper",
+      "titolo": "K-array Vyper line - KV25/KV52/KV102 (I, II, R, F varianti)",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_product_collection_2023",
+      "url": "https://2b-heard.co.uk/wp-content/uploads/2023/02/K-ARRAY-Product-Collection-2023.pdf",
+      "titolo": "K-array Product Collection - mappa completa famiglie/modelli (Lyzard, Vyper, Kobra, Python, Kayman, Tornado, Domino, Rumble, Pinnacle)",
+      "vendorId": "v_karray",
+      "tipo": "catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_lyzard_line",
+      "url": "https://www.k-array.com/en/product/lyzard-kz14",
+      "titolo": "K-array Lyzard-KZ14 - line array ultra-miniatura",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_domino_kf210",
+      "url": "https://www.k-array.com/en/product/domino-kf210",
+      "titolo": "K-array Domino-KF210 - point source coassiale",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_rumble_line",
+      "url": "https://www.k-array.com/en/products/line/rumble",
+      "titolo": "K-array Rumble line - subwoofer KU26/KU44/KU210/KU212",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_turtle_line",
+      "url": "https://www.k-array.com/en/products/line/turtle",
+      "titolo": "K-array Turtle line - KRM33/KRM33P wedge monitor",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_mastiff_line",
+      "url": "https://www.k-array.com/en/products/line/mastiff",
+      "titolo": "K-array Mastiff line - KM112/KM112P/KM312/KM312P",
+      "vendorId": "v_karray",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_karray_infocomm2026",
+      "url": "https://www.k-array.com/en/post/k-array-debuts-keystone-and-dragon-at-infocomm-2026",
+      "titolo": "K-array debutta Keystone KST110, Dragon KX2 a InfoComm 2026 (con Koral KO102 e Thunder KSCARDIO412P)",
+      "vendorId": "v_karray",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "release"
     }
   ],
   "changelog": []
