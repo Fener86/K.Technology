@@ -1605,17 +1605,6 @@
       "sku": "Gamma KV25/KV52/KV102, ciascuna disponibile in versione II corrente, con varianti recessed (R), frameless (F) e marine treatment (M) su richiesta."
     },
     {
-      "id": "prod_maxhub_xboard",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB XBoard",
-      "modello": "Multi-formato (es. V655T 65\", V865T 86\", fino a 92\")",
-      "tipologia": "hardware",
-      "deployment": "on-premise (sala riunioni)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Display interattivo all-in-one certificato Microsoft Teams Rooms, con touch multi-punto, camere e microfoni integrati, Windows 11 IoT.",
-      "fonteId": "src_maxhub_xboard_mtr"
-    },
-    {
       "id": "prod_barco_ctrl_sw",
       "familyId": "fam_barco_controlroom",
       "nomeCommerciale": "Barco CTRL (software)",
@@ -1705,7 +1694,8 @@
       "deployment": "on-premise (sala riunioni/aula)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Display interattivo 4K con whiteboard OCR, condivisione wireless fino a 4 dispositivi, gestione flotta cloud tramite MAXHUB Pivot.",
-      "fonteId": "src_maxhub_viewpro"
+      "fonteId": "src_maxhub_v6_viewpro",
+      "sku": "Serie V6 ViewPro — IFP con MAXHUB OS 6.0, certificazione ENERGY STAR, gestione flotta via MAXHUB Pivot."
     },
     {
       "id": "prod_shure_ulxd_system",
@@ -1950,18 +1940,8 @@
       "deployment": "on-premise (aule/eventi)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema di ripresa/regia con camere PTZ wireless, tracking automatico del relatore, per didattica e streaming eventi.",
-      "fonteId": "src_maxhub_capturesystem"
-    },
-    {
-      "id": "prod_maxhub_uc_peripherals",
-      "familyId": "fam_maxhub_uc_devices",
-      "nomeCommerciale": "MAXHUB UC (speakerphone/camere/microfoni)",
-      "modello": "Multi-modello (es. UC P30, UC BM35/BM45, Mic Pod DM30, UC S07)",
-      "tipologia": "hardware",
-      "deployment": "on-premise (sala riunioni)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Periferiche audio/video per sale riunioni: camere PTZ, speakerphone, microfoni pod, barre USB.",
-      "fonteId": "src_maxhub_capturesystem"
+      "fonteId": "src_maxhub_xbar_series",
+      "sku": "Capture System, Capture System V3, Portable Capture System — dispositivi di acquisizione contenuti lavagna/documento per digitalizzazione in tempo reale."
     },
     {
       "id": "prod_karray_domino",
@@ -2245,13 +2225,14 @@
     {
       "id": "prod_maxhub_fa27",
       "familyId": "fam_maxhub_dvled",
-      "nomeCommerciale": "MAXHUB FA27 Series (dvLED)",
-      "modello": "FA27",
+      "nomeCommerciale": "MAXHUB FA27 / CN27 / GV27 / YM53 Series (dvLED modulare)",
+      "modello": "FA27, CN27, GV27, YM53",
       "tipologia": "hardware",
       "deployment": "on-premise (sale grandi, digital signage)",
       "statoLifecycle": "nuovo",
-      "descrizioneBreve": "Display LED modulare 'one cabinet, three technologies', presentato a InfoComm 2026 (giugno 2026).",
-      "fonteId": "src_maxhub_infocomm2026_pr"
+      "descrizioneBreve": "Famiglia di display LED modulari standalone (dvLED) per sale grandi/digital signage; FA27 'one cabinet, three technologies' presentato a InfoComm 2026.",
+      "fonteId": "src_maxhub_fa27_series",
+      "sku": "FA27, CN27, GV27, YM53 — pixel pitch e formati variabili per installazione indoor/outdoor; FA27 con architettura 'one cabinet, three technologies' presentata a InfoComm 2026."
     },
     {
       "id": "prod_maxhub_xbar_w70",
@@ -2262,7 +2243,8 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Kit videobar riconosciuto con lo SCN Installation Product Award 2026 per il prodotto AI piu' innovativo a InfoComm 2026.",
-      "fonteId": "src_maxhub_infocomm2026_pr"
+      "fonteId": "src_maxhub_xbar_w70_datasheet",
+      "sku": "XBar W70 Kit — videobar Windows 11 Pro quad-camera Quad Sight 200MP, array 16 microfoni beamforming, FlexMount; fa parte della gamma XBar assieme a V70/V50 (Android MDEP) e U50 (solo USB)."
     },
     {
       "id": "prod_milestone_evidence_manager",
@@ -3806,7 +3788,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Display interattivo all-in-one certificato Microsoft Teams Rooms",
-      "fonteId": "src_maxhub_xboard_mtr"
+      "fonteId": "src_maxhub_xboard_mtr_v865t",
+      "sku": "Modelli V655T (65''), V865T (86''); disponibili anche 55''/75'' e formato ultra-wide 21:9 92''. Windows 11 IoT nativo Teams Rooms, triple camera Trident Lens (50MP, zoom 2x ottico/5x ibrido), array 16 microfoni."
     },
     {
       "id": "prod_xcq5d3rp",
@@ -3817,7 +3800,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Kit modulari Windows-based per Microsoft Teams Rooms",
-      "fonteId": "src_xzv6jofe"
+      "fonteId": "src_maxhub_xt_series",
+      "sku": "Famiglia di kit MTR: XCore Kit (entry, mini-PC XC13T + console TCP20T), XT10-VB Kit (con UC S07 integrato), XT10-WS Kit (con speakerphone+camera), XT20-VB/XT20-PS Kit."
     },
     {
       "id": "prod_x6sg1880",
@@ -3828,18 +3812,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Compute kit per Microsoft Teams Rooms",
-      "fonteId": "src_xxtp1bsw"
-    },
-    {
-      "id": "prod_xobsmhcz",
-      "familyId": "fam_maxhub_mtr",
-      "nomeCommerciale": "MAXHUB Products (hub US)",
-      "modello": "MAXHUB Products (hub US)",
-      "tipologia": "hub prodotti",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Indice ufficiale di tutte le categorie di prodotto MAXHUB",
-      "fonteId": "src_xbd8xmr2"
+      "fonteId": "src_maxhub_xcore_kit_pro",
+      "sku": "XCore Kit: mini-PC XC13T (Intel i3-1220P) + console touch TCP20T 10.1''. XCore Kit Pro: mini-PC Intel Core i5 12a gen + console 11.6''; entrambi senza display/camera/mic inclusi."
     },
     {
       "id": "prod_x2nrealm",
@@ -4870,23 +4844,25 @@
       "id": "prod_xz7y2dhn",
       "familyId": "fam_maxhub_uc_devices",
       "nomeCommerciale": "MAXHUB UC W31 (Console)",
-      "modello": "hardware",
+      "modello": "UC W31",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Console/webcam della gamma Universal Console per sale conferenza",
-      "fonteId": "src_xcko6xxw"
+      "fonteId": "src_maxhub_uc_w31",
+      "sku": "UC W31 — console/camera USB per postazioni Teams Rooms compatta."
     },
     {
       "id": "prod_xd64k2in",
       "familyId": "fam_maxhub_uc_devices",
       "nomeCommerciale": "MAXHUB UC S15 (Conference Bar)",
-      "modello": "hardware",
+      "modello": "UC S15",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante della video bar Universal Console, affianca la UC S07",
-      "fonteId": "src_xa43f2i4"
+      "fonteId": "src_maxhub_uc_s15",
+      "sku": "UC S15 — conference bar integrata (camera+speaker+mic) per sale medie."
     },
     {
       "id": "prod_xbatciq2",
@@ -4897,7 +4873,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dongle per presentazione wireless, compatibile con XBoard e altri display MAXHUB",
-      "fonteId": "src_xwm9uepd"
+      "fonteId": "src_maxhub_wireless_dongle",
+      "sku": "WT13, WT15, WT15S — dongle USB per wireless screen sharing one-click su display/XBoard MAXHUB."
     },
     {
       "id": "prod_xlke95yi",
@@ -4908,29 +4885,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Box per connettivita' wireless, parte degli accessori MAXHUB",
-      "fonteId": "src_xo0nj0bl"
-    },
-    {
-      "id": "prod_xwdcvjv3",
-      "familyId": "fam_maxhub_uc_devices",
-      "nomeCommerciale": "MAXHUB EDU OS (V3/V4 per EDLA)",
-      "modello": "software (education)",
-      "tipologia": "software (education)",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistema operativo/suite software dedicata al segmento education",
-      "fonteId": "src_xwm9uepd"
-    },
-    {
-      "id": "prod_xid4u1iu",
-      "familyId": "fam_maxhub_uc_devices",
-      "nomeCommerciale": "Alleanze tecnologiche MAXHUB",
-      "modello": "ecosistema partner",
-      "tipologia": "ecosistema partner",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Partnership certificate con Microsoft Teams Rooms, Zoom, Intel, Nureva, Extron, Sennheiser, Inogeni, Q-SYS, Audio-Technica, Alleo, Huddly, Jabra, Owl Labs",
-      "fonteId": "src_xo0nj0bl"
+      "fonteId": "src_maxhub_wireless_dongle",
+      "sku": "WB05 — ricevitore box per wireless presentation su display non nativamente MAXHUB."
     },
     {
       "id": "prod_x7dhdn0t",
@@ -5192,122 +5148,121 @@
       "id": "prod_x7c58oeg",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB XBoard V7 Series",
-      "modello": "hardware",
+      "modello": "V7 Series (55/65/75/86/92\")",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "IFP 4K con 3 camere integrate (panorama, 2x ottico, 5x ibrido), 16 microfoni, MAXHUB MeetingOS, Windows IoT; formati 55''/65''/75''/86''/92''",
-      "fonteId": "src_xxs8kdlg"
-    },
-    {
-      "id": "prod_xm4bbcot",
-      "familyId": "fam_maxhub_ifp",
-      "nomeCommerciale": "MAXHUB XBoard V7 V Series / T Series",
-      "modello": "hardware",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Varianti della serie V7 (Value e flagship con flip camera, ultra-narrow bezel)",
-      "fonteId": "src_xxqj3jtr"
+      "fonteId": "src_maxhub_xboard_v7_ifp",
+      "sku": "Formati 55''/65''/75''/86''/92'' (ultra-wide), sistema operativo MAXHUB MeetingOS (non certificato MTR nativo), Trident Lens 50MP su formati >=65''."
     },
     {
       "id": "prod_xmm6zs5a",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB UC S07 (Conference Bar)",
-      "modello": "hardware",
+      "modello": "UC S07",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Video bar per conferencing, parte della gamma Universal Console",
-      "fonteId": "src_xeqma5r9"
+      "fonteId": "src_maxhub_uc_s07",
+      "sku": "UC S07 — conference bar compatta USB plug-and-play, 1.05 kg, garanzia 3 anni hot-swap."
     },
     {
       "id": "prod_x4mwl1w8",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB UC P30 (PTZ Camera)",
-      "modello": "hardware",
+      "modello": "UC P30",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Telecamera PTZ per sale conferenza",
-      "fonteId": "src_xv81m88a"
+      "fonteId": "src_maxhub_uc_p30",
+      "sku": "UC P30 — camera PTZ per sale medio-grandi, integrabile nei kit XT."
     },
     {
       "id": "prod_xwfwgw51",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB UC BM45 (Speakerphone)",
-      "modello": "hardware",
+      "modello": "UC BM45",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Speakerphone per conferencing",
-      "fonteId": "src_xlv2f8qd"
+      "fonteId": "src_maxhub_uc_bm45",
+      "sku": "UC BM45 — speakerphone per sale da piccole a grandi, daisy-chain fino a 3 unita' con XBoard."
     },
     {
       "id": "prod_xdt0vlne",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB CMA/CMB/CMA-T/CMD Series",
-      "modello": "hardware",
+      "modello": "CMA / CMB / CMA-T / CMD (es. ND55CMA-T, ND65CMD)",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Display commerciali per digital signage e sale riunioni non touch",
-      "fonteId": "src_xbd8xmr2"
+      "fonteId": "src_xbd8xmr2",
+      "sku": "Serie CMA / CMB / CMA-T / CMD — display commerciali non-touch per digital signage e sale riunioni, vari formati (es. ND55CMA-T, ND65CMD 65'')."
     },
     {
       "id": "prod_xq7a8s3t",
-      "familyId": "fam_maxhub_ifp",
-      "nomeCommerciale": "MAXHUB Raptor Series V3 / V3 Lite, FA27/CN27/GV27/YM53 Series",
-      "modello": "hardware",
+      "familyId": "fam_maxhub_dvled",
+      "nomeCommerciale": "MAXHUB Raptor Series (V3 / V3 Lite)",
+      "modello": "Raptor V3, Raptor V3 Lite (es. LX165V07 165\")",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Gamma di display a LED indoor/outdoor per installazioni professionali",
-      "fonteId": "src_x53x0e3u"
+      "descrizioneBreve": "Display LED integrato all-in-one (IFP+LED wall) per sale grandi e auditorium, fino a 165'' diagonali.",
+      "fonteId": "src_maxhub_raptor_v3",
+      "sku": "Raptor V3 e Raptor V3 Lite — display LED integrato all-in-one fino a 165'' diagonali (es. modello LX165V07)."
     },
     {
       "id": "prod_xxu99pw5",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB Share",
-      "modello": "software",
+      "modello": "App software (Windows/Android/iOS)",
       "tipologia": "software",
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App di wireless presentation/screen sharing per i display MAXHUB",
-      "fonteId": "src_xeqma5r9"
+      "fonteId": "src_xeqma5r9",
+      "sku": "Nessun SKU: applicazione gratuita di wireless screen sharing per i display MAXHUB, alternativa software ai dongle WT13/WT15."
     },
     {
       "id": "prod_x4hotvs5",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB Pivot / Pivot+",
-      "modello": "software",
+      "modello": "Piattaforma cloud",
       "tipologia": "software",
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software di gestione/rotazione contenuti per display MAXHUB",
-      "fonteId": "src_xeqma5r9"
+      "fonteId": "src_maxhub_pivot",
+      "sku": "Nessun SKU hardware: MAXHUB Pivot/Pivot+ e' la piattaforma cloud per il monitoraggio/gestione da remoto della flotta di dispositivi MAXHUB installati."
     },
     {
       "id": "prod_xjneneg6",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB EDU OS / EasiClass / Whiteboard / Class",
-      "modello": "software",
+      "modello": "Suite software (EDU OS V3/V4, EasiClass, Whiteboard, Class)",
       "tipologia": "software",
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Suite software per il segmento education (lavagna interattiva, gestione classe)",
-      "fonteId": "src_xeqma5r9"
+      "fonteId": "src_xeqma5r9",
+      "sku": "Nessun SKU hardware: suite software education MAXHUB (EDU OS V3, EDU OS V4 per EDLA, EasiClass, Whiteboard, Class), preinstallata sui display MAXHUB per il segmento scuola."
     },
     {
       "id": "prod_x050dawv",
       "familyId": "fam_maxhub_ifp",
       "nomeCommerciale": "MAXHUB Connect",
-      "modello": "software",
+      "modello": "App/piattaforma software",
       "tipologia": "software",
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma/app di connessione per l'ecosistema MAXHUB",
-      "fonteId": "src_xeqma5r9"
+      "fonteId": "src_xeqma5r9",
+      "sku": "Nessun SKU: piattaforma software di gestione/connessione dell'ecosistema dispositivi MAXHUB (separata da MAXHUB Share)."
     },
     {
       "id": "prod_x7c6z242",
@@ -14913,6 +14868,176 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "release"
+    },
+    {
+      "id": "src_maxhub_xboard_v7_ifp",
+      "url": "https://www.commercialintegrator.com/news/maxhub-launches-xboard-v7-interactive-flat-panel-series/136184/",
+      "titolo": "MAXHUB XBoard V7 IFP Series (MeetingOS, non-MTR) - 55/65/75/86/92 pollici",
+      "vendorId": "v_maxhub",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_xboard_mtr_v865t",
+      "url": "https://sgp-cstore-pub.maxhub.com/maxhub_global_public/upload/m46n2aew/MAXHUB_XBoard_V7%20MTR_V865T_Datasheet_V1.4.pdf",
+      "titolo": "MAXHUB XBoard V7 MTR Datasheet V865T",
+      "vendorId": "v_maxhub",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_xcore_kit",
+      "url": "https://www.maxhub.com/en/xcore-kit/",
+      "titolo": "MAXHUB XCore Kit - entry level MTR (XC13T + TCP20T)",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_xcore_kit_pro",
+      "url": "https://www.microsoft.com/en-in/teams-devices/product/maxhub-maxhub-xcore-kit-pro/71475",
+      "titolo": "MAXHUB XCore Kit Pro - certificazione Microsoft Teams Devices",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina certificazione Microsoft",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_xt_series",
+      "url": "https://www.maxhub.com/en/xt-series/",
+      "titolo": "MAXHUB XT Series for Microsoft Teams Rooms - panoramica kit XCore/XT10/XT20",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_uc_bm45",
+      "url": "https://www.maxhub.com/en/uc_bm45/",
+      "titolo": "MAXHUB UC BM45 - speakerphone",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_uc_w31",
+      "url": "https://www.maxhub.com/en/uc-w31/",
+      "titolo": "MAXHUB UC W31 - console USB",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_uc_p30",
+      "url": "https://www.maxhub.com/en/uc-p30/",
+      "titolo": "MAXHUB UC P30 - camera PTZ",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_uc_s15",
+      "url": "https://www.maxhub.com/eu/ucs15/",
+      "titolo": "MAXHUB UC S15 - conference bar",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_uc_s07",
+      "url": "https://www.maxhub.com/en/s07/",
+      "titolo": "MAXHUB UC S07 - conference bar (datasheet)",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_raptor_v3",
+      "url": "https://www.maxhub.com/us/Raptor_Series_V3/",
+      "titolo": "MAXHUB Raptor Series V3 - LED wall integrato all-in-one",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_fa27_series",
+      "url": "https://www.maxhub.com/us/fa27_series/",
+      "titolo": "MAXHUB FA27/CN27/GV27/YM53 Series - dvLED modulare standalone",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_wireless_dongle",
+      "url": "https://www.maxhub.com/us/products/",
+      "titolo": "MAXHUB Wireless Dongle WT13/WT15/WT15S e Wireless Box WB05 - catalogo prodotti",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_v6_viewpro",
+      "url": "https://www.maxhub.com/en/viewpro_series_v6/",
+      "titolo": "MAXHUB V6 ViewPro Series - IFP con MAXHUB OS 6.0, certificazione ENERGY STAR",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_xbar_w70_datasheet",
+      "url": "https://sgp-cstore-pub.maxhub.com/maxhub_global_public/upload/me99s1vp/MAXHUB_XBar%20W70%20Kit_Datasheet_V1.3.pdf",
+      "titolo": "MAXHUB XBar W70 Kit Datasheet - videobar Windows quad-camera 200MP",
+      "vendorId": "v_maxhub",
+      "tipo": "datasheet ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_maxhub_pivot",
+      "url": "https://www.maxhub.com/en/xbar_v70/",
+      "titolo": "MAXHUB Pivot/Pivot+ - piattaforma cloud di device management remoto",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_maxhub_xbar_series",
+      "url": "https://www.maxhub.com/en/xbar_series/",
+      "titolo": "MAXHUB XBar Series e accessori (Capture System, Stylus, Panel SP10)",
+      "vendorId": "v_maxhub",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
     }
   ],
   "changelog": []
