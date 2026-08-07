@@ -1,5 +1,42 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 23, scrittura diretta GitHub)_
+
+## Sessione 23 — CRESTRON COMPLETATO AL 100% + restyling grafico sito
+
+**Pulizia dati (il merge Excel di sessione 19 aveva introdotto parecchio rumore su Crestron):**
+- Rimossi 8 prodotti duplicati/non vendibili: "Crestron XiO Cloud" (dup. di XiO Cloud servizio), "Crestron DM NVX" generico (dup. degli endpoint gia' censiti), "Crestron Flex" generico (dup. del kit tabletop), "Crestron AirMedia" generico (dup. di AM-100/AM-101), "Crestron DigitalMedia (DM)" generico (dup. di DM-TX-201-C/HD-MD4X1-4K-E/HD-WP-4K-401-C), "XiO Cloud — licenze a soggetto" (concetto gia' coperto dalla licenza esistente), "Crestron Connected / XiO Cloud Connected devices" (programma di certificazione partner, non un prodotto vendibile), "DM NVX Director" generico (dup. di DM-NVX-DIR2).
+- Riclassificati 4 prodotti finiti nella famiglia sbagliata durante il merge: DM-NVX-360 e Videobar 70 spostati nelle famiglie corrette; creata la famiglia "Crestron DM NAX (Audio over IP)" per il prodotto omonimo; creata la famiglia "Crestron Control Systems (3-Series/4-Series)" per i processori di controllo.
+- Rimossa la famiglia orfana residua dal merge Excel.
+
+**Tutti i 20 prodotti Crestron ora hanno SKU reali verificati su fonti ufficiali**, tra cui:
+- DM NVX: gamma encoder/decoder 350/351/352/360/363, DM-NVX-DIR2/DIR-ENT, DM-NVX-384/385
+- Flex: Collab Compute (CCC-110/120), touch screen serie 80 (TS/TSW-1080), Videobar 70 (UC-SB2-CAM)
+- DM NAX: DM-NAX-8ZSA, -16AIN, -AUD-IO, -XSP, -2XLRI-1G
+- Control Systems: CP4, CP4-R, MC4
+- XiO Cloud: chiariti i tier Free/Premium con SKU reali (SW-XIOC-PREMIUM-*, SW-XIOC-P-1/P-3)
+- Fusion: confermati SW-FUSION-P-L (on-prem) e SW-FUSION-C-3 (cloud)
+
+**SEGNALAZIONI EoS/EoM IMPORTANTI:**
+- Kit Crestron Flex UC-C100/UC-CX100 in End-of-Sale (bollettino gennaio 2026): sostituiti dall'approccio modulare Collab Compute + touch screen serie 80.
+- AM-100/AM-101 (AirMedia) in End of Maintenance dal 6/1/2020: nessun aggiornamento firmware/sicurezza; sostituzione raccomandata AM-3100/AM-3200/AM-TX3-100.
+- Un prodotto ("Crestron Sightline") non ha trovato conferma su fonti ufficiali Crestron: marcato "DA VERIFICARE CON IL VENDOR", possibile errore di trascrizione nel dataset originale del cliente.
+
+**Numeri finali sessione 23: 92 famiglie, 376 prodotti (Crestron: 20/20 con SKU = 100%), 150 licenze, 462 fonti, 0 errori di integrita' referenziale, 0 duplicati.**
+
+## Restyling grafico del sito (stessa sessione)
+
+Su richiesta del cliente:
+1. Rimosso il pannello di famiglie a destra nella pagina macroarea (provato e scartato).
+2. Redesign completo in stile Apple: font di sistema (SF Pro/Segoe UI), palette neutra bianco/nero/grigio con verde come accento, card arrotondate (18px) con effetto sollevamento, barra di navigazione con blur, pulsanti a pillola.
+3. Le categorie di prodotto nella pagina vendor sono ora un accordion chiuso di default (prima erano tutte espanse): il cliente seleziona la categoria, poi la famiglia, poi il prodotto.
+
+## Prossimo punto esatto da cui riprendere
+
+Crestron e' ora completo al 100%. Alla prossima richiesta "CONTINUA", il cliente decide il prossimo vendor tra: Milestone Systems, Avigilon, Axis, K-Array, MAXHUB, Q-SYS, Shure (verifica/completamento SKU mancanti e controllo duplicati per ciascuno, seguendo lo stesso metodo usato per Cisco e Crestron: pulizia duplicati PRIMA di completare gli SKU).
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 07/08/2026 (sessione 22, scrittura diretta GitHub)_
 
 ## Sessione 22 — CISCO COMPLETATO AL 100%
