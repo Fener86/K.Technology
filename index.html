@@ -110,6 +110,19 @@ label.lbl { font-family: 'Inter', sans-serif; font-size: 10.5px; text-transform:
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 .grid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+
+/* ---- layout a due colonne per la pagina macroarea: contenuto principale + menu famiglie a destra ---- */
+.macro-layout { display: grid; grid-template-columns: 1fr 300px; gap: 24px; align-items: start; }
+.macro-fam-panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 4px 0; position: sticky; top: 16px; max-height: calc(100vh - 100px); overflow-y: auto; }
+.macro-fam-panel-title { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 1.5px; color: var(--text-faint); text-transform: uppercase; padding: 14px 16px 8px; }
+.macro-fam-group-label { padding: 10px 16px 4px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-faint); }
+.macro-fam-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 16px 8px 22px; border-radius: 4px; cursor: pointer; font-size: 13px; gap: 8px; }
+.macro-fam-item:hover { background: var(--panel-2); color: var(--accent); }
+.macro-fam-item .fam-arrow { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--text-faint); flex-shrink: 0; }
+@media (max-width: 900px) {
+  .macro-layout { grid-template-columns: 1fr; }
+  .macro-fam-panel { position: static; max-height: none; }
+}
 .gh-status { display: inline-flex; align-items: center; gap: 6px; font-family: 'Inter', sans-serif; font-size: 11px; padding: 4px 10px; border-radius: 3px; }
 .gh-status.ok { color: #4CC38A; border: 1px solid #2c5c40; background: rgba(76,195,138,0.08); }
 .gh-status.off { color: var(--text-faint); border: 1px solid var(--border-strong); }
@@ -382,7 +395,7 @@ function renderSidebar(page, p1) {
   const famCount = (maId) => c.famiglie.filter((f) => f.macroareaId === maId).length;
   const famCountVendor = (vId) => c.famiglie.filter((f) => f.vendorId === vId).length;
   sb.innerHTML = `
-    <div class="sidebar-title">Macroaree</div>
+    <div class="sidebar-title">Prodotti</div>
     ${c.macroaree.map((ma) => `<div class="sidebar-item ${page==="macroarea"&&p1===ma.id?"active":""}" data-nav="#/macroarea/${ma.id}"><span>${esc(ma.nome)}</span><span class="sidebar-count">${famCount(ma.id)}</span></div>`).join("")}
     <div class="sidebar-title" style="margin-top:24px;">Vendor</div>
     ${c.vendors.map((v) => `<div class="sidebar-item ${page==="vendor"&&p1===v.id?"active":""}" data-nav="#/vendor/${v.id}"><span>${esc(v.nome)}</span><span class="sidebar-count">${famCountVendor(v.id)}</span></div>`).join("")}
@@ -398,7 +411,8 @@ function viewHome(c) {
     <h1 class="h1">Catalogo tecnico-commerciale Kaplet</h1>
     <div class="desc">Consulta tecnologie, vendor, famiglie, prodotti, licenze, subscription e supporti venduti da Kaplet.
     Ogni dato riporta la fonte ufficiale verificata; dove manca, il sistema segnala "DA VERIFICARE CON IL VENDOR".</div>
-    <h2 class="h2">Macroaree</h2>
+    <h2 class="h2">Prodotti</h2>
+    <div class="desc" style="margin-top:-8px;">Sfoglia per area tecnologica: entrando vedrai i vendor disponibili e, sulla destra, tutte le famiglie di tecnologie censite.</div>
     <div class="grid">${c.macroaree.map((ma) => `
       <div class="card" data-nav="#/macroarea/${ma.id}">
         <div class="card-title">${esc(ma.nome)}</div>
@@ -406,6 +420,7 @@ function viewHome(c) {
         <div class="card-desc">${esc(ma.descrizione)}</div>
       </div>`).join("")}</div>
     <h2 class="h2">Vendor</h2>
+    <div class="desc" style="margin-top:-8px;">Oppure sfoglia direttamente per vendor.</div>
     <div class="grid">${c.vendors.map((v) => `
       <div class="card" data-nav="#/vendor/${v.id}">
         <div class="card-title">${esc(v.nome)}</div>
@@ -436,15 +451,36 @@ function viewMacroarea(ma, c, L) {
   if (!ma) return `<div class="empty">Macroarea non trovata.</div>`;
   const famiglie = c.famiglie.filter((f) => f.macroareaId === ma.id);
   const areeFunz = c.areeFunzionali.filter((af) => af.macroareaId === ma.id);
-  const vendorIds = [...new Set(famiglie.map((f) => f.vendorId))];
+  const vendorIds = [...new Set(famiglie.map((f) => f.vendorId))].sort((a,b)=>(L.vendors[a]?.nome||"").localeCompare(L.vendors[b]?.nome||"", "it"));
+
+  // pannello destro: famiglie di tecnologie di questa macroarea, raggruppate per vendor
+  const famPanel = vendorIds.length ? `
+    <div class="macro-fam-panel">
+      <div class="macro-fam-panel-title">Famiglie di tecnologie</div>
+      ${vendorIds.map(vid => `
+        <div class="macro-fam-group-label">${esc(L.vendors[vid]?.nome||"")}</div>
+        ${famiglie.filter(f=>f.vendorId===vid).sort((a,b)=>a.nome.localeCompare(b.nome,"it")).map(f=>`
+          <div class="macro-fam-item" data-nav="#/family/${f.id}">
+            <span>${led(f.stato)}${esc(f.nome)}</span>
+            <span class="fam-arrow">&#8594;</span>
+          </div>`).join("")}
+      `).join("")}
+    </div>` : `<div class="macro-fam-panel"><div class="empty" style="margin:16px;">Nessuna famiglia ancora catalogata.</div></div>`;
+
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:ma.nome}])}
     <h1 class="h1">${esc(ma.nome)}</h1>
     <div class="desc">${esc(ma.descrizione)}</div>
-    <h2 class="h2">Aree funzionali censite</h2>
-    ${areeFunz.length ? `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">${areeFunz.map(af=>`<span class="badge" style="color:var(--text-dim);border:1px solid var(--border-strong);">${esc(af.nome)}</span>`).join("")}</div>` : `<div class="empty">Nessuna area funzionale ancora censita.</div>`}
-    <h2 class="h2">Vendor in questa macroarea</h2>
-    ${vendorIds.length ? `<div class="grid">${vendorIds.map(vid=>`<div class="card" data-nav="#/vendor/${vid}"><div class="card-title">${esc(L.vendors[vid]?.nome||"")}</div><div class="card-meta">${famiglie.filter(f=>f.vendorId===vid).length} famiglie</div></div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata in questa macroarea.</div>`}
+    <div class="macro-layout" style="margin-top:16px;">
+      <div>
+        <h2 class="h2" style="margin-top:0;">Aree funzionali censite</h2>
+        ${areeFunz.length ? `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">${areeFunz.map(af=>`<span class="badge" style="color:var(--text-dim);border:1px solid var(--border-strong);">${esc(af.nome)}</span>`).join("")}</div>` : `<div class="empty">Nessuna area funzionale ancora censita.</div>`}
+        <h2 class="h2">Vendor in questa macroarea</h2>
+        <div class="desc" style="margin-top:-8px;margin-bottom:4px;">Clicca su un vendor per vedere tutte le sue famiglie, oppure scegli direttamente una famiglia dal menu a destra.</div>
+        ${vendorIds.length ? `<div class="grid">${vendorIds.map(vid=>`<div class="card" data-nav="#/vendor/${vid}"><div class="card-title">${esc(L.vendors[vid]?.nome||"")}</div><div class="card-meta">${famiglie.filter(f=>f.vendorId===vid).length} famiglie</div></div>`).join("")}</div>` : `<div class="empty">Nessuna famiglia ancora catalogata in questa macroarea.</div>`}
+      </div>
+      ${famPanel}
+    </div>
   `;
 }
 
