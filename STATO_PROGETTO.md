@@ -1,5 +1,41 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 22, scrittura diretta GitHub)_
+
+## Sessione 22 — CISCO COMPLETATO AL 100%
+
+Completati i 15 prodotti Cisco rimanenti con SKU/informazioni di licensing reali verificate su fonti ufficiali Cisco (ordering guide, data sheet, pagine di supporto):
+
+- **Cisco Secure Firewall Threat Defense**: immagine software su appliance 1200/3100/4200/6100/9300, licenziata a Smart Licensing.
+- **Cisco Hybrid Mesh Firewall**: architettura di gestione unificata; SKU FWM-SEC-SUB (Security Cloud Control) + MPE-SEC-SUB (Mesh Policy Engine per firewall terze parti).
+- **Cisco Secure Firewall 200 Series**: primo modello Secure Firewall 220, edge/filiali con SD-WAN integrato.
+- **Cisco Umbrella / Secure Access - DNS Defense**: SKU legacy SA-SIA-ESS-K9 in EoS dal 18/02/2026, sostituito da nuove SKU a 4 pacchetti.
+- **Cisco Secure Access** (suite SSE completa): 4 SKU pacchetti Essentials/Advantage SIA+SPA.
+- **Cisco Secure Email Threat Defense**: SKU ETD-SEC-SUB / CSEMAIL-SEC-SUB, livelli Essentials/Advantage.
+- **Cisco Secure Network Analytics**: hardware SMC-2210/2300-K9, Flow Collector 4200/4210, licenze Threat Feed L-LC-TI-FCxK.
+- **Cisco WAAP**: SaaS OEM Radware, 3 piani di servizio a throughput.
+- **Cisco Identity Intelligence**: incluso in Duo Advantage/Premier, nessuno SKU separato.
+- **Cisco Secure Workload**: SKU bundle firewall C1-TAAS-XX-SW-K9, Smart Licensing.
+- **Cisco Catalyst Software Subscription for Switching**: alternativa a DNA, tier Essentials/Advantage, sostituito su C9350 da "Cisco Networking Subscription" unificata.
+- **Cisco DNA Software SD-WAN**: tier Essentials/Advantage/Premier per throughput.
+- **Cisco Catalyst 8000V Edge Software**: SKU L-DNA-C8000V, licenza HSEC automatica sopra 250 Mbps.
+- **Cisco Success Tracks / Solution Support**: 5 modalita' di ordinazione, servizio non hardware.
+
+**SEGNALAZIONE URGENTE EoS**: Cisco Vulnerability Management (ex Kenna Security, incluso Vulnerability Intelligence e Application Security Module) - ultimo giorno ordinabile **10/03/2026**, ultimo rinnovo **11/06/2026**, fine supporto TAC **30/06/2028**. Cisco ha dichiarato che NON esiste un prodotto sostitutivo interno; il mercato (Tenable One, Nucleus) offre percorsi di migrazione. Impatto diretto su eventuali proposte commerciali Kaplet che includano questo prodotto.
+
+**Pulizia dati**: rimossi 4 prodotti duplicati orfani con ID generati automaticamente (ShureCloud, Shure Designer, 2x K-Monitor) che duplicavano voci gia' correttamente censite.
+
+**Numeri finali sessione 22: 91 famiglie, 384 prodotti (Cisco: 76/76 con SKU/nota = 100%), 150 licenze, 445 fonti, 0 errori di integrita' referenziale, 0 duplicati.**
+
+## Prossimo punto esatto da cui riprendere
+
+Cisco e' ora completo al 100%. Alla prossima richiesta "CONTINUA", riprendere con il vendor successivo secondo la sequenza pianificata:
+1. **Milestone Systems**: verificare/completare portfolio (XProtect, Milestone Care, Husky) con controllo SKU e lifecycle.
+2. Poi in sequenza: Avigilon, Axis, Crestron, K-Array, MAXHUB, Q-SYS, Shure (verifica/completamento SKU mancanti per ciascuno).
+3. Eseguire controllo qualita' periodico completo (duplicati, campi vuoti, URL malformati, fonti duplicate) ogni 3-4 sessioni.
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 03/08/2026 (sessione 21, scrittura diretta GitHub)_
 
 ## Sessione 21 — chiusura giro vendor per vendor
