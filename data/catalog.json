@@ -3312,8 +3312,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portale per attivare e gestire tutte le licenze Smart Cisco",
-      "fonteId": "src_cisco_cssm_page",
-      "sku": "Portale software.cisco.com, gratuito: nessuno SKU proprio, e' l'infrastruttura di gestione per tutte le licenze Cisco Smart Licensing"
+      "fonteId": "src_cisco_cssm_guide",
+      "sku": "Piattaforma di gestione licenze centralizzata, gratuita/inclusa. Un solo Smart Account puo' essere associato a un'organizzazione Meraki Dashboard alla volta; possibile passare tra modalita' di gestione on-prem (CSSM), cloud (Meraki Dashboard) o mista, mantenendo la continuita' delle licenze esistenti."
     },
     {
       "id": "prod_xja9p5nz",
@@ -3359,7 +3359,8 @@
       "deployment": "cloud",
       "statoLifecycle": "end_of_sale",
       "descrizioneBreve": "MDM cloud-first — DISMESSO: non piu' acquistabile dal 3 giugno 2026",
-      "fonteId": "src_xbh8jaqn"
+      "fonteId": "src_meraki_sm_eol",
+      "sku": "Dismesso ufficialmente dal 03/06/2026, non piu' acquistabile. Supporto tecnico e aggiornamenti garantiti fino al 03/06/2029 per i clienti esistenti."
     },
     {
       "id": "prod_xaiuvqdj",
@@ -14633,6 +14634,36 @@
       "titolo": "Cisco Nexus Dashboard - Configuring Licensing",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_meraki_sm_page",
+      "url": "https://meraki.cisco.com/products/systems-manager/",
+      "titolo": "Meraki Systems Manager - pagina ufficiale (conferma discontinuazione 3/6/2026)",
+      "vendorId": "v_cisco",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "confermato: discontinuato dal 03/06/2026, non piu' acquistabile",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_meraki_sm_eol",
+      "url": "https://documentation.meraki.com/Platform_Management/SM_-_Endpoint_Management",
+      "titolo": "SM - Endpoint Management (conferma ufficiale dismissione, aprile 2026)",
+      "vendorId": "v_cisco",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-04",
+      "stato": "confermato: dismesso dal 3/6/2026, fine supporto 3/6/2029",
+      "categoriaControllo": "eol"
+    },
+    {
+      "id": "src_cisco_cssm_guide",
+      "url": "https://www.cisco.com/c/dam/en_us/buy/collateral/unx-cssm-guide.pdf",
+      "titolo": "Cisco Smart Software Manager (CSSM) - Unified Licensing Guide",
+      "vendorId": "v_cisco",
+      "tipo": "guida ufficiale",
       "dataConsultazione": "2026-08-04",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
