@@ -1154,18 +1154,6 @@
       "fonteId": "src_xcy3gjcp"
     },
     {
-      "id": "fam_xv1kivdo",
-      "vendorId": "v_crestron",
-      "brandLineId": null,
-      "macroareaId": "ma_av",
-      "areaFunzionaleId": null,
-      "nome": "AV over IP",
-      "descrizione": "Famiglia importata dal dataset di ricerca interno Kaplet (v28): AV over IP.",
-      "categoria": "AV over IP",
-      "stato": "attivo",
-      "fonteId": "src_xsvb5kfk"
-    },
-    {
       "id": "fam_x37c7m7d",
       "vendorId": "v_qsys",
       "brandLineId": null,
@@ -1308,6 +1296,30 @@
       "categoria": "Licensing (modelli trasversali)",
       "stato": "attivo",
       "fonteId": null
+    },
+    {
+      "id": "fam_crestron_dmnax",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "Crestron DM NAX (Audio over IP)",
+      "descrizione": "Piattaforma Crestron per la distribuzione audio su rete IP standard, compatibile Dante/AES67, per sistemi multi-zona.",
+      "categoria": "Audio over IP",
+      "stato": "attivo",
+      "fonteId": "src_crestron_dmnax_overview"
+    },
+    {
+      "id": "fam_crestron_control",
+      "vendorId": "v_crestron",
+      "brandLineId": null,
+      "macroareaId": "ma_av",
+      "areaFunzionaleId": null,
+      "nome": "Crestron Control Systems (3-Series/4-Series)",
+      "descrizione": "Processori di controllo Crestron alla base degli ecosistemi AV, illuminazione e automazione, programmabili con SIMPL/Crestron Home OS.",
+      "categoria": "Control Systems",
+      "stato": "attivo",
+      "fonteId": "src_crestron_cp4"
     }
   ],
   "prodotti": [
@@ -1566,7 +1578,8 @@
       "deployment": "cloud (Azure IoT Hub)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Provisioning, monitoraggio e gestione da remoto dei dispositivi Crestron (ed eventualmente di terze parti in Premium) senza hardware aggiuntivo.",
-      "fonteId": "src_crestron_xio_overview"
+      "fonteId": "src_crestron_xio_premium_sku",
+      "sku": "Tier Free (illimitato per rooms/dispositivi Crestron). Tier Premium a pagamento per gestione dispositivi terze parti/report storici/API: SW-XIOC-PREMIUM-1YR o -2YR-1-99/100-499/500+ (per fascia dispositivi) oppure SW-XIOC-P-1/P-3 (per singolo dispositivo, 1 o 3 anni)."
     },
     {
       "id": "prod_shure_intellimix_room_sw",
@@ -1632,9 +1645,10 @@
       "modello": "Multi-modello (es. UC-M70-T, UC-B30-T, UC-C100-T)",
       "tipologia": "hardware",
       "deployment": "on-premise (sala riunioni)",
-      "statoLifecycle": "attivo",
+      "statoLifecycle": "sostituito",
       "descrizioneBreve": "Kit di videoconferenza per Microsoft Teams Rooms o piattaforme BYOD, con touch screen, camera e bracket UC.",
-      "fonteId": "src_crestron_flex"
+      "fonteId": "src_crestron_flex_eos_uc_c100",
+      "sku": "ATTENZIONE - fine vendita in corso: i kit UC-C100-T/Z e UC-CX100-T/Z sono in End-of-Sale (bollettino gennaio 2026), sostituiti dall'approccio modulare Crestron Collab Compute (CCC-110/120) abbinato a touch screen serie 80 o kit Videobar 70."
     },
     {
       "id": "prod_qsys_core_processor",
@@ -1757,7 +1771,8 @@
       "deployment": "on-premise (rete Gigabit Ethernet)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Endpoint AV-over-IP software-configurabile come encoder o decoder 4K60 4:4:4, con scaling integrato e supporto HDR/HDCP.",
-      "fonteId": "src_crestron_dmnvx"
+      "fonteId": "src_crestron_nvx_models_docs",
+      "sku": "Famiglia di modelli: DM-NVX-350/350C, 351/351C (downmix), 352/352C (Dante), 360/360C, 363/363C (downmix+Dante) per encoder/decoder dual-role; DM-NVX-D10/D20/D200/D30/D30C per soli decoder."
     },
     {
       "id": "prod_milestone_husky_ivo",
@@ -2145,18 +2160,20 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova piattaforma compute Crestron (annunciata gennaio 2026, in vista di ISE 2026) che fa girare Microsoft Teams Rooms e Zoom Rooms su Windows, pensata come cuore di un ecosistema di collaborazione scalabile.",
-      "fonteId": "src_crestron_ise2026_launch"
+      "fonteId": "src_crestron_ccc_series",
+      "sku": "CCC-110-T/Z (Intel Core Ultra 5, Teams/Zoom) e CCC-120-T/Z (Intel Core Ultra 7); staffa di montaggio opzionale CCCA-CMK-110/120. E' il nuovo cuore di calcolo che sostituisce i kit UC-C100/UC-CX100."
     },
     {
       "id": "prod_crestron_dmnax",
-      "familyId": "fam_crestron_flex",
+      "familyId": "fam_crestron_dmnax",
       "nomeCommerciale": "Crestron DM NAX (audio intelligente)",
       "modello": "Piattaforma audio di rete",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Piattaforma di distribuzione audio intelligente su rete, annunciata insieme alla camera 1 Beyond i12D per semplificare il deployment di audio/video di qualita' professionale su larga scala.",
-      "fonteId": "src_crestron_ise2026_launch"
+      "fonteId": "src_crestron_dmnax_overview",
+      "sku": "Portfolio DM NAX: DM-NAX-8ZSA (amplificatore multi-zona), DM-NAX-16AIN (encoder 16 ingressi analogici/digitali), DM-NAX-AUD-IO (adattatore I/O linea bilanciata), DM-NAX-XSP (controller display 8K con encoder/decoder integrato), DM-NAX-2XLRI-1G (placca a muro con ingressi XLR). Standard AES67, interoperabile con Dante tramite Dante Controller."
     },
     {
       "id": "prod_crestron_80series",
@@ -2167,7 +2184,8 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova famiglia di touch screen per prenotazione sale e controllo, basata sulla piattaforma touch Crestron e su Microsoft Device Ecosystem Platform (MDEP), per un'esperienza utente coerente su tutti gli spazi.",
-      "fonteId": "src_crestron_ise2026_launch"
+      "fonteId": "src_crestron_80series_launch",
+      "sku": "TS-1080/TSW-1080 (successori di TS/TSW-1070); variante TS-1080-UC-B per integrazione diretta con Crestron Collab Compute e Videobar 70. Lancio scaglionato: canale residenziale Q2 2026, alcuni modelli enterprise annunciati per luglio 2026."
     },
     {
       "id": "prod_karray_dragon_kx2",
@@ -2392,7 +2410,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova appliance DM NVX Director per la gestione domain-based semplificata di reti AV-over-IP su larga scala, equivalente virtuale di uno o piu' matrix switcher hardware.",
-      "fonteId": "src_crestron_nvx_dir2"
+      "fonteId": "src_crestron_nvx_dir_ent",
+      "sku": "DM-NVX-DIR2 (fino a 100 endpoint, 20 domini). Per reti piu' grandi: DM-NVX-DIR-ENT (fino a 1000 endpoint, 240 domini, alimentatori ridondanti hot-swap, porte SFP+ 10G)."
     },
     {
       "id": "prod_crestron_nvx384_385",
@@ -2403,7 +2422,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuovi encoder/decoder DM NVX con funzione Multiview (piu' sorgenti su un singolo display) e streaming H.264 per estendere i contenuti oltre la rete AV tradizionale.",
-      "fonteId": "src_crestron_nvx_whatsnew"
+      "fonteId": "src_crestron_nvx_whatsnew",
+      "sku": "DM-NVX-384/384C e DM-NVX-385/385C (con downmixing) — switcher AV-over-IP 5K 4x1 con connettivita' HDMI e USB-C."
     },
     {
       "id": "prod_fortidlp_platform",
@@ -2530,7 +2550,8 @@
       "deployment": "on-premise (esterno sala)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Touch screen dedicati alla prenotazione sale, da installare fuori dalla sala riunioni.",
-      "fonteId": "src_crestron_scheduling_userguide"
+      "fonteId": "src_crestron_tss_scheduling",
+      "sku": "TSS-770 (7 in.) e TSS-1070 (10.1 in.), con varianti -T (Microsoft Teams Panels), -Z (Zoom Rooms) o generica (app di scheduling Crestron/Fusion/Google Calendar/25Live). App di scheduling disponibile anche su TSW-570/770/1070 e TS-770/1070."
     },
     {
       "id": "prod_qsys_nc_110",
@@ -3714,50 +3735,6 @@
       "sku": "R9835100 (TFN Central Server, hardware + Media Pack software, esempio; verificare listino aggiornato)"
     },
     {
-      "id": "prod_xl1958si",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron DM NVX",
-      "modello": "Crestron DM NVX",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Tecnologia AV-over-IP per video, audio, USB e controllo su rete",
-      "fonteId": "src_crestron_dmnvx"
-    },
-    {
-      "id": "prod_x54i89bm",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron XiO Cloud",
-      "modello": "Crestron XiO Cloud",
-      "tipologia": "cloud/SaaS",
-      "deployment": "cloud",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Piattaforma cloud per provisioning, monitoraggio e gestione dispositivi Crestron",
-      "fonteId": "src_crestron_xio_overview"
-    },
-    {
-      "id": "prod_xgq9u0mz",
-      "familyId": "fam_xv1kivdo",
-      "nomeCommerciale": "DM NVX Director",
-      "modello": "DM NVX Director",
-      "tipologia": "hardware/software",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Appliance di rete per la gestione centralizzata dei domini DM NVX (fino a 160/240 endpoint)",
-      "fonteId": "src_xsvb5kfk"
-    },
-    {
-      "id": "prod_xlw4uh3w",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron Flex",
-      "modello": "Crestron Flex",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistemi per sale riunioni UC&C (Teams/Zoom Rooms), incl. UC-B140-T e altre configurazioni",
-      "fonteId": "src_xnmrqs3f"
-    },
-    {
       "id": "prod_x82n6gek",
       "familyId": "fam_crestron_xio",
       "nomeCommerciale": "Crestron Sightline",
@@ -3766,51 +3743,20 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Combinazione di video, audio e controllo intelligenti per meeting ibridi immersivi",
-      "fonteId": "src_x4jx2fto"
+      "fonteId": "src_x4jx2fto",
+      "sku": "DA VERIFICARE CON IL VENDOR — non e' stato possibile confermare su fonti ufficiali Crestron l'esistenza di un prodotto o funzionalita' chiamata \"Sightline\"; potrebbe derivare da un errore di trascrizione nel dataset originale."
     },
     {
       "id": "prod_x2h9jplx",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron Desk Scheduling / Videobar 70",
-      "modello": "Crestron Desk Scheduling / Videobar 70",
+      "familyId": "fam_crestron_flex",
+      "nomeCommerciale": "Crestron Videobar 70",
+      "modello": "Videobar 70 (UC-SB2-CAM)",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Soluzioni di scheduling scrivanie e video bar per digital workplace",
-      "fonteId": "src_xvb8cuzv"
-    },
-    {
-      "id": "prod_xi7awvy4",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron AirMedia",
-      "modello": "Crestron AirMedia",
-      "tipologia": "hardware/software",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Tecnologia di presentazione/conferencing wireless BYOD Crestron, plug-and-play, con controllo e digital signage integrati; disponibile anche come licenza attivabile (SW-DMPS3-AIRMEDIA) sui sistemi DMPS3-4K-250/350-C.",
-      "fonteId": "src_crestron_airmedia_page"
-    },
-    {
-      "id": "prod_xcjbh5u2",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "Crestron DigitalMedia (DM)",
-      "modello": "Crestron DigitalMedia (DM)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Distribuzione AV su cavo strutturato, predecessore di DM NVX",
-      "fonteId": null
-    },
-    {
-      "id": "prod_x52dwuss",
-      "familyId": "fam_crestron_xio",
-      "nomeCommerciale": "XiO Cloud — licenze a soggetto/room-based",
-      "modello": "XiO Cloud — licenze a soggetto/room-based",
-      "tipologia": "subscription",
-      "deployment": "non applicabile (licenza, non un deployment fisico)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Modello di licenza XiO Cloud per dispositivo/per sala",
-      "fonteId": "src_xf27ozrb"
+      "descrizioneBreve": "Videobar all-in-one con quad-camera 4K, array 24 microfoni, doppio speaker 10W e OS Android integrato per sale medio-grandi Teams/Zoom Rooms.",
+      "fonteId": "src_crestron_videobar70",
+      "sku": "UC-SB2-CAM-A-T/Z (videobar standalone, integrato con TS-1080-UC). Venduto anche in kit completo: UC-B70-A-T/Z con touch screen TS-1070/1080, PoE injector e cablaggio."
     },
     {
       "id": "prod_xl0n4o0v",
@@ -5184,9 +5130,10 @@
       "modello": "hardware",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "attivo",
+      "statoLifecycle": "sostituito",
       "descrizioneBreve": "AirMedia Presentation Gateway, modello corrente",
-      "fonteId": "src_xzgqp2k1"
+      "fonteId": "src_crestron_am100_101_eom",
+      "sku": "AM-101 — in End of Maintenance dal 6/1/2020 (nessun aggiornamento firmware/sicurezza). Sostituito dalla linea AirMedia attuale (AM-3100/AM-3200/AM-TX3-100)."
     },
     {
       "id": "prod_x5ffq92e",
@@ -5195,9 +5142,10 @@
       "modello": "hardware",
       "tipologia": "hardware",
       "deployment": "on-premise",
-      "statoLifecycle": "attivo",
+      "statoLifecycle": "sostituito",
       "descrizioneBreve": "AirMedia Presentation Gateway, modello precedente",
-      "fonteId": "src_xpk66ruv"
+      "fonteId": "src_crestron_am100_101_eom",
+      "sku": "AM-100 — prodotto discontinuo (fine vita precedente ad AM-101, anch'esso ora in End of Maintenance). Sostituzione raccomandata: linea AirMedia attuale AM-3100/AM-3200/AM-TX3-100."
     },
     {
       "id": "prod_x5b2pgnw",
@@ -5208,7 +5156,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Trasmettitore endpoint DigitalMedia per sorgenti HDMI/VGA remote su cavo CATx",
-      "fonteId": "src_x75ses3u"
+      "fonteId": "src_x75ses3u",
+      "sku": "DM-TX-201-C — trasmettitore DigitalMedia (tecnologia DM classica, non NVX) per estensione HDMI su cavo twisted-pair verso un ricevitore DM abbinato."
     },
     {
       "id": "prod_xvjbnsrd",
@@ -5219,18 +5168,20 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Presentation system integrato: switcher, scaler, decoder streaming, DSP audio, distribuzione DigitalMedia e AirMedia in un solo box",
-      "fonteId": "src_xvs7zqdt"
+      "fonteId": "src_xvs7zqdt",
+      "sku": "DMPS3-4K-350-C-AIRMEDIA — presentation switcher DigitalMedia con AirMedia integrato, per aule e sale conferenza con piu' sorgenti locali/wireless."
     },
     {
       "id": "prod_xklzhhr9",
-      "familyId": "fam_crestron_flex",
+      "familyId": "fam_crestron_dmnvx",
       "nomeCommerciale": "DM-NVX-360",
       "modello": "hardware",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Encoder/decoder AV-over-IP 4K60 4:4:4 su Gigabit Ethernet, HDR e HDCP 2.3",
-      "fonteId": "src_xsf1ipku"
+      "fonteId": "src_crestron_nvx_models_docs",
+      "sku": "DM-NVX-360/360C — encoder/decoder flagship 4K60 4:4:4 HDR con scaling, video wall processing, routing USB/KVM, connettivita' rame e fibra opzionale."
     },
     {
       "id": "prod_xgulfcwn",
@@ -5241,7 +5192,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switcher HDMI 4K/60 con controllo Crestron nativo via Ethernet",
-      "fonteId": "src_xrokuwjr"
+      "fonteId": "src_xrokuwjr",
+      "sku": "HD-MD4X1-4K-E — switcher HDMI 4x1 4K60, componente della linea HD/DM per instradamento sorgenti locali."
     },
     {
       "id": "prod_xa4b7iz8",
@@ -5252,29 +5204,20 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Video processor multi-finestra, fino a 4 sorgenti 4K simultanee su un display",
-      "fonteId": "src_xj8klzkh"
+      "fonteId": "src_xj8klzkh",
+      "sku": "HD-WP-4K-401-C — placca a muro con trasmettitore HDMI su DM, per postazioni di presentazione con tavolo/lettorio."
     },
     {
       "id": "prod_xnbxofkm",
-      "familyId": "fam_crestron_flex",
+      "familyId": "fam_crestron_control",
       "nomeCommerciale": "Crestron Control (3-Series / 4-Series)",
       "modello": "hardware",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistemi di controllo e automazione sala; pagina prodotto ufficiale su crestron.com non raggiunta in questa sessione (solo rivenditori terzi per modelli come CP4).",
-      "fonteId": null
-    },
-    {
-      "id": "prod_xrk86kbz",
-      "familyId": "fam_crestron_flex",
-      "nomeCommerciale": "Crestron Connected / XiO Cloud Connected devices",
-      "modello": "documentazione",
-      "tipologia": "documentazione",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Elenco ufficiale dei dispositivi certificati Crestron Connected e/o compatibili XiO Cloud",
-      "fonteId": "src_x2p8l29q"
+      "fonteId": "src_crestron_cp4",
+      "sku": "CP4 (rack-mount 1RU, processore 4-Series flagship per sale enterprise/boardroom), CP4-R (versione per Crestron Home OS residenziale), MC4 (form factor compatto per sale piccole/medie, stesso motore 4-Series)."
     },
     {
       "id": "prod_xadl3qpg",
@@ -5648,7 +5591,8 @@
       "deployment": "on-premise (server dedicato) o cloud (Crestron Fusion Cloud)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software di monitoraggio/scheduling enterprise per dispositivi Crestron e di terze parti, con help desk remoto e gestione energetica.",
-      "fonteId": "src_crestron_fusion_overview"
+      "fonteId": "src_crestron_fusion_overview",
+      "sku": "On-premises: SW-FUSION-P-L (licenza perpetua per stanza). Cloud: SW-FUSION-C-3 (subscription 3 anni)."
     },
     {
       "id": "prod_axis_i7010ve",
@@ -14858,6 +14802,166 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "lifecycle"
+    },
+    {
+      "id": "src_crestron_nvx_models_docs",
+      "url": "https://docs.crestron.com/en-us/7887/Content/Topics/WorksWith/DM-NVX.htm",
+      "titolo": "DM NVX AV Encoders/Decoders - elenco modelli completo",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_nvx_dir_ent",
+      "url": "https://www.crestron.com/Products/Catalog/AV-Over-IP/DM-NVX-AV-Over-IP/Management/DM-NVX-DIR-ENT",
+      "titolo": "DM-NVX-DIR-ENT - Director enterprise (1000 endpoint, 240 domini)",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_flex_eos_uc_c100",
+      "url": "https://www.crestron.com/getmedia/4225e24e-6818-4ec4-8f78-5e8744f44388/mg_eos_UC-C100_UC-CX100_PEOS_Notice",
+      "titolo": "End-of-Sale UC-C100 / UC-CX100 - sostituiti da Collab Compute (CCC series)",
+      "vendorId": "v_crestron",
+      "tipo": "bollettino EoL ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "lifecycle"
+    },
+    {
+      "id": "src_crestron_ccc_series",
+      "url": "https://docs.crestron.com/en-us/9583/Content/Topics/Home.htm",
+      "titolo": "Crestron Collab Compute (CCC Series) - manuale prodotto",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_80series_launch",
+      "url": "https://www.strata-gee.com/building-on-a-33-year-legacy-of-touch-screen-leadership-crestron-launches-80-series-its-most-advanced-version-yet/",
+      "titolo": "Lancio Crestron 80 Series touch screen (2026)",
+      "vendorId": "v_crestron",
+      "tipo": "articolo di settore",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "release"
+    },
+    {
+      "id": "src_crestron_ts1080_uc",
+      "url": "https://shop.avispl.com/products/crestron-10-1-in-tabletop-touch-screen-unified-communication-version",
+      "titolo": "TS-1080-UC-B - integrazione con Collab Compute e Videobar 70",
+      "vendorId": "v_crestron",
+      "tipo": "scheda rivenditore autorizzato",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_am100_101_eom",
+      "url": "https://support.crestron.com/app/answers/detail/a_id/1000611/~/am-100/am-101:-end-of-maintenance",
+      "titolo": "AM-100/AM-101: End of Maintenance dal 6/1/2020",
+      "vendorId": "v_crestron",
+      "tipo": "bollettino supporto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "lifecycle"
+    },
+    {
+      "id": "src_crestron_am3200",
+      "url": "https://www.avnetwork.com/news/crestron-updates-airmedia-wireless-presentation-solution",
+      "titolo": "AirMedia attuale: AM-3100, AM-3200, AM-TX3-100",
+      "vendorId": "v_crestron",
+      "tipo": "articolo di settore",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_videobar70",
+      "url": "https://www.crestron.com/Products/Featured-Solutions/Crestron-Videobar-70",
+      "titolo": "Crestron Videobar 70 (UC-SB2-CAM) - pagina prodotto ufficiale",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_tss_scheduling",
+      "url": "https://docs.crestron.com/en-us/8745/Content/Topics/Overview/Overview.htm",
+      "titolo": "TSS-70 Series - pannelli di prenotazione sale TSS-770/TSS-1070",
+      "vendorId": "v_crestron",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_xio_tiers",
+      "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Miscellaneous/wm_2025_XiO_Cloud_Tiers_v1.pdf",
+      "titolo": "XiO Cloud - confronto tier Free vs Premium",
+      "vendorId": "v_crestron",
+      "tipo": "documento ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_crestron_xio_premium_sku",
+      "url": "https://www.crestron.com/Products/Catalog/Control-and-Management/Cloud-Management/Licenses/SW-XIOC-PREMIUM-1YR-1-99",
+      "titolo": "SW-XIOC-PREMIUM-1YR-1-99 - licenza Premium XiO Cloud",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
+    },
+    {
+      "id": "src_crestron_dmnax_overview",
+      "url": "https://www.crestron.com/Products/Featured-Solutions/DM-NAX-Audio",
+      "titolo": "DM NAX Audio-over-IP - panoramica ufficiale",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_dmnax_8zsa",
+      "url": "https://www.crestron.com/Products/Catalog/AV-Over-IP/DM-NVX-AV-Over-IP/Amplifiers/DM-NAX-8ZSA",
+      "titolo": "DM-NAX-8ZSA - amplificatore Audio-over-IP",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_cp4",
+      "url": "https://www.crestron.com/Products/Catalog/Control-and-Management/Control-System/Rack-Mount/CP4",
+      "titolo": "CP4 - processore di controllo 4-Series rack-mount",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_crestron_mc4",
+      "url": "https://www.crestron.com/Products/Catalog/Control-and-Management/Control-System/Wall-Mount/MC4",
+      "titolo": "MC4 - processore di controllo 4-Series compatto",
+      "vendorId": "v_crestron",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
     }
   ],
   "changelog": []
