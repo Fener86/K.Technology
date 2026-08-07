@@ -1,5 +1,30 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 24, scrittura diretta GitHub)_
+
+## Sessione 24 — K-ARRAY COMPLETATO AL 100%
+
+**Pulizia dati (anche qui il merge Excel di sessione 19 aveva introdotto molto rumore — peggio di Crestron):**
+- Rimossi **14 prodotti duplicati/ridondanti**: Vyper, Kayman (triplicato), Kommander (triplicato), Python, Turtle, Rumble, Pinnacle, Thunder, Anakonda e K-framework3 erano tutti presenti sia come voce dettagliata sia come voce generica duplicata dal merge; rimosse anche 2 voci "ombrello" ridondanti ("K-array Systems", "K-array Speakers") che duplicavano prodotti gia' singolarmente censiti.
+- Nessuna licenza risultava collegata ai duplicati rimossi (verificato prima della cancellazione).
+
+**Tutti i 25 prodotti K-Array rimasti ora hanno model number reali** verificati su fonti ufficiali k-array.com, tra cui:
+- Diffusori: Vyper (KV25/52/102), Lyzard (KZ1/KZ14), Domino (KF26/210/212), Kayman (KY52/102), Kobra (KK52/102), Python (KP52/102), Tornado (KT2/KT2C/KT2-HV), Anakonda (KAN200/+/+8)
+- Subwoofer: Rumble (KU26/44/210/212)
+- Monitor da palco: Turtle (KRM33/KRM33P), Mastiff (KM112/112P/312/312P)
+- Sistemi portatili: Pinnacle (KR2/KR3/KR4)
+- Amplificazione: Kommander (KA04 -> KA208)
+- **4 novita' annunciate a InfoComm 2026** (giugno 2026): Keystone KST110 (subwoofer architettonico ultra-slim, motore Powersoft MM-Force), Dragon KX2 (point source ultra-compatto, driver Powersoft Spixel), Koral KO102 (colonna), Thunder KSCARDIO412P (subwoofer cardioide)
+- Software/controllo (nessun SKU commerciale, tool gratuiti/inclusi): K-framework3, K-Connect, K-Control, OsKar/OsKar Plus, K-array Web App, plug-in Q-SYS/Crestron, K-Cloud
+
+**Numeri finali sessione 24: 92 famiglie, 362 prodotti (K-Array: 25/25 con SKU/model number = 100%), 150 licenze, 470 fonti, 0 errori di integrita' referenziale, 0 duplicati.**
+
+## Prossimo punto esatto da cui riprendere
+
+K-Array e' ora completo al 100%. Alla prossima richiesta "CONTINUA", il cliente decide il prossimo vendor tra: Milestone Systems, Avigilon, Axis, MAXHUB, Q-SYS, Shure. NOTA METODOLOGICA consolidata su Cisco/Crestron/K-Array: il merge Excel di sessione 19 ha introdotto duplicati su piu' vendor — per ogni nuovo vendor, controllare SEMPRE prima i duplicati/voci ombrello e pulire, POI completare gli SKU mancanti.
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 07/08/2026 (sessione 23, scrittura diretta GitHub)_
 
 ## Sessione 23 — CRESTRON COMPLETATO AL 100% + restyling grafico sito
