@@ -369,11 +369,11 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_switching",
       "nome": "Meraki MS",
-      "descrizione": "Switch cloud-gestiti Meraki. Licenza specifica per modello hardware. In modalità Subscription: tier Essential e Advantage, con classi per product class (MS100 Small/Medium/Large, MS200 Medium/Large, MS300 Medium/Large, MS400 Medium/Large). In modalità Co-Term/PDL: 2 livelli (Enterprise e Advanced, dove Advanced è solo per modelli selezionati e non sono supportati tier misti).",
+      "descrizione": "Switch cloud-gestiti Meraki. Licenza specifica per modello hardware. In modalità Subscription: tier Essential e Advantage, con classi per product class (MS100 Small/Medium/Large, MS200 Medium/Large, MS300 Medium/Large, MS400 Medium/Large). Sono inoltre disponibili le classi Cisco Smart Switching Unified Licensing (Cisco Switching Access Medium, Large, Core) solo in Subscription. In modalità Co-Term/PDL: 2 livelli (Enterprise e Advanced, dove Advanced è solo per modelli selezionati e non sono supportati tier misti). PDL: non sono supportate nuove conversioni a PDL.",
       "stato": "attivo",
       "fonteId": "src_meraki_licensing_faq",
       "categoria": "Switch",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_meraki_mr",
@@ -382,11 +382,11 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_wireless",
       "nome": "Meraki MR",
-      "descrizione": "Access point wireless cloud-gestiti Meraki. La licenza è comune a tutti i modelli AP all'interno della stessa famiglia (stesso SKU di licenza per tutti gli hardware MR). Livelli di licenza: in modalità Subscription — Essential e Advantage; in modalità Co-Term o PDL — Enterprise, MR Upgrade e MR Advanced. ATTENZIONE — verificare prima di proporre: fonti terze non ufficiali segnalano un End-of-Sale per i modelli MR36/MR36H/MR44/MR46/MR46E, ma con date discordanti tra loro (viste sia il 2021 sia dicembre 2026); una discussione sulla community ufficiale Cisco di febbraio 2026 affermava che MR46 non fosse ancora in End-of-Sale. Controllare sempre la pagina ufficiale Meraki EOL (elenco completo, aggiornato) prima di quotare questi modelli specifici.",
+      "descrizione": "Access point wireless cloud-gestiti Meraki. La licenza è comune a tutti i modelli AP all'interno della stessa famiglia (stesso SKU di licenza per tutti gli hardware MR). Livelli di licenza: in modalità Subscription — Essential e Advantage; in modalità Co-Term o PDL — Enterprise, MR Upgrade e MR Advanced. ATTENZIONE — verificare prima di proporre: fonti terze non ufficiali segnalano un End-of-Sale per i modelli MR36/MR36H/MR44/MR46/MR46E, ma con date discordanti tra loro (viste sia il 2021 sia dicembre 2026); una discussione sulla community ufficiale Cisco di febbraio 2026 affermava che MR46 non fosse ancora in End-of-Sale. Controllare sempre la pagina ufficiale Meraki EOL (elenco completo, aggiornato) prima di quotare questi modelli specifici. Nota: PDL è ora riservato ai clienti esistenti che già utilizzano questo modello; le nuove conversioni a PDL non sono più supportate.",
       "stato": "attivo",
       "fonteId": "src_meraki_licensing_faq",
       "categoria": "Wireless / Access Point",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_meraki_dashboard_licensing",
@@ -503,11 +503,11 @@
       "macroareaId": "ma_av",
       "areaFunzionaleId": null,
       "nome": "K-Array - diffusori e amplificazione",
-      "descrizione": "Diffusori line-array e a colonna (linee Vyper, Kobra, Python, Lyzard, Anakonda, Koral, Kayman, Domino, Dragon, Tornado, Mugello, Pole Line, Ceil Line, Rumble/subwoofer, Keystone, Truffle) e amplificatori Kommander. Include anche sistemi audio+luce RAIL e RAIL S (sviluppati con KSCAPE). Prodotti hardware puri: nessun modello di licensing software rilevato sulle fonti ufficiali consultate. Nota di gruppo (confermata da comunicato ufficiale K-array USA, gennaio 2026): il gruppo K-array comprende i brand K-ARRAY, KSCAPE (illuminazione+audio integrati) e KGEAR; in questo catalogo, su indicazione del cliente, viene mantenuto solo il brand K-Array.",
+      "descrizione": "Diffusori line-array e a colonna (linee Vyper, Kobra, Python, Lyzard, Anakonda, Koral, Kayman, Domino, Dragon, Tornado, Mugello, Pole Line, Ceil Line, Rumble/subwoofer, Keystone, Truffle) e amplificatori Kommander. Include anche sistemi audio+luce RAIL e RAIL S (sviluppati con KSCAPE). Include inoltre linee KGEAR presenti sul sito ufficiale K-Array: GT Line, GH Line, GF Line, GC Line. Prodotti hardware puri: nessun modello di licensing software rilevato sulle fonti ufficiali consultate. Nota di gruppo (confermata da comunicato ufficiale K-array USA, gennaio 2026): il gruppo K-array comprende i brand K-ARRAY, KSCAPE (illuminazione+audio integrati) e KGEAR; in questo catalogo, su indicazione del cliente, viene mantenuto solo il brand K-Array.",
       "stato": "attivo",
       "fonteId": "src_karray_products",
       "categoria": "Diffusori / Amplificazione",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_maxhub_mtr",
@@ -710,11 +710,11 @@
       "macroareaId": "ma_av",
       "areaFunzionaleId": "af_meeting",
       "nome": "Cisco Webex Room Devices",
-      "descrizione": "Dispositivi Cisco per sale riunioni (Room Kit, Room Kit Mini, Room Kit Plus/Pro) con codec, camera e microfoni integrati, registrabili on-premise (CUCM) o al cloud Webex. Richiedono una licenza di registrazione dispositivo per unita', inclusa nel licensing Flex Webex.",
+      "descrizione": "Dispositivi Cisco per sale riunioni (Room Kit, Room Kit Mini, Room Kit Plus/Pro) con codec, camera e microfoni integrati, registrabili on-premise (CUCM) o al cloud Webex. Richiedono una licenza di registrazione dispositivo per unita' (Webex Device Subscription, con opzioni mensili o 1-5 anni), inclusa nel licensing Flex Webex. Il prodotto ha raggiunto l'end-of-sale; il replacement attivo indicato da Cisco e' il Cisco Room Bar Pro.",
       "stato": "end-of-sale",
       "fonteId": "src_cisco_webex_roomkit_ds",
       "categoria": "Videoconferenza / Collaboration",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_avigilon_unity_video",
@@ -964,10 +964,11 @@
       "macroareaId": "ma_phys",
       "areaFunzionaleId": "af_videosorv",
       "nome": "Meraki MV",
-      "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo (fino a un mese di registrazione locale) e gestione tramite lo stesso Meraki Dashboard di switch/AP/firewall. Licenza unica 'Enterprise', indipendente dal modello hardware (fanno eccezione le MV84X multi-imaging, che richiedono la licenza dedicata LIC-MV-MULTCAM).",
+      "descrizione": "Telecamere di videosorveglianza cloud-gestite Meraki, con storage solid-state a bordo e gestione tramite il Meraki Dashboard. Il modello di licenza varia: in Subscription sono disponibili i tier Essential ed Enterprise (stessa classe licenza per tutti i modelli hardware), con add-on opzionali Cloud Archive, MV Sense e Meraki Display; in Co-Term/PDL è disponibile il tier Enterprise (stessa classe licenza per tutti i modelli hardware), con add-on opzionali Cloud Archive e MV Sense.",
       "stato": "attivo",
       "fonteId": "src_meraki_licensing_faq",
-      "categoria": "Telecamere"
+      "categoria": "Telecamere",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_milestone_xprotect_access",
@@ -1048,10 +1049,11 @@
       "macroareaId": "ma_net",
       "areaFunzionaleId": "af_cloudmanaged",
       "nome": "Meraki MG",
-      "descrizione": "Gateway cellulare cloud-gestito Meraki (LTE/5G), usato come connettivita' primaria o di backup, tipicamente abbinato a MX per topologie SD-WAN in alta disponibilita'. Gestione 100% cloud tramite Meraki Dashboard, licenza obbligatoria per ogni dispositivo (per device/anno). Nota: il sito marketing meraki.com sta migrando su cisco.com (redirect automatico dai link esistenti dal 19 agosto).",
+      "descrizione": "Gateway cellulare cloud-gestito Meraki (LTE/5G), usato come connettività primaria o di backup, tipicamente abbinato a MX per topologie SD-WAN in alta disponibilità. Gestione 100% cloud tramite Meraki Dashboard, licenza obbligatoria per ogni dispositivo (per device/anno). Il portfolio Meraki è ora disponibile su Cisco.com (migrazione completata).",
       "categoria": "Wireless / Access Point",
       "stato": "attivo",
-      "fonteId": "src_meraki_mg_enterprise"
+      "fonteId": "src_meraki_mg_enterprise",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "fam_barco_encore_eventmaster",
@@ -1327,10 +1329,11 @@
       "macroareaId": "ma_av",
       "areaFunzionaleId": null,
       "nome": "Crestron Control Systems (3-Series/4-Series)",
-      "descrizione": "Processori di controllo Crestron alla base degli ecosistemi AV, illuminazione e automazione, programmabili con SIMPL/Crestron Home OS.",
+      "descrizione": "Processori di controllo Crestron alla base degli ecosistemi AV, illuminazione e automazione, programmabili con SIMPL/4-Series Control Engine. Il CP4 è un processore di controllo sicuro e ad alte prestazioni con motore di controllo 4-Series, progettato per integrare e automatizzare la tecnologia in abitazioni moderne, edifici commerciali e strutture governative. Supporta architettura di programmazione modulare, porte di controllo integrate (RS-232, IR/serial, relay, Cresnet, Gigabit Ethernet), gestione remota via Crestron Fusion e XiO Cloud, sicurezza enterprise-grade con 802.1X, SSH, TLS, HTTPS, SNMP V3, BACnet e integrazione Apple HomeKit.",
       "categoria": "Control Systems",
       "stato": "attivo",
-      "fonteId": "src_crestron_cp4"
+      "fonteId": "src_crestron_cp4",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     }
   ],
   "prodotti": [
@@ -1512,9 +1515,9 @@
       "tipologia": "software",
       "deployment": "on-premise, single-server",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Edizione entry-level per piccole imprese, fino a 48 canali su singolo server.",
+      "descrizioneBreve": "Edizione entry-level per piccole imprese, fino a 48 canali su singolo server, con funzioni di sicurezza base e gestione allarmi.",
       "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_milestone_professionalplus",
@@ -1677,9 +1680,9 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Endpoint video di rete software-configurabile come encoder o decoder HDMI, con supporto Q-SYS Shift™ (fino a 4K60 4:4:4) e Mediacast (fino a 1080p30 4:2:0), AV Bridging integrato, Core Mode e distribuzione di rete in modalità periferica.",
+      "descrizioneBreve": "Endpoint video di rete software-configurabile come encoder o decoder HDMI, con supporto Q-SYS Shift™ (fino a 4K60 4:4:4) e Mediacast (fino a 1080p30 4:2:0), AV Bridging integrato, Core Mode, 3 ingressi HDMI, 2 uscite HDMI, RS-232, GPIO e audio 3.5 mm, distribuzione di rete in modalità periferica.",
       "fonteId": "src_qsys_nv",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_shure_mxa920",
@@ -1818,10 +1821,11 @@
       "modello": "Multi-modello",
       "tipologia": "hardware",
       "deployment": "on-premise (registrazione CUCM) o cloud (registrazione Webex)",
-      "statoLifecycle": "sostituito",
+      "statoLifecycle": "end-of-sale (ancora supportato)",
       "descrizioneBreve": "Sistemi di videoconferenza per sale da huddle a grandi sale riunioni, con speaker-tracking e integrazione Webex.",
       "fonteId": "src_webex_roomkit_eos_ds",
-      "sku": "SOSTITUITI: Webex Room Kit e' confermato End-of-Sale (sostituito da Cisco Room Bar Pro); Room Kit/Room Kit Mini/Room Kit Plus 'NON RADIO' in EoL dal 28/11/2023. ATTUALI: Cisco Room Bar, Room Bar Pro, Room Kit Pro G2 (vedi prodotto separato)."
+      "sku": "SOSTITUITI: Webex Room Kit e' confermato End-of-Sale (sostituito da Cisco Room Bar Pro); Room Kit/Room Kit Mini/Room Kit Plus 'NON RADIO' in EoL dal 28/11/2023. ATTUALI: Cisco Room Bar, Room Bar Pro, Room Kit Pro G2 (vedi prodotto separato).",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_avigilon_unity_video_sw",
@@ -2422,13 +2426,14 @@
       "id": "prod_crestron_nvx_dir2",
       "familyId": "fam_crestron_dmnvx",
       "nomeCommerciale": "Crestron DM-NVX-DIR2",
-      "modello": "DM-NVX-DIR2",
+      "modello": "DM-NVX-DIR-ENT",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
-      "descrizioneBreve": "Nuova appliance DM NVX Director per la gestione domain-based semplificata di reti AV-over-IP su larga scala, equivalente virtuale di uno o piu' matrix switcher hardware.",
+      "descrizioneBreve": "Appliance enterprise DM NVX Director per la gestione, configurazione e controllo di reti AV-over-IP su larga scala con fino a 1000 endpoint e 240 domini, equivalente virtuale di uno o più matrix switcher hardware, con alimentatori ridondanti hot-swap e porte SFP+ 10G.",
       "fonteId": "src_crestron_nvx_dir_ent",
-      "sku": "DM-NVX-DIR2 (fino a 100 endpoint, 20 domini). Per reti piu' grandi: DM-NVX-DIR-ENT (fino a 1000 endpoint, 240 domini, alimentatori ridondanti hot-swap, porte SFP+ 10G)."
+      "sku": "DM-NVX-DIR2 (fino a 100 endpoint, 20 domini). Per reti piu' grandi: DM-NVX-DIR-ENT (fino a 1000 endpoint, 240 domini, alimentatori ridondanti hot-swap, porte SFP+ 10G).",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_crestron_nvx384_385",
@@ -2603,8 +2608,9 @@
       "tipologia": "hardware",
       "deployment": "on-premise (spazi broadcast-grade)",
       "statoLifecycle": "nuovo",
-      "descrizioneBreve": "Camera PTZ di rete broadcast-grade per l'esperienza VisionSuite Presenter Spotlight, per spazi ad alto impatto produttivo.",
-      "fonteId": "src_qsys_nc_pro15x"
+      "descrizioneBreve": "Camera PTZ di rete broadcast-grade costruita da Canon, con zoom ottico 15x, sensore CMOS 4K UHD da 1 pollice con Dual Pixel Autofocus e uscite opzionali HDMI, SDI, NDI® | HX2, per l'esperienza VisionSuite Presenter Spotlight in spazi ad alto impatto produttivo.",
+      "fonteId": "src_qsys_nc_pro15x",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_qsys_cxq_amp",
@@ -2622,13 +2628,13 @@
       "id": "prod_qsys_nl_speakers",
       "familyId": "fam_qsys_amp_speakers",
       "nomeCommerciale": "Q-SYS NL Series (diffusori PoE)",
-      "modello": "Multi-formato (NL-SB42 soundbar, NL-P4 pendant-mount, NL-C4 ceiling-mount)",
+      "modello": "Multi-formato (NL-SB42 speakerbar, NL-P4 pendant-mount, NL-C4 ceiling-mount)",
       "tipologia": "hardware",
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusori di rete alimentati via PoE, disponibili in tre fattori di forma (soundbar, a sospensione e a soffitto), audio/potenza/controllo su singolo cavo Ethernet, monitorabili da Q-SYS Reflect, con Intrinsic Correction integrata e supporto Q-SYS Call Sync.",
       "fonteId": "src_qsys_nl_series",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_karray_pinnacle",
@@ -2938,9 +2944,10 @@
       "tipologia": "SaaS",
       "deployment": "cloud",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Piattaforma unificata di application security",
+      "descrizioneBreve": "Piattaforma cloud unificata per la sicurezza di applicazioni web e API (WAAP)",
       "fonteId": "src_xwjig1u7",
-      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)"
+      "sku": "DA VERIFICARE CON IL VENDOR (nessuno SKU pubblico specifico trovato nelle fonti ufficiali consultate finora)",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xi7dpudl",
@@ -3188,11 +3195,12 @@
       "nomeCommerciale": "Cisco Secure Endpoint",
       "modello": "Cisco Secure Endpoint",
       "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
+      "deployment": "cloud (pubblico o privato)",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Endpoint detection and response Cisco",
+      "descrizioneBreve": "Soluzione di endpoint detection and response Cisco che integra prevenzione, rilevamento, threat hunting e risposta in un'unica piattaforma basata su analytics cloud",
       "fonteId": "src_cisco_secure_endpoint_page",
-      "sku": "Licenziato separatamente da Secure Client (ex AMP for Endpoints); disponibile per Windows/Mac/Linux/Android/iOS, deployment cloud pubblico o privato"
+      "sku": "Licenziato separatamente da Secure Client (ex AMP for Endpoints); disponibile per Windows/Mac/Linux/Android/iOS, deployment cloud pubblico o privato",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xqw00wvx",
@@ -3247,13 +3255,14 @@
       "id": "prod_xw4q6z6j",
       "familyId": "fam_meraki_dashboard",
       "nomeCommerciale": "Cisco Web Application and API Protection (WAAP)",
-      "modello": "Cisco Web Application and API Protection (WAAP)",
+      "modello": "Cisco Cloud WAAP Protection Service Plans",
       "tipologia": "SaaS",
       "deployment": "cloud",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Protezione applicazioni web e API",
+      "descrizioneBreve": "Protezione applicazioni web e API con piani Essentials, Advantage e Premier",
       "fonteId": "src_cisco_waap_planservice_ds",
-      "sku": "Soluzione cloud SaaS erogata in OEM da Radware (non hardware/SKU perpetuo). 3 piani di servizio (Essentials/Standard/Premium) dimensionati per throughput Mbps e numero di applicazioni protette; include WAF, protezione API, bot management e DDoS L7. Trial gratuito 90 giorni disponibile."
+      "sku": "Soluzione cloud SaaS erogata in OEM da Radware (non hardware/SKU perpetuo). 3 piani di servizio (Essentials/Standard/Premium) dimensionati per throughput Mbps e numero di applicazioni protette; include WAF, protezione API, bot management e DDoS L7. Trial gratuito 90 giorni disponibile.",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xhtr1qxy",
@@ -3311,9 +3320,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Access point Wi-Fi 6/6E/7, gestibili on-prem o cloud (Meraki)",
+      "descrizioneBreve": "Access point Wi-Fi 6/6E/7, gestibili on-prem o cloud (Meraki); alcune serie Wi-Fi 6 indoor in End-of-Sale/End-of-Life",
       "fonteId": "src_cisco_cat9100_series_page",
-      "sku": "Indoor Wi-Fi 6: 9105AX, 9115AX, 9117AX (EOL), 9120AX, 9130AX. Wi-Fi 6E: 9136, 9162, 9164, 9166. Wi-Fi 7: 9171, 9172, 9174, 9176, 9178, 9179. Outdoor: 9124AX, 9163, 9177. Feature set organizzato in package Essentials/Advantage (dettaglio su Cisco DNA Software datasheet)."
+      "sku": "Indoor Wi-Fi 6: 9105AX, 9115AX, 9117AX (EOL), 9120AX, 9130AX. Wi-Fi 6E: 9136, 9162, 9164, 9166. Wi-Fi 7: 9171, 9172, 9174, 9176, 9178, 9179. Outdoor: 9124AX, 9163, 9177. Feature set organizzato in package Essentials/Advantage (dettaglio su Cisco DNA Software datasheet).",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xwrk9buq",
@@ -3781,9 +3791,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Videobar all-in-one con quad-camera 4K, array 24 microfoni, doppio speaker 10W e OS Android integrato per sale medio-grandi Teams/Zoom Rooms.",
+      "descrizioneBreve": "Videobar all-in-one con quad-camera (1 wide-angle + 3 narrow-FoV), array 24 microfoni beamforming, speaker stereo e OS Android integrato per sale medio-grandi Teams/Zoom Rooms. Supporta anche modalità USB Peripheral (BYOD) e microfoni di estensione opzionali.",
       "fonteId": "src_crestron_videobar70",
-      "sku": "UC-SB2-CAM-A-T/Z (videobar standalone, integrato con TS-1080-UC). Venduto anche in kit completo: UC-B70-A-T/Z con touch screen TS-1070/1080, PoE injector e cablaggio."
+      "sku": "UC-SB2-CAM-A-T/Z (videobar standalone, integrato con TS-1080-UC). Venduto anche in kit completo: UC-B70-A-T/Z con touch screen TS-1070/1080, PoE injector e cablaggio.",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xl0n4o0v",
@@ -3942,9 +3953,9 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Microfoni array con beamforming e IntelliMix DSP integrato per conferenze AV, camera tracking, voice lift e speech reinforcement",
+      "descrizioneBreve": "Microfoni array con beamforming e IntelliMix DSP integrato per conferenze AV, camera tracking, voice lift e speech reinforcement, anche in ambienti complessi",
       "fonteId": "src_shure_microflex_advance",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xoimuc3b",
@@ -4307,10 +4318,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Appliance security/SD-WAN throughput 4 Gbps, form factor 1U, WAN: 2 ports, LAN: 24 ports",
+      "descrizioneBreve": "Appliance security/SD-WAN firewall throughput 4 Gbps, form factor 1U, WAN: 2 ports, LAN: 24 ports",
       "fonteId": "src_xn1m49u4",
       "sku": "MX250-HW",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xzl6wazc",
@@ -4320,23 +4331,23 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Appliance top di gamma, throughput firewall 6 Gbps, VPN site-to-site 2 Gbps, form factor 1U rack-mountable, WAN 2x10GbE SFP+",
+      "descrizioneBreve": "Appliance top di gamma, throughput firewall 6 Gbps, VPN site-to-site 2 Gbps, form factor 1U rack-mountable, WAN 2x10GbE SFP+, LAN 8x GbE RJ45 / 8x GbE SFP / 8x 10GbE SFP+",
       "fonteId": "src_x38npyh7",
       "sku": "MX450-HW",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xdx7ddvo",
       "familyId": "fam_meraki_mx",
       "nomeCommerciale": "vMX — Small",
-      "modello": "Small virtual appliance image for public and private clouds, 200 Mbps VPN throughput",
+      "modello": "Small virtual appliance image for public and private clouds, AWS, Azure, Alibaba Cloud, GCP, Cisco NFVIS, 200 Mbps VPN throughput",
       "tipologia": "virtual appliance",
       "deployment": "virtual appliance / cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Meraki MX distribuito come appliance virtuale in cloud pubblico/privato",
       "fonteId": "src_xn1m49u4",
       "sku": "vMX-S (virtuale, 200 Mbps)",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_x50gim0z",
@@ -4601,10 +4612,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Soluzione firewall di classe mondiale facile da gestire, rileva più minacce a costo inferiore",
+      "descrizioneBreve": "Soluzione firewall di classe mondiale facile da gestire, rileva più minacce ma costa meno",
       "fonteId": "src_xswn6nq4",
       "sku": "FPR-1010, FPR-1120, FPR-1140, FPR-1150",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xhr7zrz7",
@@ -4797,14 +4808,14 @@
       "id": "prod_xahzrz4x",
       "familyId": "fam_catalyst",
       "nomeCommerciale": "Cisco C9550 Series (nuovo)",
-      "modello": "Core e aggregazione, reti AI-ready, uplink fino a 400G",
+      "modello": "Core e aggregazione, reti AI-ready, sicurezza integrata, uplink fino a 400G",
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch fissi per il core e l'aggregazione per reti AI-ready con sicurezza integrata e uplink fino a 400G",
       "fonteId": "src_xlzscyh3",
       "sku": "C9550 Series Smart Switches (documentazione ufficiale aggiornata luglio 2026)",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xqxg83m8",
@@ -4826,9 +4837,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Citata come alternativa cloud-managed nella pagina Campus LAN Core and Distribution, per semplificare gestione e ridurre complessita'",
+      "descrizioneBreve": "Switch della serie MS400 classificati come 'Distribution' nel Global Overview integrato Meraki e Catalyst Center, insieme ai Cloud Managed C9500; supporta visibilità centralizzata cloud-based su ambienti ibridi multi-piattaforma",
       "fonteId": "src_meraki_catcenter_overview",
-      "sku": "Switch di distribuzione (categoria 'Distribution' in Catalyst Center, insieme ai Catalyst C9500 cloud-gestiti). Licensing hardware-agnostic con SKU che coprono piu' componenti hardware in un'unica licenza (vedi documentazione MS Licensing ufficiale)."
+      "sku": "Switch di distribuzione (categoria 'Distribution' in Catalyst Center, insieme ai Catalyst C9500 cloud-gestiti). Licensing hardware-agnostic con SKU che coprono piu' componenti hardware in un'unica licenza (vedi documentazione MS Licensing ufficiale).",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xgq9wftw",
@@ -5130,9 +5142,10 @@
       "tipologia": "hardware",
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
-      "descrizioneBreve": "Sistemi di controllo e automazione sala; pagina prodotto ufficiale su crestron.com non raggiunta in questa sessione (solo rivenditori terzi per modelli come CP4).",
+      "descrizioneBreve": "Sistemi di controllo e automazione sala basati su motore 4-Series; il CP4 è un processore rack-mount enterprise-grade con CPU multicore, porte di controllo integrate (Cresnet, RS-232, IR, relay, Versiport, Gigabit Ethernet), supporto BACnet, SNMP V3, Apple HomeKit, programmazione modulare (fino a 10 programmi simultanei) e gestione remota tramite Crestron Fusion e XiO Cloud.",
       "fonteId": "src_crestron_cp4",
-      "sku": "CP4 (rack-mount 1RU, processore 4-Series flagship per sale enterprise/boardroom), CP4-R (versione per Crestron Home OS residenziale), MC4 (form factor compatto per sale piccole/medie, stesso motore 4-Series)."
+      "sku": "CP4 (rack-mount 1RU, processore 4-Series flagship per sale enterprise/boardroom), CP4-R (versione per Crestron Home OS residenziale), MC4 (form factor compatto per sale piccole/medie, stesso motore 4-Series).",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "prod_xw9x2paf",
@@ -5732,13 +5745,14 @@
         "prod_catalyst_9300"
       ],
       "nomeUfficiale": "HSEC (High Security) add-on",
-      "tipologia": "term",
+      "tipologia": "perpetual",
       "metrica": "per switch",
-      "durata": "DA VERIFICARE CON IL VENDOR",
+      "durata": "perpetual (one-time purchase)",
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
-      "fonteId": "src_cat9k_licensing_wp"
+      "fonteId": "src_cat9k_licensing_wp",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_secfw_essentials",
@@ -6411,12 +6425,13 @@
       ],
       "nomeUfficiale": "Data Center Networking (DCN) Premier",
       "tipologia": "term",
-      "metrica": "per switch",
+      "metrica": "per piattaforma/switch (con varianti per tipo di chassis: fixed 1G, fixed 10/25/40/100G, modular 4-slot, modular 8/16-slot)",
       "durata": "3, 5 o 7 anni",
       "rinnovo": "manuale a scadenza del termine",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "perdita delle funzionalita' abilitate dal livello di licenza",
-      "fonteId": "src_cisco_nexus_license_nav"
+      "fonteId": "src_cisco_nexus_license_nav",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_cisco_dna_sdwan_ess",
@@ -6875,9 +6890,9 @@
       "durata": "DA VERIFICARE CON IL VENDOR",
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Il passaggio da Co-Term a PDL non è più supportato. Le nuove conversioni a PDL non sono consentite. È possibile passare da PDL a Subscription o Co-Term, ma non è possibile tornare a PDL.",
+      "conseguenzeScadenza": "Il passaggio da Co-Term a PDL non è più supportato. Le nuove conversioni a PDL non sono consentite. È possibile passare da PDL a Subscription o Co-Term, ma non è possibile tornare a PDL. Non è possibile tornare a Co-Term o PDL da Subscription.",
       "fonteId": "src_meraki_licensing_faq",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_xhjwfxjq",
@@ -6943,10 +6958,10 @@
       "metrica": "Out of compliance: 30/21/14/7/1 giorni; In compliance: 90/30/2/1 giorni",
       "durata": "DA VERIFICARE CON IL VENDOR",
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
-      "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Se l'organizzazione e' fuori compliance (piu' dispositivi che licenze), vengono inviati alert email a 30, 21, 14, 7 e 1 giorno dalla scadenza. Se l'organizzazione e' in compliance, vengono inviati alert email a 90, 30, 2 e 1 giorno dalla scadenza.",
+      "gracePeriod": "30 giorni",
+      "conseguenzeScadenza": "Dopo la scadenza della co-termination date si riceve un grace period di 30 giorni. Se non si rinnova entro la fine del grace period, l'organizzazione viene 'shut down': non è più possibile gestire i dispositivi tramite il cloud Meraki, i dispositivi di rete Meraki cessano di funzionare, non è possibile configurare o apportare modifiche all'equipaggiamento di rete Meraki, i prodotti di rete Meraki non consentono più il passaggio del traffico verso Internet. Con le reti Systems Manager, non è più possibile registrare dispositivi o modificare le impostazioni per i dispositivi già registrati.",
       "fonteId": "src_xgr9irr4",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_xjvl3lvo",
@@ -7188,8 +7203,9 @@
       "durata": "DA VERIFICARE CON IL VENDOR",
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "Copre la maggior parte dei casi d'uso di routing tradizionale (equivalente a licenze IP Base) + IPSec Point-to-Point con HSEC per branch, supporto MACsec.",
-      "fonteId": "src_xrms33z2"
+      "conseguenzeScadenza": "Copre la maggior parte dei casi d'uso di routing tradizionale (equivalente a licenze IP Base) + IPSec Point-to-Point con HSEC per branch, supporto MACsec, Application-based Firewall per la sicurezza del branch, capacità SD-Routing on-premise tramite Catalyst SD-WAN Manager, eliminazione della selezione della banda (throughput fino alla capacità del dispositivo per IP-CEF e traffico Crypto).",
+      "fonteId": "src_xrms33z2",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_xtf488bt",
@@ -7260,8 +7276,9 @@
       "durata": "DA VERIFICARE CON IL VENDOR",
       "rinnovo": "DA VERIFICARE CON IL VENDOR",
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
-      "conseguenzeScadenza": "In una singola organizzazione si possono avere alcuni MX in Advanced Security e alcuni con licenza Per-Device SD-WAN+ upgrade (es. 20 MX Advanced Security + 5 MX upgradati a SD-WAN Plus).",
-      "fonteId": "src_x8isy9wu"
+      "conseguenzeScadenza": "Non è possibile mescolare licenze subscription e co-termination nella stessa organizzazione dashboard. Un ordine subscription può includere un mix di licenze essentials e advantage. Si possono avere una o più subscription nella stessa org e ogni network deve essere associato a una subscription per consumarne le licenze.",
+      "fonteId": "src_x8isy9wu",
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_xetb26vs",
@@ -8007,12 +8024,12 @@
       "nomeUfficiale": "Crestron Fusion On-Premises (SW-FUSION-P-L, licenza per stanza)",
       "tipologia": "perpetua",
       "metrica": "per installazione (unlimited rooms)",
-      "durata": "perpetua",
-      "rinnovo": "non applicabile (perpetua)",
+      "durata": "perpetua con manutenzione lifetime",
+      "rinnovo": "non applicabile (manutenzione lifetime inclusa, nessun rinnovo separato richiesto)",
       "gracePeriod": "non applicabile",
       "conseguenzeScadenza": "non applicabile (licenza perpetua)",
       "fonteId": "src_crestron_fusion_pl_sku",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-09"
     },
     {
       "id": "lic_crestron_fusion_cloud",
@@ -10387,7 +10404,7 @@
       "titolo": "Cisco Catalyst 9000 Licensing White Paper",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -10477,7 +10494,7 @@
       "titolo": "General Licensing FAQs - Cisco Meraki Documentation",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale Meraki",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -10497,7 +10514,7 @@
       "titolo": "XProtect variant comparison",
       "vendorId": "v_milestone",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -10607,7 +10624,7 @@
       "titolo": "K-array | Products",
       "vendorId": "v_karray",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -10667,7 +10684,7 @@
       "titolo": "Q-SYS NV Series - AV over IP",
       "vendorId": "v_qsys",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -10687,7 +10704,7 @@
       "titolo": "Microflex Advance Array Microphones",
       "vendorId": "v_shure",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -10877,7 +10894,7 @@
       "titolo": "Cisco Room Kit - Webex Room Kit Data Sheet",
       "vendorId": "v_cisco",
       "tipo": "datasheet ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -10917,7 +10934,7 @@
       "titolo": "Cisco Nexus 9000 and 3000 Series Data Center Switch License Navigator",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale",
-      "dataConsultazione": "2026-07-31",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -11577,7 +11594,7 @@
       "titolo": "Meraki MG - Enterprise license (pagina ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-02",
+      "dataConsultazione": "2026-08-09",
       "stato": "controllo frequente (meraki.com in migrazione verso cisco.com dal 19 agosto)",
       "categoriaControllo": "release"
     },
@@ -11637,7 +11654,7 @@
       "titolo": "NC-Pro15x (pagina prodotto ufficiale)",
       "vendorId": "v_qsys",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-02",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato (novita' recente)",
       "categoriaControllo": "datasheet"
     },
@@ -11657,7 +11674,7 @@
       "titolo": "NL Series network loudspeakers (pagina prodotto ufficiale)",
       "vendorId": "v_qsys",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -11977,7 +11994,7 @@
       "titolo": "FortiAppSec (pagina prodotto ufficiale)",
       "vendorId": "v_fortinet",
       "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-03",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "release"
     },
@@ -12197,7 +12214,7 @@
       "titolo": "Cisco Hybrid Mesh Firewall (pagina prodotto ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "release"
     },
@@ -12947,7 +12964,7 @@
       "titolo": "MX67W (fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "hub modelli ufficiale (elenco confermato)",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -12957,7 +12974,7 @@
       "titolo": "MX450 (fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "product page ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -13387,7 +13404,7 @@
       "titolo": "Cisco C9550 Series (nuovo) (fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "hub prodotti ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -13867,7 +13884,7 @@
       "titolo": "Grace period (Co-Termination) (licensing, fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -13917,7 +13934,7 @@
       "titolo": "DNA Premier — DISCONTINUATO (licensing, fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "FAQ ufficiale Cisco",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -13947,7 +13964,7 @@
       "titolo": "Mix di licenze nella stessa organizzazione (licensing, fonte ufficiale)",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale",
-      "dataConsultazione": "2026-08-03",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -14157,7 +14174,7 @@
       "titolo": "SW-FUSION-P-L (pagina prodotto/licenza ufficiale)",
       "vendorId": "v_crestron",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-08",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -14337,7 +14354,7 @@
       "titolo": "Webex Room Kit Data Sheet (confermato: End-of-Sale, sostituito da Room Bar Pro)",
       "vendorId": "v_cisco",
       "tipo": "datasheet ufficiale",
-      "dataConsultazione": "2026-08-04",
+      "dataConsultazione": "2026-08-09",
       "stato": "confermato End-of-Sale",
       "categoriaControllo": "eol"
     },
@@ -14387,7 +14404,7 @@
       "titolo": "Cisco Secure Endpoint (formerly AMP for Endpoints) - licensing overview",
       "vendorId": "v_cisco",
       "tipo": "pagina rivenditore autorizzato con riferimenti a documentazione ufficiale",
-      "dataConsultazione": "2026-08-04",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -14427,7 +14444,7 @@
       "titolo": "Meraki and Catalyst Center Global Overview (classificazione switch, giugno 2026)",
       "vendorId": "v_cisco",
       "tipo": "documentazione ufficiale Meraki",
-      "dataConsultazione": "2026-08-04",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -14447,7 +14464,7 @@
       "titolo": "Cisco Catalyst 9100 Access Points - elenco modelli completo (Wi-Fi 6/6E/7)",
       "vendorId": "v_cisco",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-04",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "datasheet"
     },
@@ -14587,7 +14604,7 @@
       "titolo": "Cisco Cloud WAAP Protection Service Plans Data Sheet",
       "vendorId": "v_cisco",
       "tipo": "data sheet ufficiale",
-      "dataConsultazione": "2026-08-07",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "licensing"
     },
@@ -14737,7 +14754,7 @@
       "titolo": "DM-NVX-DIR-ENT - Director enterprise (1000 endpoint, 240 domini)",
       "vendorId": "v_crestron",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-07",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
     },
@@ -14807,7 +14824,7 @@
       "titolo": "Crestron Videobar 70 (UC-SB2-CAM) - pagina prodotto ufficiale",
       "vendorId": "v_crestron",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-07",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
     },
@@ -14867,7 +14884,7 @@
       "titolo": "CP4 - processore di controllo 4-Series rack-mount",
       "vendorId": "v_crestron",
       "tipo": "pagina prodotto ufficiale",
-      "dataConsultazione": "2026-08-07",
+      "dataConsultazione": "2026-08-09",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
     },
@@ -15798,6 +15815,297 @@
         "licenze/lic_crestron_fusion_cloud.rinnovo: \"The license must be renewed after the maintenance period expires, and additional licenses must be purchased to support more than 250 rooms in a deployment.\""
       ],
       "timestamp": "2026-08-08T07:25:48.382Z"
+    },
+    {
+      "id": "chg_ai_1786258385019_src_cat9k_licensing_wp",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Catalyst 9000 Licensing White Paper",
+      "citazioni": [
+        "licenze/lic_cat9k_hsec.tipologia: \"Add-on licenses HSEC Licenses C9300X, C9400X-Sup2, C9500X, C9600X-Sup2 Optional one-time purchase\"",
+        "licenze/lic_cat9k_hsec.durata: \"Add-on licenses HSEC Licenses C9300X, C9400X-Sup2, C9500X, C9600X-Sup2 Optional one-time purchase\""
+      ],
+      "timestamp": "2026-08-09T06:53:05.019Z"
+    },
+    {
+      "id": "chg_ai_1786258603176_src_meraki_licensing_faq",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "General Licensing FAQs - Cisco Meraki Documentation",
+      "citazioni": [
+        "famiglie/fam_meraki_ms.descrizione: \"Switch (Cisco Smart Switching Unified Licensing) Cisco Switching Access Medium Cisco Switching Access Large Cisco Switching Access Core Not available for Co-Term or PDL ... PDL: restricted to existing customers already using this model; new conversions to PDL are no longer supported.\"",
+        "famiglie/fam_meraki_mr.descrizione: \"PDL: restricted to existing customers already using this model; new conversions to PDL are no longer supported.\"",
+        "famiglie/fam_meraki_mv.descrizione: \"Smart cameras (MV) Essential Enterprise None [...] Same license class for all hardware models Optional: Cloud Archive Meraki Display MV Sense\"",
+        "licenze/lic_xw0bt0wq.conseguenzeScadenza: \"Reverting to Co-Term or legacy PDL models are not supported. [...] New conversions to PDL are not supported. You may move away from PDL, but you cannot switch back to it.\""
+      ],
+      "timestamp": "2026-08-09T06:56:43.176Z"
+    },
+    {
+      "id": "chg_ai_1786258669915_src_milestone_comparison",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "XProtect variant comparison",
+      "citazioni": [
+        "prodotti/prod_milestone_expressplus.descrizioneBreve: \"XProtect Express+ For small businesses requiring basic security and alarm management. Up to 48 cameras & single site\""
+      ],
+      "timestamp": "2026-08-09T06:57:49.915Z"
+    },
+    {
+      "id": "chg_ai_1786258727400_src_karray_products",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "K-array | Products",
+      "citazioni": [
+        "famiglie/fam_karray_speakers.descrizione: \"SPEAKERS GT Line Multipurpose full range point source speaker [...] SPEAKERS GH Line Exceptional audio, advanced technologies in a compact form [...] SPEAKERS GF Line Intelligibility and versatility in compact design [...] SPEAKERS GC Line Commercial audio for every kind of project\""
+      ],
+      "timestamp": "2026-08-09T06:58:47.400Z"
+    },
+    {
+      "id": "chg_ai_1786258756615_src_qsys_nv",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Q-SYS NV Series - AV over IP",
+      "citazioni": [
+        "prodotti/prod_qsys_nv32h.descrizioneBreve: \"NV-32-H ... HDMI Inputs 3 ... HDMI Outputs 2 ... RS-232 1 ... GPIO 2 input 3 output ... 3.5 mm Audio 2 channels input 2 channels output ... Supports Q-SYS Core Mode Yes\""
+      ],
+      "timestamp": "2026-08-09T06:59:16.615Z"
+    },
+    {
+      "id": "chg_ai_1786258763572_src_shure_microflex_advance",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Microflex Advance Array Microphones",
+      "citazioni": [
+        "prodotti/prod_xb7h185y.descrizioneBreve: \"combine beamforming technology with IntelliMix® Digital Signal Processing to deliver unmatched performance for AV conferencing, camera tracking, voice lift, and speech reinforcement even in the most challenging rooms\""
+      ],
+      "timestamp": "2026-08-09T06:59:23.572Z"
+    },
+    {
+      "id": "chg_ai_1786258905334_src_cisco_webex_roomkit_ds",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Room Kit - Webex Room Kit Data Sheet",
+      "citazioni": [
+        "famiglie/fam_cisco_webex_roomdevices.descrizione: \"This product has reached end-of-sale (EOS) but still supported by Cisco. You can learn about the active replacement product by visiting the Cisco Room Bar Pro product page and data sheet. [...] LICENSE LEVEL: Webex Device Subscription TERM: Monthly or 1-, 2-, 3-, 4-, or 5-year options\""
+      ],
+      "timestamp": "2026-08-09T07:01:45.334Z"
+    },
+    {
+      "id": "chg_ai_1786258937938_src_cisco_nexus_license_nav",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Nexus 9000 and 3000 Series Data Center Switch License Navigator",
+      "citazioni": [
+        "licenze/lic_cisco_dcn_premier.metrica: \"C1P1TN9300GF-3Y -- DCN Premier package for a 1G fixed platform (GF), 3 year term ... C1P1TN9500M816-7Y -- DCN Premier package for an 8- or 16-Slot modular platform, 7 year term\""
+      ],
+      "timestamp": "2026-08-09T07:02:17.938Z"
+    },
+    {
+      "id": "chg_ai_1786259155253_src_meraki_mg_enterprise",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Meraki MG - Enterprise license (pagina ufficiale)",
+      "citazioni": [
+        "famiglie/fam_meraki_mg.descrizione: \"Cisco Meraki now on Cisco.com Find Cisco Meraki's portfolio of products including access points, switches, security appliances, and more on Cisco.com.\""
+      ],
+      "timestamp": "2026-08-09T07:05:55.253Z"
+    },
+    {
+      "id": "chg_ai_1786259180377_src_qsys_nc_pro15x",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "NC-Pro15x (pagina prodotto ufficiale)",
+      "citazioni": [
+        "prodotti/prod_qsys_nc_pro15x.descrizioneBreve: \"The NC-Pro15x expands the Q-SYS camera portfolio to bring broadcast-quality video to high-impact spaces that require elevated production-grade elements. Built by Canon, the NC-Pro15x is a network PTZ camera that delivers smooth and responsive pan, tilt, and zoom performance to enhance the VisionSuite Presenter Spotlight experience.\""
+      ],
+      "timestamp": "2026-08-09T07:06:20.377Z"
+    },
+    {
+      "id": "chg_ai_1786259211286_src_qsys_nl_series",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "NL Series network loudspeakers (pagina prodotto ufficiale)",
+      "citazioni": [
+        "prodotti/prod_qsys_nl_speakers.modello: \"They are available in three form factors (speakerbar, pendant mount and ceiling mount)\""
+      ],
+      "timestamp": "2026-08-09T07:06:51.286Z"
+    },
+    {
+      "id": "chg_ai_1786259330314_src_xwjig1u7",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "FortiAppSec (pagina prodotto ufficiale)",
+      "citazioni": [
+        "prodotti/prod_xualtqj1.descrizioneBreve: \"FortiAppSec Cloud - Secure Web Applications and APIs\""
+      ],
+      "timestamp": "2026-08-09T07:08:50.314Z"
+    },
+    {
+      "id": "chg_ai_1786259391270_src_xswn6nq4",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Hybrid Mesh Firewall (pagina prodotto ufficiale)",
+      "citazioni": [
+        "prodotti/prod_xzal3rbv.descrizioneBreve: \"A world-class firewall solution that is easy to manage, detects more threats, but costs less.\""
+      ],
+      "timestamp": "2026-08-09T07:09:51.270Z"
+    },
+    {
+      "id": "chg_ai_1786259611808_src_xn1m49u4",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "MX67W (fonte ufficiale)",
+      "citazioni": [
+        "prodotti/prod_xpyysfuq.descrizioneBreve: \"MX250 Large-branch, campus, or DC appliance for up to 2000 users 4 Gbps firewall throughput WAN: 2 ports LAN: 24 ports\"",
+        "prodotti/prod_xdx7ddvo.modello: \"Small virtual appliance image for public and private clouds AWS, Azure, Alibaba Cloud, GCP, Cisco NFVIS 200 Mbps VPN throughput\""
+      ],
+      "timestamp": "2026-08-09T07:13:31.808Z"
+    },
+    {
+      "id": "chg_ai_1786259618630_src_x38npyh7",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "MX450 (fonte ufficiale)",
+      "citazioni": [
+        "prodotti/prod_xzl6wazc.descrizioneBreve: \"WAN: two 10 GbE SFP+ LAN: eight GbE RJ45, eight GbE SFP, eight 10 GbE SFP+\""
+      ],
+      "timestamp": "2026-08-09T07:13:38.630Z"
+    },
+    {
+      "id": "chg_ai_1786259769549_src_xlzscyh3",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco C9550 Series (nuovo) (fonte ufficiale)",
+      "citazioni": [
+        "prodotti/prod_xahzrz4x.modello: \"Fixed core and aggregation switches for AI-ready networks with integrated security and up to 400G uplinks.\""
+      ],
+      "timestamp": "2026-08-09T07:16:09.549Z"
+    },
+    {
+      "id": "chg_ai_1786259896699_src_xgr9irr4",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Grace period (Co-Termination) (licensing, fonte ufficiale)",
+      "citazioni": [
+        "licenze/lic_x96n5v4u.gracePeriod: \"Immediately after reaching your co-termination date, you will receive a 30-day grace period as per Meraki Co-Termination Licensing Overview.\"",
+        "licenze/lic_x96n5v4u.conseguenzeScadenza: \"If you chose not to renew before the end of the 30-day grace period, the organization will be \"shut down\" (License Problem - Out of Compliance). You will no longer be able to manage your devices via the Meraki cloud and your Meraki network devices will cease to function. This means that you will no longer be able to configure or make changes to your Meraki network equipment, and your Meraki network products will no longer allow traffic to pass to the Internet. With Systems Manager networks, you will no longer be able to enroll devices or change settings for currently enrolled devices.\""
+      ],
+      "timestamp": "2026-08-09T07:18:16.699Z"
+    },
+    {
+      "id": "chg_ai_1786259958396_src_xrms33z2",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "DNA Premier — DISCONTINUATO (licensing, fonte ufficiale)",
+      "citazioni": [
+        "licenze/lic_x474gfsh.conseguenzeScadenza: \"The Catalyst Routing Essential subscription package includes the following features: All entitlements from Cisco IP Base licenses. Point-2-Point IPSec with HSEC for branches requiring secure connection to cloud based security services and for MACSEC use cases. Application-based Firewall to meet today's evolving branch security. On-Premise based SD-Routing capabilities enabling customers to use Catalyst SD-WAN manager for management, configuration and troubleshooting of the CPE fleet. Elimination of bandwidth selection. Throughput capability for IP-CEF and Crypto traffic up to device capability.\""
+      ],
+      "timestamp": "2026-08-09T07:19:18.396Z"
+    },
+    {
+      "id": "chg_ai_1786259995803_src_x8isy9wu",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Mix di licenze nella stessa organizzazione (licensing, fonte ufficiale)",
+      "citazioni": [
+        "licenze/lic_xb171pms.conseguenzeScadenza: \"At this time, subscription and co-termination licenses can not be mixed in the same dashboard organization. A subscription order can be created with a mix of essentials and advantage licenses. You may have one or more subscription in the same org and each network must be bound to one subscription to consume licenses from that subscription.\""
+      ],
+      "timestamp": "2026-08-09T07:19:55.803Z"
+    },
+    {
+      "id": "chg_ai_1786260067831_src_crestron_fusion_pl_sku",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "SW-FUSION-P-L (pagina prodotto/licenza ufficiale)",
+      "citazioni": [
+        "licenze/lic_crestron_fusion_onprem.durata: \"Crestron Fusion® On-Premises Software; Unlimited rooms; lifetime service, support, and updates\"",
+        "licenze/lic_crestron_fusion_onprem.rinnovo: \"The SW-FUSION-P-L license provides full Crestron Fusion on‑premises software functionality for unlimited rooms in a deployment with a lifetime maintenance period for service, support, and updates.\""
+      ],
+      "timestamp": "2026-08-09T07:21:07.831Z"
+    },
+    {
+      "id": "chg_ai_1786260145149_src_webex_roomkit_eos_ds",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Webex Room Kit Data Sheet (confermato: End-of-Sale, sostituito da Room Bar Pro)",
+      "citazioni": [
+        "prodotti/prod_cisco_webex_roomkit.statoLifecycle: \"This product has reached end-of-sale (EOS) but still supported by Cisco.\""
+      ],
+      "timestamp": "2026-08-09T07:22:25.149Z"
+    },
+    {
+      "id": "chg_ai_1786260166596_src_cisco_secure_endpoint_page",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Secure Endpoint (formerly AMP for Endpoints) - licensing overview",
+      "citazioni": [
+        "prodotti/prod_xn1jtan4.deployment: \"Secure Endpoint will protect your Windows, Mac, Linux, Android, and iOS devices through a public or private cloud deployment.\"",
+        "prodotti/prod_xn1jtan4.descrizioneBreve: \"Cisco Secure Endpoint (formerly AMP for Endpoints) integrates prevention, detection, threat hunting and response capabilities in a single solution, leveraging the power of cloud-based analytics.\""
+      ],
+      "timestamp": "2026-08-09T07:22:46.596Z"
+    },
+    {
+      "id": "chg_ai_1786260201965_src_meraki_catcenter_overview",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Meraki and Catalyst Center Global Overview (classificazione switch, giugno 2026)",
+      "citazioni": [
+        "prodotti/prod_xizlr3v0.descrizioneBreve: \"Distribution Switches: Switches classified as distribution in Catalyst Center. MS400 series and Cloud Managed C9500 series.\""
+      ],
+      "timestamp": "2026-08-09T07:23:21.965Z"
+    },
+    {
+      "id": "chg_ai_1786260216302_src_cisco_cat9100_series_page",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Catalyst 9100 Access Points - elenco modelli completo (Wi-Fi 6/6E/7)",
+      "citazioni": [
+        "prodotti/prod_xrhbv4zo.descrizioneBreve: \"End-of-Sale and End-of-Life Announcement for the Cisco and Meraki Wi-Fi 6 Indoor Access Points 03-Aug-2026 updated\""
+      ],
+      "timestamp": "2026-08-09T07:23:36.302Z"
+    },
+    {
+      "id": "chg_ai_1786260264369_src_cisco_waap_planservice_ds",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Cisco Cloud WAAP Protection Service Plans Data Sheet",
+      "citazioni": [
+        "prodotti/prod_xw4q6z6j.descrizioneBreve: \"The service is offered in three convenient service plans. Each plan is designed to meet different security needs and risk exposures and to provide different levels of managed services.\"",
+        "prodotti/prod_xw4q6z6j.modello: \"Cisco Cloud WAAP Protection Service Plans Data Sheet\""
+      ],
+      "timestamp": "2026-08-09T07:24:24.369Z"
+    },
+    {
+      "id": "chg_ai_1786260366464_src_crestron_nvx_dir_ent",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "DM-NVX-DIR-ENT - Director enterprise (1000 endpoint, 240 domini)",
+      "citazioni": [
+        "prodotti/prod_crestron_nvx_dir2.modello: \"DM-NVX-DIR-ENT DM NVX Director® Network AV Switching Appliance, 1000 Endpoints Material Number: 6508607\"",
+        "prodotti/prod_crestron_nvx_dir2.descrizioneBreve: \"The Crestron DM-NVX-DIR-ENT is an enterprise-grade network appliance that facilitates configuration, control, and management of a large-scale AV network using DM NVX® encoder and decoder endpoints. The DM-NVX-DIR-ENT supports a maximum of 1000 DM NVX endpoints.\""
+      ],
+      "timestamp": "2026-08-09T07:26:06.464Z"
+    },
+    {
+      "id": "chg_ai_1786260393527_src_crestron_videobar70",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "Crestron Videobar 70 (UC-SB2-CAM) - pagina prodotto ufficiale",
+      "citazioni": [
+        "prodotti/prod_x2h9jplx.descrizioneBreve: \"One wide-angle camera for full room view and to see people closer to the front of the room. Three narrow-FoV cameras in an array work together to capture those further away in high-resolution... 24 beamforming built-in microphones reduce noise and capture voices clearly... Powerful stereo speakers deliver rich, room-filling sound... Plug-and-play USB Peripheral mode turns Videobar 70 into a powerful BYOD conferencing companion.\""
+      ],
+      "timestamp": "2026-08-09T07:26:33.527Z"
+    },
+    {
+      "id": "chg_ai_1786260440787_src_crestron_cp4",
+      "entita": "AggiornamentoAutomatico",
+      "azione": "modifica applicata da AI senza revisione umana",
+      "nome": "CP4 - processore di controllo 4-Series rack-mount",
+      "citazioni": [
+        "famiglie/fam_crestron_control.descrizione: \"The CP4 is a secure, high‑performance control processor with a powerful 4-Series™ control engine. The CP4 is designed to integrate and automate technology within any modern networked home, commercial building, or government facility.\"",
+        "prodotti/prod_xnbxofkm.descrizioneBreve: \"The CP4 is a secure, high‑performance control processor with a powerful 4-Series™ control engine. The CP4 is designed to integrate and automate technology within any modern networked home, commercial building, or government facility.\""
+      ],
+      "timestamp": "2026-08-09T07:27:20.787Z"
     }
   ]
 }
