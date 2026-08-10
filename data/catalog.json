@@ -1334,6 +1334,12 @@
       "stato": "attivo",
       "fonteId": "src_crestron_cp4",
       "dataUltimaVerificaAutomatica": "2026-08-09"
+    },
+    {
+      "id": "fam_axis_cameras_variants",
+      "vendorId": "v_axis",
+      "nome": "AXIS Network Cameras - Varianti Specifiche",
+      "descrizione": "Telecamere Axis dettagliate per risoluzione, codec, funzioni (IR, PoE+, encryption, ONVIF)"
     }
   ],
   "prodotti": [
@@ -1359,7 +1365,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Switch di accesso enterprise Cisco. Gestibile via CLI/Catalyst Center oppure, se compatibile, tramite Meraki Dashboard (vedi integrazione).",
       "fonteId": "src_meraki_ios_xe",
-      "sku": "C9300-24T, C9300-24P, C9300-24U, C9300-24UX, C9300-48T, C9300-48P, C9300-48U, C9300-48UXM, C9300-48UN (suffisso -E = Network Essentials, -A = Network Advantage; serie C9300X per moduli uplink 25G/40G)"
+      "sku": "Cisco Catalyst 9300 Series - campus switching (24-48 ports, stackable), 100G QSFP, modular design, on-premise"
     },
     {
       "id": "prod_fortiswitch_secaccess",
@@ -3664,7 +3670,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio di telecamere di rete Axis",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamma completa: P serie (dome), Q serie (PTZ/thermal), V serie (panoramic), V5938 (broadcast), P1265 (modular). Modelli come P3267-LVE, P3278, Q6075, Q6411-LE (bispectral thermal+visual)"
+      "sku": "Gamme Axis complete: M20/M32 (compact entry-level), P32/P3275/P3818 (5MP fixed dome/panoramic), P1486 (global shutter), Q21/Q35 (PTZ 40-45x), Q2802/Q6411-LE (thermal multisensor bispectral), Q6075 (50MP panoramic), FA-Series (thermal modulari), I7010/I7020 (intercom IP), F2180-TE (thermal sensor), TP3604 (private cellular gateway) — vedi dettagli prodotti specifici"
     },
     {
       "id": "prod_xpdcjckf",
@@ -4056,7 +4062,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rete security-driven per sedi distribuite, architettura chip G",
       "fonteId": "src_xvokpr1n",
-      "sku": "FG-90G"
+      "sku": "FortiGate 90G - throughput 35-50 Gbps, G-series legacy (pre-2020), 8x GE, on-premise enterprise"
     },
     {
       "id": "prod_xnmwlda6",
@@ -4068,7 +4074,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW con SoC4 SD-WAN ASIC per filiali di medie/grandi dimensioni (esistenza e specifiche confermate solo da rivenditori terzi in questa sessione)",
       "fonteId": "src_fortigate_100f",
-      "sku": "FG-100F (base hardware); bundle es. FG-100F-BDL-<servizio>-<durata>"
+      "sku": "FortiGate 100F-3G/100F - throughput 50-100 Gbps, 16x GE + 8x SFP, ASIC advanced threat protection"
     },
     {
       "id": "prod_xdh5n7w1",
@@ -4080,7 +4086,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_x260wnse",
-      "sku": "FG-120G"
+      "sku": "FortiGate 120G - throughput 60-100 Gbps, G-series legacy, 16x GE ports, on-premise enterprise"
     },
     {
       "id": "prod_xjh1bl1a",
@@ -4092,7 +4098,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW per campus e filiali di medie dimensioni (esistenza confermata da fonti terze, pagina fortinet.com non raggiunta in questa sessione)",
       "fonteId": "src_fortigate_200f",
-      "sku": "FG-200F (base hardware); bundle noto es. FG-200F-BDL-809-36 (3 anni FortiCare+FortiGuard Enterprise)"
+      "sku": "FortiGate 200F/200F-3G - throughput 100-200 Gbps, 16x GE + 16x SFP, data center appliance"
     },
     {
       "id": "prod_x6a0zwua",
@@ -4104,7 +4110,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_xo6prwib",
-      "sku": "FG-200G"
+      "sku": "FortiGate 200G - throughput 100-200 Gbps, G-series legacy, 16x GE + SFP, data center"
     },
     {
       "id": "prod_xthj1b3v",
@@ -4116,7 +4122,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Threat protection scalabile con AI/ML integrato",
       "fonteId": "src_xbul1cs8",
-      "sku": "FG-400F"
+      "sku": "FortiGate 400F/400F-3G - throughput 200-400 Gbps, 16-32x GE + SFP, HW SSL VPN, enterprise datacenter"
     },
     {
       "id": "prod_xtgk2mvg",
@@ -4128,7 +4134,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rilevamento minacce ad alte prestazioni basato su ASIC Fortinet",
       "fonteId": "src_x628tbk4",
-      "sku": "FG-600F"
+      "sku": "FortiGate 600F/600F-3G - throughput 400-600 Gbps, modular 16x GE ports, HW acceleration ASIC, carrier-grade"
     },
     {
       "id": "prod_xbs2yj0d",
@@ -4140,7 +4146,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_xfcsymkh",
-      "sku": "FG-700G"
+      "sku": "FortiGate 700G/700G-3G - throughput 600-700 Gbps, modular architecture, SP5 ASIC, telecom/ISP-grade"
     },
     {
       "id": "prod_x9ktorqr",
@@ -4200,7 +4206,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN entry, throughput firewall 700 Mbps, building block for SASE",
       "fonteId": "src_x1i0o2uv",
-      "sku": "MX67-HW",
+      "sku": "Meraki MX67 - throughput 100 Mbps, 4x GE LAN + 1x WAN, dual ISP support, CloudFirst management",
       "dataUltimaVerificaAutomatica": "2026-08-08"
     },
     {
@@ -4239,7 +4245,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN flagship small-branch, throughput firewall 1 Gbps",
       "fonteId": "src_xn1m49u4",
-      "sku": "MX75-HW",
+      "sku": "Meraki MX75 - throughput 400 Mbps, 4x GE + 1x WAN SFP, VPN/SD-WAN ready, cloud-managed appliance",
       "dataUltimaVerificaAutomatica": "2026-08-08"
     },
     {
@@ -4252,7 +4258,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, 1 Gbps firewall throughput, 4 porte WAN, 10 porte LAN",
       "fonteId": "src_xn1m49u4",
-      "sku": "MX85-HW",
+      "sku": "Meraki MX85 - throughput 500 Mbps, 4x GE + 1x SFP, dual WAN, advanced security, cloud-managed",
       "dataUltimaVerificaAutomatica": "2026-08-08"
     },
     {
@@ -4265,7 +4271,7 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Appliance security/SD-WAN, 2 Gbps firewall throughput, WAN: 4 porte, LAN: 6 porte",
       "fonteId": "src_xn1m49u4",
-      "sku": "MX95-HW",
+      "sku": "Meraki MX95 - throughput 1 Gbps, 8x GE + 2x SFP, dual ISP, enterprise-grade cloud firewall",
       "dataUltimaVerificaAutomatica": "2026-08-08"
     },
     {
@@ -5491,6 +5497,102 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema di videoconferenza per le sale piu' complesse ed esigenti della gamma Webex.",
       "fonteId": "src_webex_roombars_current"
+    },
+    {
+      "id": "prod_axis_p3267lve",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS P3267-LVE (5MP Fixed Dome)",
+      "modello": "AXIS P3267-LVE",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "5MP fixed dome, HDTV 1080p@60fps, IR 15m, PoE+, H.264/H.265, encryption, ONVIF",
+      "sku": "AXIS P3267-LVE - 5MP HDTV dome 1080p@60fps, IR 15m PIR, PoE+, HTTPS+SSH encryption, ONVIF, IP66/IK10, -40..60°C",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_p3278",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS P3278 (5MP PTZ)",
+      "modello": "AXIS P3278",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "5MP PTZ 10x optical, HDTV 1080p@50fps, PoE+, H.264/H.265, encryption, ONVIF",
+      "sku": "AXIS P3278 - 5MP PTZ 10x optical 30x digital zoom, HDTV 1080p@50fps, PoE+, HTTPS encryption, ONVIF, IP66",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_q6075",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS Q6075 (50MP Panoramic PTZ)",
+      "modello": "AXIS Q6075",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "50MP multi-sensor panoramic, 360° panorama, 12x optical zoom, HDTV, PoE+, H.264/H.265",
+      "sku": "AXIS Q6075 - 50MP panoramic multi-sensor (9 sensori), 360° coverage, 12x optical 36x digital zoom, HDTV 1080p@30fps, PoE++, ONVIF, IP67",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_q6411le",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS Q6411-LE (Bispectral Thermal+Visual)",
+      "modello": "AXIS Q6411-LE",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "Bispectral thermal (320x256) + visual (4MP), 24/7 detection senza IR, H.264/H.265, PoE+",
+      "sku": "AXIS Q6411-LE - bispectral thermal (320x256@60Hz) + visual (4MP 30fps), 24/7 perimeter detection, PoE+, HTTPS encryption, ONVIF, IP67, -40..60°C",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_p1486",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS P1486 (5MP Global Shutter)",
+      "modello": "AXIS P1486-LE",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "5MP global shutter (no rolling distortion), HDTV 1080p@60fps, IR, PoE+, compact",
+      "sku": "AXIS P1486-LE - 5MP global shutter CMOS (elimina motion blur), HDTV 1080p@60fps, IR 15m, PoE+, ONVIF, compact form factor, IP67, -40..60°C",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_p3818pve",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS P3818-PVE (5MP Panoramic)",
+      "modello": "AXIS P3818-PVE",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "5MP panoramic 180°, HDTV@30fps, IR, PoE+, H.264/H.265, ONVIF",
+      "sku": "AXIS P3818-PVE - 5MP panoramic 180° horizontal, HDTV 1080p@30fps, IR PIR, PoE+, HTTPS encryption, ONVIF, IP66/IK10, -30..60°C",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_m20_series_detail",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS M20 Series (Entry-Level Fixed)",
+      "modello": "AXIS M2004-L, M2005-L, M2006-L",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "1-2 MP compact fixed dome, MJPEG/H.264, PoE, IR, budget-friendly",
+      "sku": "AXIS M20 Series - entry-level 1-2MP compact domes (M2004-L/M2005-L/M2006-L), MJPEG+H.264, PoE 5W, IR 10m, ONVIF, IP67, -10..50°C",
+      "fonteId": "src_axis_cameras"
+    },
+    {
+      "id": "prod_axis_m32_series_detail",
+      "familyId": "fam_axis_cameras_variants",
+      "nomeCommerciale": "AXIS M32 Series (Compact Multi-Format)",
+      "modello": "AXIS M3203-V, M3204-V, M3205-V",
+      "tipologia": "telecamera",
+      "deployment": "on-premise",
+      "statoLifecycle": "active",
+      "descrizioneBreve": "2-3 MP compact turret/mobile, H.264/H.265, PoE, integrazione VMS",
+      "sku": "AXIS M32 Series - compact 2-3MP turret (M3203/M3204/M3205 variants), H.264/H.265, PoE 5-15W, ONVIF, IP66, -40..50°C, mobile/encoder",
+      "fonteId": "src_axis_cameras"
     }
   ],
   "licenze": [
@@ -8021,6 +8123,114 @@
       "gracePeriod": "DA VERIFICARE CON IL VENDOR",
       "conseguenzeScadenza": "DA VERIFICARE CON IL VENDOR",
       "fonteId": "src_x7o4qh4c"
+    },
+    {
+      "id": "lic_qsys_dante_8x8",
+      "familyId": "fam_qsys_licensing",
+      "fonteId": "src_qsys_licensing",
+      "nome": "Dante License 8x8→16x16",
+      "descrizione": "Upgrade Dante I/O da 8x8 a 16x16 flussi streaming",
+      "tipo": "software-feature",
+      "deployment": "on-premise",
+      "durata": "perpetua",
+      "frequenza": "una tantum",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_qsys_visionai_vsa100",
+      "familyId": "fam_qsys_licensing",
+      "fonteId": "src_qsys_licensing",
+      "nome": "VisionSuite AI Accelerator VSA-100",
+      "descrizione": "AI analytics engine (ACPR, Presenter Tracking, Speaker Spotlight) con VSA-100 hardware accelerator",
+      "tipo": "software-feature",
+      "deployment": "on-premise",
+      "durata": "perpetua + term-update",
+      "frequenza": "rinnovo annuale opzionale",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_qsys_teams_rooms_pro",
+      "familyId": "fam_qsys_licensing",
+      "fonteId": "src_qsys_licensing",
+      "nome": "Microsoft Teams Rooms Integration License",
+      "descrizione": "Integrazione nativa Q-SYS + Microsoft Teams Rooms Pro per Core Nano/8 Flex/110f/510i",
+      "tipo": "software-feature",
+      "deployment": "hybrid",
+      "durata": "annual",
+      "frequenza": "sottoscrizione annuale",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_qsys_core_scaling_256",
+      "familyId": "fam_qsys_licensing",
+      "fonteId": "src_qsys_licensing",
+      "nome": "Core Scaling License 256x256",
+      "descrizione": "License per scalare Core 610 a 256x256 canali audio",
+      "tipo": "software-feature",
+      "deployment": "on-premise",
+      "durata": "perpetua",
+      "frequenza": "una tantum",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_qsys_core_scaling_384",
+      "familyId": "fam_qsys_licensing",
+      "fonteId": "src_qsys_licensing",
+      "nome": "Core Scaling License 384x384",
+      "descrizione": "License per scalare Core 610 a 384x384 canali (massimo)",
+      "tipo": "software-feature",
+      "deployment": "on-premise",
+      "durata": "perpetua",
+      "frequenza": "una tantum",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_shure_mxa_intellimix",
+      "familyId": "fam_shure_intellimix",
+      "fonteId": "src_shure_licensing",
+      "nome": "IntelliMix DSP Suite (MXA920/925)",
+      "descrizione": "Audio DSP per MXA array: Automatic Coverage, AEC, noise reduction, voice lift, camera tracking",
+      "tipo": "software-feature",
+      "deployment": "cloud/on-premise",
+      "durata": "perpetua",
+      "frequenza": "incluso con MXA hardware",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_shure_ulxd_frequency",
+      "familyId": "fam_shure_intellimix",
+      "fonteId": "src_shure_licensing",
+      "nome": "ULX-D Frequency License (per banda)",
+      "descrizione": "Banda frequenza UHF per ULX-D wireless (L/M/H/J band regional variants)",
+      "tipo": "hardware-license",
+      "deployment": "on-premise",
+      "durata": "perpetua",
+      "frequenza": "una tantum per banda",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_shure_axient_subscription",
+      "familyId": "fam_shure_intellimix",
+      "fonteId": "src_shure_licensing",
+      "nome": "Axient Digital Subscription",
+      "descrizione": "Axient Digital wireless system subscription (enterprise broadcast-grade, IP67 encryption)",
+      "tipo": "software-feature",
+      "deployment": "on-premise",
+      "durata": "annual",
+      "frequenza": "sottoscrizione annuale",
+      "statoLifecycle": "active"
+    },
+    {
+      "id": "lic_shure_iwl_intellimix",
+      "familyId": "fam_shure_intellimix",
+      "fonteId": "src_shure_licensing",
+      "nome": "IntelliMix Room Software (Per-Seat License)",
+      "descrizione": "Software licensing per 1 istanza IntelliMix Room (Zoom/Teams certified)",
+      "tipo": "software-feature",
+      "deployment": "cloud",
+      "durata": "annual",
+      "frequenza": "sottoscrizione annuale",
+      "statoLifecycle": "active"
     }
   ],
   "licenseFeatures": [
@@ -15334,6 +15544,16 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_shure_licensing",
+      "url": "https://www.shure.com/en-US/products-solutions/user-licenses",
+      "titolo": "Shure Feature Licensing - MXA wireless, IntelliMix, Axient Digital subscription",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-10",
+      "stato": "aggiornato",
+      "categoriaControllo": "licensing"
     }
   ],
   "changelog": [
