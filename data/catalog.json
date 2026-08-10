@@ -1580,7 +1580,8 @@
       "deployment": "on-premise (server proprio, appliance AXIS S3 o VM)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "VMS Axis con modulo di controllo accessi integrato, licenza per dispositivo, supporto hardware di terze parti e cloud storage opzionale.",
-      "fonteId": "src_axis_cs_pro"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Camera Station Pro - VMS server-based software"
     },
     {
       "id": "prod_barco_clickshare_conf",
@@ -1615,7 +1616,8 @@
       "deployment": "on-premise (PC in sala)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "DSP audio via software: AEC, mixing automatico, riduzione rumore, AI denoiser; nessun hardware DSP dedicato richiesto.",
-      "fonteId": "src_shure_intellimix_room"
+      "fonteId": "src_shure_intellimix",
+      "sku": "Shure IntelliMix - audio DSP: Foundation System, Room (software), Bar Pro (all-in-one video bar con AI framing)"
     },
     {
       "id": "prod_karray_vyper",
@@ -1701,7 +1703,8 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Microfono a soffitto con Automatic Coverage (copertura automatica), camera tracking e fino a 8 zone di copertura regolabili. Disponibile in forma quadrata e rotonda. Supporta anche Steerable Coverage con 8 lobi orientabili e DSP IntelliMix integrato.",
       "fonteId": "src_shure_mxa920",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Microflex Advance ceiling array - 100+ MEMS, 8 discrete beams, IntelliMix DSP (AEC, noise reduction, Virtual Acoustic Boundary)"
     },
     {
       "id": "prod_karray_kommander_amp",
@@ -1736,8 +1739,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema wireless digitale 24-bit per grandi installazioni in sale conferenza e convention, con crittografia AES-256, gestione via Wireless Workbench 6, SystemOn e ShurePlus Channels, supporto Dante e alta densità fino a 47 trasmettitori attivi in un canale TV da 6 MHz.",
-      "fonteId": "src_shure_ulxd",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_wireless",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Sistema wireless digitale UHF per presentatori, performer (concert-grade)"
     },
     {
       "id": "prod_shure_axient_digital",
@@ -1748,8 +1752,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema wireless digitale per i più grandi palcoscenici, con True Digital Diversity, Quadversity, gestione centralizzata dello spettro e protezione RF avanzata per audio impeccabile in ambienti complessi.",
-      "fonteId": "src_shure_axient_digital",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_wireless",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Sistema wireless digitale enterprise broadcast-grade (alternativa/upgrade ULX-D)"
     },
     {
       "id": "prod_axis_lpv_app",
@@ -1760,7 +1765,8 @@
       "deployment": "on-premise (edge, eseguita sulla camera)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Riconoscimento targhe a bordo camera fino a 70 km/h, con classificazione veicolo/colore/marca/modello.",
-      "fonteId": "src_axis_lpv"
+      "fonteId": "src_axis_station",
+      "sku": "Axis License Plate Verifier - app LPR"
     },
     {
       "id": "prod_barco_clickshare_c10",
@@ -1856,7 +1862,8 @@
       "deployment": "on-premise (installato sul server VMS)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Integra dispositivi e analitiche Axis (camere, audio, intercom, wearable) dentro l'interfaccia Milestone XProtect, gratuitamente.",
-      "fonteId": "src_axis_optimizer_milestone"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Optimizer - plugin ottimizzazione"
     },
     {
       "id": "prod_cisco_nexus_9000",
@@ -2071,7 +2078,8 @@
       "deployment": "on-premise (esterno, traffico/varchi)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera con otturatore globale CMOS per immagini nitide di oggetti in rapido movimento (traffico, enforcement), senza motion blur; disponibile dai canali di distribuzione Axis da giugno 2026.",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_axis_access_readers_new",
@@ -2082,7 +2090,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova gamma di lettori di rete per controllo accessi scalabile e IP-based, con integrazione ai controller porta Axis.",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_milestone_arcules_platform",
@@ -2154,8 +2163,9 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Il testo della fonte non menziona il modello MXA925 in alcun punto.",
-      "fonteId": "src_shure_mxa925",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_mxa920",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Microflex Advance MXA925 - next-gen MXA920 con AI-enabled IntelliMix (AI AEC, AI Denoiser, AI Deverb) - 2025 flagship"
     },
     {
       "id": "prod_shure_slxdplus",
@@ -2166,7 +2176,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Evoluzione del sistema wireless SLX-D (gennaio 2026): gestione remota del sistema, crittografia AES-256, soppressione automatica del feedback, disponibile da febbraio 2026.",
-      "fonteId": "src_shure_slxdplus"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure SLX-D+ - digital wireless mid-tier (upgrade da ULX-D)"
     },
     {
       "id": "prod_barco_clickshare_hub_core",
@@ -2357,7 +2368,8 @@
       "deployment": "on-premise (edge, eseguita sulla camera)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Applicazione di video analytics gratuita preinstallata sulle camere Axis compatibili, nessun costo aggiuntivo.",
-      "fonteId": "src_axis_object_analytics"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone"
     },
     {
       "id": "prod_meraki_mv_camera",
@@ -2404,7 +2416,8 @@
       "deployment": "on-premise (esterno)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera bispettrale (termica + ottica) presentata a ISC West 2026, per rilevamento e verifica combinati in un unico dispositivo.",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_axis_f2180te",
@@ -2415,7 +2428,8 @@
       "deployment": "on-premise (esterno, sensore modulare)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Sensore termico modulare per il sistema a sensori Axis F-series, presentato a ISC West 2026.",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_axis_tp3604e",
@@ -2426,7 +2440,8 @@
       "deployment": "on-premise (esterno, connettivita' cellulare privata)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Back box con connettivita' cellulare privata per installazioni in siti privi di rete cablata o Wi-Fi affidabile, presentato a ISC West 2026.",
-      "fonteId": "src_axis_iscwest2026"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_barco_i65",
@@ -2498,7 +2513,8 @@
       "deployment": "on-premise (sala riunioni, tavolo)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Microfono da tavolo che sostituisce l'MXA310, con Steerable Coverage migliorata, IntelliMix onboard, certificato Microsoft Teams e Zoom, gestione via Shure Designer e ShureCloud.",
-      "fonteId": "src_shure_mxa320_pr"
+      "fonteId": "src_shure_mxa920",
+      "sku": "Shure MXA320 - table array microphone"
     },
     {
       "id": "prod_barco_clickshare_bar",
@@ -3575,7 +3591,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Riconoscimento targhe edge-based per accesso veicolare",
-      "fonteId": "src_axis_lpv"
+      "fonteId": "src_axis_station",
+      "sku": "Axis License Plate Verifier - app LPR"
     },
     {
       "id": "prod_xs5ffzbj",
@@ -3586,7 +3603,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Analisi video per rilevamento persone/veicoli, spesso preinstallata",
-      "fonteId": "src_x3juf6m8"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone"
     },
     {
       "id": "prod_x8iwde2i",
@@ -3597,7 +3615,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Analisi perimetrale avanzata con autotracking PTZ opzionale",
-      "fonteId": "src_x7jvwyob"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)"
     },
     {
       "id": "prod_xzu9955i",
@@ -3608,7 +3627,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App aggiuntiva per zoom/tracking automatico su camera PTZ",
-      "fonteId": "src_xvyq0l6z"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)"
     },
     {
       "id": "prod_xurp3nqx",
@@ -3619,7 +3639,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione centralizzata di dispositivi Axis (on-prem)",
-      "fonteId": "src_x3juf6m8"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Device Manager - software gestione dispositivi"
     },
     {
       "id": "prod_xahp1nn7",
@@ -3630,7 +3651,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione a scala di migliaia di dispositivi Axis, dashboard aggregata",
-      "fonteId": "src_xxyhbnep"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Device Manager - software gestione dispositivi"
     },
     {
       "id": "prod_xbcbwfjo",
@@ -3641,7 +3663,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio di telecamere di rete Axis",
-      "fonteId": null
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamma completa: P serie (dome), Q serie (PTZ/thermal), V serie (panoramic), V5938 (broadcast), P1265 (modular). Modelli come P3267-LVE, P3278, Q6075, Q6411-LE (bispectral thermal+visual)"
     },
     {
       "id": "prod_xpdcjckf",
@@ -3652,7 +3675,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzioni di controllo accessi Axis, integrabili in Camera Station Pro",
-      "fonteId": "src_axis_cs_pro"
+      "fonteId": "src_axis_station",
+      "sku": "Axis Access Control - integrazione controllo accessi"
     },
     {
       "id": "prod_x9cabqvd",
@@ -3894,8 +3918,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Microfoni array con beamforming e IntelliMix DSP integrato per conferenze AV, camera tracking, voice lift e speech reinforcement, anche in ambienti complessi",
-      "fonteId": "src_shure_microflex_advance",
-      "dataUltimaVerificaAutomatica": "2026-08-09"
+      "fonteId": "src_shure_wireless",
+      "dataUltimaVerificaAutomatica": "2026-08-09",
+      "sku": "Integrazione tra wireless Shure SLX-D Quad e console Yamaha DM7"
     },
     {
       "id": "prod_xoimuc3b",
@@ -3906,8 +3931,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio integrato di microfoni, DSP, diffusori e software Shure per soluzioni audio networked",
-      "fonteId": "src_x20pas25",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_mxa920",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure Microflex Ecosystem - integrazione MXA920/MXA925 + IntelliMix + MXN5W-C speaker PoE"
     },
     {
       "id": "prod_x09fb7a9",
@@ -3918,8 +3944,9 @@
       "deployment": "on-premise (installato su dispositivi Windows 10/11 in sala)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Desktop app per la configurazione dell'elaborazione del segnale audio per sistemi di conferenza",
-      "fonteId": "src_shure_intellimix_room",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_intellimix",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure IntelliMix - audio DSP: Foundation System, Room (software), Bar Pro (all-in-one video bar con AI framing)"
     },
     {
       "id": "prod_x4euvec0",
@@ -3930,8 +3957,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Kit base per sale di collaborazione con compute Windows e DSP IntelliMix integrato, touch panel da 11 pollici e switch PoE+",
-      "fonteId": "src_xpx2z9j1",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_intellimix",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure IntelliMix - audio DSP: Foundation System, Room (software), Bar Pro (all-in-one video bar con AI framing)"
     },
     {
       "id": "prod_xthxqicp",
@@ -3942,7 +3970,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema microfonico wireless digitale di fascia enterprise",
-      "fonteId": "src_shure_ulxd"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench"
     },
     {
       "id": "prod_xrd4tkp7",
@@ -3953,8 +3982,9 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Desktop app per coordinamento RF e gestione sistemi wireless",
-      "fonteId": "src_x3ukyb0z",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_intellimix",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure software tools: Designer (configurazione), ShureCloud (remote management), Wireless Workbench/WWB Mobile (wireless config)"
     },
     {
       "id": "prod_x2yaryjv",
@@ -3965,7 +3995,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema microfonico wireless digitale di fascia intermedia, 24-bit, wide tuning 138 MHz, ShowLink Ease, Digital Feedback Reducer, AES-256",
-      "fonteId": "src_xovqlr4t"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure SLX-D+ - digital wireless mid-tier (upgrade da ULX-D)"
     },
     {
       "id": "prod_xn27sx9q",
@@ -4036,7 +4067,7 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW con SoC4 SD-WAN ASIC per filiali di medie/grandi dimensioni (esistenza e specifiche confermate solo da rivenditori terzi in questa sessione)",
-      "fonteId": null,
+      "fonteId": "src_fortigate_100f",
       "sku": "FG-100F (base hardware); bundle es. FG-100F-BDL-<servizio>-<durata>"
     },
     {
@@ -4060,7 +4091,7 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW per campus e filiali di medie dimensioni (esistenza confermata da fonti terze, pagina fortinet.com non raggiunta in questa sessione)",
-      "fonteId": null,
+      "fonteId": "src_fortigate_200f",
       "sku": "FG-200F (base hardware); bundle noto es. FG-200F-BDL-809-36 (3 anni FortiCare+FortiGuard Enterprise)"
     },
     {
@@ -4324,7 +4355,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome fixed-focal economiche, outdoor-ready, con analytics deep learning su edge",
-      "fonteId": "src_xqr5nfi4"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xr3ntj3m",
@@ -4335,7 +4367,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome fino a 8MP, Lightfinder 2.0, Forensic WDR, OptimizedIR, ARTPEC-9, Object Analytics preinstallato",
-      "fonteId": "src_xbsw43c7"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_x0aq5vv0",
@@ -4346,7 +4379,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome AI-powered di fascia alta, fino a 8MP, prestazioni superiori",
-      "fonteId": "src_xa7la1vg"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_x13wum6p",
@@ -4357,7 +4391,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello specifico dome 2MP con Lightfinder 2.0 e Forensic WDR",
-      "fonteId": "src_x02m23ug"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xgtjnw6z",
@@ -4368,7 +4403,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Bullet compatte e leggere, fixed-focal, con video analytics AI-powered",
-      "fonteId": "src_xunkgze3"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xweyi7l5",
@@ -4379,7 +4415,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Multisensore 13MP, copertura panoramica 180°, stitching seamless a 3 immagini",
-      "fonteId": "src_xr8p7hoq"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xd5k2c0t",
@@ -4390,7 +4427,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Termiche per rilevamento/verifica 24/7 anche in fumo/nebbia leggera; include AXIS Q2101-TE per monitoraggio temperatura",
-      "fonteId": "src_x3xhxeab"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xf7ay9cj",
@@ -4401,7 +4439,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello termico specifico, alta sensibilita', IK10/IP66/67, Edge Vault, FIPS 140-2 Level 2",
-      "fonteId": "src_xxggwl3i"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_x4q43gc6",
@@ -4412,7 +4451,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fino a 4 sensor unit con AXIS FA54 Main Unit; mix di sensori termici e visivi in un unico stream",
-      "fonteId": "src_xmlkt8eu"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xx0tjqpl",
@@ -4423,7 +4463,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Panoramica antideflagrante 180°, certificata ATEX/IECEx/INMETRO Zone 1/21, IP67/IP68, acciaio inox",
-      "fonteId": "src_xmguyvfa"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_x5i8v6zi",
@@ -4434,7 +4475,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Termica antideflagrante Zone 2/Division 2, misura -40°C a 350°C, PoE, IP66/67",
-      "fonteId": "src_xtdc2pyh"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_xkw4osl2",
@@ -4791,7 +4833,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Networkable, 24-bit/48kHz, AES-256, High Density mode, integrazione Wireless Workbench 6 e AMX/Crestron, compatibile Axient Spectrum Manager",
-      "fonteId": "src_xmir924d"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure ULXD4 - wireless receiver chassis (Dual/Quad: ULXD4D, ULXD4Q, ULXD4Q-GV)"
     },
     {
       "id": "prod_xsre059k",
@@ -4802,7 +4845,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "2 canali indipendenti in un solo rack unit, RF cascade ports, tuning fino a 166 MHz, audio summing, diversity per bodypack",
-      "fonteId": "src_x4rwmt43"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure ULXD4 - wireless receiver chassis (Dual/Quad: ULXD4D, ULXD4Q, ULXD4Q-GV)"
     },
     {
       "id": "prod_xf13p8rz",
@@ -4813,8 +4857,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "4 canali in un solo rack unit, solo 7.6 lb (3.4 kg), RF cascade + 2 porte Ethernet, opzione Dante per audio in rete, modalità High Density, AES 256-bit encryption, audio summing, tuning range fino a 166 MHz",
-      "fonteId": "src_xbqjk3az",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_wireless",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure ULXD4 - wireless receiver chassis (Dual/Quad: ULXD4D, ULXD4Q, ULXD4Q-GV)"
     },
     {
       "id": "prod_xm0qrmxg",
@@ -4825,7 +4870,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Variante wide-tuning con range esteso fino a 166 MHz (dipendente da regione), 24-bit/48kHz, AES-256 sempre attivo",
-      "fonteId": "src_x91c2k7s"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure ULXD4 - wireless receiver chassis (Dual/Quad: ULXD4D, ULXD4Q, ULXD4Q-GV)"
     },
     {
       "id": "prod_xveq6lt1",
@@ -4836,7 +4882,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Manuale ufficiale per ULXD4D, ULXD4Q, ULXD1 (bodypack) e ULXD2 (handheld): specifiche, networking, configurazione",
-      "fonteId": "src_x6m6l2f6"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench"
     },
     {
       "id": "prod_xdqq0dxz",
@@ -5296,7 +5343,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema wireless digitale con tuning 138 MHz, ShowLink Ease, Digital Feedback Reducer, AES-256; gestito via Wireless Workbench e app WWB Mobile",
-      "fonteId": "src_xovqlr4t"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure SLX-D+ - digital wireless mid-tier (upgrade da ULX-D)"
     },
     {
       "id": "prod_xla0uvpc",
@@ -5307,7 +5355,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App companion per monitoraggio e controllo remoto via Wi-Fi/Bluetooth dei ricevitori SLX-D+/altri sistemi Shure",
-      "fonteId": "src_xovqlr4t"
+      "fonteId": "src_shure_intellimix",
+      "sku": "Shure software tools: Designer (configurazione), ShureCloud (remote management), Wireless Workbench/WWB Mobile (wireless config)"
     },
     {
       "id": "prod_xhk2i68h",
@@ -5318,7 +5367,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Supporto nativo per controllo gain e monitoraggio batteria/RF di SLX-D Quad direttamente dal mixer digitale Yamaha DM7 (da firmware V1.7)",
-      "fonteId": "src_xe349wsq"
+      "fonteId": "src_shure_wireless",
+      "sku": "Shure SLX-D+ - digital wireless mid-tier (upgrade da ULX-D)"
     },
     {
       "id": "prod_x3y5fb2o",
@@ -5354,8 +5404,9 @@
       "deployment": "on-premise (Windows/macOS), gratuito",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Software gratuito per progettazione e configurazione di impianti Shure (Microflex Ecosystem): routing audio Dante, design online/offline, copertura audio configurabile, modalità Dark Mode, sicurezza 802.1x, file di design condivisibili tra colleghi e sedi.",
-      "fonteId": "src_shure_designer_page",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_shure_intellimix",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Shure software tools: Designer (configurazione), ShureCloud (remote management), Wireless Workbench/WWB Mobile (wireless config)"
     },
     {
       "id": "prod_shure_shurecloud",
@@ -5366,7 +5417,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma cloud per monitoraggio remoto e gestione della flotta di dispositivi Shure installati.",
-      "fonteId": "src_shure_designer_page"
+      "fonteId": "src_shure_intellimix",
+      "sku": "Shure software tools: Designer (configurazione), ShureCloud (remote management), Wireless Workbench/WWB Mobile (wireless config)"
     },
     {
       "id": "prod_crestron_fusion_platform",
@@ -5389,7 +5441,8 @@
       "deployment": "on-premise (esterno)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Intercom audio da esterno robusto, 92 dB SPL, echo cancellation/riduzione rumore, lettore QR code per accesso.",
-      "fonteId": "src_axis_intercoms_page"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_axis_i7020",
@@ -5400,7 +5453,8 @@
       "deployment": "on-premise (interno)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Intercom da interno per ambienti puliti/sanitari, resistente a detergenti chimici e conforme ISO 14644-1.",
-      "fonteId": "src_axis_intercoms_page"
+      "fonteId": "src_axis_cameras",
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
     },
     {
       "id": "prod_barco_udm4k22",
@@ -15207,6 +15261,76 @@
       "titolo": "Avigilon cameras - cloud-native A5, H5A, H6A, enterprise-grade",
       "vendorId": "v_avigilon",
       "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_nl_speakers",
+      "url": "https://www.qsys.com/products-solutions/q-sys/audio-network-loudspeakers/nl-series/",
+      "titolo": "Q-SYS NL Series - diffusori PoE",
+      "vendorId": "v_qsys",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_fortigate_100f",
+      "url": "https://www.fortinet.com/products/fortigate",
+      "titolo": "FortiGate 100F series",
+      "vendorId": "v_fortinet",
+      "tipo": "catalogo",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_fortigate_200f",
+      "url": "https://www.fortinet.com/products/fortigate",
+      "titolo": "FortiGate 200F series",
+      "vendorId": "v_fortinet",
+      "tipo": "catalogo",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_axis_cameras",
+      "url": "https://www.axis.com/en-us/products/cameras",
+      "titolo": "Axis network cameras - dome, bullet, PTZ, thermal, panoramic, multisensor",
+      "vendorId": "v_axis",
+      "tipo": "catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_axis_station",
+      "url": "https://www.axis.com/en-us/products/video-management-software",
+      "titolo": "Axis Camera Station Pro - VMS server-based",
+      "vendorId": "v_axis",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_shure_intellimix",
+      "url": "https://www.shure.com/en-US/products/mixers/intellimix",
+      "titolo": "Shure IntelliMix - audio DSP (P300, Room, Bar Pro)",
+      "vendorId": "v_shure",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_shure_wireless",
+      "url": "https://www.shure.com/en-US/products/wireless",
+      "titolo": "Shure wireless systems - ULX-D, Axient Digital (concert/broadcast)",
+      "vendorId": "v_shure",
+      "tipo": "catalogo ufficiale",
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
