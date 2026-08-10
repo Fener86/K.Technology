@@ -258,15 +258,6 @@ async function loadInitialData() {
     state.catalog = { macroaree: [], areeFunzionali: [], vendors: [], brandLines: [], famiglie: [], prodotti: [], licenze: [], licenseFeatures: [], integrazioni: [], fonti: [], changelog: [] };
   }
   localStorage.setItem(LS_CATALOG, JSON.stringify(state.catalog));
-  
-  // Carica dati compatibilita' licenze per modulo licensing app
-  try {
-    const res = await fetch("data/app-licensing-data.json", { cache: "no-store" });
-    if (res.ok) state.licensingData = await res.json();
-    else state.licensingData = { products_licenses: {}, license_descriptions: {} };
-  } catch (e) {
-    state.licensingData = { products_licenses: {}, license_descriptions: {} };
-  }
 
   try {
     const res = await fetch(EMBEDDED_STATUS_URL, { cache: "no-store" });
@@ -558,63 +549,167 @@ function viewFamily(fam, c, L) {
   `;
 }
 
-function getLicensingSection(prod, c, L, licensingData) {
-  if (!licensingData || !licensingData.products_licenses || !licensingData.products_licenses[prod.id]) {
-    return ""; // Nessuna licenza per questo prodotto
+function generateBoM(prod, c, selectedBundleId) {
+  // Genera Bill of Materials in testo
+  const bundle = selectedBundleId ? c.bundles.find(b => b.id === selectedBundleId) : null;
+  const licenseIds = (bundle && bundle.licenzeIncluse) ? bundle.licenzeIncluse : 
+                     (prod.compatible_licenses ? prod.compatible_licenses : []);
+  
+  let bomTitle = bundle ? bundle.nome : prod.nomeCommerciale;
+  let bomContent = `BILL OF MATERIALS — ${bomTitle}
+================================================
+
+PRODOTTO PRINCIPALE
+  ${prod.nomeCommerciale}
+  SKU: ${prod.sku || "N/A"}
+  Quantità: 1
+  Prezzo: €${prod.prezzo || "da verificare"}
+  Stato: ${prod.statoLifecycle}
+
+`;
+
+  if (bundle && bundle.licenzeIncluse && bundle.licenzeIncluse.length > 0) {
+    bomContent += `MODULI/LICENZE INCLUSE\n`;
+    bundle.licenzeIncluse.forEach(licId => {
+      const lic = c.licenze.find(l => l.id === licId);
+      if (lic) {
+        bomContent += `  - ${lic.nomeUfficiale} (${licId})\n    Durata: ${lic.durata}\n    Rinnovo: ${lic.rinnovo}\n\n`;
+      }
+    });
   }
+
+  bomContent += `RIEPILOGO PREZZI
+  Hardware: €${prod.prezzo || "da verificare"}
+  Licensing primo anno: €${prod.prezzoAnnuale || "da verificare"}
+  ─────────────────────────────────
+  TOTALE anno 1: €${(prod.prezzo || 0) + (prod.prezzoAnnuale || 0)}
+  TOTALE anni successivi: €${prod.prezzoAnnuale || "da verificare"}/anno
+
+VENDOR: ${c.vendors.find(v => c.famiglie.find(f => f.id === prod.familyId && f.vendorId === v.id)) ? c.vendors.find(v => c.famiglie.find(f => f.id === prod.familyId && f.vendorId === v.id)).nome : "N/A"}
+
+GENERATO: ${new Date().toLocaleDateString('it-IT')} ${new Date().toLocaleTimeString('it-IT')}
+APP: https://fener86.github.io/K.Technology`;
+
+  return bomContent;
+}
+
+function downloadBoM(prodId, bundleId) {
+  const prod = state.catalog.prodotti.find(p => p.id === prodId);
+  if (!prod) return alert("Prodotto non trovato");
   
-  const productLic = licensingData.products_licenses[prod.id];
-  const licenseIds = productLic.licenze || [];
-  
-  if (licenseIds.length === 0) return "";
-  
-  let html = `<h2 class="h2">📋 Licenze Compatibili</h2>
-    <div class="panel">
-      <div class="desc" style="margin-bottom:20px;">Queste licenze puoi abbinare a <strong>${esc(productLic.nome)}</strong>:</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">`;
-  
-  licenseIds.forEach(licId => {
-    const lic = licensingData.license_descriptions[licId];
-    if (!lic) return;
-    
-    const fonte = L.fonti[lic.fonte] || {};
-    const linkVerifica = fonte.url || "#";
-    
-    html += `<div style="background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:16px;transition:all 0.2s;">
-      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;gap:8px;">
-        <strong style="font-size:14px;">${esc(lic.nome)}</strong>
-        <span style="background:var(--accent-tint);color:var(--accent);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;">${esc(lic.tipo)}</span>
-      </div>
-      <p style="font-size:13px;color:var(--text-dim);margin:8px 0;line-height:1.5;">${esc(lic.descrizione)}</p>
-      <div style="font-size:12px;color:var(--text-faint);margin:12px 0;">⏱️ ${esc(lic.durata)}</div>
-      <a href="${esc(linkVerifica)}" target="_blank" style="display:inline-block;background:var(--accent);color:var(--accent-ink);padding:8px 12px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;transition:filter 0.15s;" onmouseover="this.style.filter='brightness(1.08)'" onmouseout="this.style.filter='brightness(1)'">
-        ✓ Verifica Ufficiale
-      </a>
-    </div>`;
-  });
-  
-  html += `</div>
-    <div style="background:var(--accent-tint);border:1px solid var(--border);border-radius:8px;padding:12px;margin-top:16px;font-size:13px;color:var(--text);">
-      💡 Clicca "Verifica Ufficiale" per controllare direttamente dal vendor.
-    </div>
-    </div>`;
-  
-  return html;
+  const bomText = generateBoM(prod, state.catalog, bundleId);
+  const blob = new Blob([bomText], {type: "text/plain; charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `BoM_${prod.nomeCommerciale.replace(/\s+/g, "_")}_${new Date().toISOString().split("T")[0]}.txt`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 function viewProduct(prod, c, L) {
   if (!prod) return `<div class="empty">Prodotto non trovato.</div>`;
   const fam = L.famiglie[prod.familyId];
   const integrazioni = c.integrazioni.filter((i) => i.productId === prod.id);
+  const bundleConsigliati = c.bundles ? c.bundles.filter(b => b.prodottoBase === prod.id) : [];
   
-  // Sezione licenze compatibili (modulo licensing)
-  const licensingHtml = getLicensingSection(prod, c, L, state.licensingData);
-  
-  return `
+  let html = `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:fam?.nome,hash:"#/family/"+fam?.id},{label:prod.nomeCommerciale}])}
     <h1 class="h1">${led(prod.statoLifecycle)}${esc(prod.nomeCommerciale)}</h1>
     <div class="desc">${esc(prod.descrizioneBreve)}</div>
-    <h2 class="h2">Scheda tecnica</h2>
+  `;
+  
+  // Sezione PREZZO
+  if (prod.prezzo !== undefined || prod.prezzoAnnuale !== undefined) {
+    html += `<h2 class="h2">💰 Prezzi</h2>
+    <div class="panel">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+        ${prod.prezzo !== undefined ? `<div style="background:var(--panel-2);padding:16px;border-radius:8px;">
+          <div style="font-size:12px;color:var(--text-faint);margin-bottom:6px;">Hardware</div>
+          <div style="font-size:24px;font-weight:600;color:var(--accent);">€${prod.prezzo}</div>
+        </div>` : ""}
+        ${prod.prezzoAnnuale !== undefined ? `<div style="background:var(--panel-2);padding:16px;border-radius:8px;">
+          <div style="font-size:12px;color:var(--text-faint);margin-bottom:6px;">Licensing/anno</div>
+          <div style="font-size:24px;font-weight:600;color:var(--accent);">€${prod.prezzoAnnuale}</div>
+        </div>` : ""}
+        ${prod.prezzo !== undefined && prod.prezzoAnnuale !== undefined ? `<div style="background:var(--accent-tint);padding:16px;border-radius:8px;">
+          <div style="font-size:12px;color:var(--text-faint);margin-bottom:6px;">Totale anno 1</div>
+          <div style="font-size:24px;font-weight:600;color:var(--accent);">€${prod.prezzo + prod.prezzoAnnuale}</div>
+        </div>` : ""}
+      </div>
+    </div>`;
+  }
+  
+  // Sezione WARNING
+  if (prod.nota || prod.maxCamere || prod.maxUtenti) {
+    html += `<div class="panel" style="background:var(--panel-2);border-left:4px solid #ff9500;margin-bottom:18px;">
+      <div style="font-weight:600;margin-bottom:8px;">⚠️ Informazioni Importanti</div>
+      ${prod.nota ? `<p style="font-size:13px;color:var(--text-dim);margin:8px 0;">${esc(prod.nota)}</p>` : ""}
+      ${prod.maxCamere ? `<p style="font-size:13px;color:var(--text-dim);margin:4px 0;">📷 Max telecamere: <strong>${prod.maxCamere}</strong></p>` : ""}
+      ${prod.maxUtenti ? `<p style="font-size:13px;color:var(--text-dim);margin:4px 0;">👥 Max utenti: <strong>${prod.maxUtenti}</strong></p>` : ""}
+    </div>`;
+  }
+  
+  // Sezione BUNDLE CONSIGLIATI
+  if (bundleConsigliati.length > 0) {
+    html += `<h2 class="h2">📦 Bundle Consigliati</h2>
+    <div class="panel">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">`;
+    
+    bundleConsigliati.forEach(bundle => {
+      html += `<div style="background:var(--panel-2);border:2px solid var(--accent);border-radius:12px;padding:16px;">
+        <div style="font-weight:600;margin-bottom:8px;">${esc(bundle.nome)}</div>
+        <p style="font-size:12px;color:var(--text-dim);margin-bottom:12px;line-height:1.5;">${esc(bundle.descrizione)}</p>
+        <div style="background:var(--accent-tint);padding:8px;border-radius:6px;margin-bottom:12px;">
+          <div style="font-size:12px;color:var(--text-faint);">Prezzo totale:</div>
+          <div style="font-size:18px;font-weight:600;color:var(--accent);">€${bundle.prezzoTotale} (€${bundle.prezzoAnnuale}/anno)</div>
+        </div>
+        <button onclick="downloadBoM('${prod.id}', '${bundle.id}')" style="width:100%;padding:8px;background:var(--accent);color:var(--accent-ink);border:none;border-radius:6px;font-weight:600;cursor:pointer;">📄 Genera BoM</button>
+      </div>`;
+    });
+    
+    html += `</div></div>`;
+  }
+  
+  // Sezione LICENZE COMPATIBILI (da app-licensing-data)
+  if (state.licensingData && state.licensingData.products_licenses && state.licensingData.products_licenses[prod.id]) {
+    const productLic = state.licensingData.products_licenses[prod.id];
+    const licenseIds = productLic.licenze || [];
+    
+    if (licenseIds.length > 0) {
+      html += `<h2 class="h2">📋 Licenze Compatibili</h2>
+      <div class="panel">
+        <div class="desc" style="margin-bottom:20px;">Queste licenze puoi abbinare a <strong>${esc(productLic.nome)}</strong>:</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">`;
+      
+      licenseIds.forEach(licId => {
+        const lic = state.licensingData.license_descriptions[licId];
+        if (!lic) return;
+        
+        const fonte = L.fonti[lic.fonte] || {};
+        const linkVerifica = fonte.url || "#";
+        
+        html += `<div style="background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;gap:8px;">
+            <strong style="font-size:14px;">${esc(lic.nome)}</strong>
+            <span style="background:var(--accent-tint);color:var(--accent);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;">${esc(lic.tipo)}</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-dim);margin:8px 0;line-height:1.5;">${esc(lic.descrizione)}</p>
+          <div style="font-size:12px;color:var(--text-faint);margin:12px 0;">⏱️ ${esc(lic.durata)}</div>
+          <a href="${esc(linkVerifica)}" target="_blank" style="display:inline-block;background:var(--accent);color:var(--accent-ink);padding:8px 12px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;cursor:pointer;">✓ Verifica Ufficiale</a>
+        </div>`;
+      });
+      
+      html += `</div>
+      <div style="background:var(--accent-tint);border:1px solid var(--border);border-radius:8px;padding:12px;margin-top:16px;font-size:13px;color:var(--text);">
+        💡 Clicca "Verifica Ufficiale" per controllare direttamente dal vendor.
+      </div>
+      </div>`;
+    }
+  }
+  
+  // Sezione SCHEDA TECNICA
+  html += `<h2 class="h2">Scheda tecnica</h2>
     <div class="panel">
       <div class="field-row"><div class="field-label">Modello</div><div>${esc(prod.modello)}</div></div>
       ${prod.sku ? `<div class="field-row"><div class="field-label">SKU / codici ordine</div><div class="mono" style="font-size:12px;line-height:1.6;">${esc(prod.sku)}</div></div>` : ""}
@@ -622,15 +717,20 @@ function viewProduct(prod, c, L) {
       <div class="field-row"><div class="field-label">Deployment</div><div>${esc(prod.deployment)}</div></div>
       <div class="field-row"><div class="field-label">Stato lifecycle</div><div>${badge(prod.statoLifecycle)}</div></div>
       <div class="field-row"><div class="field-label">Fonte</div><div>${sourceTag(L.fonti[prod.fonteId])}</div></div>
-    </div>
-    ${licensingHtml}
-    ${integrazioni.length ? `<h2 class="h2">Integrazioni</h2>${integrazioni.map(i=>`
+    </div>`;
+  
+  // Sezione INTEGRAZIONI
+  if (integrazioni.length) {
+    html += `<h2 class="h2">Integrazioni</h2>${integrazioni.map(i=>`
       <div class="panel">
         <div style="font-weight:600;margin-bottom:6px;">${esc(i.descrizione)} <span class="hint">(${esc(i.tipo)})</span></div>
         <div class="desc" style="margin-bottom:8px;">${esc(i.note)}</div>
         ${sourceTag(L.fonti[i.fonteId])}
-      </div>`).join("")}` : ""}
-  `;
+      </div>`).join("")}`;
+  }
+  
+  html += ``;
+  return html;
 }
 
 function viewLicense(lic, c, L) {
