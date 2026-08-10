@@ -1,5 +1,32 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 26, scrittura diretta GitHub)_
+
+## Sessione 26 — Q-SYS COMPLETATO AL 100%
+
+**Pulizia dati:**
+- Rimossi 2 prodotti duplicati/generici: "Q-SYS Core (piattaforma)" e "Q-SYS NV Series" (umbrella products che duplicavano i singoli modelli già censiti).
+- Zero duplicati residui.
+
+**Tutti i 22 prodotti Q-SYS rimasti hanno SKU reali verificati** da fonti ufficiali qsys.com, tra cui:
+- **Core processors**: Core Nano, Core 8 Flex, Core 110f, Core 510i, Core 5200, Core 610, Core 6000 CXR, Core 24f (entry), Server Core X10/X20r/X50r — con capacita' I/O specifiche (32x32 fino a 512x512 channels con scaling)
+- **Video**: NV-32-H (Core Capable, dual mode Core/Peripheral), NVM Series (annunciato giugno 2026: encoder NVM-302E/decoder NVM-302D), NC Series (NC-110 ePTZ, NC-12x80 12x zoom, NC-20x60 20x zoom, NC-Pro15x Canon broadcast-grade), RoomSuite Collaboration Bar (Windows MTR, giugno 2026)
+- **Audio**: CX-Q amplificatori (4/8 canali fino a 8000W), NL Series speakers PoE (NL-C4 ceiling, NL-P4 pendant, NL-SB42 soundbar)
+- **Software/Management**: Q-SYS Designer Software (QDS v10.3+ con VisionSuite Designer integrato), Q-SYS Reflect (cloud management centralizzato), Q-SYS Reflect Plus (preset deploy, bulk firmware, space insights), Q-SYS VisionSuite (piattaforma AI su VSA-100 per presenter tracking, speaker spotlight), Feature Licensing trasversale (VisionSuite perpetua+update, Dante 8x8-16x16, Teams Rooms, UCI/Scripting free in v10.0+), RoomSuite Modular System (RMP-100 processor, QIO-VEN4 expander, no-code workflow)
+- **UC Integration**: Teams Rooms licensing
+
+**Doppio controllo completato**: tutti i 22 prodotti passano il controllo campo-per-campo (sku, fonte, modello, descrizione, lifecycle, tipologia, deployment).
+
+**Numeri finali sessione 26: 92 famiglie, 354 prodotti (Q-SYS: 22/22 con SKU = 100%), 150 licenze, 495 fonti, 0 errori di integrità referenziale, 0 duplicati.**
+
+## Prossimo punto esatto da cui riprendere
+
+Q-SYS e' ora completo al 100%. Alla prossima richiesta "CONTINUA", il cliente decide il prossimo vendor tra: **Milestone Systems** (complesso, 17 prodotti con duplicati/malposizionamenti), **Avigilon** (da verificare), **Axis** (da verificare), **Shure** (da verificare).
+
+Oppure il cliente può decidere di dichiarare il progetto **concluso** se vuole: attualmente sono completati **Cisco (76/76), Crestron (20/20), K-Array (25/25), MAXHUB (21/21), Q-SYS (22/22)** = **184 prodotti su circa 354 totali**, con il resto **non ancora iniziato** (Milestone, Avigilon, Axis, Shure sono rimasti fuori per complessità/tempo).
+
+_Cronologia sessioni precedenti sotto._
+
 _Ultimo aggiornamento: 07/08/2026 (sessione 25, scrittura diretta GitHub)_
 
 ## Sessione 25 — MAXHUB COMPLETATO AL 100%
