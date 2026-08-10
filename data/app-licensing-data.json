@@ -1,0 +1,1991 @@
+{
+  "products_licenses": {
+    "prod_fortigate_family": {
+      "nome": "FortiGate (serie F/G, hardware e VM)",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_milestone_expressplus": {
+      "nome": "XProtect Express+",
+      "licenze": [
+        "lic_milestone_care_basic",
+        "lic_milestone_lpr",
+        "lic_milestone_access"
+      ]
+    },
+    "prod_milestone_professionalplus": {
+      "nome": "XProtect Professional+",
+      "licenze": [
+        "lic_milestone_care_plus",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
+    },
+    "prod_milestone_expert": {
+      "nome": "XProtect Expert",
+      "licenze": [
+        "lic_milestone_care_premium",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
+    },
+    "prod_milestone_corporate": {
+      "nome": "XProtect Corporate",
+      "licenze": [
+        "lic_milestone_care_premium",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
+    },
+    "prod_axis_camera_station_pro": {
+      "nome": "AXIS Camera Station Pro",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_shure_mxa920": {
+      "nome": "Shure MXA920",
+      "licenze": [
+        "lic_shure_mxa_intellimix"
+      ]
+    },
+    "prod_shure_ulxd_system": {
+      "nome": "Shure ULX-D",
+      "licenze": [
+        "lic_shure_ulxd_frequency"
+      ]
+    },
+    "prod_shure_axient_digital": {
+      "nome": "Shure Axient Digital",
+      "licenze": [
+        "lic_shure_axient_subscription"
+      ]
+    },
+    "prod_axis_lpv_app": {
+      "nome": "AXIS License Plate Verifier (applicazione)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_optimizer_plugin": {
+      "nome": "AXIS Optimizer (plugin)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_fortigate_gseries": {
+      "nome": "FortiGate G Series (nuova generazione, SP5 ASIC)",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_axis_p1486le": {
+      "nome": "AXIS P1486-LE Global Shutter Camera",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_access_readers_new": {
+      "nome": "Nuovi lettori Axis IP/OSDP (2026)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_shure_mxa925": {
+      "nome": "Shure MXA925 (nuovo flagship)",
+      "licenze": [
+        "lic_shure_mxa_intellimix"
+      ]
+    },
+    "prod_axis_object_analytics_app": {
+      "nome": "AXIS Object Analytics (applicazione)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_q2802e": {
+      "nome": "AXIS Q2802-E Bispectral Camera",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_f2180te": {
+      "nome": "AXIS F2180-TE Thermal Sensor",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_tp3604e": {
+      "nome": "AXIS TP3604-E Private Cellular Back Box",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x3yfefe6": {
+      "nome": "FortiGate VM",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xfxmorbz": {
+      "nome": "FortiGate Cloud",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xh3vzse8": {
+      "nome": "AXIS License Plate Verifier",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xs5ffzbj": {
+      "nome": "AXIS Object Analytics",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x8iwde2i": {
+      "nome": "AXIS Perimeter Defender",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xzu9955i": {
+      "nome": "AXIS Perimeter Defender PTZ Autotracking",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xurp3nqx": {
+      "nome": "AXIS Device Manager",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xahp1nn7": {
+      "nome": "AXIS Device Manager Extend",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xbcbwfjo": {
+      "nome": "AXIS Network Cameras (fisse/dome/bullet/PTZ/multisensore/termiche)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xpdcjckf": {
+      "nome": "AXIS Access Control",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xthxqicp": {
+      "nome": "ULX-D Digital Wireless System",
+      "licenze": [
+        "lic_shure_ulxd_frequency"
+      ]
+    },
+    "prod_xn27sx9q": {
+      "nome": "FortiGate/FortiWiFi 40F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xpa40rv4": {
+      "nome": "FortiGate/FortiWiFi 60F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xze4mio4": {
+      "nome": "FortiGate/FortiWiFi 70G series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xjxa3qi1": {
+      "nome": "FortiGate/FortiWiFi 80F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_x0snbp4u": {
+      "nome": "FortiGate 90G series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xnmwlda6": {
+      "nome": "FortiGate 100F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xdh5n7w1": {
+      "nome": "FortiGate 120G series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xjh1bl1a": {
+      "nome": "FortiGate 200F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_x6a0zwua": {
+      "nome": "FortiGate 200G series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xthj1b3v": {
+      "nome": "FortiGate 400F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xtgk2mvg": {
+      "nome": "FortiGate 600F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xbs2yj0d": {
+      "nome": "FortiGate 700G series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_x9ktorqr": {
+      "nome": "FortiGate 1000F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xbwev81d": {
+      "nome": "FortiGate 7000F series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_xffhcf02": {
+      "nome": "FortiGate Rugged series",
+      "licenze": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
+    },
+    "prod_x91e1ayb": {
+      "nome": "AXIS M32 Series",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xr3ntj3m": {
+      "nome": "AXIS P32 Series",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x0aq5vv0": {
+      "nome": "AXIS Q35 Series",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x13wum6p": {
+      "nome": "AXIS P3275-LVE",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xgtjnw6z": {
+      "nome": "AXIS M20 Series",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xweyi7l5": {
+      "nome": "AXIS P3818-PVE",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xd5k2c0t": {
+      "nome": "AXIS Q21 Series",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xf7ay9cj": {
+      "nome": "AXIS Q2111-E",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x4q43gc6": {
+      "nome": "Thermal Modular Cameras (AXIS FA-Series)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xx0tjqpl": {
+      "nome": "ExCam XF P3807",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_x5i8v6zi": {
+      "nome": "AXIS Q1961-XTE",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_xveq6lt1": {
+      "nome": "Manuale ULX-D Dual/Quad",
+      "licenze": [
+        "lic_shure_ulxd_frequency"
+      ]
+    },
+    "prod_x7c6z242": {
+      "nome": "Core Nano",
+      "licenze": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_teams_rooms_pro"
+      ]
+    },
+    "prod_xmrmw570": {
+      "nome": "Core 8 Flex",
+      "licenze": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_teams_rooms_pro"
+      ]
+    },
+    "prod_x5hiby9u": {
+      "nome": "Core 110f",
+      "licenze": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro"
+      ]
+    },
+    "prod_x2j6lihg": {
+      "nome": "Core 510i / Core 5200",
+      "licenze": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro",
+        "lic_qsys_core_scaling_256"
+      ]
+    },
+    "prod_xgepl537": {
+      "nome": "Core 610",
+      "licenze": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro",
+        "lic_qsys_core_scaling_256",
+        "lic_qsys_core_scaling_384"
+      ]
+    },
+    "prod_axis_i7010ve": {
+      "nome": "AXIS I7010-VE Network Intercom",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_i7020": {
+      "nome": "AXIS I7020 Network Intercom",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_p3267lve": {
+      "nome": "AXIS P3267-LVE (5MP Fixed Dome)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_p3278": {
+      "nome": "AXIS P3278 (5MP PTZ)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_q6075": {
+      "nome": "AXIS Q6075 (50MP Panoramic PTZ)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_q6411le": {
+      "nome": "AXIS Q6411-LE (Bispectral Thermal+Visual)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_p1486": {
+      "nome": "AXIS P1486 (5MP Global Shutter)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_p3818pve": {
+      "nome": "AXIS P3818-PVE (5MP Panoramic)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_m20_series_detail": {
+      "nome": "AXIS M20 Series (Entry-Level Fixed)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    },
+    "prod_axis_m32_series_detail": {
+      "nome": "AXIS M32 Series (Compact Multi-Format)",
+      "licenze": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
+    }
+  },
+  "license_descriptions": {
+    "lic_forti_atp": {
+      "nome": "lic_forti_atp",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5 anni",
+      "fonte": "src_fortiguard_og"
+    },
+    "lic_forti_utp": {
+      "nome": "lic_forti_utp",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5 anni",
+      "fonte": "src_fortiguard_og"
+    },
+    "lic_forti_ep": {
+      "nome": "lic_forti_ep",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5 anni",
+      "fonte": "src_fortiguard_og"
+    },
+    "lic_forticlient_device": {
+      "nome": "lic_forticlient_device",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_forticlient_og"
+    },
+    "lic_forticlient_cloud": {
+      "nome": "lic_forticlient_cloud",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_forticlient_og"
+    },
+    "lic_fortisase_standard": {
+      "nome": "lic_fortisase_standard",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_fortisase_og"
+    },
+    "lic_fortisase_advanced": {
+      "nome": "lic_fortisase_advanced",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_fortisase_og"
+    },
+    "lic_fortisase_comprehensive": {
+      "nome": "lic_fortisase_comprehensive",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_fortisase_og"
+    },
+    "lic_cat9k_network_ess": {
+      "nome": "lic_cat9k_network_ess",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "legata all'hardware",
+      "fonte": "src_cat9k_licensing_wp"
+    },
+    "lic_cat9k_network_adv": {
+      "nome": "lic_cat9k_network_adv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "legata all'hardware",
+      "fonte": "src_cat9k_licensing_wp"
+    },
+    "lic_cat9k_dna_ess": {
+      "nome": "lic_cat9k_dna_ess",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cat9k_licensing_wp"
+    },
+    "lic_cat9k_dna_adv": {
+      "nome": "lic_cat9k_dna_adv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cat9k_licensing_wp"
+    },
+    "lic_cat9k_hsec": {
+      "nome": "lic_cat9k_hsec",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetual (one-time purchase)",
+      "fonte": "src_cat9k_licensing_wp"
+    },
+    "lic_secfw_essentials": {
+      "nome": "lic_secfw_essentials",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_cisco_secfw_fmc_admin"
+    },
+    "lic_secfw_tmc": {
+      "nome": "lic_secfw_tmc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "a termine (subscription)",
+      "fonte": "src_cisco_secfw_fmc_admin"
+    },
+    "lic_ise_essentials": {
+      "nome": "lic_ise_essentials",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_cisco_ise_licensing_guide"
+    },
+    "lic_ise_advantage": {
+      "nome": "lic_ise_advantage",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_cisco_ise_licensing_guide"
+    },
+    "lic_ise_premier": {
+      "nome": "lic_ise_premier",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_cisco_ise_licensing_guide"
+    },
+    "lic_duo_essentials": {
+      "nome": "lic_duo_essentials",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "mensile/annuale",
+      "fonte": "src_duo_editions"
+    },
+    "lic_duo_advantage": {
+      "nome": "lic_duo_advantage",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "mensile/annuale",
+      "fonte": "src_duo_editions"
+    },
+    "lic_duo_premier": {
+      "nome": "lic_duo_premier",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "mensile/annuale",
+      "fonte": "src_duo_editions"
+    },
+    "lic_meraki_mx_ent": {
+      "nome": "lic_meraki_mx_ent",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "fonte": "src_meraki_mx_licensing"
+    },
+    "lic_meraki_mx_advsec": {
+      "nome": "lic_meraki_mx_advsec",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "fonte": "src_meraki_mx_licensing"
+    },
+    "lic_meraki_mx_sdwanplus": {
+      "nome": "lic_meraki_mx_sdwanplus",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "fonte": "src_meraki_mx_licensing"
+    },
+    "lic_meraki_ms_ent": {
+      "nome": "lic_meraki_ms_ent",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR (SKU multi-durata come da listino)",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_meraki_ms_adv": {
+      "nome": "lic_meraki_ms_adv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_meraki_mr_ent": {
+      "nome": "lic_meraki_mr_ent",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1 anno e multipli (SKU multi-durata)",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_meraki_mr_advupgr": {
+      "nome": "lic_meraki_mr_advupgr",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_axis_core_device": {
+      "nome": "lic_axis_core_device",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua (anche standalone 1 o 5 anni)",
+      "fonte": "src_axis_cs_license_info"
+    },
+    "lic_axis_universal_device": {
+      "nome": "lic_axis_universal_device",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua (anche standalone 1 o 5 anni)",
+      "fonte": "src_axis_cs_license_info"
+    },
+    "lic_crestron_xio_premium": {
+      "nome": "lic_crestron_xio_premium",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1, 2, 3 o 5 anni (anche frazioni trimestrali)",
+      "fonte": "src_crestron_xio_howto"
+    },
+    "lic_shure_intellimix_8ch3y": {
+      "nome": "lic_shure_intellimix_8ch3y",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3 anni",
+      "fonte": "src_shure_intellimix_room"
+    },
+    "lic_shure_intellimix_16ch5y": {
+      "nome": "lic_shure_intellimix_16ch5y",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "5 anni",
+      "fonte": "src_shure_intellimix_room"
+    },
+    "lic_milestone_expressplus": {
+      "nome": "lic_milestone_expressplus",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_milestone_comparison_chart"
+    },
+    "lic_milestone_professionalplus": {
+      "nome": "lic_milestone_professionalplus",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_milestone_comparison_chart"
+    },
+    "lic_milestone_expert": {
+      "nome": "lic_milestone_expert",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_milestone_comparison_chart"
+    },
+    "lic_milestone_corporate": {
+      "nome": "lic_milestone_corporate",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_milestone_comparison_chart"
+    },
+    "lic_avigilon_alta_access_premium": {
+      "nome": "lic_avigilon_alta_access_premium",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "annuale (SaaS)",
+      "fonte": "src_avigilon_alta_access_admin"
+    },
+    "lic_avigilon_alta_access_enterprise": {
+      "nome": "lic_avigilon_alta_access_enterprise",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "annuale (SaaS)",
+      "fonte": "src_avigilon_alta_access_admin"
+    },
+    "lic_axis_lpv_perdevice": {
+      "nome": "lic_axis_lpv_perdevice",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_axis_lpv_support"
+    },
+    "lic_milestone_care_basic": {
+      "nome": "lic_milestone_care_basic",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "per tutta la vita del prodotto",
+      "fonte": "src_milestone_care"
+    },
+    "lic_milestone_care_plus": {
+      "nome": "lic_milestone_care_plus",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "2 anni inclusi, poi rinnovabile",
+      "fonte": "src_milestone_care"
+    },
+    "lic_milestone_care_premium": {
+      "nome": "lic_milestone_care_premium",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "annuale/pluriennale (da verificare durata esatta)",
+      "fonte": "src_milestone_care"
+    },
+    "lic_qsys_reflect_basic": {
+      "nome": "lic_qsys_reflect_basic",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "senza scadenza",
+      "fonte": "src_qsys_reflect"
+    },
+    "lic_qsys_reflect_plus": {
+      "nome": "lic_qsys_reflect_plus",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_qsys_reflect"
+    },
+    "lic_qsys_visionsuite_feature": {
+      "nome": "lic_qsys_visionsuite_feature",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_qsys_visionsuite_licensing"
+    },
+    "lic_qsys_visionsuite_update": {
+      "nome": "lic_qsys_visionsuite_update",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "a termine (durata esatta da verificare)",
+      "fonte": "src_qsys_visionsuite_licensing"
+    },
+    "lic_umbrella_dns_ess": {
+      "nome": "lic_umbrella_dns_ess",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_cisco_umbrella_dns_ess"
+    },
+    "lic_umbrella_dns_adv": {
+      "nome": "lic_umbrella_dns_adv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_cisco_umbrella_dns_adv"
+    },
+    "lic_thousandeyes_units": {
+      "nome": "lic_thousandeyes_units",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "annuale (subscription prepagata)",
+      "fonte": "src_cisco_te_ordering"
+    },
+    "lic_thousandeyes_endpoint": {
+      "nome": "lic_thousandeyes_endpoint",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "annuale",
+      "fonte": "src_cisco_te_ordering"
+    },
+    "lic_avigilon_unity_core": {
+      "nome": "lic_avigilon_unity_core",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "fonte": "src_avigilon_unity_ds"
+    },
+    "lic_avigilon_unity_standard": {
+      "nome": "lic_avigilon_unity_standard",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "fonte": "src_avigilon_unity_ds"
+    },
+    "lic_avigilon_unity_enterprise": {
+      "nome": "lic_avigilon_unity_enterprise",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua (con piano di aggiornamento opzionale 1/3/5 anni)",
+      "fonte": "src_avigilon_unity_ds"
+    },
+    "lic_cisco_dcn_essentials": {
+      "nome": "lic_cisco_dcn_essentials",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cisco_nexus_license_nav"
+    },
+    "lic_cisco_dcn_advantage": {
+      "nome": "lic_cisco_dcn_advantage",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cisco_nexus_license_nav"
+    },
+    "lic_cisco_dcn_premier": {
+      "nome": "lic_cisco_dcn_premier",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cisco_nexus_license_nav"
+    },
+    "lic_cisco_dna_sdwan_ess": {
+      "nome": "lic_cisco_dna_sdwan_ess",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription 3, 5 o 7 anni",
+      "fonte": "src_cisco_sdwan_dna_ordering"
+    },
+    "lic_cisco_dna_sdwan_adv": {
+      "nome": "lic_cisco_dna_sdwan_adv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription 3, 5 o 7 anni",
+      "fonte": "src_cisco_sdwan_dna_ordering"
+    },
+    "lic_fortinac_pro": {
+      "nome": "lic_fortinac_pro",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_fortinac_ds"
+    },
+    "lic_fortitoken_mobile": {
+      "nome": "lic_fortitoken_mobile",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_fortitoken_ds"
+    },
+    "lic_cisco_spaces_essentials": {
+      "nome": "lic_cisco_spaces_essentials",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cisco_spaces_ds"
+    },
+    "lic_cisco_spaces_advantage": {
+      "nome": "lic_cisco_spaces_advantage",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_cisco_spaces_packages"
+    },
+    "lic_fortimail_cloud_gateway_base": {
+      "nome": "lic_fortimail_cloud_gateway_base",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1, 3 o 5 anni",
+      "fonte": "src_fortimail_og"
+    },
+    "lic_fortimail_cloud_gateway_ent": {
+      "nome": "lic_fortimail_cloud_gateway_ent",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1, 3 o 5 anni",
+      "fonte": "src_fortimail_og"
+    },
+    "lic_meraki_mv_enterprise": {
+      "nome": "lic_meraki_mv_enterprise",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_milestone_xprotect_access_door": {
+      "nome": "lic_milestone_xprotect_access_door",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_milestone_xprotect_access"
+    },
+    "lic_cisco_secure_access_sia": {
+      "nome": "lic_cisco_secure_access_sia",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_cisco_secure_access_sub_og"
+    },
+    "lic_cisco_secure_access_spa": {
+      "nome": "lic_cisco_secure_access_spa",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_cisco_secure_access_sub_og"
+    },
+    "lic_meraki_mg_enterprise": {
+      "nome": "lic_meraki_mg_enterprise",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1/3/5/7/10 anni (SKU multi-durata)",
+      "fonte": "src_meraki_mg_enterprise"
+    },
+    "lic_fortiap_onprem_nolicense": {
+      "nome": "lic_fortiap_onprem_nolicense",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "non applicabile",
+      "fonte": "src_fortiap_og"
+    },
+    "lic_fortiap_advanced_mgmt": {
+      "nome": "lic_fortiap_advanced_mgmt",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_fortilan_cloud_licensing"
+    },
+    "lic_fortiap_u_utp": {
+      "nome": "lic_fortiap_u_utp",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "subscription (durata esatta da verificare)",
+      "fonte": "src_fortilan_cloud_licensing"
+    },
+    "lic_avigilon_unity_access_door": {
+      "nome": "lic_avigilon_unity_access_door",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_avigilon_unity_access_page"
+    },
+    "lic_x01xe0e3": {
+      "nome": "lic_x01xe0e3",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xyg2mjxh": {
+      "nome": "lic_xyg2mjxh",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xzq3ambp": {
+      "nome": "lic_xzq3ambp",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xyragyw7": {
+      "nome": "lic_xyragyw7",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xv2awvba": {
+      "nome": "lic_xv2awvba",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xhl1mr85"
+    },
+    "lic_xrv8nw5g": {
+      "nome": "lic_xrv8nw5g",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_x1oyguzo": {
+      "nome": "lic_x1oyguzo",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xoczar97": {
+      "nome": "lic_xoczar97",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xwita25r": {
+      "nome": "lic_xwita25r",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xph1mnn4"
+    },
+    "lic_xk8t19rc": {
+      "nome": "lic_xk8t19rc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_coterm"
+    },
+    "lic_x358djem": {
+      "nome": "lic_x358djem",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xw1m11wh"
+    },
+    "lic_xw0bt0wq": {
+      "nome": "lic_xw0bt0wq",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xhjwfxjq": {
+      "nome": "lic_xhjwfxjq",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xgr9irr4"
+    },
+    "lic_xo6266b7": {
+      "nome": "lic_xo6266b7",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xw1m11wh"
+    },
+    "lic_x0ppvmxu": {
+      "nome": "lic_x0ppvmxu",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1, 3, 5, 7 o 10 anni",
+      "fonte": "src_xgr9irr4"
+    },
+    "lic_xhtkyuap": {
+      "nome": "lic_xhtkyuap",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_x96n5v4u": {
+      "nome": "lic_x96n5v4u",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xgr9irr4"
+    },
+    "lic_xjvl3lvo": {
+      "nome": "lic_xjvl3lvo",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "Variabile; calcolata in base alla media ponderata di tutte le licenze attive divisa per il license limit (co-termination)",
+      "fonte": "src_meraki_coterm"
+    },
+    "lic_x3tqpsiv": {
+      "nome": "lic_x3tqpsiv",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xk1sbo0i"
+    },
+    "lic_xiw2cn9u": {
+      "nome": "lic_xiw2cn9u",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xw1m11wh"
+    },
+    "lic_xyvfpapc": {
+      "nome": "lic_xyvfpapc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1, 3, 5, 7 o 10 anni",
+      "fonte": "src_xgr9irr4"
+    },
+    "lic_xzuxx9dc": {
+      "nome": "lic_xzuxx9dc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_cisco_dna_ebook"
+    },
+    "lic_xakckbhc": {
+      "nome": "lic_xakckbhc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x1u6mq41"
+    },
+    "lic_xih87gb8": {
+      "nome": "lic_xih87gb8",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xh2usarb"
+    },
+    "lic_xbgc1r9o": {
+      "nome": "lic_xbgc1r9o",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_x7yungka"
+    },
+    "lic_xnnrklyz": {
+      "nome": "lic_xnnrklyz",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_x7yungka"
+    },
+    "lic_xwytgzyi": {
+      "nome": "lic_xwytgzyi",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xh2usarb"
+    },
+    "lic_xc8j2piz": {
+      "nome": "lic_xc8j2piz",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3, 5 o 7 anni",
+      "fonte": "src_xrms33z2"
+    },
+    "lic_x474gfsh": {
+      "nome": "lic_x474gfsh",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xrms33z2"
+    },
+    "lic_xtf488bt": {
+      "nome": "lic_xtf488bt",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x7yungka"
+    },
+    "lic_xthwi76h": {
+      "nome": "lic_xthwi76h",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xtsskj69"
+    },
+    "lic_xgtu3hw7": {
+      "nome": "lic_xgtu3hw7",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x6z7y039"
+    },
+    "lic_xb171pms": {
+      "nome": "lic_xb171pms",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x8isy9wu"
+    },
+    "lic_xetb26vs": {
+      "nome": "lic_xetb26vs",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x8isy9wu"
+    },
+    "lic_xcgi4bdj": {
+      "nome": "lic_xcgi4bdj",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xw4au1ey": {
+      "nome": "lic_xw4au1ey",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_x3p6ksey": {
+      "nome": "lic_x3p6ksey",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xds7k6vd": {
+      "nome": "lic_xds7k6vd",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xqjuyoc5": {
+      "nome": "lic_xqjuyoc5",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_x6xvq89e": {
+      "nome": "lic_x6xvq89e",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xbthq6kg": {
+      "nome": "lic_xbthq6kg",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_meraki_licensing_faq"
+    },
+    "lic_xh3j0a7p": {
+      "nome": "lic_xh3j0a7p",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x8isy9wu"
+    },
+    "lic_xjrru7pn": {
+      "nome": "lic_xjrru7pn",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xypjg83i"
+    },
+    "lic_xoru6avw": {
+      "nome": "lic_xoru6avw",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_axis_lpv_support"
+    },
+    "lic_xdfoei3v": {
+      "nome": "lic_xdfoei3v",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x0emmh5v"
+    },
+    "lic_xckgur9h": {
+      "nome": "lic_xckgur9h",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x0ex9ie9"
+    },
+    "lic_x63boyn8": {
+      "nome": "lic_x63boyn8",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_axis_cs_license_info"
+    },
+    "lic_xcpimfso": {
+      "nome": "lic_xcpimfso",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "1 o 5 anni (a seconda dell'applicazione)",
+      "fonte": "src_xq17dzmr"
+    },
+    "lic_x0xnf2fl": {
+      "nome": "lic_x0xnf2fl",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": null
+    },
+    "lic_x29jvjv2": {
+      "nome": "lic_x29jvjv2",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xzs0uo6x"
+    },
+    "lic_xqw33roo": {
+      "nome": "lic_xqw33roo",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xi455pib"
+    },
+    "lic_x8hcfk5g": {
+      "nome": "lic_x8hcfk5g",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xi455pib"
+    },
+    "lic_x4lhwlwc": {
+      "nome": "lic_x4lhwlwc",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xzs0uo6x"
+    },
+    "lic_x6jt1i3j": {
+      "nome": "lic_x6jt1i3j",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xtnxn64p"
+    },
+    "lic_xasu453m": {
+      "nome": "lic_xasu453m",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xhl0lpdp"
+    },
+    "lic_x45dt7ky": {
+      "nome": "lic_x45dt7ky",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": null
+    },
+    "lic_xz1kmfuu": {
+      "nome": "lic_xz1kmfuu",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xvsnpmxz"
+    },
+    "lic_x5ian274": {
+      "nome": "lic_x5ian274",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x4i89rp2"
+    },
+    "lic_xepz74s8": {
+      "nome": "lic_xepz74s8",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xvsnpmxz"
+    },
+    "lic_xxy05v2y": {
+      "nome": "lic_xxy05v2y",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xvsnpmxz"
+    },
+    "lic_xjcudkq2": {
+      "nome": "lic_xjcudkq2",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xvsnpmxz"
+    },
+    "lic_xjsgi3jp": {
+      "nome": "lic_xjsgi3jp",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_xvsnpmxz"
+    },
+    "lic_xbokt3w7": {
+      "nome": "lic_xbokt3w7",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x18l4jl3"
+    },
+    "lic_xm5l8wb1": {
+      "nome": "lic_xm5l8wb1",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "Mensile (subscription mensile a $0/mese)",
+      "fonte": "src_duo_editions"
+    },
+    "lic_xnxavxby": {
+      "nome": "lic_xnxavxby",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x91mokb3"
+    },
+    "lic_xneer8kk": {
+      "nome": "lic_xneer8kk",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_duo_advantage_overview"
+    },
+    "lic_xgsug960": {
+      "nome": "lic_xgsug960",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "mensile (subscription per utente/mese)",
+      "fonte": "src_xmqu3kg7"
+    },
+    "lic_xaj42pim": {
+      "nome": "lic_xaj42pim",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_duo_ordering"
+    },
+    "lic_xcsewlx1": {
+      "nome": "lic_xcsewlx1",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_duo_editions"
+    },
+    "lic_x7be5035": {
+      "nome": "lic_x7be5035",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_duo_advantage_overview"
+    },
+    "lic_x4ui0bmi": {
+      "nome": "lic_x4ui0bmi",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": null
+    },
+    "lic_xkbx96tk": {
+      "nome": "lic_xkbx96tk",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua",
+      "fonte": "src_barco_transformn_cms"
+    },
+    "lic_crestron_fusion_onprem": {
+      "nome": "lic_crestron_fusion_onprem",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "perpetua con manutenzione lifetime",
+      "fonte": "src_crestron_fusion_pl_sku"
+    },
+    "lic_crestron_fusion_cloud": {
+      "nome": "lic_crestron_fusion_cloud",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "3 anni",
+      "fonte": "src_crestron_fusion_c3_sku"
+    },
+    "lic_xffsd764": {
+      "nome": "lic_xffsd764",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "5 anni dalla data di registrazione",
+      "fonte": "src_xvh3r3d8"
+    },
+    "lic_xs9g8gc8": {
+      "nome": "lic_xs9g8gc8",
+      "descrizione": "",
+      "tipo": "feature",
+      "durata": "DA VERIFICARE CON IL VENDOR",
+      "fonte": "src_x7o4qh4c"
+    },
+    "lic_qsys_dante_8x8": {
+      "nome": "Dante License 8x8→16x16",
+      "descrizione": "Upgrade Dante I/O da 8x8 a 16x16 flussi streaming",
+      "tipo": "software-feature",
+      "durata": "perpetua",
+      "fonte": "src_qsys_licensing"
+    },
+    "lic_qsys_visionai_vsa100": {
+      "nome": "VisionSuite AI Accelerator VSA-100",
+      "descrizione": "AI analytics engine (ACPR, Presenter Tracking, Speaker Spotlight) con VSA-100 hardware accelerator",
+      "tipo": "software-feature",
+      "durata": "perpetua + term-update",
+      "fonte": "src_qsys_licensing"
+    },
+    "lic_qsys_teams_rooms_pro": {
+      "nome": "Microsoft Teams Rooms Integration License",
+      "descrizione": "Integrazione nativa Q-SYS + Microsoft Teams Rooms Pro per Core Nano/8 Flex/110f/510i",
+      "tipo": "software-feature",
+      "durata": "annual",
+      "fonte": "src_qsys_licensing"
+    },
+    "lic_qsys_core_scaling_256": {
+      "nome": "Core Scaling License 256x256",
+      "descrizione": "License per scalare Core 610 a 256x256 canali audio",
+      "tipo": "software-feature",
+      "durata": "perpetua",
+      "fonte": "src_qsys_licensing"
+    },
+    "lic_qsys_core_scaling_384": {
+      "nome": "Core Scaling License 384x384",
+      "descrizione": "License per scalare Core 610 a 384x384 canali (massimo)",
+      "tipo": "software-feature",
+      "durata": "perpetua",
+      "fonte": "src_qsys_licensing"
+    },
+    "lic_shure_mxa_intellimix": {
+      "nome": "IntelliMix DSP Suite (MXA920/925)",
+      "descrizione": "Audio DSP per MXA array: Automatic Coverage, AEC, noise reduction, voice lift, camera tracking",
+      "tipo": "software-feature",
+      "durata": "perpetua",
+      "fonte": "src_shure_licensing"
+    },
+    "lic_shure_ulxd_frequency": {
+      "nome": "ULX-D Frequency License (per banda)",
+      "descrizione": "Banda frequenza UHF per ULX-D wireless (L/M/H/J band regional variants)",
+      "tipo": "hardware-license",
+      "durata": "perpetua",
+      "fonte": "src_shure_licensing"
+    },
+    "lic_shure_axient_subscription": {
+      "nome": "Axient Digital Subscription",
+      "descrizione": "Axient Digital wireless system subscription (enterprise broadcast-grade, IP67 encryption)",
+      "tipo": "software-feature",
+      "durata": "annual",
+      "fonte": "src_shure_licensing"
+    },
+    "lic_shure_iwl_intellimix": {
+      "nome": "IntelliMix Room Software (Per-Seat License)",
+      "descrizione": "Software licensing per 1 istanza IntelliMix Room (Zoom/Teams certified)",
+      "tipo": "software-feature",
+      "durata": "annual",
+      "fonte": "src_shure_licensing"
+    }
+  }
+}
