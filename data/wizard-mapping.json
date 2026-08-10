@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "id": "sicurezza",
+      "nome": "🔒 Sicurezza Avanzata",
+      "descrizione": "Firewall, IPS, protezione minacce e attacchi",
+      "icon": "🛡️",
+      "prodottiRecommended": [
+        "prod_fortigate_family",
+        "prod_cisco_secfw_ftd"
+      ]
+    },
+    {
+      "id": "sorveglianza",
+      "nome": "📷 Sorveglianza Video",
+      "descrizione": "Telecamere, NVR, Video management system, AI analytics",
+      "icon": "📹",
+      "prodottiRecommended": [
+        "prod_milestone_expressplus",
+        "prod_milestone_professionalplus",
+        "prod_milestone_expert"
+      ]
+    },
+    {
+      "id": "audio_conferenze",
+      "nome": "🎤 Audio & Conferenze",
+      "descrizione": "Sistemi audio professionali, meeting room, call center",
+      "icon": "🎵",
+      "prodottiRecommended": [
+        "prod_qsys_core_processor",
+        "prod_shure_mxa920"
+      ]
+    },
+    {
+      "id": "networking",
+      "nome": "🌐 Networking",
+      "descrizione": "Switch Catalyst, Meraki, router, wireless",
+      "icon": "🔗",
+      "prodottiRecommended": [
+        "prod_catalyst_9300",
+        "prod_meraki_mx_appliance"
+      ]
+    }
+  ],
+  "budgets": [
+    {
+      "id": "entry",
+      "nome": "Entry-level",
+      "range": "< €5.000",
+      "min": 0,
+      "max": 5000
+    },
+    {
+      "id": "mid",
+      "nome": "Mid-range",
+      "range": "€5.000 - €15.000",
+      "min": 5000,
+      "max": 15000
+    },
+    {
+      "id": "enterprise",
+      "nome": "Enterprise",
+      "range": "€15.000+",
+      "min": 15000,
+      "max": 999999
+    }
+  ]
+}
