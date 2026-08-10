@@ -1353,7 +1353,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewall NGFW Fortinet: protezione di rete, VPN, IPS e servizi di sicurezza abilitati tramite subscription FortiGuard.",
       "fonteId": "src_fortiguard_og",
-      "sku": "Voce generale che raggruppa l'intera gamma; per lo SKU esatto vedere la singola serie/modello (40F, 60F, 100F, ecc.) gia' presente separatamente nel catalogo"
+      "sku": "Voce generale che raggruppa l'intera gamma; per lo SKU esatto vedere la singola serie/modello (40F, 60F, 100F, ecc.) gia' presente separatamente nel catalogo",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_catalyst_9300",
@@ -1524,7 +1531,12 @@
       "descrizioneBreve": "Edizione entry-level per piccole imprese, fino a 48 canali su singolo server, con funzioni di sicurezza base e gestione allarmi.",
       "fonteId": "src_milestone_xprotect",
       "dataUltimaVerificaAutomatica": "2026-08-09",
-      "sku": "XProtect Express+ - edizione entry-level fino 48 camere, single-server"
+      "sku": "XProtect Express+ - edizione entry-level fino 48 camere, single-server",
+      "compatible_licenses": [
+        "lic_milestone_care_basic",
+        "lic_milestone_lpr",
+        "lic_milestone_access"
+      ]
     },
     {
       "id": "prod_milestone_professionalplus",
@@ -1537,7 +1549,13 @@
       "descrizioneBreve": "Per installazioni di medie dimensioni che necessitano di rispondere rapidamente agli incidenti. Dispositivi illimitati e server di registrazione multipli.",
       "fonteId": "src_milestone_xprotect",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "XProtect Professional+ - edizione mid-market, multi-site centrale management"
+      "sku": "XProtect Professional+ - edizione mid-market, multi-site centrale management",
+      "compatible_licenses": [
+        "lic_milestone_care_plus",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
     },
     {
       "id": "prod_milestone_expert",
@@ -1550,7 +1568,13 @@
       "descrizioneBreve": "Per installazioni medio-grandi che richiedono integrità video end-to-end. Dispositivi illimitati e server di registrazione multipli.",
       "fonteId": "src_milestone_xprotect",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "XProtect Expert - edizione enterprise, unlimited cameras, failover support"
+      "sku": "XProtect Expert - edizione enterprise, unlimited cameras, failover support",
+      "compatible_licenses": [
+        "lic_milestone_care_premium",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
     },
     {
       "id": "prod_milestone_corporate",
@@ -1563,7 +1587,13 @@
       "descrizioneBreve": "Edizione per installazioni mission-critical che richiedono situational awareness e accesso video ininterrotto: dispositivi, server di registrazione e siti distribuiti illimitati.",
       "fonteId": "src_milestone_xprotect",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "XProtect Corporate - edizione mission-critical (aeroporti/città), video wall integrato, 3.1 Gbit/s recording"
+      "sku": "XProtect Corporate - edizione mission-critical (aeroporti/città), video wall integrato, 3.1 Gbit/s recording",
+      "compatible_licenses": [
+        "lic_milestone_care_premium",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ]
     },
     {
       "id": "prod_avigilon_alta_camera",
@@ -1587,7 +1617,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "VMS Axis con modulo di controllo accessi integrato, licenza per dispositivo, supporto hardware di terze parti e cloud storage opzionale.",
       "fonteId": "src_axis_station",
-      "sku": "Axis Camera Station Pro - VMS server-based software"
+      "sku": "Axis Camera Station Pro - VMS server-based software",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_barco_clickshare_conf",
@@ -1710,7 +1752,10 @@
       "descrizioneBreve": "Microfono a soffitto con Automatic Coverage (copertura automatica), camera tracking e fino a 8 zone di copertura regolabili. Disponibile in forma quadrata e rotonda. Supporta anche Steerable Coverage con 8 lobi orientabili e DSP IntelliMix integrato.",
       "fonteId": "src_shure_mxa920",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "Microflex Advance ceiling array - 100+ MEMS, 8 discrete beams, IntelliMix DSP (AEC, noise reduction, Virtual Acoustic Boundary)"
+      "sku": "Microflex Advance ceiling array - 100+ MEMS, 8 discrete beams, IntelliMix DSP (AEC, noise reduction, Virtual Acoustic Boundary)",
+      "compatible_licenses": [
+        "lic_shure_mxa_intellimix"
+      ]
     },
     {
       "id": "prod_karray_kommander_amp",
@@ -1747,7 +1792,10 @@
       "descrizioneBreve": "Sistema wireless digitale 24-bit per grandi installazioni in sale conferenza e convention, con crittografia AES-256, gestione via Wireless Workbench 6, SystemOn e ShurePlus Channels, supporto Dante e alta densità fino a 47 trasmettitori attivi in un canale TV da 6 MHz.",
       "fonteId": "src_shure_wireless",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "Sistema wireless digitale UHF per presentatori, performer (concert-grade)"
+      "sku": "Sistema wireless digitale UHF per presentatori, performer (concert-grade)",
+      "compatible_licenses": [
+        "lic_shure_ulxd_frequency"
+      ]
     },
     {
       "id": "prod_shure_axient_digital",
@@ -1760,7 +1808,10 @@
       "descrizioneBreve": "Sistema wireless digitale per i più grandi palcoscenici, con True Digital Diversity, Quadversity, gestione centralizzata dello spettro e protezione RF avanzata per audio impeccabile in ambienti complessi.",
       "fonteId": "src_shure_wireless",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "Sistema wireless digitale enterprise broadcast-grade (alternativa/upgrade ULX-D)"
+      "sku": "Sistema wireless digitale enterprise broadcast-grade (alternativa/upgrade ULX-D)",
+      "compatible_licenses": [
+        "lic_shure_axient_subscription"
+      ]
     },
     {
       "id": "prod_axis_lpv_app",
@@ -1772,7 +1823,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Riconoscimento targhe a bordo camera fino a 70 km/h, con classificazione veicolo/colore/marca/modello.",
       "fonteId": "src_axis_station",
-      "sku": "Axis License Plate Verifier - app LPR"
+      "sku": "Axis License Plate Verifier - app LPR",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_barco_clickshare_c10",
@@ -1869,7 +1932,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Integra dispositivi e analitiche Axis (camere, audio, intercom, wearable) dentro l'interfaccia Milestone XProtect, gratuitamente.",
       "fonteId": "src_axis_station",
-      "sku": "Axis Optimizer - plugin ottimizzazione"
+      "sku": "Axis Optimizer - plugin ottimizzazione",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_cisco_nexus_9000",
@@ -2061,7 +2136,14 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova generazione FortiGate su ASIC SP5 (CPU+NP+CP integrati), che sta progressivamente affiancando/sostituendo la serie F. Gli ultimi modelli (3500G/400G, maggio 2026) estendono la G Series al data center enterprise, con supporto nativo per carichi AI.",
       "fonteId": "src_fortigate_gseries_pr",
-      "sku": "Voce generale della nuova generazione G; SKU per singolo modello: FG-30G, FG-50G, FG-90G, FG-120G, FG-200G, FG-700G, FG-3500G, FG-400G (vedi anche le serie specifiche gia' presenti)"
+      "sku": "Voce generale della nuova generazione G; SKU per singolo modello: FG-30G, FG-50G, FG-90G, FG-120G, FG-200G, FG-700G, FG-3500G, FG-400G (vedi anche le serie specifiche gia' presenti)",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_meraki_cw_wifi7",
@@ -2085,7 +2167,19 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera con otturatore globale CMOS per immagini nitide di oggetti in rapido movimento (traffico, enforcement), senza motion blur; disponibile dai canali di distribuzione Axis da giugno 2026.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_access_readers_new",
@@ -2097,7 +2191,19 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova gamma di lettori di rete per controllo accessi scalabile e IP-based, con integrazione ai controller porta Axis.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_milestone_arcules_platform",
@@ -2171,7 +2277,10 @@
       "descrizioneBreve": "Il testo della fonte non menziona il modello MXA925 in alcun punto.",
       "fonteId": "src_shure_mxa920",
       "dataUltimaVerificaAutomatica": "2026-08-08",
-      "sku": "Microflex Advance MXA925 - next-gen MXA920 con AI-enabled IntelliMix (AI AEC, AI Denoiser, AI Deverb) - 2025 flagship"
+      "sku": "Microflex Advance MXA925 - next-gen MXA920 con AI-enabled IntelliMix (AI AEC, AI Denoiser, AI Deverb) - 2025 flagship",
+      "compatible_licenses": [
+        "lic_shure_mxa_intellimix"
+      ]
     },
     {
       "id": "prod_shure_slxdplus",
@@ -2375,7 +2484,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Applicazione di video analytics gratuita preinstallata sulle camere Axis compatibili, nessun costo aggiuntivo.",
       "fonteId": "src_axis_station",
-      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone"
+      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_meraki_mv_camera",
@@ -2423,7 +2544,19 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera bispettrale (termica + ottica) presentata a ISC West 2026, per rilevamento e verifica combinati in un unico dispositivo.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_f2180te",
@@ -2435,7 +2568,19 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Sensore termico modulare per il sistema a sensori Axis F-series, presentato a ISC West 2026.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_tp3604e",
@@ -2447,7 +2592,19 @@
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Back box con connettivita' cellulare privata per installazioni in siti privi di rete cablata o Wi-Fi affidabile, presentato a ISC West 2026.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_barco_i65",
@@ -2727,7 +2884,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "FortiGate distribuito come appliance virtuale per cloud pubblico/privato",
       "fonteId": "src_xr8xgsxi",
-      "sku": "FG-VM-32 (esempio, 32 vCPU) e altre taglie FG-VM-<vCPU>"
+      "sku": "FG-VM-32 (esempio, 32 vCPU) e altre taglie FG-VM-<vCPU>",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xfxmorbz",
@@ -2739,7 +2903,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione e analisi di sicurezza SaaS per FortiGate SMB",
       "fonteId": "src_x3gboug1",
-      "sku": "Servizio di gestione cloud incluso/abilitato dalla licenza del FortiGate collegato: nessuno SKU hardware proprio"
+      "sku": "Servizio di gestione cloud incluso/abilitato dalla licenza del FortiGate collegato: nessuno SKU hardware proprio",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xi09txt1",
@@ -3598,7 +3769,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Riconoscimento targhe edge-based per accesso veicolare",
       "fonteId": "src_axis_station",
-      "sku": "Axis License Plate Verifier - app LPR"
+      "sku": "Axis License Plate Verifier - app LPR",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xs5ffzbj",
@@ -3610,7 +3793,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Analisi video per rilevamento persone/veicoli, spesso preinstallata",
       "fonteId": "src_axis_station",
-      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone"
+      "sku": "Axis Object Analytics - app riconoscimento veicoli/persone",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x8iwde2i",
@@ -3622,7 +3817,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Analisi perimetrale avanzata con autotracking PTZ opzionale",
       "fonteId": "src_axis_station",
-      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)"
+      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xzu9955i",
@@ -3634,7 +3841,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "App aggiuntiva per zoom/tracking automatico su camera PTZ",
       "fonteId": "src_axis_station",
-      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)"
+      "sku": "Axis Perimeter Defender - app boundary detection (con PTZ autotracking opzionale)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xurp3nqx",
@@ -3646,7 +3865,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione centralizzata di dispositivi Axis (on-prem)",
       "fonteId": "src_axis_station",
-      "sku": "Axis Device Manager - software gestione dispositivi"
+      "sku": "Axis Device Manager - software gestione dispositivi",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xahp1nn7",
@@ -3658,7 +3889,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione a scala di migliaia di dispositivi Axis, dashboard aggregata",
       "fonteId": "src_axis_station",
-      "sku": "Axis Device Manager - software gestione dispositivi"
+      "sku": "Axis Device Manager - software gestione dispositivi",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xbcbwfjo",
@@ -3670,7 +3913,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Portfolio di telecamere di rete Axis",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis complete: M20/M32 (compact entry-level), P32/P3275/P3818 (5MP fixed dome/panoramic), P1486 (global shutter), Q21/Q35 (PTZ 40-45x), Q2802/Q6411-LE (thermal multisensor bispectral), Q6075 (50MP panoramic), FA-Series (thermal modulari), I7010/I7020 (intercom IP), F2180-TE (thermal sensor), TP3604 (private cellular gateway) — vedi dettagli prodotti specifici"
+      "sku": "Gamme Axis complete: M20/M32 (compact entry-level), P32/P3275/P3818 (5MP fixed dome/panoramic), P1486 (global shutter), Q21/Q35 (PTZ 40-45x), Q2802/Q6411-LE (thermal multisensor bispectral), Q6075 (50MP panoramic), FA-Series (thermal modulari), I7010/I7020 (intercom IP), F2180-TE (thermal sensor), TP3604 (private cellular gateway) — vedi dettagli prodotti specifici",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xpdcjckf",
@@ -3682,7 +3937,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzioni di controllo accessi Axis, integrabili in Camera Station Pro",
       "fonteId": "src_axis_station",
-      "sku": "Axis Access Control - integrazione controllo accessi"
+      "sku": "Axis Access Control - integrazione controllo accessi",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x9cabqvd",
@@ -3977,7 +4244,10 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sistema microfonico wireless digitale di fascia enterprise",
       "fonteId": "src_shure_wireless",
-      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench"
+      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench",
+      "compatible_licenses": [
+        "lic_shure_ulxd_frequency"
+      ]
     },
     {
       "id": "prod_xrd4tkp7",
@@ -4014,7 +4284,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza integrati per micro-filiali e piccoli uffici",
       "fonteId": "src_xks230ao",
-      "sku": "FG-40F, FWF-40F (base hardware); bundle es. FG-40F-BDL-<servizio>-<durata>"
+      "sku": "FG-40F, FWF-40F (base hardware); bundle es. FG-40F-BDL-<servizio>-<durata>",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xpa40rv4",
@@ -4026,7 +4303,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza per sedi enterprise distribuite",
       "fonteId": "src_xeyb7wom",
-      "sku": "FG-60F, FWF-60F (base hardware); bundle es. FG-60F-BDL-<servizio>-<durata>"
+      "sku": "FG-60F, FWF-60F (base hardware); bundle es. FG-60F-BDL-<servizio>-<durata>",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xze4mio4",
@@ -4038,7 +4322,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Nuova generazione (chip G) per sedi distribuite",
       "fonteId": "src_xno8tpo6",
-      "sku": "FG-70G, FWF-70G"
+      "sku": "FG-70G, FWF-70G",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xjxa3qi1",
@@ -4050,7 +4341,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Firewalling, SD-WAN e sicurezza per sedi enterprise distribuite",
       "fonteId": "src_xze1hr3n",
-      "sku": "FG-80F, FWF-80F"
+      "sku": "FG-80F, FWF-80F",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_x0snbp4u",
@@ -4062,7 +4360,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rete security-driven per sedi distribuite, architettura chip G",
       "fonteId": "src_xvokpr1n",
-      "sku": "FortiGate 90G - throughput 35-50 Gbps, G-series legacy (pre-2020), 8x GE, on-premise enterprise"
+      "sku": "FortiGate 90G - throughput 35-50 Gbps, G-series legacy (pre-2020), 8x GE, on-premise enterprise",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xnmwlda6",
@@ -4074,7 +4379,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW con SoC4 SD-WAN ASIC per filiali di medie/grandi dimensioni (esistenza e specifiche confermate solo da rivenditori terzi in questa sessione)",
       "fonteId": "src_fortigate_100f",
-      "sku": "FortiGate 100F-3G/100F - throughput 50-100 Gbps, 16x GE + 8x SFP, ASIC advanced threat protection"
+      "sku": "FortiGate 100F-3G/100F - throughput 50-100 Gbps, 16x GE + 8x SFP, ASIC advanced threat protection",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xdh5n7w1",
@@ -4086,7 +4398,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_x260wnse",
-      "sku": "FortiGate 120G - throughput 60-100 Gbps, G-series legacy, 16x GE ports, on-premise enterprise"
+      "sku": "FortiGate 120G - throughput 60-100 Gbps, G-series legacy, 16x GE ports, on-premise enterprise",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xjh1bl1a",
@@ -4098,7 +4417,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW per campus e filiali di medie dimensioni (esistenza confermata da fonti terze, pagina fortinet.com non raggiunta in questa sessione)",
       "fonteId": "src_fortigate_200f",
-      "sku": "FortiGate 200F/200F-3G - throughput 100-200 Gbps, 16x GE + 16x SFP, data center appliance"
+      "sku": "FortiGate 200F/200F-3G - throughput 100-200 Gbps, 16x GE + 16x SFP, data center appliance",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_x6a0zwua",
@@ -4110,7 +4436,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_xo6prwib",
-      "sku": "FortiGate 200G - throughput 100-200 Gbps, G-series legacy, 16x GE + SFP, data center"
+      "sku": "FortiGate 200G - throughput 100-200 Gbps, G-series legacy, 16x GE + SFP, data center",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xthj1b3v",
@@ -4122,7 +4455,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Threat protection scalabile con AI/ML integrato",
       "fonteId": "src_xbul1cs8",
-      "sku": "FortiGate 400F/400F-3G - throughput 200-400 Gbps, 16-32x GE + SFP, HW SSL VPN, enterprise datacenter"
+      "sku": "FortiGate 400F/400F-3G - throughput 200-400 Gbps, 16-32x GE + SFP, HW SSL VPN, enterprise datacenter",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xtgk2mvg",
@@ -4134,7 +4474,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Rilevamento minacce ad alte prestazioni basato su ASIC Fortinet",
       "fonteId": "src_x628tbk4",
-      "sku": "FortiGate 600F/600F-3G - throughput 400-600 Gbps, modular 16x GE ports, HW acceleration ASIC, carrier-grade"
+      "sku": "FortiGate 600F/600F-3G - throughput 400-600 Gbps, modular 16x GE ports, HW acceleration ASIC, carrier-grade",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xbs2yj0d",
@@ -4146,7 +4493,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NGFW AI/ML-powered, nuova architettura chip G",
       "fonteId": "src_xfcsymkh",
-      "sku": "FortiGate 700G/700G-3G - throughput 600-700 Gbps, modular architecture, SP5 ASIC, telecom/ISP-grade"
+      "sku": "FortiGate 700G/700G-3G - throughput 600-700 Gbps, modular architecture, SP5 ASIC, telecom/ISP-grade",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_x9ktorqr",
@@ -4158,7 +4512,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Sicurezza per data center e architetture IT ibride",
       "fonteId": "src_xco71w28",
-      "sku": "FG-1000F"
+      "sku": "FG-1000F",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xbwev81d",
@@ -4170,7 +4531,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Alte prestazioni per grandi imprese e service provider",
       "fonteId": "src_xtwli2w0",
-      "sku": "FG-7000F (chassis modulare, tipicamente FG-7121F/7081F per singolo blade)"
+      "sku": "FG-7000F (chassis modulare, tipicamente FG-7121F/7081F per singolo blade)",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xffhcf02",
@@ -4182,7 +4550,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Serie irrobustita per ambienti industriali/OT (accessori dedicati confermati)",
       "fonteId": "src_xh5ut2gs",
-      "sku": "FGR-60F, FGR-70F (Rugged 60F/70F Series)"
+      "sku": "FGR-60F, FGR-70F (Rugged 60F/70F Series)",
+      "compatible_licenses": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forti_fs",
+        "lic_forticlient_device",
+        "lic_forticlient_cloud"
+      ]
     },
     {
       "id": "prod_xk0wn5tp",
@@ -4362,7 +4737,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome fixed-focal economiche, outdoor-ready, con analytics deep learning su edge",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xr3ntj3m",
@@ -4374,7 +4761,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome fino a 8MP, Lightfinder 2.0, Forensic WDR, OptimizedIR, ARTPEC-9, Object Analytics preinstallato",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x0aq5vv0",
@@ -4386,7 +4785,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Dome AI-powered di fascia alta, fino a 8MP, prestazioni superiori",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x13wum6p",
@@ -4398,7 +4809,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello specifico dome 2MP con Lightfinder 2.0 e Forensic WDR",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xgtjnw6z",
@@ -4410,7 +4833,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Bullet compatte e leggere, fixed-focal, con video analytics AI-powered",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xweyi7l5",
@@ -4422,7 +4857,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Multisensore 13MP, copertura panoramica 180°, stitching seamless a 3 immagini",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xd5k2c0t",
@@ -4434,7 +4881,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Termiche per rilevamento/verifica 24/7 anche in fumo/nebbia leggera; include AXIS Q2101-TE per monitoraggio temperatura",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xf7ay9cj",
@@ -4446,7 +4905,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello termico specifico, alta sensibilita', IK10/IP66/67, Edge Vault, FIPS 140-2 Level 2",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x4q43gc6",
@@ -4458,7 +4929,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Fino a 4 sensor unit con AXIS FA54 Main Unit; mix di sensori termici e visivi in un unico stream",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xx0tjqpl",
@@ -4470,7 +4953,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Panoramica antideflagrante 180°, certificata ATEX/IECEx/INMETRO Zone 1/21, IP67/IP68, acciaio inox",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_x5i8v6zi",
@@ -4482,7 +4977,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Termica antideflagrante Zone 2/Division 2, misura -40°C a 350°C, PoE, IP66/67",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_xkw4osl2",
@@ -4889,7 +5396,10 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Manuale ufficiale per ULXD4D, ULXD4Q, ULXD1 (bodypack) e ULXD2 (handheld): specifiche, networking, configurazione",
       "fonteId": "src_shure_wireless",
-      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench"
+      "sku": "Shure ULX-D - digital wireless system (concert/performer-grade) con Wireless Workbench",
+      "compatible_licenses": [
+        "lic_shure_ulxd_frequency"
+      ]
     },
     {
       "id": "prod_xdqq0dxz",
@@ -5278,7 +5788,11 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Processore AV&C per installazioni di piccola scala con capacita' di canali di rete ridotta; licenza 8x8 inclusa",
       "fonteId": "src_xvrfx1p6",
-      "sku": "Core Nano - processore ultra-compatto 32x32 network I/O, entry-level"
+      "sku": "Core Nano - processore ultra-compatto 32x32 network I/O, entry-level",
+      "compatible_licenses": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_teams_rooms_pro"
+      ]
     },
     {
       "id": "prod_xmrmw570",
@@ -5290,7 +5804,11 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Processore AV&C con 64x64 I/O di rete + 8 canali Flex on-board + 8 GPIO; ideale per corporate/education/healthcare di piccola scala",
       "fonteId": "src_xqllz7u6",
-      "sku": "Core 8 Flex - processore 64x64 network I/O + 8 Flex channels on-board"
+      "sku": "Core 8 Flex - processore 64x64 network I/O + 8 Flex channels on-board",
+      "compatible_licenses": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_teams_rooms_pro"
+      ]
     },
     {
       "id": "prod_x5hiby9u",
@@ -5302,7 +5820,12 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzione integrata audio/video/controllo con mix di canali analogici e di rete, dalle sale medie alle installazioni enterprise piu' grandi; miglior rapporto costo/prestazioni della gamma",
       "fonteId": "src_xnsygea3",
-      "sku": "Core 110f - processore flagship 128x128 network I/O con I/O cards"
+      "sku": "Core 110f - processore flagship 128x128 network I/O con I/O cards",
+      "compatible_licenses": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro"
+      ]
     },
     {
       "id": "prod_x2j6lihg",
@@ -5314,7 +5837,13 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modelli Core di fascia enterprise citati nella documentazione di licensing (8x8 Dante incluso su unita' post gennaio 2021)",
       "fonteId": "src_xaxdb21m",
-      "sku": "Core 510i / Core 5200 - processori 256x256 network I/O (510i integrato)"
+      "sku": "Core 510i / Core 5200 - processori 256x256 network I/O (510i integrato)",
+      "compatible_licenses": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro",
+        "lic_qsys_core_scaling_256"
+      ]
     },
     {
       "id": "prod_xgepl537",
@@ -5326,7 +5855,14 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello Core citato tra quelli supportati dalla licenza Microsoft Teams Rooms e dallo Scripting Engine",
       "fonteId": "src_x9a6wqfr",
-      "sku": "Core 610 - processore 256x256 streams, fino a 384x384 channels con scaling license"
+      "sku": "Core 610 - processore 256x256 streams, fino a 384x384 channels con scaling license",
+      "compatible_licenses": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_visionai_vsa100",
+        "lic_qsys_teams_rooms_pro",
+        "lic_qsys_core_scaling_256",
+        "lic_qsys_core_scaling_384"
+      ]
     },
     {
       "id": "prod_xhjn9v3g",
@@ -5448,7 +5984,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Intercom audio da esterno robusto, 92 dB SPL, echo cancellation/riduzione rumore, lettore QR code per accesso.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_i7020",
@@ -5460,7 +6008,19 @@
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Intercom da interno per ambienti puliti/sanitari, resistente a detergenti chimici e conforme ISO 14644-1.",
       "fonteId": "src_axis_cameras",
-      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)"
+      "sku": "Gamme Axis: M20/M32 (encoder/entry), P32/P3275/P3818 (5-13MP), P1486 (global shutter), Q21/Q35 (PTZ, 40x-45x zoom), Q2802/Q1961 (thermal/multisensore), FA-Series (thermal modulari), I7010/I7020 (intercom), F2180-TE (thermal sensor), TP3604 (private cellular)",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_barco_udm4k22",
@@ -5508,7 +6068,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "5MP fixed dome, HDTV 1080p@60fps, IR 15m, PoE+, H.264/H.265, encryption, ONVIF",
       "sku": "AXIS P3267-LVE - 5MP HDTV dome 1080p@60fps, IR 15m PIR, PoE+, HTTPS+SSH encryption, ONVIF, IP66/IK10, -40..60°C",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_p3278",
@@ -5520,7 +6092,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "5MP PTZ 10x optical, HDTV 1080p@50fps, PoE+, H.264/H.265, encryption, ONVIF",
       "sku": "AXIS P3278 - 5MP PTZ 10x optical 30x digital zoom, HDTV 1080p@50fps, PoE+, HTTPS encryption, ONVIF, IP66",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_q6075",
@@ -5532,7 +6116,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "50MP multi-sensor panoramic, 360° panorama, 12x optical zoom, HDTV, PoE+, H.264/H.265",
       "sku": "AXIS Q6075 - 50MP panoramic multi-sensor (9 sensori), 360° coverage, 12x optical 36x digital zoom, HDTV 1080p@30fps, PoE++, ONVIF, IP67",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_q6411le",
@@ -5544,7 +6140,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "Bispectral thermal (320x256) + visual (4MP), 24/7 detection senza IR, H.264/H.265, PoE+",
       "sku": "AXIS Q6411-LE - bispectral thermal (320x256@60Hz) + visual (4MP 30fps), 24/7 perimeter detection, PoE+, HTTPS encryption, ONVIF, IP67, -40..60°C",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_p1486",
@@ -5556,7 +6164,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "5MP global shutter (no rolling distortion), HDTV 1080p@60fps, IR, PoE+, compact",
       "sku": "AXIS P1486-LE - 5MP global shutter CMOS (elimina motion blur), HDTV 1080p@60fps, IR 15m, PoE+, ONVIF, compact form factor, IP67, -40..60°C",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_p3818pve",
@@ -5568,7 +6188,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "5MP panoramic 180°, HDTV@30fps, IR, PoE+, H.264/H.265, ONVIF",
       "sku": "AXIS P3818-PVE - 5MP panoramic 180° horizontal, HDTV 1080p@30fps, IR PIR, PoE+, HTTPS encryption, ONVIF, IP66/IK10, -30..60°C",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_m20_series_detail",
@@ -5580,7 +6212,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "1-2 MP compact fixed dome, MJPEG/H.264, PoE, IR, budget-friendly",
       "sku": "AXIS M20 Series - entry-level 1-2MP compact domes (M2004-L/M2005-L/M2006-L), MJPEG+H.264, PoE 5W, IR 10m, ONVIF, IP67, -10..50°C",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     },
     {
       "id": "prod_axis_m32_series_detail",
@@ -5592,7 +6236,19 @@
       "statoLifecycle": "active",
       "descrizioneBreve": "2-3 MP compact turret/mobile, H.264/H.265, PoE, integrazione VMS",
       "sku": "AXIS M32 Series - compact 2-3MP turret (M3203/M3204/M3205 variants), H.264/H.265, PoE 5-15W, ONVIF, IP66, -40..50°C, mobile/encoder",
-      "fonteId": "src_axis_cameras"
+      "fonteId": "src_axis_cameras",
+      "compatible_licenses": [
+        "lic_axis_core_device",
+        "lic_axis_universal_device",
+        "lic_axis_lpv_perdevice",
+        "lic_xjrru7pn",
+        "lic_xoru6avw",
+        "lic_xdfoei3v",
+        "lic_xckgur9h",
+        "lic_x63boyn8",
+        "lic_xcpimfso",
+        "lic_x0xnf2fl"
+      ]
     }
   ],
   "licenze": [
