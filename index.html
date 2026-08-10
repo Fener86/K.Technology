@@ -258,6 +258,15 @@ async function loadInitialData() {
     state.catalog = { macroaree: [], areeFunzionali: [], vendors: [], brandLines: [], famiglie: [], prodotti: [], licenze: [], licenseFeatures: [], integrazioni: [], fonti: [], changelog: [] };
   }
   localStorage.setItem(LS_CATALOG, JSON.stringify(state.catalog));
+  
+  // Carica dati compatibilita' licenze per modulo licensing app
+  try {
+    const res = await fetch("data/app-licensing-data.json", { cache: "no-store" });
+    if (res.ok) state.licensingData = await res.json();
+    else state.licensingData = { products_licenses: {}, license_descriptions: {} };
+  } catch (e) {
+    state.licensingData = { products_licenses: {}, license_descriptions: {} };
+  }
 
   try {
     const res = await fetch(EMBEDDED_STATUS_URL, { cache: "no-store" });
@@ -549,10 +558,58 @@ function viewFamily(fam, c, L) {
   `;
 }
 
+function getLicensingSection(prod, c, L, licensingData) {
+  if (!licensingData || !licensingData.products_licenses || !licensingData.products_licenses[prod.id]) {
+    return ""; // Nessuna licenza per questo prodotto
+  }
+  
+  const productLic = licensingData.products_licenses[prod.id];
+  const licenseIds = productLic.licenze || [];
+  
+  if (licenseIds.length === 0) return "";
+  
+  let html = `<h2 class="h2">📋 Licenze Compatibili</h2>
+    <div class="panel">
+      <div class="desc" style="margin-bottom:20px;">Queste licenze puoi abbinare a <strong>${esc(productLic.nome)}</strong>:</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">`;
+  
+  licenseIds.forEach(licId => {
+    const lic = licensingData.license_descriptions[licId];
+    if (!lic) return;
+    
+    const fonte = L.fonti[lic.fonte] || {};
+    const linkVerifica = fonte.url || "#";
+    
+    html += `<div style="background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:16px;transition:all 0.2s;">
+      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;gap:8px;">
+        <strong style="font-size:14px;">${esc(lic.nome)}</strong>
+        <span style="background:var(--accent-tint);color:var(--accent);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;">${esc(lic.tipo)}</span>
+      </div>
+      <p style="font-size:13px;color:var(--text-dim);margin:8px 0;line-height:1.5;">${esc(lic.descrizione)}</p>
+      <div style="font-size:12px;color:var(--text-faint);margin:12px 0;">⏱️ ${esc(lic.durata)}</div>
+      <a href="${esc(linkVerifica)}" target="_blank" style="display:inline-block;background:var(--accent);color:var(--accent-ink);padding:8px 12px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;transition:filter 0.15s;" onmouseover="this.style.filter='brightness(1.08)'" onmouseout="this.style.filter='brightness(1)'">
+        ✓ Verifica Ufficiale
+      </a>
+    </div>`;
+  });
+  
+  html += `</div>
+    <div style="background:var(--accent-tint);border:1px solid var(--border);border-radius:8px;padding:12px;margin-top:16px;font-size:13px;color:var(--text);">
+      💡 Clicca "Verifica Ufficiale" per controllare direttamente dal vendor.
+    </div>
+    </div>`;
+  
+  return html;
+}
+
 function viewProduct(prod, c, L) {
   if (!prod) return `<div class="empty">Prodotto non trovato.</div>`;
   const fam = L.famiglie[prod.familyId];
   const integrazioni = c.integrazioni.filter((i) => i.productId === prod.id);
+  
+  // Sezione licenze compatibili (modulo licensing)
+  const licensingHtml = getLicensingSection(prod, c, L, state.licensingData);
+  
   return `
     ${breadcrumb([{label:"Home",hash:"#/"},{label:fam?.nome,hash:"#/family/"+fam?.id},{label:prod.nomeCommerciale}])}
     <h1 class="h1">${led(prod.statoLifecycle)}${esc(prod.nomeCommerciale)}</h1>
@@ -566,6 +623,7 @@ function viewProduct(prod, c, L) {
       <div class="field-row"><div class="field-label">Stato lifecycle</div><div>${badge(prod.statoLifecycle)}</div></div>
       <div class="field-row"><div class="field-label">Fonte</div><div>${sourceTag(L.fonti[prod.fonteId])}</div></div>
     </div>
+    ${licensingHtml}
     ${integrazioni.length ? `<h2 class="h2">Integrazioni</h2>${integrazioni.map(i=>`
       <div class="panel">
         <div style="font-weight:600;margin-bottom:6px;">${esc(i.descrizione)} <span class="hint">(${esc(i.tipo)})</span></div>
