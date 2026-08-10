@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo — Katalog Licensing Automatico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f7;
+            padding: 20px;
+            color: #1d1d1f;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .demo-card {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .demo-card:hover {
+            border-color: #34c759;
+            box-shadow: 0 4px 12px rgba(52, 199, 89, 0.2);
+        }
+
+        .demo-card.active {
+            border-color: #34c759;
+            background: #f5fff6;
+        }
+
+        .product-name {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .product-sku {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #34c759;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .content-area {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .licensing-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e7;
+        }
+
+        .licensing-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .licensing-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .licenses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .license-card {
+            background: #f9f9fb;
+            border: 1px solid #e5e5e7;
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .license-card:hover {
+            border-color: #34c759;
+            background: #f5fff6;
+            transform: translateY(-2px);
+        }
+
+        .license-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+
+        .license-header strong {
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .license-type {
+            background: #e5e5e7;
+            color: #333;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-left: 8px;
+        }
+
+        .license-desc {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .license-details {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .btn-verify {
+            display: inline-block;
+            background: #34c759;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-verify:hover {
+            background: #31ba54;
+        }
+
+        .licensing-footer {
+            background: #f5fff6;
+            border: 1px solid #34c759;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .product-detail {
+            margin-bottom: 20px;
+        }
+
+        .product-detail h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-info {
+            background: #f9f9fb;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            font-size: 13px;
+        }
+
+        .info-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            width: 120px;
+            color: #666;
+        }
+
+        .info-value {
+            flex: 1;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .footer-note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Demo — Licensing Automatico nell'App</h1>
+            <p class="subtitle">Come i colleghi vedranno i prodotti CON le licenze compatibili direttamente nell'app</p>
+        </header>
+
+        <div class="demo-grid">
+            <!-- Fortinet -->
+            <div class="demo-card active" onclick="selectProduct('fortinet_70g')">
+                <div class="product-name">⚔️ Fortinet FortiGate 70G</div>
+                <div class="product-sku">5 licenze disponibili</div>
+                <badge class="badge">Clicca per vedere licenze</badge>
+            </div>
+
+            <!-- Milestone -->
+            <div class="demo-card" onclick="selectProduct('milestone_express')">
+                <div class="product-name">📹 Milestone XProtect Express+</div>
+                <div class="product-sku">4 licenze disponibili</div>
+                <badge class="badge">Clicca per vedere licenze</badge>
+            </div>
+
+            <!-- Q-SYS -->
+            <div class="demo-card" onclick="selectProduct('qsys_610')">
+                <div class="product-name">🔊 Q-SYS Core 610</div>
+                <div class="product-sku">5 feature licenses disponibili</div>
+                <badge class="badge">Clicca per vedere licenze</badge>
+            </div>
+
+            <!-- Shure -->
+            <div class="demo-card" onclick="selectProduct('shure_mxa920')">
+                <div class="product-name">🎤 Shure MXA920</div>
+                <div class="product-sku">2 licenze disponibili</div>
+                <badge class="badge">Clicca per vedere licenze</badge>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div id="content"></div>
+        </div>
+
+        <div class="footer-note">
+            💡 <strong>Come funziona:</strong> Quando il collega seleziona un prodotto dal catalogo, 
+            l'app mostra AUTOMATICAMENTE tutte le licenze compatibili con descrizioni, durata e link di verifica ufficiale. 
+            Nessun documento da leggere, tutto dentro l'app.
+        </div>
+    </div>
+
+    <script>
+        const products = {
+            fortinet_70g: {
+                nome: 'FortiGate 70G',
+                sku: 'FG-70G-3DDOC',
+                vendor: 'Fortinet',
+                descrizione: 'Appliance firewall enterprise-grade, throughput 35-50 Gbps',
+                licenze: [
+                    {
+                        nome: 'FortiGuard ATP',
+                        tipo: 'feature',
+                        durata: 'Annual subscription',
+                        desc: 'Advanced Threat Protection - Protezione avanzata da minacce zero-day, sandbox analysis, AI threat detection'
+                    },
+                    {
+                        nome: 'FortiGuard UTP',
+                        tipo: 'feature',
+                        durata: 'Annual subscription',
+                        desc: 'Unified Threat Protection - Protezione completa: antivirus, web filtering, IPS, DLP, email filtering'
+                    },
+                    {
+                        nome: 'FortiCare',
+                        tipo: 'support',
+                        durata: 'Annual subscription',
+                        desc: 'Support contract - Supporto tecnico 24/7, bugfix, patch, aggiornamenti firmware'
+                    },
+                    {
+                        nome: 'FortiClient Device License',
+                        tipo: 'endpoint',
+                        durata: 'Annual subscription',
+                        desc: 'Endpoint Protection - Protezione endpoint, VPN client, DLP su dispositivi client'
+                    },
+                    {
+                        nome: 'FortiClient Cloud License',
+                        tipo: 'endpoint',
+                        durata: 'Annual subscription',
+                        desc: 'Cloud-based endpoint management - Gestione centralizzata client da cloud'
+                    }
+                ]
+            },
+            milestone_express: {
+                nome: 'XProtect Express+',
+                sku: 'XProtect Express+ - Single Server',
+                vendor: 'Milestone Systems',
+                descrizione: 'VMS entry-level, fino 48 camere, single-server deployment',
+                licenze: [
+                    {
+                        nome: 'Care Basic',
+                        tipo: 'support',
+                        durata: '1 anno',
+                        desc: 'Support package base - Assistenza tecnica base per 1 anno, accesso a aggiornamenti'
+                    },
+                    {
+                        nome: 'LPR Module',
+                        tipo: 'module',
+                        durata: 'Annual subscription',
+                        desc: 'License Plate Recognition - Riconoscimento automatico targhe veicoli (OCR)'
+                    },
+                    {
+                        nome: 'Access Control Module',
+                        tipo: 'module',
+                        durata: 'Annual subscription',
+                        desc: 'Integrazione controllo accessi - Lettori RFID, badge, smartcard integration'
+                    },
+                    {
+                        nome: 'Evidence Manager Module',
+                        tipo: 'module',
+                        durata: 'Annual subscription',
+                        desc: 'Digital evidence logging - Log forensico digitalizzato per conformità legale'
+                    }
+                ]
+            },
+            qsys_610: {
+                nome: 'Q-SYS Core 610',
+                sku: 'Core 610',
+                vendor: 'QSC Q-SYS',
+                descrizione: 'Audio/Video processor - 128x128 canali base (feature license esterne)',
+                licenze: [
+                    {
+                        nome: 'Dante License 8x8→16x16',
+                        tipo: 'feature',
+                        durata: 'Perpetua',
+                        desc: 'Dante streaming audio - Espandi stream Dante da 8x8 a 16x16 canali su rete'
+                    },
+                    {
+                        nome: 'VisionSuite AI VSA-100',
+                        tipo: 'feature',
+                        durata: 'Perpetua + annual update opzionale',
+                        desc: 'Video analytics AI - Automatic Camera Position Recognition, Speaker Spotlight, Presenter Tracking'
+                    },
+                    {
+                        nome: 'Teams Rooms Integration',
+                        tipo: 'integration',
+                        durata: 'Annual subscription',
+                        desc: 'Microsoft Teams Rooms - Controllo nativo MTR da Core processor'
+                    },
+                    {
+                        nome: 'Core Scaling License 256',
+                        tipo: 'feature',
+                        durata: 'Perpetua',
+                        desc: 'Espandi canali - Aumenta da 128x128 a 256x256 canali (one-time purchase)'
+                    },
+                    {
+                        nome: 'Core Scaling License 384',
+                        tipo: 'feature',
+                        durata: 'Perpetua',
+                        desc: 'Massima scalabilità - Espandi fino a 384x384 canali (max per Core 610)'
+                    }
+                ]
+            },
+            shure_mxa920: {
+                nome: 'Shure MXA920',
+                sku: 'MXA920',
+                vendor: 'Shure',
+                descrizione: 'Microphone array professionale 100+ MEMS, IntelliMix DSP incluso',
+                licenze: [
+                    {
+                        nome: 'IntelliMix DSP',
+                        tipo: 'software',
+                        durata: 'INCLUSO nel hardware',
+                        desc: '✅ GRATIS CON L\'HARDWARE - Digital Signal Processing, beamforming, noise reduction, automatic mixing'
+                    },
+                    {
+                        nome: 'IntelliMix Room Software',
+                        tipo: 'software',
+                        durata: 'Annual subscription',
+                        desc: 'Remote management - Gestione remota degli impostazioni microfoniche da cloud'
+                    }
+                ]
+            }
+        };
+
+        function selectProduct(productId) {
+            const product = products[productId];
+            let html = `
+                <div class="product-detail">
+                    <h2>${product.nome}</h2>
+                    
+                    <div class="product-info">
+                        <div class="info-row">
+                            <span class="info-label">Vendor:</span>
+                            <span class="info-value">${product.vendor}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">SKU:</span>
+                            <span class="info-value">${product.sku}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Descrizione:</span>
+                            <span class="info-value">${product.descrizione}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="licensing-section">
+                        <h3>📋 Licenze Compatibili</h3>
+                        <p class="licensing-subtitle">Queste licenze puoi abbinare a: <strong>${product.nome}</strong></p>
+                        
+                        <div class="licenses-grid">
+            `;
+
+            product.licenze.forEach(lic => {
+                html += `
+                    <div class="license-card">
+                        <div class="license-header">
+                            <strong>${lic.nome}</strong>
+                            <span class="license-type">${lic.tipo}</span>
+                        </div>
+                        <p class="license-desc">${lic.desc}</p>
+                        <div class="license-details">
+                            <span>⏱️ ${lic.durata}</span>
+                        </div>
+                        <button class="btn-verify" onclick="alert('Apre pagina ufficiale ' + '${product.vendor}')">
+                            ✓ Verifica su sito ufficiale
+                        </button>
+                    </div>
+                `;
+            });
+
+            html += `
+                        </div>
+                        <div class="licensing-footer">
+                            <p>💡 Vuoi verificare? Clicca su "Verifica su sito ufficiale" per controllare direttamente dal vendor.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('content').innerHTML = html;
+
+            // Aggiorna selezione cards
+            document.querySelectorAll('.demo-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            event.target.closest('.demo-card').classList.add('active');
+        }
+
+        // Inizializza con Fortinet
+        selectProduct('fortinet_70g');
+    </script>
+</body>
+</html>
