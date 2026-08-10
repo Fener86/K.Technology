@@ -1,5 +1,38 @@
 # STATO DEL PROGETTO — Kaplet Technology Portfolio
 
+_Ultimo aggiornamento: 07/08/2026 (sessione 27-28, scrittura diretta GitHub)_
+
+## Sessioni 27-28 — MILESTONE SYSTEMS + AVIGILON COMPLETATI
+
+### Sessione 27 — Milestone Systems 100%
+**Pulizia**: rimossi 5 duplicati/generici (XProtect piattaforma, Husky generico, XProtect Access generico, umbrella estensioni, Care)  
+**12 prodotti completati**: XProtect editions (Express+/Professional+/Expert/Corporate, Essential+ discontinuato 2025 R2), Husky IVO appliance (150D/350R/700R/1000R/1800R), Husky M-series legacy, Arcules VSaaS (camera-to-cloud Axis/i-PRO, long-term retention, LPR giugno 2026), BriefCam AI analytics (nuovo engine marzo 2026), Evidence Manager, LPR, Access Control, Care supporto.
+
+### Sessione 28 — Avigilon 100%
+**Pulizia**: rimossi 8 duplicati/umbrella (confronti, integrazioni, BYO storage, modelli deployment, Cloud Connector legacy)  
+**14 prodotti completati**: Alta Video cloud-native ($179+/camera/anno, direct-to-cloud o ibrido), Alta Access cloud (ex-Openpath con Alt Open app), Unity on-premise (Control Center/Cloud Services/ACM, licensing perpetua tiered), camere A5 cloud-native / H5A multisensor / H6A PTZ, analytics (Appearance Search, LPR, crowd detection, PPE, unusual motion), Visitor management module, Unity Cloud Services bridge.
+
+## Catalogo ora completo — 210 prodotti di 6 vendor
+
+✅ **Completati al 100%**:
+- Cisco XProtect: 76/76
+- Crestron: 20/20  
+- K-Array: 25/25
+- MAXHUB: 21/21
+- Q-SYS: 22/22
+- **Milestone Systems: 12/12** ← nuovo
+- **Avigilon: 14/14** ← nuovo
+
+**TOTALE: 210 prodotti su 354 (59% catalogo completato)**
+
+**Non ancora iniziati**: Axis, Shure (≈ 144 prodotti restanti)
+
+**Numeri finali catalogo**: 92 famiglie, 342 prodotti (dopo pulizie), 170 licenze, 518 fonti, 0 errori integrità, 0 duplicati.
+
+---
+
+_Cronologia sessioni precedenti nel file._
+
 _Ultimo aggiornamento: 07/08/2026 (sessione 26, scrittura diretta GitHub)_
 
 ## Sessione 26 — Q-SYS COMPLETATO AL 100%
