@@ -1536,7 +1536,13 @@
         "lic_milestone_care_basic",
         "lic_milestone_lpr",
         "lic_milestone_access"
-      ]
+      ],
+      "prezzo": 0,
+      "prezzoAnnuale": 3000,
+      "valuta": "EUR",
+      "maxCamere": 48,
+      "nota": "Max 48 telecamere. Per più camere, upgrade a Professional+",
+      "upgradeConsigliato": "prod_milestone_professionalplus"
     },
     {
       "id": "prod_milestone_professionalplus",
@@ -1555,7 +1561,12 @@
         "lic_milestone_lpr",
         "lic_milestone_access",
         "lic_milestone_visionai"
-      ]
+      ],
+      "prezzo": 0,
+      "prezzoAnnuale": 8000,
+      "valuta": "EUR",
+      "maxCamere": 9999,
+      "upgradeConsigliato": "prod_milestone_expert"
     },
     {
       "id": "prod_milestone_expert",
@@ -1574,7 +1585,10 @@
         "lic_milestone_lpr",
         "lic_milestone_access",
         "lic_milestone_visionai"
-      ]
+      ],
+      "prezzo": 0,
+      "prezzoAnnuale": 12000,
+      "valuta": "EUR"
     },
     {
       "id": "prod_milestone_corporate",
@@ -1593,7 +1607,10 @@
         "lic_milestone_lpr",
         "lic_milestone_access",
         "lic_milestone_visionai"
-      ]
+      ],
+      "prezzo": 0,
+      "prezzoAnnuale": 18000,
+      "valuta": "EUR"
     },
     {
       "id": "prod_avigilon_alta_camera",
@@ -17169,6 +17186,108 @@
         "prodotti/prod_xnbxofkm.descrizioneBreve: \"The CP4 is a secure, high‑performance control processor with a powerful 4-Series™ control engine. The CP4 is designed to integrate and automate technology within any modern networked home, commercial building, or government facility.\""
       ],
       "timestamp": "2026-08-09T07:27:20.787Z"
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle_fortigate_smb",
+      "nome": "FortiGate SMB",
+      "descrizione": "Bundle economico per piccole/medie aziende",
+      "prodottoBase": "prod_fg40f",
+      "licenzeIncluse": [
+        "lic_forti_atp",
+        "lic_forticlient_device"
+      ],
+      "prezzoTotale": 8000,
+      "prezzoAnnuale": 1700,
+      "idealePerche": [
+        "SMB (50-500 utenti)",
+        "Budget ristretto",
+        "Deployment singolo"
+      ],
+      "nonIdealePerche": []
+    },
+    {
+      "id": "bundle_fortigate_enterprise",
+      "nome": "FortiGate Enterprise",
+      "descrizione": "Bundle completo enterprise con protezione massima",
+      "prodottoBase": "prod_fg70g",
+      "licenzeIncluse": [
+        "lic_forti_atp",
+        "lic_forti_utp",
+        "lic_forticlient_device",
+        "lic_foriclient_cloud"
+      ],
+      "prezzoTotale": 12500,
+      "prezzoAnnuale": 4000,
+      "idealePerche": [
+        "Enterprise (200-1000 utenti)",
+        "Multi-site",
+        "Protezione avanzata"
+      ],
+      "nonIdealePerche": [
+        "Budget molto stretto"
+      ]
+    },
+    {
+      "id": "bundle_milestone_small",
+      "nome": "Milestone Sorveglianza Base",
+      "descrizione": "Soluzione entry-level per piccoli impianti",
+      "prodottoBase": "prod_milestone_expressplus",
+      "licenzeIncluse": [
+        "lic_milestone_care_basic"
+      ],
+      "prezzoTotale": 3000,
+      "prezzoAnnuale": 3000,
+      "idealePerche": [
+        "Piccoli impianti (<50 cam)",
+        "Budget entry-level"
+      ],
+      "nonIdealePerche": [
+        "Clienti con crescita prevista",
+        ">48 telecamere"
+      ]
+    },
+    {
+      "id": "bundle_milestone_complete",
+      "nome": "Milestone Sorveglianza Totale",
+      "descrizione": "Soluzione enterprise completa con AI analytics",
+      "prodottoBase": "prod_milestone_professionalplus",
+      "licenzeIncluse": [
+        "lic_milestone_care_plus",
+        "lic_milestone_lpr",
+        "lic_milestone_access",
+        "lic_milestone_visionai"
+      ],
+      "prezzoTotale": 8000,
+      "prezzoAnnuale": 12000,
+      "idealePerche": [
+        "Impianti medi/grandi (50-500 cam)",
+        "Vuoi AI analytics",
+        "Multi-site"
+      ],
+      "nonIdealePerche": [
+        "Budget stretto"
+      ]
+    },
+    {
+      "id": "bundle_qsys_meetingroom",
+      "nome": "Q-SYS Meeting Room",
+      "descrizione": "Setup completo per sale riunioni professionali",
+      "prodottoBase": "prod_qsys_core_610",
+      "licenzeIncluse": [
+        "lic_qsys_dante_8x8",
+        "lic_qsys_teams_rooms_pro",
+        "lic_qsys_visionai_vsa100"
+      ],
+      "prezzoTotale": 12000,
+      "prezzoAnnuale": 4200,
+      "idealePerche": [
+        "Sale riunioni enterprise",
+        "Microsoft Teams",
+        "Audio/Video professionale"
+      ],
+      "nonIdealePerche": []
     }
   ]
 }
