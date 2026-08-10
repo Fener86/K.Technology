@@ -1516,8 +1516,9 @@
       "deployment": "on-premise, single-server",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Edizione entry-level per piccole imprese, fino a 48 canali su singolo server, con funzioni di sicurezza base e gestione allarmi.",
-      "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-09"
+      "fonteId": "src_milestone_xprotect",
+      "dataUltimaVerificaAutomatica": "2026-08-09",
+      "sku": "XProtect Express+ - edizione entry-level fino 48 camere, single-server"
     },
     {
       "id": "prod_milestone_professionalplus",
@@ -1528,8 +1529,9 @@
       "deployment": "on-premise, multi-server centralizzato",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Per installazioni di medie dimensioni che necessitano di rispondere rapidamente agli incidenti. Dispositivi illimitati e server di registrazione multipli.",
-      "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_milestone_xprotect",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "XProtect Professional+ - edizione mid-market, multi-site centrale management"
     },
     {
       "id": "prod_milestone_expert",
@@ -1540,8 +1542,9 @@
       "deployment": "on-premise, installazioni grandi",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Per installazioni medio-grandi che richiedono integrità video end-to-end. Dispositivi illimitati e server di registrazione multipli.",
-      "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_milestone_xprotect",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "XProtect Expert - edizione enterprise, unlimited cameras, failover support"
     },
     {
       "id": "prod_milestone_corporate",
@@ -1552,8 +1555,9 @@
       "deployment": "on-premise, enterprise distribuito",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Edizione per installazioni mission-critical che richiedono situational awareness e accesso video ininterrotto: dispositivi, server di registrazione e siti distribuiti illimitati.",
-      "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_milestone_xprotect",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "XProtect Corporate - edizione mission-critical (aeroporti/città), video wall integrato, 3.1 Gbit/s recording"
     },
     {
       "id": "prod_avigilon_alta_camera",
@@ -1802,7 +1806,8 @@
       "deployment": "on-premise (rack o standalone)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "NVR pre-installato con XProtect e licenze dispositivo pre-attivate, realizzato con hardware Dell Technologies; conforme NDAA, garanzia on-site 5 anni NBD su alcuni modelli.",
-      "fonteId": "src_milestone_husky"
+      "fonteId": "src_milestone_husky_ivo",
+      "sku": "Husky IVO - appliance series: 150D/350R (1U)/700R/1000R/1800R (2U) con Dell/Intel, varianti storage"
     },
     {
       "id": "prod_cisco_thousandeyes_platform",
@@ -2028,7 +2033,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "sostituito",
       "descrizioneBreve": "Serie NVR Husky precedente, dismessa commercialmente e sostituita dalla serie Husky IVO. Milestone fornisce una guida ufficiale di migrazione dedicata verso la serie X/IVO.",
-      "fonteId": "src_milestone_husky_migration"
+      "fonteId": "src_milestone_husky_ivo",
+      "sku": "Husky M-Series (M10/M20/M30/M50) - LEGACY appliance (superseded by Husky IVO)"
     },
     {
       "id": "prod_fortigate_gseries",
@@ -2085,7 +2091,8 @@
       "deployment": "cloud",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "VMS-as-a-Service cloud-native Milestone, senza hardware on-premise richiesto per le installazioni Camera-to-Cloud; storage video cloud a lungo termine per esigenze di compliance/investigazione.",
-      "fonteId": "src_milestone_2026r1_pr"
+      "fonteId": "src_milestone_arcules_vsaas",
+      "sku": "Arcules VSaaS - piattaforma cloud-native (camera-to-cloud Axis/i-PRO, long-term retention, Arcules LPR giugno 2026)"
     },
     {
       "id": "prod_cisco_catcenter_platform",
@@ -2288,7 +2295,8 @@
       "deployment": "on-premise / cloud (da verificare)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Sistema di gestione delle prove digitali (evidence management) per XProtect: workflow di condivisione e conservazione dei filmati, pensato per enti pubblici/forze dell'ordine. Lancio iniziale negli Stati Uniti, disponibilita' internazionale prevista nel corso del 2026.",
-      "fonteId": "src_milestone_evidence_manager_pr"
+      "fonteId": "src_milestone_evidence_manager",
+      "sku": "XProtect Evidence Manager - estensione per digital evidence logging/reporting (lancio USA 2025, intl. 2026)"
     },
     {
       "id": "prod_avigilon_h6a_ptz",
@@ -2679,7 +2687,8 @@
       "deployment": "on-premise (integrato nel server XProtect)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modulo che integra un sistema di controllo accessi di terze parti compatibile dentro l'interfaccia XProtect Smart Client.",
-      "fonteId": "src_milestone_xprotect_access"
+      "fonteId": "src_milestone_lpr_access",
+      "sku": "XProtect Access - modulo integrazione controllo accessi (Smart Map XProtect 2025 R2)"
     },
     {
       "id": "prod_x3yfefe6",
@@ -3444,17 +3453,6 @@
       "sku": "Dismesso ufficialmente dal 03/06/2026, non piu' acquistabile. Supporto tecnico e aggiornamenti garantiti fino al 03/06/2029 per i clienti esistenti."
     },
     {
-      "id": "prod_xaiuvqdj",
-      "familyId": "fam_milestone_xprotect",
-      "nomeCommerciale": "XProtect (piattaforma VMS)",
-      "modello": "XProtect (piattaforma VMS)",
-      "tipologia": "software",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Piattaforma di video management software Milestone",
-      "fonteId": "src_xs99y1qp"
-    },
-    {
       "id": "prod_xyrhznx7",
       "familyId": "fam_milestone_xprotect",
       "nomeCommerciale": "XProtect Essential+",
@@ -3463,8 +3461,9 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "discontinuato",
       "descrizioneBreve": "Variante gratuita fino a 8 camere — DISCONTINUATA con il rilascio XProtect 2025 R2. Milestone offre promozioni speciali per il passaggio ad altre varianti XProtect.",
-      "fonteId": "src_milestone_comparison",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_milestone_xprotect",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "XProtect Essential+ - DISCONTINUATO in XProtect 2025 R2 (offerte upgrade disponibili)"
     },
     {
       "id": "prod_x4dvl19w",
@@ -3475,51 +3474,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Riconoscimento targhe integrato in XProtect, oltre 200 paesi supportati",
-      "fonteId": "src_x8kndh2z"
-    },
-    {
-      "id": "prod_xdb59we0",
-      "familyId": "fam_milestone_xprotect",
-      "nomeCommerciale": "Milestone Husky (NVR/appliance)",
-      "modello": "Milestone Husky (NVR/appliance)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Appliance di registrazione Milestone preconfigurate (serie X, IVO)",
-      "fonteId": "src_xdju7kan"
-    },
-    {
-      "id": "prod_x4gp7hf7",
-      "familyId": "fam_milestone_xprotect",
-      "nomeCommerciale": "XProtect Access",
-      "modello": "XProtect Access",
-      "tipologia": "software (extension)",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Integrazione controllo accessi in XProtect (es. OnGuard, CCure 9000)",
-      "fonteId": "src_xdskghn3"
-    },
-    {
-      "id": "prod_xecsopli",
-      "familyId": "fam_milestone_xprotect",
-      "nomeCommerciale": "XProtect Smart Wall / Screen Recorder / Transact / Incident Manager",
-      "modello": "XProtect Smart Wall / Screen Recorder / Transact / Incident Manager",
-      "tipologia": "software (extension)",
-      "deployment": "on-premise (installato su server/PC del cliente)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Estensioni XProtect elencate nella documentazione ufficiale corrente",
-      "fonteId": "src_xdskghn3"
-    },
-    {
-      "id": "prod_xol6n33d",
-      "familyId": "fam_milestone_xprotect",
-      "nomeCommerciale": "Milestone Care",
-      "modello": "Milestone Care",
-      "tipologia": "supporto/manutenzione",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Programma di supporto Milestone (Care Plus/Premium); non disponibile per hardware Husky nudo",
-      "fonteId": "src_xdju7kan"
+      "fonteId": "src_milestone_lpr_access",
+      "sku": "XProtect LPR - license plate recognition extension (XProtect, BriefCam, Arcules LPR junho 2026)"
     },
     {
       "id": "prod_x4ccklhb",
@@ -5459,8 +5415,9 @@
       "deployment": "on-premise (standalone o embedded nel client XProtect)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Tre moduli (Review/Respond/Research): ricerca rapida post-incidente, allerta in tempo reale, business intelligence quantitativa. Tecnologia Video Synopsis brevettata; camera-agnostic, integra con XProtect e altri VMS leader; funziona anche come soluzione standalone per revisione file-based. Disponibile in più edizioni (Protect, Insights, Investigator, Rapid Review) con architetture standalone e multi-server.",
-      "fonteId": "src_milestone_briefcam_page",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_milestone_briefcam",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "BriefCam - piattaforma video analytics AI con NVIDIA GPU (nuovo engine marzo 2026)"
     },
     {
       "id": "prod_shure_designer_sw",
@@ -15227,6 +15184,66 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_milestone_xprotect",
+      "url": "https://www.milestonesys.com/products/software/xprotect/",
+      "titolo": "Milestone XProtect VMS - edizioni Express+, Professional+, Expert, Corporate",
+      "vendorId": "v_milestone",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_milestone_husky_ivo",
+      "url": "https://www.milestonesys.com/products/hardware/husky-ivo/",
+      "titolo": "Milestone Husky IVO - appliance (150/350/700/1000/1800, Desktop/Rack)",
+      "vendorId": "v_milestone",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_milestone_arcules_vsaas",
+      "url": "https://www.milestonesys.com/products/software/arcules/",
+      "titolo": "Milestone Arcules VSaaS - piattaforma cloud (camera-to-cloud, retention, Arcules LPR giugno 2026)",
+      "vendorId": "v_milestone",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "cloud"
+    },
+    {
+      "id": "src_milestone_briefcam",
+      "url": "https://www.milestonesys.com/products/software/briefcam/",
+      "titolo": "Milestone BriefCam - video analytics AI (nuovo engine marzo 2026)",
+      "vendorId": "v_milestone",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_milestone_evidence_manager",
+      "url": "https://www.milestonesys.com/company/news/press-releases/launch-xprotect-evidence-manager/",
+      "titolo": "Milestone XProtect Evidence Manager - estensione digital evidence management",
+      "vendorId": "v_milestone",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_milestone_lpr_access",
+      "url": "https://www.milestonesys.com/articles/license-plate-recognition-xprotect-briefcam-arcules/",
+      "titolo": "Milestone LPR / Access Control - integrazione sulle piattaforme Milestone",
+      "vendorId": "v_milestone",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "features"
     }
   ],
   "changelog": [
