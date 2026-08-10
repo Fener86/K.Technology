@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup — App Migliorata</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        h1 { font-size: 32px; margin-bottom: 10px; }
+        .subtitle { color: #666; }
+        
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+        .tab { padding: 12px 20px; background: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; border-bottom: 3px solid transparent; }
+        .tab.active { border-bottom-color: #34c759; color: #34c759; }
+        
+        .content { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        
+        .section { margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid #e5e5e7; }
+        .section:last-child { border-bottom: none; }
+        
+        .section-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+        
+        .glance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .glance-item { background: #f9f9fb; padding: 16px; border-radius: 8px; }
+        .glance-label { font-size: 12px; color: #666; margin-bottom: 6px; }
+        .glance-value { font-size: 18px; font-weight: 600; }
+        
+        .alert { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 16px; margin-bottom: 20px; }
+        .alert-title { font-weight: 600; margin-bottom: 8px; }
+        .alert-icon { margin-right: 8px; }
+        
+        .suggestion { background: #f0f7ff; border: 1px solid #0066ff; border-radius: 8px; padding: 16px; margin-bottom: 20px; }
+        .suggestion-title { font-weight: 600; color: #0066ff; margin-bottom: 8px; }
+        .suggestion-list { margin-left: 20px; }
+        .suggestion-list li { margin-bottom: 4px; color: #333; }
+        
+        .upgrade-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .upgrade-card { background: #f9f9fb; border: 1px solid #e5e5e7; border-radius: 12px; padding: 20px; }
+        .upgrade-card.highlight { border-color: #34c759; background: #f5fff6; }
+        .upgrade-card-title { font-weight: 600; margin-bottom: 10px; }
+        .upgrade-card-feature { font-size: 13px; margin: 6px 0; }
+        .upgrade-card-feature.new { color: #34c759; font-weight: 500; }
+        .btn { background: #34c759; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .btn:hover { background: #31ba54; }
+        .btn-secondary { background: #e5e5e7; color: #000; }
+        .btn-secondary:hover { background: #d9d9dc; }
+        
+        .bundle-section { background: #f9f9fb; border: 1px solid #e5e5e7; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .bundle-name { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+        .bundle-content { background: white; padding: 12px; border-radius: 6px; margin-bottom: 10px; }
+        .bundle-content p { font-size: 13px; color: #666; margin-bottom: 4px; }
+        .bundle-price { font-size: 16px; font-weight: 600; color: #34c759; margin-bottom: 10px; }
+        
+        .action-buttons { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .action-btn { padding: 10px 16px; border: 1px solid #e5e5e7; background: white; border-radius: 8px; cursor: pointer; font-weight: 500; transition: all 0.2s; }
+        .action-btn:hover { border-color: #34c759; color: #34c759; }
+        
+        .license-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .license-card { background: #f9f9fb; border: 1px solid #e5e5e7; border-radius: 12px; padding: 16px; }
+        .license-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px; gap: 10px; }
+        .license-name { font-weight: 600; }
+        .license-type { background: #e5e5e7; padding: 2px 8px; border-radius: 4px; font-size: 11px; white-space: nowrap; }
+        .license-desc { font-size: 13px; color: #666; margin-bottom: 10px; line-height: 1.5; }
+        .license-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
+        
+        .spec-section { background: #f9f9fb; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .spec-row { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 8px 0; }
+        .spec-label { font-weight: 600; font-size: 13px; color: #666; }
+        .spec-value { font-size: 13px; }
+        
+        .callout { background: #f0f7ff; border-left: 4px solid #0066ff; padding: 16px; margin-bottom: 20px; }
+        .callout-title { font-weight: 600; color: #0066ff; }
+        .callout-text { font-size: 13px; color: #333; margin-top: 6px; }
+        
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 20px; }
+        .comparison-table th { background: #f9f9fb; padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #e5e5e7; }
+        .comparison-table td { padding: 12px; border-bottom: 1px solid #e5e5e7; }
+        .comparison-table tr:nth-child(even) { background: #fafafa; }
+        
+        .feature-check { color: #34c759; font-weight: 600; }
+        .feature-cross { color: #ff453a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Mockup App Migliorata</h1>
+            <p class="subtitle">Visualizza come potrebbe apparire l'app con i miglioramenti — Esempio: FortiGate 70G</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active">📱 Pagina Prodotto Migliorata</div>
+            <div class="tab">🔄 Pagina Comparazione</div>
+            <div class="tab">⚙️ Configurator Wizard</div>
+        </div>
+
+        <div class="content">
+            <!-- HEADLINE -->
+            <div style="margin-bottom: 30px;">
+                <h2 style="font-size: 28px; margin-bottom: 8px;">⚔️ FortiGate 70G</h2>
+                <p style="color: #666;">Appliance firewall enterprise-grade, 35-50 Gbps throughput</p>
+            </div>
+
+            <!-- SECTION 1: A COLPO D'OCCHIO -->
+            <div class="section">
+                <div class="section-title">📊 A Colpo d'Occhio</div>
+                <div class="glance-grid">
+                    <div class="glance-item">
+                        <div class="glance-label">💰 Prezzo Hardware</div>
+                        <div class="glance-value">€12.500</div>
+                    </div>
+                    <div class="glance-item">
+                        <div class="glance-label">📅 Licenze/Anno</div>
+                        <div class="glance-value">€2.500</div>
+                    </div>
+                    <div class="glance-item">
+                        <div class="glance-label">⚡ Throughput Max</div>
+                        <div class="glance-value">50 Gbps</div>
+                    </div>
+                    <div class="glance-item">
+                        <div class="glance-label">👥 Max Utenti</div>
+                        <div class="glance-value">1.000</div>
+                    </div>
+                    <div class="glance-item">
+                        <div class="glance-label">🎯 Ideale Per</div>
+                        <div class="glance-value">Enterprise</div>
+                    </div>
+                    <div class="glance-item">
+                        <div class="glance-label">💡 Totale Anno 1</div>
+                        <div class="glance-value" style="color: #34c759;">€15.000</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2: WARNING -->
+            <div class="section">
+                <div class="alert">
+                    <div class="alert-title">⚠️ Non Dimenticare le Dipendenze</div>
+                    <p style="font-size: 13px; margin-top: 8px;">Questo prodotto funziona meglio con:</p>
+                    <ul style="margin-left: 20px; margin-top: 8px; font-size: 13px;">
+                        <li>Q-SYS Core 610 (se vuoi audio/video)
+                        <li>Cisco Catalyst 9300 (per rete supporto)
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 3: CONSIGLIO PERSONALIZATO -->
+            <div class="section">
+                <div class="section-title">💡 Consiglio Personalizzato</div>
+                <div class="suggestion">
+                    <div class="suggestion-title">✅ Questa è una buona scelta se:</div>
+                    <ul class="suggestion-list">
+                        <li>Hai 200-500 utenti</li>
+                        <li>Vuoi Enterprise-grade security</li>
+                        <li>Deployment multi-site</li>
+                    </ul>
+                </div>
+                <div class="suggestion" style="background: #ffe5e5; border-color: #ff453a;">
+                    <div class="suggestion-title" style="color: #ff453a;">❌ Non è ideale se:</div>
+                    <ul class="suggestion-list">
+                        <li><strong>Hai &lt;100 utenti</strong> → Considera 40F (meno caro, stesso feature set)</li>
+                        <li><strong>Hai &gt;1000 utenti</strong> → Considera upgrade a 100F (più potente)</li>
+                        <li><strong>Budget ristretto</strong> → Considera FortiGate 60F</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 4: UPGRADE PATH -->
+            <div class="section">
+                <div class="section-title">📈 Upgrade Path Disponibili</div>
+                <div class="upgrade-cards">
+                    <div class="upgrade-card">
+                        <div class="upgrade-card-title">40F</div>
+                        <div class="upgrade-card-feature">✅ Stesso feature set</div>
+                        <div class="upgrade-card-feature">❌ Throughput minore</div>
+                        <div class="upgrade-card-feature">💰 €8.000 (2.500€ meno caro)</div>
+                        <div style="margin-top: 12px;">
+                            <button class="btn btn-secondary" style="width: 100%;">Visualizza 40F</button>
+                        </div>
+                    </div>
+                    <div class="upgrade-card highlight">
+                        <div class="upgrade-card-title" style="color: #34c759;">70G (TU SEI QUI)</div>
+                        <div class="upgrade-card-feature">✅ Perfetto per medio-enterprise</div>
+                        <div class="upgrade-card-feature">✅ Throughput ottimale</div>
+                        <div class="upgrade-card-feature new">→ Scelta consigliata</div>
+                    </div>
+                    <div class="upgrade-card">
+                        <div class="upgrade-card-title">100F</div>
+                        <div class="upgrade-card-feature new">✅ Più potente (upgrade consigliato)</div>
+                        <div class="upgrade-card-feature">✅ Throughput 50-100 Gbps</div>
+                        <div class="upgrade-card-feature">💰 €16.000 (+3.500€)</div>
+                        <div style="margin-top: 12px;">
+                            <button class="btn btn-secondary" style="width: 100%;">Visualizza 100F</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 5: BUNDLE CONSIGLIATO -->
+            <div class="section">
+                <div class="section-title">📦 Bundle Consigliati</div>
+                
+                <div class="bundle-section">
+                    <div class="bundle-name">📦 "FortiGate Enterprise" — PRE-SELEZIONATO</div>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 12px;">Bundle completo per deployment enterprise con protezione massima</p>
+                    
+                    <div class="bundle-content">
+                        <p><strong>PRODOTTO BASE:</strong> FortiGate 70G — €12.500</p>
+                    </div>
+                    <div class="bundle-content">
+                        <p><strong>LICENZE:</strong></p>
+                        <p style="margin-left: 10px; margin-top: 4px;">✓ FortiGuard ATP — €1.200/anno</p>
+                        <p style="margin-left: 10px;">✓ FortiGuard UTP — €1.500/anno</p>
+                        <p style="margin-left: 10px;">✓ FortiCare Support — €500/anno</p>
+                        <p style="margin-left: 10px;">✓ FortiClient Endpoint — €800/anno</p>
+                    </div>
+                    
+                    <div class="bundle-price">💰 Totale: €12.500 + €4.000/anno</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn">✓ Usa Questo Bundle</button>
+                        <button class="btn btn-secondary">🎯 Personalizza</button>
+                    </div>
+                </div>
+
+                <div class="bundle-section">
+                    <div class="bundle-name">📦 "FortiGate SMB" — Alternativa Economica</div>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 12px;">Se il budget è ristretto, senza compromessi sulla sicurezza</p>
+                    
+                    <div class="bundle-content">
+                        <p><strong>PRODOTTO:</strong> FortiGate 40F — €8.000</p>
+                        <p><strong>LICENZE:</strong> ATP + FortiCare — €1.700/anno</p>
+                    </div>
+                    
+                    <div class="bundle-price">💰 Totale: €8.000 + €1.700/anno (€5.300 più economico!)</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" style="width: 100%;">Visualizza SMB Bundle</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 6: ACTION BUTTONS -->
+            <div class="section">
+                <div class="section-title">⚡ Azioni Veloci</div>
+                <div class="action-buttons">
+                    <button class="action-btn">📄 Genera BoM</button>
+                    <button class="action-btn">📊 Comparazione</button>
+                    <button class="action-btn">💾 Salva Draft</button>
+                    <button class="action-btn">📧 Invia a Cliente</button>
+                    <button class="action-btn">🔗 Condividi Link</button>
+                </div>
+            </div>
+
+            <!-- SECTION 7: LICENZE COMPATIBILI -->
+            <div class="section">
+                <div class="section-title">📋 Licenze Compatibili</div>
+                <p style="color: #666; margin-bottom: 16px;">Queste licenze puoi abbinare a FortiGate 70G:</p>
+                
+                <div class="license-grid">
+                    <div class="license-card">
+                        <div class="license-header">
+                            <div class="license-name">FortiGuard ATP</div>
+                            <span class="license-type">feature</span>
+                        </div>
+                        <p class="license-desc">Advanced Threat Protection — Protezione avanzata da minacce zero-day con sandbox analysis e AI threat detection</p>
+                        <div class="license-meta">⏱️ Annual subscription (€1.200/anno)</div>
+                        <button class="btn" style="width: 100%; padding: 8px;">✓ Verifica Ufficiale</button>
+                    </div>
+
+                    <div class="license-card">
+                        <div class="license-header">
+                            <div class="license-name">FortiGuard UTP</div>
+                            <span class="license-type">feature</span>
+                        </div>
+                        <p class="license-desc">Unified Threat Protection — Protezione completa: antivirus, web filtering, IPS, DLP, email filtering in un solo bundle</p>
+                        <div class="license-meta">⏱️ Annual subscription (€1.500/anno)</div>
+                        <button class="btn" style="width: 100%; padding: 8px;">✓ Verifica Ufficiale</button>
+                    </div>
+
+                    <div class="license-card">
+                        <div class="license-header">
+                            <div class="license-name">FortiCare Support</div>
+                            <span class="license-type">support</span>
+                        </div>
+                        <p class="license-desc">Support contract — Supporto tecnico 24/7, accesso alle patch, aggiornamenti firmware prioritari</p>
+                        <div class="license-meta">⏱️ Annual subscription (€500/anno)</div>
+                        <button class="btn" style="width: 100%; padding: 8px;">✓ Verifica Ufficiale</button>
+                    </div>
+
+                    <div class="license-card">
+                        <div class="license-header">
+                            <div class="license-name">FortiClient Device</div>
+                            <span class="license-type">endpoint</span>
+                        </div>
+                        <p class="license-desc">Endpoint Protection — Protezione endpoint, VPN client, DLP su dispositivi client connessi</p>
+                        <div class="license-meta">⏱️ Annual subscription (€800/anno, per device)</div>
+                        <button class="btn" style="width: 100%; padding: 8px;">✓ Verifica Ufficiale</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 8: SPECIFICHE TECNICHE -->
+            <div class="section">
+                <div class="section-title">📚 Specifiche Tecniche</div>
+                <div class="spec-section">
+                    <div class="spec-row">
+                        <div class="spec-label">Modello</div>
+                        <div class="spec-value">FGT_70G</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label">SKU / Codici Ordine</div>
+                        <div class="spec-value">FGT_70G, FG-70G-3DDOC</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label">Tipologia</div>
+                        <div class="spec-value">Firewall / Appliance Security</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label">Deployment</div>
+                        <div class="spec-value">On-Premise</div>
+                    </div>
+                    <div class="spec-row">
+                        <div class="spec-label">Stato Lifecycle</div>
+                        <div class="spec-value">Active (✅ Fully Supported)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 9: LINK UFFICIALI -->
+            <div class="section">
+                <div class="section-title">🔗 Link Verificati</div>
+                <div class="callout">
+                    <div class="callout-title">Datasheet Ufficiale Fortinet</div>
+                    <div class="callout-text">https://www.fortinet.com/products/fortigate</div>
+                </div>
+                <div class="callout">
+                    <div class="callout-title">Matrice Compatibilità Licenze</div>
+                    <div class="callout-text">https://www.fortinet.com/products/fortigate/datasheet</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER NOTE -->
+        <div style="background: white; padding: 20px; border-radius: 12px; margin-top: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <p style="font-size: 14px; color: #333;">
+                <strong>💡 Differenze dalla versione attuale:</strong> Questa versione aggiunge:
+                <strong>prezzi</strong>, <strong>bundle predefiniti</strong>, <strong>avvertenze</strong>, 
+                <strong>consigli upgrade</strong>, <strong>BoM generator</strong>, e <strong>action buttons</strong> veloci. 
+                Tutto integrato nell'app, nessun documento esterno necessario.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
