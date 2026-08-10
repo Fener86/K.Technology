@@ -1568,7 +1568,8 @@
       "deployment": "cloud (direct-to-cloud) o ibrido via Cloud Connector",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Telecamere cloud-native con elaborazione AI ed eventuale storage a bordo; 30 giorni di cloud storage inclusi con licenza Alta Video.",
-      "fonteId": "src_avigilon_alta_cloud_storage"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Visitor management module per Avigilon Alta"
     },
     {
       "id": "prod_axis_camera_station_pro",
@@ -1843,7 +1844,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "VMS on-premise con analitica AI, ricerca intelligente, gestione multi-sito e privilege management centralizzato.",
-      "fonteId": "src_avigilon_unity_ds"
+      "fonteId": "src_avigilon_unity",
+      "sku": "Software suite on-premise per camera licensing perpetua (~$292/camera MSRP)"
     },
     {
       "id": "prod_axis_optimizer_plugin",
@@ -2307,7 +2309,8 @@
       "deployment": "on-premise/cloud (Alta)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera PTZ con controllo in tempo reale e dettaglio a lungo raggio per il tracciamento di minacce in movimento.",
-      "fonteId": "src_avigilon_homepage"
+      "fonteId": "src_avigilon_cameras",
+      "sku": "Camera PTZ enterprise on-premise"
     },
     {
       "id": "prod_avigilon_alta_visitor",
@@ -2318,7 +2321,8 @@
       "deployment": "cloud",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Gestione visitatori con check-in rapido e conformita', integrata nella piattaforma Alta Access; disponibile in prova gratuita di 30 giorni.",
-      "fonteId": "src_avigilon_homepage"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Visitor management cloud module per Alta"
     },
     {
       "id": "prod_fortiendpoint_platform",
@@ -2376,7 +2380,8 @@
       "deployment": "on-premise (hardware Linux dedicato) o virtual appliance",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Server di controllo accessi on-premise scalabile da installazioni piccole (Professional) a grandi enterprise (Enterprise Plus), o in forma virtuale.",
-      "fonteId": "src_avigilon_unity_access_factsheet"
+      "fonteId": "src_avigilon_unity",
+      "sku": "Hardware appliance Access Control Manager on-premise"
     },
     {
       "id": "prod_cisco_secure_access_platform",
@@ -3486,7 +3491,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Suite on-premise che unifica video (Unity Video) e controllo accessi (Unity Access)",
-      "fonteId": "src_xhl0lpdp"
+      "fonteId": "src_avigilon_unity",
+      "sku": "On-premise suite (Control Center, Cloud Services, ACM) con licensing perpetua tiered (Core/Standard/Enterprise)"
     },
     {
       "id": "prod_xzhy7ul2",
@@ -3497,7 +3503,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Piattaforma di sicurezza cloud-native (video + access control)",
-      "fonteId": "src_x8dnrm1h"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Cloud-native SaaS ($179+/camera/year, direct-to-cloud o ibrido con Cloud Connectors)"
     },
     {
       "id": "prod_x2ingrqk",
@@ -3508,29 +3515,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Controllo accessi on-premise, si unifica con Unity Video",
-      "fonteId": "src_avigilon_unity_access_page"
-    },
-    {
-      "id": "prod_x3qxfrjc",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Avigilon Integrations (ecosystem)",
-      "modello": "Avigilon Integrations (ecosystem)",
-      "tipologia": "documentazione",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Catalogo delle integrazioni certificate per Alta e Unity",
-      "fonteId": "src_x902bm8j"
-    },
-    {
-      "id": "prod_xah7szee",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Unity Video & Unity Access — integrazione",
-      "modello": "Unity Video & Unity Access — integrazione",
-      "tipologia": "documentazione",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Fact sheet ufficiale sull'integrazione video/access",
-      "fonteId": "src_x2sujldy"
+      "fonteId": "src_avigilon_unity",
+      "sku": "On-premise Access Control Manager (appliance 32+ card readers)"
     },
     {
       "id": "prod_xdp3w34n",
@@ -3541,7 +3527,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Video management cloud-native con AI",
-      "fonteId": "src_x8dnrm1h"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Piattaforma cloud VMS con A5 cloud-native cameras, modulare licensing, 30 days storage incluso"
     },
     {
       "id": "prod_xa2zbuy1",
@@ -3552,7 +3539,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Controllo accessi cloud-native",
-      "fonteId": "src_x8dnrm1h"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Cloud access control (ex-Openpath) con Alta Open app, Wave to Unlock, integrazione Video nativa"
     },
     {
       "id": "prod_x6qede87",
@@ -3563,7 +3551,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Video analytics AI per ricerca forense e prioritizzazione allarmi",
-      "fonteId": "src_xhl0lpdp"
+      "fonteId": "src_avigilon_cameras",
+      "sku": "Modulo AI analytics cloud (Appearance Search, unusual motion, crowd detection, PPE, LPR)"
     },
     {
       "id": "prod_xdn0m2kw",
@@ -3574,7 +3563,8 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Gestione cloud per installazioni on-premise Unity",
-      "fonteId": "src_xhl0lpdp"
+      "fonteId": "src_avigilon_unity",
+      "sku": "Servizio cloud bridge per Unity on-premise (connessione remota)"
     },
     {
       "id": "prod_xh3vzse8",
@@ -4909,28 +4899,6 @@
       "sku": "WB05 — ricevitore box per wireless presentation su display non nativamente MAXHUB."
     },
     {
-      "id": "prod_x7dhdn0t",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Modello direct-to-cloud",
-      "modello": "architettura",
-      "tipologia": "architettura",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Alta Video puo' operare in modo puramente direct-to-cloud usando camere cloud-native (serie A5 o brandizzate Avigilon) con edge processing e storage onboard integrati, senza server on-premise.",
-      "fonteId": "src_avigilon_alta_video_lineup"
-    },
-    {
-      "id": "prod_xtwrcxey",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Modello ibrido con Cloud Connector",
-      "modello": "architettura",
-      "tipologia": "architettura",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "In alternativa, gli Alta Cloud Connector permettono di collegare camere ONVIF di terze parti o camere legacy non-cloud all'ambiente cloud Alta.",
-      "fonteId": "src_avigilon_alta_video_lineup"
-    },
-    {
       "id": "prod_xot9qs38",
       "familyId": "fam_avigilon_alta_video",
       "nomeCommerciale": "Licensing modulare Alta Video",
@@ -4939,29 +4907,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Il cliente paga solo per i canali hardware, la durata di storage e gli analytics AI effettivamente utilizzati (non un'unica licenza onnicomprensiva).",
-      "fonteId": "src_avigilon_alta_video_lineup"
-    },
-    {
-      "id": "prod_xhjm2ymv",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "BYO Storage (Bring Your Own)",
-      "modello": "opzione storage",
-      "tipologia": "opzione storage",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Consente ai team IT enterprise di usare i propri contratti di storage cloud esistenti, mantenendo la piena proprieta' dei dati a lungo termine.",
-      "fonteId": "src_avigilon_alta_video_lineup"
-    },
-    {
-      "id": "prod_xad59l3g",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Cloud Connector legacy (serie A) — supporto",
-      "modello": "lifecycle",
-      "tipologia": "lifecycle",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Tutti i Cloud Connector legacy (modelli serie A) restano ufficialmente supportati da Avigilon Alta fino alla rispettiva data di End of Life, tipicamente indicata intorno al 2029.",
-      "fonteId": "src_avigilon_alta_video_lineup"
+      "fonteId": "src_avigilon_alta",
+      "sku": "Licensing per camera, storage duration, AI analytics add-ons (Appear. Search, LPR, etc.)"
     },
     {
       "id": "prod_xkz480pm",
@@ -4972,29 +4919,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Camera multisensore per copertura ampia con meno telecamere; disponibile sia per deployment cloud (Alta Video) sia on-premise (Unity), con licenza VMS singola per camera su Unity.",
-      "fonteId": "src_x77pum1v"
-    },
-    {
-      "id": "prod_xdg5a6b6",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Alta vs Unity — criterio di scelta",
-      "modello": "architettura",
-      "tipologia": "architettura",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Alta = piattaforma cloud-native per flessibilita' e gestione remota con insight AI-driven; Unity = sistema on-premise con controllo completo di dati e infrastruttura per team IT dedicati.",
-      "fonteId": "src_x8dnrm1h"
-    },
-    {
-      "id": "prod_xaa7r1sk",
-      "familyId": "fam_avigilon_alta_video",
-      "nomeCommerciale": "Avigilon Alta Access — modello pricing",
-      "modello": "licensing/subscription",
-      "tipologia": "licensing/subscription",
-      "deployment": "non applicabile (licenza, non un deployment fisico)",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Modello a subscription (SaaS): riduce le spese in conto capitale (CapEx) a favore di OpEx, permettendo di pagare solo per cio' che si utilizza; gestione 100% remota multi-sito.",
-      "fonteId": "src_xc25u1k0"
+      "fonteId": "src_avigilon_cameras",
+      "sku": "Camera multisensore enterprise on-premise"
     },
     {
       "id": "prod_xr0z6hol",
@@ -15244,6 +15170,46 @@
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "features"
+    },
+    {
+      "id": "src_avigilon_alta",
+      "url": "https://support.avigilon.com/s/article/Avigilon-Alta-Video-Product-Lineup-and-Datasheets",
+      "titolo": "Avigilon Alta Video - cloud-native VMS con licensing modulare",
+      "vendorId": "v_avigilon",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_avigilon_unity",
+      "url": "https://www.avigilon.com/unity",
+      "titolo": "Avigilon Unity - on-premise suite (Control Center, Cloud Services, ACM)",
+      "vendorId": "v_avigilon",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_avigilon_alta_access",
+      "url": "https://www.avigilon.com/access-control/cloud",
+      "titolo": "Avigilon Alta Access - cloud access control (ex-Openpath)",
+      "vendorId": "v_avigilon",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_avigilon_cameras",
+      "url": "https://www.avigilon.com/products/cameras",
+      "titolo": "Avigilon cameras - cloud-native A5, H5A, H6A, enterprise-grade",
+      "vendorId": "v_avigilon",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
     }
   ],
   "changelog": [
