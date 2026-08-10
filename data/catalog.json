@@ -1669,8 +1669,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Processore centrale della piattaforma Q-SYS: audio, video e controllo integrati in un unico motore software.",
-      "fonteId": "src_qsys_processing",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_qsys_core_models",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Gamma processori: Core Nano, Core 8 Flex, Core 110f, Core 510i, Core 5200, Core 610, Core 6000 CXR, Core 24f (nuovi), Server Core X10/X20r/X50r"
     },
     {
       "id": "prod_qsys_nv32h",
@@ -1681,8 +1682,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Endpoint video di rete software-configurabile come encoder o decoder HDMI, con supporto Q-SYS Shift™ (fino a 4K60 4:4:4) e Mediacast (fino a 1080p30 4:2:0), AV Bridging integrato, Core Mode, 3 ingressi HDMI, 2 uscite HDMI, RS-232, GPIO e audio 3.5 mm, distribuzione di rete in modalità periferica.",
-      "fonteId": "src_qsys_nv",
-      "dataUltimaVerificaAutomatica": "2026-08-09"
+      "fonteId": "src_qsys_nv32h_core_capable",
+      "dataUltimaVerificaAutomatica": "2026-08-09",
+      "sku": "NV-32-H (Core Capable) - dual mode: Core Mode (HDMI 3x2 switch) o Peripheral Mode (video encoder/decoder)"
     },
     {
       "id": "prod_shure_mxa920",
@@ -2106,7 +2108,8 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Barra di collaborazione Windows-based per Microsoft Teams Rooms, lanciata a giugno 2026, pensata per configurazione e deployment semplificati su spazi standardizzati e ripetibili.",
-      "fonteId": "src_qsys_news_official"
+      "fonteId": "src_qsys_roomsuite_collab_bar",
+      "sku": "Q-SYS RoomSuite Collaboration Bar - dispositivo Windows 11 MTR certificato (annunciato giugno 2026)"
     },
     {
       "id": "prod_qsys_nvm_series",
@@ -2117,8 +2120,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuova serie di endpoint video a basso consumo di banda per distribuzione video su larga scala (hospitality, entertainment, collaboration, government e altri), con NVM Designer per configurazione no-code di centinaia di endpoint, lanciata giugno 2026.",
-      "fonteId": "src_qsys_news_official",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_qsys_nvm_series_2026",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "NVM Series (annunciato giugno 2026): NVM-302E (encoder), NVM-302D (decoder), Mediacast AV routing nativo Q-SYS"
     },
     {
       "id": "prod_qsys_core24f",
@@ -2129,7 +2133,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Nuovo processore Q-SYS Core, certificato Microsoft Teams insieme all'acceleratore AI VisionSuite VSA-100 (febbraio 2026).",
-      "fonteId": "src_qsys_news_official"
+      "fonteId": "src_qsys_core_models",
+      "sku": "Core 24f - processore entry-level per piccole installazioni, include 8x8 Software Dante"
     },
     {
       "id": "prod_shure_mxa925",
@@ -2587,7 +2592,8 @@
       "deployment": "on-premise (sala riunioni piccola/media)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Camera ePTZ a lente fissa, campo visivo orizzontale 110°, per sale piccole e ampie.",
-      "fonteId": "src_qsys_nc_series"
+      "fonteId": "src_qsys_nc_series",
+      "sku": "NC-110 - camera ePTZ 110° field of view"
     },
     {
       "id": "prod_qsys_nc_ptz",
@@ -2598,7 +2604,8 @@
       "deployment": "on-premise (sale medie/grandi)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Camere PTZ motorizzate con sensore 4K, auto-framing e output HDMI/SDI simultaneo allo stream IP.",
-      "fonteId": "src_qsys_nc_series"
+      "fonteId": "src_qsys_nc_series",
+      "sku": "NC-12x80 (12x optical zoom, 80° FOV), NC-20x60 (20x optical zoom, 60° FOV)"
     },
     {
       "id": "prod_qsys_nc_pro15x",
@@ -2609,8 +2616,9 @@
       "deployment": "on-premise (spazi broadcast-grade)",
       "statoLifecycle": "nuovo",
       "descrizioneBreve": "Camera PTZ di rete broadcast-grade costruita da Canon, con zoom ottico 15x, sensore CMOS 4K UHD da 1 pollice con Dual Pixel Autofocus e uscite opzionali HDMI, SDI, NDI® | HX2, per l'esperienza VisionSuite Presenter Spotlight in spazi ad alto impatto produttivo.",
-      "fonteId": "src_qsys_nc_pro15x",
-      "dataUltimaVerificaAutomatica": "2026-08-09"
+      "fonteId": "src_qsys_nc_series",
+      "dataUltimaVerificaAutomatica": "2026-08-09",
+      "sku": "NC-Pro15x (Canon-built, broadcast-quality PTZ per VisionSuite Presenter Spotlight)"
     },
     {
       "id": "prod_qsys_cxq_amp",
@@ -2621,8 +2629,9 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Amplificatore di rete nativo Q-SYS, fino a 8000W, con modelli a 4 e 8 canali (CX-Q 2K4, 4K4, 8K4, 4K8, 8K8). Integrazione nativa con Q-SYS, tecnologie FlexAmp e FAST, GPIO bidirezionale, modalità risparmio energetico. Non sono menzionate versioni Q/Qn con ingressi mic/line distinti.",
-      "fonteId": "src_qsys_cxq",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_qsys_cxq_amplifiers",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "CX-Q 2K4 (4ch, 2000W), CX-Q 8K8 (8ch, 8000W), varianti Q (con mic input) e Qn (network input only)"
     },
     {
       "id": "prod_qsys_nl_speakers",
@@ -2633,8 +2642,9 @@
       "deployment": "on-premise (sala riunioni)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Diffusori di rete alimentati via PoE, disponibili in tre fattori di forma (soundbar, a sospensione e a soffitto), audio/potenza/controllo su singolo cavo Ethernet, monitorabili da Q-SYS Reflect, con Intrinsic Correction integrata e supporto Q-SYS Call Sync.",
-      "fonteId": "src_qsys_nl_series",
-      "dataUltimaVerificaAutomatica": "2026-08-09"
+      "fonteId": "src_qsys_nl_speakers",
+      "dataUltimaVerificaAutomatica": "2026-08-09",
+      "sku": "NL-C4 (ceiling 4\"), NL-P4 (pendant 4\"), NL-SB42 (soundbar 3.5\") - PoE-powered"
     },
     {
       "id": "prod_karray_pinnacle",
@@ -3865,8 +3875,9 @@
       "deployment": "cloud",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Operational intelligence per il monitoraggio, la gestione e l'ottimizzazione delle prestazioni dei sistemi AV Q-SYS da remoto",
-      "fonteId": "src_xwovajhe",
-      "dataUltimaVerificaAutomatica": "2026-08-08"
+      "fonteId": "src_qsys_reflect",
+      "dataUltimaVerificaAutomatica": "2026-08-08",
+      "sku": "Q-SYS Reflect: monitoraggio/gestione cloud centralizzato. Reflect Plus (premium): firmware bulk updates, preset deploy, space usage insights"
     },
     {
       "id": "prod_xs0lwp8l",
@@ -3877,7 +3888,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Licenze a funzionalita' attivabili via Entitlement ID sul Core",
-      "fonteId": "src_xwaqe9vh"
+      "fonteId": "src_qsys_licensing",
+      "sku": "Feature Licensing trasversale: VisionSuite (perpetua + update), Dante 8x8-16x16 (per Core specifici), Teams Rooms (su Core Nano/8 Flex/110f/510i/610), UCI/Scripting (free v10.0+)"
     },
     {
       "id": "prod_xt7bjtbr",
@@ -3888,7 +3900,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Licenze di scaling per espandere risorse DSP/canali di rete del Core",
-      "fonteId": "src_xth7wxhq"
+      "fonteId": "src_qsys_licensing",
+      "sku": "Core Licensing - scaling license per aumentare capacita' channels/streams su select Core models (es. Core 6000 CXR 512x512)"
     },
     {
       "id": "prod_x1qpnh6s",
@@ -3899,7 +3912,8 @@
       "deployment": "on-premise (installato su server/PC del cliente)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Ambiente di progettazione e configurazione della piattaforma Q-SYS",
-      "fonteId": "src_xy0wxsyn"
+      "fonteId": "src_qsys_designer_software",
+      "sku": "Q-SYS Designer Software (QDS) v10.3+ - tool di progettazione no-code/low-code con VisionSuite Designer integrato"
     },
     {
       "id": "prod_x5nd0ole",
@@ -3910,29 +3924,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Automazione video AI-driven: camera tracking, voice localization; Legacy in transizione a Native",
-      "fonteId": "src_x9kxjo9f"
-    },
-    {
-      "id": "prod_xgcntrsh",
-      "familyId": "fam_qsys_core_nv",
-      "nomeCommerciale": "Q-SYS Core (piattaforma)",
-      "modello": "Q-SYS Core (piattaforma)",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Processore centrale della piattaforma Q-SYS (Core Nano, 8 Flex, 110f, ecc.)",
-      "fonteId": "src_xth7wxhq"
-    },
-    {
-      "id": "prod_xiuwvcln",
-      "familyId": "fam_qsys_core_nv",
-      "nomeCommerciale": "Q-SYS NV Series",
-      "modello": "Q-SYS NV Series",
-      "tipologia": "hardware",
-      "deployment": "on-premise",
-      "statoLifecycle": "attivo",
-      "descrizioneBreve": "Endpoint AV-over-IP della piattaforma Q-SYS (NV-32-H e altri)",
-      "fonteId": "src_xth7wxhq"
+      "fonteId": "src_qsys_visionsuite",
+      "sku": "Q-SYS VisionSuite - piattaforma AI su VSA-100 accelerator o Server Cores: presenter tracking, speaker spotlight, audio-driven camera control"
     },
     {
       "id": "prod_xisamb5y",
@@ -3943,7 +3936,8 @@
       "deployment": "non applicabile (licenza, non un deployment fisico)",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Licenza per integrare funzionalita' Q-SYS in ambienti MTR",
-      "fonteId": "src_xaxdb21m"
+      "fonteId": "src_qsys_licensing",
+      "sku": "Q-SYS UC Integration License per Microsoft Teams Rooms - integrazione nativa"
     },
     {
       "id": "prod_xb7h185y",
@@ -5348,7 +5342,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Processore AV&C per installazioni di piccola scala con capacita' di canali di rete ridotta; licenza 8x8 inclusa",
-      "fonteId": "src_xvrfx1p6"
+      "fonteId": "src_xvrfx1p6",
+      "sku": "Core Nano - processore ultra-compatto 32x32 network I/O, entry-level"
     },
     {
       "id": "prod_xmrmw570",
@@ -5359,7 +5354,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Processore AV&C con 64x64 I/O di rete + 8 canali Flex on-board + 8 GPIO; ideale per corporate/education/healthcare di piccola scala",
-      "fonteId": "src_xqllz7u6"
+      "fonteId": "src_xqllz7u6",
+      "sku": "Core 8 Flex - processore 64x64 network I/O + 8 Flex channels on-board"
     },
     {
       "id": "prod_x5hiby9u",
@@ -5370,7 +5366,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Soluzione integrata audio/video/controllo con mix di canali analogici e di rete, dalle sale medie alle installazioni enterprise piu' grandi; miglior rapporto costo/prestazioni della gamma",
-      "fonteId": "src_xnsygea3"
+      "fonteId": "src_xnsygea3",
+      "sku": "Core 110f - processore flagship 128x128 network I/O con I/O cards"
     },
     {
       "id": "prod_x2j6lihg",
@@ -5381,7 +5378,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modelli Core di fascia enterprise citati nella documentazione di licensing (8x8 Dante incluso su unita' post gennaio 2021)",
-      "fonteId": "src_xaxdb21m"
+      "fonteId": "src_xaxdb21m",
+      "sku": "Core 510i / Core 5200 - processori 256x256 network I/O (510i integrato)"
     },
     {
       "id": "prod_xgepl537",
@@ -5392,7 +5390,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello Core citato tra quelli supportati dalla licenza Microsoft Teams Rooms e dallo Scripting Engine",
-      "fonteId": "src_x9a6wqfr"
+      "fonteId": "src_x9a6wqfr",
+      "sku": "Core 610 - processore 256x256 streams, fino a 384x384 channels con scaling license"
     },
     {
       "id": "prod_xhjn9v3g",
@@ -5403,7 +5402,8 @@
       "deployment": "on-premise",
       "statoLifecycle": "attivo",
       "descrizioneBreve": "Modello Core di fascia alta, richiede una specifica Scaling License per arrivare a 512x512 canali",
-      "fonteId": "src_xaxdb21m"
+      "fonteId": "src_xaxdb21m",
+      "sku": "Core 6000 CXR - processore flagship per installazioni enterprise, supporta 512x512 con scaling"
     },
     {
       "id": "prod_xd7f3wqn",
@@ -15144,6 +15144,86 @@
       "titolo": "MAXHUB XBar Series e accessori (Capture System, Stylus, Panel SP10)",
       "vendorId": "v_maxhub",
       "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_core_models",
+      "url": "https://www.qsys.com/products-solutions/q-sys/processing/",
+      "titolo": "Q-SYS Core processors - modelli Core Nano, 8 Flex, 110f, 510i, 610, 6000 CXR, 24f",
+      "vendorId": "v_qsys",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_nv32h_core_capable",
+      "url": "https://www.qsys.com/products-solutions/q-sys/processing/nv-32-h-core-capable/",
+      "titolo": "NV-32-H (Core Capable) - video endpoint dual mode (Core/Peripheral)",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_nvm_series_2026",
+      "url": "https://www.qsys.com/resources/news/detail/qscr-unlocks-scalable-network-video-distribution-with-q-systm-nvm-series/",
+      "titolo": "Q-SYS NVM Series - annunciato giugno 2026 (video endpoints Mediacast)",
+      "vendorId": "v_qsys",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_roomsuite_collab_bar",
+      "url": "https://www.qsys.com/resources/news/detail/q-systm-spans-the-workplace-with-a-comprehensive-collaboration-portfolio-and-data-driven-intelligence/",
+      "titolo": "Q-SYS RoomSuite Collaboration Bar - annunciato giugno 2026 (Windows MTR)",
+      "vendorId": "v_qsys",
+      "tipo": "comunicato stampa ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_cxq_amplifiers",
+      "url": "https://www.qsys.com/products-solutions/q-sys/audio-network-amplifiers/cx-q-series/",
+      "titolo": "Q-SYS CX-Q Series - amplificatori di rete 4/8 canali fino a 8000W",
+      "vendorId": "v_qsys",
+      "tipo": "pagina catalogo ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "hardware"
+    },
+    {
+      "id": "src_qsys_designer_software",
+      "url": "https://www.qsys.com/resources/software-and-firmware/q-sys-designer-software/",
+      "titolo": "Q-SYS Designer Software - strumento di progettazione con VisionSuite Designer integrato",
+      "vendorId": "v_qsys",
+      "tipo": "pagina prodotto ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_qsys_visionsuite",
+      "url": "https://help.qsys.com/Content/VisionSuite/VisionSuite_Overview.htm",
+      "titolo": "Q-SYS VisionSuite - piattaforma AI per presenter tracking, speaker spotlight, camera control",
+      "vendorId": "v_qsys",
+      "tipo": "documentazione ufficiale",
+      "dataConsultazione": "2026-08-07",
+      "stato": "aggiornato",
+      "categoriaControllo": "software"
+    },
+    {
+      "id": "src_qsys_roomsuite_modular",
+      "url": "https://help.qsys.com/Content/RoomSuite/RoomSuite_Overview.htm",
+      "titolo": "Q-SYS RoomSuite Modular System - soluzione pre-configured RMP-100, QIO-VEN4",
+      "vendorId": "v_qsys",
+      "tipo": "documentazione ufficiale",
       "dataConsultazione": "2026-08-07",
       "stato": "aggiornato",
       "categoriaControllo": "hardware"
